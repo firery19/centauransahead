@@ -105,7 +105,6 @@ form_rodinia_category = {
 		custom_trigger_tooltip = {
 			tooltip = form_country_riaa_required_states_tt
 				# north riaa
-				controls_state = 64
 				controls_state = 67
 				controls_state = 69
 				controls_state = 70
@@ -146,11 +145,6 @@ form_rodinia_category = {
 				controls_state = 127
 				controls_state = 128
 			}
-			custom_trigger_tooltip = {
-				tooltip = form_country_columba_required_states_tt
-				# north canis
-				controls_state = 62
-			}
 		}
 
 		visible = {
@@ -165,8 +159,6 @@ form_rodinia_category = {
 			custom_effect_tooltip = form_country_rodinia_coring_states_tt
 			hidden_effect = {
 				2 = { add_core_of = ROOT }
-				62 = { add_core_of = ROOT }
-				64 = { add_core_of = ROOT }
 				66 = { add_core_of = ROOT }
 				67 = { add_core_of = ROOT }
 				68 = { add_core_of = ROOT }

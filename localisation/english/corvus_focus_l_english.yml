@@ -1,19 +1,12 @@
 ﻿l_english:
- COV_the_confederation:0 "The Confederation"
- COV_the_confederation_desc:0 "Corvus is a nationalistic country located in the west of Centaura. The future of Corvus begins here!"
- COV_take_SC:0 "Prepare to Retake South Corvus"
- COV_take_SC_desc:0 "The loss of South Corvus has pushed our country into a dark age, literally. We need coal to run our country, so we will begin preparations to retake South Corvus."
  COV_prepare_to_take_SC:0 "Prepare to Retake South Corvus"
  COV_prepare_to_take_SC_desc:0 "The loss of South Corvus has pushed our country into a dark age, literally. We need coal to run our country, so we will begin preparations to retake South Corvus."
- COV_reapproachment:0 "Cetan Reapproachment"
  COV_reapproachment:0 "Cetan Reapproachment"
  COV_mil_1:0 "Building arms factories"
  COV_mil_1_desc:0 "To take over Cetus, we must have weapons. We should build more military factories to increase our output."
  COV_reapproachment_desc:0 "We will use diplomatic ways to regain South Corvus."
  COV_take_sc:0 "Retake South Corvus"
- COV_take_sc_desc:0 "Our preparations are done. We shall march back into South Corvus and retake what once was ours."
- COV_railroad:0 "Connect The South"
- COV_railroad_desc:0 "Connect The South"
+ COV_take_sc_desc:0 "Our preparations are done. We shall march back into south corvus and retake what once was ours."
 # events
 
 # decisions

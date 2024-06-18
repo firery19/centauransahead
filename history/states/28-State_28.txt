@@ -6,7 +6,7 @@ state={
 		add_core_of = VEG
 		add_core_of = GRS
 		victory_points = {
-			6760 1
+			6760 8
 		}
 	}
 	provinces={

@@ -53,7 +53,8 @@ technologies = {
 		}
 		
 		research_cost = 1.75
-		
+		start_year = 1910
+
 		folder = {
 			name = electronics_folder
 			position = { x = -2 y = 2 }
@@ -105,6 +106,7 @@ technologies = {
 		}
 		
 		research_cost = 1.75
+		start_year = 1920
 		
 		folder = {
 			name = electronics_folder
@@ -135,7 +137,7 @@ technologies = {
 		}
 		coordination_bonus = 0.01
 		research_cost = 1.25
-		start_year = 1904
+		start_year = 1925
 		enable_equipment_modules = { 
 			ship_radar_1
 			tank_radio_2
@@ -190,7 +192,7 @@ technologies = {
 		}
 		
 		research_cost = 1.25
-		start_year = 1906
+		start_year = 1930
 		
 		folder = {
 			name = electronics_folder
@@ -240,7 +242,7 @@ technologies = {
 		}
 		
 		research_cost = 1.25
-		start_year = 1912
+		start_year = 1935
 		
 		folder = {
 			name = electronics_folder
@@ -288,7 +290,7 @@ technologies = {
 		}
 		
 		research_cost = 1.25
-		start_year = 1916
+		start_year = 1940
 		
 		folder = {
 			name = electronics_folder
@@ -333,7 +335,7 @@ technologies = {
 		static_anti_air_hit_chance_factor = 0.2
 		
 		research_cost = 1.25
-		start_year = 1930
+		start_year = 1945
 		
 		folder = {
 			name = electronics_folder
@@ -376,6 +378,7 @@ technologies = {
 		}
 		
 		research_cost = 2.5
+		start_year = 1903
 		
 		folder = {
 			name = electronics_folder
@@ -414,7 +417,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 2.5
-		start_year = 1904
+		start_year = 1907
 		
 		folder = {
 			name = electronics_folder
@@ -470,7 +473,7 @@ technologies = {
 		}
 		
 		research_cost = 2.5
-		start_year = 1906
+		start_year = 1913
 		
 		folder = {
 			name = electronics_folder
@@ -519,7 +522,7 @@ technologies = {
 		}
 		
 		research_cost = 2.5
-		start_year = 1908
+		start_year = 1919
 		
 		folder = {
 			name = electronics_folder
@@ -1165,7 +1168,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		start_year = 1940
+		start_year = 1945
 		research_cost = 5
 		
 		folder = {
@@ -1246,7 +1249,7 @@ technologies = {
 
 		# can build reactors
 		
-		start_year = 1943
+		start_year = 1950
 		research_cost = 5
 		
 		folder = {
@@ -1279,7 +1282,7 @@ technologies = {
 
 	nukes = {
 	
-		start_year = 1945
+		start_year = 1955
 		research_cost = 5
 		
 		folder = {

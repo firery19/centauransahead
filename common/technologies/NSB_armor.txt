@@ -112,7 +112,7 @@ technologies = {
 		}
 
 		research_cost = 3
-		start_year = 1906
+		start_year = 1907
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = 0 }
@@ -194,7 +194,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1907
+		start_year = 1910
 		folder = {
 			name = nsb_armour_folder
 			position = { x = -1 y = 2 }
@@ -252,7 +252,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1910
+		start_year = 1914
 
 		folder = {
 			name = nsb_armour_folder
@@ -323,7 +323,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1912
+		start_year = 1920
 
 		folder = {
 			name = nsb_armour_folder
@@ -378,7 +378,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1916
+		start_year = 1930
 
 		folder = {
 			name = nsb_armour_folder
@@ -427,7 +427,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1915
+		start_year = 1925
 
 		folder = {
 			name = nsb_armour_folder
@@ -510,7 +510,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1912
+		start_year = 1914
 
 		folder = {
 			name = nsb_armour_folder
@@ -588,7 +588,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1914
+		start_year = 1920
 
 		folder = {
 			name = nsb_armour_folder
@@ -674,7 +674,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1921
+		start_year = 1930
 
 		folder = {
 			name = nsb_armour_folder
@@ -731,7 +731,7 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 1930
+		start_year = 1940
 
 		folder = {
 			name = nsb_armour_folder
@@ -811,7 +811,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1907
+		start_year = 1910
 
 		folder = {
 			name = nsb_armour_folder
@@ -874,7 +874,7 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 1914
+		start_year = 1920
 
 		folder = {
 			name = nsb_armour_folder
@@ -941,7 +941,7 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 1921
+		start_year = 1930
 
 		folder = {
 			name = nsb_armour_folder
@@ -1003,7 +1003,7 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 1921
+		start_year = 1930
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 8 y = @1921 }
@@ -1122,7 +1122,7 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1912
+		start_year = 1916
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 3 y = @1912 }
@@ -1179,7 +1179,7 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1915
+		start_year = 1922
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 3 y = @1915 }
@@ -1225,7 +1225,7 @@ technologies = {
 	armor_tech_4 = {
 
 		research_cost = 1
-		start_year = 1926
+		start_year = 1928
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 3 y = @1926 }
@@ -1285,7 +1285,7 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
-		start_year = 1907
+		start_year = 1909
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = @1909 }
@@ -1342,7 +1342,7 @@ technologies = {
 		show_effect_as_desc = yes
 
 		research_cost = 1
-		start_year = 1912
+		start_year = 1915
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = @1912 }
@@ -1397,7 +1397,7 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
-		start_year = 1915
+		start_year = 1921
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = @1915 }
@@ -1443,7 +1443,7 @@ technologies = {
 	engine_tech_4 = {
 
 		research_cost = 1
-		start_year = 1926
+		start_year = 1927
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 2 y = @1926 }
@@ -1488,7 +1488,7 @@ technologies = {
 			mio_cat_tech_heavy_armor_and_modules
 		}
 	}
-
+#centauri tank project or smt probably bought from tucana amirite?
 	NOR_rikstanken_tech = {
 
 		allow = { always = no } #Only obtained through Rikstanken Event

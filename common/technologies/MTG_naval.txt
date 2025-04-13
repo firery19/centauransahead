@@ -122,7 +122,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1903
+		start_year = 1908
 
 		folder = {
 			name = mtgnavalfolder
@@ -161,7 +161,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1906
+		start_year = 1916
 
 		folder = {
 			name = mtgnavalfolder
@@ -195,7 +195,7 @@ technologies = {
 
 		research_cost = 0.75
 
-		start_year = 1890
+		start_year = 1900
 
 		folder = {
 			name = mtgnavalfolder
@@ -294,7 +294,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.5
 
-		start_year = 1923
+		start_year = 1930
 
 		folder = {
 			name = mtgnavalfolder
@@ -340,7 +340,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.5
 
-		start_year = 1926
+		start_year = 1940
 
 		folder = {
 			name = mtgnavalfolder
@@ -383,7 +383,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.5
 
-		start_year = 1929
+		start_year = 1950
 
 		folder = {
 			name = mtgnavalfolder
@@ -425,7 +425,7 @@ technologies = {
 		}
 		research_cost = 1.5
 
-		start_year = 1910
+		start_year = 1920
 
 		folder = {
 			name = mtgnavalfolder
@@ -464,7 +464,7 @@ technologies = {
 		}
 		research_cost = 1
 
-		start_year = 1920
+		start_year = 1940
 
 		folder = {
 			name = mtgnavalfolder
@@ -621,7 +621,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1903
+		start_year = 1908
 
 		folder = {
 			name = mtgnavalfolder
@@ -661,7 +661,7 @@ technologies = {
 		}
 		research_cost = 1.5
 
-		start_year = 1906
+		start_year = 1916
 
 		folder = {
 			name = mtgnavalfolder
@@ -703,7 +703,7 @@ technologies = {
 
 		research_cost = 0.75
 
-		start_year = 1903
+		start_year = 1908
 
 		folder = {
 			name = mtgnavalfolder
@@ -756,7 +756,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 0.5
 
-		start_year = 1890
+		start_year = 1900
 
 		folder = {
 			name = mtgnavalfolder
@@ -794,7 +794,7 @@ technologies = {
 #  # #   #  #  # #    #         # #  #  #  #      #
 #  # ### #  #   #     #       ##  #  # ### #    ##
 
-
+#GEN 1 dreadnoughts (steelpots), diphda etc.
 	early_ship_hull_heavy = {
 
 		enable_equipments = {
@@ -850,7 +850,7 @@ technologies = {
 			mio_cat_tech_all_capital_ship_and_modules
 		}
 	}
-
+#more advanced steelpots, mira, fang
 	basic_ship_hull_heavy = {
 
 		enable_equipments = {
@@ -921,7 +921,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1900
+		start_year = 1920
 
 		ai_will_do = {
 			factor = 1
@@ -939,7 +939,7 @@ technologies = {
 			mio_cat_tech_all_capital_ship_and_modules
 		}
 	}
-
+#post SCW ships, Itermudae
 	improved_ship_hull_heavy = {
 
 		enable_equipments = {
@@ -955,7 +955,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1903
+		start_year = 1908
 
 		folder = {
 			name = mtgnavalfolder
@@ -993,7 +993,7 @@ technologies = {
 		}
 		research_cost = 1.5
 
-		start_year = 1906
+		start_year = 1916
 
 		folder = {
 			name = mtgnavalfolder
@@ -1091,6 +1091,9 @@ technologies = {
 		xp_boost_cost = 50
 		xp_research_bonus = 1.25
 		research_cost = 1.25
+
+		start_year = 1908
+
 
 		folder = {
 			name = mtgnavalfolder
@@ -1190,7 +1193,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.5
 
-		start_year = 1906
+		start_year = 1914
 
 		folder = {
 			name = mtgnavalfolder
@@ -1232,7 +1235,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.5
 
-		start_year = 1918
+		start_year = 1924
 
 		folder = {
 			name = mtgnavalfolder
@@ -1269,7 +1272,7 @@ early_ship_hull_carrier = {
 		}
 		research_cost = 1.5
 
-		start_year = 1920
+		start_year = 1940
 
 		folder = {
 			name = mtgnavalfolder
@@ -1320,7 +1323,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.5
 
-		start_year = 1903
+		start_year = 1910
 
 		folder = {
 			name = mtgnavalfolder
@@ -1362,7 +1365,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.5
 
-		start_year = 1910
+		start_year = 1925
 
 		folder = {
 			name = mtgnavalfolder
@@ -1410,7 +1413,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 2.0
 
-		start_year = 1914
+		start_year = 1940
 
 		folder = {
 			name = mtgnavalfolder
@@ -1448,7 +1451,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 2.0
 
-		start_year = 1920
+		start_year = 1955
 
 		folder = {
 			name = mtgnavalfolder
@@ -1488,7 +1491,7 @@ early_ship_hull_carrier = {
 		}
 		research_cost = 1
 
-		start_year = 1914
+		start_year = 1930
 
 		folder = {
 			name = mtgnavalfolder
@@ -1541,7 +1544,7 @@ early_ship_hull_carrier = {
 		xp_research_bonus = 1.50
 		research_cost = 2
 
-		start_year = 1918
+		start_year = 1950
 
 		folder = {
 			name = mtgnavalfolder
@@ -1575,7 +1578,7 @@ early_ship_hull_carrier = {
 		}
 
 		research_cost = 1
-		start_year = 1900
+		start_year = 1920
 
 		#set at gamestart
 		allow = {
@@ -1603,7 +1606,7 @@ early_ship_hull_carrier = {
 		}
 
 		research_cost = 1
-		start_year = 1900
+		start_year = 1870
 
 		#set at gamestart
 		allow = {
@@ -1617,7 +1620,7 @@ early_ship_hull_carrier = {
 		}
 
 		research_cost = 1
-		start_year = 1900
+		start_year = 1880
 
 		#set at gamestart
 		allow = {
@@ -1633,7 +1636,7 @@ early_ship_hull_carrier = {
 			ship_extra_fuel_tank
 		}
 		research_cost = 1
-		start_year = 1900
+		start_year = 1950
 
 		#set at gamestart
 		allow = {
@@ -1646,7 +1649,7 @@ early_ship_hull_carrier = {
 			ship_hull_midget_submarine
 		}
 		research_cost = 1
-		start_year = 1900
+		start_year = 1930
 
 		#set at gamestart
 		allow = {

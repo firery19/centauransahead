@@ -197,7 +197,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1908
+		start_year = 1910
 
 		folder = {
 			name = artillery_folder
@@ -268,7 +268,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1910
+		start_year = 1912
 
 		folder = {
 			name = artillery_folder
@@ -337,7 +337,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1914
+		start_year = 1916
 
 		folder = {
 			name = artillery_folder
@@ -380,7 +380,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1916
+		start_year = 1918
 
 		folder = {
 			name = artillery_folder
@@ -446,7 +446,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1918
+		start_year = 1920
 
 		folder = {
 			name = artillery_folder

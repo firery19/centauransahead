@@ -10,7 +10,12 @@ bookmarks = {
 		ANT = {
 			history = ANT_1900_DESC
 			ideology = neutrality
-		}
+			
+			ideas = {
+				ANT_ppdebuff
+				ANT_industry_idea
+				ANT_army
+		}}
 		ORI = {
 			history = ORI_1900_DESC
 			ideology = democratic

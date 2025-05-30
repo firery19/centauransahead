@@ -31,10 +31,11 @@ add_political_power = 1
 set_convoys = 10
 
 set_popularities = {
-	democratic = 1
+	democratic = 10
 	communism = 0
-	fascism = 0
-	neutrality = 99
+	fascism = 5
+	neutrality = 85
+#	monarchy = 50
 }
 
 set_politics = {

@@ -97,5 +97,42 @@ Vega: ~36,000,000 (3%)
 Centauri: ~36,000,000 (3%)
 Tucana: ~36,000,000 (3%)
 Vulpa: ~12,000,000 (1%)
+where is corvus?
 
 Ursa: ~140,000,000
+
+#############################################
+HANSSOLOS SUPER EPIC POPULATION RECALCULATION
+#############################################
+
+CENTAURA POPULATION STATISTICS
+All numbers are rough estimates.
+
+1900 (~1.07 BILLION)
+Riaa: ~420,000,000 (34%)
+Antares: ~300,000,000 (23%)
+Columba: ~120,000,000 (9%)
+Aquila: ~108,000,000 (8%)
+Cetus: ~84,000,000 (7%) (12 mil in sc)
+Corvus  66 mil	    5%
+Grusa: ~48,000,000 (4%)
+Vega: ~36,000,000 (3%)
+Centauri: ~36,000,000 (3%)
+Tucana: ~36,000,000 (3%)
+Vulpa: ~12,000,000 (1%)
+
+Ursa: ~140,000,000
+
+1944 (~1.92 BILLION)
+Riaa: ~576,000,000 (30%)
+Antares: ~576,000,000 (30%)
+Columba: ~192,000,000 (10%)
+Aquila: ~153,600,000 (8%)
+Cetus: ~153,600,000 (8%)
+Grusa: ~76,800,000 (4%)
+Vega: ~57,600,000 (3%)
+Centauri: ~57,600,000 (3%)
+Tucana: ~57,600,000 (3%)
+Vulpa: ~19,200,000 (1%)
+
+Ursa: ~224,000,000

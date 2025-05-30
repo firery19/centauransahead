@@ -85,6 +85,8 @@ set_popularities = {
 	communism = 15
 	fascism = 10
 	neutrality = 45
+#	monarchy = 0
+#	ultra_imperialist = 0
 }
 
 set_politics = {
@@ -281,5 +283,48 @@ if = {
 			mid_2_custom_slot = ship_secondaries_1
 			rear_1_custom_slot = ship_heavy_battery_1
 		}
+	}
+1944.1.1 = {
+
+	# Setting up the required world tension
+	add_named_threat = { 
+		threat = 40 
+		name = 1939_bookmark_threat 
+
+
+	# Starting Stats of various kinds for the 39 scenario
+	set_war_support = 0.7
+	add_political_power = 1000
+	add_command_power = 80
+
+	# This represents the completion of the focus Develop Heraeus Research Facilities
+	set_research_slots = 5
+	
+	# Adding Ministers and Ideas
+	add_ideas = {
+
+
+
+		# Laws
+		war_economy
+		extensive_conscription
+
+	}
+	
+	
+	# Slovakia is set up as a subject manually
+	set_autonomy = {
+		target = COV
+		autonomous_state = autonomy_puppet
+	}
+	# Slovakia is set up as a subject manually
+	set_autonomy = {
+		target = RIA
+		autonomous_state = autonomy_puppet
+	}
+	# Slovakia is set up as a subject manually
+	set_autonomy = {
+		target = GRS
+		autonomous_state = autonomy_puppet
 	}
 

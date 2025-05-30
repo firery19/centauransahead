@@ -10,6 +10,7 @@ state={
 	history={
 		owner = AQU
 		add_core_of = AQU
+		add_claim_by = ANT
 		buildings = {
 			arms_factory = 2
 			industrial_complex = 0

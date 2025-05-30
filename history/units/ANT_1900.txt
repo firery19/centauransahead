@@ -102,6 +102,37 @@ division_template = {
 	}
 }
 
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "ANT"
+		}
+		requested_factories = 5
+		progress = 0.01
+		efficiency = 100
+	}}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ANT"
+		}
+		requested_factories = 4
+		progress = 0.01
+		efficiency = 100
+	}}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_0
+			creator = "ANT"
+		}
+		requested_factories = 2
+		progress = 0.01
+		efficiency = 100
+	}}
 units = {
 	division = {
 		division_name = {
@@ -696,4 +727,7 @@ units = {
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.99
 	}
+
+
+
 }

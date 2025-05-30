@@ -31,6 +31,14 @@ ideas = {
 				has_war_support > 0.15
 				if = {
 					limit = {
+						original_tag = ANT
+					}
+					if = {
+						has_completed_focus = ANT_prepare_war_industry
+					}
+				}
+				if = {
+					limit = {
 						original_tag = HUN
 						has_dlc = "Death or Dishonor"
 					}
@@ -114,7 +122,14 @@ ideas = {
 
 			available = {
 				has_war_support > 0.25
-
+				if = {
+					limit = {
+						original_tag = ANT
+					}
+					if = {
+						has_completed_focus = ANT_prepare_war_industry
+					}
+				}
 				if = {
 					limit = {
 						original_tag = HUN

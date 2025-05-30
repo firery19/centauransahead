@@ -687,7 +687,13 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		add_manpower = 12
+		add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
         }
     }
 	
@@ -1109,13 +1115,17 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		39 = { add_resource = {
-		type = oil 
-		amount = 4 }
+		39 = { 
+		add_resource = {
+				type = oil 
+				amount = 4 
+				}
 			}
-			40 = { add_resource = {
-		type = tungsten
-		amount = 6 }
+			40 = { 
+				add_resource = {
+				type = tungsten
+				amount = 6 
+				}
 			}
 		}
     }
@@ -1278,9 +1288,43 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		add_manpower = 12
-        }
-    }
+		7 = {
+				set_building_level = {
+					type = anti_air_building
+					level = 2
+				}
+			}
+			49 = {
+				set_building_level = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			45 = {
+				set_building_level = {
+					type = anti_air_building
+					level = 2
+				}
+			}
+			40 = {
+				set_building_level = {
+					type = anti_air_building
+					level = 2
+				}
+			}
+			if = {
+				limit = {
+				CET = { has_full_control_of_state = 154 }
+				}
+			154 = {
+				set_building_level = {
+					type = anti_air_building
+					level = 2
+					}
+				}
+			}
+		}
+	}
 	
 	focus = {
         id = CET_cache_feed

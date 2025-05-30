@@ -1,0 +1,15 @@
+ideas = {
+    country = {
+        GRS_desert_warriors = {
+            
+            picture = idea_COV_revanchism
+            allowed = { original_tag = GRS }
+            removal_cost = -1
+
+            modifier = {
+                conscription_factor = 0.1
+                training_time_army_factor = -0.1
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+ideas = {
+    country = {
+        RIA_rural_countryside = {
+            
+            picture = idea_COV_revanchism
+            allowed = { original_tag = RIA }
+            removal_cost = -1
+
+            modifier = {
+                conscription_factor = -0.75
+                training_time_army_factor = 0.1
+            }
+        }
+    }
+}

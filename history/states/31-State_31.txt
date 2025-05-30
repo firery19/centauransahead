@@ -11,7 +11,6 @@ state={
 		buildings = {
 			dockyard = 2
 			infrastructure = 3
-			stronghold_network = 1
 			1329 = {
 				naval_base = 4
 			}

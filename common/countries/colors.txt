@@ -90,7 +90,7 @@ CNS = {
 	color = rgb { 166 174 187 }
 	color_ui  = rgb { 136 144 157 }
 }
-HYD = {
+HYR = {
 	color = rgb { 237 177 165 }
 	color_ui  = rgb { 207 147 135 }
 }

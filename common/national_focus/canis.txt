@@ -8,16 +8,39 @@ focus_tree = {
             tag = CNS
         }
     }
-    continuous_focus_position = { x = 25 y = 680 }
-
-    focus = {
-        id = CNS_placeholder
+    continuous_focus_position = { x = 25 y = 1000 }
+	
+	shared_focus = army_effort
+	shared_focus = naval_effort
+	shared_focus = aviation_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+	
+	focus = {
+        id = CNS_cooperation
         icon = GFX_goal_generic_territory_or_war
-        x = 10
+        x = 30
         y = 0
         cost = 5
         available = {
-            
+         has_war = yes 
+        }
+        completion_reward = {
+            add_stability = 0.05
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+    focus = {
+        id = CNS_recovery_from_war
+        icon = GFX_goal_generic_territory_or_war
+        x = 36
+        y = 0
+        cost = 5
+        available = {
+            NOT = { has_war = yes }
         }
         completion_reward = {
             add_stability = 0.05

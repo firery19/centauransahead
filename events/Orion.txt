@@ -139,6 +139,13 @@ country_event = {
 		add_ideas = ORS_TheHard1900s 
 		complete_national_focus = ORS_TheHard1900s
 		remove_ideas = {ORS_EconomicBoom ORS_EconomicBoom2}
+		hidden_effect = {
+			ORI = {
+				country_event = {
+					id = orion.8 days = 14
+				}
+			}
+		}
 	}	
 }
 
@@ -162,6 +169,21 @@ country_event = {
 		complete_national_focus = ORS_ProvideSupportToLocalBusinesses
 	}
 	
+}
+
+country_event = {
+	id = orion.8
+	title = orion.8.t
+	desc = orion.8.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = orion.8.a 
+		ai_chance = {factor = 50}
+		add_ideas = ORS_WorkerStrikes
+	}
 }
 
 

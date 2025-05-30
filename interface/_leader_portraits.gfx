@@ -81,5 +81,11 @@ spriteTypes = {
 		texturefile = "gfx/leaders/AQU/portrait_AQU_ewan_fouwler.dds"
 	}
 	
+	# vega
+	
+	spriteType = {
+		name = "GFX_portrait_VEG_alina_verda"
+		texturefile = "gfx/leaders/VEG/portrait_VEG_alina_verda.dds"
+	}
 
 }

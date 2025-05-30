@@ -16,10 +16,6 @@ state={
 			industrial_complex = 6
 			arms_factory = 2
 			dockyard = 3
-			6036 = {
-				supply_node = 1
-
-			}
 			1261 = {
 				naval_base = 1
 

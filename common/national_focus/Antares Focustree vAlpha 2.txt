@@ -1,6 +1,6 @@
 focus_tree = {
 	id = antares-focustree-valpha
-        continuous_focus_position = { x = -30 y = 20 }
+        continuous_focus_position = { x = 60 y = 20 }
 	country = {
 		factor = 0
 		modifier = {
@@ -938,29 +938,30 @@ focus = {
     y = 6
     cost = 5
     search_filters = { FOCUS_FILTER_INDUSTRY }
-    prerequisite = {
-        OR = {
-            focus = ANT_clean_cities
-            focus = ANT_deregulate_industrial_sector
-        }
-    }
+    prerequisite = { focus = ANT_clean_cities focus = ANT_deregulate_industrial_sector }
 	available = {
   	 NOT = {
-         has_idea = ANT_paying_for_funding_idea }
+         has_idea = ANT_paying_for_funding_idea 
+		 }
     }
+	
     ai_will_do = { factor = 2 }
+	
     completion_reward = {
-swap_ideas = {
-    remove_idea = ANT_industry_ideac2
-    add_idea = ANT_industry_ideac3
-}
-           	     add_timed_idea = {
-            	     idea = ANT_construction_boost_idea
-            	     days = 180}
-           	     add_timed_idea = {
-            	     idea = ANT_paying_for_funding_idea
-            	     days = 70}
-        add_stability = -0.05
+		swap_ideas = {
+			remove_idea = ANT_industry_ideac2
+			add_idea = ANT_industry_ideac3
+			}
+			add_timed_idea = {
+				idea = ANT_construction_boost_idea
+				days = 180
+				}
+				add_timed_idea = {
+				idea = ANT_paying_for_funding_idea
+				days = 70
+				}
+				add_stability = -0.05
+				
         103 = {
 
             add_manpower = 2000000

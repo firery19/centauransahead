@@ -1,4 +1,4 @@
-capital = 5
+capital = 155
 
 oob = "URS_1900"
 

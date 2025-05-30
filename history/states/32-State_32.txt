@@ -15,7 +15,6 @@ state={
 		add_claim_by = GRS
 		buildings = {
 			infrastructure = 2
-			stronghold_network = 1
 		}
 		victory_points = {
 			1713 15

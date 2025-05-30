@@ -1,4 +1,4 @@
-capital = 16
+capital = 78
 
 oob = "CTA_1900"
 

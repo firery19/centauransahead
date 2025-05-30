@@ -22,7 +22,7 @@ state={
 		
 		}
 		victory_points = {
-			4538 40
+			4117 40
 		}
 		1944.1.1.12 = {
 			owner = GRS

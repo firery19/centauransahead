@@ -10,6 +10,12 @@ focus_tree = {
 		}
 	}
 	
+	shared_focus = army_effort
+	shared_focus = naval_effort
+	shared_focus = aviation_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+	
 	default = no
 	
 	continuous_focus_position = { x = 50 y = 1000 }
@@ -17,8 +23,7 @@ focus_tree = {
 	focus = {
 		id = HYS_seek_help_test_1
 		icon = GFX_goal_demand_sudetenland
-		x = 25
-		y = 0
+		x = 30
 		cost = 0
 
 		completion_reward = {

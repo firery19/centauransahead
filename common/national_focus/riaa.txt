@@ -8,7 +8,13 @@ focus_tree = {
             tag = RIA
         }
     }
-    continuous_focus_position = { x = 25 y = 680 }
+    continuous_focus_position = { x = 25 y = 1000 }
+	
+	shared_focus = army_effort
+	shared_focus = naval_effort
+	shared_focus = aviation_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
 
     focus = {
         id = RIA_the_northern_conqueror

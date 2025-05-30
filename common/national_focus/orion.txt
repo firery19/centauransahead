@@ -1687,8 +1687,8 @@ focus_tree = {
 			
 			completion_reward = {
 				swap_ideas = {
-						remove_idea = ORS_TheHard1900s1C
-						add_idea = ORS_TheHard1900s2C
+					remove_idea = ORS_TheHard1900s1C
+					add_idea = ORS_TheHard1900s2C
 				}
 				add_stability = -0.15
 			}
@@ -1699,7 +1699,7 @@ focus_tree = {
 		}
 		
 		focus = {
-			id = ORS_TemporarilyCeaseWelfarePayments
+			id = ORS_RedirectGovernmentFunds
 			icon = GFX_focus_DEN_limited_regulations
 			x = 68
 			y = 3
@@ -1726,32 +1726,134 @@ focus_tree = {
 		}
 		
 		focus = {
-			id = ORS_SeizeCompanyFunds
+			id = ORS_SeizeCompanyAssets
 			icon = GFX_focus_GER_autarky_ambitions
 			x = 68
 			y = 4
 			cost = 5
 			available = {
-				
+					
 			}
 			
 			prerequisite = {
-				focus = ORS_TemporarilyCeaseWelfarePayments
+				focus = ORS_RedirectGovernmentFunds
 			}
-			
 			completion_reward = {
-				add_timed_idea = {idea = ORS_SeizedCompanyFunds time = 360}
+				add_timed_idea = {idea = ORS_SeizedCompanyAssets days = 360}
 				add_stability = -0.15
+				139 = {
+					limit = {
+							free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}	
+					add_extra_state_shared_building_slots = 3
+					
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
 			}
-			
 			ai_will_do = {
 				factor = 5
 			}
 		}
 		
-
+		focus = {
+			id = ORS_CompromiseWithWorkers
+			icon = GFX_focus_GER_autarky_ambitions
+			x = 70
+			y = 3
+			cost = 5
+			available = {
+					
+			}
+			
+			prerequisite = {
+				focus = ORS_ProvideSupportToSmallBusinesses
+			}
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = ORS_WorkerStrikes
+					add_idea = ORS_WorkerStrikes1
+				}
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
 		
-    }
+		focus = {
+			id = ORS_CompromiseWithWorkers
+			icon = GFX_focus_GER_autarky_ambitions
+			x = 70
+			y = 3
+			cost = 5
+			available = {
+					
+			}
+			
+			prerequisite = {
+				focus = ORS_ProvideSupportToSmallBusinesses
+			}
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = ORS_WorkerStrikes
+					add_idea = ORS_WorkerStrikes1
+				}
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		focus = {
+			id = ORS_InvestInUrbanInfrastructure
+			icon = GFX_focus_GER_autarky_ambitions
+			x = 70
+			y = 4
+			cost = 5
+			available = {
+					
+			}
+			
+			prerequisite = {
+				focus = ORS_CompromiseWithWorkers
+			}
+			completion_reward = {
+				remove_ideas = ORS_WorkerStrikes1
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_BuildMoreSchools
+			icon = GFX_focus_GER_autarky_ambitions
+			x = 72
+			y = 3
+			cost = 5
+			available = {
+					
+			}
+			
+			prerequisite = {
+				focus = ORS_ProvideSupportToSmallBusinesses
+			}
+			completion_reward = {
+				add_ideas =  ORS_ExpandedEducationSector
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+}
 	
 	
 	

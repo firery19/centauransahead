@@ -13,7 +13,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1922
+		start_year = 1890
 		
 		folder = {
 			name = naval_folder
@@ -25,7 +25,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = CET
 			}
 		}
 		
@@ -52,7 +52,7 @@ technologies = {
 		
 		research_cost = 2
 		
-		start_year = 1936
+		start_year = 1900
 
 		folder = {
 			name = naval_folder
@@ -64,7 +64,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = CET
 			}
 		}
 		
@@ -90,7 +90,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 1904
 		
 		folder = {
 			name = naval_folder
@@ -102,7 +102,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = CET
 			}
 		}
 		
@@ -123,7 +123,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1944
+		start_year = 1908
 		
 		folder = {
 			name = naval_folder
@@ -135,7 +135,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = CET
 			}
 		}
 		
@@ -174,7 +174,7 @@ technologies = {
 			}
 		}
 
-		start_year = 1922
+		start_year = 1890
 		
 		folder = {
 			name = naval_folder
@@ -186,12 +186,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = ORI
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = ANT
 			}
 		}
 		
@@ -223,7 +223,7 @@ technologies = {
 		
 		research_cost = 2
 		
-		start_year = 1936
+		start_year = 1900
 		
 		folder = {
 			name = naval_folder
@@ -235,12 +235,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = ORI
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = ANT
 			}
 		}
 		
@@ -271,7 +271,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 1904
 		
 		folder = {
 			name = naval_folder
@@ -283,12 +283,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = ORI
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = ANT
 			}
 		}
 		
@@ -315,7 +315,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1944
+		start_year = 1908
 		
 		folder = {
 			name = naval_folder
@@ -327,12 +327,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = ORI
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = ANT
 			}
 		}
 		
@@ -365,7 +365,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1922
+		start_year = 1890
 		
 		folder = {
 			name = naval_folder
@@ -404,7 +404,7 @@ technologies = {
 		
 		research_cost = 2
 		
-		start_year = 1936
+		start_year = 1900
 		
 		folder = {
 			name = naval_folder
@@ -442,7 +442,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 1904
 		
 		folder = {
 			name = naval_folder
@@ -476,7 +476,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1944
+		start_year = 1908
 		
 		folder = {
 			name = naval_folder
@@ -513,7 +513,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1922
+		start_year = 1890
 		
 		folder = {
 			name = naval_folder
@@ -546,7 +546,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 1904
 		
 		folder = {
 			name = naval_folder
@@ -579,7 +579,7 @@ technologies = {
 		
 		
 		research_cost = 1.5
-		start_year = 1922
+		start_year = 1890
 		
 		on_research_complete = {
 			custom_effect_tooltip = {
@@ -623,7 +623,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1936
+		start_year = 1900
 		
 		folder = {
 			name = naval_folder
@@ -659,7 +659,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1940
+		start_year = 1904
 		
 		folder = {
 			name = naval_folder
@@ -691,7 +691,7 @@ technologies = {
 		#}
 		
 		research_cost = 2
-		start_year = 1944
+		start_year = 1908
 		
 		folder = {
 			name = naval_folder
@@ -734,7 +734,7 @@ technologies = {
 		#}
 		
 		research_cost = 2
-		start_year = 1936
+		start_year = 1900
 		
 		#folder = {
 			#name = naval_folder
@@ -773,7 +773,7 @@ technologies = {
 		research_cost = 2
 
 		is_special_project_tech = yes
-		start_year = 1944
+		start_year = 1908
 		
 		folder = {
 			name = naval_folder
@@ -808,7 +808,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1.5
-		start_year = 1922
+		start_year = 1890
 		
 		folder = {
 			name = naval_folder
@@ -825,17 +825,17 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = ORI
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = ANT
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = CET
 			}
 		}
 		
@@ -865,7 +865,7 @@ technologies = {
 		show_equipment_icon = yes
 		
 		research_cost = 2
-		start_year = 1940
+		start_year = 1904
 		
 		folder = {
 			name = naval_folder
@@ -882,46 +882,29 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = ORI
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = ANT
 			}
 
 			modifier = {
 				factor = 50
-				tag = JAP
+				tag = ANT
 				OR = {
-					has_war_with = USA
-					CHI = {  
-						OR = { 
-							has_capitulated = yes 
-							exists = no
-		                    is_subject_of = JAP
-						}
-					}
+					has_war_with = ORI
 				}
 			}
 			
 			modifier = {
 				factor = 5
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = CET
+					tag = ORI
 				}
-				has_war_with = GER
-			}
-
-			modifier = {
-				factor = 10
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-				has_war_with = GER
-				GER = { has_war_with = SOV }
+				has_war_with = ANT
 			}
 		}
 		
@@ -939,7 +922,7 @@ technologies = {
 		naval_invasion_capacity = 100
 
 		research_cost = 2
-		start_year = 1944
+		start_year = 1908
 		folder = {
 			name = naval_folder
 			position = { x = 0 y = 19 }
@@ -955,17 +938,17 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = ORI
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = ANT
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = CET
 			}
 		}
 		
@@ -989,7 +972,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1922
+		start_year = 1890
 		
 		folder = {
 			name = naval_folder
@@ -1001,12 +984,12 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = ORI
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = ANT
 			}
 		}
 		
@@ -1030,7 +1013,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1936
+		start_year = 1900
 		
 		folder = {
 			name = naval_folder
@@ -1042,12 +1025,12 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = ORI
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = ANT
 			}
 		}
 		
@@ -1071,7 +1054,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1940
+		start_year = 1904
 
 		on_research_complete = {
 			if = { 
@@ -1093,12 +1076,12 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = ORI
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = ANT
 			}
 		}
 		
@@ -1119,7 +1102,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1944
+		start_year = 1908
 		
 		on_research_complete = {
 			if = {
@@ -1141,12 +1124,12 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = ORI
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = ANT
 			}
 		}
 		
@@ -1182,7 +1165,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1922
+		start_year = 1890
 		
 		folder = {
 			name = naval_folder
@@ -1194,7 +1177,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = GER
+				tag = ANT
 			}
 		}
 		
@@ -1231,7 +1214,7 @@ technologies = {
 		}
 				
 		research_cost = 2
-		start_year = 1936
+		start_year = 1900
 
 		folder = {
 			name = naval_folder
@@ -1243,7 +1226,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = GER
+				tag = ANT
 			}
 		}
 		
@@ -1268,7 +1251,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1940
+		start_year = 1904
 		
 		folder = {
 			name = naval_folder
@@ -1280,7 +1263,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = GER
+				tag = ANT
 			}
 		}
 		
@@ -1300,7 +1283,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1944
+		start_year = 1908
 		
 		folder = {
 			name = naval_folder
@@ -1312,7 +1295,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = GER
+				tag = ANT
 			}
 		}
 		
@@ -1326,7 +1309,7 @@ technologies = {
 
 	
 
-	######## JAPAN FOCUS TREE UNLOCK ########
+	######## ANTAN FOCUS TREE UNLOCK ########
 	torpedo_cruiser = {
 
 		enable_equipments = { 
@@ -1334,7 +1317,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1900
 
 		# only from focus!!! #####
 		allow = {
@@ -1352,7 +1335,7 @@ technologies = {
 		#}
 
 		#research_cost = 1
-		#start_year = 1936
+		#start_year = 1900
 
 		#allow = {
 			#always = no

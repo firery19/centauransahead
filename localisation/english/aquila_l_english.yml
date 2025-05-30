@@ -33,6 +33,10 @@
  AQU_iron_army_desc:0 "The “Iron Army” nickname was given to the Aquilans when in the early 1800’s, they held off a major Antarean assault from the south. In the aftermath of that war, the Aquilans were able to retain their borders with minimal losses."
  AQU_lucas_silva:0 "King Lucas Silva"
  AQU_lucas_silva_desc:0 "The King of Aquila, although he does not retain any power, he is a good figurehead for our country."
+ AQU_outdated_technology:0 "Outdated Technology"
+ AQU_outdated_technology_desc:0 "Due to the lack of any major wars, Aquila has neglected its technological department in weapons due to lack of modern combat experiences."
+ AQU_rusting_army:0 "Rusting Army"
+ AQU_rusting_army_desc:0 "The Iron Army of Aquila has started fading away due to its army not catching up to modern warfare."
  ######
  # misc
  ######

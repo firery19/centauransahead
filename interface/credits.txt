@@ -2,13 +2,11 @@
 
 # Discord Usernames
 
-# LEAD DEV
-(de facto)
-Firery (Map Maker)
-
 # DEVS
+Firery (Map Maker)
 Teemodahunta (Proud Hydrusite warrior) (Orion Dev)
-.americanidiot (American Idiot) (Tech Dev)
+memji (ursa dev)
+hanssolo (antares dev)
 
 # ARTIST GFX
 crack_addict. (Total ant death) (GFX)

@@ -552,7 +552,7 @@ ideas = {
 				
 				}
 			}
-			ORS_SeizedCompanyFunds = {
+			ORS_SeizedCompanyAssets = {
 				picture = can_send_in_the_zombies
 			
 				allowed = {
@@ -567,6 +567,60 @@ ideas = {
 					consumer_goods_factor = -0.25
 				}
 			}
+			
+			ORS_WorkerStrikes = {
+				picture = can_send_in_the_zombies
+			
+				allowed = {
+					tag = ORI
+				}
+			
+				available = {}
+			
+				removal_cost = -1
+				
+				modifier = {
+					consumer_goods_factor = 0.25
+					production_speed_buildings_factor = -0.2
+					stability_factor = -0.15
+				}
+			}
+			
+			ORS_WorkerStrikes1 = {
+				picture = can_send_in_the_zombies
+			
+				allowed = {
+					tag = ORI
+				}
+			
+				available = {}
+			
+				removal_cost = -1
+				
+				modifier = {
+					consumer_goods_factor = 0.15
+					production_speed_buildings_factor = -0.15
+					stability_factor = -0.10
+				}
+			} 
+
+			ORS_ExpandedEducationSector = {
+				picture = can_send_in_the_zombies
+			
+				allowed = {
+					tag = ORI
+				}
+			
+				available = {}
+			
+				removal_cost = -1
+				
+				modifier = {
+					consumer_goods_factor = 0.1
+					research_speed_factor = 0.15
+				}
+			}  				
+
 			
 		}	
 	}

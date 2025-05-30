@@ -200,7 +200,7 @@ units = {
 		division_name = {
 			is_name_ordered = no
 		}
-		location = 1493
+		location = 4645
 		division_template = "Home Guard Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.6
@@ -210,7 +210,7 @@ units = {
 		division_name = {
 			is_name_ordered = no
 		}
-		location = 3017
+		location = 4657
 		division_template = "Home Guard Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.6
@@ -220,7 +220,7 @@ units = {
 		division_name = {
 			is_name_ordered = no
 		}
-		location = 4584
+		location = 293
 		division_template = "Home Guard Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.6
@@ -240,7 +240,7 @@ units = {
 		division_name = {
 			is_name_ordered = no
 		}
-		location = 580
+		location = 2450
 		division_template = "Home Guard Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.6
@@ -250,7 +250,7 @@ units = {
 		division_name = {
 			is_name_ordered = no
 		}
-		location = 4682
+		location = 4730
 		division_template = "Home Guard Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.6
@@ -260,57 +260,7 @@ units = {
 		division_name = {
 			is_name_ordered = no
 		}
-		location = 4720
-		division_template = "Home Guard Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-	
-	division = {
-		division_name = {
-			is_name_ordered = no
-		}
-		location = 4692
-		division_template = "Home Guard Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-	
-	division = {
-		division_name = {
-			is_name_ordered = no
-		}
-		location = 4681
-		division_template = "Home Guard Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-	
-	division = {
-		division_name = {
-			is_name_ordered = no
-		}
-		location = 1085
-		division_template = "Home Guard Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-	
-	division = {
-		division_name = {
-			is_name_ordered = no
-		}
-		location = 2644
-		division_template = "Home Guard Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
-	}
-	
-	division = {
-		division_name = {
-			is_name_ordered = no
-		}
-		location = 1438
+		location = 1101
 		division_template = "Home Guard Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.6

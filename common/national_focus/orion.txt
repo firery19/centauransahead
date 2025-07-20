@@ -8,6 +8,7 @@ focus_tree = {
             tag = ORI
         }
     }
+	shared_focus = dc_focus_start
     continuous_focus_position = { x = 25 y = 680 }
 
     focus = {

@@ -73,6 +73,7 @@ URS_preGreaseWars_Decisions = {
 		}
 
 		complete_effect = {
+			add_command_power = -10
 			hidden_effect = {
 				set_variable = { URS_randomterrorism_timer_lps_days = days_mission_timeout@URS_randomterrorism_timer_lps }
 			}
@@ -128,6 +129,7 @@ URS_preGreaseWars_Decisions = {
 		}
 
 		complete_effect = {
+			add_command_power = -10
 			hidden_effect = {
 				set_variable = { URS_randomterrorism_timer_cns_days = days_mission_timeout@URS_randomterrorism_timer_cns }
 			}

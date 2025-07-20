@@ -2,6 +2,7 @@
  # political #
  AQU_the_aquilan_spirit:0 "The Aquilan Spirit"
  AQU_the_aquilan_spirit_desc:0 "The southern democracy of Centaura, Aquila will stand strong against the world."
+
  ##########
  # industry
  ##########
@@ -9,7 +10,37 @@
  ######
  # army
  ######
- 
+ AQU_civil_guard:0 "Civil Guard Management"
+ AQU_civil_guard_desc:0 "The Civil Guard supports our troops during wartime in urban areas. Improvements could be made."
+ AQU_raise_penal_battalions:0 "Penal Battalions"
+ AQU_raise_penal_battalions_desc:0 "Our country is at war. Criminals such as murderers and theives will be allowed to enlist in exchange for a small glimmer of hope of freedom."
+ AQU_standardise_the_cg:0 "Standardising the Civil Guard"
+ AQU_standardise_the_cg_desc:0 "The first step to improving the civil guard is to make them more organised in battle."
+ AQU_train_the_cg:0 "Train Civil Guard"
+ AQU_train_the_cg_desc:0 "The Civil Guard is an irregular militia that holds no training. They cannot be expected to hold their own in battle, we must train them."
+ AQU_distribute_modern_weapons:0 "Distribute Modern Weapons"
+ AQU_distribute_modern_weapons_desc:0 "Modern weapons are required to bring their firepower up to standard."
+ AQU_transform_the_cg:0 "Tranforming The Civil Guard"
+ AQU_transform_the_cg_desc:0 "The Civil Guard is no longer a militia force that breaks without support, but a force that can fight independently of army units support."
+ AQU_increase_the_cg:0 "Increasing Civil Guard Numbers"
+ AQU_increase_the_cg_desc:0 "Victory through numbers"
+ AQU_make_more_weapons:0 "Make More Weapons"
+ AQU_make_more_weapons_desc:0 "We need to support our Civil Guard with equipment."
+ AQU_improve_cohesiveness:0 "Improve Cohesiveness"
+ AQU_improve_cohesiveness_desc:0 "A massive militia needs to know how to organise and defend properly."
+ AQU_strength_in_numbers:0 "Strength In Numbers"
+ AQU_strength_in_numbers_desc:0 "The Civil Guard shall be present any and everywhere the enemy attempts to take over through our presence in numbers."
+ # fort
+ AQU_fort_management:0 "Fort Management"
+ AQU_fort_management_desc:0 "Our fortifications can keep us safe from any invaders. We should keep them up to standard."
+ AQU_south_fort:0 "Southern Management"
+ AQU_south_fort_desc:0 "The southern borders of Antares is vast and important to defend from any future attacks. We should maintain a degree of fortification here."
+ AQU_west_fort:0 "Western Management"
+ AQU_west_fort_desc:0 "The western borders of Cetus is something that we should not worry a great deal."
+ AQU_east_fort:0 "Eastern Management"
+ AQU_east_fort_desc:0 "The eastern borders of Vega should be easy to defend with the natural terrain advantage, however forts should be maintained just in case."
+ AQU_north_fort:0 "Northern Management"
+ AQU_north_fort_desc:0 "The northern border of Columba shouldn't worry us much, since both sides have no reason to attack."
  ######
  # navy
  ######
@@ -17,7 +48,14 @@
  ##########
  # research
  ##########
- 
+ AQU_army_modernisation:0 "Army Modernisation"
+ AQU_army_modernisation_desc:0 "An impossible task to argue with the high command to modernise it!"
+ AQU_new_thinking:0 "Bright New Officers"
+ AQU_new_thinking_desc:0 "The new officers of this generation are the key to keeping our army up to standards."
+ AQU_innovate:0 "Innovating Tactics"
+ AQU_innovate_desc:0 "The officers will work on new tactics to overcome any obstacle."
+ AQU_observe_the_canis_war:0 "Observe The Canis War"
+ AQU_observe_the_canis_war_desc:0 "Across the Libran Ocean, a conflict has broken out in the region of Canis. We should keep an eye on the modern battle tactics both sides use by sending "journalists"."
  ########
  # events
  ########

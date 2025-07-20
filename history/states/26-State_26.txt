@@ -8,14 +8,11 @@ state={
 	history = {
 		owner = VEG
 		add_core_of = VEG
-		add_core_of = GRS
+		add_claim_by = GRS
 		buildings = {
 			arms_factory = 3
 			industrial_complex = 5
 			infrastructure = 4
-			4704 = {
-				supply_node = 1
-			}
 		
 		}
 		victory_points = {

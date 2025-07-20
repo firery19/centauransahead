@@ -5,7 +5,6 @@
 # DEVS
 Firery (Map Maker)
 Teemodahunta (Proud Hydrusite warrior) (Orion Dev)
-memji (ursa dev)
 hanssolo (antares dev)
 
 # ARTIST GFX
@@ -21,6 +20,7 @@ RomanRoman#5124 (sl12223)
 # FORMER DEVS
 striped_ (Striped) (Cetus Dev)
 ganix101 (Ganix101) (???)
+memji (ursa dev)
 
 # Along with the devs of 
 # Hearts of Iron IV,

@@ -15,6 +15,15 @@ state={
 		victory_points = {
 			1441 30
 		}
+		victory_points = {
+		3627 5
+		}
+		victory_points = {
+		248 5
+		}
+		victory_points = {
+		3666 5
+		}
 		1944.1.1.12 = {
 			owner = RIA
 			controller = RIA

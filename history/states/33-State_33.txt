@@ -18,6 +18,9 @@ state={
 		victory_points = {
 			2138 5 
 		}
+		victory_points = {
+		2023 25
+		}
 		1944.1.1.12 = {
 			owner = ANT
 			controller = ANT

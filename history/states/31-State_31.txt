@@ -34,7 +34,7 @@ state={
 			}
 		}
 		victory_points = {
-			1329 16
+			1329 30
 		}
 		1944.1.1.12 = {
 			owner = ANT

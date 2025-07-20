@@ -20,7 +20,7 @@ state={
 			4754 13 
 		}
 		victory_points = {
-			3295 25 
+			3295 30
 		}
 		1944.1.1.12 = {
 			owner = ANT

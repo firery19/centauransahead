@@ -2733,6 +2733,7 @@ focus_tree = {
 						}
 					}
 					custom_effect_tooltip = cetus_fort_whitemouth
+					46 = {
 					hidden_effect = {
 						add_building_construction = {
 							type = bunker
@@ -2756,6 +2757,7 @@ focus_tree = {
 				}
 			}
 		}
+	}
 	
 	focus = {
         id = CET_st_kirks_defence

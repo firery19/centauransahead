@@ -85,6 +85,8 @@ URS_economy_fixing_trade_partners:0 "Looking Towards Centaura"
 URS_economy_fixing_trade_partners_desc:0 ""
 URS_economy_fixing_wartime_pwa:0 "Wartime Public Works"
 URS_economy_fixing_wartime_pwa_desc:0 ""
+URS_alcor_trenching:0 "Securing Our Most Vital Port"
+URS_alcor_trenching_desc:0 ""
 #Tooltip
 URS_resistance_policy_tooltip:0 "§YWe will continue to stamp out resistance across Canis and Lepus which may result in a weaker open rebellion force!§!"
 URS_extraction_policy_tooltip:0 "§YThe situation in Canis and Lepus is rapidly spiraling out of control. We must extract as much as we can from the land to build a stronger force to face open rebellion!§!"
@@ -94,6 +96,7 @@ URS_lepus_destruction_tooltip:0 "§YUpon the start of an open rebellion, Lepus w
 URS_resistance_sweep_units_tooltip:0 "§Y6 divisions of 12 width irregular infantry divisions will be spawned across Lepus and Canis!§!"
 URS_prevent_economic_collapse_tooltip:0 "§RCompleting this focus is necessary to avoid economic collapse when at war!§!"
 grease_wars_prelude_tooltip:0 "§RWe are heading towards total war with Hydrus, Lepus, and the Orion Republic.§!"
+URS_alcor_trenching_tooltip:0 "\n§RLosing control of Alcor will result in defeat against our enemies!§!"
 #Ideas
 URS_domestic_unrest:0 "Domestic Unrest"
 URS_domestic_unrest_desc:0 "Leaked reports of our heavy handed rule in Lepus and Canis and the countinuous flow of our boys returning back home in coffins have caused massive outcry from the public."
@@ -174,4 +177,3 @@ URS_domestic_unrest_grease_wars:0 "Widespread War Opposition"
  urs.16.t:0 "Chaos on Ursa"
  urs.16.d:0 ""
  urs.16.a:0 "We cannot afford distractions right now!"
-

@@ -9,7 +9,41 @@ focus_tree = {
         }
     }
     continuous_focus_position = { x = 2025 y = 1000 } 
-
+	
+	focus = { 
+        id = URS_aircraft_pro
+        icon = GFX_focus_generic_naval_discipline 
+        x = 28
+        y = 0
+        cost = 1
+        completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				name = bomber_bonus
+				ahead_reduction = 8
+				uses = 1
+				category = light_air
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				name = bomber_bonus
+				ahead_reduction = 7
+				uses = 1
+				category = medium_air
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				name = bomber_bonus
+				ahead_reduction = 6
+				uses = 1
+				category = heavy_air
+			}
+        }
+        ai_will_do = {
+            factor = 20
+        }
+    }
+	
     focus = { 
         id = URS_navy_tree_start  
         icon = GFX_focus_generic_naval_discipline 
@@ -935,6 +969,37 @@ focus_tree = {
         prerequisite = { focus = URS_economy_fixing }
         completion_reward = {
             add_stability = 0.1
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    focus = {
+        id = URS_alcor_trenching 
+        icon = GFX_goal_generic_military_sphere
+        x = 9
+        y = 6
+        cost = 4
+        prerequisite = { focus = URS_prelude_grease_war }
+        completion_reward = {
+            URS = {
+                add_state_core = 117
+            }
+            IF = {
+                limit = {
+                   117 = {
+                        has_dynamic_modifier = {
+                            modifier = URS_colonial_resistance
+                        }
+                    }
+                }
+                117 = {
+                    remove_dynamic_modifier = {
+                        modifier = URS_colonial_resistance
+                    }
+                }
+            }
+            custom_effect_tooltip = URS_alcor_trenching_tooltip
         }
         ai_will_do = {
             factor = 5

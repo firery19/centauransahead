@@ -60,7 +60,7 @@ ideas = {
             name = AQU_repower_king
             
             picture = CET_towards_greater_cetus
-            allowed = { original_tag = CET }
+            allowed = { original_tag = AQU }
             removal_cost = -1
 
             modifier = {
@@ -72,10 +72,21 @@ ideas = {
             name = AQU_deport_democracy
             
             picture = CET_towards_greater_cetus
-            allowed = { original_tag = CET }
+            allowed = { original_tag = AQU }
             removal_cost = -1
 
             modifier = {
                 democratic_drift = -0.6
+            }
+        }
+		
+		AQU_deport_democracy_idea = {
+            
+            picture = CET_towards_greater_cetus
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+                conscription_factor = 0.05
             }
         }

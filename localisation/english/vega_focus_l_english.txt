@@ -1,1 +1,3 @@
-﻿
+﻿l_english:
+ VEG_alina_verda:0 "Alina Verda"
+

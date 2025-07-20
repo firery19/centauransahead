@@ -938,7 +938,15 @@ focus = {
     y = 6
     cost = 5
     search_filters = { FOCUS_FILTER_INDUSTRY }
+<<<<<<< Updated upstream
     prerequisite = { focus = ANT_clean_cities focus = ANT_deregulate_industrial_sector }
+=======
+    prerequisite = {
+            focus = ANT_clean_cities
+            focus = ANT_deregulate_industrial_sector
+       
+    }
+>>>>>>> Stashed changes
 	available = {
   	 NOT = {
          has_idea = ANT_paying_for_funding_idea 
@@ -1688,7 +1696,8 @@ focus = {
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+country_event = { id = ANT.1 days = 1 random_days = 2 }
+country_event = { id = ANT.2 days = 3 random_days = 10 }
 	}
 }
 
@@ -2354,7 +2363,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_}
         mutually_exclusive = { focus = ANT_ }
-	ai_will_do = { factor = 1 }
+	ai_will_do = { factor = 0.01 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
 

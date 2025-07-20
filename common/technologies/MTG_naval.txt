@@ -30,11 +30,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = sonar
-			research_cost_coeff = 1
-		}
-
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
@@ -53,7 +48,7 @@ technologies = {
 
 			modifier = {
 				factor = 4
-				tag = ENG
+				tag = ORI
 			}
 		}
 
@@ -63,7 +58,6 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
 	basic_ship_hull_light = {
@@ -110,7 +104,6 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
 	improved_ship_hull_light = {
@@ -129,7 +122,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1904
+		start_year = 1908
 
 		folder = {
 			name = mtgnavalfolder
@@ -142,9 +135,9 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = ORI
+					tag = CET
+					tag = ANT
 				}
 			}
 		}
@@ -155,7 +148,6 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
 	advanced_ship_hull_light = {
@@ -169,7 +161,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1908
+		start_year = 1916
 
 		folder = {
 			name = mtgnavalfolder
@@ -182,9 +174,9 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = ORI
+					tag = CET
+					tag = ANT
 				}
 			}
 		}
@@ -195,7 +187,6 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
 	smoke_generator = {
@@ -204,7 +195,7 @@ technologies = {
 
 		research_cost = 0.75
 
-		start_year = 1890
+		start_year = 1900
 
 		folder = {
 			name = mtgnavalfolder
@@ -212,16 +203,11 @@ technologies = {
 		}
 
 		ai_will_do = {
-			base = 2
+			factor = 8
 
 			modifier = {
-				has_navy_size = { size < 10 }
-				factor = 0.1
-			}
-
-			modifier = {
-				factor = 4
-				tag = ENG
+				factor = 2
+				tag = ORI
 			}
 		}
 
@@ -232,7 +218,6 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
  ##  #  # ### ###      ## #  # ###  #   #  ##  ###  ### #  # ###
@@ -262,7 +247,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.5
 
-		start_year = 1930
+		start_year = 1920
 
 		folder = {
 			name = mtgnavalfolder
@@ -274,7 +259,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				has_war_with = GER
+				has_war_with = ANT
 			}
 			modifier = {
 				factor = 2
@@ -290,7 +275,6 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 	improved_depth_charges = {
 
@@ -310,7 +294,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.5
 
-		start_year = 1950
+		start_year = 1930
 
 		folder = {
 			name = mtgnavalfolder
@@ -322,7 +306,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				has_war_with = GER
+				has_war_with = ANT
 			}
 			modifier = {
 				factor = 2
@@ -338,7 +322,6 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 	advanced_depth_charges = {
 
@@ -357,7 +340,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.5
 
-		start_year = 1955
+		start_year = 1940
 
 		folder = {
 			name = mtgnavalfolder
@@ -369,7 +352,7 @@ technologies = {
 
 			modifier = {
 				factor = 4
-				has_war_with = GER
+				has_war_with = ANT
 			}
 			modifier = {
 				factor = 2
@@ -385,7 +368,6 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 	modern_depth_charges = {
 
@@ -401,7 +383,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.5
 
-		start_year = 1962
+		start_year = 1950
 
 		folder = {
 			name = mtgnavalfolder
@@ -429,7 +411,6 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 	sonar = {
 		enable_equipment_modules = {
@@ -456,7 +437,7 @@ technologies = {
 
 			modifier = {
 				factor = 4
-				has_war_with = GER
+				has_war_with = URS
 			}
 			modifier = {
 				factor = 2
@@ -472,7 +453,6 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
 	improved_sonar = {
@@ -484,7 +464,7 @@ technologies = {
 		}
 		research_cost = 1
 
-		start_year = 1952
+		start_year = 1940
 
 		folder = {
 			name = mtgnavalfolder
@@ -496,7 +476,7 @@ technologies = {
 
 			modifier = {
 				factor = 4
-				has_war_with = GER
+				has_war_with = URS
 			}
 			modifier = {
 				factor = 2
@@ -512,7 +492,6 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
  ##  ###  #  # ###  ## ### ###   ##
@@ -537,21 +516,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = improved_airplane_launcher
-			research_cost_coeff = 1
-		}
-
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
-
-		on_research_complete = {
-			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_PROJECT
-				PROJECT = sp_naval_torpedo_cruiser	
-			}
-		}	
 
 		research_cost = 1.5
 
@@ -568,9 +535,9 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = ORI
+					tag = CET
+					tag = ANT
 				}
 			}
 		}
@@ -583,7 +550,6 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
 	basic_ship_hull_cruiser = {
@@ -616,9 +582,9 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = ORI
+					tag = ANT
+					tag = CET
 				}
 			}
 		}
@@ -631,7 +597,6 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
 	improved_ship_hull_cruiser = {
@@ -642,14 +607,21 @@ technologies = {
 		enable_equipment_modules = {
 			cruiser_ship_engine_3
 		}
+		enable_equipments = {
+			ship_hull_cruiser_1
+		}
 		path = {
 			leads_to_tech = advanced_ship_hull_cruiser
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_airplane_launcher
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
 
-		start_year = 1904
+		start_year = 1908
 
 		folder = {
 			name = mtgnavalfolder
@@ -661,9 +633,9 @@ technologies = {
 
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = ORI
+					tag = ANT
+					tag = CET
 				}
 				factor = 4
 			}
@@ -677,7 +649,6 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
 	advanced_ship_hull_cruiser = {
@@ -690,7 +661,7 @@ technologies = {
 		}
 		research_cost = 1.5
 
-		start_year = 1908
+		start_year = 1916
 
 		folder = {
 			name = mtgnavalfolder
@@ -703,8 +674,8 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = ORI
+					tag = ANT
 				}
 			}
 		}
@@ -717,7 +688,6 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
 	improved_airplane_launcher = {
@@ -733,26 +703,22 @@ technologies = {
 
 		research_cost = 0.75
 
-		start_year = 1920
+		start_year = 1908
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 2 }
+			position = {  x = 0 y = 13 }
 		}
 
 		ai_will_do = {
 			factor = 2
 
 			modifier = {
-				has_navy_size = { size < 20 }
-				factor = 0.1
-			}
-			modifier = {
 				factor = 3.5
 				OR = {
-					tag = GER
-					tag = JAP
-					tag = USA
+					tag = ANT
+					tag = ORI
+					tag = COV
 				}
 			}
 		}
@@ -766,7 +732,6 @@ technologies = {
 			mio_cat_tech_all_screen_ship_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 	basic_cruiser_armor_scheme = {
 
@@ -791,7 +756,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 0.5
 
-		start_year = 1890
+		start_year = 1900
 
 		folder = {
 			name = mtgnavalfolder
@@ -804,15 +769,14 @@ technologies = {
 			modifier = {
 				factor = 3
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = ORI
+					tag = CET
+					tag = ANT
 				}
 			}
 		}
 
 		categories = {
-			naval_armor
 			naval_equipment
 			cl_tech
 			ca_tech
@@ -821,7 +785,6 @@ technologies = {
 			mio_cat_tech_all_cruiser_and_modules
 			mio_cat_tech_all_carrier_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
 
@@ -831,7 +794,7 @@ technologies = {
 #  # #   #  #  # #    #         # #  #  #  #      #
 #  # ### #  #   #     #       ##  #  # ### #    ##
 
-
+#GEN 1 dreadnoughts (steelpots), diphda etc.
 	early_ship_hull_heavy = {
 
 		enable_equipments = {
@@ -849,12 +812,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		on_research_complete = {
-			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_PROJECT
-				PROJECT = sp_naval_super_heavy_battleship	
-			}
-		}
+
 		research_cost = 1.75
 
 		start_year = 1890
@@ -870,9 +828,9 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = CET
+					tag = ORI
+					tag = ANT
 				}
 			}
 			modifier = {
@@ -891,9 +849,8 @@ technologies = {
 			bc_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
-
+#more advanced steelpots, mira, fang
 	basic_ship_hull_heavy = {
 
 		enable_equipments = {
@@ -910,7 +867,6 @@ technologies = {
 		path = {
 			leads_to_tech = basic_heavy_armor_scheme
 			research_cost_coeff = 1
-			ignore_for_layout = yes
 		}
 		
 		research_cost = 1.5
@@ -921,9 +877,9 @@ technologies = {
 			name = mtgnavalfolder
 			position = {  x = 0 y = 8 }
 		}
-		#sub_technologies = {
-			#ship_hull_super_heavy
-		#}
+		sub_technologies = {
+			ship_hull_super_heavy
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -931,9 +887,9 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = ORI
+					tag = ANT
+					tag = CET
 				}
 			}
 			modifier = {
@@ -952,7 +908,6 @@ technologies = {
 			bc_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 	ship_hull_super_heavy = {
 
@@ -963,22 +918,19 @@ technologies = {
 		enable_equipment_modules = {
 			ship_armor_shbb
 		}
-		allow = { 
-			always = no
-		}
+
 		research_cost = 1.5
 
-		start_year = 1943
+		start_year = 1920
 
 		ai_will_do = {
 			factor = 1
 
 			modifier = {
 				factor = 25
-				tag = JAP
+				tag = ANT
 			}
 		}
-
 
 		categories = {
 			naval_equipment
@@ -986,9 +938,8 @@ technologies = {
 			bc_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
-
+#post SCW ships, Itermudae
 	improved_ship_hull_heavy = {
 
 		enable_equipments = {
@@ -1004,7 +955,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1904
+		start_year = 1908
 
 		folder = {
 			name = mtgnavalfolder
@@ -1016,7 +967,7 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = ORI
 			}
 			modifier = {
 				is_major = no
@@ -1030,7 +981,6 @@ technologies = {
 			bc_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
 	advanced_ship_hull_heavy = {
@@ -1041,18 +991,9 @@ technologies = {
 		enable_equipment_modules = {
 			heavy_ship_engine_4
 		}
-		on_research_complete = {
-			if = {
-				limit = {has_dlc = "Gotterdammerung"}
-				custom_effect_tooltip = {
-					localization_key = SP_UNLOCK_PROJECT
-					PROJECT = sp_naval_modern_battleship	
-				}
-			}	
-		}
 		research_cost = 1.5
 
-		start_year = 1908
+		start_year = 1916
 
 		folder = {
 			name = mtgnavalfolder
@@ -1064,7 +1005,7 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = ORI
 
 			}
 			modifier = {
@@ -1079,7 +1020,6 @@ technologies = {
 			bc_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
 	basic_heavy_armor_scheme = {
@@ -1118,22 +1058,20 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = ORI
+					tag = CET
+					tag = ANT
 				}
 			}
 		}
 
 		categories = {
-			naval_armor
 			naval_equipment
 			bb_tech
 			bc_tech
 			ship_modules_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
 	improved_heavy_armor_scheme = {
@@ -1154,6 +1092,9 @@ technologies = {
 		xp_research_bonus = 1.25
 		research_cost = 1.25
 
+		start_year = 1908
+
+
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = 0 y = 14 }
@@ -1165,8 +1106,8 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = ORI
+					tag = ANT
 				}
 			}
 			modifier = {
@@ -1176,14 +1117,12 @@ technologies = {
 		}
 
 		categories = {
-			naval_armor
 			naval_equipment
 			bb_tech
 			bc_tech
 			ship_modules_tech
 			mio_cat_tech_all_capital_ship_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
  ##   ##  ###  ###  ### ### ###   ##
@@ -1212,11 +1151,11 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.75
 
-		start_year = 1905
+		start_year = 1903
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 2 }
+			position = {  x = -1 y = 14 }
 		}
 
 		ai_will_do = {
@@ -1225,9 +1164,9 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 8
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = ORI
+					tag = CET
+					tag = ANT
 				}
 			}
 		}
@@ -1237,7 +1176,6 @@ early_ship_hull_carrier = {
 			cv_tech
 			mio_cat_tech_all_carrier_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
 	basic_ship_hull_carrier = {
@@ -1255,111 +1193,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.5
 
-		start_year = 1930
-
-		folder = {
-			name = mtgnavalfolder
-			position = {  x = -1 y = 8 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 8
-				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
-				}
-			}
-		}
-
-		categories = {
-			naval_equipment
-			cv_tech
-			mio_cat_tech_all_carrier_and_modules
-		}
-		special_project_specialization = { specialization_naval }
-	}
-
-	improved_ship_hull_carrier = {
-
-		enable_equipments = {
-			ship_hull_carrier_2
-		}
-		enable_equipment_modules = {
-			carrier_ship_engine_3
-		}
-		on_research_complete = {
-			if = {
-				limit = {has_dlc = "Gotterdammerung"}
-				custom_effect_tooltip = {
-					localization_key = SP_UNLOCK_PROJECT
-					PROJECT = sp_naval_ice_carrier	
-				}
-			}
-		}		
-		path = {
-			leads_to_tech = advanced_ship_hull_carrier
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = sp_refined_pykrete
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-
-		start_year = 1945
-
-		folder = {
-			name = mtgnavalfolder
-			position = {  x = -1 y = 14 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 8
-				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
-				}
-			}
-		}
-
-		categories = {
-			naval_equipment
-			cv_tech
-			mio_cat_tech_all_carrier_and_modules
-		}
-		special_project_specialization = { specialization_naval }
-	}
-
-	advanced_ship_hull_carrier = {
-
-		enable_equipments = {
-			ship_hull_carrier_3
-		}
-		enable_equipment_modules = {
-			carrier_ship_engine_4
-		}
-		on_research_complete = {
-			if = {
-				limit = { has_dlc = "Gotterdammerung"}
-				custom_effect_tooltip = {
-					localization_key = SP_UNLOCK_PROJECT
-					PROJECT = sp_naval_modern_carrier	
-				}
-			}
-		}
-		research_cost = 1.5
-
-		start_year = 1954
+		start_year = 1914
 
 		folder = {
 			name = mtgnavalfolder
@@ -1372,9 +1206,9 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 8
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = ORI
+					tag = CET
+					tag = ANT
 				}
 			}
 		}
@@ -1384,7 +1218,85 @@ early_ship_hull_carrier = {
 			cv_tech
 			mio_cat_tech_all_carrier_and_modules
 		}
-		special_project_specialization = { specialization_naval }
+	}
+
+	improved_ship_hull_carrier = {
+
+		enable_equipments = {
+			ship_hull_carrier_2
+		}
+		enable_equipment_modules = {
+			carrier_ship_engine_3
+		}
+		path = {
+			leads_to_tech = advanced_ship_hull_carrier
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1924
+
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -1 y = 26 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 8
+				OR = {
+					tag = ORI
+					tag = CET
+					tag = ANT
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			cv_tech
+			mio_cat_tech_all_carrier_and_modules
+		}
+	}
+
+	advanced_ship_hull_carrier = {
+
+		enable_equipments = {
+			ship_hull_carrier_3
+		}
+		enable_equipment_modules = {
+			carrier_ship_engine_4
+		}
+		research_cost = 1.5
+
+		start_year = 1940
+
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -1 y = 32 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 8
+				OR = {
+					tag = ORI
+					tag = CET
+					tag = ANT
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			cv_tech
+			mio_cat_tech_all_carrier_and_modules
+		}
 	}
 
 #             ## #  # ###  #   #  ##  ###  ### #  # ###  ##
@@ -1409,24 +1321,13 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
-		on_research_complete = {
-			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_PROJECT
-				PROJECT = sp_naval_cruiser_submarine	
-			}
-			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_PROJECT
-				PROJECT = sp_naval_midget_submarine	
-			}			
-		}
-
 		research_cost = 1.5
 
-		start_year = 1955
+		start_year = 1910
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -2 y = 2 }
+			position = {  x = -2 y = 14 }
 		}
 
 		ai_will_do = {
@@ -1435,8 +1336,8 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = USA
+					tag = ANT
+					tag = ORI
 				}
 			}
 		}
@@ -1446,7 +1347,6 @@ early_ship_hull_carrier = {
 			ss_tech
 			mio_cat_tech_all_submarine_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
 	basic_ship_hull_submarine = {
@@ -1458,37 +1358,18 @@ early_ship_hull_carrier = {
 			ship_torpedo_sub_2
 			sub_ship_engine_2
 		}
-		on_research_complete = {
-			if = {
-				limit = { has_dlc = "Gotterdammerung"}
-				custom_effect_tooltip = {
-					localization_key = SP_UNLOCK_PROJECT
-					PROJECT = sp_naval_aip_engine	
-				}
-				custom_effect_tooltip = {
-					localization_key = SP_UNLOCK_PROJECT
-					PROJECT = sp_naval_anechoic_tiles
-				}				
-			}
-		}
-	
 		path = {
 			leads_to_tech = improved_ship_hull_submarine
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = sp_aip_engine_improved_tech
-			research_cost_coeff = 1
-		}
-
 		research_cost = 1.5
 
-		start_year = 1960
+		start_year = 1925
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -2 y = 8 }
+			position = {  x = -2 y = 20 }
 		}
 
 		ai_will_do = {
@@ -1497,8 +1378,8 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = USA
+					tag = ANT
+					tag = ORI
 				}
 			}
 		}
@@ -1508,7 +1389,6 @@ early_ship_hull_carrier = {
 			ss_tech
 			mio_cat_tech_all_submarine_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
 	improved_ship_hull_submarine = {
@@ -1520,7 +1400,6 @@ early_ship_hull_carrier = {
 			ship_torpedo_sub_3
 			sub_ship_engine_3
 		}
-
 
 		path = {
 			leads_to_tech = advanced_ship_hull_submarine
@@ -1534,11 +1413,11 @@ early_ship_hull_carrier = {
 
 		research_cost = 2.0
 
-		start_year = 1966
+		start_year = 1940
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -2 y = 14 }
+			position = {  x = -2 y = 26 }
 		}
 
 		ai_will_do = {
@@ -1547,8 +1426,8 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = USA
+					tag = ANT
+					tag = ORI
 				}
 			}
 		}
@@ -1558,7 +1437,6 @@ early_ship_hull_carrier = {
 			ss_tech
 			mio_cat_tech_all_submarine_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
 	advanced_ship_hull_submarine = {
@@ -1573,11 +1451,11 @@ early_ship_hull_carrier = {
 
 		research_cost = 2.0
 
-		start_year = 1970
+		start_year = 1955
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -2 y = 20 }
+			position = {  x = -2 y = 32 }
 		}
 
 		ai_will_do = {
@@ -1586,8 +1464,8 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = USA
+					tag = ANT
+					tag = ORI
 				}
 			}
 		}
@@ -1597,8 +1475,6 @@ early_ship_hull_carrier = {
 			ss_tech
 			mio_cat_tech_all_submarine_and_modules
 		}
-
-		special_project_specialization = { specialization_naval }
 	}
 
 	basic_submarine_snorkel = {
@@ -1615,11 +1491,11 @@ early_ship_hull_carrier = {
 		}
 		research_cost = 1
 
-		start_year = 1957
+		start_year = 1930
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 13 }
+			position = {  x = -1 y = 25 }
 		}
 
 		ai_will_do = {
@@ -1628,14 +1504,14 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = HOL
+					tag = ANT
+					tag = COV
 				}
 			}
 			modifier = {
 				not = {
-					has_war_with = ENG
-					has_War_with = USA
+					has_war_with = ORI
+					has_War_with = ANT
 				}
 				factor = 0.5
 			}
@@ -1647,7 +1523,6 @@ early_ship_hull_carrier = {
 			ship_modules_tech
 			mio_cat_tech_all_submarine_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 
 	improved_submarine_snorkel = {
@@ -1669,11 +1544,11 @@ early_ship_hull_carrier = {
 		xp_research_bonus = 1.50
 		research_cost = 2
 
-		start_year = 1960
+		start_year = 1950
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 19 }
+			position = {  x = -1 y = 31 }
 		}
 
 		ai_will_do = {
@@ -1682,8 +1557,8 @@ early_ship_hull_carrier = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
-					tag = HOL
+					tag = ANT
+					tag = COV
 				}
 			}
 		}
@@ -1694,7 +1569,6 @@ early_ship_hull_carrier = {
 			ship_modules_tech
 			mio_cat_tech_all_submarine_and_modules
 		}
-		special_project_specialization = { specialization_naval }
 	}
 	###Special snowflake hulls for special snowflake nations
 	panzerschiffe = {
@@ -1704,7 +1578,7 @@ early_ship_hull_carrier = {
 		}
 
 		research_cost = 1
-		start_year = 1900
+		start_year = 1920
 
 		#set at gamestart
 		allow = {
@@ -1732,7 +1606,7 @@ early_ship_hull_carrier = {
 		}
 
 		research_cost = 1
-		start_year = 1880
+		start_year = 1870
 
 		#set at gamestart
 		allow = {
@@ -1746,7 +1620,7 @@ early_ship_hull_carrier = {
 		}
 
 		research_cost = 1
-		start_year = 1900
+		start_year = 1880
 
 		#set at gamestart
 		allow = {
@@ -1762,7 +1636,7 @@ early_ship_hull_carrier = {
 			ship_extra_fuel_tank
 		}
 		research_cost = 1
-		start_year = 1900
+		start_year = 1950
 
 		#set at gamestart
 		allow = {
@@ -1775,182 +1649,11 @@ early_ship_hull_carrier = {
 			ship_hull_midget_submarine
 		}
 		research_cost = 1
-		start_year = 1900
+		start_year = 1930
 
 		#set at gamestart
 		allow = {
 			always = no
 		}
 	}
-### SPECIAL PROJECTS TECHS ###
-
-	sp_aip_engine_improved_tech = {
-
-		allow_branch = {
-			 	has_dlc = "Gotterdammerung"
-		}	
-
-		allow = {
-	 		ROOT = {
-				is_special_project_completed = sp:sp_naval_aip_engine
-			}
-		}
-
-		path = {
-			leads_to_tech = sp_aip_engine_advanced_tech
-			research_cost_coeff = 1
-		}
-
-		enable_equipment_modules = {
-			ship_engine_sub_aip_2
-		}
-		
-		force_use_small_tech_layout = yes		
-		is_special_project_tech = yes
-		research_cost = 2
-		start_year = 1904
-		folder = {
-			name = mtgnavalfolder
-			position = {  x = 1 y = 13 }
-		}
-		categories = {
-			naval_equipment
-			ss_tech
-			ship_modules_tech
-			mio_cat_tech_all_submarine_and_modules		
-		}
-		special_project_specialization = { specialization_naval }
-	}
-
-	sp_aip_engine_advanced_tech = {
-
-		allow = {
-	 		ROOT = {
-				is_special_project_completed = sp:sp_naval_aip_engine
-			}
-		}
-
-		enable_equipment_modules = {
-			ship_engine_sub_aip_3
-		}
-
-		force_use_small_tech_layout = yes		
-		is_special_project_tech = yes
-		research_cost = 2
-		start_year = 1908
-		folder = {
-			name = mtgnavalfolder
-			position = {  x = 1 y = 19 }
-		}
-		categories = {
-			naval_equipment
-			ss_tech
-			ship_modules_tech
-			mio_cat_tech_all_submarine_and_modules		
-		}
-		special_project_specialization = { specialization_naval }
-	}
-
-	sp_refined_pykrete = {
-
-		allow_branch = {
-			has_dlc = "Gotterdammerung"
-		}		
-
-		enable_equipment_modules = {
-			ship_armor_ice_carrier_deck_2
-		}
-
-		allow = {
-	 		ROOT = {
-				is_special_project_completed = sp:sp_naval_ice_carrier
-			}
-		}
-		path = {
-			leads_to_tech = sp_ice_composite_runawayas
-			research_cost_coeff = 1
-		}
-
-		force_use_small_tech_layout = yes
-		is_special_project_tech = yes
-		research_cost = 1
-		start_year = 1942
-		folder = {
-			name = mtgnavalfolder
-			position = { x = 0 y = 17 }
-		}
-
-		categories = {
-			naval_equipment
-			cv_tech
-			mio_cat_tech_all_carrier_and_modules
-			pykrete_tech
-		}
-		special_project_specialization = { specialization_naval }		
-	}
-
-	sp_ice_composite_runawayas = {
-
-		enable_equipment_modules = {
-			ship_armor_ice_carrier_deck_3
-		}
-
-		allow = {
-	 		ROOT = {
-				is_special_project_completed = sp:sp_naval_ice_carrier
-			}
-		}
-
-		force_use_small_tech_layout = yes
-		is_special_project_tech = yes			
-		research_cost = 1
-		start_year = 1945
-		folder = {
-			name = mtgnavalfolder
-			position = { x = 0 y = 23 }
-		}
-
-		categories = {
-			naval_equipment
-			cv_tech
-			mio_cat_tech_all_carrier_and_modules
-			pykrete_tech
-		}
-		special_project_specialization = { specialization_naval }	
-	}
-
-	sp_naval_proximity_fuze_tech = {
-		#HIDDEN EFFECT FOR THE PROXIMITY FUZE 
-		navy_anti_air_attack_factor = 0.25
-		research_cost = 1
-		start_year = 1904
-		
-		allow = {
-			always = no
-		}
-	}
-
-	sp_naval_underway_replenishment_pick_a = {
-		#HIDDEN EFFECT FOR REWARD CHOICE
-		underway_replenishment_range = 0.2
-		underway_replenishment_convoy_cost = 0.1
-		research_cost = 1
-		start_year = 1904
-
-		allow = {
-			always = no
-		}
-	}
-	sp_naval_underway_replenishment_pick_b = {
-		#HIDDEN EFFECT FOR REWARD CHOICE
-		underway_replenishment_range = -0.1
-		underway_replenishment_convoy_cost = -0.2
-		research_cost = 1
-		start_year = 1904
-
-		allow = {
-			always = no
-		}
-	}
-
 }

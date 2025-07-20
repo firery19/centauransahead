@@ -938,15 +938,12 @@ focus = {
     y = 6
     cost = 5
     search_filters = { FOCUS_FILTER_INDUSTRY }
-<<<<<<< Updated upstream
-    prerequisite = { focus = ANT_clean_cities focus = ANT_deregulate_industrial_sector }
-=======
+
     prerequisite = {
             focus = ANT_clean_cities
             focus = ANT_deregulate_industrial_sector
        
     }
->>>>>>> Stashed changes
 	available = {
   	 NOT = {
          has_idea = ANT_paying_for_funding_idea 

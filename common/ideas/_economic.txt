@@ -7,11 +7,11 @@ ideas = {
 		civilian_economy = {
 
 
-			cost = 150
+			cost = 50 # people won't complain about MORE TOASTERS!!!
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.35
+				consumer_goods_expected_value = 0.45
 				production_speed_industrial_complex_factor = 0.3
 				production_speed_arms_factory_factor = -0.3
 				conversion_cost_civ_to_mil_factor= 0.3
@@ -28,7 +28,7 @@ ideas = {
 		low_economic_mobilisation = {
 
 			available = {
-				has_war_support > 0.15
+				has_war_support > 0.25
 				if = {
 					limit = {
 						original_tag = ANT
@@ -85,17 +85,17 @@ ideas = {
 				}
 			}
 
-			cost = 150
+			cost = 200
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.3
+				consumer_goods_expected_value = 0.375
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = -0.1
 				fuel_gain_factor = -0.25
 			}
 
-			cancel_if_invalid = no
+			cancel_if_invalid = yes
 
 			ai_will_do = {
    				factor = 2
@@ -121,7 +121,7 @@ ideas = {
 		partial_economic_mobilisation = {
 
 			available = {
-				has_war_support > 0.25
+				has_war_support > 0.4
 				if = {
 					limit = {
 						original_tag = ANT
@@ -156,7 +156,7 @@ ideas = {
 						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
-					has_war_support > 0.5
+					has_war_support > 0.3
 					congress_high_support_trigger = yes
 				}
 				if = {
@@ -178,7 +178,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.25
+				consumer_goods_expected_value = 0.30
 				production_speed_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = 0.1
 				conversion_cost_civ_to_mil_factor= -0.1
@@ -186,7 +186,7 @@ ideas = {
 				fuel_gain_factor = -0.1
 			}
 
-			cancel_if_invalid = no
+			cancel_if_invalid = yes
 			on_add = {
 				if = {
 					limit = {
@@ -212,7 +212,7 @@ ideas = {
 
 
 			available = {
-				has_war_support > 0.5
+				has_war_support > 0.66
 				OR = {
 					has_government = fascism
 					has_government = communism
@@ -270,14 +270,14 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.2
+				consumer_goods_expected_value = 0.225
 				production_speed_industrial_complex_factor = -0.3
 				production_speed_arms_factory_factor = 0.2
 				conversion_cost_civ_to_mil_factor= -0.2
 				conversion_cost_mil_to_civ_factor = 0.2
 			}
 
-			cancel_if_invalid = no
+			cancel_if_invalid = yes
 			on_add = {
 				if = {
 					limit = {
@@ -327,7 +327,7 @@ ideas = {
 
 			available = {
 				has_war = yes
-				has_war_support > 0.8
+				has_war_support > 0.9
 				any_enemy_country = {
 					ic_ratio = {
 						tag = ROOT
@@ -445,7 +445,7 @@ ideas = {
 				conversion_cost_mil_to_civ_factor = 0.3
 			}
 
-			cancel_if_invalid = no
+			cancel_if_invalid = yes
 		}
 
 		new_economic_policy = {

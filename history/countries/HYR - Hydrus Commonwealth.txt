@@ -12,13 +12,13 @@ set_technology = {
 
 set_research_slots = 3
 
-set_stability = 0.5
+set_stability = 0.7
 
-set_war_support = 0.5
+set_war_support = 0.4
 
 add_political_power = 182
 
-set_convoys = 56
+set_convoys = 100
 
 set_popularities = {
 	democratic = 95

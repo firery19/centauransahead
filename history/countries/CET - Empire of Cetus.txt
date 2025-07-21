@@ -73,15 +73,15 @@ set_technology = {
 	# i
 }
 
-set_research_slots = 3
+set_research_slots = 2
 
-set_stability = 0.5
+set_stability = 0.6
 
-set_war_support = 0.5
+set_war_support = 0.3
 
 add_political_power = 1
 
-set_convoys = 157
+set_convoys = 150
 
 recruit_character = CET_frederick_scapha
 

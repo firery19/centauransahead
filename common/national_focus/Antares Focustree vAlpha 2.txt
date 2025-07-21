@@ -714,7 +714,13 @@ focus = {
                 instant_build = yes
 
             }
-x
+       add_building_construction = {
+            type = naval_base
+            level = 2
+            province = 1753
+            instant_build = yes 
+        }
+
        add_building_construction = {
             type = naval_base
             level = 2
@@ -844,6 +850,12 @@ focus = {
 
         6 = {
             add_extra_state_shared_building_slots = 6
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+                instant_build = yes
+            }
+
 
         }
     }
@@ -865,7 +877,7 @@ focus = {
 
             add_building_construction = {
                 type = industrial_complex
-                level = 2
+                level = 3
                 instant_build = yes
 
             }
@@ -875,7 +887,8 @@ focus = {
 # Expand eurskor mines
 focus = {
     id = ANT_expand_euskor_extraction
-    icon = GFX_goal_generic_construction2
+#    icon = GFX_focus_ANT_euskorgfx
+	icon = GFX_focus_ANT_euskorgfx
     x = 14
     y = 2
     cost = 10
@@ -884,11 +897,7 @@ focus = {
     ai_will_do = { factor = 2 }
     completion_reward = {
         6 = {
-            add_building_construction = {
-                type = infrastructure
-                level = 1
-                instant_build = yes
-            }
+
             add_extra_state_shared_building_slots = 1
             add_building_construction = {
                 type = industrial_complex
@@ -897,7 +906,7 @@ focus = {
             }
             add_resource = {
                 type = steel
-                amount = 30
+                amount = 40
             }
         }
     }
@@ -1064,7 +1073,7 @@ focus = {
 # Efficient Farming
 focus = {
     id = ANT_efficient_farming
-    icon = GFX_focus_generic_agricultural_subsidies
+    icon = GFX_focus_ANT_efficentagricultur
     x = 19
     y = 5
     cost = 10
@@ -1901,6 +1910,9 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_consolidate_monarchic_powers focus = ANT_strengthen_antarean_democracy}
+   available = {
+		has_idea = ANT_patriotism0
+    }
         mutually_exclusive = { focus = ANT_ }
 	ai_will_do = { factor = 1 }
 	completion_reward = {
@@ -1940,6 +1952,12 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_monarch2}
+   available = { #instead of has_idea ppdebuff4, incase the spirit can be further upgraded
+       NOT = {  has_idea = ANT_ppdebuff  
+		has_idea = ANT_ppdebuff2
+		has_idea = ANT_ppdebuff3
+}
+    }
         mutually_exclusive = { focus = ANT_ }
 	ai_will_do = { factor = 1 }
 	completion_reward = {
@@ -2758,9 +2776,23 @@ focus = {
         mutually_exclusive = { focus = ANT_new_anticetus_base }
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+        108 = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = dockyard
+                level = 1
+                instant_build = yes
 
-	}
+            }
+
+       add_building_construction = {
+            type = naval_base
+            level = 2
+            province = 3226
+            instant_build = yes 
+        }
+
+	}}
 }
 # add new naval base lvl 6 in devon 5429
 focus = {
@@ -2774,9 +2806,22 @@ focus = {
         mutually_exclusive = { focus = ANT_expand_northead }
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+        108 = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = dockyard
+                level = 1
+                instant_build = yes
 
-	}
+            }
+       add_building_construction = {
+            type = naval_base
+            level = 5
+            province = 5429
+            instant_build = yes 
+        }
+
+	}}
 }
 # more dockyards and naval bases in pre-existing eastern ports
 focus = {

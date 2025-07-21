@@ -10663,4 +10663,15 @@ spriteTypes = {
 		name = "GFX_focus_ORI_TheHard1900s"
 		texturefile = "gfx/interface/goals/focus_ORI_TheHard1900s.dds"
 	}
+	##### ANTARES #######
+	SpriteType = {
+		name = "GFX_focus_ANT_efficentagricultur"
+		texturefile = "gfx/interface/goals/focus_ANT_efficentagricultur.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ANT_euskorgfx"
+		texturefile = "gfx/interface/goals/focus_ANT_euskorgfx.dds"
+	}
+
+#end
 }

@@ -8808,4 +8808,10 @@ spriteTypes = {
 		name = "GFX_idea_AQU_iron_army_idea"
 		texturefile = "gfx/interface/ideas/idea_AQU_iron_army_idea.dds"			
 	}
+
+	# antares
+	spriteType = {
+		name = "GFX_idea_ANT_efficientagriculturidea"
+		texturefile = "gfx/interface/ideas/idea_ANT_efficientagriculturidea.dds"			
+	}
 }

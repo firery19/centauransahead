@@ -63,15 +63,15 @@ set_technology = {
 	# i
 }
 
-set_research_slots = 4
+set_research_slots = 2
 
 set_stability = 0.5
 
-set_war_support = 0.40
+set_war_support = 0.30
 
 add_political_power = 1
 
-set_convoys = 391
+set_convoys = 350
 
 recruit_character = ORI_Kevin_Hart
 recruit_character = ORI_Simon_Cromwell

@@ -4,6 +4,7 @@ state={
 	name="STATE_77"
 	resources={
 		tungsten=3.000
+		aluminium=36
 	}
 
 	history={
@@ -13,9 +14,10 @@ state={
 		modifier = CTA_battery_line_dynamic_modifier
 		}
 		buildings = {
-			arms_factory = 1
-			industrial_complex = 2
+			industrial_complex = 1
 			infrastructure = 3
+			dockyard = 1
+
 			845 = {
 				coastal_bunker = 10
 

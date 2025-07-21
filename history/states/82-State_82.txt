@@ -6,9 +6,9 @@ state={
 		owner = VUL
 		add_core_of = VUL
 		buildings = {
-			arms_factory = 2
+			arms_factory = 0
 			industrial_complex = 1
-			infrastructure = 3
+			infrastructure = 2
 		}
 		victory_points = {
 			1566 3

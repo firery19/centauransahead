@@ -8,8 +8,9 @@ state={
 		modifier = CTA_defence_line_dynamic_modifier
 		}
 		buildings = {
-			arms_factory = 1
 			industrial_complex = 1
+			dockyard = 1
+
 			infrastructure = 3
 			3574 = {
 				coastal_bunker = 8

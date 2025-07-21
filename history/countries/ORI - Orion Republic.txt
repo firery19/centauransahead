@@ -71,7 +71,7 @@ set_war_support = 0.30
 
 add_political_power = 1
 
-set_convoys = 350
+set_convoys = 275
 
 recruit_character = ORI_Kevin_Hart
 recruit_character = ORI_Simon_Cromwell

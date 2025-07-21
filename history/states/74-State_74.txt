@@ -4,14 +4,16 @@ state={
 	name="STATE_74"
 	resources={
 		tungsten=4.000
+		aluminium=16
+
 	}
 
 	history={
 		owner = TUC
 		add_core_of = TUC
 		buildings = {
-			arms_factory = 2
-			industrial_complex = 1
+			
+			industrial_complex = 2
 			infrastructure = 2
 			198 = {
 				naval_base = 4

@@ -9,9 +9,9 @@ state={
 		owner = URS
 		add_core_of = CNS
 		buildings = {
-		dockyard = 1
+		dockyard = 0
 		infrastructure = 2
-		industrial_complex = 1
+		industrial_complex = 0
 		2226 = {
 			naval_base = 4
 			}

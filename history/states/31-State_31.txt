@@ -9,8 +9,11 @@ state={
 		owner = AQU
 		add_core_of = AQU
 		buildings = {
-			dockyard = 2
 			infrastructure = 3
+
+			industrial_complex = 1 #instead of dockyards, Aquila navy is not maintained and they instead use the dockyards for building civilian ships to sell to other nations 
+		
+		
 			1329 = {
 				naval_base = 4
 			}

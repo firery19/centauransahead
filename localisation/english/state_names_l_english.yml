@@ -34,7 +34,7 @@
  STATE_33:0 "Aquilan North"
  STATE_34:0 "East Aquila"
  STATE_35:0 "Southern Borderlands"
- STATE_35_ANT: "North Lupus"
+ STATE_35_ANT:0 "North Lupus" #idk if this works dont think so
  STATE_36:0 "South Aquila"
  STATE_37:0 "Western Borderlands"
  STATE_38:0 "West Aquila"
@@ -119,8 +119,8 @@
  STATE_117:0 "Northwestern Canis"
  STATE_118:0 "Eastern Canis"
  STATE_119:0 "Central Canis"
- STATE_120:0 "Southernmost Canis"
- STATE_121:0 "Southwestern Canis"
+ STATE_120:0 "South-Canis Department (East)" #make it so that only the name if orion controls it?
+ STATE_121:0 "South-Canis Department (West)"
  STATE_122:0 "Offshore Canis Island"
  STATE_123:1 "Southern Bell Islands"
  STATE_124:0 "Northwesternmost Hydrusite Islands"

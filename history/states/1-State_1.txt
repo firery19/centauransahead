@@ -13,9 +13,8 @@ state={
 		add_core_of = LBR
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 6
-			arms_factory = 2
-			dockyard = 3
+			industrial_complex = 4
+			dockyard = 1
 			1261 = {
 				naval_base = 1
 

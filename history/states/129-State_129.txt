@@ -12,9 +12,8 @@ state={
 		owner = HYS
 		add_core_of = HYS
 		buildings = {
-			arms_factory = 1
 			industrial_complex = 1
-			dockyard = 2
+			dockyard = 1
 			infrastructure = 2
 
 		}

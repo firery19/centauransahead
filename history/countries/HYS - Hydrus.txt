@@ -57,7 +57,7 @@ set_war_support = 0.75
 
 add_political_power = 1
 
-set_convoys = 21
+set_convoys = 25
 
 set_popularities = {
 	democratic = 78

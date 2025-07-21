@@ -8,6 +8,12 @@ state={
 	history={
 		owner = AUR
 		add_core_of = AUR
+		buildings = {
+
+			industrial_complex = 1
+			infrastructure = 2
+		
+		}
 		victory_points = {
 			670 40 
 		}

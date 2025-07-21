@@ -6,9 +6,9 @@ state={
 		owner = RIA
 		add_core_of = RIA
 		buildings = {
-			arms_factory = 1
-			industrial_complex = 1
-			dockyard = 1
+			arms_factory = 0
+			industrial_complex = 2
+			dockyard = 0
 			infrastructure = 3
 		}
 		victory_points = {
@@ -20,6 +20,6 @@ state={
 	}
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-        manpower=6588310
+        manpower=16588310
         state_category = town
 }

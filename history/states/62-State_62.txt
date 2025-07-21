@@ -10,9 +10,9 @@ state={
 		owner = CLB
 		add_core_of = CLB
 		buildings = {
-			arms_factory = 2
+			arms_factory = 1
 			industrial_complex = 3
-			infrastructure = 3
+			infrastructure = 4
 			546 = {
 				naval_base = 3
 
@@ -39,7 +39,7 @@ state={
 	provinces={
 		127 173 514 546 672 788 797 846 1100 1119 1169 1363 1446 1491 1802 1939 1942 1962 2212 2945 3628 3669 3676 3679 3680 3687 3695 3696 3707 3712 3716 3727 3731 3745 3747 3759 3760 3761 3762 3771 3777 3790 3795 3804 3817 3823 3833 3857 
 	}
-	manpower=5480123
+	manpower=15480123
 	buildings_max_level_factor=1.000
 	state_category=megalopolis
 	local_supplies=0.000

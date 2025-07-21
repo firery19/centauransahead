@@ -11,10 +11,10 @@ state={
 		add_core_of = ORI
 		add_core_of = AUR
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 5
-			arms_factory = 3
-			dockyard = 1
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 0
 
 		}
 		victory_points = {

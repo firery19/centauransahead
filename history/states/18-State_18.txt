@@ -8,6 +8,11 @@ state={
 	history={
 		owner = MUS
 		add_core_of = MUS
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+		
+		}
 		victory_points = {
 			306 50 
 		}

@@ -28,7 +28,7 @@ set_war_support = 0.5
 
 add_political_power = 1
 
-set_convoys = 200 # NORWEGIAN MERCHANT MARINE STRONKKKK
+set_convoys = 300 # NORWEGIAN MERCHANT MARINE STRONKKKK
 
 add_ideas = {
 	CTA_democratic_bastion_idea

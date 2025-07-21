@@ -9,7 +9,7 @@ state={
 		owner = HYS
 		add_core_of = HYS
 		buildings = {
-			dockyard = 1
+			dockyard = 0
 			infrastructure = 2
 		}
 		victory_points = {

@@ -7,9 +7,8 @@ state={
 		owner = CLB
 		add_core_of = CLB
 		buildings = {
-			arms_factory = 1
 			industrial_complex = 1
-			infrastructure = 4
+			infrastructure = 3
 
 		}
 		victory_points = {
@@ -34,7 +33,7 @@ state={
 	provinces={
 		3 18 34 84 138 248 391 484 490 545 614 669 703 711 789 817 820 840 848 869 890 924 1056 1058 1113 1133 1191 1203 1219 1309 1341 1428 1441 1445 1601 1751 1952 1992 2007 2133 2568 2624 2803 3006 3061 3090 3101 3108 3271 3300 3303 3616 3621 3622 3627 3633 3635 3636 3637 3645 3646 3649 3656 3657 3666 3667 3670 3684 3685 3701 3702 3711 3724 3726 
 	}
-	manpower=6580152
+	manpower=16580152
 	state_category=large_city
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

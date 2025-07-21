@@ -55,7 +55,7 @@ set_war_support = 0.4
 
 add_political_power = 1
 
-set_convoys = 25
+set_convoys = 25 # a lot of industrial and resource exports would make aquilas merchant navy large for its comparatively small coastline
 
 set_popularities = {
 	democratic = 99

@@ -10,10 +10,10 @@ state={
 		owner = URS
 		add_core_of = CNS
 		buildings = {
-			dockyard = 1
-			arms_factory = 1
+			dockyard = 0
+			arms_factory = 0
 			infrastructure = 3
-			industrial_complex = 2
+			industrial_complex = 1
 		}
 		victory_points = {
 			3278 25

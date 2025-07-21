@@ -10,8 +10,8 @@ state={
 		add_core_of = LPS
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
-			arms_factory = 2
+			industrial_complex = 0
+			dockyard = 1
 			1641 = {
 			naval_base = 4
 			}

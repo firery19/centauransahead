@@ -81,7 +81,7 @@ set_war_support = 0.3
 
 add_political_power = 1
 
-set_convoys = 150
+set_convoys = 150 #although a naval powerhouse with a massive fishing industry, cetus doesn't really import many resources due to South Corvs
 
 recruit_character = CET_frederick_scapha
 

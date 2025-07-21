@@ -71,7 +71,7 @@ add_ideas = {
 	forma_militarism
 }
 
-set_research_slots = 4
+set_research_slots = 2
 
 set_stability = 0.57
 
@@ -79,7 +79,7 @@ set_war_support = 0.21
 
 add_political_power = 1
 
-set_convoys = 391
+set_convoys = 250
 
 set_popularities = {
 	democratic = 12

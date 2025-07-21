@@ -8,10 +8,17 @@ state={
 		add_core_of = ORI
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
-			arms_factory = 2
+			industrial_complex = 1
+			arms_factory = 0
 			dockyard = 1
+#			1383 = {
+#				naval_base = 3
+#
+#			}
+			5200 = {
+				naval_base = 4
 
+			}
 		}
 		victory_points = {
 			4970 4 

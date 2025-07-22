@@ -174,7 +174,7 @@ ideas = {
 				}
 			}
 
-			cost = 150
+			cost = 200
 			removal_cost = -1
 
 			modifier = {
@@ -266,7 +266,7 @@ ideas = {
 				}
 			}
 
-			cost = 150
+			cost = 200
 			removal_cost = -1
 
 			modifier = {
@@ -433,7 +433,7 @@ ideas = {
 				}
    			}
 
-			cost = 150
+			cost = 200
 			removal_cost = -1
 
 			modifier = {
@@ -523,7 +523,7 @@ ideas = {
 				}
 			}
 
-			cost = 150
+			cost = 200
 			removal_cost = -1
 
 			modifier = {
@@ -595,7 +595,7 @@ ideas = {
 			}
 
 
-			cost = 150
+			cost = 200
 			removal_cost = -1
 
 			modifier = {
@@ -678,7 +678,7 @@ ideas = {
 				}
 			}
 
-			cost = 150
+			cost = 200
 			removal_cost = -1
 
 			modifier = {
@@ -761,7 +761,7 @@ ideas = {
 				desc = can_not_access_market_closed_economy
 			}
 
-			cost = 150
+			cost = 200
 			removal_cost = -1
 
 			modifier = {

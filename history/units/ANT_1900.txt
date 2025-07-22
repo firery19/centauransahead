@@ -108,7 +108,7 @@ instant_effect = {
 			type = infantry_equipment_0
 			creator = "ANT"
 		}
-		requested_factories = 5
+		requested_factories = 2
 		progress = 0.01
 		efficiency = 100
 	}}
@@ -119,17 +119,17 @@ instant_effect = {
 			type = support_equipment_1
 			creator = "ANT"
 		}
-		requested_factories = 4
+		requested_factories = 1
 		progress = 0.01
 		efficiency = 100
 	}}
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = artillery_equipment_0
+			type = artillery_equipment_1
 			creator = "ANT"
 		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.01
 		efficiency = 100
 	}}

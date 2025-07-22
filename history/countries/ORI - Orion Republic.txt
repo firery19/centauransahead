@@ -91,6 +91,7 @@ set_politics = {
 }
 
 add_ideas = {
+	trench_warfare_idea
 	ORS_RampantGovernmentCorruption
 	ORS_PrioritizedMilitary
 	ORS_GovernmentSubisidies

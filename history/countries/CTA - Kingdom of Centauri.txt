@@ -31,7 +31,11 @@ add_political_power = 1
 set_convoys = 300 # NORWEGIAN MERCHANT MARINE STRONKKKK
 
 add_ideas = {
+	trench_warfare_idea
+
 	CTA_democratic_bastion_idea
+
+
 	}
 
 set_popularities = {

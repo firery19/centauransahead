@@ -3,6 +3,7 @@ capital = 69
 oob = "RIA_1900"
 
 	add_ideas = { 
+	trench_warfare_idea
 RIA_rural_countryside
 RIA_industrialisation
 }

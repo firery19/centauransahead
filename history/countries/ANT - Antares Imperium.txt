@@ -3,6 +3,7 @@ capital = 103
 oob = "ANT_1900"
 
 	add_ideas = { 
+trench_warfare_idea
 ANT_ppdebuff
 ANT_patriotism
 ANT_industry_idea

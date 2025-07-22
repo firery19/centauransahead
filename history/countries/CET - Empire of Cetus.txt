@@ -86,6 +86,7 @@ set_convoys = 150 #although a naval powerhouse with a massive fishing industry, 
 recruit_character = CET_frederick_scapha
 
 add_ideas = {
+	trench_warfare_idea
 	CET_SC_question_idea
 	CET_independent_armed_forces_idea
 	CET_rules_the_waves_idea

@@ -72,6 +72,7 @@ set_politics = {
 }
 
 add_ideas = {
+	trench_warfare_idea
 	AQU_iron_army_idea
 	AQU_lucas_silva_idea
 	AQU_outdated_technology_idea

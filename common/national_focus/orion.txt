@@ -963,11 +963,11 @@ focus_tree = {
 			mutually_exclusive = { focus = ORS_OrioniteIsolationism }
 			
 			completion_reward = {
-				add_war_support = 0.05
+				add_war_support = -0.05 #realistically people would oppose going on offensive wars
 			}
 			
 			ai_will_do = {
-				factor = 5
+				factor = 5 #ruins historical games; should only be playable path for the player or non hist AI
 			}
 		}
 		
@@ -989,6 +989,7 @@ focus_tree = {
 			mutually_exclusive = { focus = ORS_OrioniteIsolationism }
 			
 			completion_reward = {
+				add_war_support = 0.05 #people want to contain antares
 			}
 			
 			ai_will_do = {

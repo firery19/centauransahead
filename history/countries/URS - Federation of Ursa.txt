@@ -65,6 +65,7 @@ set_technology = {
 }
 
 add_ideas = {
+	trench_warfare_idea
 	URS_navy_spirit
 	URS_domestic_unrest
 	URS_sluggish_economy

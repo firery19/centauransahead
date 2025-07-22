@@ -154,7 +154,7 @@ instant_effect = {
 			version_name = "Ferrum Class"
 		}
 		name = "AIS Bella Tempore"
-		requested_factories = 3
+		requested_factories = 2
 		progress = 0.4
 		amount = 1
 	}
@@ -168,7 +168,7 @@ instant_effect = {
 			version_name = "Ferrum Class"
 		}
 		name = "AIS Senator"
-		requested_factories = 3
+		requested_factories = 2
 		progress = 0.3
 		amount = 1
 	}
@@ -182,7 +182,7 @@ instant_effect = {
 			version_name = "Ferrum Class"
 		}
 		name = "AIS Rear Admiral Ole Bob Persen"
-		requested_factories = 3
+		requested_factories = 2
 		progress = 0.2
 		amount = 1
 	}
@@ -197,7 +197,7 @@ instant_effect = {
 			version_name = "Terra Class"
 		}
 		name = "AIS Terra"
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.5
 		amount = 1
 	}
@@ -211,7 +211,7 @@ instant_effect = {
 			version_name = "Terra Class"
 		}
 		name = "AIS Croniumiate"
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.4
 		amount = 1
 	}
@@ -225,7 +225,7 @@ instant_effect = {
 			version_name = "Terra Class"
 		}
 		name = "AIS Steelium"
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.3
 		amount = 1
 	}
@@ -239,7 +239,7 @@ instant_effect = {
 			version_name = "Terra Class"
 		}
 		name = "AIS Thermite"
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.2
 		amount = 1
 	}
@@ -253,7 +253,7 @@ instant_effect = {
 			version_name = "Terra Class"
 		}
 		name = "AIS Librae"
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.1
 		amount = 1
 	}

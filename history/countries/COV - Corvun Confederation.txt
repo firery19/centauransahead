@@ -79,6 +79,9 @@ set_politics = {
 }
 
 add_ideas = {
+
+	trench_warfare_idea
+
 		COV_revanchism_idea
 		COV_dysfunctional_economy_idea
 		limited_conscription

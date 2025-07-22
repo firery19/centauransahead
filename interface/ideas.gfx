@@ -10,6 +10,7 @@ spriteTypes = {
 
 	### new tfv nat spirit icons
 
+
 	spriteType = {
 		name = "GFX_idea_generic_degauss_ship_hulls"
 		texturefile = "gfx/interface/ideas/idea_generic_degauss_ship_hulls.dds"
@@ -8747,6 +8748,10 @@ spriteTypes = {
 
 
 	## MOD IDEAS/SPIRITS ##
+	spriteType = {
+		name = "GFX_idea_RAJ_private_military_complex"
+		texturefile = "gfx/interface/ideas/idea_RAJ_private_military_complex.dds"
+	}
 
 	# cetus
 	spriteType = {

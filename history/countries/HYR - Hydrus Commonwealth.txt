@@ -1,7 +1,9 @@
 capital = 118
 
 oob = "HYR_1900"
-
+add_ideas = {
+	trench_warfare_idea
+}
 set_technology = {
 	infantry_weapons = 3
 	tech_support = 3

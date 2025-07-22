@@ -1,5 +1,7 @@
 capital = 5
-
+add_ideas = {
+	trench_warfare_idea
+}
 set_research_slots = 4
 
 set_stability = 0.5

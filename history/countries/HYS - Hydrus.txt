@@ -1,7 +1,9 @@
 capital = 2
 
 oob = "HYS_1900"
-
+add_ideas = {
+	trench_warfare_idea
+}
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "HYS_1900_naval_mtg"

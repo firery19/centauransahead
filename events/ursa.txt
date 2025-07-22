@@ -444,6 +444,7 @@ country_event = { #Canis Rebellion
 				set_province_controller = 752
 				set_province_controller = 3945
 				set_province_controller = 2732
+				set_province_controller = 3278
 			}
 		}
 		IF = {

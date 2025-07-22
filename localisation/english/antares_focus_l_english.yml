@@ -51,7 +51,7 @@
  ANT_strengthen_antarean_democracy_desc:0 "To unite Centaura and later all of Forma is a hard task which cannot be done through brute force. A war of the greatest proportions will only cause so much more suffering which goes against Kalvin's own beliefs. We must unite Forma diplomatically under a greater federation of nations. This will require the formation of a true and stable democracy in Antares, however."
  ANT_authoritarian1:0 "Emergency Monarchic Powers"
  ANT_authoritarian1_desc:0 "To get all of our needed authoritarian reforms done we must consolidate monarchic power and give emergency powers to Kalvin."
- ANT_authoritarian2:0 "Utilize popular Support"
+ ANT_authoritarian2:0 "Utilize Popular Support"
  ANT_authoritarian2_desc:0 "The emperor is very popular amongst the people of Antares. From Lepus to Ara, praise for the emperor can be heard. This popular support will be a crucial part for allowing the emperor to create his absolute monarchy."
  ANT_authoritarian3:0 "Aggresive Campaigning"
  ANT_authoritarian3_desc:0 "There are however many people opposed against this increased authoritarianism. We must start a massive propaganda campaign to make support for the emperor unquestionable."
@@ -61,8 +61,76 @@
  ANT_authoritarian5a_desc:0 "With  a great majority of the people on our side and political opposition greatly weakend, we can temporarily suspend democratic institutions in Antares."
  ANT_authoritarian5:0 "Puppet Parliament"
  ANT_authoritarian5_desc:0 "With order restored, Antares reformed towards authoritariaism and political opposition broken, we can safely end the suspension of the parliament and courts. Now however, they are safely under our thumb, and their figurehead support will greatly unite the nation."
-
+ ANT_strengthen_military:0 "Strengthen Military Political Power"
+ ANT_strengthen_military_desc:0 "Strengthen Military Political Power"
+ ANT_protest1:0 "Deal with the protests"
+ ANT_protest1_desc:0 "Deal with the protests"
+ ANT_protest2:0 "Implement Martial Law"
+ ANT_protest2_desc:0 "Deal with the protests"
+ ANT_protest3:0 "Large-scale Police Enforcement"
+ ANT_protest3_desc:0 "Deal with the protests"
+ ANT_protest4:0 "Crush the Strongholds"
+ ANT_protest4_desc:0 "Deal with the protests"
+ ANT_protest5:0 "Compromise With the People"
+ ANT_protest5_desc:0 "Deal with the protests"
+ ANT_protest5b:0 "Assasinate Their Leaders"
+ ANT_protest5b_desc:0 "Deal with the protests"
+ ANT_protest6:0 "End the Crisis"
+ ANT_protest6_desc:0 "Deal with the protests"
+ ANT_military_coup:0 "Military Coup"
+ ANT_military_coup_desc:0 "The protests and political crisis has gone on for too long. The military is the only force that can restore order in Antares. As the protectors of the people the army must seize controll and stabilize the country."
+ ANT_military_junta:0 "1st Council of the Junta"
+ ANT_military_junta_desc:0 "With controll seized, we must now decide how to rule the country, and more importantly how to keep our controll."
  
+ ANT_prepare_war_industry:0 "Prepare the War Industry"
+ ANT_prepare_war_industry_desc:0 "It is time to finally reveal the true purpouse of our industrial development; for the comming wars our war industry must provide massive amounts of equipment, resources and veichles to the military. We will start an enormous armament programme to mobilize and prepare the homefront for war."
+
+
+ ANT_prepare_for_war_with_cetus:0 "Prepare for Conquest"
+ ANT_prepare_for_war_with_cetus_desc:0 "The time has come to finally act on our ambitions. We will prepare for our great divine conquest to end war forever and unite the human race. Our industry is ready to provide for the military, the army and navy have gone through reforms and modernizations that hopefully are adequate and our internal politics have been secured."
+ ANT_warcetus:0 "Hunt the Great Whale"
+ ANT_skorpiivus:0 "Establish Skorpii Korvus"
+ ANT_corvbad:0 "Shoot Down the Black Crow"
+ ANT_waraquila:0 "Slaughter the Forest Falcon"
+ ANT_warvega:0 "Break the Olive" # idfk someone find a better name
+ ANT_wargrs:0 "Seize the Desert" #idfk someone find a better name
+
+
  antares_corvus_alliance_tooltip:0 "This focus does nothing. Get Corvus to do the focus 'Request Antarean Intervention'."
 
  ANT_eq_trigger_tt:0 "Has more than §Y80K§! in Infantry Equipment in the army"
+
+ TANT1:0 "The Speech"
+ DANT1:0 "Kalvin Tau stood in the antarean Supreme Kouncil. He had been thinking about this for years, and now he was ready to announce his plans to the world. He would unite Centaura under Antarean rule, and then all of Forma. He would end war forever."
+ AANT1:0 "The Emperor must assume absolute power to end war through force"
+ BANT1:0 "Antares must strengthen its democracy to end war through diplomacy"
+ T.ANT.2:0 "My event title"
+ D.ANT.2:0 "My event description"
+
+ #ideas 
+ trench_warfare_idea:0 "1900's Warfare"
+ 
+ trench_warfare_idea_desc:0 "haha get stuck in a 4 year stalemate with 2 million casualties and 500k guns lost to atrition"
+ 
+ antarean_nationalism_desc:0 "Antares is perhaps the most nationalistic country in all of Centaura. The people of Antares are proud of their nation and its history, and they are willing to fight to protect it."
+ 
+ antarean_democracy:0 "Antarean Democracy"
+ antarean_democracy_desc:0 "The Supreme Kouncil is antares' legislature and their cooperation is needed for the emperor to implent his agenda and govern effectively. A large amount of the emperor`s political power is spent on maintaining Kouncil support."
+ 
+ antarean_democracy_unfriendly:0 "Antarean Democracy"
+ antarean_democracy_unfriendly_desc:0 "The Supreme Kouncil is antares' legislature and their cooperation is needed for the emperor to implent his agenda and govern effectively. The Emperor`s moves towards absolute monarchy has made the Kouncil very unfriendly towards him, and they are destabilizing the regime. A large amount of the emperor's political power is spent on maintaining Kouncil support."
+ antarean_democracy_unfriendly2:0 "Antarean Democracy"
+ antarean_democracy_unfriendly2_desc:0 "The Supreme Kouncil is antares' legislature and their cooperation is needed for the emperor to implent his agenda and govern effectively. The Emperor`s moves towards absolute monarchy has made the Kouncil very unfriendly towards him, and they are destabilizing the regime. A medium amount of the emperor's political power is spent on maintaining Kouncil support."
+ 
+ antarean_democracy_pacified:0 "Antarean Democracy"
+ antarean_democracy_pacified_desc:0 "The Supreme Kouncil is antares' legislature and their cooperation is needed for the emperor to implent his agenda and govern effectively. The Kouncil has been succesfully subjugated and is only nominally independent, allowing the emperor to rule with absolute power. A medium amount of the emperor's political power is spent on maintaining Kouncil support."
+ 
+ 
+ antarean_industry:0 "Antarean Industrialisation"
+ antarean_industry_desc:0 "Antares, the great scorpion of Centaura has always been a major power. Throughout the Second Industrial Revolution in the mid-1800s, Antares has been the second largest industrial power in the world. Yet compared to the massive size of our nation it is relatively underdeveloped, with large areas of the country still being rural and agrarian. Still, we are well on our way to develop the industry needed for Kalvin Tau's vision."
+ central_industry:0 "Centralized Industry"
+ central_industry_desc:0 "Antares, the great scorpion of Centaura has always been a major power. Throughout the Second Industrial Revolution in the mid-1800s, Antares has been the second largest industrial power in the world. We are rapidly developing a strong centralized industry that will allow us to achieve our foreign policy goals, even though the development of the rest of the nation will lack behind."
+ decentral_industry:0 "Decentralized Industry"
+ decentral_industry_desc:0 "Antares, the great scorpion of Centaura has always been a major power. Throughout the Second Industrial Revolution in the mid-1800s, Antares has been the second largest industrial power in the world. We are developing a decentralized industry across the entire nation to truly make Antares a modernised and developed nation."
+
+

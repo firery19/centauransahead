@@ -295,7 +295,7 @@ if = {
 
 	# Starting Stats of various kinds for the 39 scenario
 	set_war_support = 0.7
-	add_political_power = 1000
+	add_political_power = 1500
 	add_command_power = 80
 
 	# This represents the completion of the focus Develop Heraeus Research Facilities
@@ -307,25 +307,25 @@ if = {
 
 
 		# Laws
-		war_economy
+		partial_economic_mobilization
 		extensive_conscription
 
 	}
 	
 	
 	# Slovakia is set up as a subject manually
-	set_autonomy = {
-		target = COV
-		autonomous_state = autonomy_puppet
-	}
-	# Slovakia is set up as a subject manually
-	set_autonomy = {
-		target = RIA
-		autonomous_state = autonomy_puppet
-	}
-	# Slovakia is set up as a subject manually
-	set_autonomy = {
-		target = GRS
-		autonomous_state = autonomy_puppet
-	}
+#	set_autonomy = {
+#		target = COV
+#		autonomous_state = autonomy_puppet
+#	}
+#	# Slovakia is set up as a subject manually
+#	set_autonomy = {
+#		target = RIA
+#		autonomous_state = autonomy_puppet
+#	}
+#	# Slovakia is set up as a subject manually
+#	set_autonomy = {
+#		target = GRS
+#		autonomous_state = autonomy_puppet
+#	}
 

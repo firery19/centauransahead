@@ -1752,8 +1752,10 @@ focus = {
 
 	ai_will_do = { factor = 3 }
 	completion_reward = {
-#event that autocompletes next focus
-
+		country_event = {
+                	id = ANT.1
+                	random_days = 1
+            	}
 	}
 }
 # Consolidate Monarchic Powers
@@ -2177,7 +2179,7 @@ custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
 }
 focus = {
 	id = ANT_help_corvus
-	icon = GFX_goal_generic_improve_relations
+	icon = GFX_focus_COV_the_confederation #GFX_goal_generic_improve_relations
 	x = 3
 	y = 12
 	cost = 10
@@ -3349,7 +3351,7 @@ custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
 # Intervene in the SCW
 focus = {
 	id = ANT_warcetus
-	icon = GFX_goal_generic_major_war
+	icon = GFX_focus_generic_attack_cetus
 	x = 13
 	y = 18
 	cost = 10
@@ -3374,7 +3376,7 @@ declare_war_on = {
 # puppet skorvus
 focus = {
 	id = ANT_skorpiivus
-	icon = GFX_goal_generic_major_war
+	icon = GFX_focus_COV_the_confederation
 	x = 15
 	y = 19
 	cost = 10
@@ -3413,7 +3415,7 @@ declare_war_on = {
 # burn forest hahahahah
 focus = {
     id = ANT_waraquila
-    icon = GFX_goal_generic_major_war
+    icon = GFX_focus_generic_aquila
     x = 13
     y = 21
     cost = 10

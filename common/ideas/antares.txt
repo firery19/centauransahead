@@ -2,7 +2,7 @@ ideas = {
     country = {
 #INDUSTRY1
         ANT_industry_idea = {
-            name = "Antarean Industrialisation"
+            name = "antarean_industry"
             
             picture = man_five_year_plan_industry
             allowed = { original_tag = ANT }
@@ -16,7 +16,7 @@ ideas = {
             }
         }
         ANT_industry_idea1 = {
-            name = "Antarean Industrialisation"
+            name = "antarean_industry"
             
             picture = man_five_year_plan_industry
             allowed = { original_tag = ANT }
@@ -32,7 +32,7 @@ ideas = {
         }
 ###############
         ANT_industry_ideac1 = {
-            name = "Centralised Industry"
+            name = "central_industry"
             
             picture = generic_central_management
             allowed = { original_tag = ANT }
@@ -47,7 +47,7 @@ ideas = {
             }
         }
         ANT_industry_ideac2 = {
-            name = "Centralised Industry"
+            name = "central_industry"
             
             picture = generic_central_management
             allowed = { original_tag = ANT }
@@ -61,7 +61,7 @@ ideas = {
             }
         }
         ANT_industry_ideac3 = {
-            name = "Centralised Industry"
+            name = "central_industry"
             
             picture = generic_central_management
             allowed = { original_tag = ANT }
@@ -74,7 +74,7 @@ ideas = {
             }
         }
         ANT_industry_ideacf = {
-            name = "Centralised Industry"
+            name = "central_industry"
             
             picture = generic_central_management
             allowed = { original_tag = ANT }
@@ -88,7 +88,7 @@ ideas = {
         }
 ##################
         ANT_industry_idead1 = {
-            name = "Decentralised Industry"
+            name = "decentral_industry"
             
             picture = generic_local_self_management
             allowed = { original_tag = ANT }
@@ -103,7 +103,7 @@ ideas = {
             }
         }
         ANT_industry_idead2 = {
-            name = "Decentralised Industry"
+            name = "decentral_industry"
             
             picture = generic_local_self_management
             allowed = { original_tag = ANT }
@@ -118,7 +118,7 @@ ideas = {
             }
         }
         ANT_industry_idead3 = {
-            name = "Decentralised Industry"
+            name = "decentral_industry"
             
             picture = generic_local_self_management
             allowed = { original_tag = ANT }
@@ -133,7 +133,7 @@ ideas = {
             }
         }
         ANT_industry_ideadf = {
-            name = "Decentralised Industry"
+            name = "decentral_industry"
             
             picture = generic_local_self_management
             allowed = { original_tag = ANT }
@@ -321,7 +321,7 @@ neutrality_drift = 0.02
         }
 #######POLITICAL##########
 		ANT_ppdebuff = {
-            name = "Antarean democracy"
+            name = antarean_democracy
             
             picture = generic_pp_unity_bonus
             allowed = { original_tag = ANT }
@@ -333,7 +333,7 @@ neutrality_drift = 0.02
             }
         }
 		ANT_ppdebuff2 = {
-            name = "Antarean democracy"
+            name = antarean_democracy_unfriendly
             
             picture = generic_pp_unity_bonus
             allowed = { original_tag = ANT }
@@ -346,7 +346,7 @@ neutrality_drift = 0.02
             }
         }
 		ANT_ppdebuff3 = {
-            name = "Antarean democracy"
+            name = antarean_democracy_unfriendly2
             
             picture = generic_pp_unity_bonus
             allowed = { original_tag = ANT }
@@ -358,7 +358,7 @@ neutrality_drift = 0.02
             }
         }
 		ANT_ppdebuff4 = {
-            name = "Antarean democracy"
+            name = antarean_democracy_pacified
             
             picture = generic_pp_unity_bonus
             allowed = { original_tag = ANT }

@@ -10,7 +10,11 @@ bookmarks = {
 		ANT = {
 			history = ANT_1900_DESC
 			ideology = neutrality
-			
+			focuses = {
+				ANT_consolidate_monarchic_powers
+				ANT_prepare_war_industry
+				ANT_prepare_for_war_with_cetus
+			}
 			ideas = {
 				ANT_ppdebuff
 				ANT_industry_idea

@@ -78,10 +78,10 @@ focus_tree = {
 
         completion_reward = {
             48 = {
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 1
                 add_building_construction = {
                     type = industrial_complex
-                    level = 2
+                    level = 1
                     instant_build = yes
                 }
             }
@@ -121,7 +121,7 @@ focus_tree = {
                     add_extra_state_shared_building_slots = 1
                     add_building_construction = {
                         type = infrastructure
-                        level = 2
+                        level = 1
                         instant_build = yes
                     }
                 }
@@ -228,10 +228,10 @@ focus_tree = {
 
         completion_reward = {
             48 = {
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 1
                 add_building_construction = {
                     type = arms_factory
-                    level = 2
+                    level = 1
                     instant_build = yes
                 }
             }
@@ -250,7 +250,7 @@ focus_tree = {
 
         prerequisite = { focus = CET_sc_new_industry }
         prerequisite = { focus = CET_sc_boomtown }
-
+	ai_will_do = { factor = 3 }
         completion_reward = {
             48 = { add_core_of = CET }
 			154 = { add_core_of = CET }
@@ -399,10 +399,10 @@ focus_tree = {
 
         completion_reward = {
             154 = {
-                add_extra_state_shared_building_slots = 3
+                add_extra_state_shared_building_slots = 2
                 add_building_construction = {
                     type = dockyard
-                    level = 3
+                    level = 2
                     instant_build = yes
                 }
             }
@@ -473,7 +473,7 @@ focus_tree = {
         }
 
         mutually_exclusive = { focus = CET_militarism }
-
+	ai_will_do = { factor = 3 }
         completion_reward = {
             add_stability = 0.05
             hidden_effect = {
@@ -504,7 +504,7 @@ focus_tree = {
         mutually_exclusive = { focus = CET_democracy }
 
         prerequisite = { focus = CET_status_quo }
-
+	ai_will_do = { factor = 3 }
         completion_reward = {
 		add_stability = 0.05
         }
@@ -565,10 +565,10 @@ focus_tree = {
 						state = 7
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 				}
 			}
@@ -665,10 +665,10 @@ focus_tree = {
 						state = 46
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 				}
 			}
@@ -1150,10 +1150,10 @@ focus_tree = {
 						state = 44
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 				}
 			}
@@ -1165,10 +1165,10 @@ focus_tree = {
 						state = 47
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 				}
 			}
@@ -2249,11 +2249,43 @@ focus_tree = {
 				prioritize = { 45 }
 				limit = { PREV = { has_full_control_of_state = PREV } }
 				create_unit = {
-					division = "name = \"Rushed Infantry Division\" division_template = \"Rushed Infantry Division\" start_experience_factor = 0.5" 
+					division = "name = \"Rushed Infantry Division\" division_template = \"Rushed Infantry Division\" start_experience_factor = 0.1" 
 					owner = PREV
 				}
 				create_unit = {
-					division = "name = \"Rushed Infantry Division\" division_template = \"Rushed Infantry Division\" start_experience_factor = 0.5" 
+					division = "name = \"Rushed Infantry Division\" division_template = \"Rushed Infantry Division\" start_experience_factor = 0.1" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Rushed Infantry Division\" division_template = \"Rushed Infantry Division\" start_experience_factor = 0.1" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Rushed Infantry Division\" division_template = \"Rushed Infantry Division\" start_experience_factor = 0.1" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Rushed Infantry Division\" division_template = \"Rushed Infantry Division\" start_experience_factor = 0.1" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Rushed Infantry Division\" division_template = \"Rushed Infantry Division\" start_experience_factor = 0.1" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Rushed Infantry Division\" division_template = \"Rushed Infantry Division\" start_experience_factor = 0.1" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Rushed Infantry Division\" division_template = \"Rushed Infantry Division\" start_experience_factor = 0.1" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Rushed Infantry Division\" division_template = \"Rushed Infantry Division\" start_experience_factor = 0.1" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Rushed Infantry Division\" division_template = \"Rushed Infantry Division\" start_experience_factor = 0.1" 
 					owner = PREV
 				}
 			}
@@ -3432,7 +3464,7 @@ focus_tree = {
         cost = 5
 
         completion_reward = {
-			#custom_effect_tooltip = cetus_joke_army_tooltip
+			custom_effect_tooltip = cetus_joke_army_tooltip
 			hidden_effect = {
 			random_owned_controlled_state = {
 				prioritize = { 45 }
@@ -3533,10 +3565,7 @@ focus_tree = {
 					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 1" 
 					owner = PREV
 				}
-				create_unit = {
-					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 1" 
-					owner = PREV
-					}
+
 				}
 			}
 		}

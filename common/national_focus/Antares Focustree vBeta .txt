@@ -1874,7 +1874,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_authoritarian3}
 	prerequisite = {focus = ANT_authoritarian4}
-	available = { democratic < 0.15 communism < 0.10}
+	available = { 
+		OR = { 
+			ANT = { is_ai = yes } 
+			democratic < 0.15 communism < 0.10 
+		}
+	}
+
         mutually_exclusive = { focus = ANT_ }
 	ai_will_do = { factor = 2 }
 	completion_reward = {

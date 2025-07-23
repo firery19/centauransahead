@@ -28,7 +28,10 @@ ideas = {
 		low_economic_mobilisation = {
 
 			available = {
-				has_war_support > 0.25
+				OR = {
+				has_war_support > 0.35
+			        is_at_war = yes
+				}
 				if = {
 					limit = {
 						original_tag = ANT
@@ -121,7 +124,11 @@ ideas = {
 		partial_economic_mobilisation = {
 
 			available = {
-				has_war_support > 0.4
+				OR = {
+				has_war_support > 0.45
+			        is_at_war = yes
+				}
+				
 				if = {
 					limit = {
 						original_tag = ANT

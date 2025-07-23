@@ -19,10 +19,22 @@ bookmarks = {
 				ANT_ppdebuff
 				ANT_industry_idea
 				ANT_army
-		}}
+			}
+
+		}
 		ORI = {
 			history = ORI_1900_DESC
 			ideology = democratic
+			ideas = {
+				ORS_RampantGovernmentCorruption
+				ORS_RapidIndustrialization
+				ORS_PrioritizedMilitary
+			}
+			focuses = {
+				ORS_Elections
+				ORS_InvadeCanis
+				ORS_TheHard1900s
+			}
 		}
 		CET = {
 			history = CET_1900_DESC
@@ -33,6 +45,11 @@ bookmarks = {
 				CET_SC_question_idea
 				CET_independent_armed_forces_idea
 			}
+			focuses = {
+				CET_strengthen_monarch
+				CET_defence_plans
+				CET_sc_core
+			}
 		}
 		COV = {
 			history = COV_1900_DESC
@@ -41,10 +58,25 @@ bookmarks = {
 				COV_revanchism_idea
 				COV_dysfunctional_economy_idea
 			}
+			focuses = {
+				COV_industry
+				COV_war_with_cetus
+				COV_continue_attack
+			}
 		}
 		URS = {
 			history = URS_1900_DESC
 			ideology = neutrality
+			ideas = {
+				URS_domestic_unrest
+				URS_sluggish_economy
+				URS_navy_spirit
+			}
+			focuses = {
+				URS_counter_resistance_support
+				URS_prelude_grease_war
+				URS_army_tree_start
+			}
 		}
 		HYS = {
 			history = HYS_1900_DESC
@@ -53,6 +85,11 @@ bookmarks = {
 		RIA = {
 			history = RIA_1900_DESC
 			ideology = neutrality
+			ideas = {
+				RIA_rural_countryside
+				RIA_industrialisation
+
+			}
 		}
 		LBR = {
 			history = LBR_1900_DESC

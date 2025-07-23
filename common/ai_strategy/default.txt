@@ -98,7 +98,7 @@ default_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = capital_ship
-		value = 10
+		value = 40
 	}
 
 	ai_strategy = {
@@ -110,7 +110,7 @@ default_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship
-		value = 40
+		value = 80
 	}
 
 	ai_strategy = {

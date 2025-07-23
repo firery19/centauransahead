@@ -980,7 +980,7 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 1962
+		start_year = 1942 #they got modern tanks by the forman war
 
 		folder = {
 			name = nsb_armour_folder

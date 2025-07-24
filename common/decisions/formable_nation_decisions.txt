@@ -137,7 +137,7 @@ AND = {
 			    transfer_troops = yes
 			}
 			annex_country = {
-			    target = LPSf
+			    target = LPS
 			    transfer_troops = yes
 			}
 

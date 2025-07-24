@@ -195,4 +195,7 @@
  decentral_industry:0 "Decentralized Industry"
  decentral_industry_desc:0 "Antares, the great scorpion of Centaura has always been a major power. Throughout the Second Industrial Revolution in the mid-1800s, Antares has been the second largest industrial power in the world. We are developing a decentralized industry across the entire nation to truly make Antares a modernised and developed nation."
 
-
+ ANT_neutrality_party:0 "House of Tau"
+ ANT_democratic_party:0 "Supreme Kouncil - Democratic Faction"
+ ANT_fascism_party:0 "Antares Imperial Army - Ultra-Nationalists"
+ ANT_communism_party:0 "Workers Movement of Antares"

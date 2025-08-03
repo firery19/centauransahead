@@ -464,10 +464,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 					}
 				}
@@ -562,7 +562,7 @@ focus_tree = {
 		
 		focus = {
 		id = COV_increase_coal_production
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_focus_generic_mining_industry
 		prerequisite = { focus = COV_wartime_administration }
 		relative_position_id = COV_wartime_administration
 		x = 0
@@ -570,7 +570,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		custom_effect_tooltip = corvus_does_nothing_tooltip 
 			}
 		}
 		
@@ -589,13 +589,27 @@ focus_tree = {
 		}
 		
 		focus = {
+		id = COV_subsidise_industries
+		icon = GFX_focus_generic_monetary_union
+		prerequisite = { focus = COV_warbonds }
+		relative_position_id = COV_warbonds
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		focus = {
 		id = COV_address_the_dysfunctional_economy
 		icon = GFX_focus_NOR_continue_nygaardsvold_government
 		prerequisite = { focus = COV_wartime_administration }
 		relative_position_id = COV_wartime_administration
 		x = -2
 		y = 1
-		cost = 5
+		cost = 2
 
 		completion_reward = {
 		custom_effect_tooltip = corvus_does_nothing_tooltip
@@ -619,15 +633,147 @@ focus_tree = {
 		
 		focus = {
 		id = COV_cooperate_the_street_families
-		icon = GFX_focus_generic_industrialists
+		icon = GFX_focus_BRA_ethical_internationalism
 		prerequisite = { focus = COV_address_the_dysfunctional_economy }
+		mutually_exclusive = { focus = COV_suppress_the_street_families }
 		relative_position_id = COV_address_the_dysfunctional_economy
-		x = -2
+		x = -1
 		y = 1
 		cost = 5
 
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		if = {
+			limit = {
+			has_idea = COV_mafia_cooperation_idea
+			}
+			swap_ideas = {
+				add_idea = COV_mafia_cooperation_2_idea
+				remove_idea = COV_mafia_cooperation_idea
+				}
+			}
+			else_if = {
+				limit = {
+				has_idea = COV_mafia_cooperation_2_idea
+				}
+				swap_ideas = {
+					add_idea = COV_mafia_disbanded_idea
+					remove_idea = COV_mafia_cooperation_2_idea
+					}
+				}
+				else_if = {
+				limit = {
+				has_idea = COV_mafia_rampant_idea
+				}
+				swap_ideas = {
+					add_idea = COV_mafia_cooperation_idea
+					remove_idea = COV_mafia_rampant_idea
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_food_distribution
+		icon = GFX_focus_generic_reinforcing_the_supply_network
+		prerequisite = { focus = COV_cooperate_the_street_families }
+		prerequisite = { focus = COV_implement_rationing_policy }
+		relative_position_id = COV_cooperate_the_street_families
+		x = 2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		set_country_flag = corvus_mafia_food_cooperation
+		if = {
+			limit = {
+				has_idea = COV_active_rationing_idea
+				}
+				swap_ideas = {
+					remove_idea = COV_active_rationing_idea
+					add_idea = COV_active_rationing_2_idea
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_regulate_underground_markets
+		icon = GFX_focus_generic_price_controls
+		prerequisite = { focus = COV_cooperate_the_street_families }
+		relative_position_id = COV_cooperate_the_street_families
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		if = {
+			limit = {
+			has_idea = COV_mafia_cooperation_idea
+			}
+			swap_ideas = {
+				add_idea = COV_mafia_cooperation_2_idea
+				remove_idea = COV_mafia_cooperation_idea
+				}
+			}
+			else_if = {
+				limit = {
+				has_idea = COV_mafia_cooperation_2_idea
+				}
+				swap_ideas = {
+					add_idea = COV_mafia_disbanded_idea
+					remove_idea = COV_mafia_cooperation_2_idea
+					}
+				}
+				else_if = {
+				limit = {
+				has_idea = COV_mafia_rampant_idea
+				}
+				swap_ideas = {
+					add_idea = COV_mafia_cooperation_idea
+					remove_idea = COV_mafia_rampant_idea
+					}
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_peaceful_dissolution
+		icon = GFX_focus_generic_subjugation
+		prerequisite = { focus = COV_food_distribution }
+		prerequisite = { focus = COV_regulate_underground_markets }
+		relative_position_id = COV_food_distribution
+		x = -2
+		y = 1
+		cost = 15
+
+		completion_reward = {
+		if = {
+			limit = {
+			has_idea = COV_mafia_cooperation_idea
+			}
+			swap_ideas = {
+				add_idea = COV_mafia_cooperation_2_idea
+				remove_idea = COV_mafia_cooperation_idea
+				}
+			}
+			else_if = {
+				limit = {
+				has_idea = COV_mafia_cooperation_2_idea
+				}
+				swap_ideas = {
+					add_idea = COV_mafia_disbanded_idea
+					remove_idea = COV_mafia_cooperation_2_idea
+					}
+				}
+				else_if = {
+				limit = {
+				has_idea = COV_mafia_rampant_idea
+				}
+				swap_ideas = {
+					add_idea = COV_mafia_cooperation_idea
+					remove_idea = COV_mafia_rampant_idea
+					}
+				}
 			}
 		}
 		
@@ -635,15 +781,69 @@ focus_tree = {
 		id = COV_suppress_the_street_families
 		icon = GFX_focus_generic_industrialists
 		prerequisite = { focus = COV_address_the_dysfunctional_economy }
+		mutually_exclusive = { focus = COV_cooperate_the_street_families }
 		relative_position_id = COV_address_the_dysfunctional_economy
-		x = -1
+		x = -3
 		y = 1
-		cost = 5
+		cost = 10
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = COV_mafia_suppressed_idea
+				remove_idea = COV_mafia_rampant_idea
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_impose_control
+		icon = GFX_focus_AFG_contact_amanullah_loyalists
+		prerequisite = { focus = COV_suppress_the_street_families }
+		relative_position_id = COV_suppress_the_street_families
+		x = -2
+		y = 1
+		cost = 10
 
 		completion_reward = {
 		custom_effect_tooltip = corvus_does_nothing_tooltip
 			}
 		}
+		
+		focus = {
+		id = COV_shut_down_black_market
+		icon = GFX_focus_FIN_oy_alkoholiliike
+		prerequisite = { focus = COV_suppress_the_street_families }
+		relative_position_id = COV_suppress_the_street_families
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_the_end_of_war
+		icon = GFX_focus_BEL_v_for_victory
+		prerequisite = { focus = COV_subsidise_industries }
+		prerequisite = { focus = COV_increase_coal_production }
+		available = {
+		NOT = { has_war = yes }
+		}
+		relative_position_id = COV_increase_coal_production
+		x = 0
+		y = 3
+		cost = 2
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		
+		
+		# offensive
 		
 		focus = {
 		id = COV_initial_offensive
@@ -784,6 +984,164 @@ focus_tree = {
 			}
 		}
 		
+		focus = {
+		id = COV_penal_battalions
+		icon = GFX_focus_GER_strafbataillon
+		prerequisite = { focus = COV_continue_attack }
+		relative_position_id = COV_continue_attack
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		add_ideas = COV_penal_battalion_idea
+			
+			}
+		}
+		
+		# end of war focus
+		
+		focus = {
+		id = COV_the_start_of_a_new_corvus
+		icon = GFX_focus_generic_election
+		prerequisite = { focus = COV_the_end_of_war }
+		relative_position_id = COV_the_end_of_war
+		x = 0
+		y = 2
+		cost = 3
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_abdicate
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = COV_the_start_of_a_new_corvus }
+		mutually_exclusive = { focus = COV_continue_on }
+		relative_position_id = COV_the_start_of_a_new_corvus
+		x = -4
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_transition_to_civil_administration
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = COV_abdicate }
+		relative_position_id = COV_abdicate
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_demobilise
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = COV_abdicate }
+		relative_position_id = COV_abdicate
+		x = -2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_return_to_factories
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = COV_demobilise }
+		relative_position_id = COV_demobilise
+		x = -2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		## shared!
+		focus = {
+		id = COV_rebuild_south_corvus
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = COV_abdicate focus = COV_continue_on }
+		relative_position_id = COV_abdicate
+		x = 4
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		# king stays
+		
+		focus = {
+		id = COV_continue_on
+		icon = GFX_focus_generic_military_dictatorship
+		prerequisite = { focus = COV_the_start_of_a_new_corvus }
+		mutually_exclusive = { focus = COV_abdicate }
+		mutually_exclusive = { focus = COV_discontent_with_monarchy }
+		available = {
+		NOT = { is_subject = yes }
+		}
+		relative_position_id = COV_the_start_of_a_new_corvus
+		x = 4
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		focus = {
+		id = COV_strengthen_army
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = COV_continue_on }
+		relative_position_id = COV_continue_on
+		x = 1
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
+		
+		# regime change
+		
+		focus = {
+		id = COV_discontent_with_monarchy
+		icon = GFX_focus_ETH_the_patriots
+		prerequisite = { focus = COV_the_start_of_a_new_corvus }
+		mutually_exclusive = { focus = COV_abdicate }
+		mutually_exclusive = { focus = COV_continue_on }
+		available = {
+		NOT = { is_subject = yes }
+		}
+		relative_position_id = COV_the_start_of_a_new_corvus
+		x = 12
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_nothing_tooltip
+			}
+		}
 	################################################################################################################
 	################################# POLITICAL PATH: DEMOCRATIC ###################################################
 	################################################################################################################

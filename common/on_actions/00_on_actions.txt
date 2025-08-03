@@ -26,6 +26,7 @@ on_actions = {
 				}
 				ANT = { puppet = COV }
 			}
-				
+		}
+	}
 }
-		
+

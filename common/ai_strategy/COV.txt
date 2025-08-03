@@ -38,7 +38,7 @@ COV_war_preparation = {
 		OR = {
 			NOT = { country_exists = CET }
 			AND = {
-				has_completed_focus = GER_danzig_or_war
+				has_completed_focus = COV_initial_offensive
 				COV = { has_war_with = CET }
 			}
 			owns_state = 48

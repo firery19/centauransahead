@@ -84,6 +84,7 @@ add_ideas = {
 
 		COV_revanchism_idea
 		COV_dysfunctional_economy_idea
+		COV_mafia_rampant_idea
 		limited_conscription
 		low_economic_mobilisation
 		forma_militarism

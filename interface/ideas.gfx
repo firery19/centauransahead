@@ -8767,6 +8767,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_CET_SC_question.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_CET_allocate_funds_idea"
+		texturefile = "gfx/interface/ideas/idea_CET_allocate_funds_idea.dds"
+	}
+
 	# orion
 	spriteType = {
 		name = "GFX_idea_ORI_Corruption"
@@ -8809,9 +8814,30 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_COV_dysfunctional_economy_idea.dds"			
 	}
 
+	#aquila
 	spriteType = {
 		name = "GFX_idea_AQU_iron_army_idea"
 		texturefile = "gfx/interface/ideas/idea_AQU_iron_army_idea.dds"			
+	}
+
+	spriteType = {
+		name = "GFX_idea_AQU_outdated_technology_idea"
+		texturefile = "gfx/interface/ideas/idea_AQU_outdated_technology_idea.dds"			
+	}
+
+	spriteType = {
+		name = "GFX_idea_AQU_rusting_army_idea"
+		texturefile = "gfx/interface/ideas/idea_AQU_rusting_army_idea.dds"			
+	}
+
+	spriteType = {
+		name = "GFX_idea_AQU_maintained_army_idea"
+		texturefile = "gfx/interface/ideas/idea_AQU_maintained_army_idea.dds"			
+	}
+
+	spriteType = {
+		name = "GFX_idea_AQU_modern_army_idea"
+		texturefile = "gfx/interface/ideas/idea_AQU_modern_army_idea.dds"			
 	}
 
 	# antares

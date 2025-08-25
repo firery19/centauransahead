@@ -42,7 +42,7 @@
  STRATEGICREGION_41:2 "North Tucana"
  STRATEGICREGION_42:0 "Tucana"
  STRATEGICREGION_43:0 "East Centauri Islands"
- STRATEGICREGION_44:0 "North Columba"
+ STRATEGICREGION_44:0 "North Columban Plain"
  STRATEGICREGION_45:0 "Central Columba"
  STRATEGICREGION_46:0 "Annulus Sea"
  STRATEGICREGION_47:1 "West Columba"
@@ -55,7 +55,7 @@
  STRATEGICREGION_54:0 "East Libra"
  STRATEGICREGION_55:0 "South Libran Ocean"
  STRATEGICREGION_56:0 "Persephone"
- STRATEGICREGION_57:0 "Southern Antares Islands"
+ STRATEGICREGION_57:0 "West Aquila" # Formerly Southern Antares Islands
  STRATEGICREGION_58:0 "Southwest Orion Islands"
  STRATEGICREGION_59:0 "Guney Sea"
  STRATEGICREGION_60:0 "Yelman Sea"

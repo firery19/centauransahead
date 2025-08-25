@@ -7,6 +7,7 @@ state={
 	history = {
 		owner = ANT
 		add_core_of = ANT
+		add_core_of = NRM
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 3
@@ -29,6 +30,6 @@ state={
 	}
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	manpower=18987904
+	manpower=13987904
 	state_category = city
 }

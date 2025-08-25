@@ -207,7 +207,7 @@ ideas = {
         }
 		
 		CET_rules_the_waves_2_idea = {
-            name = CET_cetus_rules_the_waves_2
+            name = CET_cetus_rules_the_waves
 
             picture = cetus_rules_the_waves
             allowed = { original_tag = CET }
@@ -223,7 +223,7 @@ ideas = {
         }
 		
 		CET_rules_the_waves_3_idea = {
-            name = CET_cetus_rules_the_waves_3
+            name = CET_cetus_rules_the_waves
 
             picture = cetus_rules_the_waves
             allowed = { original_tag = CET }
@@ -396,6 +396,22 @@ ideas = {
 
             modifier = {
 			consumer_goods_factor = 0.1
+            }
+        }
+		
+		CET_southern_frontier = {
+
+            picture = CET_
+            allowed = { original_tag = CET }
+            removal_cost = -1
+			targeted_modifier = {
+				tag = ANT
+				defense_bonus_against = 0.25
+				}
+				targeted_modifier = {
+				tag = COV
+				defense_bonus_against = -0.1
+				}
             }
         }
     }

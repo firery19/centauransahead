@@ -4,12 +4,13 @@ state={
 	history={
 		owner = ORI
 		add_core_of = ORI
+		add_core_of = GEM
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 4
 			arms_factory = 0
 			dockyard = 1
-			4528 = {
+			4628 = {
 				naval_base = 3
 
 			}

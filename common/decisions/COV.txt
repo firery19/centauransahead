@@ -358,7 +358,7 @@ COV_dysfunctional_economy_idk = {
 		}
 
 		complete_effect = {
-		remove_idea = COV_dysfunctional_economy_idea
+		remove_ideas = COV_dysfunctional_economy_idea
 		}
 
 		remove_effect = {
@@ -748,6 +748,36 @@ COV_wartime_administration_war = {
 		clr_country_flag = martial_law_on
 		set_country_flag = martial_law_off
 		remove_ideas = COV_martial_law_imposed_idea
+		}
+		ai_will_do = {
+		factor = 0
+		}
+	}
+	
+	corvus_shut_down_market = {
+
+		icon = oppression
+
+		available = {
+		has_completed_focus = COV_shut_down_black_market
+		}
+		
+		visible = {
+			has_completed_focus = COV_suppress_the_street_families
+		}
+		
+		fire_only_once = yes
+		
+		days_re_enable = 0
+		
+		cost = 100
+		
+		complete_effect = {
+		add_days_mission_timeout = {
+			mission = corvus_failing_economy_d
+			days = -30
+			}
+			add_ideas = COV_shut_down_markets_idea
 		}
 		ai_will_do = {
 		factor = 0

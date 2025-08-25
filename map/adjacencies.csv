@@ -16,6 +16,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6756;4077;sea;7852;-1;-1;-1;-1;;canis island
 6647;6646;sea;7578;-1;-1;-1;-1;;hydrus east island
 3196;3389;lake;8207;-1;-1;-1;-1;;ursa
+672;6723;sea;8048;-1;-1;-1;-1;;columba
+6428;6910;sea;7700;-1;-1;-1;-1;;auriga
+6543;424;sea;7841;-1;-1;-1;-1;;ursa
+2619;6591;sea;8039;-1;-1;-1;-1;;ursa
+2619;6604;sea;8039;-1;-1;-1;-1;;ursa
 -1;-1;-1;-1;-1;-1;-1;-1;;
 -1;-1;;-1;-1;-1;-1;-1;-1 
 2745;6793;sea;75033;-1;-1;-1;-1;;cetan islands

@@ -4,6 +4,7 @@ state={
 	history = {
 		owner = ORI
 		add_core_of = ORI
+		add_core_of = GEM
 		buildings = {
 			infrastructure = 2
 		}

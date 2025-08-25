@@ -752,6 +752,9 @@ focus_tree = {
         completion_reward = {
 		add_manpower = 12
         }
+		ai_will_do = {
+		factor = 0
+		}
     }
 	
 	focus = {
@@ -858,6 +861,7 @@ focus_tree = {
 
         completion_reward = {
 		37 = { add_claim_by = CET }
+		152 = { add_claim_by = CET }
         }
     }
 	
@@ -1050,6 +1054,10 @@ focus_tree = {
         completion_reward = {
 		add_ideas = neutrality_mild_idea
         }
+		
+		ai_will_do = {
+		factor = 5
+		}
     }
 	
 	
@@ -1079,6 +1087,10 @@ focus_tree = {
 		else = {
 			add_ideas = neutrality_idea
 			}
+		}
+		
+		ai_will_do = {
+		factor = 10
 		}
 	}
 		
@@ -1230,14 +1242,28 @@ focus_tree = {
         relative_position_id = CET_our_resources
 		prerequisite = { focus = CET_our_resources }
         
+		select_effect = {
+			add_ideas = CET_army_works_budget_idea
+		}
+		
         #search_filters =
         cost = 10
 
         completion_reward = {
-		add_timed_idea = {
-		idea = CET_army_works_budget_idea
-        days = 70
+		custom_effect_tooltip = cetus_mil_org
+		effect_tooltip = {
+			add_ideas = CET_army_works_budget_idea
 			}
+
+			#(Complete Effect)
+			custom_effect_tooltip = cetus_mil_org_done
+			effect_tooltip = {
+				remove_ideas = CET_army_works_budget_idea
+			}
+			hidden_effect = {
+				remove_ideas = CET_military_reorganisation_nf_idea
+			}
+		custom_effect_tooltip = AQU_decision_allow
 		}
     }
 	
@@ -3006,7 +3032,7 @@ focus_tree = {
         cost = 10
 		
         completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		add_ideas = CET_southern_frontier
         }
     }
 	

@@ -21,11 +21,19 @@ STATES 1 to 18
 17 Lacerta, LAC [Lacertan Island(s)] [CAPITAL: 1257)
 18 Principality of Musca, MUS (Muscan Islands) [CAPITAL: 1853) 
 
-SEPERATE COUNTRIES
+SEPERATE COUNTRIES (releasables)
 Canis CNS
 Lepus LPS
 Hydrus HYS
-Gemini GEM (does not exist)
+Gemina GEM
+Quara QUA
+Nohae NOH
+Phact PHA
+Euria EUR
+LUP Lupus
+SKO Skorpius
+ARA Ara
+NRM Norma
 
 In order of
 Statenumber Statename Population
@@ -62,6 +70,8 @@ Initial States, In numerical order
 	- 36 Southern Heartland 
 	- 37 Western Borderlands
 	- 38 Western Heartland 
+	- 152 Northwestern Aquila (repurposed from Auriga)
+	- 156 Southwestern Aquila (repurposed from Columba)
 
 39 - 50, 154 Cetus (11+1) State_7
 	- 39 Cetan Northeast
@@ -207,7 +217,6 @@ Initial States, In numerical order
 	
 151 - 153 Auriga (3+1) State_4
 	- 151 Aurigan North
-	- 152 Aurigan Island (coastal)
 	- 153 Aurigan Island (near orion)
 
 CONTINENTS
@@ -220,7 +229,8 @@ Newly added states after the initial states
 
 154 Southernmost Corvus, Cetus (Broke from South Corvus) 48
 155 South Ursa (Broke from Southeastern Ursa) 84
-156 Columban Annulus Island (Broke from North Columba, Wazn) 62
+156 Columban Annulus Island (Broke from North Columba, Wazn) 62 OLD
+> 156 Southwestern Aquila
 157 Centaurian Annulus Islands (Broke from South Centauri) 77
 158 North Grusan Islands (Broke from North Grusa) 11
 159 South Grusan Islands (Broke from North Grusa) 11

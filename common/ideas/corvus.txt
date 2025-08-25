@@ -21,9 +21,10 @@ ideas = {
             removal_cost = -1
 
             modifier = {
+				offensive_war_stability_factor = 0.1
                 conscription_factor = 0.1
                 training_time_army_factor = -0.1
-				army_core_attack_factor = 0.1
+				army_core_attack_factor = 0.05
             }
         }
 		
@@ -62,7 +63,7 @@ ideas = {
 
             modifier = {
                 stability_factor = -0.5
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.8
 				production_speed_buildings_factor = -0.8
             }
         }
@@ -77,12 +78,12 @@ ideas = {
             modifier = {
                 army_speed_factor = 1
 				dig_in_speed_factor = -1
-				army_core_attack_factor = 0.9
+				army_core_attack_factor = 0.75
             }
 			
 			targeted_modifier = {
 				tag = CET
-				attack_bonus_against = 0.1
+				attack_bonus_against = 0.05
 				defense_bonus_against = -0.25
 				}
 		}
@@ -102,7 +103,7 @@ ideas = {
             }
 		}
 		
-		COV_renewed_offensive_idea = {
+		COV_renewed_offensive_idea = { # i forgot the 
             name = COV_renewed_offensive
 
             picture = COV_surpise_attack
@@ -113,11 +114,22 @@ ideas = {
                 army_speed_factor = 0.5
 				army_defence_factor = -0.125
 				dig_in_speed_factor = -0.5
-				army_core_attack_factor = 0.5
+				army_core_attack_factor = 0.25
             }
 		}
 		
-		COV_continued_offensive_idea = {
+		COV_mountaineering_idea = {
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+				terrain_penalty_reduction = 0.25
+            }
+		}
+		
+		COV_continued_offensive_idea = { # difference between these two
             name = COV_renewed_offensive
 
             picture = COV_surpise_attack
@@ -125,10 +137,10 @@ ideas = {
             removal_cost = -1
 
             modifier = {
-                army_speed_factor = 0.75
+                army_speed_factor = 0.5
 				army_defence_factor = -0.175
 				dig_in_speed_factor = -0.75
-				army_core_attack_factor = 0.75
+				army_core_attack_factor = 0.35
             }
 		}
 		
@@ -205,6 +217,19 @@ ideas = {
 			stability_factor = -0.05
 			war_support_factor = -0.1
 			war_support_weekly = -0.02
+            }
+		}
+		
+		COV_shut_down_markets_idea = {
+
+            picture = COV_surpise_attack
+            allowed = { original_tag = COV }
+            removal_cost = -1
+
+            modifier = {
+			stability_factor = 0.2
+			industrial_capacity_factory = -0.05
+			industrial_capacity_dockyard = -0.05
             }
 		}
 		

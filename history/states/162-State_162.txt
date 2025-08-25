@@ -22,7 +22,7 @@ state={
 	provinces={
 		2353 6671 6676 6680 6682 6690 
 	}
-	manpower=42557
+	manpower=642557
 	state_category = small_island
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

@@ -9,6 +9,7 @@ state={
 	history={
 		owner = CLB
 		add_core_of = CLB
+		add_core_of = EUR
 		buildings = {
 			arms_factory = 0
 			industrial_complex = 1
@@ -16,7 +17,10 @@ state={
 
 		}
 		victory_points = {
-			2686 17 
+			2686 20
+		}
+		victory_points = {
+			3798 2 
 		}
 		1944.1.1.12 = {
 			owner = ANT
@@ -28,7 +32,7 @@ state={
 	provinces={
 		146 148 269 330 421 469 604 729 892 1048 1148 1259 1704 1737 1744 2472 2664 2686 3179 3778 3783 3786 3798 3811 3813 3815 3818 3828 3845 3846 3877 
 	}
-	manpower=3187360
+	manpower=21187360
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

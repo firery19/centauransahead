@@ -2,28 +2,26 @@ state={
 	id=156
 	name="STATE_156"
 	history={
-		owner = CLB
-		add_core_of = CLB
+		owner = AQU
+		add_core_of = AQU
 		buildings = {
-			infrastructure = 1
-			6723 = {
-				naval_base = 1
-				}
+			infrastructure = 3
+			4923 = {
+				bunker = 3
 			}
-			victory_points = {
-			6723 1 
+			1061 = {
+				bunker = 3
 			}
-		1944.1.1.12 = {
-			owner = RIA
-			controller = RIA
-
-}
+			3191 = {
+				bunker = 3
+			}
 		}
-	provinces={
-		6723 
 	}
-	manpower=1259
-	state_category = tiny_island
+	provinces={
+		98 249 858 1061 1634 2019 2397 2420 3191 4743 4753 4763 4794 4816 4835 4840 4859 4879 4887 4899 4917 4923 
+	}
+	manpower=8122359
+	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

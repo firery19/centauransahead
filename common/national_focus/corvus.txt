@@ -481,7 +481,7 @@ focus_tree = {
 		icon = GFX_focus_generic_attack_cetus
 		prerequisite = { focus = COV_ramp_production_up }
 		prerequisite = { focus = COV_coastal_battery }
-		will_lead_to_war_with = CET	#so that they get war notification
+		#will_lead_to_war_with = CET	#so that they get war notification #so they DONT get the war notification (they were caught off guard)
 		available = {
 			is_subject = no
 			has_army_manpower = { size > 649000 }
@@ -556,7 +556,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		custom_effect_tooltip = corvus_does_something_tooltip
 			}
 		}
 		
@@ -570,7 +570,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip 
+		custom_effect_tooltip = corvus_does_something_tooltip 
 			}
 		}
 		
@@ -584,7 +584,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		custom_effect_tooltip = corvus_does_something_tooltip
 			}
 		}
 		
@@ -598,7 +598,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		custom_effect_tooltip = corvus_does_something_tooltip
 			}
 		}
 		
@@ -612,7 +612,7 @@ focus_tree = {
 		cost = 2
 
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		custom_effect_tooltip = corvus_does_something_tooltip
 			}
 		}
 		
@@ -627,7 +627,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		custom_effect_tooltip = corvus_does_something_tooltip
 			}
 		}
 		
@@ -805,7 +805,7 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		custom_effect_tooltip = corvus_does_something_tooltip
 			}
 		}
 		
@@ -819,7 +819,7 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		custom_effect_tooltip = corvus_does_something_tooltip
 			}
 		}
 		
@@ -964,7 +964,9 @@ focus_tree = {
 			}
 		}
 		
-		# continued offensive #
+		#######################
+		# continued offensive # XX
+		#######################
 		
 		focus = {
 		id = COV_continue_attack
@@ -980,6 +982,24 @@ focus_tree = {
 				add_timed_idea = {
 				idea = COV_continued_offensive_idea
 				days = 70
+				}
+			}
+		}
+		
+		
+		focus = {
+		id = COV_mountain_breaker
+		icon = GFX_focus_GRE_a_land_of_mountains
+		prerequisite = { focus = COV_continue_attack }
+		relative_position_id = COV_continue_attack
+		x = 2
+		y = 1
+		cost = 4
+
+		completion_reward = {
+				add_timed_idea = {
+				idea = COV_mountaineering_idea
+				days = 31
 				}
 			}
 		}

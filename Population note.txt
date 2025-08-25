@@ -4,7 +4,7 @@ HYDRA: 500,000,000
 URSA: 147,000,000
 LIBRA: 168,000,000 
 
-# STATE COUNT AT THE START OF THE GAME (1900)
+# STATE COUNT AT THE START OF THE GAME (1900) # outdated
 
 
 Vulpa: 5
@@ -124,6 +124,98 @@ Vulpa: ~12,000,000 (1%)
 Ursa: ~140,000,000
 
 1944 (~1.92 BILLION)
+Riaa: ~576,000,000 (30%)
+Antares: ~576,000,000 (30%)
+Columba: ~192,000,000 (10%)
+Aquila: ~153,600,000 (8%)
+Cetus: ~153,600,000 (8%)
+Grusa: ~76,800,000 (4%)
+Vega: ~57,600,000 (3%)
+Centauri: ~57,600,000 (3%)
+Tucana: ~57,600,000 (3%)
+Vulpa: ~19,200,000 (1%)
+
+Ursa: ~224,000,000
+
+
+
+
+---------------------------------
+
+# firery 2nd wind
+
+cite note
+The global population of Forma in 1908 was around 2.1 billion.
+
+Because of the given quote:
+The Centauran continent had the most people;
+ about 60% of the world lived in Centaura,
+ 25% lived in Hydra, 
+ 8% lived in Libra,
+ 7% lived in Ursa.
+
+2,100,000,000 spread across:
+CENTAURA: 1,200,000,000
+HYDRA: 525,000,000
+URSA: 147,000,000
+LIBRA: 168,000,000 
+
+However, C + H + U + L = 2,040,000,000. missing 60,000,000 population.
+This is because 60% of 2,100,000,000 is actually 1,260,000,000.
+60 million population can be distributed to Corvus.
+Because Columba having 120 million is absurd, 0.5% to be given to Lacerta. (6 million)
+
+with the statement Ursa: ~140,000,000, using 7% value it should had been 147,000,000, 7 million anomaly.
+
+With this, the 2nd calculated statistics.
+
+1908 (~1.2 BILLION)
+Riaa: ~420,000,000 (35%)
+Antares: ~300,000,000 (25%)
+Columba: ~114,000,000 (9.5%)
+Aquila: ~108,000,000 (9%)
+Cetus: ~84,000,000 (7%)
+Grusa: ~48,000,000 (4%)
+Vega: ~36,000,000 (3%)
+Centauri: ~36,000,000 (3%)
+Tucana: ~36,000,000 (3%)
+Vulpa: ~12,000,000 (1%)
+Corvus: ~60,000,000 (5%)
+Lacerta: ~6,000,000 (0.5%)
+
+Libra: ~168,000,000
+
+Ursa: ~140,000,000 ( 147,000,000 )
+
+Hydra: ~525,000,000
+
+
+1.1 billion in 37 years
+1,100,000,000 / 37 = 29,729,729.7297
+29,729,729.7297 x 8 = 237,837,837.838
+using the above number and rounding it up to 240 million to assume population increase curve,
+2,100,000,000 - 240,000,000 = 1,860,000,000 world population. (1900)
+
+we get 1,860,000,000 x 60% = 1,116,000,000.
+
+Thus, the unofficial
+1900 (~1.116 BILLION)
+Riaa: ~390,600,000 (35%)
+Antares: ~279,000,000 (25%)
+Columba: ~106,020,000 (9.5%)
+Aquila: ~100,440,000 (9%)
+Cetus: ~78,120,000 (7%)
+Corvus: ~55,800,000 (5%)
+Grusa: ~44,640,000 (4%)
+Vega: ~33,480,000 (3%)
+Centauri: ~33,480,000 (3%)
+Tucana: ~33,480,000 (3%)
+Vulpa: ~11,160,000 (1%)
+Lacerta: ~5,580,000 (0.5%)
+
+By 1945, the global population was around 3.2 billion,
+
+1944 (~1.92 BILLION) < because of this number, hydra population can be counted, 800,000,000
 Riaa: ~576,000,000 (30%)
 Antares: ~576,000,000 (30%)
 Columba: ~192,000,000 (10%)

@@ -4,6 +4,7 @@ state={
 	history = {
 		owner = ANT
 		add_core_of = ANT
+		add_core_of = LUP
 		buildings = {
 
 			infrastructure = 1

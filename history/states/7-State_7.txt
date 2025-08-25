@@ -39,7 +39,7 @@ state={
 	provinces={
 		9 200 1401 1941 2157 2254 2446 2465 2919 2999 3149 3153 3199 3312 5122 5206 5207 5262 5286 5320 5365 5386 
 	}
-	manpower=12801778
+	manpower=14801778
 	buildings_max_level_factor=1.000
 	state_category=industrialized_metropolis
 	local_supplies=0.000

@@ -56,6 +56,8 @@
  COV_continue_attack_desc:0 "The offensive will not stop quickly if we do not allow it to. Continue the push into Cetus."
  COV_penal_battalions:0 "Penal Battalions"
  COV_penal_battalions_desc:0 "Criminals of every caliber; robbers, murderers, traitors to the state will either be willingly or forcibly conscripted to fight in the frontlines."
+ COV_mountain_breaker:0 "Mountain Breakers"
+ COV_mountain_breaker_desc:0 "Using black magic to carve through mountains, this will help our forces break any mountains in our way."
  # unused
  COV_northern_offensive:0 "Northern Offensive"
  COV_northern_offensive_desc:0 "A northern offensive would allow us access to the coal-rich regions of Cetus, repowering our former civilian railways."
@@ -232,14 +234,15 @@
  corvus_warbonds_desc:0 "money for the war"
  corvus_subsidies:0 "Corvun Subsidies"
  corvus_subsidies_desc:0 "money for the companies"
- martial_law_on:0 "Martial Law Active"
- martial_law_on_desc:0 "Martial Law Active"
- martial_law_off:0 "Martial Law Inactive"
- martial_law_off_desc:0 "Martial Law Inactive"
+ 
  corvus_martial_law_on:0 "Impose Martial Law"
  corvus_martial_law_on_desc:0 "military"
  corvus_martial_law_off:0 "Lift Martial Law"
  corvus_martial_law_off_desc:0 "unmitlary"
+ martial_law_on:0 "Martial Law Active"
+ martial_law_off:0 "Martial Law Inactive"
+ corvus_shut_down_market:0 "Shut Down Black Markets"
+ corvus_shut_down_market_desc:0 "no illegal"
  ################
  # national ideas
  ################
@@ -259,6 +262,8 @@
  COV_improve_supply_desc:0 "idk what to write here"
  COV_failed_economy:0 "Failed Economy"
  COV_failed_economy_desc:0 "Restart the game, this isnt reversible"
+ COV_mountaineering_idea:0 "Mountain Breakthrough"
+ COV_mountaineering_idea_desc:0 "The mountains outside of South Corvus is a great threat to our advance. We will use magic to reduce any penalties for terrain."
  
  COV_active_rationing_idea:0 "Active Rationing"
  COV_active_rationing_idea_desc:0 "
@@ -286,12 +291,15 @@
  COV_mafia_suppressed_idea_desc:0 "
  COV_martial_law_imposed_idea:0 "Imposed Martial Law"
  COV_martial_law_imposed_idea_desc:0 "
+ COV_shut_down_markets_idea:0 "Black Markets Crackdown"
+ COV_shut_down_markets_idea_desc:0 "ss
  ##########
  # tooltips
  ##########
  corvus_path_not_work_tooltip:0 "§RTHIS FOCUS PATH DOES NOT WORK! DO NOT TAKE!§!"
  corvus_not_work_tooltip:0 "§RTHIS FOCUS DOES NOT WORK! DO NOT TAKE!§!"
  corvus_does_nothing_tooltip:0 "§OThis focus does NOTHING!, for now.§!"
+ corvus_does_something_tooltip:0 "§GThis focus does SOMETHING!§!"
  corvus_temp_none_tootlip:0 "§YThis focus is not done. Corvus does not get puppeted, for now.§!"
  corvus_battery_1_tooltip:0 "Constructs Level 1 coastal forts on every coastal province. Adds 2 levels for port cities."
  corvus_battery_2_tooltip:0 "Adds 2 levels of coastal forts on every coastal province."

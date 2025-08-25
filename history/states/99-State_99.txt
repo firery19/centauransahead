@@ -4,6 +4,7 @@ state={
 	history = {
 		owner = ANT
 		add_core_of = ANT
+		add_core_of = NRM
 		buildings = {
 
 			infrastructure = 1

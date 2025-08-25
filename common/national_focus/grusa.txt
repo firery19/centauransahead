@@ -15,13 +15,15 @@ focus_tree = {
 	shared_focus = aviation_effort
 	shared_focus = industrial_effort
 	shared_focus = political_effort
+	shared_focus = VEGRS_reunification
 	
     focus = {
-        id = GRS_placeholder
+        id = GRS_no_southern_negotiation
         icon = GFX_goal_generic_territory_or_war
         x = 30
         y = 0
-        cost = 5
+        cost = 10
+		mutually_exclusive = { focus = VEGRS_reunification }
         available = {
             
         }

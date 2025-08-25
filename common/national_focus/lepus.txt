@@ -17,7 +17,7 @@ focus_tree = {
 	shared_focus = political_effort
 	
     focus = {
-        id = LPS_placeholder
+        id = LPS_raise_militias
         icon = GFX_goal_generic_territory_or_war
         x = 30
         y = 0
@@ -26,9 +26,26 @@ focus_tree = {
             
         }
         completion_reward = {
-            add_stability = 0.05
+            country_event = lps.2
         }
         ai_will_do = {
-            factor = 5
+            factor = 20
         }
+    }
+	
+	focus = {
+        id = LPS_contacting_orion #ANDHYDRUS
+        icon = GFX_goal_generic_territory_or_war
+        x = 40
+        y = 0
+        cost = 5
+        available = {
+		ORI = { is_in_faction = yes }
+        }
+        completion_reward = {
+			ORI = { country_event = lps.1 }
+		}
+		ai_will_do = {
+		factor = 600
+		}
     }

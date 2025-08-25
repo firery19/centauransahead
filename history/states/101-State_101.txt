@@ -8,6 +8,7 @@ state={
 	history = {
 		owner = ANT
 		add_core_of = ANT
+		add_core_of = NRM
 		buildings = {
 			industrial_complex = 2
 			arms_factory = 1 #

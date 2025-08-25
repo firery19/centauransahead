@@ -23,14 +23,57 @@ focus_tree = {
         y = 0
         cost = 5
         available = {
-         has_war = yes 
+		ORI = { is_in_faction = yes }
+        has_war = yes
         }
         completion_reward = {
-            add_stability = 0.05
+			ORI = { country_event = cns.1 }
+		}
+		ai_will_do = {
+		factor = 1000
+		}
+    }
+	
+	focus = {
+        id = CNS_giving_up_claims
+        icon = GFX_goal_generic_territory_or_war
+        x = -1
+        y = 1
+        cost = 5
+		prerequisite = { focus = CNS_cooperation }
+		relative_position_id = CNS_cooperation
+        available = {
+		ORI = { is_in_faction = yes }
         }
-        ai_will_do = {
-            factor = 5
+        completion_reward = {
+			remove_state_core = 112
+			remove_state_core = 113
+			remove_state_core = 114
+			remove_state_core = 117
+			remove_state_core = 122
+		}
+		ai_will_do = {
+		factor = 1
+		}
+    }
+	
+	focus = {
+        id = CNS_canisian_units_in_hydrus
+        icon = GFX_goal_generic_territory_or_war
+        x = 1
+        y = 1
+        cost = 5
+		prerequisite = { focus = CNS_cooperation }
+		relative_position_id = CNS_cooperation
+        available = {
+		HYS = { is_in_faction = yes }
         }
+        completion_reward = {
+		country_event = cns.3
+		}
+		ai_will_do = {
+		factor = 1
+		}
     }
 	
     focus = {
@@ -40,12 +83,12 @@ focus_tree = {
         y = 0
         cost = 5
         available = {
-            NOT = { has_war = yes }
+		has_war = no
         }
         completion_reward = {
-            add_stability = 0.05
+            add_ideas = URS_lepus_trolling
         }
         ai_will_do = {
-            factor = 5
+            factor = 0
         }
     }

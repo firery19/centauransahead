@@ -1698,12 +1698,14 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_}
-        mutually_exclusive = { focus = ANT_ }
+	mutually_exclusive = { focus = ANT_ }
 	ai_will_do = { factor = 0  } #CHANGE THIS TO FACTOR = 1#################
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+hidden_effect = {
 country_event = { id = ANT.1 days = 1 random_days = 2 }
 country_event = { id = ANT.2 days = 3 random_days = 10 }
+		}
 	}
 }
 
@@ -1836,7 +1838,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_authoritarian1}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 2 }
 	completion_reward = {
 
@@ -1854,7 +1856,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_authoritarian2}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 2 }
 	completion_reward = {
 			add_popularity = { ideology = communism popularity = -0.05 }
@@ -1881,7 +1883,7 @@ focus = {
 		}
 	}
 
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 2 }
 	completion_reward = {
 					swap_ideas = {
@@ -1900,7 +1902,7 @@ focus = {
 	prerequisite = {focus = ANT_authoritarian5a}
 	prerequisite = {focus = ANT_protest6}
 	available = { neutrality > 0.7 }
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 2 }
 	completion_reward = {
 
@@ -1921,7 +1923,7 @@ focus = {
    available = {
 		has_idea = ANT_patriotism0
     }
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 			swap_ideas = {
@@ -1942,7 +1944,7 @@ focus = {
    available = {
        NOT = { has_idea = ANT_ppdebuff  has_idea = ANT_ppdebuff2}
     }
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1.5 }
 	completion_reward = {
 			swap_ideas = {
@@ -1966,7 +1968,7 @@ focus = {
 		has_idea = ANT_ppdebuff3
 }
     }
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 			swap_ideas = {
@@ -1986,7 +1988,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_antiextremism}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2002,7 +2004,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_consolidate_monarchic_powers}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2019,7 +2021,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_protest1}
 	prerequisite = {focus = ANT_strengthen_military}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2035,7 +2037,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_protest1}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2051,7 +2053,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_protest3}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2069,7 +2071,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_protest3}
 	prerequisite = {focus = ANT_authoritarian3}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2102,7 +2104,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_protest5 focus = ANT_protest5b}
 	prerequisite = {focus = ANT_protest4}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2157,7 +2159,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_military_coup}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2176,7 +2178,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_reform_intelligence_service}
 	prerequisite = {focus = ANT_authoritarian5}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2191,7 +2193,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_foreign_policy}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 2 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2206,7 +2208,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_help_corvus}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 2 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2221,7 +2223,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_royal_marrige}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2252,7 +2254,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_economic_domination}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2267,7 +2269,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_controll_neighbouring_economies}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2298,7 +2300,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_subversive_activities}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2313,7 +2315,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_expand_spy_agency}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2342,18 +2344,18 @@ focus = {
 	prerequisite = {focus = ANT_authoritarian5}
 	prerequisite = {focus = ANT_help_corvus}
 	prerequisite = {focus = ANT_prepare_navy_war_cetus focus = ANT_prepare_army_war_cetus focus = ANT_im_not_doing_all_those_focuses}
-will_lead_to_war_with = CET
+	will_lead_to_war_with = CET
     available = {
-OR{
-CET = {has_war_with = COV}
- 
-        date > 1911.1.1
-
-}}
+		OR = {
+		CET = {has_war_with = COV}
+		date > 1911.1.1
+		has_army_manpower = { size > 3000000 }
+		}
+	}
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
-	}}
+	custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+	}
+}
 
 
 # skip army and navy paths since they are uncomplete
@@ -2365,7 +2367,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="O Heeeeeelllll nah I'm not doing all those focuses!"
@@ -2385,7 +2387,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 0.01 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2402,7 +2404,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_army_reform}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2421,7 +2423,7 @@ focus = {
 	available = {
 		has_completed_focus = ANT_euskor_industry }
 	prerequisite = {focus = ANT_analyse_war_games}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2438,7 +2440,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_army_reform}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2456,7 +2458,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_analyse_war_games}
 	prerequisite = {focus = ANT_army_navy_coop}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2473,7 +2475,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_analyse_war_games}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2491,7 +2493,9 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_army_navy_war_game}
 	prerequisite = {focus = ANT_equipment_needs}
-        mutually_exclusive = { focus = ANT_ }
+	available = {
+		has_country_flag = grease_wars_start
+	}
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2508,7 +2512,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_learn_from_grease_war}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2525,7 +2529,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_learn_from_grease_war}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2542,7 +2546,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_army_navy_coop}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2559,7 +2563,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_solve_coms_isssue}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2576,7 +2580,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_navy_reform}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2593,7 +2597,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_new_battleline_doctrine}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2610,7 +2614,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_new_battleline_doctrine}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2627,7 +2631,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_navy_reform}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2678,7 +2682,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_rethink_screens}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2695,7 +2699,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_more_destroyers}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2714,7 +2718,7 @@ focus = {
 	prerequisite = {
       	  or = {focus = ANT_need_for_more_ships
 	focus = ANT_more_destroyers}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2731,7 +2735,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_increase_budget}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2748,7 +2752,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_increase_budget}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2765,7 +2769,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_increase_budget}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2841,7 +2845,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_xpand_mainland_dockyards}
 	prerequisite = {focus = ANT_island_dockyard}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2858,7 +2862,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_new_ship_bases}
 	prerequisite = {focus = ANT_new_anticetus_base focus = ANT_expand_northead focus = ANT_expand_eastern_bases}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2875,7 +2879,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 
 	prerequisite = {focus = ANT_develop_new_bases}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2892,7 +2896,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_torpedo_focus focus = ANT_gun_focus}
 	prerequisite = {focus = ANT_increase_budget}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2908,7 +2912,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_torpedo_dd}
 	prerequisite = {focus = ANT_increase_budget }
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2924,7 +2928,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_new_dockyards}
 
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2942,7 +2946,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_reorganize_army}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2958,7 +2962,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_increase_procurement_funding}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2974,7 +2978,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_increase_procurement_funding}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -2990,7 +2994,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_expand_mauser}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3007,7 +3011,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_expand_rheinmettall}
 	prerequisite = {focus = ANT_new_arty_tactics}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3023,7 +3027,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_expand_rheinmettall}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3039,7 +3043,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_reorganize_army}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3055,7 +3059,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_new_inf_doctrine}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3071,7 +3075,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_mg_tactocs}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3087,7 +3091,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_new_inf_doctrine}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3103,7 +3107,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_new_division}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3119,7 +3123,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_new_division}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3136,7 +3140,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_regimental_reorganization}
 	prerequisite = {focus = ANT_defensive_tactics}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3152,7 +3156,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_reorganize_army}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3168,7 +3172,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_cavalry_analysis}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3200,7 +3204,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_cavalry_analysis}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3232,7 +3236,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_motorized_cavalry focus = ANT_horse_supremacy}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3248,7 +3252,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_reorganize_army}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3264,7 +3268,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_new_arty_tactics}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3280,7 +3284,7 @@ focus = {
 	cost = 10
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_artillery_barrage}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3297,7 +3301,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_long_range_arty}
 	prerequisite = {focus = ANT_more_artillery}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3326,7 +3330,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	prerequisite = {focus = ANT_superior_firepower focus = ANT_modern_cavalry focus = ANT_queen_of_battle}
 
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3345,7 +3349,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 #	prerequisite = {focus = ANT_expand_northead focus = ANT_new_anticetus_base}
 	prerequisite = {focus = ANT_finish_army_reform}
-        mutually_exclusive = { focus = ANT_ }
+        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
@@ -3371,11 +3375,12 @@ focus = {
     	will_lead_to_war_with = CET
 	completion_reward = {
 
-
-declare_war_on = {
-    target = CET
-    type = annex_everything
-}
+create_wargoal = {
+					type = annex_everything
+					generator = {43}
+					target = CET
+					expire = 0
+				}
 
 	}
 }

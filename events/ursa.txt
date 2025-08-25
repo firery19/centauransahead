@@ -299,6 +299,7 @@ country_event = { #Lepus spawns
 
 	immediate = {
 		hidden_effect = {
+		load_oob = LPS_1900
 			#130 = {
 			#	set_demilitarized_zone = yes
 			#}
@@ -417,6 +418,8 @@ country_event = { #Canis Rebellion
 			type = annex_everything
 		}
 		hidden_effect = {
+		CNS = { country_event = { id = cns.1 days = 0 } }
+		set_country_flag = grease_wars_start
 			CNS = {
 				set_province_controller = 3242
 				set_province_controller = 3732

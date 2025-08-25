@@ -4,7 +4,6 @@
 
 # DEVS
 Firery (Map Maker)
-Teemodahunta (Proud Hydrusite warrior) (Orion Dev)
 hanssolo (antares dev)
 
 # ARTIST GFX
@@ -14,11 +13,11 @@ crack_addict. (Total ant death) (GFX)
 EeksusDeekus (some loading screen gfx)
 
 # PLAYTESTERS
-kaiser1915
 RomanRoman#5124 (sl12223)
 
 # FORMER DEVS
 striped_ (Striped) (Cetus Dev)
+Teemodahunta (Proud Hydrusite warrior) (Orion Dev)
 ganix101 (Ganix101) (???)
 memji (ursa dev)
 

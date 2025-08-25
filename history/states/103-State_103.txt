@@ -8,6 +8,7 @@ state={
 	history = {
 		owner = ANT
 		add_core_of = ANT
+		add_core_of = ARA
 		buildings = {
 			dockyard = 2
 			arms_factory = 1 #

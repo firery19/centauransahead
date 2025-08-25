@@ -1,21 +1,21 @@
 ANT_bocchiland = {
+	debug_bocchi = {
 
 		icon = ger_reichskommissariats
 
 		available = {
 			NOT = { country_exists = BCH }
 		}
-				
-
+		
+		visible = {
+			is_debug = yes
+		}
+		
 		cost = 0
 
 		ai_will_do = {
 			factor = 0
 			}
-
-		visible = {
-			always = yes
-		}
 
 		complete_effect = {
 			hidden_effect = {
@@ -61,6 +61,10 @@ ANT_bocchiland = {
 			#	}
 			}
 		}
+	}
+}
+ANT_south_centauran_conquest = {
+
 		ANT_unity_speech = { 
 
 		icon = generic_prepare_civil_war

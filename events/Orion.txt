@@ -24,9 +24,19 @@ country_event = {
 	
 	option = {
 		name = orion.1.b # NO 
+		if = {
+			limit = {
+			has_war = yes
+			}
 		ai_chance = {factor = 10}
+		}
+		else_if = {
+			limit = {
+			has_war = no
+			}
+		ai_chance = {factor = 0}
+		}
 	}
-
 }
 
 country_event = {
@@ -42,7 +52,18 @@ country_event = {
 		ORI = {
                country_event = {id = orion.3  days = 1 }
                }
-		ai_chance = {factor = 90}
+		if = {
+		limit = {
+		is_historical_focus_on = yes
+		}
+		ai_chance = { factor = 100 }
+		}
+		else_if = {
+		limit = {
+		is_historical_focus_on = no
+		}
+		ai_chance = { factor = 90 }
+		}
 	}
 	
 	option = {
@@ -50,7 +71,18 @@ country_event = {
 		ORI = {
                country_event = {id = orion.4  days = 1 }
               }
-		ai_chance = {factor = 10}
+		if = {
+		limit = {
+		is_historical_focus_on = yes
+		}
+		ai_chance = { factor = 0 }
+		}
+		else_if = {
+		limit = {
+		is_historical_focus_on = no
+		}
+		ai_chance = { factor = 10 }
+		}
 	}
 }
 
@@ -68,6 +100,7 @@ country_event = { #Ursa accepts
 		set_state_owner = 113
 		set_state_owner = 114
 		set_state_owner = 117
+		set_state_owner = 122
 		
 			CNS = {
 				set_state_owner = 115

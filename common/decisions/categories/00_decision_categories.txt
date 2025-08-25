@@ -312,9 +312,7 @@ governments_in_exile = {
 	}
 
 	visible = {
-		NOT = {
-			has_completed_focus = NOR_the_kings_no 
-		}
+	
 	}
 
 	priority = 7
@@ -546,16 +544,4 @@ generic_refit_civilian_ships_category = {
 		base = 8
 	}
 	visible_when_empty = no
-}
-
-ANT_bocchiland = {
-	allowed = {
-		original_tag = ANT
-	}
-}
-
-ANT_unity_speech = {
-	allowed = {
-		original_tag = ANT
-	}
 }

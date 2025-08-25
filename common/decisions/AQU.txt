@@ -710,7 +710,7 @@ AQU_army_management = {
 		cost = 0
 		fire_only_once = no
 
-		days_remove = 3
+		days_remove = 180
 		
 		custom_cost_trigger = {
 			command_power > 19

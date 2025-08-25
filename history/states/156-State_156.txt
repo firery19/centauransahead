@@ -5,6 +5,7 @@ state={
 		owner = AQU
 		add_core_of = AQU
 		buildings = {
+			industrial_complex = 1
 			infrastructure = 3
 			4923 = {
 				bunker = 3

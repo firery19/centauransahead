@@ -1,4 +1,4 @@
-HYD_canis_war = {
+wHYD_canis_war = {
 	join_the_canis_war = {
 
 		icon = oil

@@ -5,14 +5,14 @@ technologies = {
 	@1912 = 2
 	@1913 = 3
 	@1914 = 4
-	@1915 = 10
-	@1916 = 7
+	@1915 = 5
+	@1916 = 6
 	@1918 = 7
 	@1920 = 8
 	@1921 = 9
 	@1923 = 10
 	@1933 = 11
-	@1962 = 12
+	@1946 = 12
 	@1963 = 20
 
 	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
@@ -933,7 +933,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.2
-				date > "1962.1.1"
+				date > "1946.1.1"
 			}
 
 			modifier = {
@@ -980,11 +980,11 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 1942 #they got modern tanks by the forman war
+		start_year = 1946 #they got modern tanks by the forman war
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1962 }
+			position = { x = 2 y = @1946 }
 		}
 
 		ai_will_do = {
@@ -1007,7 +1007,7 @@ technologies = {
 
 			modifier = {
 				factor = 6
-				# Centurion was designed and entered production in 1962-1963
+				# Centurion was designed and entered production in 1946-1963
 				tag = ENG
 				date > 1933.9.1
 			}
@@ -1235,7 +1235,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.2
-				date > "1962.1.1"
+				date > "1946.1.1"
 			}
 
 			modifier = {
@@ -1957,7 +1957,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1962.1.1"
+				date > "1946.1.1"
 			}
 		}
 
@@ -2032,7 +2032,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1962.1.1"
+				date > "1946.1.1"
 			}
 		}
 
@@ -2126,7 +2126,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1962.1.1"
+				date > "1946.1.1"
 			}
 		}
 
@@ -2196,7 +2196,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1962.1.1"
+				date > "1946.1.1"
 			}
 		}
 
@@ -2228,16 +2228,16 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1962
+		start_year = 1946
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 9 y = @1962 }
+			position = { x = 9 y = @1946 }
 		}
 
 		folder = {
 			name = armour_folder
-			position = { x = 9 y = @1962 }
+			position = { x = 9 y = @1946 }
 		}
 
 		show_effect_as_desc = yes
@@ -2260,7 +2260,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1962.1.1"
+				date > "1946.1.1"
 			}
 		}
 
@@ -2318,7 +2318,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1962.1.1"
+				date > "1946.1.1"
 			}
 		}
 

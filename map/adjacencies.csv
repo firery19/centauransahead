@@ -1,6 +1,6 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7710;7200;sea;7910;-1;-1;-1;-1;SAGITTARIUS_STRAIT;Sagittarius
-1096;4099;sea;7866;-1;-1;-1;-1;;plumah-gienah
+1096;2003;sea;7866;-1;-1;-1;-1;;plumah-gienah
 1096;6758;sea;7896;-1;-1;-1;-1;;corvun islands
 1096;6761;sea;7866;-1;-1;-1;-1;;corvun islands
 6761;6763;sea;7866;-1;-1;-1;-1;;corvun islands
@@ -28,7 +28,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6791;6793;sea;7503;-1;-1;-1;-1;;cetus islands
 6794;6795;sea;7503;-1;-1;-1;-1;;cetus islands
 6788;5121;sea;7503;-1;-1;-1;-1;;cetus islands
-1495;6786;sea;7651;;-1;-1;-1;-1;;cetus islands
+6786;1495;sea;7651;-1;-1;-1;-1;;cetus islands
 1495;6785;sea;7651;-1;-1;-1;-1;;cetus islands
 5290;5347;sea;8043;-1;-1;-1;-1;;cetus islands
 5347;5414;sea;8043;-1;-1;-1;-1;;cetus islands

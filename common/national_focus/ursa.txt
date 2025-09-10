@@ -863,10 +863,8 @@ focus_tree = {
         }
         prerequisite = { focus = URS_economy_fixing_kill_peasants }
         completion_reward = {
-            swap_ideas = {
-				add_idea = URS_domestic_unrest_grease_wars_2
-				remove_idea = URS_domestic_unrest_grease_wars_1
-			}
+			add_timed_idea = { idea = URS_domestic_unrest_grease_wars_2 days = 365 }
+			remove_ideas = URS_domestic_unrest_grease_wars_1
 			add_ideas = URS_domestic_unrest_farmer_subsidies
         }
         ai_will_do = {
@@ -978,7 +976,7 @@ focus_tree = {
 	
 	focus = {
         id = URS_withdraw_from_east_canis
-        icon = GFX_goal_generic_military_sphere
+        icon = GFX_focus_URS_evacuvate_east_canis
         x = 8
         y = 7
         cost = 5
@@ -1028,7 +1026,7 @@ focus_tree = {
 	
 	focus = {
         id = URS_every_inch
-        icon = GFX_goal_generic_military_sphere
+        icon = GFX_focus_URS_every_inch
         x = 10
         y = 7
         cost = 5
@@ -1077,7 +1075,7 @@ focus_tree = {
 	
 	focus = {
         id = URS_the_grease_wars
-        icon = GFX_goal_generic_military_sphere
+        icon = GFX_focus_URS_grease_wars
         x = 9
         y = 8
         cost = 1
@@ -1099,7 +1097,7 @@ focus_tree = {
 	
 	focus = {
         id = URS_the_circinnian_desert_minefield
-        icon = GFX_goal_generic_military_sphere
+        icon = GFX_focus_URS_desert_minefield
         x = 9
         y = 9
         cost = 5
@@ -1114,8 +1112,8 @@ focus_tree = {
     }
 	
 	focus = {
-        id = URS_chemical_weapons
-        icon = GFX_goal_generic_military_sphere
+        id = URS_recruit_warcriminal_lmao
+        icon = GFX_focus_URS_recruit_retired_warcriminal
         x = 7
         y = 9
         cost = 5

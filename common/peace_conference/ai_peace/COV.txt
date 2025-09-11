@@ -30,6 +30,24 @@ peace_ai_desires = {
         }
         ai_desire = 150
     }
+	COV_south_corvus = {
+        peace_action_type = take_states
+        enable = {
+            FROM = {
+                tag = ROOT
+            }
+            FROM.FROM.FROM = {
+                OR = {
+                    state = 48
+					state = 154
+                }
+            }
+            ROOT = { 
+                original_tag = COV
+            }
+        }
+        ai_desire = 10000
+    }
 	COV_leave_cetus = {
         peace_action_type = take_states
         enable = {

@@ -97,7 +97,7 @@ URS_resistance_sweep_units_tooltip:0 "§Y6 divisions of 12 width irregular infan
 URS_prevent_economic_collapse_tooltip:0 "§RCompleting this focus is necessary to avoid economic collapse when at war!§!"
 grease_wars_prelude_tooltip:0 "§RWe are heading towards total war with Hydrus, Lepus, and the Orion Republic.§!"
 URS_alcor_trenching_tooltip:0 "\n§RLosing control of Alcor will result in defeat against our enemies!§!"
-URS_withdraw_from_east_canis_tooltip:0 "§Y12 cavalry divisions will make their long march west to Alcor from Aludra!§!\n\§RWithout these troops, the situation in Aludra will devolve into anarchy!§!"
+URS_withdraw_from_east_canis_tooltip:0 "§Y12 cavalry divisions will make their long march west to Alcor from Aludra!§!\n§RWithout these troops, the situation in Aludra will devolve into anarchy!§!"
 URS_every_inch_tooltip:0 "§Y6 cavalry divisions of the Aludra garrison force will mobilize to deal with the local rebels!§!"
 #Ideas
 URS_domestic_unrest:0 "Domestic Unrest"

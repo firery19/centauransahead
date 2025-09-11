@@ -215,3 +215,129 @@ news_event = {
 		}
 	}
 }
+
+news_event = {
+	id = news.415
+	title = news.415.t
+	desc = news.415.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		48 = { is_controlled_by = COV }
+		48 = { is_owned_by = CET }
+		COV = { has_war_with = CET }
+		NOT = { has_global_flag = fall_of_multa_corvus }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_multa_corvus
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.410.a
+		trigger = {
+			NOT = {
+				TAG = CET
+				TAG = COV
+			}
+		}
+	}
+	option = {
+		name = news.410.b
+		trigger = { TAG = CET }
+	}
+	option = {
+		name = news.410.c
+		trigger = { TAG = COV }
+	}
+}
+
+news_event = {
+	id = news.416
+	title = news.416.t
+	desc = news.416.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		46 = { is_owned_by = CET }
+		COV = { has_war_with = CET }
+		NOT = { has_global_flag = fall_of_kirk_corvus }
+		COV = { controls_province = 5032 }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_kirk_corvus
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.410.a
+		trigger = {
+			NOT = {
+				TAG = CET
+				TAG = COV
+			}
+		}
+	}
+	option = {
+		name = news.410.b
+		trigger = { TAG = CET }
+	}
+	option = {
+		name = news.410.c
+		trigger = { TAG = COV }
+	}
+}
+
+news_event = {
+	id = news.417
+	title = news.417.t
+	desc = news.417.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		46 = { is_owned_by = CET }
+		COV = { has_war_with = CET }
+		NOT = { has_global_flag = fall_of_carran_corvus }
+		COV = { controls_province = 5136 }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_carran_corvus
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.410.a
+		trigger = {
+			NOT = {
+				TAG = CET
+				TAG = COV
+			}
+		}
+	}
+	option = {
+		name = news.410.b
+		trigger = { TAG = CET }
+	}
+	option = {
+		name = news.410.c
+		trigger = { TAG = COV }
+	}
+}

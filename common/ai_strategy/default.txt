@@ -2,21 +2,12 @@ default_unit_production = {
 	# If adding country-unique ones, bear in mind that they STACK unless excluding countries in the enable
 	enable = {
 		always = yes
-		NOT = {
-			OR = {
-				original_tag = GER
-				original_tag = FRA
-				original_tag = CHI
-				original_tag = ENG
-				original_tag = CZE
-				tag = SOV
-				original_tag = ITA
-				original_tag = JAP
-				original_tag = HUN
-				original_tag = SIA
-				original_tag = USA
-			}
-		}
+#		NOT = {
+#			OR = {
+#				original_tag = GER
+#				original_tag = FRA
+#			}
+#		}
 	}
 	abort_when_not_enabled = yes
 
@@ -331,8 +322,6 @@ bba_air_prod_1 = {
 
 	enable = {
 		always = yes
-		NOT = { original_tag = GER }
-		NOT = { original_tag = ENG }
 	}
 
 	abort_when_not_enabled = yes
@@ -752,11 +741,12 @@ highered_armored_production = {
 slightly_naval_focused_nation = {
 	enable = {
 		OR = {
-			tag = JAP
-			tag = USA
-			tag = ENG
-			tag = FRA
-			tag = ITA
+			tag = CET
+			tag = ANT
+			tag = ORI
+			tag = URS
+			tag = CTA
+			tag = GRS
 		}
 	}
 	abort_when_not_enabled = yes
@@ -789,11 +779,11 @@ slightly_naval_focused_nation = {
 more_naval_focused_nation = {
 	enable = {
 		OR = {
-			tag = JAP
-			tag = USA
-			tag = ENG
+			tag = CET
+			tag = ANT
+			tag = ORI
 		}
-		date > "1941.1.1"  # Delaying it by a couple of years
+		date > "1914.1.1"  # Delaying it by a couple of years
 	}
 	abort_when_not_enabled = yes
 
@@ -1572,7 +1562,7 @@ default_build_an_air_facility = {
 	enable = {
 
 		is_major = yes # Minors don't bother until strong enough to be considered major
-		num_of_military_factories > 40 # We should first build up our military industry
+		num_of_military_factories > 10 # We should first build up our military industry
 
 		OR = { # Don't start until we can build decent aircraft
 			has_tech = basic_small_airframe

@@ -1216,7 +1216,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 2 }
+			position = {  x = 1 y = 2 }
 		}
 
 		ai_will_do = {
@@ -1259,7 +1259,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 8 }
+			position = {  x = 1 y = 8 }
 		}
 
 		ai_will_do = {
@@ -1316,7 +1316,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 14 }
+			position = {  x = 1 y = 14 }
 		}
 
 		ai_will_do = {
@@ -1363,7 +1363,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 20 }
+			position = {  x = 1 y = 20 }
 		}
 
 		ai_will_do = {
@@ -1426,7 +1426,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -2 y = 2 }
+			position = {  x = 3 y = 2 }
 		}
 
 		ai_will_do = {
@@ -1488,7 +1488,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -2 y = 8 }
+			position = {  x = 3 y = 8 }
 		}
 
 		ai_will_do = {
@@ -1538,7 +1538,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -2 y = 14 }
+			position = {  x = 3 y = 14 }
 		}
 
 		ai_will_do = {
@@ -1577,7 +1577,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -2 y = 20 }
+			position = {  x = 3 y = 20 }
 		}
 
 		ai_will_do = {
@@ -1619,7 +1619,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 13 }
+			position = {  x = 4 y = 13 }
 		}
 
 		ai_will_do = {
@@ -1673,7 +1673,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = -1 y = 19 }
+			position = {  x = 4 y = 19 }
 		}
 
 		ai_will_do = {
@@ -1877,7 +1877,7 @@ early_ship_hull_carrier = {
 		start_year = 1942
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 17 }
+			position = { x = 2 y = 17 }
 		}
 
 		categories = {
@@ -1907,7 +1907,7 @@ early_ship_hull_carrier = {
 		start_year = 1945
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 23 }
+			position = { x = 2 y = 23 }
 		}
 
 		categories = {

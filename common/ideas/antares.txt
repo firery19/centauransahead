@@ -411,7 +411,17 @@ experience_gain_air_factor = -0.5
 
             }
         }
+		ANT_worldconquest = {
+            name = "Forma World Conquest"
+            
+            picture = RAJ_private_military_complex
+            allowed = { original_tag = ANT }
+            removal_cost = -1
 
+            modifier = {
+		generate_wargoal_tension = -0.5
+            }
+        }
 
 #end
     }

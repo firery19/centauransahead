@@ -114,7 +114,8 @@ ANT_south_centauran_conquest = {
 			}
 
 		visible = {
-			always = yes
+			is_debug = yes
+
 			#COV = { is_in_faction_with = ANT }
 		}
 

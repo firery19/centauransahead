@@ -3483,6 +3483,7 @@ focus = {
 will_lead_to_war_with = GRS
 
 	completion_reward = {
+add_ideas = ANT_worldconquest
 declare_war_on = {
     target = GRS
     type = annex_everything

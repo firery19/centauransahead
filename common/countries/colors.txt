@@ -171,7 +171,7 @@ URH = {
 	color = rgb { 157 60 60 }
 	color_ui  = rgb { 157 60 60 }
 }
-ANH = {
+ANTRED = { #this is no longer used? realised i need to use cosmetic.txt
 	color = rgb { 170 10 20 }
 	color_ui  = rgb { 170 10 20 }
 }

@@ -82,6 +82,7 @@ ANT_south_centauran_conquest = {
 		}
 
 		visible = {
+			is_debug = yes
 			if = {
 				NOT = { has_global_flag = scw_over }
 				}

@@ -39,20 +39,20 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 522;3423;sea;7381;-1;-1;-1;-1;;east ursan islands
 3426;6605;sea;7411;-1;-1;-1;-1;;east ursan islands
 6607;3423;sea;7381;-1;-1;-1;-1;;east ursan islands
-6665;6669;sea;7280;-1;-1;-1;-1;;yelman ursan islands
-6655;6669;sea;7280;-1;-1;-1;-1;;yelman ursan islands
-6655;6654;sea;7280;-1;-1;-1;-1;;yelman ursan islands
-6656;6654;sea;7280;-1;-1;-1;-1;;yelman ursan islands
-3016;6674;sea;7280;-1;-1;-1;-1;;yelman ursan islands
-2996;3016;sea;7296;-1;-1;-1;-1;;yelman ursan islands
-6683;3016;sea;7280;-1;-1;-1;-1;;yelman ursan islands
-2996;6700;sea;7524;-1;-1;-1;-1;;yelman ursan islands
-3118;6700;sea;7524;-1;-1;-1;-1;;yelman ursan islands
-3118;6696;sea;7524;-1;-1;-1;-1;;yelman ursan islands
-6710;3118;sea;7524;-1;-1;-1;-1;;yelman ursan islands
-6715;6710;sea;7524;-1;-1;-1;-1;;yelman ursan islands
-3653;6715;sea;7524;-1;-1;-1;-1;;yelman ursan islands
-6673;6700;sea;7524;-1;-1;-1;-1;;yelman ursan islands
+6665;6669;sea;7280;-1;-1;-1;-1;;central ursan islands
+6655;6669;sea;7280;-1;-1;-1;-1;;central ursan islands
+6655;6654;sea;7280;-1;-1;-1;-1;;central ursan islands
+6656;6654;sea;7280;-1;-1;-1;-1;;central ursan islands
+3016;6674;sea;7280;-1;-1;-1;-1;;central ursan islands
+2996;3016;sea;7296;-1;-1;-1;-1;;central ursan islands
+6683;3016;sea;7280;-1;-1;-1;-1;;central ursan islands
+2996;6700;sea;7524;-1;-1;-1;-1;;central ursan islands
+3118;6700;sea;7524;-1;-1;-1;-1;;central ursan islands
+3118;6696;sea;7524;-1;-1;-1;-1;;central ursan islands
+6710;3118;sea;7524;-1;-1;-1;-1;;central ursan islands
+6715;6710;sea;7524;-1;-1;-1;-1;;central ursan islands
+3653;6715;sea;7524;-1;-1;-1;-1;;central ursan islands
+6673;6700;sea;7524;-1;-1;-1;-1;;central ursan islands
 6623;6619;sea;8024;-1;-1;-1;-1;;east ursan islands
 6619;6615;sea;8024;-1;-1;-1;-1;;east ursan islands
 6615;6617;sea;8024;-1;-1;-1;-1;;east ursan islands
@@ -65,6 +65,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6606;6601;sea;8040;-1;-1;-1;-1;;east ursan islands
 6747;1242;sea;7122;-1;-1;-1;-1;;east ursan islands
 3725;3704;sea;8151;-1;-1;-1;-1;;east ursan islands
+3653;3205;sea;7885;-1;-1;-1;-1;;south yelman island
+3794;3848;sea;7320;-1;-1;-1;-1;;south yelman island
 -1;-1;-1;-1;-1;-1;-1;-1;;
 -1;-1;;-1;-1;-1;-1;-1;-1 
 2745;6793;sea;75033;-1;-1;-1;-1;;cetan islands

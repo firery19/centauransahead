@@ -54,9 +54,9 @@ ideas = {
             picture = hol_liberation
 
             modifier = {
-                democratic_drift = 0.03
-                communism_drift = 0.01
-                stability_weekly = -0.004
+#                democratic_drift = 0.03
+#                communism_drift = 0.01
+#                stability_weekly = -0.004
                 war_support_factor = -0.15
             }
         }

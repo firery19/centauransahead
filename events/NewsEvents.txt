@@ -1,5 +1,111 @@
 ﻿add_namespace = news
 
+news_event = { # fall of alcor
+	id = news.1
+	title = news.1.t
+	desc = news.1.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+	OR = {
+		117 = { is_controlled_by = ORI }
+		117 = { is_controlled_by = HYS }
+		117 = { is_controlled_by = LPS }
+		117 = { is_controlled_by = CNS }
+		}
+		117 = { is_owned_by = URS }
+		URS = { has_war_with = ORI }
+		NOT = { has_global_flag = fall_of_alcor }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_alcor
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.1.a
+		trigger = {
+			NOT = {
+				TAG = ORI
+				TAG = HYS
+				TAG = LPS
+				TAG = CNS
+				TAG = URS
+			}
+		}
+	}
+	option = {
+		name = news.1.b
+		trigger = {
+		TAG = ORI 
+		TAG = HYS
+		TAG = LPS
+		TAG = CNS
+		}
+	}
+	option = {
+		name = news.1.c
+		trigger = { TAG = URS }
+	}
+}
+
+news_event = { # end of grease wars
+	id = news.2
+	title = news.2.t
+	desc = news.2.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+	
+	}
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = grease_war_end
+	}
+	
+#	mean_time_to_happen = {
+#		days = 2
+#	}
+	
+	option = {
+		name = news.2.a
+		trigger = {
+			NOT = {
+				TAG = ORI
+				TAG = HYS
+				TAG = LPS
+				TAG = CNS
+				TAG = URS
+			}
+		}
+	}
+	option = {
+		name = news.2.b
+		trigger = {
+		OR = {
+			TAG = ORI 
+			TAG = HYS
+			TAG = LPS
+			TAG = CNS
+			}
+		}
+	}
+	option = {
+		name = news.2.c
+		trigger = { TAG = URS }
+	}
+}
+
 # The Fall of Nauta (Antares)
 news_event = {
 	id = news.410

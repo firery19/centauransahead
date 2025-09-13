@@ -14,3 +14,14 @@ characters = {
 			id = -1
 		}
 	}
+	
+	URS_gen_warcriminal = { #empty character to become general via focus
+        name = URS_gen_warcriminal_name
+		gender = male
+		
+        portraits = {
+            army = {
+                large="GFX/leaders/URS/portrait_URS_warcriminal.dds"
+            }
+        }
+    }

@@ -84,9 +84,9 @@ country_event = {
 	
 	option = {
 		name = cov.4.a # Yes
-		ai_chance = {factor = 99}
-		COV = {
-			add_to_faction = ROOT = {
+		ai_chance = {base = 99}
+		ANT = {
+			add_to_faction = COV
 				add_ai_strategy = {
 						type = alliance
 						id = "ANT"
@@ -98,6 +98,6 @@ country_event = {
 	
 	option = {
 		name = cov.4.b # NO 
-		ai_chance = {factor = 1}
+		ai_chance = {base = 1}
 	}
 }

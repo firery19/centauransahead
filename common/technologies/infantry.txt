@@ -1230,7 +1230,7 @@ technologies = {
 		}
 
 		research_cost = 2.5
-		start_year = 1930 #when did they get night vision?
+		start_year = 1930 #when did they get night vision? # they didnt
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = @1911 }

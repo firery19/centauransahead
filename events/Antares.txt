@@ -9,7 +9,7 @@ country_event = {
 
     is_triggered_only = yes #focus
 
-    option = { 
+    option = {
         name = AANT1
         
 #        custom_effect_tooltip = tt_cet_integration
@@ -60,33 +60,4 @@ country_event = {
             #complete_national_focus = CET_sc_occupy
         }
     }
-}
-country_event = {
-    id = ANT.3
-    title = col.1.t
-    desc = col.1.d
-    #picture = GFX_evt_
-
-    is_triggered_only = yes #focus
-
-    option = { 
-        name = col.1.a
-        
-#        custom_effect_tooltip = tt_cet_integration
-	set_cosmetic_tag = ANTRED
-
-#        hidden_effect = {
-
-#            complete_national_focus = ANT_consolidate_monarchic_powers
-#        }
-    }
-
-    option = {
-       name = col.1.b
-#         hidden_effect = {
-#         complete_national_focus = ANT_strengthen_antarean_democracy
-#		complete_national_focus = ANT_consolidate_monarchic_powers
-	custom_effect_tooltip = "Alternate history not implemented, play the historical path."
-       }
-   }
 }

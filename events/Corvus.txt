@@ -85,8 +85,8 @@ country_event = {
 	option = {
 		name = cov.4.a # Yes
 		ai_chance = {factor = 99}
-		COV = {
-			add_to_faction = ROOT = {
+		create_faction = Solstice
+		add_to_faction = COV = {
 				add_ai_strategy = {
 						type = alliance
 						id = "ANT"
@@ -94,7 +94,7 @@ country_event = {
 				}
 			}
 		}
-	}
+	
 	
 	option = {
 		name = cov.4.b # NO 

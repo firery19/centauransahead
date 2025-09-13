@@ -91,6 +91,8 @@ set_popularities = {
 
 recruit_character = URS_kastus_magor
 
+recruit_character = URS_gen_warcriminal
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1900.1.1"

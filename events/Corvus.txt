@@ -98,6 +98,6 @@ country_event = {
 	
 	option = {
 		name = cov.4.b # NO 
-		ai_chance = {factor = 1}
+		ai_chance = {base = 1}
 	}
 }

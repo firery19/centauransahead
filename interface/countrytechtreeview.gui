@@ -151,7 +151,7 @@ guiTypes = {
 					position = { x = 550 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1904"
+					text = "1906"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -163,7 +163,7 @@ guiTypes = {
 					position = { x = 690 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1906"
+					text = "1910"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -175,7 +175,7 @@ guiTypes = {
 					position = { x = 830 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1908"
+					text = "1912"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -187,7 +187,7 @@ guiTypes = {
 					position = { x = 970 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1910"
+					text = "1914"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -1771,6 +1771,124 @@ guiTypes = {
 					format = left
 					Orientation = "UPPER_LEFT"
 				}
+				
+				containerWindowType = {
+				name = "naval_year_carrier"
+				position = { x=0 y=0 }
+				size = { width = 130 height = 100% }
+				orientation = upper_left
+
+				instantTextBoxType = {
+					name = "naval_year1"
+					position = { x = 210 y = 800 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1905"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "naval_year2"
+					position = { x = 630 y = 800 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1900"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "naval_year3"
+					position = { x = 1050 y = 800 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1904"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "naval_year4"
+					position = { x = 1470 y = 800 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1908"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+			}
+			
+			containerWindowType = {
+				name = "naval_year_submarine"
+				position = { x=0 y=0 }
+				size = { width = 130 height = 100% }
+				orientation = upper_left
+
+				instantTextBoxType = {
+					name = "naval_year1"
+					position = { x = 240 y = 1220 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1955"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "naval_year2"
+					position = { x = 630 y = 1220 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1960"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "naval_year3"
+					position = { x = 1050 y = 1220 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1966"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "naval_year4"
+					position = { x = 1470 y = 1220 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1970"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+			}
 
 				instantTextBoxType = {
 					name = "naval_subtitle_destroyer"

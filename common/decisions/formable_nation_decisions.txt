@@ -150,9 +150,9 @@ form_commonwealthB_category = {
 		}
 
 		ai_will_do = {
-			factor = 200
+			base = 200
 			modifier = {
-				factor = 200
+				add = 200
 				is_historical_focus_on = yes
 			}
 		}
@@ -222,9 +222,9 @@ form_united_grusa_category = {
 		}
 
 		ai_will_do = {
-			factor = 200
+			base = 200
 			modifier = {
-				factor = 10
+				base = 10
 				is_historical_focus_on = yes
 			}
 		}

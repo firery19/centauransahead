@@ -15,7 +15,7 @@ ideas = {
                 training_time_army_factor = 0.5
 				army_speed_factor = -0.1
 				dig_in_speed_factor = 1
-				forced_surrender_limit = 0.4
+				forced_surrender_limit = 0.15
 				ai_focus_naval_factor = 0
 				ai_focus_naval_air_factor = 0
             }
@@ -238,5 +238,23 @@ ideas = {
 				resistance_decay_on_our_occupied_states = -0.5
             }
         }
+		AQU_scorch = {
+            name = "The Scorch"
+            
+            picture = chi_war_of_resistance3
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+stability_weekly = -0.01
+war_support_weekly = 0.01
+recruitable_population	= 0.05
+monthly_population = -0.9
+
+            }
+        }
+
+
+
 	}
 }

@@ -1044,24 +1044,8 @@ technologies = {
 				factor = 0.2
 
 				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
+					tag = CAI
 				}
-			}
-			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_war_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
 			}
 			modifier = { #This is needed for a lot of tank designs
 				factor = 4.0
@@ -1311,26 +1295,16 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1941.1.6"
-			}
-			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
+				date > "1925.1.6"
 			}
 			modifier = {
 				factor = 2
-				date > "1942.1.1"
+				date > "1926.1.1"
 			}
 
 			modifier = {
 				factor = 5
-				date > "1943.1.1"
+				date > "1927.1.1"
 			}
 			modifier = {
 				factor = 10
@@ -1389,16 +1363,6 @@ technologies = {
 				date > "1942.1.6"
 			}
 			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
-			}
-			modifier = {
 				factor = 5
 				date > "1943.1.1"
 			}
@@ -1453,16 +1417,6 @@ technologies = {
 			modifier = {
 				factor = 2
 				date > "1942.1.9"
-			}
-			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
 			}
 			modifier = {
 				factor = 2

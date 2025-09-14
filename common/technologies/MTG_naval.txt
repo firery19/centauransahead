@@ -129,7 +129,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1904
+		start_year = 1910
 
 		folder = {
 			name = mtgnavalfolder
@@ -169,7 +169,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1908
+		start_year = 1920
 
 		folder = {
 			name = mtgnavalfolder
@@ -528,7 +528,7 @@ technologies = {
 			ship_hull_cruiser_1
 		}
 		enable_equipment_modules = {
-			ship_airplane_launcher_1
+	#		ship_airplane_launcher_1
 			cruiser_ship_engine_1
 			ship_armor_cruiser_1
 		}
@@ -537,10 +537,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = improved_airplane_launcher
-			research_cost_coeff = 1
-		}
+#		path = {
+#			leads_to_tech = improved_airplane_launcher
+#			research_cost_coeff = 1
+#		}
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
@@ -640,6 +640,7 @@ technologies = {
 			ship_hull_cruiser_3
 		}
 		enable_equipment_modules = {
+			ship_airplane_launcher_1
 			cruiser_ship_engine_3
 		}
 		path = {
@@ -649,7 +650,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1904
+		start_year = 1910
 
 		folder = {
 			name = mtgnavalfolder
@@ -688,9 +689,14 @@ technologies = {
 		enable_equipment_modules = {
 			cruiser_ship_engine_4
 		}
+		path = {
+			leads_to_tech = improved_airplane_launcher
+			research_cost_coeff = 1
+		}
+		
 		research_cost = 1.5
 
-		start_year = 1908
+		start_year = 1920
 
 		folder = {
 			name = mtgnavalfolder
@@ -737,7 +743,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 2 }
+			position = {  x = 0 y = 20 }
 		}
 
 		ai_will_do = {
@@ -1004,7 +1010,7 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1904
+		start_year = 1910
 
 		folder = {
 			name = mtgnavalfolder
@@ -1052,7 +1058,7 @@ technologies = {
 		}
 		research_cost = 1.5
 
-		start_year = 1908
+		start_year = 1920
 
 		folder = {
 			name = mtgnavalfolder
@@ -1105,11 +1111,11 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1.25
 
-		start_year = 1900
+		start_year = 1895
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 8 }
+			position = {  x = 0 y = 5 }
 		}
 
 		ai_will_do = {
@@ -1156,7 +1162,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 0 y = 14 }
+			position = {  x = 0 y = 8 }
 		}
 
 		ai_will_do = {
@@ -1212,7 +1218,7 @@ early_ship_hull_carrier = {
 
 		research_cost = 1.75
 
-		start_year = 1905
+		start_year = 1904
 
 		folder = {
 			name = mtgnavalfolder
@@ -1808,7 +1814,7 @@ early_ship_hull_carrier = {
 		force_use_small_tech_layout = yes		
 		is_special_project_tech = yes
 		research_cost = 2
-		start_year = 1904
+		start_year = 1910
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = 1 y = 13 }
@@ -1837,7 +1843,7 @@ early_ship_hull_carrier = {
 		force_use_small_tech_layout = yes		
 		is_special_project_tech = yes
 		research_cost = 2
-		start_year = 1908
+		start_year = 1920
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = 1 y = 19 }
@@ -1923,7 +1929,7 @@ early_ship_hull_carrier = {
 		#HIDDEN EFFECT FOR THE PROXIMITY FUZE 
 		navy_anti_air_attack_factor = 0.25
 		research_cost = 1
-		start_year = 1904
+		start_year = 1910
 		
 		allow = {
 			always = no
@@ -1935,7 +1941,7 @@ early_ship_hull_carrier = {
 		underway_replenishment_range = 0.2
 		underway_replenishment_convoy_cost = 0.1
 		research_cost = 1
-		start_year = 1904
+		start_year = 1910
 
 		allow = {
 			always = no
@@ -1946,7 +1952,7 @@ early_ship_hull_carrier = {
 		underway_replenishment_range = -0.1
 		underway_replenishment_convoy_cost = -0.2
 		research_cost = 1
-		start_year = 1904
+		start_year = 1910
 
 		allow = {
 			always = no

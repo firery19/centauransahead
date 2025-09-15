@@ -591,8 +591,8 @@ technologies = {
 			}
 			modifier = {
 				OR = {
-					tag = GER
-					tag = JAP
+					tag = CET
+					tag = ANT
 				}
 				factor = 2
 			}
@@ -640,8 +640,8 @@ technologies = {
 			}
 			modifier = {
 				OR = {
-					tag = GER
-					tag = JAP
+					tag = CET
+					tag = ANT
 				}
 				factor = 2
 			}
@@ -684,8 +684,8 @@ technologies = {
 			}
 			modifier = {
 				OR = {
-					tag = GER
-					tag = JAP
+					tag = CET
+					tag = ANT
 				}
 				factor = 2
 			}
@@ -868,9 +868,9 @@ technologies = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
+					tag = HYS
+					tag = ORI
+					tag = ANT
 				}
 				factor = 20
 			}
@@ -913,9 +913,9 @@ technologies = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
+					tag = HYS
+					tag = ORI
+					tag = ANT
 				}
 				factor = 20
 			}
@@ -957,9 +957,9 @@ technologies = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
+					tag = HYS
+					tag = ORI
+					tag = ANT
 				}
 				factor = 20
 			}
@@ -1015,9 +1015,9 @@ technologies = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = USA
-					tag = GER
+					tag = ANT
+					tag = ORI
+					tag = CET
 				}
 				factor = 5
 			}
@@ -1082,9 +1082,9 @@ technologies = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = USA
-					tag = GER
+					tag = ANT
+					tag = ORI
+					tag = CET
 				}
 				factor = 5
 			}
@@ -1093,7 +1093,7 @@ technologies = {
 				factor = 3
 			}
 			modifier = {
-				tag = JAP #Japan wants torpedoes EXTRA HARD
+				tag = ANT #ANTan wants torpedoes EXTRA HARD
 				factor = 2
 			}
 		}
@@ -1139,9 +1139,9 @@ technologies = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = USA
-					tag = GER
+					tag = ANT
+					tag = ORI
+					tag = CET
 				}
 				factor = 5
 			}
@@ -1185,9 +1185,9 @@ technologies = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = USA
-					tag = GER
+					tag = ANT
+					tag = ORI
+					tag = CET
 				}
 				factor = 5
 			}
@@ -1277,7 +1277,7 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 			modifier = {
-				tag = JAP
+				tag = ANT
 				factor = 5
 			}
 		}
@@ -1315,7 +1315,7 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 			modifier = {
-				tag = JAP
+				tag = ANT
 				factor = 5
 			}
 		}
@@ -1364,11 +1364,11 @@ technologies = {
 			}
 			modifier = {
 				is_historical_focus_on = yes
-				tag = JAP
+				tag = ANT
 				factor = 0.25
 			}
 			modifier = {
-				tag = USA
+				tag = ORI
 				factor = 3
 			}
 			modifier = {
@@ -1411,11 +1411,11 @@ technologies = {
 			factor = 3
 			modifier = {
 				is_historical_focus_on = yes
-				tag = JAP
+				tag = ANT
 				factor = 0.25
 			}
 			modifier = {
-				tag = USA
+				tag = ORI
 				factor = 3
 			}
 			modifier = {
@@ -1454,11 +1454,11 @@ technologies = {
 			factor = 3
 			modifier = {
 				is_historical_focus_on = yes
-				tag = JAP
+				tag = ANT
 				factor = 0.25
 			}
 			modifier = {
-				tag = USA
+				tag = ORI
 				factor = 3
 			}
 			modifier = {
@@ -1486,7 +1486,7 @@ technologies = {
 #    #  #  # #       #  # #  # #  #  #  #  # #  # #       #   # #    #  #  # #  # #  #   #
 #   ### #  # ###      ##   ##  #  #  #  #  #  ##  ###     #   # ###  #  #  #  ##  ###  ##
 
-#NOTE: FIRE CONTROL SYSTEMS ARE IN ELECTROMECHANICAL ENGINEERING FOLDER!
+#NOTE: FIRE CONTROL SYSTEMS ARE IN ELECTROMECHANICAL HYSINEERING FOLDER!
 
 	fire_control_methods_1 = {
 
@@ -1522,7 +1522,7 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = JAP
+				tag = ANT
 				factor = 5
 			}
 		}
@@ -1572,7 +1572,7 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = JAP
+				tag = ANT
 				factor = 5
 			}
 		}
@@ -1626,7 +1626,7 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				tag = JAP
+				tag = ANT
 				factor = 5
 			}
 		}
@@ -1682,10 +1682,10 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = CET
+					tag = ORI
+					tag = HYS
+					tag = URS
 				}
 				factor = 6
 			}
@@ -1734,10 +1734,10 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = CET
+					tag = ORI
+					tag = HYS
+					tag = URS
 				}
 				factor = 6
 			}
@@ -1772,10 +1772,10 @@ technologies = {
 			factor = 1.5
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = CET
+					tag = ORI
+					tag = HYS
+					tag = URS
 				}
 				factor = 6
 			}
@@ -1819,10 +1819,10 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = CET
+					tag = ORI
+					tag = HYS
+					tag = URS
 				}
 				factor = 6
 			}
@@ -1875,10 +1875,10 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = CET
+					tag = ORI
+					tag = HYS
+					tag = URS
 				}
 				factor = 5
 			}
@@ -1928,8 +1928,8 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = USA
-					tag = ENG
+					tag = ORI
+					tag = HYS
 				}
 				factor = 5
 			}
@@ -1974,9 +1974,9 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
+					tag = CET
+					tag = ORI
+					tag = HYS
 				}
 				factor = 7
 			}
@@ -2012,9 +2012,9 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = USA
-					tag = ENG
+					tag = CET
+					tag = ORI
+					tag = HYS
 				}
 				factor = 7
 			}
@@ -2052,7 +2052,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = USA
+				tag = ORI
 				factor = 3
 			}
 		}
@@ -2165,21 +2165,21 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = ORI
 			}
 			modifier = {
-				has_war_with = JAP
+				has_war_with = ANT
 				factor = 2
 			}
 
 			modifier = {
 				factor = 3
-				tag = JAP
+				tag = ANT
 			}
 
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = HYS
 			}
 		}
 

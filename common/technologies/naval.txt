@@ -972,7 +972,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1910
+		start_year = 1904
 		
 		folder = {
 			name = naval_folder

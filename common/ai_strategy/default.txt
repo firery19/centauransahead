@@ -1514,9 +1514,12 @@ default_build_an_air_facility = {
 		num_of_military_factories > 10 # We should first build up our military industry
 
 		OR = { # Don't start until we can build decent aircraft
-			has_tech = basic_small_airframe
-			has_tech = basic_medium_airframe
-			has_tech = basic_large_airframe
+			has_tech = early_fighter
+			has_tech = early_bomber
+			has_tech = strategic_bomber1
+			has_tech = iw_small_airframe
+			has_tech = iw_medium_airframe
+			has_tech = iw_large_airframe
 		}
 		air_facility < 1 # one is enough
 	}

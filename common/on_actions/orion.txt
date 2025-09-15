@@ -8,6 +8,7 @@ on_actions = {
 						original_tag = URS
 					}
 				}
+				URS = { clr_country_flag = grease_wars_not_started }
 				set_global_flag = grease_wars_start
 			}
 		}
@@ -21,6 +22,7 @@ on_actions = {
 						original_tag = ORI
 					}
 				}
+				URS = { clr_country_flag = grease_wars_not_started }
 				set_global_flag = grease_wars_start
 			}
 		}

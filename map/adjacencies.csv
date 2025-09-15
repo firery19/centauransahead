@@ -24,6 +24,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2619;6604;sea;8039;-1;-1;-1;-1;;ursa
 # cetan andromeda
 5170;6791;sea;7503;-1;-1;-1;-1;;cetus islands andromeda below
+5190;6790;sea;8043;-1;-1;-1;-1;;cetus islands
 2745;6793;sea;7503;-1;-1;-1;-1;;cetus islands
 6793;6794;sea;7503;-1;-1;-1;-1;;cetus islands
 6791;6793;sea;7503;-1;-1;-1;-1;;cetus islands

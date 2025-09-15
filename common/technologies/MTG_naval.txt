@@ -1414,6 +1414,12 @@ early_ship_hull_carrier = {
 			leads_to_tech = basic_ship_hull_submarine
 			research_cost_coeff = 1
 		}
+		
+		path = {
+			leads_to_tech = basic_submarine_snorkel
+			research_cost_coeff = 1
+		}
+
 
 		on_research_complete = {
 			custom_effect_tooltip = {
@@ -1533,11 +1539,6 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = basic_submarine_snorkel
-			research_cost_coeff = 1
-		}
-
 		research_cost = 2.0
 
 		start_year = 1966
@@ -1625,7 +1626,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 4 y = 13 }
+			position = {  x = 4 y = 1 }
 		}
 
 		ai_will_do = {
@@ -1679,7 +1680,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = {  x = 4 y = 19 }
+			position = {  x = 4 y = 7 }
 		}
 
 		ai_will_do = {
@@ -1880,7 +1881,7 @@ early_ship_hull_carrier = {
 		force_use_small_tech_layout = yes
 		is_special_project_tech = yes
 		research_cost = 1
-		start_year = 1942
+		start_year = 1945
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 2 y = 17 }
@@ -1910,7 +1911,7 @@ early_ship_hull_carrier = {
 		force_use_small_tech_layout = yes
 		is_special_project_tech = yes			
 		research_cost = 1
-		start_year = 1945
+		start_year = 1950
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 2 y = 23 }
@@ -1941,7 +1942,7 @@ early_ship_hull_carrier = {
 		underway_replenishment_range = 0.2
 		underway_replenishment_convoy_cost = 0.1
 		research_cost = 1
-		start_year = 1910
+		start_year = 1966
 
 		allow = {
 			always = no
@@ -1952,7 +1953,7 @@ early_ship_hull_carrier = {
 		underway_replenishment_range = -0.1
 		underway_replenishment_convoy_cost = -0.2
 		research_cost = 1
-		start_year = 1910
+		start_year = 1970
 
 		allow = {
 			always = no

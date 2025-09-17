@@ -35797,7 +35797,7 @@ spriteTypes = {
 			texturefile = "gfx/interface/goals/focus_URS_every_inch.dds"
 			effectFile = "gfx/FX/buttonstate.lua"
 			animation = {
-				animationmaskfile = "gfx/interface/goals/focus_URS_every_inch_shine.dds"
+				animationmaskfile = "gfx/interface/goals/focus_URS_every_inch.dds"
 				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 				animationlooping = no			# yes or no ;)
@@ -35810,7 +35810,7 @@ spriteTypes = {
 			}
 		
 			animation = {
-				animationmaskfile = "gfx/interface/goals/focus_URS_every_inch_shine.dds"
+				animationmaskfile = "gfx/interface/goals/focus_URS_every_inch.dds"
 				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 				animationlooping = no			# yes or no ;)
@@ -35829,7 +35829,7 @@ spriteTypes = {
 			texturefile = "gfx/interface/goals/focus_URS_evacuvate_east_canis.dds"
 			effectFile = "gfx/FX/buttonstate.lua"
 			animation = {
-				animationmaskfile = "gfx/interface/goals/focus_URS_evacuvate_east_canis_shine.dds"
+				animationmaskfile = "gfx/interface/goals/focus_URS_evacuvate_east_canis.dds"
 				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 				animationlooping = no			# yes or no ;)
@@ -35842,7 +35842,7 @@ spriteTypes = {
 			}
 		
 			animation = {
-				animationmaskfile = "gfx/interface/goals/focus_URS_evacuvate_east_canis_shine.dds"
+				animationmaskfile = "gfx/interface/goals/focus_URS_evacuvate_east_canis.dds"
 				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 				animationlooping = no			# yes or no ;)
@@ -35861,7 +35861,7 @@ spriteTypes = {
 			texturefile = "gfx/interface/goals/focus_URS_grease_wars.dds"
 			effectFile = "gfx/FX/buttonstate.lua"
 			animation = {
-				animationmaskfile = "gfx/interface/goals/focus_URS_grease_wars_shine.dds"
+				animationmaskfile = "gfx/interface/goals/focus_URS_grease_wars.dds"
 				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 				animationlooping = no			# yes or no ;)
@@ -35874,7 +35874,7 @@ spriteTypes = {
 			}
 		
 			animation = {
-				animationmaskfile = "gfx/interface/goals/focus_URS_grease_wars_shine.dds"
+				animationmaskfile = "gfx/interface/goals/focus_URS_grease_wars.dds"
 				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 				animationlooping = no			# yes or no ;)
@@ -35893,7 +35893,7 @@ spriteTypes = {
 			texturefile = "gfx/interface/goals/focus_URS_desert_minefield.dds"
 			effectFile = "gfx/FX/buttonstate.lua"
 			animation = {
-				animationmaskfile = "gfx/interface/goals/focus_URS_desert_minefield_shine.dds"
+				animationmaskfile = "gfx/interface/goals/focus_URS_desert_minefield.dds"
 				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 				animationlooping = no			# yes or no ;)
@@ -35906,7 +35906,7 @@ spriteTypes = {
 			}
 		
 			animation = {
-				animationmaskfile = "gfx/interface/goals/focus_URS_desert_minefield_shine.dds"
+				animationmaskfile = "gfx/interface/goals/focus_URS_desert_minefield.dds"
 				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 				animationlooping = no			# yes or no ;)
@@ -35925,7 +35925,7 @@ spriteTypes = {
 			texturefile = "gfx/interface/goals/focus_URS_recruit_retired_warcriminal.dds"
 			effectFile = "gfx/FX/buttonstate.lua"
 			animation = {
-				animationmaskfile = "gfx/interface/goals/focus_URS_recruit_retired_warcriminal_shine.dds"
+				animationmaskfile = "gfx/interface/goals/focus_URS_recruit_retired_warcriminal.dds"
 				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 				animationlooping = no			# yes or no ;)
@@ -35938,7 +35938,7 @@ spriteTypes = {
 			}
 		
 			animation = {
-				animationmaskfile = "gfx/interface/goals/focus_URS_recruit_retired_warcriminal_shine.dds"
+				animationmaskfile = "gfx/interface/goals/focus_URS_recruit_retired_warcriminal.dds"
 				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 				animationlooping = no			# yes or no ;)

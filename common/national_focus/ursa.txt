@@ -1111,15 +1111,9 @@ focus_tree = {
 		
         completion_reward = {
 			114 = {
-				add_state_modifier = {
-					modifier = {
-						army_speed_factor_for_controller = -0.9
-						enemy_army_speed_factor = -0.9
-						local_org_regain = -0.5
-						disable_strategic_redeployment = 1
-						enemy_attrition = 0.2
-					}
-				}
+				add_dynamic_modifier = {
+                    modifier = URS_desert_minefield_modifier
+                }
 			}
 		}
 		

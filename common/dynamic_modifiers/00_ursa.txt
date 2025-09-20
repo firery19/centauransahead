@@ -17,3 +17,13 @@ URS_colonial_resistance = {
 	compliance_gain = -0.02
 
 }
+
+URS_desert_minefield_modifier = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+
+	army_attack_factor = -0.9
+	army_speed_factor = -0.75
+	local_org_regain = -0.5
+	disable_strategic_redeployment = 1
+}

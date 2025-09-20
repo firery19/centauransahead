@@ -1,0 +1,15 @@
+characters = {
+    HYS_parliament_building = {
+        name = HYS_parliament_building
+        portraits = {
+            civilian = {
+                large = GFX_portrait_HYS_parliament_building
+            }
+        }
+        country_leader = {
+			ideology = moderatism
+			traits = { }
+			expire = "1912.1.1.1"
+		}
+    }
+}

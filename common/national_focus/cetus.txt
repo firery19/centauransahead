@@ -1951,8 +1951,11 @@ focus_tree = {
 		
         
         #search_filters =
-        cost = 5
-
+        cost = 1
+		
+		
+       	ai_will_do = { factor = 100 }
+		
         completion_reward = {
 		add_ideas = CET_desperate_defence_idea
         }
@@ -1969,7 +1972,10 @@ focus_tree = {
 		
         
         #search_filters =
-        cost = 10
+        cost = 2
+		
+		
+        	ai_will_do = { factor = 100 }
 
         completion_reward = {
 				add_timed_idea = {
@@ -1989,7 +1995,7 @@ focus_tree = {
 		
         
         #search_filters =
-        cost = 10
+        cost = 5
 
         completion_reward = {
 				add_timed_idea = {
@@ -2010,7 +2016,7 @@ focus_tree = {
 
         
         #search_filters =
-        cost = 10
+        cost = 2
 
         completion_reward = {
 				add_timed_idea = {
@@ -2029,6 +2035,10 @@ focus_tree = {
 		prerequisite = { focus = CET_defence_measures }
 
         
+        ai_will_do = {
+            factor = 50
+        }
+		
         #search_filters =
         cost = 10
 		
@@ -2093,6 +2103,10 @@ focus_tree = {
 		prerequisite = { focus = CET_counterattack_first focus = CET_defence_first }
 
         
+        ai_will_do = {
+            factor = 50
+        }
+		
         #search_filters =
         cost = 10
 

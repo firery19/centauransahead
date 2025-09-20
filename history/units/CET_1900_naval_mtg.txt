@@ -7,43 +7,60 @@
 		task_force = {				
 			name = "Nauta Command A"
 			location = 2919
-			ship = { name = "CIS Argo" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
-			ship = { name = "CIS Vela" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
-			ship = { name = "CIS Oceanus" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
-			ship = { name = "CIS Tureis" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
-			ship = { name = "CIS Canopus" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
-			ship = { name = "CIS Carina" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
-			ship = { name = "CIS Mimosa" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
-			ship = { name = "CIS Kaus" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
-			ship = { name = "CIS Primus" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Numero Class" } } }
-			ship = { name = "CIS Secundus" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Numero Class" } } }
-			ship = { name = "CIS Tertius" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Numero Class" } } }
-			ship = { name = "CIS Quartus" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Numero Class" } } }
-			ship = { name = "CIS Quintus" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Numero Class" } } }
-			ship = { name = "CIS Sextus" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Numero Class" } } }
-			ship = { name = "CIS Septimus" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Numero Class" } } }
-			ship = { name = "CIS Octavus" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Numero Class" } } }
-			ship = { name = "CIS Nonus" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Numero Class" } } }
-			ship = { name = "CIS Decimus" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Numero Class" } } }
-			ship = { name = "CIS Undecimus" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Numero Class" } } }
-			ship = { name = "CIS Duodecimus" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Numero Class" } } }
-			ship = { name = "CIS Poseidon" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Poseidon Class" } } }
-			ship = { name = "CIS Theseus" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Poseidon Class" } } }
-			ship = { name = "CIS Triton" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Poseidon Class" } } }
-			ship = { name = "CIS Arion" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Poseidon Class" } } }
-			ship = { name = "CIS Rhodos" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Poseidon Class" } } }
-			ship = { name = "CIS Benthesikyme" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Poseidon Class" } } }
-			ship = { name = "CIS Despoina" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Poseidon Class" } } }
-			ship = { name = "CIS Belus" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Poseidon Class" } } }
-			ship = { name = "CIS Neleus" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Poseidon Class" } } }
-			ship = { name = "CIS Polyphemus" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Poseidon Class" } } }
-			ship = { name = "CIS Agenor" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Poseidon Class" } } }
-			ship = { name = "CIS Chrysaor" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Poseidon Class" } } }
-			ship = { name = "CIS Bellerophon" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Poseidon Class" } } }
-			ship = { name = "CIS Pegasus" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Poseidon Class" } } }
-			ship = { name = "CIS Atlas" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Poseidon Class" } } }
-			ship = { name = "CIS Kymopoleia" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Poseidon Class" } } }
-			ship = { name = "CIS Otos" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Poseidon Class" } } }
+			ship = { name = "CIS Argo" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
+			ship = { name = "CIS Vela" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
+			ship = { name = "CIS Oceanus" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
+			ship = { name = "CIS Carina" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
+			ship = { name = "CIS Mimosa" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
+			ship = { name = "CIS ArmoredCruiser15" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser16" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser17" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser18" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser19" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser20" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser21" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser22" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser23" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser24" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser25" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser26" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser27" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser28" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser29" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser30" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser31" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser32" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser33" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser34" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS Primus" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Numero Class" } } }
+			ship = { name = "CIS Secundus" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Numero Class" } } }
+			ship = { name = "CIS Tertius" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Numero Class" } } }
+			ship = { name = "CIS Quartus" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Numero Class" } } }
+			ship = { name = "CIS Quintus" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Numero Class" } } }
+			ship = { name = "CIS Sextus" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Numero Class" } } }
+			ship = { name = "CIS Septimus" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Numero Class" } } }
+			ship = { name = "CIS Octavus" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Numero Class" } } }
+			ship = { name = "CIS Nonus" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Numero Class" } } }
+			ship = { name = "CIS Decimus" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Numero Class" } } }
+			ship = { name = "CIS Undecimus" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Numero Class" } } }
+			ship = { name = "CIS Duodecimus" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Numero Class" } } }
+			ship = { name = "CIS Siren" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Siren Class" } } }
+			ship = { name = "CIS Theseus" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Siren Class" } } }
+			ship = { name = "CIS Triton" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Siren Class" } } }
+			ship = { name = "CIS Arion" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Siren Class" } } }
+			ship = { name = "CIS Rhodos" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Siren Class" } } }
+			ship = { name = "CIS Benthesikyme" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Siren Class" } } }
+			ship = { name = "CIS Despoina" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Siren Class" } } }
+			ship = { name = "CIS Belus" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Siren Class" } } }
+			ship = { name = "CIS Neleus" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Siren Class" } } }
+			ship = { name = "CIS Polyphemus" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Siren Class" } } }
+			ship = { name = "CIS Agenor" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Siren Class" } } }
+			ship = { name = "CIS Chrysaor" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Siren Class" } } }
+			ship = { name = "CIS Bellerophon" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Siren Class" } } }
+			ship = { name = "CIS Pegasus" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Siren Class" } } }
+			ship = { name = "CIS Atlas" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Siren Class" } } }
+			ship = { name = "CIS Kymopoleia" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Siren Class" } } }
+			ship = { name = "CIS Otos" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Siren Class" } } }
 			ship = { name = "CIS Potamoi" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = CET version_name = "Potamoi Class" } } }
 			ship = { name = "CIS Achelous" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = CET version_name = "Potamoi Class" } } }
 			ship = { name = "CIS Alpheus" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = CET version_name = "Potamoi Class" } } }
@@ -57,43 +74,28 @@
 			ship = { name = "CIS Aeas" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = CET version_name = "Potamoi Class" } } }
 			ship = { name = "CIS DD43" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
 			ship = { name = "CIS DD44" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD45" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD46" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD47" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD48" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD49" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD50" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
 		}
 		task_force = {				
 			name = "Nauta Command B"
 			location = 2919
-			ship = { name = "CIS Pyxis" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
-			ship = { name = "CIS Eridanos" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
-			ship = { name = "CIS DD51" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD52" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD53" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD54" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD55" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD56" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD57" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD58" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD59" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD60" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD61" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD62" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD63" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD64" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD65" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD66" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD67" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD68" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD69" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD70" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
+			ship = { name = "CIS Pyxis" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
+			ship = { name = "CIS Eridanos" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
+			ship = { name = "CIS ArmoredCruiser12" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser13" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser14" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS DD23" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
+			ship = { name = "CIS DD24" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
+			ship = { name = "CIS DD25" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
+			ship = { name = "CIS DD26" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
+			ship = { name = "CIS DD27" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
 		}
 		task_force = {				
 			name = "St. Kirk Command"
 			location = 5032
-			ship = { name = "CIS Naos" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
+			ship = { name = "CIS Canopus" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
+			ship = { name = "CIS Pontus" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
+			ship = { name = "CIS ArmoredCruiser10" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser11" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
 			ship = { name = "CIS Johalm" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
 			ship = { name = "CIS Pickelhalm" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
 			ship = { name = "CIS Vahelm" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
@@ -116,7 +118,9 @@
 			name = "Carran Command"
 			location = 5136
 			
-			ship = { name = "CIS Kaitos" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
+			ship = { name = "CIS Kaitos" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
+			ship = { name = "CIS ArmoredCruiser8" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser9" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
 			ship = { name = "CIS Kulshalm" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
 			ship = { name = "CIS Bochams" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
 			ship = { name = "CIS Untherhelm" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
@@ -142,13 +146,13 @@
 		task_force = {				
 			name = "South Corvus Command"
 			location = 21
-			ship = { name = "CIS Ouranous" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
-			ship = { name = "CIS Neodymiumite" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Neodymiumite Class" } } }
-			ship = { name = "CIS Neodymiumate" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Neodymiumite Class" } } }
-			ship = { name = "CIS Neodymiumete" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Neodymiumite Class" } } }
-			ship = { name = "CIS Neodymiunate" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Neodymiumite Class" } } }
-			ship = { name = "CIS Niodymiumite" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Neodymiumite Class" } } }
-			ship = { name = "CIS Nyodymiumite" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Neodymiumite Class" } } }
+			ship = { name = "CIS Ourania" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
+			ship = { name = "CIS Erebos" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CET version_name = "Erebos Class" } } }
+			ship = { name = "CIS ArmoredCruiser3" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser4" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser5" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser6" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
+			ship = { name = "CIS ArmoredCruiser7" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
 			ship = { name = "CIS Daphne" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
 			ship = { name = "CIS Daphne II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
 			ship = { name = "CIS Briham" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
@@ -158,11 +162,6 @@
 			ship = { name = "CIS Welhalm" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
 			ship = { name = "CIS Bulhalm" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
 			ship = { name = "CIS Estham" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD23" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD24" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD25" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD26" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
-			ship = { name = "CIS DD27" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
 			ship = { name = "CIS DD28" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
 			ship = { name = "CIS DD29" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
 			ship = { name = "CIS DD30" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CET version_name = "Daphne Class" } } }
@@ -177,7 +176,7 @@
 		task_force = {				
 			name = "Dubwallow Command"
 			location = 5190
-			ship = { name = "CIS Rada" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
+			ship = { name = "CIS Kaus" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CET version_name = "Kaitos Class" } } }
 			ship = { name = "CIS Rhesus" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = CET version_name = "Potamoi Class" } } }
 			ship = { name = "CIS Rhine" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = CET version_name = "Potamoi Class" } } }
 			ship = { name = "CIS Rhodius" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = CET version_name = "Potamoi Class" } } }
@@ -191,6 +190,8 @@
 		task_force = {				
 			name = "Melmere Command"
 			location = 1495
+			ship = { name = "CIS Chronos" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CET version_name = "Chronos Class" } } }
+			ship = { name = "CIS Cybelle" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CET version_name = "Chronos Class" } } }
 			ship = { name = "CIS Neodymium" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CET version_name = "Neodymium Class" } } }
 			ship = { name = "CIS Nestos" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = CET version_name = "Potamoi Class" } } }
 			ship = { name = "CIS Nessus" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = CET version_name = "Potamoi Class" } } }
@@ -208,6 +209,39 @@
 
 instant_effect = {
 ### Under Construction Notes ###
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_1
+			creator = "CET" 
+			version_name = "Kaitos Class"
+		}
+		name = "CIS Naos"
+		requested_factories = 2
+		progress = 0.21
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "CET" 
+			version_name = "Erebos Class"
+		}
+		name = "CIS Chaos"
+		requested_factories = 2
+		progress = 0.86
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "CET" 
+			version_name = "Erebos Class"
+		}
+		name = "CIS Aether"
+		requested_factories = 2
+		progress = 0.74
+		amount = 1
+	}
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_light_2

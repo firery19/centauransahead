@@ -43,6 +43,8 @@ set_popularities = {
 	neutrality = 65
 }
 
+recruit_character = RIA_ivan_riaa
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1900.1.1"

@@ -12,4 +12,15 @@ spriteTypes = {
 		name = "GFX_dynamite1_medium"
 		texturefile = "gfx/interface/technologies/dynamite1.dds"
 	}
+	
+	# caromite
+	
+	spriteType = {
+		name = "GFX_news_event_caromite"
+		texturefile = "gfx/event_pictures/news_event_caromite.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_caromite"
+		texturefile = "gfx/event_pictures/report_event_caromite.dds"
+	}
 }

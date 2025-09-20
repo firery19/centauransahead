@@ -8,4 +8,9 @@ URS_preGreaseWars_Decisions = {
 		#has_country_flag = grease_wars_not_started_prelude
 		has_country_flag = grease_wars_not_started
 	}
+	visible = {
+		tag = URS
+		#has_country_flag = grease_wars_not_started_prelude
+		has_country_flag = grease_wars_not_started
+	}
 }

@@ -95,7 +95,7 @@ recruit_character = URS_eduard_magor
 
 #add_country_leader_role = {
 #	character = URS_matvei_magor
-#	promote_leader = yes
+#	promote_leader = no
 #	country_leader = {
 #	ideology = fascism_ideology
 #	expire = "1965.1.1.1"
@@ -109,7 +109,7 @@ set_politics = {
 	ruling_party = neutrality
 	last_election = "1900.1.1"
 	election_frequency = 62
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_country_flag = grease_wars_not_started

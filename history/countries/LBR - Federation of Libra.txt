@@ -40,6 +40,8 @@ set_popularities = {
 	neutrality = 100
 }
 
+recruit_character = LBR_generic_leader
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1900.1.1"

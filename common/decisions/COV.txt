@@ -509,7 +509,7 @@ COV_wartime_administration_war = {
 			}
 		}
 		ai_will_do = {
-		factor = 1
+		factor = 100
 		}
 	}
 	

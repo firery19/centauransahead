@@ -554,6 +554,11 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5
+		
+		
+		ai_will_do = {
+			factor = 99999999
+		}
 
 		completion_reward = {
 		custom_effect_tooltip = corvus_does_something_tooltip
@@ -568,6 +573,11 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		
+		
+		ai_will_do = {
+			factor = 9999
+		}
 
 		completion_reward = {
 		custom_effect_tooltip = corvus_does_something_tooltip 
@@ -582,6 +592,11 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 5
+		
+		
+		ai_will_do = {
+			factor = 9999
+		}
 
 		completion_reward = {
 		custom_effect_tooltip = corvus_does_something_tooltip
@@ -596,6 +611,11 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
+		
+		
+		ai_will_do = {
+			factor = 9998
+		}
 
 		completion_reward = {
 		custom_effect_tooltip = corvus_does_something_tooltip
@@ -610,6 +630,11 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 2
+		
+		
+		ai_will_do = {
+			factor = 100000
+		}
 
 		completion_reward = {
 		custom_effect_tooltip = corvus_does_something_tooltip
@@ -625,7 +650,12 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-
+		
+		
+		ai_will_do = {
+			factor = 10000
+		}
+		
 		completion_reward = {
 		custom_effect_tooltip = corvus_does_something_tooltip
 			}
@@ -1285,7 +1315,7 @@ focus_tree = {
 		relative_position_id = COV_region_development
 		x = 2
 		y = 1
-		cost = 10
+		#cost = 10
 		cost = 5
 
 		completion_reward = {

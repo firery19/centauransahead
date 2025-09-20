@@ -27,5 +27,22 @@ on_actions = {
 			}
 		}
 	}
+	on_state_control_changed = {
+    effect = {
+        if = {
+            limit = {
+                FROM.FROM = { state = 130 }
+            }
+            if =  {
+                limit = {
+                    tag = ORI
+                }
+                FROM.FROM = {
+                    set_state_controller = LPS
+					}
+				}
+			}
+		}
+	}
 
 }

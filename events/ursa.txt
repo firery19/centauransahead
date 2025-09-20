@@ -371,6 +371,9 @@ country_event = { #Lepus spawns
 			every_country = {
 				news_event = { id = news.414 }
 			}
+			clr_country_flag = grease_wars_not_started
+			custom_effect_tooltip = grease_wars_prelude_tooltip
+			complete_national_focus = URS_prelude_grease_war
 		}
 	}
 }
@@ -392,22 +395,21 @@ country_event = { #West Lepus falls
 	}
 	option = {
 		name = urs.13.a
-		trigger = {
-			TAG = URS
-		}
-		clr_country_flag = grease_wars_not_started
-		custom_effect_tooltip = grease_wars_prelude_tooltip
-		complete_national_focus = URS_prelude_grease_war
 	}
 }
+
 country_event = { #Canis Rebellion
 	id = urs.14
 	title = urs.14.t
 	desc = urs.14.d
 	picture = GFX_report_event_generic_riot
+	fire_only_once = yes
 	
-	is_triggered_only = yes
-
+	trigger = {
+		tag = URS
+		country_exists = LPS
+	}
+	
 	option = {
 		name = urs.14.a
 		123 = {

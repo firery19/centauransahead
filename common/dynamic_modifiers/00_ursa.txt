@@ -27,3 +27,9 @@ URS_desert_minefield_modifier = {
 	local_org_regain = -0.5
 	disable_strategic_redeployment = 1
 }
+
+URS_blown_oil_rigs_modifier = {
+	icon = GFX_modifiers_sabotaged_resource
+
+	state_resource_oil = -100
+}

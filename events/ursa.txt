@@ -528,3 +528,21 @@ country_event = { #bye bye stability
 		}
 	}
 }
+
+country_event = { #blow up oil rigs
+	id = urs.17
+	title = urs.17.t
+	desc = urs.17.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = urs.17.a
+		114 = {
+			add_dynamic_modifier = {
+                modifier = URS_blown_oil_rigs_modifier
+            }
+		}
+	}
+}

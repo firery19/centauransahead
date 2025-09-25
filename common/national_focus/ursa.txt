@@ -1007,7 +1007,7 @@ focus_tree = {
                         cavalry = { x = 2 y = 2 }						
                     }
                 }
-                118 = {
+                117 = {
                     create_unit = {
                         division = "name = \"Independent Cavalry Division\" division_template = \"Independent Cavalry Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
                         owner = ROOT
@@ -1057,7 +1057,7 @@ focus_tree = {
                         cavalry = { x = 2 y = 2 }						
                     }
                 }
-                117 = {
+                118 = {
                     create_unit = {
                         division = "name = \"Independent Cavalry Division\" division_template = \"Independent Cavalry Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
                         owner = ROOT
@@ -1095,6 +1095,7 @@ focus_tree = {
 		
         completion_reward = {
 			add_ideas = war_economy
+			country_event = { id = urs.17 days = 30 }
         }
         ai_will_do = {
             factor = 5

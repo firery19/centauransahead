@@ -14,10 +14,8 @@ country_event = {
 	}
 	option = {
 		name = caniswar.1.b
-		
 		}
 	}
-}
 country_event = {
 	id = caniswar.2
 	title = caniswar.2.t

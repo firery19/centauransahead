@@ -5,15 +5,21 @@ focus_tree = {
 		factor = 0
 		
 		modifier = {
-			add = 10
+			add = 100
 			tag = HYS
 		}
 	}
 	
+	
+	initial_show_position = {
+		focus = HYS_restore_infrastructure
+	}
+	
 	shared_focus = army_effort
-	shared_focus = naval_effort
+	shared_focus = naval_effort_hydrus
 	shared_focus = aviation_effort
-	shared_focus = industrial_effort
+	shared_focus = industrial_effort_hydrus
+	shared_focus = construction_effort_2
 	shared_focus = political_effort
 	
 	default = no
@@ -27,4 +33,497 @@ focus_tree = {
 		cost = 0
 
 		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = HYS_rebuilding_the_country
+		icon = GFX_
+		x = 9
+		y = 5
+		cost = 5
+		
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+	
+		focus = {
+		id = HYS_rally_workers
+		icon = GFX_focus_generic_full_employment
+		prerequisite = { focus = HYS_rebuilding_the_country }
+		relative_position_id = HYS_rebuilding_the_country
+		x = 0
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_sieze_ursan_weapon_caches
+#		icon = GFX_focus_AFG_scavenging 
+		icon = GFX_focus_AUS_raid_military_storages
+		prerequisite = { focus = HYS_rebuilding_the_country }
+		relative_position_id = HYS_rebuilding_the_country
+		x = -4
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_sieze_abandoned_ursan_factories
+		icon = GFX_focus_DEN_heavy_regulations
+		prerequisite = { focus = HYS_rebuilding_the_country }
+		relative_position_id = HYS_rebuilding_the_country
+		x = -2
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_kickstart_production
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = HYS_rally_workers }
+		relative_position_id = HYS_rally_workers
+		x = 0
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_exploitation_resources
+		icon = GFX_focus_generic_resource_extraction
+		prerequisite = { focus = HYS_kickstart_production }
+		relative_position_id = HYS_kickstart_production
+		x = -1
+		y = 3
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_offshore_oil_drilling
+		icon = GFX_focus_generic_mining_industry
+		prerequisite = { focus = HYS_exploitation_resources }
+		prerequisite = { focus = HYS_finnsberg_shipbuilders	}
+		relative_position_id = HYS_exploitation_resources
+		x = 1
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_ingram_mountain_mining
+		icon = GFX_focus_generic_mining_industry
+		prerequisite = { focus = HYS_exploitation_resources }
+		prerequisite = { focus = HYS_ingram_industry }
+		relative_position_id = HYS_exploitation_resources
+		x = 3
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_establish_local_industries
+		icon = GFX_focus_AFG_a_modern_economy
+		prerequisite = { focus = HYS_kickstart_production }
+		relative_position_id = HYS_kickstart_production
+		x = 0
+		y = 1
+		cost = 10
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		focus = {
+		id = HYS_finnsberg_shipbuilders
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		prerequisite = { focus = HYS_establish_local_industries }
+		relative_position_id = HYS_establish_local_industries
+		x = 0
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		focus = {
+		id = HYS_ingram_industry
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = HYS_establish_local_industries }
+		relative_position_id = HYS_establish_local_industries
+		x = 2
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_functional_economy
+		icon = GFX_focus_generic_economic_recovery
+		prerequisite = { focus = HYS_finnsberg_shipbuilders }
+		prerequisite = { focus = HYS_ingram_industry }
+		relative_position_id = HYS_finnsberg_shipbuilders
+		x = 1
+		y = 1
+		cost = 15
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_restore_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = HYS_kickstart_production }
+		relative_position_id = HYS_kickstart_production
+		x = 2
+		y = 1
+		cost = 10
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		
+		focus = {
+		id = HYS_orionite_aid
+		icon = GFX_focus_generic_the_council_of_europe
+		prerequisite = { focus = HYS_kickstart_production }
+		prerequisite = { focus = HYS_seek_orionite_help }
+		relative_position_id = HYS_kickstart_production
+		x = 5
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_orion_industrial_might
+		icon = GFX_focus_mex_privatisation
+		prerequisite = { focus = HYS_orionite_aid }
+		relative_position_id = HYS_orionite_aid
+		x = -1
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_seek_arms_deal_orion
+		icon = GFX_focus_PER_stand_with_giants
+		prerequisite = { focus = HYS_orionite_aid }
+		relative_position_id = HYS_orionite_aid
+		x = 1
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_subsidise_civ_industry
+		icon = GFX_focus_generic_modernize_industry
+		prerequisite = { focus = HYS_orion_industrial_might }
+		prerequisite = { focus = HYS_ingram_industry }
+		relative_position_id = HYS_orion_industrial_might
+		x = -1
+		y = 1
+		cost = 10
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_subsidise_arms_industry
+		icon = GFX_focus_generic_military_industry
+		prerequisite = { focus = HYS_orion_industrial_might }
+		prerequisite = { focus = HYS_seek_arms_deal_orion }
+		relative_position_id = HYS_orion_industrial_might
+		x = 1
+		y = 1
+		cost = 10
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+	focus = {
+		id = HYS_seek_orionite_help
+		icon = GFX_focus_generic_the_council_of_europe
+		x = 16
+		y = 7
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_supply_rebels_hydra
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		prerequisite = { focus = HYS_seek_orionite_help }
+		relative_position_id = HYS_seek_orionite_help
+		x = 2
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_canis_frontier
+		icon = GFX_focus_PER_desert_training
+		prerequisite = { focus = HYS_supply_rebels_hydra }
+		relative_position_id = HYS_supply_rebels_hydra
+		x = -1
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_smuggle_arms_into_canis
+		icon = GFX_focus_FIN_weapon_caches
+		prerequisite = { focus = HYS_canis_frontier }
+		prerequisite = { focus =  HYS_seek_arms_deal_orion }
+		relative_position_id = HYS_canis_frontier
+		x = -1
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_prepare_for_rebellion
+		icon = GFX_
+		prerequisite = { focus = HYS_canis_frontier }
+		relative_position_id = HYS_canis_frontier
+		x = 1
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_lepus_frontier
+		icon = GFX_focus_SMB_a_land_of_mountains
+		prerequisite = { focus = HYS_supply_rebels_hydra }
+		relative_position_id = HYS_supply_rebels_hydra
+		x = 6
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_covert_intervention
+		icon = GFX_
+		prerequisite = { focus = HYS_lepus_frontier }
+		relative_position_id = HYS_lepus_frontier
+		mutually_exclusive = { focus = HYS_control_the_lepus_resistance }
+		x = -1
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_control_the_lepus_resistance
+		icon = GFX_
+		prerequisite = { focus = HYS_lepus_frontier }
+		relative_position_id = HYS_lepus_frontier
+		mutually_exclusive = { focus = HYS_covert_intervention }
+		x = 1
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		
+		
+	focus = {
+		id = HYS_the_commonwealth
+		icon = GFX_
+		x = 22
+		y = 5
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
 		}

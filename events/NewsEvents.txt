@@ -43,10 +43,12 @@ news_event = { # fall of alcor
 	option = {
 		name = news.1.b
 		trigger = {
+		OR = {
 		TAG = ORI 
 		TAG = HYS
 		TAG = LPS
 		TAG = CNS
+			}
 		}
 	}
 	option = {
@@ -103,6 +105,65 @@ news_event = { # end of grease wars
 	option = {
 		name = news.2.c
 		trigger = { TAG = URS }
+	}
+}
+
+# Start of corvus war
+news_event = {
+	id = news.409
+	title = news.409.t
+	desc = news.409.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		COV = { has_war_with = CET }
+		NOT = { has_global_flag = scw_starts }
+	}
+	
+	immediate = {
+		set_global_flag = scw_starts
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.409.a
+		trigger = {
+			NOT = {
+				TAG = CET
+				TAG = COV
+			}
+		}
+	}
+	option = {
+		name = news.409.b
+		trigger = {
+		TAG = CET
+		AND = {
+			NOT = {
+				48 = { is_core_of = CET }
+				154 = { is_core_of = CET }
+				}
+			}
+		}
+	}
+	option = {
+		name = news.409.b2
+		trigger = {
+		TAG = CET
+		AND = {
+			48 = { is_core_of = CET }
+			154 = { is_core_of = CET }
+			}
+		}
+	}
+	option = {
+		name = news.409.c
+		trigger = { TAG = COV }
 	}
 }
 
@@ -212,7 +273,6 @@ news_event = {
 	trigger = {
 		7 = { is_controlled_by = COV }
 		7 = { is_owned_by = CET }
-		ANT = { has_war_with = CET }
 		NOT = { has_global_flag = fall_of_nauta_ant }
 		NOT = { has_global_flag = fall_of_nauta_cov }
 	}
@@ -356,7 +416,7 @@ news_event = {
 	}
 	
 	option = {
-		name = news.410.a
+		name = news.415.a
 		trigger = {
 			NOT = {
 				TAG = CET
@@ -365,11 +425,11 @@ news_event = {
 		}
 	}
 	option = {
-		name = news.410.b
+		name = news.415.b
 		trigger = { TAG = CET }
 	}
 	option = {
-		name = news.410.c
+		name = news.415.c
 		trigger = { TAG = COV }
 	}
 }
@@ -398,7 +458,7 @@ news_event = {
 	}
 	
 	option = {
-		name = news.410.a
+		name = news.416.a
 		trigger = {
 			NOT = {
 				TAG = CET
@@ -407,11 +467,11 @@ news_event = {
 		}
 	}
 	option = {
-		name = news.410.b
+		name = news.416.b
 		trigger = { TAG = CET }
 	}
 	option = {
-		name = news.410.c
+		name = news.416.c
 		trigger = { TAG = COV }
 	}
 }
@@ -440,7 +500,7 @@ news_event = {
 	}
 	
 	option = {
-		name = news.410.a
+		name = news.417.a
 		trigger = {
 			NOT = {
 				TAG = CET
@@ -449,11 +509,11 @@ news_event = {
 		}
 	}
 	option = {
-		name = news.410.b
+		name = news.417.b
 		trigger = { TAG = CET }
 	}
 	option = {
-		name = news.410.c
+		name = news.417.c
 		trigger = { TAG = COV }
 	}
 }
@@ -486,7 +546,7 @@ country_event = {
 	
 	option = {
 		name = news.caromite.a
-		add_stability = 0.10
+		add_stability = 0.5
 		random_core_state = {
 			add_extra_state_shared_building_slots = -1
 		}
@@ -506,7 +566,6 @@ country_event = {
 	}
 	option = {
 		name = news.caromite.c
-		add_stability = 0.05
 		add_political_power = -10
 		random_core_state = {
 			add_extra_state_shared_building_slots = 1

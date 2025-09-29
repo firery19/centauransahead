@@ -64,8 +64,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6615;6622;sea;8024;-1;-1;-1;-1;;east ursan islands
 6615;6618;sea;8024;-1;-1;-1;-1;;east ursan islands
 6594;6602;sea;7662;-1;-1;-1;-1;;east ursan islands
-6602;6601;sea;7662;-1;-1;-1;-1;;east ursan islands
-6606;6601;sea;8040;-1;-1;-1;-1;;east ursan islands
+6606;6602;sea;8040;-1;-1;-1;-1;;east ursan islands
 6747;1242;sea;7122;-1;-1;-1;-1;;east ursan islands
 3725;3704;sea;8151;-1;-1;-1;-1;;east ursan islands
 3653;3205;sea;7885;-1;-1;-1;-1;;south yelman island

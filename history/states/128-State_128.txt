@@ -2,16 +2,15 @@ state={
 	id=128
 	name="STATE_128"
 	resources = {
-		oil = 21
-		steel = 13
-		chromium = 13
+		steel = 20
+		chromium = 2
 	}
 	history = {
 		owner = HYS
 		add_core_of = HYS
 		buildings = {
-			industrial_complex = 1
-			infrastructure = 2
+			industrial_complex = 0
+			infrastructure = 1
 			3554 = {
 			naval_base = 3
 			}

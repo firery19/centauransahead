@@ -1,0 +1,70 @@
+﻿l_english:
+ # focuses
+ HYS_rebuilding_the_country:0 "Rebuilding The Country"
+ HYS_rebuilding_the_country_desc:0 "
+ HYS_rally_workers:0 "Rally Workers"
+ HYS_rally_workers_desc:0 "
+ HYS_sieze_ursan_weapon_caches:0 "Sieze Ursan Weapon Caches"
+ HYS_sieze_ursan_weapon_caches_desc:0 "
+ HYS_sieze_abandoned_ursan_factories:0 "Sieze Abandoned Factories"
+ HYS_sieze_abandoned_ursan_factories_desc:0 "
+ HYS_kickstart_production:0 "Kickstart Production"
+ HYS_kickstart_production_desc:0 "
+ HYS_exploitation_resources:0 "Exploit Resources"
+ HYS_exploitation_resources_desc:0 "
+ HYS_ingram_mountain_mining:0 "Exploit Mount Ingram"
+ HYS_ingram_mountain_mining_desc:0 "
+ HYS_establish_local_industries:0 "Establish Local Industries"
+ HYS_establish_local_industries_desc:0 "
+ HYS_finnsberg_shipbuilders:0 "Finnsberg Shipbuilding Company"
+ HYS_finnsberg_shipbuilders_desc:0 "
+ HYS_ingram_industry:0 "Ingram Mining Corporation"
+ HYS_ingram_industry_desc:0 "
+ HYS_functional_economy:0 "Functional Economy"
+ HYS_functional_economy_desc:0 "
+ HYS_restore_infrastructure:0 "Restore Rundown Infrastructure"
+ HYS_restore_infrastructure_desc:0 "
+ 
+ HYS_orionite_aid:0 "Orionite Aid"
+ HYS_orionite_aid_desc:0 "
+ HYS_orion_industrial_might:0 "Make Use Of Orionite Industry"
+ HYS_orion_industrial_might_desc:0 "
+ HYS_seek_arms_deal_orion:0 "Seek Arms Deal With Orion"
+ HYS_seek_arms_deal_orion_desc:0 "
+ HYS_subsidise_civ_industry:0 "Subsidise Civil Industry"
+ HYS_subsidise_civ_industry_desc:0 "
+ HYS_subsidise_arms_industry:0 "Subsidise Arms Industry"
+ HYS_subsidise_arms_industry_desc:0 "
+ 
+ HYS_seek_orionite_help:0 "Seek Orionite Help"
+ HYS_seek_orionite_help_desc:0 "
+ HYS_supply_rebels_hydra:0 "Supply Hydran Rebels"
+ HYS_supply_rebels_hydra_desc:0 "
+ HYS_canis_frontier:0 "Canisian Frontier"
+ HYS_canis_frontier_desc:0 "
+ HYS_smuggle_arms_into_canis:0 "Smuggle Arms Into Canis"
+ HYS_smuggle_arms_into_canis_desc:0 "As Orion has a direct border into Canis, we can smuggle arms through said way."
+ HYS_lepus_frontier:0 "Lepus Frontier"
+ HYS_lepus_frontier_desc:0 "
+ 
+ 
+ # events
+ 
+ 
+ 
+ # ideas
+ HYS_recently_independent_idea:0 "Recently Independent"
+ HYS_recently_independent_idea_desc:0 "The nation of Hydrus is a new country, having just recently gained independence from the Federation of Ursa a year ago, a consequence of the weakening hold of Ursa on Hydra."
+ HYS_new_army_idea:0 "Recently Established Army"
+ HYS_new_army_idea_desc:0 "Hydrus did not have much time to create a professional army, only having militias and a handful of trained infantry."
+ HYS_inexperienced_industry_idea:0 "Inexperienced Industry"
+ HYS_inexperienced_industry_idea_desc:0 "Being a newly independent country, Hydrus does not have much experience within managing industrial means within the country."
+ #HYS_sabotaged_factories_idea:0 "Ursan Gift"
+ #HYS_sabotaged_factories_idea_desc:0 "When the Ursans left Hydrus, they had left behind infrastructure rigged with traps and explosives. Thus, many of the buildings that were built here were damaged beyond repair."
+ 
+ 
+ 
+ # misc
+ industrial_heartland:0 "Industrial Heartland"
+ industrialized_metropolis:0 "Industrialized Metropolis"
+ industrialized_megalopolis:0 "Industrialized Megalopolis"

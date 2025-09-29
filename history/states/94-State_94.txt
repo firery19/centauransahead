@@ -9,9 +9,6 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		victory_points = {
-			6988 17
-		}
 	}
 	provinces={
 		5414 5415 5454 5455 6803 6807 6812 
@@ -19,5 +16,5 @@ state={
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
         manpower=367309
-        state_category = tiny_island
+        state_category = rural
 }

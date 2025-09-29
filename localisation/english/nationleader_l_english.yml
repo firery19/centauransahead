@@ -5,3 +5,8 @@
  LBR_generic_leader:0 "Arthur Catto" # walomega 20/9/25
  HYS_parliament_building:0 "Hydrus Parliament"
  
+ 
+ # misc
+ industrial_heartland:0 "Industrial Heartland"
+ industrialized_metropolis:0 "Industrialized Metropolis"
+ industrialized_megalopolis:0 "Industrialized Megalopolis"

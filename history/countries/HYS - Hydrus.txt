@@ -3,6 +3,9 @@ capital = 2
 oob = "HYS_1900"
 add_ideas = {
 	trench_warfare_idea
+	HYS_recently_independent_idea
+	HYS_inexperienced_industry_idea
+	HYS_new_army_idea
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }

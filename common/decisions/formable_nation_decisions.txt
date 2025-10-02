@@ -11,6 +11,8 @@ form_commonwealthB_category = {
 		}
 
 		available = {
+		has_country_flag = lepus_agrees_join
+		has_country_flag = canis_agrees_join
 			custom_trigger_tooltip = {
 				tooltip = form_hydrus_commonwealth_flag
 				hidden_trigger = {

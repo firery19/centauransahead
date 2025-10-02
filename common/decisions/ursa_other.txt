@@ -1,0 +1,77 @@
+ursa_peace_orion = {
+	ursa_peacing_orion = { # ursa wins
+
+		icon = GFX_decision_revolt
+
+		available = {
+		URS = {
+			has_full_control_of_state = 120
+			has_full_control_of_state = 121
+		}
+		all_core_state = {
+		is_fully_controlled_by = URS
+		}
+		ORI = { has_war_with = URS }
+		}
+			
+		visible = {
+			tag = URS
+	#		has_full_control_of_state = 120
+	#		has_full_control_of_state = 121
+		}
+		
+		fire_only_once = yes
+		
+		cost = 200
+		
+		complete_effect = {
+		
+		}
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+		factor = 1
+		}
+	}
+	
+}
+
+ursa_surrender_orion = {
+	ursa_surrendering_orion = { # ursa surrenders
+
+		icon = GFX_decision_revolt
+
+		available = {
+		ORI = { has_war_with = URS }
+		ORI = {
+			fighting_army_strength_ratio = {
+				tag = URS
+				ratio > 2
+				}
+			}
+		}
+			
+		visible = {
+			tag = URS
+			has_war_with = ORI
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		complete_effect = {
+		
+		}
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+		factor = 100
+		}
+	}
+	
+}

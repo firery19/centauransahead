@@ -3,7 +3,10 @@ URS_preGreaseWars_Decisions = {
 		icon = GFX_decision_revolt
 		visible = {
 			tag = URS
-			has_country_flag = grease_wars_not_started
+			OR = {
+				has_country_flag = grease_wars_not_started
+				NOT = { has_country_flag = URS_flag_lepus_pacified }
+			}
 		}
 		available = {
 			always = no
@@ -24,7 +27,353 @@ URS_preGreaseWars_Decisions = {
 		}
 
 		remove_effect = {
-			activate_mission = URS_randomterrorism_timer_lps
+		}
+	}
+	
+	URS_lepus_pacification_timer = {
+		icon = aaa
+		visible = {
+			tag = URS
+			OR = {
+				has_country_flag = grease_wars_not_started
+				NOT = { has_country_flag = URS_flag_lepus_pacified }
+			}
+		}
+		available = {
+			always = no
+		}
+		selectable_mission = no
+		is_good = yes
+		days_mission_timeout = 750
+		fire_only_once = yes
+
+		ai_will_do = { factor = 100 }
+
+		timeout_effect = {
+		}
+
+		complete_effect = {
+			set_country_flag = URS_flag_lepus_pacified
+		}
+
+		remove_effect = {
+		}
+	}
+	
+	URS_bread_and_circuses_decision = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = URS
+		}
+
+		available = {
+			always = yes
+		}
+
+		cost = 50
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 100
+		}
+
+		days_remove = 30
+
+		visible = {
+			tag = URS
+			OR = {
+				has_country_flag = grease_wars_not_started
+				NOT = { has_country_flag = URS_flag_lepus_pacified }
+			}
+		}
+		
+		modifier = {
+			consumer_goods_expected_value = 0.05
+		}
+		
+		remove_effect = {
+			add_stability = 0.04
+			131 = {
+				add_compliance = 10
+			}
+			130 = {
+				add_compliance = 10
+			}
+			133 = {
+				add_compliance = 10
+			}
+			132 = {
+				add_compliance = 10
+			}
+			134 = {
+				add_compliance = 10
+			}
+			182 = {
+				add_compliance = 10
+			}
+			add_days_mission_timeout = {
+				mission = URS_lepus_pacification_timer
+				days = -30
+			}
+		}
+	}
+	
+	URS_lepus_demoralization_propaganda_decision = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = URS
+		}
+
+		available = {
+			always = yes
+		}
+
+		cost = 50
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 100
+		}
+
+		days_remove = 30
+
+		visible = {
+			tag = URS
+			OR = {
+				has_country_flag = grease_wars_not_started
+				NOT = { has_country_flag = URS_flag_lepus_pacified }
+			}
+		}
+		
+		modifier = {
+			consumer_goods_expected_value = 0.05
+		}
+		
+		remove_effect = {
+			131 = {
+				add_resistance = -10
+			}
+			130 = {
+				add_resistance = -10
+			}
+			133 = {
+				add_resistance = -10
+			}
+			132 = {
+				add_resistance = -10
+			}
+			134 = {
+				add_resistance = -10
+			}
+			182 = {
+				add_resistance = -10
+			}
+			add_days_mission_timeout = {
+				mission = URS_lepus_pacification_timer
+				days = -30
+			}
+		}
+	}
+	
+	URS_secure_port_mathieson_decision = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = URS
+		}
+
+		available = {
+			divisions_in_state = {
+				size > 3
+				state = 131
+			}
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 100
+		}
+
+		days_remove = 90
+
+		visible = {
+			tag = URS
+			OR = {
+				has_country_flag = grease_wars_not_started
+				NOT = { has_country_flag = URS_flag_lepus_pacified }
+			}
+		}
+		
+		modifier = {
+			weekly_manpower = -1000
+		}
+		
+		complete_effect = {
+			131 = {
+				add_resistance = -20
+			}
+			131 = {
+				add_compliance = -10
+			}
+			add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = 30
+			}
+		}
+	}
+	
+	URS_secure_west_lepus_decision = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = URS
+		}
+
+		available = {
+			divisions_in_state = {
+				size > 3
+				state = 130
+			}
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 100
+		}
+
+		days_remove = 90
+
+		visible = {
+			tag = URS
+			OR = {
+				has_country_flag = grease_wars_not_started
+				NOT = { has_country_flag = URS_flag_lepus_pacified }
+			}
+		}
+		
+		modifier = {
+			weekly_manpower = -1000
+		}
+		
+		complete_effect = {
+			130 = {
+				add_resistance = -20
+			}
+			130 = {
+				add_compliance = -10
+			}
+			add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = 30
+			}
+		}
+	}
+	
+	URS_secure_central_lepus_decision = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = URS
+		}
+
+		available = {
+			divisions_in_state = {
+				size > 3
+				state = 133
+			}
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 100
+		}
+
+		days_remove = 90
+
+		visible = {
+			tag = URS
+			OR = {
+				has_country_flag = grease_wars_not_started
+				NOT = { has_country_flag = URS_flag_lepus_pacified }
+			}
+		}
+		
+		modifier = {
+			weekly_manpower = -1000
+		}
+		
+		complete_effect = {
+			133 = {
+				add_resistance = -20
+			}
+			133 = {
+				add_compliance = -10
+			}
+			add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = 30
+			}
+		}
+	}
+	
+	URS_secure_east_lepus_decision = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = URS
+		}
+
+		available = {
+			divisions_in_state = {
+				size > 3
+				state = 132
+			}
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 100
+		}
+
+		days_remove = 90
+
+		visible = {
+			tag = URS
+			OR = {
+				has_country_flag = grease_wars_not_started
+				NOT = { has_country_flag = URS_flag_lepus_pacified }
+			}
+		}
+		
+		modifier = {
+			weekly_manpower = -1000
+		}
+		
+		complete_effect = {
+			132 = {
+				add_resistance = -20
+			}
+			132 = {
+				add_compliance = -10
+			}
+			add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = 30
+			}
 		}
 	}
 }

@@ -5,12 +5,16 @@ URS_preGreaseWars_Decisions = {
 	picture = GFX_decision_cat_picture_FIN_karelian_forest_guerillas
 	allowed = {
 		tag = URS
-		#has_country_flag = grease_wars_not_started_prelude
-		has_country_flag = grease_wars_not_started
+		OR = {
+			has_country_flag = grease_wars_not_started
+			NOT = { has_country_flag = URS_flag_lepus_pacified }
+		}
 	}
 	visible = {
 		tag = URS
-		#has_country_flag = grease_wars_not_started_prelude
-		has_country_flag = grease_wars_not_started
+		OR = {
+			has_country_flag = grease_wars_not_started
+			NOT = { has_country_flag = URS_flag_lepus_pacified }
+		}
 	}
 }

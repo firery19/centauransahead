@@ -13,7 +13,7 @@ URS_preGreaseWars_Decisions = {
 		}
 		selectable_mission = no
 		is_good = no
-		days_mission_timeout = 450
+		days_mission_timeout = 400
 		fire_only_once = yes
 
 		ai_will_do = { factor = 100 }
@@ -81,6 +81,7 @@ URS_preGreaseWars_Decisions = {
 		}
 
 		days_remove = 30
+		days_re_enable = 30
 
 		visible = {
 			tag = URS
@@ -142,6 +143,7 @@ URS_preGreaseWars_Decisions = {
 		}
 
 		days_remove = 30
+		days_re_enable = 30
 
 		visible = {
 			tag = URS
@@ -195,8 +197,15 @@ URS_preGreaseWars_Decisions = {
 				state = 131
 			}
 		}
-
-		fire_only_once = yes
+		
+		cancel_trigger = {
+			divisions_in_state = {
+				size < 3
+				state = 133
+			}
+		}
+		
+		fire_only_once = no
 
 		ai_will_do = {
 			base = 100
@@ -210,13 +219,14 @@ URS_preGreaseWars_Decisions = {
 				has_country_flag = grease_wars_not_started
 				NOT = { has_country_flag = URS_flag_lepus_pacified }
 			}
+			NOT = { has_country_flag = URS_flag_mathieson_secured }
 		}
 		
 		modifier = {
 			weekly_manpower = -1000
 		}
-		
-		complete_effect = {
+
+		remove_effect = {
 			131 = {
 				add_resistance = -20
 			}
@@ -227,6 +237,7 @@ URS_preGreaseWars_Decisions = {
 				mission = URS_lepus_spawns_timer
 				days = 30
 			}
+			set_country_flag = URS_flag_mathieson_secured
 		}
 	}
 	
@@ -244,8 +255,15 @@ URS_preGreaseWars_Decisions = {
 				state = 130
 			}
 		}
+		
+		cancel_trigger = {
+			divisions_in_state = {
+				size < 3
+				state = 133
+			}
+		}
 
-		fire_only_once = yes
+		fire_only_once = no
 
 		ai_will_do = {
 			base = 100
@@ -259,13 +277,14 @@ URS_preGreaseWars_Decisions = {
 				has_country_flag = grease_wars_not_started
 				NOT = { has_country_flag = URS_flag_lepus_pacified }
 			}
+			NOT = { has_country_flag = URS_flag_westlepus_secured }
 		}
 		
 		modifier = {
 			weekly_manpower = -1000
 		}
 		
-		complete_effect = {
+		remove_effect = {
 			130 = {
 				add_resistance = -20
 			}
@@ -276,6 +295,7 @@ URS_preGreaseWars_Decisions = {
 				mission = URS_lepus_spawns_timer
 				days = 30
 			}
+			set_country_flag = URS_flag_westlepus_secured
 		}
 	}
 	
@@ -293,8 +313,15 @@ URS_preGreaseWars_Decisions = {
 				state = 133
 			}
 		}
+		
+		cancel_trigger = {
+			divisions_in_state = {
+				size < 3
+				state = 133
+			}
+		}
 
-		fire_only_once = yes
+		fire_only_once = no
 
 		ai_will_do = {
 			base = 100
@@ -308,13 +335,14 @@ URS_preGreaseWars_Decisions = {
 				has_country_flag = grease_wars_not_started
 				NOT = { has_country_flag = URS_flag_lepus_pacified }
 			}
+			NOT = { has_country_flag = URS_flag_centlepus_secured }
 		}
 		
 		modifier = {
 			weekly_manpower = -1000
 		}
 		
-		complete_effect = {
+		remove_effect = {
 			133 = {
 				add_resistance = -20
 			}
@@ -325,6 +353,7 @@ URS_preGreaseWars_Decisions = {
 				mission = URS_lepus_spawns_timer
 				days = 30
 			}
+			set_country_flag = URS_flag_centlepus_secured
 		}
 	}
 	
@@ -342,8 +371,15 @@ URS_preGreaseWars_Decisions = {
 				state = 132
 			}
 		}
+		
+		cancel_trigger = {
+			divisions_in_state = {
+				size < 3
+				state = 133
+			}
+		}
 
-		fire_only_once = yes
+		fire_only_once = no
 
 		ai_will_do = {
 			base = 100
@@ -357,13 +393,14 @@ URS_preGreaseWars_Decisions = {
 				has_country_flag = grease_wars_not_started
 				NOT = { has_country_flag = URS_flag_lepus_pacified }
 			}
+			NOT = { has_country_flag = URS_flag_eastlepus_secured }
 		}
 		
 		modifier = {
 			weekly_manpower = -1000
 		}
 		
-		complete_effect = {
+		remove_effect = {
 			132 = {
 				add_resistance = -20
 			}
@@ -374,6 +411,7 @@ URS_preGreaseWars_Decisions = {
 				mission = URS_lepus_spawns_timer
 				days = 30
 			}
+			set_country_flag = URS_flag_eastlepus_secured 
 		}
 	}
 }

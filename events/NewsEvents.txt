@@ -572,3 +572,25 @@ country_event = {
 		}
 	}
 }
+
+
+
+country_event = { # refresh focus tree
+	id = news.1111
+	title = news.1111.t
+	desc = news.1111.d
+	picture = GFX_
+	
+	major = no
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	immediate = {
+		mark_focus_tree_layout_dirty = yes
+	}
+	
+}

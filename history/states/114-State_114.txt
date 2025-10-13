@@ -12,7 +12,19 @@ state={
 			}
 		}
 		victory_points = {
-			451 6 
+			4719 5
+		}
+		victory_points = {
+			4660 5
+		}
+		victory_points = {
+			2526 6 
+		}
+		victory_points = {
+			2227 6 
+		}
+		victory_points = {
+			4255 6 
 		}
 		start_resistance = yes
 		set_resistance = 30

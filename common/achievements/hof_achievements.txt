@@ -1,0 +1,93 @@
+unique_id = heartsofforma_id_1
+
+################################################################ placeholders
+# List of new achievements
+################################################################ that are temporary for future use
+
+completed_with_icon = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        has_start_date < 1900.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+    }
+ 
+    happened = {
+        date > 1900.01.02
+    } 
+}
+
+
+completed_with_ribbon = {
+    possible = {
+        difficulty > 1
+        has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+        tag = ITA
+    }
+ 
+    happened = {
+        date > 1936.01.02
+    }
+
+    ribbon = {
+        frames = { 1 1 1 1 }
+        colors = {
+            { 45.0 64.0 102.0 1.0 }
+            { 154.0 73.0 107.0 1.0 }
+            { 238.0 189.0 96.0 1.0 }
+            { 211.0 181.0 128.0 1.0 }
+        }
+    }
+}
+
+
+available_but_not_completed = {
+    possible = {
+        difficulty > 1
+        has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+        tag = ITA
+    }
+ 
+    happened = {
+        date > 1936.01.04
+    }
+
+    ribbon = {
+        frames = { 1 1 1 1 }
+        colors = {
+            { 45.0 64.0 102.0 1.0 }
+            { 154.0 73.0 107.0 1.0 }
+            { 238.0 189.0 96.0 1.0 }
+            { 211.0 181.0 128.0 1.0 }
+        }
+    }
+}
+
+unavailable = {
+    possible = {
+        difficulty > 1
+        has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+        tag = GER
+    }
+ 
+    happened = {
+        date > 1936.01.06
+    }
+
+    ribbon = {
+        frames = { 1 1 1 1 }
+        colors = {
+            { 45.0 64.0 102.0 1.0 }
+            { 154.0 73.0 107.0 1.0 }
+            { 238.0 189.0 96.0 1.0 }
+            { 211.0 181.0 128.0 1.0 }
+        }
+    }
+}

@@ -11,9 +11,8 @@ country_event = { # on action replaced
 	
     option = {
         name = cov.1.a
-        hidden_effect = {
-            complete_national_focus = COV_initial_offensive
-        }
+		complete_national_focus = COV_wartime_administration
+		complete_national_focus = COV_implement_rationing_policy
     }
 }
 

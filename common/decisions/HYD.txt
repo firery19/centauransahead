@@ -37,4 +37,257 @@ HYD_canis_war = {
 		factor = 1
 		}
 	}
+	 test_add_variable = {
+
+		icon = oil
+
+		available = {
+		is_debug = yes
+		is_ai = no
+			}
+		
+		visible = {
+		is_debug = yes
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 0
+		
+		days_remove = 0
+		
+		cost = 0
+		
+		complete_effect = {
+		HYS = {
+			set_variable = {
+				var = lepus_crack_count
+				value = 0
+				tooltip = test
+				}
+			}
+			
+		}
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+		factor = 1
+		}
+	}
+	 test_have_variable = {
+
+		icon = oil
+
+		available = {
+		is_debug = yes
+		is_ai = no
+		has_variable = testing_variable
+			}
+		
+		visible = {
+		is_debug = yes
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 0
+		
+		days_remove = 0
+		
+		cost = 0
+		
+		complete_effect = {
+		
+		}
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+		factor = 1
+		}
+	}
+	
+	 test_has_no_variable = {
+
+		icon = oil
+		available = {
+		is_debug = yes
+		is_ai = no
+		NOT = {has_variable = testing_variable
+			}}
+		
+		visible = {
+		is_debug = yes
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 0
+		
+		days_remove = 0
+		
+		cost =0
+		
+		complete_effect = {
+		
+		}
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+		factor = 1
+		}
+	}
+	
+	 test_have_variable_counter_3 = {
+
+		icon = oil
+
+		available = {
+		is_ai = no
+		is_debug = yes
+			check_variable = {
+				testing_variable = 3
+				}
+			}
+		
+		visible = {
+		is_debug = yes
+		has_variable = testing_variable
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 0
+		
+		days_remove = 0
+		
+		cost = 0
+		
+		complete_effect = {
+		
+		}
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+		factor = 1
+		}
+	}
+	 test_remove_variable = {
+
+		icon = oil
+
+		available = {
+		is_ai = no
+			has_variable = testing_variable
+			}
+		
+		visible = {
+		is_debug = yes
+		has_variable = testing_variable
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 0
+		
+		days_remove = 0
+		
+		cost = 0
+		
+		complete_effect = {
+		
+		clear_variable = lepus_crack_count 
+		}
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+		factor = 1
+		}
+	}
+	 test_increase_variable = {
+
+		icon = oil
+
+		available = {
+			has_variable = testing_variable
+			}
+		
+		visible = {
+		is_debug = yes
+		has_variable = testing_variable
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 0
+		
+		days_remove = 0
+		
+		cost = 0
+		
+		complete_effect = {
+		HYS = {
+			add_to_variable = {
+				var = testing_variable
+				value = 1
+				tooltip = add1test_variable
+				}
+			}
+			
+		}
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+		factor = 1
+		}
+	}
+	 test_decrease_variable = {
+
+		icon = oil
+
+		available = {
+			has_variable = testing_variable
+			}
+		
+		visible = {
+		is_debug = yes
+		has_variable = testing_variable
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 0
+		
+		days_remove = 0
+		
+		cost = 0
+		
+		complete_effect = {
+		HYS = {
+			add_to_variable = {
+				var = testing_variable
+				value = -1
+				tooltip = remove1variable
+				}
+			}
+		}
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+		factor = 1
+		}
+	}
 }

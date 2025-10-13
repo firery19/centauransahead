@@ -55,7 +55,7 @@ country_event = {
 	option = {
 		name = orion.2.a # Yes
 		ORI = {
-               country_event = {id = orion.3  days = 1 }
+               country_event = {id = orion.99  days = 1 }
                }
 	ai_chance = {
 		base = 1
@@ -100,6 +100,8 @@ country_event = { #Ursa accepts
 				set_state_owner = 116
 				set_state_owner = 118
 				set_state_owner = 119
+				set_state_owner = 174
+				set_state_owner = 175
 			}
 			news_event = {
 			id = news.2
@@ -111,6 +113,8 @@ country_event = { #Ursa accepts
 				set_state_controller = 116
 				set_state_controller = 118
 				set_state_controller = 119
+				set_state_controller = 174
+				set_state_controller = 175
 			}
 			LPS = {
 			set_state_owner = 133

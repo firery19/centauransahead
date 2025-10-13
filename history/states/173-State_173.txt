@@ -15,10 +15,10 @@ state={
 			}
 		}
 	provinces={
-		6608 6620 
+		6 237 691 1324 1405 1633 1749 1960 2231 2359 3287 3552 3589 3593 3610
 	}
-	manpower=10301
-	state_category = tiny_island
+	manpower=2410301
+	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

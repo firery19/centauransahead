@@ -7,7 +7,8 @@ ideas = {
             removal_cost = -1
 
             modifier = {
-				army_core_defence_factor = 3
+			production_speed_industrial_complex_factor  = -0.2
+			consumer_goods_factor = 0.2
             }
         }
 		HYS_inexperienced_industry_idea = {
@@ -17,8 +18,30 @@ ideas = {
             removal_cost = -1
 
             modifier = {
-			production_speed_buildings_factor = -0.8
-			industrial_capacity_factory = -0.2
+			industrial_capacity_factory = -0.9
+			consumer_goods_factor = 0.2
+			}
+		}
+		HYS_inexperienced_industry_2_idea = {
+            
+            picture = idea_COV_revanchism
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+			production_speed_buildings_factor = -0.1
+			}
+		}
+		
+		HYS_functional_economy_idea = {
+            
+            picture = idea_COV_revanchism
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+			production_speed_buildings_factor = 0.2
+			industrial_capacity_factory = 0.1
 			}
 		}
 		
@@ -29,7 +52,11 @@ ideas = {
             removal_cost = -1
 
             modifier = {
-			
+				army_core_defence_factor = 2
+				army_infantry_attack_factor = -0.5
+				experience_gain_army_unit_factor = -0.5
+				max_planning_factor = -0.9
+				experience_loss_factor = -0.1
             }
         }
 		santa_sent = {

@@ -15,33 +15,23 @@ focus_tree = {
 		focus = HYS_restore_infrastructure
 	}
 	
-	shared_focus = army_effort
-	shared_focus = naval_effort_hydrus
-	shared_focus = aviation_effort
-	shared_focus = industrial_effort_hydrus
-	shared_focus = construction_effort_2
-	shared_focus = political_effort
+#	shared_focus = army_effort
+#	shared_focus = naval_effort_hydrus
+#	shared_focus = aviation_effort
+#	shared_focus = industrial_effort_hydrus
+#	shared_focus = construction_effort_2
+#	shared_focus = political_effort
 	
 	default = no
 	
 	continuous_focus_position = { x = 50 y = 1000 }
 	
 	focus = {
-		id = HYS_seek_help_test_1
-		icon = GFX_goal_demand_sudetenland
-		x = 30
-		cost = 0
-
-		completion_reward = {
-		
-		}
-	}
-	
-	focus = {
 		id = HYS_rebuilding_the_country
 		icon = GFX_
 		x = 9
-		y = 5
+#		y = 5
+		y = 0
 		cost = 5
 		
         ai_will_do = {
@@ -86,7 +76,11 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 1000
+                producer = URS
+				}
 			}
 		}
 		
@@ -103,8 +97,20 @@ focus_tree = {
             factor = 5
         }
 		
+		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		2 = { 
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				}
 			}
 		}
 		
@@ -122,7 +128,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+			remove_ideas = HYS_inexperienced_industry_idea
 			}
 		}
 		
@@ -213,7 +219,14 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		2 = {
+		add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				}
 			}
 		}
 		focus = {
@@ -230,7 +243,22 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		173 = {
+		add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}	
+			2 = {
+				add_building_construction = {
+				type = industrial_complex
+				level =1
+				instant_build = yes
+				}
+				add_extra_state_shared_building_slots =1
+				}
 			}
 		}
 		
@@ -258,7 +286,8 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = HYS_kickstart_production }
 		relative_position_id = HYS_kickstart_production
-		x = 2
+#		x = 2
+		x = -2
 		y = 1
 		cost = 10
 
@@ -267,20 +296,49 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		127 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+		#		add_extra_state_shared_building_slots = 3
+			}
+			128 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+			}
+			129 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
 			}
 		}
+	}
 		
 		
 		focus = {
 		id = HYS_orionite_aid
 		icon = GFX_focus_generic_the_council_of_europe
-		prerequisite = { focus = HYS_kickstart_production }
+#		prerequisite = { focus = HYS_kickstart_production }
+		prerequisite = { focus = HYS_rebuilding_the_country }
 		prerequisite = { focus = HYS_seek_orionite_help }
-		relative_position_id = HYS_kickstart_production
-		x = 5
+#		relative_position_id = HYS_kickstart_production
+#		x = 5
+#		y = 1
+		relative_position_id = HYS_seek_orionite_help
+		x = -2
 		y = 1
 		cost = 5
+		
+		available = {
+		has_global_flag = orion_helps_hydrus_economy
+		}
 
         ai_will_do = {
             factor = 5
@@ -305,7 +363,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		add_offsite_building = { type = industrial_complex level = 2 }
 			}
 		}
 		
@@ -331,7 +389,8 @@ focus_tree = {
 		id = HYS_subsidise_civ_industry
 		icon = GFX_focus_generic_modernize_industry
 		prerequisite = { focus = HYS_orion_industrial_might }
-		prerequisite = { focus = HYS_ingram_industry }
+#		prerequisite = { focus = HYS_ingram_industry }
+		prerequisite = { focus = HYS_kickstart_production }
 		relative_position_id = HYS_orion_industrial_might
 		x = -1
 		y = 1
@@ -369,15 +428,18 @@ focus_tree = {
 		id = HYS_seek_orionite_help
 		icon = GFX_focus_generic_the_council_of_europe
 		x = 16
-		y = 7
+		y = 0
+#		y = 7
 		cost = 5
 
         ai_will_do = {
-            factor = 5
+            factor = 100
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		ORI = {
+			country_event = hydrus.2
+				}
 			}
 		}
 		
@@ -391,7 +453,7 @@ focus_tree = {
 		cost = 5
 
         ai_will_do = {
-            factor = 5
+            factor = 15
         }
 		
 		completion_reward = {
@@ -432,7 +494,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = hys_supplying_rebel_tt 
 			}
 		}
 		
@@ -455,6 +517,62 @@ focus_tree = {
 		}
 		
 		focus = {
+		id = HYS_control_the_supply
+		icon = GFX_
+		prerequisite = { focus = HYS_prepare_for_rebellion }
+		relative_position_id = HYS_prepare_for_rebellion
+		mutually_exclusive = { focus = HYS_control_the_cities }
+		x = -1
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_control_the_cities
+		icon = GFX_
+		prerequisite = { focus = HYS_prepare_for_rebellion }
+		relative_position_id = HYS_prepare_for_rebellion
+		mutually_exclusive = { focus = HYS_control_the_supply }
+		x = 1
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_coordinate_the_uprising
+		icon = GFX_
+		prerequisite = { focus = HYS_control_the_supply focus = HYS_control_the_cities }
+		relative_position_id = HYS_control_the_supply
+		x = 1
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = hydrus_sets_canis_rebellion
+			}
+		}
+		
+		focus = {
 		id = HYS_lepus_frontier
 		icon = GFX_focus_SMB_a_land_of_mountains
 		prerequisite = { focus = HYS_supply_rebels_hydra }
@@ -464,7 +582,7 @@ focus_tree = {
 		cost = 5
 
         ai_will_do = {
-            factor = 5
+            factor = 0
         }
 		
 		completion_reward = {
@@ -513,10 +631,41 @@ focus_tree = {
 		
 		
 	focus = {
-		id = HYS_the_commonwealth
+		id = HYS_unification_discussions
 		icon = GFX_
-		x = 22
-		y = 5
+		x = 30
+		y = 0
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		available = {
+		country_exists = CNS
+		country_exists = LPS
+		NOT = {
+			AND = {
+				has_war_with = URS
+				CNS = { has_war_with = URS }
+				LPS = { has_war_with = URS }
+				}
+			}
+		}
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_unitary_state_negotiation
+		icon = GFX_
+		prerequisite = { focus = HYS_unification_discussions }
+		relative_position_id = HYS_unification_discussions
+		mutually_exclusive = { focus = HYS_the_commonwealth_path }
+		x = 1
+		y = 1
 		cost = 5
 
         ai_will_do = {
@@ -527,3 +676,23 @@ focus_tree = {
 		custom_effect_tooltip = corvus_does_something_tooltip 
 			}
 		}
+		
+		focus = {
+		id = HYS_the_commonwealth_path
+		icon = GFX_
+		prerequisite = { focus = HYS_unification_discussions }
+		relative_position_id = HYS_unification_discussions
+		mutually_exclusive = { focus = HYS_unitary_state_negotiation }
+		x = -1
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		

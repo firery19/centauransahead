@@ -38,7 +38,7 @@ COV_wartime_administration_war = {
 		}
 	}
 	visible = {
-		has_completed_focus = COV_wartime_administration
+		has_completed_focus = COV_initial_offensive
 	}
 }
 
@@ -50,7 +50,6 @@ COV_dysfunctional_economy_idk = {
 
 	allowed = {
 		original_tag = COV
-		has_completed_focus = COV_initial_offensive
 	}
 	
 	priority = {
@@ -59,6 +58,9 @@ COV_dysfunctional_economy_idk = {
 		add = 100
 		tag = COV
 		}
+	}
+	visible = {
+		has_completed_focus = COV_initial_offensive
 	}
 }
 

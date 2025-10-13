@@ -1,8 +1,8 @@
 add_namespace = hydrus
 
-country_event = {
+country_event = { # a generic event
 	id = hydrus.1
-	title = hydrus.1.t #Hydrus wants help!
+	title = hydrus.1.t
 	desc = hydrus.1.d
 	picture = GFX_
 	
@@ -10,16 +10,39 @@ country_event = {
 	
 	fire_only_once = yes
 	
-	trigger = {
-		ORI = { has_country_flag = ORI_accept_hys }
-		}
-	
 	option = {
-		name = hydrus.1.a # Yes
+	name = hydrus.1.a # Yes
+	URS = { annex_country = { target = HYS }}
+	ai_chance = {
+		base = 80
+		modifier = { is_historical_focus_on = yes factor = 10 }
+		modifier = { is_major = yes add = 20 }
+		}
+	}
+	option = {
+		name = hydrus.1.b # NO
+		ai_chance = {
+			base = 20
+			modifier = { is_historical_focus_on = yes factor = 0 }
+			}
+			HYS = {
+			country_event = {
+				id = hydrus.1
+				days = 1
+				hours = 1
+				months = 1
+				random_hours = 1
+				random_days = 2
+			#	tooltip = hydrus.2
+				}
+			}
 		}
 	}
 
-country_event = {
+	
+	# 1.2.0
+	
+country_event = { # repurposed for new focus tree
 	id = hydrus.2
 	title = hydrus.2.t #Hydrus wants help!
 	desc = hydrus.2.d
@@ -29,18 +52,36 @@ country_event = {
 	
 	option = {
 		name = hydrus.2.a # Yes
-		set_country_flag = ORI_accept_hys
+		ai_chance = {
+		base = 80
+		modifier = { is_historical_focus_on = yes factor = 10 }
+#		modifier = { is_major = yes add = 1 }
 		}
-	
-	option = {
-		name = hydrus.2.b # NO
-		set_country_flag = ORI_refuse_hys
+		set_global_flag = orion_helps_hydrus_economy
+		HYS = {
+		country_event = {
+			id = hydrus.3
+			days = 2
+			}
 		}
 	}
 	
-	# 1.2.0
-	
-	country_event = {
+	option = {
+		name = hydrus.2.b # NO
+		ai_chance = {
+		base = 20
+		modifier = { is_historical_focus_on = yes factor = 0 }
+		}
+		HYS = {
+		country_event = {
+			id = hydrus.4
+			days = 2
+			}
+		}
+	}
+}
+
+	country_event = { # orion accepts
 	id = hydrus.3
 	title = hydrus.3.t 
 	desc = hydrus.3.d
@@ -52,9 +93,204 @@ country_event = {
 		name = hydrus.3.a
 		
 		}
+	}
+	
+	country_event = { # no
+	id = hydrus.4
+	title = hydrus.4.t 
+	desc = hydrus.4.d
+	picture = GFX_
+	
+	is_triggered_only = yes
 	
 	option = {
-		name = hydrus.3.b
+		name = hydrus.4.a
+		
+		}
+	}
+	
+	country_event = { # event notifying ursa of hydrus shenanigans
+	id = hydrus.5
+	title = hydrus.5.t 
+	desc = hydrus.5.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.5.a # okay
+		HYS = {
+			set_variable = {
+				var = lepus_crack_count
+				value = 1
+				tooltip = test
+				}
+			}
+		}
+	
+	option = {
+		name = hydrus.5.b
+		
+		}
+	}
+	
+	country_event = { # stir up east lepus
+	id = hydrus.6
+	title = hydrus.6.t 
+	desc = hydrus.6.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.6.a # crackdown
+		add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = 30
+			}
+		add_political_power = -100
+		132 = { add_resistance = -5 }
+		134 = { add_resistance = -10 }
+		182 = { add_resistance = -10 }
+		132 = { add_compliance = -5 }
+		134 = { add_compliance = -5 }
+		182 = { add_compliance = -5 }
+		HYS = {
+			add_to_variable = {
+				var = lepus_crack_count
+				value = 1
+				tooltip = add_1_to_crackdown_tt
+				}
+			}
+		}
+	
+	option = {
+		name = hydrus.6.b # calm the riots
+		add_political_power = -25
+		132 = { add_resistance = 10 }
+		134 = { add_resistance = 5 }
+		182 = { add_resistance = 5 }
+		HYS = {
+			add_to_variable = {
+				var = lepus_crack_count
+				value = 2
+				tooltip = add_2_to_crackdown_tt
+				}
+			}
+		
+		}
+	
+	option = {
+		name = hydrus.6.c
+		132 = { add_resistance = 20 }
+		134 = { add_resistance = 20 }
+		182 = { add_resistance = 20 }
+		HYS = {
+			add_to_variable = {
+				var = lepus_crack_count
+				value = 3
+				tooltip = add_3_to_crackdown_tt
+				}
+			}
+		add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = -30
+			}
+		}
+	}
+	
+	country_event = { # stir up central and north
+	id = hydrus.7
+	title = hydrus.7.t 
+	desc = hydrus.7.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.7.a
+		
+		}
+	
+	option = {
+		name = hydrus.7.b
+		
+		}
+	
+	option = {
+		name = hydrus.7.c
+		
+		}
+	}
+	
+	country_event = {
+	id = hydrus.8
+	title = hydrus.8.t 
+	desc = hydrus.8.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.8.a
+		
+		}
+	
+	option = {
+		name = hydrus.8.b
+		
+		}
+	
+	option = {
+		name = hydrus.8.c
+		
+		}
+	}
+	
+	country_event = {
+	id = hydrus.9
+	title = hydrus.9.t 
+	desc = hydrus.9.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.9.a
+		
+		}
+	
+	option = {
+		name = hydrus.9.b
+		
+		}
+	
+	option = {
+		name = hydrus.9.c
+		
+		}
+	}
+	
+	country_event = {
+	id = hydrus.q
+	title = hydrus.q.t 
+	desc = hydrus.q.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.q.a
+		
+		}
+	
+	option = {
+		name = hydrus.q.b
+		
+		}
+	
+	option = {
+		name = hydrus.q.c
 		
 		}
 	}

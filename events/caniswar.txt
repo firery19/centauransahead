@@ -10,7 +10,7 @@ country_event = {
 	
 	option = {
 		name = caniswar.1.a
-		
+		URS = { country_event = caniswar.2 }
 	}
 	option = {
 		name = caniswar.1.b

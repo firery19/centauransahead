@@ -656,9 +656,10 @@
  news.411.c:0 "This is a disaster!"
  news.411.e:0 "Antares has marched to MIRA!" # corvus
  news.412.t:0 "Fall of Nauta" # corvus
- news.412.d:0 "Nauta, the capital city of Cetus, has fallen to Corvus after a battle in the historic capital city. Cetus had ordered every unit in the city to fight to the death, but it was not enough to stop the Corvun advance."
+ news.412.d:0 ""Cetus is not yet lost!" -Cetan Soldier\n\nToday, Corvun forces fully surrounded and cleared out the last bastion of Cetan Army and Naval resistance along the drydocks of Nauta, falling with them came the fall of Cetus' capital. The battle for the city has left it in ruin as the stalwart opposition of the defenders in defense of their homeland has left no building still standing.\n\nIt is unknown if Cetus can continue to resist, but regardless. Standing amidst the rocks and rubble of the aftermath of the lethal Corvun artillery bombardment, only one thought comes to mind; 'Is there a reason to this madness? Did they have to die?'"
+ #news.412.d:0 "Nauta, the capital city of Cetus, has fallen to Corvus after a battle in the historic capital city. Cetus had ordered every unit in the city to fight to the death, but it was not enough to stop the Corvun advance."
  news.412.a:0 "Interesting development."
- news.412.b:0 "Corvus shall march to Nauta"
+ news.412.b:0 "Corvus shall march to Nauta."
  news.412.c:0 "This is a disaster!"
  news.412.e:0 "We shall march to Nauta!"
  news.413.t:0 "Fall of Mira"
@@ -668,7 +669,7 @@
  news.413.c:0 "This is a disaster!"
  news.413.e:0 "We shall march to MIRA!"
  news.415.t:0 "Fall of Multa"
- news.415.d:0 "Multa fell to Corvus."
+ news.415.d:0 "Multa, the biggest city in South Corvus, has recently been taken by Corvun forces, with merely battalions of cetan resistance scrambling to form defense around southern outskirts.\n\nDiplomats and military strategists across Forma are left in shock as the Corvun advance has moved at an unprecedented speed.\n\n The Cetan monarchy had refused to give a statement so far, but most interviewed officers can agree on one thing – this is only the beginning."
  news.415.a:0 "Interesting development."
  news.415.b:0 "This is a disaster!"
  news.415.c:0 "This is a historic moment."
@@ -696,5 +697,5 @@
  news.2.t:0 "End of the Grease Wars"
  news.2.d:0 "The war in Canis has ended. The war has ended in favor of the Compact Forces, and the countries of Orion and Hydrus have deepened their diplomatic relations.\n\nEmerging from the war is the newest country of Canis, which has also established diplomatic connections with the rest of the Compact forces.\n\nThe defeated Ursan forces are departing from Alcor, fully withdrawing from the continent of Hydra."
  news.2.a:0 "An interesting development."
- news.2.b:0 "We have reclaimed Hydra from Ursa."
+ news.2.b:0 "We have reclaimed Canis from Ursa."
  news.2.c:0 "A shameful defeat, but we will return."

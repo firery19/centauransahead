@@ -16,6 +16,6 @@ state={
 	}
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-        manpower=855906
+        manpower=355906
         state_category = tiny_island
 }

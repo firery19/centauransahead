@@ -9,6 +9,7 @@ URS_preGreaseWars_Decisions = {
 			has_country_flag = grease_wars_not_started
 			NOT = { has_country_flag = URS_flag_lepus_pacified }
 		}
+		NOT = { country_exists = LPS }
 	}
 	visible = {
 		tag = URS
@@ -16,5 +17,6 @@ URS_preGreaseWars_Decisions = {
 			has_country_flag = grease_wars_not_started
 			NOT = { has_country_flag = URS_flag_lepus_pacified }
 		}
+		NOT = { country_exists = LPS }
 	}
 }

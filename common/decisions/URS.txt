@@ -7,9 +7,10 @@ URS_preGreaseWars_Decisions = {
 				has_country_flag = grease_wars_not_started
 				NOT = { has_country_flag = URS_flag_lepus_pacified }
 			}
+			NOT = { country_exists = LPS }
 		}
 		available = {
-			always = no
+			country_exists = LPS
 		}
 		selectable_mission = no
 		is_good = no
@@ -38,9 +39,10 @@ URS_preGreaseWars_Decisions = {
 				has_country_flag = grease_wars_not_started
 				NOT = { has_country_flag = URS_flag_lepus_pacified }
 			}
+			NOT = { country_exists = LPS }
 		}
 		available = {
-			always = no
+			country_exists = LPS
 		}
 		selectable_mission = no
 		is_good = yes
@@ -89,6 +91,7 @@ URS_preGreaseWars_Decisions = {
 				has_country_flag = grease_wars_not_started
 				NOT = { has_country_flag = URS_flag_lepus_pacified }
 			}
+			NOT = { country_exists = LPS }
 		}
 		
 		modifier = {
@@ -132,6 +135,7 @@ URS_preGreaseWars_Decisions = {
 
 		available = {
 			always = yes
+			NOT = { country_exists = LPS }
 		}
 
 		cost = 50
@@ -151,6 +155,7 @@ URS_preGreaseWars_Decisions = {
 				has_country_flag = grease_wars_not_started
 				NOT = { has_country_flag = URS_flag_lepus_pacified }
 			}
+			NOT = { country_exists = LPS }
 		}
 		
 		modifier = {
@@ -220,6 +225,7 @@ URS_preGreaseWars_Decisions = {
 				NOT = { has_country_flag = URS_flag_lepus_pacified }
 			}
 			NOT = { has_country_flag = URS_flag_mathieson_secured }
+			NOT = { country_exists = LPS }
 		}
 		
 		modifier = {
@@ -278,6 +284,7 @@ URS_preGreaseWars_Decisions = {
 				NOT = { has_country_flag = URS_flag_lepus_pacified }
 			}
 			NOT = { has_country_flag = URS_flag_westlepus_secured }
+			NOT = { country_exists = LPS }
 		}
 		
 		modifier = {
@@ -336,6 +343,7 @@ URS_preGreaseWars_Decisions = {
 				NOT = { has_country_flag = URS_flag_lepus_pacified }
 			}
 			NOT = { has_country_flag = URS_flag_centlepus_secured }
+			NOT = { country_exists = LPS }
 		}
 		
 		modifier = {
@@ -394,6 +402,7 @@ URS_preGreaseWars_Decisions = {
 				NOT = { has_country_flag = URS_flag_lepus_pacified }
 			}
 			NOT = { has_country_flag = URS_flag_eastlepus_secured }
+			NOT = { country_exists = LPS }
 		}
 		
 		modifier = {

@@ -303,87 +303,6 @@ focus_tree = {
     }
 	
 	focus = {
-        id = ORS_SpoilsOfWar
-        icon = GFX_focus_generic_resource_extraction
-        x = 9
-        y = 8
-        cost = 5
-		available = {	
-				ORI = {
-					AND = {
-						has_full_control_of_state = 117
-						has_full_control_of_state = 114 
-						has_full_control_of_state = 113
-						NOT = { has_war_with = URS }
-					}
-				}
-			}
-		
-        prerequisite = {
-            focus = ORS_TheUrsanQuestion
-        }
-        completion_reward = {
-		117 = {
-		add_resource = {
-			type = oil 
-			amount = 10}
-			}
-		}
-        ai_will_do = {
-            factor = 5
-        }
-    }
-	
-	focus = {
-        id = ORS_InvestInOilRigs
-        icon = GFX_goal_generic_oil_refinery
-        x = 3
-        y = 9
-        cost = 5
-		available = {			
-			}
-		
-        prerequisite = {
-            focus = ORS_SpoilsOfWar
-        }
-        completion_reward = {
-		114 = {
-		add_resource = {
-			type = oil 
-			amount = 32}
-			}
-		}
-        ai_will_do = {
-            factor = 5
-        }
-    }
-	
-	focus = {
-        id = ORS_InvestInRubberFactories
-        icon = GFX_focus_generic_rubber
-        x = 3
-        y = 10
-        cost = 5
-		available = {			
-			}
-		
-        prerequisite = {
-            focus = ORS_InvestInOilRigs
-        }
-		completion_reward = {
-			117 = {
-				add_resource = {
-					type = rubber 
-					amount = 12
-				}
-			}
-			}
-			ai_will_do = {
-				factor = 5
-			}
-    }
-	
-	focus = {
 			id = ORS_ClampDownOnResistence
 			icon = GFX_focus_BRA_end_the_state_of_emergency
 			x = 9
@@ -491,7 +410,7 @@ focus_tree = {
     }
 	
 	focus = {
-        id = ORI_clearing_the_minefields_act
+        id = ORI_canisian_administration
         icon = GFX_goal_unknown
         x = -3
         y = 1
@@ -513,8 +432,30 @@ focus_tree = {
     }
 	
 	focus = {
-        id = ORI_improving_infrastructure
+        id = ORI_clearing_the_minefields_act
         icon = GFX_goal_unknown
+        x = 0
+        y = 1
+        cost = 10
+		relative_position_id = ORI_canisian_administration
+        prerequisite = { focus = ORI_canisian_administration }
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = ORI_improving_infrastructure
+        icon = GFX_goal_generic_construct_infrastructure
         x = 0
         y = 1
         cost = 10
@@ -540,8 +481,8 @@ focus_tree = {
         x = 2
         y = 1
         cost = 5
-		relative_position_id = ORI_clearing_the_minefields_act
-        prerequisite = { focus = ORI_clearing_the_minefields_act }
+		relative_position_id = ORI_canisian_administration
+        prerequisite = { focus = ORI_canisian_administration }
 		
 		available = {
 			owns_state = 114
@@ -592,7 +533,12 @@ focus_tree = {
 		}
 		
         completion_reward = {
-		
+		117 = {
+			add_resource = {
+				type = aluminium 
+				amount = 10
+				}
+			}
 		}
 		
         ai_will_do = {
@@ -614,6 +560,12 @@ focus_tree = {
 		}
 		
         completion_reward = {
+		114 = {
+			add_resource = {
+				type = oil 
+				amount = 10
+				}
+			}
 		
 		}
 		

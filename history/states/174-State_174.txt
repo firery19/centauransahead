@@ -15,7 +15,7 @@ state={
 		576 586 1472 1626 1967 2434 2554 2606 3040 3272 4026 4071 4109 4120 4153 4156 4166 4189 4190 4192 4207 4222 
 	}
 	manpower=1009821
-	state_category = tiny_island
+	state_category = pastoral
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

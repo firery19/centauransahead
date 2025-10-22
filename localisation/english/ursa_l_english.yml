@@ -3,7 +3,7 @@
 URS_gen_warcriminal_name:0 "Ivun Melloruh"
 #Decisions
 URS_preGreaseWars_Decisions:0 "Managing the Unruly Colonies"
-URS_preGreaseWars_Decisions_desc:0 "It is not a secret that our influence in Hydra have been slowly decaying over the past few decades. Our federation was humiliated when we were forced to withdrawl from Hydrus in 1899. It is our duty to show the world that we are still the strong proud nation we were destined to be."
+URS_preGreaseWars_Decisions_desc:0 "It is not a secret that our influence in Hydra have been slowly decaying over the past few decades. Our federation was humiliated when we were forced to withdrawl from Hydrus in 1899. It is our duty to show the world that we are still the strong proud nation we were destined to be.\n\nStatus:  [LepusRebellionProgress] [?lepus_revolution_counter|Y0]\n\nUnrest:  [LepusAngerProgress]  [?lepus_anger_counter|Y0]"
 URS_randomterrorism_timer_lps:0 "Attempts of Sabotage in Lepus"
 URS_randomterrorism_timer_cns:0 "Attempts of Sabotage in Canis"
 URS_exchangeppforcp:0 "Empower the Military"

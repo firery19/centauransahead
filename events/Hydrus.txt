@@ -123,6 +123,13 @@ country_event = { # repurposed for new focus tree
 				var = lepus_revolution_counter
 				value = 1
 				tooltip = test
+			}
+		}
+		URS = {
+			set_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = test
 				}
 			}
 		}
@@ -164,6 +171,20 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_1_to_anger_tt
 				}
 			}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
 		add_days_mission_timeout = {
 				mission = URS_lepus_spawns_timer
 				days = 30
@@ -183,6 +204,13 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_2_to_revolution_tt
 				}
 			}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
 		
 		}
 	
@@ -192,6 +220,13 @@ country_event = { # repurposed for new focus tree
 		134 = { add_resistance = 20 }
 		182 = { add_resistance = 20 }
 		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 3
+				tooltip = add_3_to_revolution_tt
+				}
+			}
+		URS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
 				value = 3
@@ -237,6 +272,20 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_1_to_anger_tt
 				}
 			}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
 		add_days_mission_timeout = {
 				mission = URS_lepus_spawns_timer
 				days = 30
@@ -254,13 +303,26 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_2_to_revolution_tt
 				}
 			}
-		
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
 		}
 	
 	option = {
 		name = hydrus.7.c
 		131 = { add_resistance = 20 }
 		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 3
+				tooltip = add_3_to_revolution_tt
+				}
+			}
+		URS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
 				value = 3
@@ -307,6 +369,20 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_1_to_anger_tt
 				}
 			}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}	
 		add_days_mission_timeout = {
 				mission = URS_lepus_spawns_timer
 				days = 30
@@ -324,13 +400,26 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_2_to_revolution_tt
 				}
 			}
-		
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
 		}
 	
 	option = {
 		name = hydrus.8.c
 		133 = { add_resistance = 20 }
 		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 3
+				tooltip = add_3_to_revolution_tt
+				}
+			}
+		URS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
 				value = 3
@@ -376,6 +465,20 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_1_to_anger_tt
 				}
 			}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
 		add_days_mission_timeout = {
 				mission = URS_lepus_spawns_timer
 				days = 30
@@ -393,13 +496,26 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_2_to_revolution_tt
 				}
 			}
-		
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
 		}
 	
 	option = {
 		name = hydrus.9.c
 		130 = { add_resistance = 20 }
 		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 3
+				tooltip = add_3_to_revolution_tt
+				}
+			}
+		URS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
 				value = 3

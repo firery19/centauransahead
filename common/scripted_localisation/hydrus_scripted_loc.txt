@@ -4,7 +4,10 @@ defined_text = { # when u do nothing
 	name = LepusRebellionProgress
 	text = {
 		trigger = {
-			original_tag = HYS
+			OR = {
+				original_tag = HYS
+				original_tag = URS
+			}
 			check_variable = { lepus_revolution_counter < 1 }
 
 		}
@@ -12,7 +15,10 @@ defined_text = { # when u do nothing
 	}
 	text = {
 		trigger = {
-			original_tag = HYS
+			OR = {
+				original_tag = HYS
+				original_tag = URS
+			}
 			check_variable = { lepus_revolution_counter < 15 }
 
 		}
@@ -20,7 +26,10 @@ defined_text = { # when u do nothing
 	}
 	text = {
 		trigger = {
-			original_tag = HYS
+			OR = {
+				original_tag = HYS
+				original_tag = URS
+			}
 			check_variable = { lepus_revolution_counter < 25 }
 
 		}
@@ -28,7 +37,10 @@ defined_text = { # when u do nothing
 	}
 	text = {
 		trigger = {
-			original_tag = HYS
+			OR = {
+				original_tag = HYS
+				original_tag = URS
+			}
 			check_variable = { lepus_revolution_counter < 35 }
 
 		}
@@ -36,7 +48,10 @@ defined_text = { # when u do nothing
 	}
 	text = {
 		trigger = {
-			original_tag = HYS
+			OR = {
+				original_tag = HYS
+				original_tag = URS
+			}
 			check_variable = {
 				var = lepus_revolution_counter
 				value = 35
@@ -51,7 +66,10 @@ defined_text = { # when u crackdown too much
 	name = LepusAngerProgress
 	text = {
 		trigger = {
-			original_tag = HYS
+			OR = {
+				original_tag = HYS
+				original_tag = URS
+			}
 			check_variable = { lepus_anger_counter < 1 }
 
 		}
@@ -59,7 +77,10 @@ defined_text = { # when u crackdown too much
 	}
 	text = {
 		trigger = {
-			original_tag = HYS
+			OR = {
+				original_tag = HYS
+				original_tag = URS
+			}
 			check_variable = { lepus_anger_counter < 5 }
 
 		}
@@ -67,7 +88,10 @@ defined_text = { # when u crackdown too much
 	}
 	text = {
 		trigger = {
-			original_tag = HYS
+			OR = {
+				original_tag = HYS
+				original_tag = URS
+			}
 			check_variable = { lepus_anger_counter < 10 }
 
 		}
@@ -75,7 +99,10 @@ defined_text = { # when u crackdown too much
 	}
 	text = {
 		trigger = {
-			original_tag = HYS
+			OR = {
+				original_tag = HYS
+				original_tag = URS
+			}
 			check_variable = { lepus_anger_counter < 15 }
 
 		}
@@ -83,7 +110,10 @@ defined_text = { # when u crackdown too much
 	}
 	text = {
 		trigger = {
-			original_tag = HYS
+			OR = {
+				original_tag = HYS
+				original_tag = URS
+			}
 			check_variable = {
 				var = lepus_anger_counter
 				value = 15

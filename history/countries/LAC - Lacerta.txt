@@ -1,4 +1,4 @@
-capital = 17
+capital = 163
 
 oob = "LAC_1900"
 add_ideas = {
@@ -21,6 +21,8 @@ set_technology = {
 	# h
 	# i
 }
+
+172 = {	set_demilitarized_zone = yes }
 
 set_research_slots = 1
 

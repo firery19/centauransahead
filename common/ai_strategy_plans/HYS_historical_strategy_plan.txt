@@ -1,16 +1,16 @@
-URS_historical_plan = {
-	name = "Ursan Historical Plan"
+HYS_historical_plan = {
+	name = "Hydrus Historical Plan"
 	desc = "Defend"
 
 	allowed = {
-		original_tag = URS
+		original_tag = HYS
 	}
 	enable = {
 		OR = {
 			AND = {
 				is_historical_focus_on = yes
 				has_game_rule = {
-					rule = URS_ai_behavior
+					rule = HYS_ai_behavior
 					option = DEFAULT
 				}
 			}

@@ -1,6 +1,7 @@
 ideas = {
     country = {
         HYS_recently_independent_idea = {
+		name = HYS_recently_independent
             
             picture = idea_COV_revanchism
             allowed = { original_tag = HYS }
@@ -11,6 +12,18 @@ ideas = {
 			consumer_goods_factor = 0.2
             }
         }
+        HYS_recently_independent_2_idea = {
+		name = HYS_recently_independent
+            
+            picture = idea_COV_revanchism
+            allowed = { original_tag = HYS }
+            removal_cost = -1
+
+            modifier = {
+			consumer_goods_factor = 0.1
+            }
+        }
+		
 		HYS_inexperienced_industry_idea = {
             
             picture = idea_COV_revanchism
@@ -18,7 +31,7 @@ ideas = {
             removal_cost = -1
 
             modifier = {
-			industrial_capacity_factory = -0.9
+			industrial_capacity_factory = -0.5
 			consumer_goods_factor = 0.2
 			}
 		}

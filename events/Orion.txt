@@ -92,7 +92,6 @@ country_event = { #Ursa accepts
 		set_state_owner = 114
 		set_state_owner = 117
 		set_state_owner = 122
-		set_state_controller = 172
 		
 			CNS = {
 				set_state_owner = 123
@@ -171,7 +170,7 @@ country_event = {
 }
 
 
-country_event = {
+country_event = { # force lepus independence
 	id = orion.5
 	title = orion.5.t
 	desc = orion.5.d

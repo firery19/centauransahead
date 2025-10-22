@@ -25,7 +25,7 @@ HYD_canis_war = {
 		}
 	}
 	visible = {
-		always = yes
+		is_debug = yes
 	}
 }
 
@@ -49,7 +49,10 @@ HYS_lepus_revolution = {
 		}
 	}
 	visible = {
+	OR = {
 		has_completed_focus = HYS_lepus_frontier
+		is_debug = yes
+		}
 	}
 }
 
@@ -68,11 +71,14 @@ HYS_canis_uprising = {
 	priority = {
 	base = 1
 	modifier = {
-		add = 8
+		add = 6
 		tag = HYS
 		}
 	}
 	visible = {
+	OR = {
 		has_completed_focus = HYS_canis_frontier
+		is_debug = yes
+		}
 	}
 }

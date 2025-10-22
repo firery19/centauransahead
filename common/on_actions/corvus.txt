@@ -9,6 +9,7 @@ on_actions = {
 					}
 				}
 				complete_national_focus = COV_initial_offensive
+				COV = { country_event = co
 				activate_decision = COV_dysfunctional_economy_idk
 				#CET = { set_country_flag = cov_attack_cetus_first }
 			}

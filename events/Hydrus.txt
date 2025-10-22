@@ -91,7 +91,7 @@ country_event = { # repurposed for new focus tree
 	
 	option = {
 		name = hydrus.3.a
-		
+		custom_effect_tooltip = orion_aid_focus_unlock
 		}
 	}
 	
@@ -105,7 +105,6 @@ country_event = { # repurposed for new focus tree
 	
 	option = {
 		name = hydrus.4.a
-		
 		}
 	}
 	
@@ -121,16 +120,11 @@ country_event = { # repurposed for new focus tree
 		name = hydrus.5.a # okay
 		HYS = {
 			set_variable = {
-				var = lepus_crack_count
+				var = lepus_revolution_counter
 				value = 1
 				tooltip = test
 				}
 			}
-		}
-	
-	option = {
-		name = hydrus.5.b
-		
 		}
 	}
 	
@@ -144,11 +138,12 @@ country_event = { # repurposed for new focus tree
 	
 	option = {
 		name = hydrus.6.a # crackdown
-		add_days_mission_timeout = {
-				mission = URS_lepus_spawns_timer
-				days = 30
-			}
 		add_political_power = -100
+		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = -100
+                producer = URS
+				}
 		132 = { add_resistance = -5 }
 		134 = { add_resistance = -10 }
 		182 = { add_resistance = -10 }
@@ -157,10 +152,21 @@ country_event = { # repurposed for new focus tree
 		182 = { add_compliance = -5 }
 		HYS = {
 			add_to_variable = {
-				var = lepus_crack_count
+				var = lepus_revolution_counter
 				value = 1
-				tooltip = add_1_to_crackdown_tt
+				tooltip = add_1_to_revolution_tt
 				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = 30
 			}
 		}
 	
@@ -172,9 +178,9 @@ country_event = { # repurposed for new focus tree
 		182 = { add_resistance = 5 }
 		HYS = {
 			add_to_variable = {
-				var = lepus_crack_count
+				var = lepus_revolution_counter
 				value = 2
-				tooltip = add_2_to_crackdown_tt
+				tooltip = add_2_to_revolution_tt
 				}
 			}
 		
@@ -187,9 +193,9 @@ country_event = { # repurposed for new focus tree
 		182 = { add_resistance = 20 }
 		HYS = {
 			add_to_variable = {
-				var = lepus_crack_count
+				var = lepus_revolution_counter
 				value = 3
-				tooltip = add_3_to_crackdown_tt
+				tooltip = add_3_to_revolution_tt
 				}
 			}
 		add_days_mission_timeout = {
@@ -199,7 +205,7 @@ country_event = { # repurposed for new focus tree
 		}
 	}
 	
-	country_event = { # stir up central and north
+	country_event = { # stir up north
 	id = hydrus.7
 	title = hydrus.7.t 
 	desc = hydrus.7.d
@@ -208,22 +214,67 @@ country_event = { # repurposed for new focus tree
 	is_triggered_only = yes
 	
 	option = {
-		name = hydrus.7.a
-		
+		name = hydrus.7.a # crackdown
+		add_political_power = -100
+		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = -100
+                producer = URS
+				}
+		131 = { add_resistance = -5 }
+		131 = { add_compliance = -5 }
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = 30
+			}
 		}
 	
 	option = {
-		name = hydrus.7.b
+		name = hydrus.7.b # calm the riots
+		add_political_power = -25
+		131 = { add_resistance = 10 }
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
 		
 		}
 	
 	option = {
 		name = hydrus.7.c
-		
+		131 = { add_resistance = 20 }
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 3
+				tooltip = add_3_to_revolution_tt
+				}
+			}
+		add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = -30
+			}
 		}
 	}
 	
-	country_event = {
+	country_event = { # stir up central
 	id = hydrus.8
 	title = hydrus.8.t 
 	desc = hydrus.8.d
@@ -232,22 +283,68 @@ country_event = { # repurposed for new focus tree
 	is_triggered_only = yes
 	
 	option = {
-		name = hydrus.8.a
-		
+		name = hydrus.8.a # crackdown
+		add_political_power = -100
+		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = -100
+                producer = URS
+				}
+		add_political_power = -100
+		133 = { add_resistance = -5 }
+		133 = { add_compliance = -5 }
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = 30
+			}
 		}
 	
 	option = {
-		name = hydrus.8.b
+		name = hydrus.8.b # calm the riots
+		add_political_power = -25
+		133 = { add_resistance = 10 }
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
 		
 		}
 	
 	option = {
 		name = hydrus.8.c
-		
+		133 = { add_resistance = 20 }
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 3
+				tooltip = add_3_to_revolution_tt
+				}
+			}
+		add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = -30
+			}
 		}
 	}
 	
-	country_event = {
+	country_event = { # stir up west
 	id = hydrus.9
 	title = hydrus.9.t 
 	desc = hydrus.9.d
@@ -256,18 +353,63 @@ country_event = { # repurposed for new focus tree
 	is_triggered_only = yes
 	
 	option = {
-		name = hydrus.9.a
-		
+		name = hydrus.9.a # crackdown
+		add_political_power = -100
+		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = -100
+                producer = URS
+				}
+		130 = { add_resistance = -5 }
+		130 = { add_compliance = -5 }
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = 30
+			}
 		}
 	
 	option = {
-		name = hydrus.9.b
+		name = hydrus.9.b # calm the riots
+		add_political_power = -25
+		130 = { add_resistance = 10 }
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
 		
 		}
 	
 	option = {
 		name = hydrus.9.c
-		
+		130 = { add_resistance = 20 }
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 3
+				tooltip = add_3_to_revolution_tt
+				}
+			}
+		add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = -30
+			}
 		}
 	}
 	

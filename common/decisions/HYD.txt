@@ -76,14 +76,13 @@ HYD_canis_war = {
 		factor = 1
 		}
 	}
-	 test_have_variable = {
+	 test_reset_revolution_variable = {
 
 		icon = oil
 
 		available = {
 		is_debug = yes
 		is_ai = no
-		has_variable = testing_variable
 			}
 		
 		visible = {
@@ -99,6 +98,13 @@ HYD_canis_war = {
 		cost = 0
 		
 		complete_effect = {
+		HYS = {
+			set_variable = {
+				var = lepus_revolution_counter
+				value = 0
+				tooltip = test
+				}
+			}
 		
 		}
 		remove_effect = {
@@ -110,14 +116,14 @@ HYD_canis_war = {
 		}
 	}
 	
-	 test_has_no_variable = {
+	 test_reset_anger_variable = {
 
 		icon = oil
+		
 		available = {
 		is_debug = yes
 		is_ai = no
-		NOT = {has_variable = testing_variable
-			}}
+		}
 		
 		visible = {
 		is_debug = yes
@@ -132,7 +138,13 @@ HYD_canis_war = {
 		cost =0
 		
 		complete_effect = {
-		
+		HYS = {
+			set_variable = {
+				var = lepus_anger_counter
+				value = 0
+				tooltip = test
+				}
+			}
 		}
 		remove_effect = {
 		
@@ -143,87 +155,15 @@ HYD_canis_war = {
 		}
 	}
 	
-	 test_have_variable_counter_3 = {
+	test_increase_variable_lepusrage_= {
 
 		icon = oil
 
 		available = {
-		is_ai = no
-		is_debug = yes
-			check_variable = {
-				testing_variable = 3
-				}
 			}
 		
 		visible = {
 		is_debug = yes
-		has_variable = testing_variable
-		}
-		
-		fire_only_once = no
-		
-		days_re_enable = 0
-		
-		days_remove = 0
-		
-		cost = 0
-		
-		complete_effect = {
-		
-		}
-		remove_effect = {
-		
-		}
-		
-		ai_will_do = {
-		factor = 1
-		}
-	}
-	 test_remove_variable = {
-
-		icon = oil
-
-		available = {
-		is_ai = no
-			has_variable = testing_variable
-			}
-		
-		visible = {
-		is_debug = yes
-		has_variable = testing_variable
-		}
-		
-		fire_only_once = no
-		
-		days_re_enable = 0
-		
-		days_remove = 0
-		
-		cost = 0
-		
-		complete_effect = {
-		
-		clear_variable = lepus_crack_count 
-		}
-		remove_effect = {
-		
-		}
-		
-		ai_will_do = {
-		factor = 1
-		}
-	}
-	 test_increase_variable = {
-
-		icon = oil
-
-		available = {
-			has_variable = testing_variable
-			}
-		
-		visible = {
-		is_debug = yes
-		has_variable = testing_variable
 		}
 		
 		fire_only_once = no
@@ -237,9 +177,9 @@ HYD_canis_war = {
 		complete_effect = {
 		HYS = {
 			add_to_variable = {
-				var = testing_variable
-				value = 1
-				tooltip = add1test_variable
+				var = lepus_anger_counter
+				value = 10
+				tooltip = add10lepuscrack
 				}
 			}
 			
@@ -252,17 +192,16 @@ HYD_canis_war = {
 		factor = 1
 		}
 	}
-	 test_decrease_variable = {
+	
+	 test_increase_variable_lepus_revolution = {
 
 		icon = oil
 
 		available = {
-			has_variable = testing_variable
 			}
 		
 		visible = {
 		is_debug = yes
-		has_variable = testing_variable
 		}
 		
 		fire_only_once = no
@@ -276,11 +215,12 @@ HYD_canis_war = {
 		complete_effect = {
 		HYS = {
 			add_to_variable = {
-				var = testing_variable
-				value = -1
-				tooltip = remove1variable
+				var = lepus_revolution_counter
+				value = 10
+				tooltip = add10lepuscrack
 				}
 			}
+			
 		}
 		remove_effect = {
 		
@@ -288,6 +228,247 @@ HYD_canis_war = {
 		
 		ai_will_do = {
 		factor = 1
+		}
+	}
+	 test_decrease_variable_lepus_revolution = {
+
+		icon = oil
+
+		available = {
+			}
+		
+		visible = {
+		is_debug = yes
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 0
+		
+		days_remove = 0
+		
+		cost = 0
+		
+		complete_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = -2
+				tooltip = add10lepuscrack
+				}
+			}
+			
+		}
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+		factor = 1
+		}
+	}
+}
+
+HYS_lepus_revolution = {
+
+	hys_start_lepus_revolution = {
+
+		icon = generic_reorganize_irregulars
+
+		available = {
+		URS = {
+		owns_state = 130
+		owns_state = 131
+		owns_state = 132
+		owns_state = 133
+		}
+		HYS = {
+			check_variable = {
+				var = lepus_revolution_counter
+				value = 35
+				compare = greater_than_or_equals
+				tooltip = lepus_can_revolution_require_tt
+				}
+			}
+		}
+		
+		visible = {
+			OR = {
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 7
+		
+		cost = 50
+		#cost = 0
+		
+		complete_effect = {
+		
+		add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = -4383
+			}
+		}
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+		factor = 100
+		}
+	}
+
+	hys_stir_the_masses_east = {
+
+		icon = SWI_consolidate_council_power
+
+		available = {
+		URS = {
+		has_full_control_of_state = 132
+		owns_state = 132
+		NOT = { country_exists = LPS }
+		}
+			}
+		
+		visible = {
+			OR = {
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 60
+		
+		days_remove = 7
+		
+		cost = 50
+		
+		complete_effect = {
+		
+		}
+		remove_effect = {
+		URS = { country_event = hydrus.6 }
+		}
+		
+		ai_will_do = {
+		factor = 25
+		}
+	}
+	hys_stir_the_masses_north = {
+
+		icon = SWI_consolidate_council_power
+
+		available = {
+		URS = {
+		has_full_control_of_state = 132
+		owns_state = 132
+		NOT = { country_exists = LPS }
+		}
+			}
+		
+		visible = {
+			OR = {
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 60
+		
+		days_remove = 7
+		
+		cost = 50
+		
+		complete_effect = {
+		
+		}
+		remove_effect = {
+		URS = { country_event = hydrus.7 }
+		}
+		
+		ai_will_do = {
+		factor = 20
+		}
+	}
+	hys_stir_the_masses_central = {
+
+		icon = SWI_consolidate_council_power
+
+		available = {
+		URS = {
+		has_full_control_of_state = 132
+		owns_state = 132
+		NOT = { country_exists = LPS }
+		}
+			}
+		
+		visible = {
+			OR = {
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 60
+		
+		days_remove = 7
+		
+		cost = 50
+		
+		complete_effect = {
+		
+		}
+		remove_effect = {
+		URS = { country_event = hydrus.8 }
+		}
+		
+		ai_will_do = {
+		factor = 15
+		}
+	}
+	hys_stir_the_masses_west = {
+
+		icon = SWI_consolidate_council_power
+
+		available = {
+		URS = {
+		has_full_control_of_state = 132
+		owns_state = 132
+		NOT = { country_exists = LPS }
+		}
+			}
+		
+		visible = {
+			OR = {
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = no
+		
+		days_re_enable = 7
+		#days_re_enable = 0
+		
+		days_remove = 7
+		
+		cost = 50
+		#cost = 0
+		
+		complete_effect = {
+		
+		}
+		remove_effect = {
+		URS = { country_event = hydrus.9 }
+		}
+		
+		ai_will_do = {
+		factor = 10
 		}
 	}
 }

@@ -8,7 +8,7 @@ HYD_canis_war = {
 			}
 		
 		visible = {
-			always = yes
+			always = no
 		}
 		
 		fire_only_once = yes
@@ -160,6 +160,8 @@ HYD_canis_war = {
 		icon = oil
 
 		available = {
+		is_debug = yes
+		is_ai = no
 			}
 		
 		visible = {
@@ -198,6 +200,8 @@ HYD_canis_war = {
 		icon = oil
 
 		available = {
+		is_debug = yes
+		is_ai = no
 			}
 		
 		visible = {
@@ -235,6 +239,8 @@ HYD_canis_war = {
 		icon = oil
 
 		available = {
+		is_debug = yes
+		is_ai = no
 			}
 		
 		visible = {
@@ -294,6 +300,7 @@ HYS_lepus_revolution = {
 		
 		visible = {
 			OR = {
+			has_completed_focus = HYS_control_the_lepus_resistance
 			is_debug = yes
 			}
 		}
@@ -306,14 +313,72 @@ HYS_lepus_revolution = {
 		#cost = 0
 		
 		complete_effect = {
+		}
+		remove_effect = {
 		
 		add_days_mission_timeout = {
 				mission = URS_lepus_spawns_timer
 				days = -4383
 			}
-		}
-		remove_effect = {
 		
+		}
+		
+		ai_will_do = {
+		factor = 100
+		}
+	}
+
+	hys_kick_the_lepus_rebellion = {
+
+		icon = generic_reorganize_irregulars
+
+		available = {
+		URS = {
+		owns_state = 130
+		owns_state = 131
+		owns_state = 132
+		owns_state = 133
+		}
+		HYS = {
+			check_variable = {
+				var = lepus_anger_counter
+				value = 15
+				compare = greater_than_or_equals
+				tooltip = lepus_can_rebellion_require_tt
+				}
+			}
+		}
+		
+		visible = {
+			OR = {
+			has_completed_focus = HYS_control_the_lepus_resistance
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 1
+		
+		#cost = 50
+		cost = 0
+		
+		complete_effect = {
+		LPS = {
+			set_state_controller = 132
+			set_state_owner = 132
+			}
+		}
+		
+		remove_effect = {
+		hidden_effect = {
+			URS = {
+				declare_war_on = {
+					target = LPS
+					type = annex_everything
+					}
+				}
+			}
 		}
 		
 		ai_will_do = {

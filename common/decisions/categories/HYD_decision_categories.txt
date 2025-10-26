@@ -9,7 +9,6 @@ HYD_canis_war = {
 	allowed = {
 	OR = {
 		original_tag = HYS
-		original_tag = LPS
 		}
 	}
 	
@@ -18,10 +17,6 @@ HYD_canis_war = {
 	modifier = {
 		add = 10
 		tag = HYS
-		}
-		modifier = {
-		add = 10
-		tag = LPS
 		}
 	}
 	visible = {

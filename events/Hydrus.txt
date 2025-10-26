@@ -121,15 +121,13 @@ country_event = { # repurposed for new focus tree
 		HYS = {
 			set_variable = {
 				var = lepus_revolution_counter
-				value = 1
-				tooltip = test
+				value = 0
 			}
 		}
 		URS = {
 			set_variable = {
 				var = lepus_revolution_counter
-				value = 1
-				tooltip = test
+				value = 0
 				}
 			}
 		}
@@ -549,6 +547,20 @@ country_event = { # repurposed for new focus tree
 	
 	option = {
 		name = hydrus.q.c
+		
+		}
+	}
+	
+	country_event = {
+	id = hydrus.y
+	title = hydrus.y.t 
+	desc = hydrus.y.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.y.a
 		
 		}
 	}

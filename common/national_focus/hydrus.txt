@@ -12,7 +12,7 @@ focus_tree = {
 	
 	
 	initial_show_position = {
-		focus = HYS_restore_infrastructure
+		focus = HYS_seek_arms_deal_orion
 	}
 	
 #	shared_focus = army_effort
@@ -324,67 +324,9 @@ focus_tree = {
 		}
 	}
 		
-		focus = {
-		id = HYS_subsidise_civ_industry
-		icon = GFX_focus_generic_modernize_industry
-		prerequisite = { focus = HYS_orion_industrial_might }
-#		prerequisite = { focus = HYS_ingram_industry }
-		prerequisite = { focus = HYS_kickstart_production }
-		relative_position_id = HYS_orion_industrial_might
-		x = -1
-		y = 1
-		cost = 5
 		
-		available = {
-		NOT = {
-			has_idea = URS_hydrus_trade_destruction
-			}
-		}
-
-        ai_will_do = {
-            factor = 5
-        }
 		
-		completion_reward = {
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 1
-				category = industry
-				}
-			}
-		}
-		
-		focus = {
-		id = HYS_subsidise_arms_industry
-		icon = GFX_focus_generic_military_industry
-		prerequisite = { focus = HYS_orion_industrial_might }
-		prerequisite = { focus = HYS_seek_arms_deal_orion }
-		relative_position_id = HYS_orion_industrial_might
-		x = 1
-		y = 1
-		cost = 5
-		
-		available = {
-		NOT = {
-			has_idea = URS_hydrus_trade_destruction
-			}
-		}
-
-        ai_will_do = {
-            factor = 5
-        }
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-				}
-			}
-		}
+	# ORION HELP !!!!
 		
 	focus = {
 		id = HYS_seek_orionite_help
@@ -488,6 +430,71 @@ focus_tree = {
 		custom_effect_tooltip = corvus_does_something_tooltip 
 			}
 		}
+		
+		focus = {
+		id = HYS_subsidise_civ_industry
+		icon = GFX_focus_generic_modernize_industry
+		prerequisite = { focus = HYS_orion_industrial_might }
+#		prerequisite = { focus = HYS_ingram_industry }
+		prerequisite = { focus = HYS_kickstart_production }
+		relative_position_id = HYS_orion_industrial_might
+		x = -1
+		y = 1
+		cost = 5
+		
+		available = {
+		NOT = {
+			has_idea = URS_hydrus_trade_destruction
+			}
+		}
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+				}
+			}
+		}
+		
+		focus = {
+		id = HYS_subsidise_arms_industry
+		icon = GFX_focus_generic_military_industry
+		prerequisite = { focus = HYS_orion_industrial_might }
+		prerequisite = { focus = HYS_seek_arms_deal_orion }
+		relative_position_id = HYS_orion_industrial_might
+		x = 1
+		y = 1
+		cost = 5
+		
+		available = {
+		NOT = {
+			has_idea = URS_hydrus_trade_destruction
+			}
+		}
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+				}
+			}
+		}
+		
+	
+	# REBEL!
 		
 		focus = {
 		id = HYS_supply_rebels_hydra
@@ -621,9 +628,9 @@ focus_tree = {
 		
 		completion_reward = {
 		custom_effect_tooltip = hydrus_sets_canis_rebellion
-		hidden_effect = {
+			hidden_effect = {
 		
-		}
+				}
 			}
 		}
 		
@@ -688,7 +695,7 @@ focus_tree = {
 	focus = {
 		id = HYS_unification_discussions
 		icon = GFX_
-		x = 30
+		x = 40
 		y = 0
 		cost = 5
 
@@ -714,11 +721,229 @@ focus_tree = {
 		}
 		
 		focus = {
-		id = HYS_unitary_state_negotiation
+		id = HYS_the_commonwealth_path
 		icon = GFX_
 		prerequisite = { focus = HYS_unification_discussions }
 		relative_position_id = HYS_unification_discussions
-		mutually_exclusive = { focus = HYS_the_commonwealth_path }
+		mutually_exclusive = { focus = HYS_unitary_state_negotiation }
+		x = -6
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_all_is_united_under_one_banner
+		icon = GFX_
+		prerequisite = { focus = HYS_the_commonwealth_path }
+		relative_position_id = HYS_the_commonwealth_path
+		x = 0
+		y = -1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_seek_cooperation
+		icon = GFX_
+		prerequisite = { focus = HYS_the_commonwealth_path }
+		relative_position_id = HYS_the_commonwealth_path
+		x = 0
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_north_hydra_economic_union
+		icon = GFX_
+		prerequisite = { focus = HYS_seek_cooperation }
+		relative_position_id = HYS_seek_cooperation
+		x = 0
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_commonwealth_army
+		icon = GFX_
+		prerequisite = { focus = HYS_the_commonwealth_path }
+		relative_position_id = HYS_the_commonwealth_path
+		x = -3
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_united_defence
+		icon = GFX_
+		prerequisite = { focus = HYS_commonwealth_army }
+		relative_position_id = HYS_commonwealth_army
+		x = -1
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_anti_air
+		icon = GFX_
+		prerequisite = { focus = HYS_commonwealth_army }
+		relative_position_id = HYS_commonwealth_army
+		x = 1
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		# ------------
+		
+		focus = {
+		id = HYS_building_canis_east
+		icon = GFX_
+		prerequisite = { focus = HYS_unitary_state_negotiation focus = HYS_the_commonwealth_path }
+		relative_position_id = HYS_unification_discussions
+		x = 0
+		y = 2
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_establish_canis_military_industry
+		icon = GFX_
+		prerequisite = { focus = HYS_building_canis_east }
+		relative_position_id = HYS_building_canis_east
+		x = -3
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_develop_canis_economy
+		icon = GFX_
+		prerequisite = { focus = HYS_building_canis_east }
+		relative_position_id = HYS_building_canis_east
+		x = 0
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_orion_helps_canis
+		icon = GFX_
+		prerequisite = { focus = HYS_building_canis_east }
+		relative_position_id = HYS_building_canis_east
+		x = 3
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_south_canis_infrastructure_project
+		icon = GFX_
+		prerequisite = { focus = HYS_orion_helps_canis }
+		relative_position_id = HYS_orion_helps_canis
+		x = -1
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = HYS_subsidised_canisian_oil
+		icon = GFX_
+		prerequisite = { focus = HYS_orion_helps_canis }
+		relative_position_id = HYS_orion_helps_canis
 		x = 1
 		y = 1
 		cost = 5
@@ -733,12 +958,12 @@ focus_tree = {
 		}
 		
 		focus = {
-		id = HYS_the_commonwealth_path
+		id = HYS_unitary_state_negotiation
 		icon = GFX_
 		prerequisite = { focus = HYS_unification_discussions }
 		relative_position_id = HYS_unification_discussions
-		mutually_exclusive = { focus = HYS_unitary_state_negotiation }
-		x = -1
+		mutually_exclusive = { focus = HYS_the_commonwealth_path }
+		x = 6
 		y = 1
 		cost = 5
 
@@ -750,4 +975,24 @@ focus_tree = {
 		custom_effect_tooltip = corvus_does_something_tooltip 
 			}
 		}
+		
+		focus = {
+		id = HYS_all_is_united_under_hydrus
+		icon = GFX_
+		prerequisite = { focus = HYS_unitary_state_negotiation }
+		relative_position_id = HYS_unitary_state_negotiation
+		x = 0
+		y = -1
+		cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		
 		

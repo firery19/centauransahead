@@ -19,7 +19,7 @@
  HYS_finnsberg_shipbuilders:0 "Finnsberg Shipbuilding Company"
  HYS_finnsberg_shipbuilders_desc:0 "
  HYS_ingram_industry:0 "Ingram Mining Corporation"
- HYS_ingram_industry_desc:0 "
+ HYS_ingram_industry_desc:0 "The Ingram Mountains hold an ambundance of resources. We will establish a company to exploit these resources"
 # HYS_functional_economy:0 "Functional Economy"
  HYS_functional_economy:0 "Functioning Local Economy"
  HYS_functional_economy_desc:0 "
@@ -50,6 +50,20 @@
  HYS_prepare_for_rebellion:0 "Prepare For War"
  HYS_prepare_for_rebellion_desc:0 "The rebels in Canis will not have an easy way out like us. Their geographical proximity means they will need to fight more fiercely than us to get independence. We should prepare for the inevitable."
  
+ HYS_unification_discussions:0 "Discussions Of Unification"
+ HYS_unification_discussions_desc:0 "
+ 
+ HYS_the_commonwealth_path:0 "Form a Commonwealth"
+ HYS_the_commonwealth_path_desc:0 "
+ 
+ HYS_all_is_united_under_one_banner:0 "Under One Banner"
+ HYS_all_is_united_under_one_banner_desc:0 "The three countries that exist within north Hydra; Hydrus, Lepus and Canis will unite into a commonwealth, the Hydrus Commonwealth."
+ 
+ HYS_unitary_state_negotiation:0 "Form a Unitary State "
+ HYS_unitary_state_negotiation_desc:0 "[Root.Capital.GetName]"
+ 
+ HYS_all_is_united_under_hydrus:0 "United As One"
+ HYS_all_is_united_under_hydrus_desc:0 "The concepts of Hydrus, Lepus and Canis will cease to exist. The three countries will unite into a single nation, the North Hydran States."
  # events
  
  hydrus.1:0 "Placeholder"
@@ -70,15 +84,13 @@
  hydrus.4.t:0 "Orion refuses"
  hydrus.4.d:0 "Why would they do this bruh"
  hydrus.4.a:0 "Cry about it"
- hydrus.4.b:0 "
  
  hydrus.5.t:0 "Organised Lepus resistance starts"
- hydrus.5.d:0 "
- hydrus.5.a:0 "
- hydrus.5.b:0 "
+ hydrus.5.d:0 "Lepus civilians seeing the success of Hydrus has started organised resistance within the territory."
+ hydrus.5.a:0 "Nonsense!"
  
  hydrus.6.t:0 "Riots in East Lepus"
- hydrus.6.d:0 "
+ hydrus.6.d:0 "Riots are happening in East Lepus! What should we do?"
  hydrus.6.a:0 "Beatdown!"
  hydrus.6.b:0 "Calm the riots"
  hydrus.6.c:0 "Do nothing"
@@ -125,6 +137,7 @@
  industrial_heartland:0 "Industrial Heartland"
  industrialized_metropolis:0 "Industrialized Metropolis"
  industrialized_megalopolis:0 "Industrialized Megalopolis" # why are they here you ask? because i didnt know where else
+ HYD_canis_war:0 "Debug Tab"
  # Progress to revolution: [?lepus_crack_counter|Y0]/50\n\n Progress to uprising: [?testing_variable|Y0]/100
  
  # lepus revolution
@@ -156,6 +169,9 @@
  lepus_medium_unrest:0 "§OSome Unrest§!"
  lepus_high_unrest:0 "§RHigh Unrest§!"
  lepus_imminent_rebellion:0 "§0Imminent Rebellion§!"
+ lepus_can_rebellion_require_tt:0 "Has unrest "§0Imminent Rebellion§!""
+ hys_kick_the_lepus_rebellion:0 "Force the Lepus Rebellion"
+ hys_kick_the_lepus_rebellion_desc:0 "The people of Lepus will not stand for any further actions from the Ursan military."
  
  # canis uprising
  HYS_canis_uprising:0 "Canis Rebellion"

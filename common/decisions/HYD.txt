@@ -463,6 +463,12 @@ HYS_lepus_revolution = {
 		
 		visible = {
 			OR = {
+			check_variable = {
+				var = lepus_revolution_counter
+				value = 25
+				compare = greater_than_or_equals
+				tooltip = lepus_can_revolution_require_tt
+				}
 			has_completed_focus = HYS_control_the_lepus_resistance
 			is_debug = yes
 			}
@@ -518,7 +524,7 @@ HYS_lepus_revolution = {
 			HYS = {
 			check_variable = {
 				var = lepus_anger_counter
-				value = 15
+				value = 10
 				compare = greater_than_or_equals
 				tooltip = lepus_can_rebellion_require_tt
 				}
@@ -578,6 +584,7 @@ HYS_lepus_revolution = {
 		
 		visible = {
 			OR = {
+			has_completed_focus = HYS_control_the_lepus_resistance
 			is_debug = yes
 			}
 		}
@@ -680,6 +687,7 @@ HYS_lepus_revolution = {
 		
 		visible = {
 			OR = {
+			has_completed_focus = HYS_control_the_lepus_resistance
 			is_debug = yes
 			}
 		}
@@ -773,6 +781,7 @@ HYS_lepus_revolution = {
 		
 		visible = {
 			OR = {
+			has_completed_focus = HYS_lepus_rebellion
 			is_debug = yes
 			}
 		}
@@ -817,6 +826,7 @@ HYS_lepus_revolution = {
 		visible = {
 			OR = {
 			is_debug = yes
+			has_completed_focus = HYS_lepus_rebellion
 			}
 		}
 		

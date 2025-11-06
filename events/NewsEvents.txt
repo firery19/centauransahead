@@ -65,10 +65,6 @@ news_event = { # end of grease wars
 	
 	major = yes
 	
-	trigger = {
-		NOT = { has_global_flag = grease_war_end }
-	}
-	
 	is_triggered_only = yes
 	
 	immediate = {
@@ -104,6 +100,59 @@ news_event = { # end of grease wars
 	}
 	option = {
 		name = news.2.c
+		trigger = { TAG = URS }
+	}
+}
+
+news_event = { # formation of the d.c
+	id = news.3
+	title = news.3.t
+	desc = news.3.d
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+#	trigger = {
+#		ORI = {
+#		is_in_faction = yes
+#		}
+#	}
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = formed_dragon_compact_flag
+	}
+	
+#	mean_time_to_happen = {
+#		days = 2
+#	}
+	
+	option = {
+		name = news.3.a
+		trigger = {
+			NOT = {
+				TAG = ORI
+				TAG = HYS
+				TAG = LPS
+				TAG = CNS
+				TAG = URS
+			}
+		}
+	}
+	option = {
+		name = news.3.b
+		trigger = {
+		OR = {
+			TAG = ORI 
+			TAG = HYS
+			TAG = LPS
+			TAG = CNS
+			}
+		}
+	}
+	option = {
+		name = news.3.c
 		trigger = { TAG = URS }
 	}
 }

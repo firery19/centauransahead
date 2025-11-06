@@ -83,6 +83,10 @@ focus_tree = {
 					country_event = { 
 						id = orion.1  days = 1 }
 				}
+				news_event = {
+				id = news.3
+				days = 2
+				}
 			}
         }
         ai_will_do = {
@@ -236,31 +240,6 @@ focus_tree = {
     }
 	
 	focus = {
-        id = ORS_EndOfWar
-        icon = GFX_focus_generic_treaty
-        x = 12
-        y = 6
-        cost = 5
-		available = {
-		
-			}
-
-		
-        prerequisite = {
-		
-        }
-        completion_reward = {
-			URS = {
-				country_event = {id = orion.2 days = 1}
-			}
-		}
-        ai_will_do = {
-            factor = 5
-        }
-    }
-	
-	
-	focus = {
         id = ORS_TheUrsanQuestion
         icon = GFX_goal_unknown
         x = 10
@@ -273,7 +252,12 @@ focus_tree = {
             focus = ORS_EndOfWar
         }
         completion_reward = {
-		remove_ideas = {ORS_PrepareMilitaryIdea ORS_RallyPeopleIdea ORS_LessonsOfWar ORS_PromiseBusinessesIdea }
+		remove_ideas = { 
+			ORS_PrepareMilitaryIdea
+			ORS_RallyPeopleIdea
+			ORS_LessonsOfWar
+			ORS_PromiseBusinessesIdea
+			}
 		}
         ai_will_do = {
             factor = 5
@@ -302,88 +286,6 @@ focus_tree = {
         }
     }
 	
-	focus = {
-			id = ORS_ClampDownOnResistence
-			icon = GFX_focus_BRA_end_the_state_of_emergency
-			x = 9
-			y = 9
-			cost = 5
-			available = {			
-			}
-		
-			prerequisite = {
-				focus = ORS_SpoilsOfWar
-			}
-			completion_reward = {
-
-			add_manpower  = -50000
-		
-			add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = -5000
-				}
-			}
-			ai_will_do = {
-				factor = 5
-			}
-		}
-		
-		focus = {
-			id = ORS_ConfiscateLand
-			icon = GFX_focus_LAT_suspend_constitution_of_latvia
-			x = 9
-			y = 10
-			cost = 5
-			available = {}
-		
-			prerequisite = {
-				focus = ORS_ClampDownOnResistence
-			}
-			completion_reward = {
-			114 = {add_extra_state_shared_building_slots = 3}
-			}
-			ai_will_do = {
-				factor = 5
-			}
-		}
-		
-		focus = {
-			id = ORS_DeportUrsans
-			icon = GFX_focus_FIN_parmis_devils
-			x = 6
-			y = 9
-			cost = 5
-			available = {			
-				}
-		
-			prerequisite = {
-				focus = ORS_SpoilsOfWar
-			}
-			completion_reward = {
-		
-			}
-			ai_will_do = {
-				factor = 5
-			}
-		}
-		
-		focus = {
-			id = ORS_ImproveInfrastructure
-			icon = GFX_goal_generic_construct_infrastructure
-			x = 6
-			y = 11
-			cost = 5
-			available = {			
-			}
-		
-			prerequisite = {focus = ORS_InvestInRubberFactories}
-			prerequisite = {focus = ORS_ConfiscateLand}
-			completion_reward = {
-			}
-			ai_will_do = {
-				factor = 5
-			}
-		}
 		
 		focus = {
         id = ORI_canis_department

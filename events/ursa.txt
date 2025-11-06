@@ -129,11 +129,19 @@ country_event = {
 	
 	option = {
 		name = urs.6.a
-		add_stability = -0.05
-		add_popularity = {
-			ideology = ROOT
-			popularity = -0.05
+		add_stability = -0.01
+		random_owned_state = {
+			limit = {
+				has_resistance = yes
+				is_owned_by = ROOT
+				is_core_of = LPS
+			}
+			add_resistance = 10
 		}
+#		add_popularity = {
+#			ideology = ROOT
+#			popularity = -0.05
+#		}
 	}
 }
 country_event = {
@@ -226,8 +234,7 @@ country_event = {
 	
 	option = {
 		name = urs.9.a
-		add_war_support = -0.05
-		add_manpower = -2500
+		add_manpower = -1000
 		send_equipment = {
 			equipment = infantry_equipment
 			amount = 200

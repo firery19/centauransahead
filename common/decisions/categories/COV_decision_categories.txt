@@ -38,7 +38,7 @@ COV_wartime_administration_war = {
 		}
 	}
 	visible = {
-		has_completed_focus = COV_initial_offensive
+		has_completed_focus = COV_wartime_administration
 	}
 }
 

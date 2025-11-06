@@ -155,6 +155,7 @@ country_event = { # repurposed for new focus tree
 		132 = { add_compliance = -5 }
 		134 = { add_compliance = -5 }
 		182 = { add_compliance = -5 }
+		hidden_effect = {
 		HYS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -169,6 +170,7 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_1_to_anger_tt
 				}
 			}
+		}
 		URS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -195,6 +197,7 @@ country_event = { # repurposed for new focus tree
 		132 = { add_resistance = 10 }
 		134 = { add_resistance = 5 }
 		182 = { add_resistance = 5 }
+		hidden_effect = {
 		HYS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -202,6 +205,7 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_2_to_revolution_tt
 				}
 			}
+		}
 		URS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -217,6 +221,7 @@ country_event = { # repurposed for new focus tree
 		132 = { add_resistance = 20 }
 		134 = { add_resistance = 20 }
 		182 = { add_resistance = 20 }
+		hidden_effect = {
 		HYS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -224,6 +229,7 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_3_to_revolution_tt
 				}
 			}
+		}
 		URS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -256,6 +262,7 @@ country_event = { # repurposed for new focus tree
 				}
 		131 = { add_resistance = -5 }
 		131 = { add_compliance = -5 }
+		hidden_effect = {
 		HYS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -270,6 +277,7 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_1_to_anger_tt
 				}
 			}
+		}
 		URS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -294,6 +302,7 @@ country_event = { # repurposed for new focus tree
 		name = hydrus.7.b # calm the riots
 		add_political_power = -25
 		131 = { add_resistance = 10 }
+		hidden_effect = {
 		HYS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -301,6 +310,7 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_2_to_revolution_tt
 				}
 			}
+		}
 		URS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -313,6 +323,7 @@ country_event = { # repurposed for new focus tree
 	option = {
 		name = hydrus.7.c
 		131 = { add_resistance = 20 }
+		hidden_effect = {
 		HYS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -320,6 +331,7 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_3_to_revolution_tt
 				}
 			}
+		}
 		URS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -353,6 +365,7 @@ country_event = { # repurposed for new focus tree
 		add_political_power = -100
 		133 = { add_resistance = -5 }
 		133 = { add_compliance = -5 }
+		hidden_effect = {
 		HYS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -367,6 +380,7 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_1_to_anger_tt
 				}
 			}
+		}
 		URS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -391,6 +405,7 @@ country_event = { # repurposed for new focus tree
 		name = hydrus.8.b # calm the riots
 		add_political_power = -25
 		133 = { add_resistance = 10 }
+		hidden_effect = {
 		HYS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -398,6 +413,7 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_2_to_revolution_tt
 				}
 			}
+		}
 		URS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -410,6 +426,7 @@ country_event = { # repurposed for new focus tree
 	option = {
 		name = hydrus.8.c
 		133 = { add_resistance = 20 }
+		hidden_effect = {
 		HYS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -417,6 +434,7 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_3_to_revolution_tt
 				}
 			}
+		}
 		URS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -449,6 +467,7 @@ country_event = { # repurposed for new focus tree
 				}
 		130 = { add_resistance = -5 }
 		130 = { add_compliance = -5 }
+		hidden_effect = {
 		HYS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -463,6 +482,7 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_1_to_anger_tt
 				}
 			}
+		}
 		URS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -487,6 +507,7 @@ country_event = { # repurposed for new focus tree
 		name = hydrus.9.b # calm the riots
 		add_political_power = -25
 		130 = { add_resistance = 10 }
+		hidden_effect = {
 		HYS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -494,6 +515,7 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_2_to_revolution_tt
 				}
 			}
+		}
 		URS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -506,6 +528,7 @@ country_event = { # repurposed for new focus tree
 	option = {
 		name = hydrus.9.c
 		130 = { add_resistance = 20 }
+		hidden_effect = {
 		HYS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -513,6 +536,7 @@ country_event = { # repurposed for new focus tree
 				tooltip = add_3_to_revolution_tt
 				}
 			}
+		}
 		URS = {
 			add_to_variable = {
 				var = lepus_revolution_counter
@@ -523,6 +547,312 @@ country_event = { # repurposed for new focus tree
 		add_days_mission_timeout = {
 				mission = URS_lepus_spawns_timer
 				days = -30
+			}
+		}
+	}
+	
+	country_event = { # rebellion imminent for ursa
+	id = hydrus.10
+	title = hydrus.10.t 
+	desc = hydrus.10.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.10.a
+		custom_effect_tooltip = 7days_torebellion
+		}
+	}
+	
+	country_event = { # garrison attacked
+	id = hydrus.11
+	title = hydrus.11.t 
+	desc = hydrus.11.d
+	picture = GFX_report_event_DEN_resistance
+	
+	is_triggered_only = yes
+	
+	option = { # reinforce
+		name = hydrus.11.a
+		LPS = {
+			random_core_state = {
+			add_compliance = -10
+			}
+		}
+		add_manpower = -250
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 200
+			target = HYS
+		}
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+	
+	option = { # reprisal
+		name = hydrus.11.b
+		LPS = {
+			random_core_state = {
+			add_resistance = 15
+			}
+		}
+			
+		add_manpower = -500
+		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = -100
+                producer = URS
+				}
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 2
+				tooltip = add_2_to_anger_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 2
+				tooltip = add_2_to_anger_tt
+				}
+			}
+		}
+	
+	option = { # nothing
+		name = hydrus.11.c
+		LPS = {
+			random_core_state = {
+			add_resistance = 10
+			add_compliance = -10
+			}
+		}
+		add_manpower = -1000
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 250
+			target = HYS
+		}
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+	}
+	
+	country_event = { # buildings attacked
+	id = hydrus.12
+	title = hydrus.12.t 
+	desc = hydrus.12.d
+	picture = GFX_report_event_SWE_pajala_bombed_building
+	
+	is_triggered_only = yes
+	
+	option = { # reprisal
+		name = hydrus.12.a
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 2
+				tooltip = add_2_to_anger_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 2
+				tooltip = add_2_to_anger_tt
+				}
+			}
+		}
+	
+	option = { # improve security
+		name = hydrus.12.b
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+	
+	option = { # do nothing
+		name = hydrus.12.c
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+	}
+	
+	country_event = { # newspaper
+	id = hydrus.13
+	title = hydrus.13.t 
+	desc = hydrus.13.d
+	picture = GFX_report_event_french_resistance_02
+	
+	is_triggered_only = yes
+	
+	option = { # destroy the newspapers
+		name = hydrus.13.a
+		add_political_power = -50
+		
+		}
+	
+	option = { # do nothing
+		name = hydrus.13.b
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
 			}
 		}
 	}

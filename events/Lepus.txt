@@ -105,3 +105,108 @@ country_event = {
 	}
 }
 	
+country_event = {
+	id = lps.3
+	title = lps.3.t
+	desc = lps.3.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lps.3.a
+		hidden_effect = {
+		load_oob = LPS_1900
+		}
+		131 = {
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+			}
+			
+			132 = {
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+			}
+			133 = {
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+			}
+			if = {
+				limit = {
+				LPS = { owns_state = 130 }
+				}
+				130 = {
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+				create_unit = {
+					division = "name = \"Minutemen Militia\" division_template = \"Militia Division\" start_experience_factor = 0 start_equipment_factor = 0.5"
+					owner = LPS
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = lps.4
+	title = lps.4.t
+	desc = lps.4.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lps.4.a
+		
+	}
+}
+
+country_event = {
+	id = lps.5
+	title = lps.5.t
+	desc = lps.5.d
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lps.5.a
+	
+	}
+}

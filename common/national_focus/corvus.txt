@@ -561,7 +561,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip
+		unlock_decision_category_tooltip = COV_wartime_administration_war
 			}
 		}
 		
@@ -580,7 +580,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		unlock_decision_tooltip = corvus_coal_production
 			}
 		}
 		
@@ -599,7 +599,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip
+		unlock_decision_tooltip = corvus_warbonds
 			}
 		}
 		
@@ -618,7 +618,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip
+		unlock_decision_tooltip = corvus_subsidies
 			}
 		}
 		
@@ -637,7 +637,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip
+		unlock_decision_category_tooltip = COV_dysfunctional_economy_idk
 			}
 		}
 		
@@ -657,7 +657,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip
+		unlock_decision_tooltip = corvus_rationing_on
+		unlock_decision_tooltip = corvus_rationing_off
 			}
 		}
 		
@@ -672,32 +673,9 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-		if = {
-			limit = {
-			has_idea = COV_mafia_cooperation_idea
-			}
 			swap_ideas = {
-				add_idea = COV_mafia_cooperation_2_idea
-				remove_idea = COV_mafia_cooperation_idea
-				}
-			}
-			else_if = {
-				limit = {
-				has_idea = COV_mafia_cooperation_2_idea
-				}
-				swap_ideas = {
-					add_idea = COV_mafia_disbanded_idea
-					remove_idea = COV_mafia_cooperation_2_idea
-					}
-				}
-				else_if = {
-				limit = {
-				has_idea = COV_mafia_rampant_idea
-				}
-				swap_ideas = {
-					add_idea = COV_mafia_cooperation_idea
-					remove_idea = COV_mafia_rampant_idea
-					}
+				add_idea = COV_mafia_cooperation_idea
+				remove_idea = COV_mafia_rampant_idea
 				}
 			}
 		}
@@ -714,13 +692,21 @@ focus_tree = {
 
 		completion_reward = {
 		set_country_flag = corvus_mafia_food_cooperation
-		if = {
-			limit = {
-				has_idea = COV_active_rationing_idea
-				}
-				swap_ideas = {
-					remove_idea = COV_active_rationing_idea
-					add_idea = COV_active_rationing_2_idea
+		effect_tooltip = {
+		swap_ideas = {
+			remove_idea = COV_active_rationing_idea
+			add_idea = COV_active_rationing_2_idea
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = COV_active_rationing_idea
+					}
+					swap_ideas = {
+						remove_idea = COV_active_rationing_idea
+						add_idea = COV_active_rationing_2_idea
+						}
 					}
 				}
 			}
@@ -835,7 +821,8 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip
+		unlock_decision_tooltip = corvus_martial_law_on
+		unlock_decision_tooltip = corvus_martial_law_off
 			}
 		}
 		
@@ -849,7 +836,7 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip
+		unlock_decision_tooltip = corvus_shut_down_market
 			}
 		}
 		

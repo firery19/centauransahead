@@ -750,7 +750,7 @@ focus_tree = {
         cost = 5
 
         completion_reward = {
-		add_manpower = 12
+		custom_effect_tooltip = filler_focus_tt
         }
 		ai_will_do = {
 		factor = 0
@@ -769,7 +769,7 @@ focus_tree = {
         cost = 5
 
         completion_reward = {
-		add_manpower = 12
+		custom_effect_tooltip = filler_focus_tt
         }
     }
 	
@@ -1298,7 +1298,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		add_manpower = 12
+		custom_effect_tooltip = filler_focus_tt
         }
     }
 	
@@ -1365,7 +1365,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		add_manpower = 12
+		custom_effect_tooltip = filler_focus_tt
         }
     }
 	
@@ -1402,7 +1402,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		add_manpower = 12
+		custom_effect_tooltip = filler_focus_tt
         }
     }
 	
@@ -1418,7 +1418,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		add_manpower = 12
+		custom_effect_tooltip = filler_focus_tt
 		}
 	}
 	
@@ -1434,7 +1434,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		add_manpower = 12
+		custom_effect_tooltip = filler_focus_tt
 		}
 	}
 	
@@ -1451,7 +1451,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		add_manpower = 12
+		custom_effect_tooltip = filler_focus_tt
 		}
 	}
 	
@@ -1467,7 +1467,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		add_manpower = 12
+		custom_effect_tooltip = filler_focus_tt
 		}
 	}
 	
@@ -1483,7 +1483,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		add_manpower = 12
+		custom_effect_tooltip = filler_focus_tt
 		}
 	}
 	
@@ -1501,7 +1501,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		add_manpower = 12
+		custom_effect_tooltip = filler_focus_tt
 		}
 	}
 	
@@ -1542,7 +1542,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		add_manpower = 12
+		custom_effect_tooltip = filler_focus_tt
         }
     }
 	
@@ -1558,7 +1558,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		add_manpower = 12
+		custom_effect_tooltip = filler_focus_tt
         }
     }
 	
@@ -1622,7 +1622,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		custom_effect_tooltip = filler_focus_tt
         }
     }
 	
@@ -1736,7 +1736,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		add_manpower = 12
+		custom_effect_tooltip = filler_focus_tt
         }
     }
 	
@@ -2090,7 +2090,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-			custom_effect_tooltip = corvus_does_nothing_tooltip
+			custom_effect_tooltip = filler_focus_tt
 		}
 	}
 	
@@ -2229,7 +2229,7 @@ focus_tree = {
 		}
 		
         completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		custom_effect_tooltip = filler_focus_tt
         }
     }
 	
@@ -2250,7 +2250,7 @@ focus_tree = {
         cost = 5
 		
         completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		custom_effect_tooltip = filler_focus_tt
         }
     }
 	
@@ -2609,7 +2609,7 @@ focus_tree = {
         cost = 1
 		
         completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		custom_effect_tooltip = filler_focus_tt
         }
     }
 	
@@ -2876,7 +2876,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		custom_effect_tooltip = filler_focus_tt
         }
     }
 	
@@ -3232,7 +3232,7 @@ focus_tree = {
         cost = 1
 
         completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		custom_effect_tooltip = filler_focus_tt
         }
     }
 	
@@ -3267,7 +3267,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		custom_effect_tooltip = filler_focus_tt
         }
     }
 	
@@ -3284,7 +3284,7 @@ focus_tree = {
         cost = 1
 
         completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		custom_effect_tooltip = filler_focus_tt
         }
     }
 	
@@ -3320,7 +3320,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		custom_effect_tooltip = filler_focus_tt
         }
     }
 	
@@ -3337,7 +3337,7 @@ focus_tree = {
         cost = 1
 
         completion_reward = {
-		custom_effect_tooltip = corvus_does_nothing_tooltip
+		custom_effect_tooltip = filler_focus_tt
         }
     }
 	

@@ -8,9 +8,9 @@ on_actions = {
 						original_tag = CET
 					}
 				}
-				complete_national_focus = COV_initial_offensive
-				COV = { country_event = co
-				activate_decision = COV_dysfunctional_economy_idk
+				#complete_national_focus = COV_initial_offensive
+				COV = { country_event = cov.1 }
+				activate_mission = corvus_failing_economy_d
 				#CET = { set_country_flag = cov_attack_cetus_first }
 			}
 		}

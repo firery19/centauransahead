@@ -39,7 +39,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		
 			}
 		}
 	
@@ -117,29 +117,34 @@ focus_tree = {
 			}
 		}
 		
-		focus = {
-		id = HYS_kickstart_production
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = HYS_rally_workers }
-		relative_position_id = HYS_rally_workers
-		x = 0
-		y = 1
-		cost = 5
-
-        ai_will_do = {
-            factor = 5
-        }
-		
-		completion_reward = {
-
-			}
-		}
+#		focus = {
+#		id = HYS_kickstart_production
+#		icon = GFX_goal_generic_construction
+#		prerequisite = { focus = HYS_rally_workers }
+#		relative_position_id = HYS_rally_workers
+#		x = 0
+#		y = 1
+#		cost = 5
+#
+   #     ai_will_do = {
+  #          factor = 5
+ #       }
+#		
+#		completion_reward = {
+#		add_timed_idea = {
+#			idea = HYS_temporary_boost_idea
+#			days = 90
+#				}
+#			}
+#		}
 		
 		focus = {
 		id = HYS_exploitation_resources
 		icon = GFX_focus_generic_resource_extraction
-		prerequisite = { focus = HYS_kickstart_production }
-		relative_position_id = HYS_kickstart_production
+		prerequisite = { focus = HYS_rally_workers }
+		relative_position_id = HYS_rally_workers
+#		prerequisite = { focus = HYS_kickstart_production }
+#		relative_position_id = HYS_kickstart_production
 		x = -1
 		y = 3
 		cost = 5
@@ -149,13 +154,18 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		117 = {
+			add_resource = {
+				type = aluminium 
+				amount = 10
+					}
+				}
 			}
 		}
 		
 		focus = {
 		id = HYS_offshore_oil_drilling
-		icon = GFX_focus_generic_mining_industry
+		icon = GFX_focus_generic_offshore_oil_rig
 		prerequisite = { focus = HYS_exploitation_resources }
 		prerequisite = { focus = HYS_finnsberg_shipbuilders	}
 		relative_position_id = HYS_exploitation_resources
@@ -168,7 +178,12 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		126 = {
+			add_resource = {
+				type = oil 
+				amount = 10
+					}
+				}
 			}
 		}
 		
@@ -187,15 +202,21 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		
+		173 = {
+			add_resource = {
+				type = steel 
+				amount = 10
+					}
+				}
 			}
 		}
 		
 		focus = {
 		id = HYS_establish_local_industries
 		icon = GFX_focus_AFG_a_modern_economy
-		prerequisite = { focus = HYS_kickstart_production }
-		relative_position_id = HYS_kickstart_production
+		prerequisite = { focus = HYS_rally_workers }
+		relative_position_id = HYS_rally_workers
 		x = 0
 		y = 1
 		cost = 10
@@ -205,7 +226,10 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		add_timed_idea = {
+		idea = HYS_newly_established_factories_idea
+		days = 90
+		}
 			}
 		}
 		focus = {
@@ -287,8 +311,8 @@ focus_tree = {
 		focus = {
 		id = HYS_restore_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = HYS_kickstart_production }
-		relative_position_id = HYS_kickstart_production
+		prerequisite = { focus = HYS_rally_workers }
+		relative_position_id = HYS_rally_workers
 #		x = 2
 		x = -2
 		y = 1
@@ -427,7 +451,32 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
+			}
+		}
+		
+		focus = {
+		id = HYS_aid_future_nations
+		icon = GFX_focus_BEL_paul_emile_janson
+		prerequisite = { focus = HYS_orion_industrial_might }
+		relative_position_id = HYS_orion_industrial_might
+		x = 0
+		y = 1
+		cost = 5
+		
+		available = {
+		NOT = {
+			has_idea = URS_hydrus_trade_destruction
+			}
+		}
+
+        ai_will_do = {
+            factor = 5
+        }
+		
+		completion_reward = {
+			custom_effect_tooltip = independence_builder_orion
+			set_global_flag = independence_building_factories
 			}
 		}
 		
@@ -435,11 +484,12 @@ focus_tree = {
 		id = HYS_subsidise_civ_industry
 		icon = GFX_focus_generic_modernize_industry
 		prerequisite = { focus = HYS_orion_industrial_might }
+		prerequisite = { focus = HYS_establish_local_industries }
 #		prerequisite = { focus = HYS_ingram_industry }
-		prerequisite = { focus = HYS_kickstart_production }
+#		prerequisite = { focus = HYS_kickstart_production }
 		relative_position_id = HYS_orion_industrial_might
 		x = -1
-		y = 1
+		y =2
 		cost = 5
 		
 		available = {
@@ -469,7 +519,7 @@ focus_tree = {
 		prerequisite = { focus = HYS_seek_arms_deal_orion }
 		relative_position_id = HYS_orion_industrial_might
 		x = 1
-		y = 1
+		y = 2
 		cost = 5
 		
 		available = {
@@ -505,11 +555,11 @@ focus_tree = {
 		cost = 5
 
         ai_will_do = {
-            factor = 15
+            factor = 200
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -527,7 +577,8 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		unlock_decision_category_tooltip = HYS_canis_uprising
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -571,7 +622,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -590,7 +641,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -609,7 +660,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -644,30 +695,30 @@ focus_tree = {
 		cost = 1
 
         ai_will_do = {
-            factor = 0
+            factor = 200
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		unlock_decision_category_tooltip = HYS_lepus_revolution
 			}
 		}
 		
 		focus = {
-		id = HYS_covert_intervention
+		id = HYS_lepus_rebellion
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = HYS_lepus_frontier }
 		relative_position_id = HYS_lepus_frontier
 		mutually_exclusive = { focus = HYS_control_the_lepus_resistance }
-		x = -1
+		x = 1
 		y = 1
-		cost = 5
+		cost = 1
 
         ai_will_do = {
-            factor = 5
+            factor = 0
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = rebel_hydrus_tt
 			}
 		}
 		
@@ -676,21 +727,78 @@ focus_tree = {
 		icon = GFX_
 		prerequisite = { focus = HYS_lepus_frontier }
 		relative_position_id = HYS_lepus_frontier
-		mutually_exclusive = { focus = HYS_covert_intervention }
-		x = 1
+		mutually_exclusive = { focus = HYS_lepus_rebellion }
+		x = -1
 		y = 1
-		cost = 5
+		cost = 1
 
         ai_will_do = {
-            factor = 5
+            factor = 200
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = revolve_hydrus_tt 
 			}
 		}
 		
+		focus = {
+		id = HYS_confirm_lepus_independence
+		icon = GFX_
+		prerequisite = { focus = HYS_control_the_lepus_resistance focus = HYS_lepus_rebellion }
+		relative_position_id = HYS_control_the_lepus_resistance
+		x = 1
+		y = 1
+		cost = 1
 		
+		available = {
+		country_exists = LPS
+		NOT = {
+			LPS = {
+				has_war_with = URS
+				}
+			}
+		LPS = {
+			has_full_control_of_state = 130
+			has_full_control_of_state = 131
+			has_full_control_of_state = 132
+			has_full_control_of_state = 133
+			}
+		}
+		
+        ai_will_do = {
+            factor = 200
+        }
+		
+		completion_reward = {
+		custom_effect_tooltip = revolve_hydrus_tt 
+			}
+		}
+		
+		focus = {
+		id = HYS_dragon_compact
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = HYS_confirm_lepus_independence }
+		relative_position_id = HYS_confirm_lepus_independence
+		x = -2
+		y = 1
+		cost = 1
+
+        ai_will_do = {
+            factor = 100
+        }
+		
+		completion_reward = {
+			custom_effect_tooltip = rebel_hydrus_tt
+			hidden_effect = {
+				news_event = {
+					id = news.3
+					days = 2
+					}
+				}
+			}
+		}
+		
+	################################################# UNIFY! UNIFY!
 		
 	focus = {
 		id = HYS_unification_discussions
@@ -716,7 +824,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -735,7 +843,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -753,7 +861,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -771,7 +879,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -789,7 +897,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -807,7 +915,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -825,7 +933,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -843,7 +951,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -863,7 +971,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -881,7 +989,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -899,7 +1007,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -917,7 +1025,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -935,7 +1043,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -953,7 +1061,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -972,7 +1080,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		
@@ -990,7 +1098,7 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
+		custom_effect_tooltip = filler_focus_tt 
 			}
 		}
 		

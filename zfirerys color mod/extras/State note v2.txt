@@ -148,7 +148,7 @@ Initial States, In numerical order
 	- 91 South Island chain 
 	- 92 South Island collections 
 	- 93 South Island collections (big) 
-	- 94 Southernmost Islands 
+	- 94 Southernmost Islands ( South Andromeda Islands, lost to Cetus )
 	- 95 Southwestern Islands 
 	- 96 Southeastern Islands 
 	- 97 East Norma

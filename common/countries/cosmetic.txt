@@ -2,3 +2,20 @@ ANTRED = {
 	color = rgb { 170 10 20 }
 	color_ui  = rgb { 170 10 20 }
 }
+
+
+
+LEH = { # Lepus-Hydrus
+	color = rgb { 237 177 165 }
+	color_ui  = rgb { 207 147 135 }
+}
+
+CEH = { # Canis-Hydrus
+	color = rgb { 237 177 165 }
+	color_ui  = rgb { 207 147 135 }
+}
+
+HYH = { # Hydrus-State
+	color = rgb { 237 177 165 }
+	color_ui  = rgb { 207 147 135 }
+}

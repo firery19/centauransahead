@@ -3,6 +3,9 @@ capital = 2
 oob = "HYS_1900"
 add_ideas = {
 	trench_warfare_idea
+	HYS_recently_independent_idea
+	HYS_inexperienced_industry_idea
+	HYS_new_army_idea
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -40,7 +43,7 @@ set_technology = {
 	tech_engineers = 1
 	gw_artillery = 1
 	basic_train = 1
-	# a
+	tech_trucks = 1
 	# b
 	# c
 	# d
@@ -55,24 +58,26 @@ set_research_slots = 3
 
 set_stability = 0.5
 
-set_war_support = 0.75
+set_war_support = 0.5
 
 add_political_power = 1
 
 set_convoys = 25
 
 set_popularities = {
-	democratic = 78
+	democratic = 22
 	communism = 0
 	fascism = 0
-	neutrality = 22
+	neutrality = 78
 }
 
+recruit_character = HYS_parliament_building
+
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1900.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 if = {
@@ -94,3 +99,4 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
+}

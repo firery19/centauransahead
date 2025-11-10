@@ -3,14 +3,18 @@ URS_preGreaseWars_Decisions = {
 		icon = GFX_decision_revolt
 		visible = {
 			tag = URS
-			has_country_flag = grease_wars_not_started
+			OR = {
+				has_country_flag = grease_wars_not_started
+				NOT = { has_country_flag = URS_flag_lepus_pacified }
+			}
+			NOT = { country_exists = LPS }
 		}
 		available = {
-			always = no
+			country_exists = LPS
 		}
 		selectable_mission = no
 		is_good = no
-		days_mission_timeout = 450
+		days_mission_timeout = 365
 		fire_only_once = yes
 
 		ai_will_do = { factor = 100 }
@@ -24,144 +28,399 @@ URS_preGreaseWars_Decisions = {
 		}
 
 		remove_effect = {
-			activate_mission = URS_randomterrorism_timer_lps
 		}
 	}
-	URS_randomterrorism_timer_lps = {
-		icon = GFX_decision_revolt
+	
+	URS_lepus_pacification_timer = {
+		icon = aaa
 		visible = {
 			tag = URS
-			has_country_flag = grease_wars_not_started
-		}
-
-		cancel_trigger = {
-			NOT = {
-				owns_state = 131
+			OR = {
+				has_country_flag = grease_wars_not_started
+				NOT = { has_country_flag = URS_flag_lepus_pacified }
 			}
+			NOT = { country_exists = LPS }
 		}
-		selectable_mission = yes
-		custom_cost_text = cp_10_cost
-		custom_cost_trigger = {
-			command_power > 9.99
+		available = {
+			country_exists = LPS
 		}
-		is_good = no
-		days_mission_timeout = 30
-		days_remove = URS_randomterrorism_timer_lps_days?0
-		#fire_only_once = no
+		selectable_mission = no
+		is_good = yes
+		days_mission_timeout = 750
+		fire_only_once = yes
 
 		ai_will_do = { factor = 100 }
 
 		timeout_effect = {
-			activate_mission = URS_randomterrorism_timer_lps
-			random_list = {
-				15 = {
-					country_event = urs.5
-				}
-				15 = {
-					country_event = urs.8
-				}
-				20 = {
-					country_event = urs.9
-				}
-				25 = {
-					country_event = urs.6
-				}
-				25 = {
-					country_event = urs.7
-				}
-			}
 		}
 
 		complete_effect = {
-			add_command_power = -10
-			hidden_effect = {
-				set_variable = { URS_randomterrorism_timer_lps_days = days_mission_timeout@URS_randomterrorism_timer_lps }
-			}
+			set_country_flag = URS_flag_lepus_pacified
 		}
 
 		remove_effect = {
-			activate_mission = URS_randomterrorism_timer_lps
 		}
 	}
-	URS_randomterrorism_timer_cns = {
-		icon = GFX_decision_revolt
-		visible = {
+	
+	URS_bread_and_circuses_decision = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
 			tag = URS
-			has_country_flag = grease_wars_not_started
 		}
 
-		cancel_trigger = {
-			NOT = {
-				owns_state = 117
-			}
-		}
-		selectable_mission = yes
-		custom_cost_text = cp_10_cost
-		custom_cost_trigger = {
-			command_power > 9.99
-		}
-		is_good = no
-		days_mission_timeout = 60
-		days_remove = URS_randomterrorism_timer_cns_days?0
-		#fire_only_once = no
-
-		ai_will_do = { factor = 100 }
-
-		timeout_effect = {
-			activate_mission = URS_randomterrorism_timer_cns
-			random_list = {
-				15 = {
-					country_event = urs.5
-				}
-				15 = {
-					country_event = urs.8
-				}
-				20 = {
-					country_event = urs.9
-				}
-				25 = {
-					country_event = urs.6
-				}
-				25 = {
-					country_event = urs.7
-				}
-			}
+		available = {
+			always = yes
 		}
 
-		complete_effect = {
-			add_command_power = -10
-			hidden_effect = {
-				set_variable = { URS_randomterrorism_timer_cns_days = days_mission_timeout@URS_randomterrorism_timer_cns }
-			}
-		}
-
-		remove_effect = {
-			activate_mission = URS_randomterrorism_timer_cns
-		}
-	}
-	URS_exchangeppforcp = {
-		icon = GFX_decision_generic_army_support
-		#allowed = { always = no }
-		fire_only_once = no
-		cost = 30
-		ai_will_do = { factor = 50 }
-		#days_remove = 30
-		complete_effect = {
-			add_command_power = 15
-		}
-	}
-	URS_extend_lepus_timer = {
-		icon = GFX_decision_infiltrate_state
-		#allowed = { always = no }
-		fire_only_once = no
 		cost = 50
-		ai_will_do = { factor = 0 }
-		#days_remove = 30
-		complete_effect = {
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 100
+		}
+
+		days_remove = 30
+		days_re_enable = 30
+
+		visible = {
+			tag = URS
+			OR = {
+				has_country_flag = grease_wars_not_started
+				NOT = { has_country_flag = URS_flag_lepus_pacified }
+			}
+			NOT = { country_exists = LPS }
+		}
+		
+		modifier = {
+			consumer_goods_expected_value = 0.05
+		}
+		
+		remove_effect = {
+			add_stability = 0.04
+			131 = {
+				add_compliance = 10
+			}
+			130 = {
+				add_compliance = 10
+			}
+			133 = {
+				add_compliance = 10
+			}
+			132 = {
+				add_compliance = 10
+			}
+			134 = {
+				add_compliance = 10
+			}
+			182 = {
+				add_compliance = 10
+			}
+			add_days_mission_timeout = {
+				mission = URS_lepus_pacification_timer
+				days = -30
+			}
+		}
+	}
+	
+	URS_lepus_demoralization_propaganda_decision = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = URS
+		}
+
+		available = {
+			always = yes
+			NOT = { country_exists = LPS }
+		}
+
+		cost = 50
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 100
+		}
+
+		days_remove = 30
+		days_re_enable = 30
+
+		visible = {
+			tag = URS
+			OR = {
+				has_country_flag = grease_wars_not_started
+				NOT = { has_country_flag = URS_flag_lepus_pacified }
+			}
+			NOT = { country_exists = LPS }
+		}
+		
+		modifier = {
+			consumer_goods_expected_value = 0.05
+		}
+		
+		remove_effect = {
+			131 = {
+				add_resistance = -10
+			}
+			130 = {
+				add_resistance = -10
+			}
+			133 = {
+				add_resistance = -10
+			}
+			132 = {
+				add_resistance = -10
+			}
+			134 = {
+				add_resistance = -10
+			}
+			182 = {
+				add_resistance = -10
+			}
+			add_days_mission_timeout = {
+				mission = URS_lepus_pacification_timer
+				days = -30
+			}
+		}
+	}
+	
+	URS_secure_port_mathieson_decision = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = URS
+		}
+
+		available = {
+			divisions_in_state = {
+				size > 3
+				state = 131
+			}
+		}
+		
+		cancel_trigger = {
+			divisions_in_state = {
+				size < 3
+				state = 133
+			}
+		}
+		
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 100
+		}
+
+		days_remove = 90
+
+		visible = {
+			tag = URS
+			OR = {
+				has_country_flag = grease_wars_not_started
+				NOT = { has_country_flag = URS_flag_lepus_pacified }
+			}
+			NOT = { has_country_flag = URS_flag_mathieson_secured }
+			NOT = { country_exists = LPS }
+		}
+		
+		modifier = {
+			weekly_manpower = -1000
+		}
+
+		remove_effect = {
+			131 = {
+				add_resistance = -20
+			}
+			131 = {
+				add_compliance = -10
+			}
 			add_days_mission_timeout = {
 				mission = URS_lepus_spawns_timer
 				days = 30
 			}
+			set_country_flag = URS_flag_mathieson_secured
+		}
+	}
+	
+	URS_secure_west_lepus_decision = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = URS
+		}
+
+		available = {
+			divisions_in_state = {
+				size > 3
+				state = 130
+			}
+		}
+		
+		cancel_trigger = {
+			divisions_in_state = {
+				size < 3
+				state = 133
+			}
+		}
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 100
+		}
+
+		days_remove = 90
+
+		visible = {
+			tag = URS
+			OR = {
+				has_country_flag = grease_wars_not_started
+				NOT = { has_country_flag = URS_flag_lepus_pacified }
+			}
+			NOT = { has_country_flag = URS_flag_westlepus_secured }
+			NOT = { country_exists = LPS }
+		}
+		
+		modifier = {
+			weekly_manpower = -1000
+		}
+		
+		remove_effect = {
+			130 = {
+				add_resistance = -20
+			}
+			130 = {
+				add_compliance = -10
+			}
+			add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = 30
+			}
+			set_country_flag = URS_flag_westlepus_secured
+		}
+	}
+	
+	URS_secure_central_lepus_decision = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = URS
+		}
+
+		available = {
+			divisions_in_state = {
+				size > 3
+				state = 133
+			}
+		}
+		
+		cancel_trigger = {
+			divisions_in_state = {
+				size < 3
+				state = 133
+			}
+		}
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 100
+		}
+
+		days_remove = 90
+
+		visible = {
+			tag = URS
+			OR = {
+				has_country_flag = grease_wars_not_started
+				NOT = { has_country_flag = URS_flag_lepus_pacified }
+			}
+			NOT = { has_country_flag = URS_flag_centlepus_secured }
+			NOT = { country_exists = LPS }
+		}
+		
+		modifier = {
+			weekly_manpower = -1000
+		}
+		
+		remove_effect = {
+			133 = {
+				add_resistance = -20
+			}
+			133 = {
+				add_compliance = -10
+			}
+			add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = 30
+			}
+			set_country_flag = URS_flag_centlepus_secured
+		}
+	}
+	
+	URS_secure_east_lepus_decision = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = URS
+		}
+
+		available = {
+			divisions_in_state = {
+				size > 3
+				state = 132
+			}
+		}
+		
+		cancel_trigger = {
+			divisions_in_state = {
+				size < 3
+				state = 133
+			}
+		}
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 100
+		}
+
+		days_remove = 90
+
+		visible = {
+			tag = URS
+			OR = {
+				has_country_flag = grease_wars_not_started
+				NOT = { has_country_flag = URS_flag_lepus_pacified }
+			}
+			NOT = { has_country_flag = URS_flag_eastlepus_secured }
+			NOT = { country_exists = LPS }
+		}
+		
+		modifier = {
+			weekly_manpower = -1000
+		}
+		
+		remove_effect = {
+			132 = {
+				add_resistance = -20
+			}
+			132 = {
+				add_compliance = -10
+			}
+			add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = 30
+			}
+			set_country_flag = URS_flag_eastlepus_secured 
 		}
 	}
 }

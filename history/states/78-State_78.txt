@@ -40,16 +40,16 @@ state={
 				bunker = 7
 			}
 			3027 = {
-				bunker = 7
+				bunker = 6
 			}
 			1448 = {
-				bunker = 7
+				bunker = 6
 			}
 			1009 = {
 				bunker = 7
 			}
 			3240 = {
-				bunker = 7
+				bunker = 6
 			}
 			3562 = {
 				bunker = 7
@@ -67,6 +67,6 @@ state={
 	}
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	manpower=12920216
+	manpower=13320216
         state_category = town
 }

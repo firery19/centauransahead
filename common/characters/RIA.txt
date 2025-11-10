@@ -1,0 +1,15 @@
+characters = {
+    RIA_ivan_riaa = {
+        name = RIA_ivan_riaa
+        portraits = {
+            civilian = {
+                large = GFX_portrait_RIA_ivan_riaa
+            }
+        }
+        country_leader = {
+			ideology = moderatism
+			traits = { }
+			expire = "1912.1.1.1"
+		}
+    }
+}

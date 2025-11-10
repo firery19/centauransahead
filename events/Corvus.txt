@@ -1,35 +1,18 @@
 add_namespace = COV
 
-country_event = {
+country_event = { # on action replaced
     id = cov.1
     title = cov.1.t
     desc = cov.1.d
     #picture = GFX_
 
-    is_triggered_only = yes #focus
+    is_triggered_only = yes #focus 
 	fire_only_once = yes
-
+	
     option = {
         name = cov.1.a
-		trigger = {
-		on_declare_war = {
-		effect = {
-				if = {
-					limit = {
-						tag = COV
-						FROM = { tag = CET }
-						}
-						complete_national_focus = COV_initial_offensive
-					}
-				}
-			}
-		}
-		mean_time_to_happen = {
-        days = 2
-		}	
-        hidden_effect = {
-            complete_national_focus = COV_initial_offensive
-        }
+		complete_national_focus = COV_wartime_administration
+		complete_national_focus = COV_implement_rationing_policy
     }
 }
 
@@ -84,13 +67,14 @@ country_event = {
 	
 	option = {
 		name = cov.4.a # Yes
-		ai_chance = {factor = 99}
-		create_faction = Solstice
-		add_to_faction = COV = {
+		ai_chance = {base = 99}
+		ANT = { create_faction = Solstice }
+		add_to_faction = COV
+		COV = {
 				add_ai_strategy = {
-						type = alliance
-						id = "ANT"
-						value = 200
+					type = alliance
+					id = "ANT"
+					value = 200
 				}
 			}
 		}
@@ -100,4 +84,21 @@ country_event = {
 		name = cov.4.b # NO 
 		ai_chance = {base = 1}
 	}
+}
+
+
+
+country_event = { # reminder
+    id = cov.5
+    title = cov.5.t
+    desc = cov.5.d
+    picture = GFX_report_event_gre_cabinet_meeting
+
+    is_triggered_only = yes #focus 
+	fire_only_once = yes
+	
+    option = {
+        name = cov.5.a
+		
+    }
 }

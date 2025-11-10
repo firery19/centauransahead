@@ -8,8 +8,9 @@ on_actions = {
 						original_tag = CET
 					}
 				}
-				complete_national_focus = COV_initial_offensive
-				activate_decision = COV_dysfunctional_economy_idk
+				#complete_national_focus = COV_initial_offensive
+				COV = { country_event = cov.1 }
+				activate_mission = corvus_failing_economy_d
 				#CET = { set_country_flag = cov_attack_cetus_first }
 			}
 		}
@@ -19,7 +20,7 @@ on_actions = {
 			if = {
 				limit = {
 					original_tag = COV
-					has_global_flag = COV_ant_help
+					COV = { has_global_flag = COV_ant_help }
 					FROM = {
 						original_tag = CET
 					}

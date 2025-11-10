@@ -1,0 +1,15 @@
+characters = {
+    GRS_santiago_moreno = {
+        name = GRS_santiago_moreno
+        portraits = {
+            civilian = {
+                large = GFX_portrait_GRS_santiago_moreno
+            }
+        }
+        country_leader = {
+			ideology = moderatism
+			traits = { }
+			expire = "1912.1.1.1"
+		}
+    }
+}

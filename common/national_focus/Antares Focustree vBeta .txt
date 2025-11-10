@@ -2494,7 +2494,7 @@ focus = {
 	prerequisite = {focus = ANT_army_navy_war_game}
 	prerequisite = {focus = ANT_equipment_needs}
 	available = {
-		has_country_flag = grease_wars_start
+		has_global_flag = grease_wars_start
 	}
 	ai_will_do = { factor = 1 }
 	completion_reward = {

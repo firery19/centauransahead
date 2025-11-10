@@ -316,11 +316,18 @@ COV_corvus_sabotage_operations = {
 		}
 	}
 }
+
 # economy!!
 
 COV_dysfunctional_economy_idk = {
 	corvus_failing_economy_d = {
 		icon = GFX_decision_revolt
+		
+		allowed = {
+			always = no
+			#added through on_action
+		}
+		
 		visible = {
 			tag = COV
 			has_war = yes
@@ -375,8 +382,9 @@ debug_corvus = {
 		icon = generic_decision
 
 		available = {
-		always = yes
-			}
+		is_debug = yes
+		is_ai = no
+		}
 		
 		visible = {
 			is_debug = yes
@@ -509,7 +517,7 @@ COV_wartime_administration_war = {
 			}
 		}
 		ai_will_do = {
-		factor = 1
+		factor = 100
 		}
 	}
 	

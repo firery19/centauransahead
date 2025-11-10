@@ -98,6 +98,7 @@ set_politics = {
 }
 
 recruit_character = ANT_kalvin_tau
+recruit_character = ANT_test_field_marshall
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

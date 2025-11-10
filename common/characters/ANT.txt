@@ -12,4 +12,32 @@ characters = {
 			expire = "1930.1.1.1"
 			id = -1
 		}
+	ANT_ = { 
+		name = ""
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ANT_kalvin_tau
+			}
+		}
+
+    ANT_test_field_marshall = {
+        name = "Llasram Ldief"
+        portraits = {
+            army = {
+                small = "GFX_idea_georgy_zhukov"
+                large = "GFX_portrait_SOV_georgy_zhukov"
+            }
+        }
+        corps_commander = {
+            traits = { media_personality armor_officer war_hero winter_specialist }
+            skill = 5
+            attack_skill = 5
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 5
+
+        }
+
+    }
+
 	}

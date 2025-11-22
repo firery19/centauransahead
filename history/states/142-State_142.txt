@@ -22,6 +22,7 @@ state={
 	}
 
 	resources={
+		coal=15
 		tungsten=19.000
 		steel=21.000
 		chromium=16.000

@@ -2098,6 +2098,28 @@ focus_tree = {
 				factor = 5
 			}
 		}
+		focus = {
+			id = ORS_annex_gemina
+			icon = GFX_focus_GER_autarky_ambitions
+			x = 15
+			y = 0
+			cost = 5
+			available = {
+				date > 1901.01.01
+			}
+			
+			prerequisite = {
+			}
+			completion_reward = {
+				annex_country = {
+				    target = GEM
+				    transfer_troops = yes
+				}
+			}
+			ai_will_do = {
+				factor = 20
+			}
+		}
 	}
 }
 	

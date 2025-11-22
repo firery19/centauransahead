@@ -24,6 +24,7 @@ state={
 
 	}
 	resources={
+		coal=10
 		steel=4.000
 		rubber=6.000
 	}

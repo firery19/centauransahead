@@ -11,22 +11,14 @@ country_event = {
 
     option = {
         name = AANT1
-        
-#        custom_effect_tooltip = tt_cet_integration
-
-#        hidden_effect = {
-
-            complete_national_focus = ANT_consolidate_monarchic_powers
-#        }
+	complete_national_focus = ANT_consolidate_monarchic_powers
     }
 
     option = {
-       name = BANT1
-#         hidden_effect = {
-#         complete_national_focus = ANT_strengthen_antarean_democracy
-		complete_national_focus = ANT_consolidate_monarchic_powers
+	name = BANT1
+#	complete_national_focus = ANT_strengthen_antarean_democracy
+	complete_national_focus = ANT_consolidate_monarchic_powers
 	custom_effect_tooltip = "Alternate history not implemented, play the historical path."
-       }
    }
 }
 country_event = {

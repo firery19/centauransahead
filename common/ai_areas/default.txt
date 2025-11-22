@@ -25,11 +25,11 @@ areas = {
 	}
 	
 	#placeholder
-	europe = {
-		continents = {
-			europe
-		}
-	}
+#	europe = {
+#		continents = {
+#			europe
+#		}
+#	}
 	
 	centaura = {
 		continents = {

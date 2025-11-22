@@ -2518,8 +2518,10 @@ focus = {
 	prerequisite = {focus = ANT_army_navy_war_game}
 	prerequisite = {focus = ANT_equipment_needs}
 	available = {
+		or = {
 		has_global_flag = grease_wars_start
-	}
+		date > 1904.01.01	#incase grease war flag doesn't register or start or smt
+	}}
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"

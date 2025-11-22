@@ -484,8 +484,11 @@ focus_tree = {
 		#will_lead_to_war_with = CET	#so that they get war notification #so they DONT get the war notification (they were caught off guard)
 		available = {
 			is_subject = no
-			has_army_manpower = { size > 649000 }
-			#has_army_manpower = { size > 1 }
+			or = {
+				has_army_manpower = { size > 650000 }
+				#has_army_manpower = { size > 1 }
+				date > 1908.09.01
+			}
 		}
 		relative_position_id = COV_ramp_production_up
 		x = 0

@@ -147,7 +147,7 @@
  lps.4.a:0 "Suppress the Rebellion again!"
  
  lps.5.t:0 "Loss of Lepus"
- lps.5.d:0 "We have lost the entirety of the region of Lepus. With this, the Lepus people have asserted control over the territory and kicked us out."
+ lps.5.d:0 "We have lost the entirety of the region of Lepus. The people of Lepus have asserted control over the territory and kicked us out."
  lps.5.a:0 "A humiliating loss"
  
  # ideas
@@ -190,7 +190,7 @@
  lepus_high_revolution:0 "§OHigh Revolution Risk§!"
  lepus_total_revolution:0 "§RRevolution Imminent§!"
  lepus_can_revolution_require_tt:0 "Has status "§RRevolution Imminent§!""
- hys_start_lepus_revolution:0 "Start The Lepus Revolution"
+ hys_start_lepus_revolution:0 "Start The Lepus Spring"
  hys_start_lepus_revolution_desc:0 "The people of Lepus are waiting for a signal. When the time is right, the nation will declare its independence."
  
  hys_stir_the_masses_east:0 "Stir The Masses In The East"

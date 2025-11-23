@@ -9,7 +9,250 @@ characters = {
         country_leader = {
 			ideology = moderatism
 			traits = { }
-			expire = "1912.1.1.1"
+			expire = "1922.1.1.1"
+		}
+		field_marshal = { 
+			traits = { old_guard politically_connected }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+			visible = {
+				has_government = neutrality
+				has_country_flag = CET_fredrick_leads
+			}
 		}
     }
+	CET_william_rayman = {
+		name = CET_william_rayman
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ger_august_von_mackensen
+				small = GFX_idea_GER_august_von_mackensen
+			}
+		}
+		field_marshal = { 
+			traits = { old_guard fast_planner organisational_leader inspirational_leader }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			visible = {
+				has_government = neutrality
+				has_country_flag = CET_recall_pistris_veterans
+			}
+		}
+	}
+	
+	CET_robert_parker = {
+		name = CET_robert_parker
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_werner_von_blomberg
+				small = GFX_portrait_GER_werner_von_blomberg_small
+			}
+		}
+
+		field_marshal = { 
+			traits = { defensive_doctrine thorough_planner }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			visible = {
+				NOT = {
+					has_completed_focus = CET_democracy
+				}
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = CET_werner_von_blomberg
+			ledger = army
+			allowed = {
+				original_tag = CET
+			}
+			visible = {
+				NOT = {
+					has_completed_focus = CET_democracy
+				}
+			}
+			available = {
+				NOT = {
+					has_completed_focus = CET_democracy
+				}
+			}
+			traits = {
+				grand_battle_plan_expert
+			}
+		}
+	}
+	
+
+	CET_raymond_cooper = { # infantry
+		name = CET_raymond_cooper
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_wilhelm_list
+				small = GFX_portrait_GER_wilhelm_list_small
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_leader }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	
+	CET_issac_thomas = { # maris
+		name = CET_issac_thomas
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_wilhelm_list
+				small = GFX_portrait_GER_wilhelm_list_small
+			}
+		}
+		corps_commander = {
+			traits = { naval_invader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	CET_johannes_robinson = {
+		name = CET_johannes_robinson
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_wilhelm_list
+				small = GFX_portrait_GER_wilhelm_list_small
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	CET_patrick_adams = {
+		name = CET_patrick_adams
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_wilhelm_list
+				small = GFX_portrait_GER_wilhelm_list_small
+			}
+		}
+		corps_commander = {
+			traits = { career_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	# advisors
+
+	CET_john_corvus = {
+		name = CET_john_corvus
+		portraits = {
+			army = {
+				small = GFX_portrait_CET_heinrich_himmler_small
+				large = GFX_portrait_CET_heinrich_himmler
+			}
+			civilian = {
+				large = GFX_portrait_CET_heinrich_himmler
+			}
+		}
+#		allowed_civil_war = {
+#			has_government = neutrality
+#		}
+		advisor = {
+			slot = political_advisor
+			idea_token = heinrich_himmler
+			allowed = {
+				original_tag = CET
+			}
+			available = {
+				OR = {
+					has_government = neutrality 
+					has_country_flag = CET_reinstated_nazi_leadership 
+				}
+				NOT = { has_completed_focus = CET_democracy }
+			}
+			visible = {
+				has_government = neutrality
+				NOT = {
+					has_completed_focus = CET_democracy
+				}
+			}
+#			on_add = {
+#				custom_effect_tooltip = wawawer
+#			}
+			traits = {
+				prince_of_terror
+			}
+		}
+	}
+	
+	# admirals
+
+	CET_karl_chester = {
+		name = CET_karl_chester
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_erich_raeder
+				small = GFX_portrait_GER_erich_raeder_small
+			}
+			army = {
+				small = GFX_idea_raeder
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = raeder
+			allowed = {
+				original_tag = CET
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = GER_erich_raeder
+					}
+				}
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+		
+		navy_leader = {
+			traits = { battleship_adherent naval_lineage ironside }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+	}
 }

@@ -36,4 +36,36 @@ spriteTypes = {
 		name = "GFX_decision_cat_generic_canis"
 		texturefile = "gfx/interface/decisions/decision_cat_generic_canis.dds"
 	}
+	
+	# menu interface wawawa!!
+	
+	spriteType = {
+		name = "GFX_nijika"
+		texturefile = "gfx/interface/nijika.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_hyderus"
+		texturefile = "gfx/interface/hyderus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_japan"
+		texturefile = "gfx/interface/japan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_china"
+		texturefile = "gfx/interface/china.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_long_tile"
+		texturefile = "gfx/interface/border_tiled_menu_screen_a.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_empty_placeholder"
+		texturefile = "gfx/interface/nothing.dds"
+	}
 }

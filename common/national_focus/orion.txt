@@ -14,6 +14,114 @@ focus_tree = {
 	initial_show_position = {
 		focus = ORS_EndHartTerm
 	}
+	
+	focus = {
+        id = ORI_prepare_to_liberate_canis
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 16
+        y = 0
+        cost = 5
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = ORI_thirst_for_trouble
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 0
+        y = 1
+        cost = 10
+		relative_position_id = ORI_prepare_to_liberate_canis
+        prerequisite = { focus = ORI_prepare_to_liberate_canis }
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = ORI_water_the_hydrus_thorn
+        icon = GFX_goal_generic_construct_infrastructure
+        x = -2
+        y = 1
+        cost = 10
+		relative_position_id = ORI_thirst_for_trouble
+        prerequisite = { focus = ORI_thirst_for_trouble }
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = ORI_sneak_weapons_to_rebels
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 2
+        y = 1
+        cost = 10
+		relative_position_id = ORI_thirst_for_trouble
+        prerequisite = { focus = ORI_thirst_for_trouble }
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = ORI_provoke_ursa
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 0
+        y = 1
+        cost = 10
+		relative_position_id = ORI_thirst_for_trouble
+        prerequisite = { focus = ORI_thirst_for_trouble }
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
 
     focus = {
         id = ORS_CanisCrisis
@@ -2098,17 +2206,108 @@ focus_tree = {
 				factor = 5
 			}
 		}
+	
+	focus = {
+        id = ORI_undermine_gemina
+        icon = GFX_focus_rom_handle_king
+        x = 4
+        y = 0
+        cost = 5
+		
+		available = {
+		NOT = {	owns_state = 137 }
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = ORI_restrict_gemina
+        icon = GFX_focus_BEL_prisoner_king
+        x = 0
+        y = 1
+        cost = 5
+        prerequisite = { focus = ORI_undermine_gemina }
+		relative_position_id = ORI_undermine_gemina
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = ORI_reduce_gem_funding
+        icon = GFX_focus_ARG_anti_corruption_policies
+        x = -2
+        y = 1
+        cost = 2
+        prerequisite = { focus = ORI_undermine_gemina }
+		relative_position_id = ORI_undermine_gemina
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = ORI_increase_control_on_gem
+        icon = GFX_focus_ARG_revive_the_colonial_plan
+        x = 2
+        y = 1
+        cost = 5
+        prerequisite = { focus = ORI_undermine_gemina }
+		relative_position_id = ORI_undermine_gemina
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+		
 		focus = {
 			id = ORS_annex_gemina
 			icon = GFX_focus_GER_autarky_ambitions
-			x = 15
-			y = 0
+			x = 0
+			y = 1
 			cost = 5
+		relative_position_id = ORI_restrict_gemina
 			available = {
 				date > 1901.01.01
 			}
 			
 			prerequisite = {
+			focus = ORI_restrict_gemina
+			focus = ORI_reduce_gem_funding
+			focus = ORI_increase_control_on_gem
 			}
 			completion_reward = {
 				annex_country = {

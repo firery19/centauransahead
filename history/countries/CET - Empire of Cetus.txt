@@ -85,6 +85,14 @@ add_political_power = 1
 set_convoys = 150 #although a naval powerhouse with a massive fishing industry, cetus doesn't really import many resources due to South Corvs
 
 recruit_character = CET_frederick_scapha
+recruit_character = CET_john_corvus
+recruit_character = CET_william_rayman
+recruit_character = CET_robert_parker
+recruit_character = CET_raymond_cooper
+recruit_character = CET_issac_thomas
+recruit_character = CET_johannes_robinson
+recruit_character = CET_patrick_adams
+recruit_character = CET_karl_chester
 
 add_ideas = {
 	trench_warfare_idea

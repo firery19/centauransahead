@@ -770,7 +770,8 @@ focus_tree = {
         }
 		
 		completion_reward = {
-		custom_effect_tooltip = revolve_hydrus_tt 
+		HYS = { give_guarantee = LPS }
+		LPS = { give_guarantee = HYS }
 			}
 		}
 		
@@ -788,7 +789,20 @@ focus_tree = {
         }
 		
 		completion_reward = {
-			custom_effect_tooltip = rebel_hydrus_tt
+		ORI = {
+			set_rule = { can_create_factions = yes }
+			create_faction = AntiUrsCoal
+			}
+			hidden_effect = {
+				HYS = {
+					country_event = { 
+						id = orion.1  days = 1 }
+				}
+				news_event = {
+				id = news.3
+				days = 2
+				}
+			}
 			hidden_effect = {
 				news_event = {
 					id = news.3

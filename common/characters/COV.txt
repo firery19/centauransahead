@@ -22,7 +22,28 @@ characters = {
 				small = GFX_portrait_COV_henry_khorin_small
 			}
 		}
+	
+	COV_winterhall_graze = {
+		name = CET_william_rayman
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ger_august_von_mackensen
+				small = GFX_idea_GER_august_von_mackensen
+			}
+		}
+		field_marshal = { 
+			traits = { old_guard fast_planner organisational_leader inspirational_leader }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			visible = {
+				has_government = neutrality
+			}
+		}
 	}
+	
 	COV_john_corvus = {
 		name = COV_john_corvus
 		portraits = {
@@ -36,7 +57,7 @@ characters = {
 			idea_token = gerd_von_rundstedt
 			ledger = army
 			allowed = {
-		#		original_tag = COV
+				original_tag = COV
 			}
 			traits = {
 				army_regrouping_2
@@ -54,7 +75,47 @@ characters = {
 			defense_skill = 3
 			planning_skill = 4
 			logistics_skill = 2
-			legacy_id = 1
+		}
+	}
+	
+	
+
+	COV_john_corvuntes = {
+		name = COV_john_corvuntes
+		portraits = {
+			army = {
+				small = GFX_portrait_GER_heinrich_himmler_small
+				large = GFX_portrait_GER_heinrich_himmler
+			}
+			civilian = {
+				large = GFX_portrait_GER_heinrich_himmler
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = heinrich_himmler
+			allowed = {
+				original_tag = COV
+			}
+			available = {
+				OR = {
+					has_government = neutrality 
+					has_country_flag = COV_invited_antares_advisors 
+				}
+				NOT = { has_completed_focus = COV_discontent_with_monarchy }
+			}
+			visible = {
+				has_government = neutrality
+				NOT = {
+					has_completed_focus = COV_discontent_with_monarchy
+				}
+			}
+#			on_add = {
+#				custom_effect_tooltip = wawawer
+#			}
+			traits = {
+				prince_of_terror
+			}
 		}
 	}
 }

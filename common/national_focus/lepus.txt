@@ -23,9 +23,7 @@ focus_tree = {
         y = 0
         cost = 5
         available = {
-		NOT = {
-		   has_country_flag = lepus_rebelled_ursa
-		   }
+            
         }
         completion_reward = {
             country_event = lps.2
@@ -42,9 +40,6 @@ focus_tree = {
         y = 0
         cost = 5
         available = {
-        NOT = {
-		   has_country_flag = lepus_rebelled_ursa
-		   }
 		ORI = { is_in_faction = yes }
         }
         completion_reward = {

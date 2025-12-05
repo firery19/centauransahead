@@ -198,7 +198,7 @@ ANT_invade_cetus = {
         value = 200
     }
 }
-ANT_invade_aquila = {
+ANT_invade_cetus = {
     allowed = {
         original_tag = ANT
     }
@@ -215,7 +215,7 @@ ANT_invade_aquila = {
         value = 200
     }
 }
-ANT_invade_vega = {
+ANT_invade_cetus = {
     allowed = {
         original_tag = ANT
     }
@@ -232,7 +232,7 @@ ANT_invade_vega = {
         value = 200
     }
 }
-ANT_invade_grusa = {
+ANT_invade_cetus = {
     allowed = {
         original_tag = ANT
     }
@@ -249,7 +249,7 @@ ANT_invade_grusa = {
         value = 200
     }
 }
-ANT_invade_columba = {
+ANT_invade_cetus = {
     allowed = {
         original_tag = ANT
     }
@@ -266,7 +266,7 @@ ANT_invade_columba = {
         value = 200
     }
 }
-ANT_invade_riaa = {
+ANT_invade_cetus = {
     allowed = {
         original_tag = ANT
     }
@@ -274,7 +274,7 @@ ANT_invade_riaa = {
         country_exists = RIA
     }
     abort = {
-        has_war_with = RIA
+        has_war_with =R IA
     }
     abort_when_not_enabled = yes
     ai_strategy = {

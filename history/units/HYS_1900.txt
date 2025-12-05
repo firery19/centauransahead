@@ -49,7 +49,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 3706
+		location = 2386
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.4
@@ -60,7 +60,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 3554
+		location = 3026
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.4
@@ -71,41 +71,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 3691
+		location = 2576
 		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
-	}
-	
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location = 3843
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
-	}
-	
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 1888
-		division_template = "Militia Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.4
-	}
-	
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 3466
-		division_template = "Militia Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.4
 	}
@@ -115,8 +82,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 3466
-		division_template = "Militia Division"
+		location = 1795
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.4
 	}
@@ -124,10 +91,10 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 4
+			name_order = 3
 		}
-		location = 3700
-		division_template = "Militia Division"
+		location = 3088
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.4
 	}
@@ -135,9 +102,59 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 5
+			name_order = 3
 		}
-		location = 3843
+		location = 2362
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 72
+		division_template = "Militia Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 72
+		division_template = "Militia Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 3309
+		division_template = "Militia Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 3309
+		division_template = "Militia Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = no
+		}
+		location = 2386
 		division_template = "Militia Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.4
@@ -145,10 +162,9 @@ units = {
 
 	division = {
 		division_name = {
-			is_name_ordered = yes
-			name_order = 6
+			is_name_ordered = no
 		}
-		location = 3820
+		location = 2386
 		division_template = "Militia Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.4
@@ -156,10 +172,9 @@ units = {
 	
 	division = {
 		division_name = {
-			is_name_ordered = yes
-			name_order = 7
+			is_name_ordered = no
 		}
-		location = 3820
+		location = 3088
 		division_template = "Militia Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.4
@@ -167,10 +182,9 @@ units = {
 	
 	division = {
 		division_name = {
-			is_name_ordered = yes
-			name_order = 8
+			is_name_ordered = no
 		}
-		location = 3648
+		location = 3088
 		division_template = "Militia Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.4
@@ -178,10 +192,9 @@ units = {
 	
 	division = {
 		division_name = {
-			is_name_ordered = yes
-			name_order = 9
+			is_name_ordered = no
 		}
-		location = 803
+		location = 2362
 		division_template = "Militia Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.4
@@ -189,24 +202,12 @@ units = {
 	
 	division = {
 		division_name = {
-			is_name_ordered = yes
-			name_order = 10
+			is_name_ordered = no
 		}
-		location = 3560
+		location = 2362
 		division_template = "Militia Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.4
 	}
 }	
-
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_0
-			creator = "HYS"
-		}
-		requested_factories = 2
-		progress = 0
-		efficiency = 20
-	}
-}
+	

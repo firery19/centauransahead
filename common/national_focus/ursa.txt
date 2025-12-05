@@ -406,7 +406,6 @@ focus_tree = {
             has_country_flag = grease_wars_not_started
         }
         completion_reward = {
-			add_war_support = 0.15
             add_timed_idea = {
                 idea = URS_mobilizing_time
                 days = 365
@@ -769,11 +768,10 @@ focus_tree = {
         y = 2
         cost = 4.5
         prerequisite = { focus = URS_eliminate_dissent }
-		prerequisite = { focus = URS_war_propaganda }
         #prerequisite = { focus = URS_secure_west_canis focus = URS_antiwar_orion }
         available = {
             has_country_flag = grease_wars_not_started
-            has_war_support > 0.35
+            has_war_support > 0.149
         }
         completion_reward = {
             IF = {
@@ -1007,7 +1005,7 @@ focus_tree = {
                         cavalry = { x = 2 y = 2 }						
                     }
                 }
-                117 = {
+                118 = {
                     create_unit = {
                         division = "name = \"Independent Cavalry Division\" division_template = \"Independent Cavalry Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
                         owner = ROOT
@@ -1057,7 +1055,7 @@ focus_tree = {
                         cavalry = { x = 2 y = 2 }						
                     }
                 }
-                118 = {
+                117 = {
                     create_unit = {
                         division = "name = \"Independent Cavalry Division\" division_template = \"Independent Cavalry Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
                         owner = ROOT
@@ -1095,7 +1093,6 @@ focus_tree = {
 		
         completion_reward = {
 			add_ideas = war_economy
-			country_event = { id = urs.17 days = 30 }
         }
         ai_will_do = {
             factor = 5
@@ -1113,11 +1110,11 @@ focus_tree = {
         completion_reward = {
 			114 = {
 				add_dynamic_modifier = {
-                    modifier = URS_desert_minefield_modifier
-                }
+					modifier = URS_desert_minefield_modifier
+					days = 730
+				}
 			}
-		}
-		
+        }
         ai_will_do = {
             factor = 5
         }
@@ -1156,28 +1153,7 @@ focus_tree = {
         prerequisite = { focus = URS_the_grease_wars }
 		
         completion_reward = {
-			IF = {
-				limit = { has_dlc = "Man the Guns" }
-				create_equipment_variant = {
-					name = "Light Escort"								
-					type = ship_hull_light_1
-					modules = {
-						fixed_ship_battery_slot = ship_light_battery_1
-						fixed_ship_anti_air_slot = empty
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-						fixed_ship_radar_slot = empty
-						fixed_ship_engine_slot = light_ship_engine_1
-						fixed_ship_torpedo_slot = empty
-						mid_1_custom_slot = empty
-						rear_1_custom_slot = empty
-					}
-				}
-				load_oob = "URS_escortships"
-				
-				ELSE = {
-					load_oob = "URS_escortships"
-				}
-			}
+			
         }
         ai_will_do = {
             factor = 5

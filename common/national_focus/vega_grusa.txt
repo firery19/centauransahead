@@ -6,13 +6,6 @@ shared_focus = {
 		cost = 10
 		search_filters = {   }
 		
-		available = {
-		
-		}
-		
-		mutually_exclusive = { focus = GRS_no_southern_negotiation }
-		mutually_exclusive = { focus = VEG_lucia_verde_legacy }
-		
 		available_if_capitulated = yes
 
 		completion_reward = {

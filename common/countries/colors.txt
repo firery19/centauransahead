@@ -27,8 +27,8 @@ URS = {
 	color_ui  = rgb { 127 30 30 }
 }
 ANT = {
-	color = rgb { 250 120 0 }
-	color_ui  = rgb { 250 120 0 }
+	color = rgb { 210 100 0 }
+	color_ui  = rgb { 180 70 0 }
 }
 AQU = {
 	color = rgb { 36 108 189 }
@@ -104,20 +104,20 @@ LGS = {
 	color_ui  = rgb { 0 190 190 }
 }
 SKO = {
-	color = rgb { 200 50 50 }
-	color_ui  = rgb { 200 50 50 }
+	color = rgb { 255 128 128 }
+	color_ui  = rgb { 225 98 98 }
 }
 ARA = {
-	color = rgb { 250 150 50 }
-	color_ui  = rgb { 250 150 50 }
+	color = rgb { 128 255 128 }
+	color_ui  = rgb { 98 225 98 }
 }
 LUP = {
-	color = rgb { 230 200 30 }
-	color_ui  = rgb { 230 200 30 }
+	color = rgb { 232 219 132 }
+	color_ui  = rgb { 202 189 102 }
 }
 NRM = {
-	color = rgb { 150 40 80 }
-	color_ui  = rgb { 150 40 80 }
+	color = rgb { 218 99 12 }
+	color_ui  = rgb { 188 69 0 }
 }
 CIR = {
 	color = rgb { 143 239 213 }
@@ -143,15 +143,96 @@ NOH = {
 	color = rgb { 124 194 54 }
 	color_ui  = rgb { 94 164 24 }
 }
-
-
-
-
-
 #hans' colours
 
-#LBR = { # leftover from hanssolo
+CEH = {
+	color = rgb { 0 128 0 }
+	color_ui  = rgb { 0 128 0  }
+}
+COH = {
+	color = rgb { 107 107 107 }
+	color_ui  = rgb { 107 107 107 }
+}
+LBH = {
 #pink	color = rgb { 182 90 182 }
-#	color = rgb { 99 0 43 }
+	color = rgb { 99 0 43 }
 #	color = rgb { 231 172 23 }
-#}
+	color_ui  = rgb { 99 0 43 }
+}
+ORH = {
+	color = rgb { 40 60 120 }
+	color_ui  = rgb { 40 60 120 }
+}
+AUH = {
+	color = rgb { 145 102 232 }
+	color_ui  = rgb { 145 102 232 }
+}
+URH = {
+	color = rgb { 157 60 60 }
+	color_ui  = rgb { 157 60 60 }
+}
+AQH = {
+	color = rgb { 36 108 189 }
+	color_ui  = rgb { 36 108 189 }
+}
+VEH = {
+	color = rgb { 43 124 135 }
+	color_ui  = rgb { 43 124 135 }
+}
+GRH = {
+	color = rgb {140 15 70 }
+	color_ui  = rgb { 140 15 70 }
+}
+CLH = {
+	color = rgb { 240 207 23 }
+	color_ui  = rgb { 240 207 23 }
+}
+RIH = {
+	color = rgb { 192 192 192 }
+	color_ui  = rgb { 192 192 192 }
+}
+VUH = {
+	color = rgb { 147 112 64 }
+	color_ui  = rgb { 147 112 64 }
+}
+TUH = {
+	color = rgb { 136 213 134 }
+	color_ui  = rgb { 136 213 134 }
+}
+CTH = {
+	color = rgb { 133 170 21 }
+	color_ui  = rgb { 133 170 21 }
+}
+LAH = {
+	color = rgb { 238 193 196 }
+	color_ui  = rgb { 238 193 196 }
+}
+MUH = {
+	color = rgb { 39 143 152 }
+	color_ui  = rgb { 39 143 152 }
+}
+HYH = {
+	color = rgb { 185 140 208 }
+	color_ui  = rgb { 185 140 208 }
+}
+
+CAH = {
+	color = rgb { 192 192 192 }
+	color_ui  = rgb { 192 192 192 }
+}
+LPH = {
+	color = rgb { 237 124 124 }
+	color_ui  = rgb { 237 124 124}
+}
+CNH = {
+	color = rgb { 166 174 187 }
+	color_ui  = rgb {  166 174 187 }
+}
+HDH = {
+	color = rgb { 237 177 165 }
+	color_ui  = rgb { 237 177 165 }
+}
+RDH = {
+	color = rgb { 30 67 69 }
+	color_ui  = rgb { 30 67 69 }
+}

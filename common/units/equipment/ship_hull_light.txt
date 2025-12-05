@@ -118,6 +118,8 @@ equipments = {
 		}
 		
 		manpower = 250
+		naval_dominance_factor = 10
+
 	}
 
 	ship_hull_light_1 = {
@@ -179,6 +181,8 @@ equipments = {
 			steel = 2
 		}
 		manpower = 325
+		naval_dominance_factor = 10
+
 	}
 
 	ship_hull_light_3 = {
@@ -245,6 +249,8 @@ equipments = {
 		max_strength = 50
 		build_cost_ic = 550
 		manpower = 400
+		naval_dominance_factor = 10
+
 
 		default_modules = {
 			mid_1_custom_slot = empty
@@ -316,6 +322,8 @@ equipments = {
 			chromium = 1
 		}
 		manpower = 500
+		naval_dominance_factor = 10
+
 	}
 	destroyer_1 = {
 		year = 1922
@@ -364,6 +372,8 @@ equipments = {
 		}
 		
 		manpower = 250
+		naval_dominance_factor = 10
+
 	}
 	destroyer_2 = {
 		year = 1936
@@ -415,6 +425,8 @@ equipments = {
 			steel = 3
 		}		
 		manpower = 325
+		naval_dominance_factor = 10
+
 	}
 	
 	destroyer_3 = {
@@ -466,6 +478,8 @@ equipments = {
 			steel = 3
 		}
 		manpower = 400
+		naval_dominance_factor = 10
+
 	}
 	
 	destroyer_4 = {
@@ -519,5 +533,7 @@ equipments = {
 			chromium = 1
 		}		
 		manpower = 500
+		naval_dominance_factor = 10
+
 	}
 }

@@ -11,8 +11,9 @@ country_event = { # on action replaced
 	
     option = {
         name = cov.1.a
-		complete_national_focus = COV_wartime_administration
-		complete_national_focus = COV_implement_rationing_policy
+        hidden_effect = {
+            complete_national_focus = COV_initial_offensive
+        }
     }
 }
 
@@ -68,13 +69,13 @@ country_event = {
 	option = {
 		name = cov.4.a # Yes
 		ai_chance = {base = 99}
-		ANT = { create_faction = Solstice }
+		create_faction = Solstice
 		add_to_faction = COV
 		COV = {
 				add_ai_strategy = {
-					type = alliance
-					id = "ANT"
-					value = 200
+						type = alliance
+						id = "ANT"
+						value = 200
 				}
 			}
 		}
@@ -84,21 +85,4 @@ country_event = {
 		name = cov.4.b # NO 
 		ai_chance = {base = 1}
 	}
-}
-
-
-
-country_event = { # reminder
-    id = cov.5
-    title = cov.5.t
-    desc = cov.5.d
-    picture = GFX_report_event_gre_cabinet_meeting
-
-    is_triggered_only = yes #focus 
-	fire_only_once = yes
-	
-    option = {
-        name = cov.5.a
-		
-    }
 }

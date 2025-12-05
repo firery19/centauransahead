@@ -129,19 +129,11 @@ country_event = {
 	
 	option = {
 		name = urs.6.a
-		add_stability = -0.01
-		random_owned_state = {
-			limit = {
-				has_resistance = yes
-				is_owned_by = ROOT
-				is_core_of = LPS
-			}
-			add_resistance = 10
+		add_stability = -0.05
+		add_popularity = {
+			ideology = ROOT
+			popularity = -0.05
 		}
-#		add_popularity = {
-#			ideology = ROOT
-#			popularity = -0.05
-#		}
 	}
 }
 country_event = {
@@ -234,7 +226,8 @@ country_event = {
 	
 	option = {
 		name = urs.9.a
-		add_manpower = -1000
+		add_war_support = -0.05
+		add_manpower = -2500
 		send_equipment = {
 			equipment = infantry_equipment
 			amount = 200
@@ -354,6 +347,9 @@ country_event = { #Lepus spawns
 			every_country = {
 				news_event = { id = news.414 }
 			}
+			clear_country_flag = grease_wars_not_started
+			custom_effect_tooltip = grease_wars_prelude_tooltip
+			complete_national_focus = URS_prelude_grease_war
 		}
 	}
 	option = {
@@ -396,27 +392,24 @@ country_event = { #West Lepus falls
 	}
 	option = {
 		name = urs.13.a
+		trigger = {
+			TAG = URS
+		}
+		clear_country_flag = grease_wars_not_started
+		custom_effect_tooltip = grease_wars_prelude_tooltip
+		complete_national_focus = URS_prelude_grease_war
 	}
 }
-
-country_event = { #Canis Rebellion #flow of time
+country_event = { #Canis Rebellion
 	id = urs.14
 	title = urs.14.t
 	desc = urs.14.d
 	picture = GFX_report_event_generic_riot
-	fire_only_once = yes
 	
-	trigger = {
-		tag = URS
-		date > 1902.06.01
-		NOT = { HYS = { has_completed_focus = HYS_supply_rebels_hydra } }
-	}
-	
+	is_triggered_only = yes
+
 	option = {
 		name = urs.14.a
-		clr_country_flag = grease_wars_not_started
-		custom_effect_tooltip = grease_wars_prelude_tooltip
-		complete_national_focus = URS_prelude_grease_war
 		123 = {
 			transfer_state_to = CNS
 		}
@@ -468,71 +461,6 @@ country_event = { #Canis Rebellion #flow of time
 		}
 	}
 }
-
-country_event = { #Canis Rebellion #hydrus triggered
-	id = urs.1401
-	title = urs.1401.t
-	desc = urs.1401.d
-	picture = GFX_report_event_generic_riot
-	is_triggered_only = yes
-	
-	option = {
-		name = urs.1401.a
-		clr_country_flag = grease_wars_not_started
-		custom_effect_tooltip = grease_wars_prelude_tooltip
-		complete_national_focus = URS_prelude_grease_war
-		123 = {
-			transfer_state_to = CNS
-		}
-		declare_war_on = {
-			target = CNS
-			type = annex_everything
-		}
-		CNS = { add_timed_idea = { 
-				idea = CNS_defend_everything_idea
-				days = 30}
-				}
-		hidden_effect = {
-		CNS = { country_event = { id = cns.1 days = 0 } }
-		set_global_flag = grease_wars_start
-		
-			CNS = {
-				set_province_controller = 3242
-				set_province_controller = 3732
-				set_province_controller = 3756
-				set_province_controller = 136
-				set_province_controller = 3654
-				set_province_controller = 3643
-				set_province_controller = 628
-				set_province_controller = 1164
-				set_province_controller = 3672
-				set_province_controller = 3689
-				set_province_controller = 667
-				set_province_controller = 1891
-				set_province_controller = 3709
-				set_province_controller = 3705
-				set_province_controller = 256
-				set_province_controller = 1842
-				set_province_controller = 3765
-				set_province_controller = 911
-				set_province_controller = 1107
-				set_province_controller = 3782
-				set_province_controller = 2336
-				set_province_controller = 1932
-				set_province_controller = 3796
-				set_province_controller = 752
-				set_province_controller = 3945
-				set_province_controller = 2732
-				set_province_controller = 3278
-			}
-		}
-		hidden_effect = {
-			country_event = { id = urs.15 days = 10 }
-			country_event = { id = urs.16 days = 25 }
-		}
-	}
-}
-
 country_event = { #bye bye economy
 	id = urs.15
 	title = urs.15.t
@@ -595,24 +523,6 @@ country_event = { #bye bye stability
 				remove_idea = URS_domestic_unrest1
 				add_idea = URS_domestic_unrest_grease_wars
 			}
-		}
-	}
-}
-
-country_event = { #blow up oil rigs
-	id = urs.17
-	title = urs.17.t
-	desc = urs.17.d
-	picture = GFX_report_event_generic_riot
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = urs.17.a
-		114 = {
-			add_dynamic_modifier = {
-                modifier = URS_blown_oil_rigs_modifier
-            }
 		}
 	}
 }

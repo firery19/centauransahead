@@ -42,6 +42,7 @@ tags={
 	"Utilities"
 }
 picture="thumbnail.png"
-supported_version="1.16.*"
+supported_version="1.17.*"
+version="1.1.3AG"
 path="mod/centauransahead"
 remote_file_id="3559962856"

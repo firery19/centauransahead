@@ -8,120 +8,8 @@ focus_tree = {
             tag = ORI
         }
     }
-#	shared_focus = dc_focus_start
+	shared_focus = dc_focus_start
     continuous_focus_position = { x = 25 y = 680 }
-	
-	initial_show_position = {
-		focus = ORS_EndHartTerm
-	}
-	
-	focus = {
-        id = ORI_prepare_to_liberate_canis
-        icon = GFX_goal_generic_construct_infrastructure
-        x = 16
-        y = 0
-        cost = 5
-		
-		available = {
-			owns_state = 114
-		}
-		
-        completion_reward = {
-		
-		}
-		
-        ai_will_do = {
-            factor = 5
-        }
-    }
-	
-	focus = {
-        id = ORI_thirst_for_trouble
-        icon = GFX_goal_generic_construct_infrastructure
-        x = 0
-        y = 1
-        cost = 10
-		relative_position_id = ORI_prepare_to_liberate_canis
-        prerequisite = { focus = ORI_prepare_to_liberate_canis }
-		
-		available = {
-			owns_state = 114
-		}
-		
-        completion_reward = {
-		
-		}
-		
-        ai_will_do = {
-            factor = 5
-        }
-    }
-	
-	focus = {
-        id = ORI_water_the_hydrus_thorn
-        icon = GFX_goal_generic_construct_infrastructure
-        x = -2
-        y = 1
-        cost = 10
-		relative_position_id = ORI_thirst_for_trouble
-        prerequisite = { focus = ORI_thirst_for_trouble }
-		
-		available = {
-			owns_state = 114
-		}
-		
-        completion_reward = {
-		
-		}
-		
-        ai_will_do = {
-            factor = 5
-        }
-    }
-	
-	focus = {
-        id = ORI_sneak_weapons_to_rebels
-        icon = GFX_goal_generic_construct_infrastructure
-        x = 2
-        y = 1
-        cost = 10
-		relative_position_id = ORI_thirst_for_trouble
-        prerequisite = { focus = ORI_thirst_for_trouble }
-		
-		available = {
-			owns_state = 114
-		}
-		
-        completion_reward = {
-		
-		}
-		
-        ai_will_do = {
-            factor = 5
-        }
-    }
-	
-	focus = {
-        id = ORI_provoke_ursa
-        icon = GFX_goal_generic_construct_infrastructure
-        x = 0
-        y = 1
-        cost = 10
-		relative_position_id = ORI_thirst_for_trouble
-        prerequisite = { focus = ORI_thirst_for_trouble }
-		
-		available = {
-			owns_state = 114
-		}
-		
-        completion_reward = {
-		
-		}
-		
-        ai_will_do = {
-            factor = 5
-        }
-    }
 
     focus = {
         id = ORS_CanisCrisis
@@ -190,10 +78,6 @@ focus_tree = {
 				HYS = {
 					country_event = { 
 						id = orion.1  days = 1 }
-				}
-				news_event = {
-				id = news.3
-				days = 2
 				}
 			}
         }
@@ -321,14 +205,14 @@ focus_tree = {
         y = 6
         cost = 5
 		available = {
-			ORI = {
+			URS = {
 				AND = {
-						has_full_control_of_state = 117
-						has_full_control_of_state = 119
-						has_full_control_of_state = 114
-						has_full_control_of_state = 116
-						has_full_control_of_state = 115
-						has_full_control_of_state = 118
+						NOT = { has_full_control_of_state = 117 } 
+						NOT = { has_full_control_of_state = 119 } 
+						NOT = { has_full_control_of_state = 114 } 
+						NOT = { has_full_control_of_state = 116 } 
+						NOT = { has_full_control_of_state = 115 }
+						NOT = { has_full_control_of_state = 118 } 					
 					}
 				}
 			}
@@ -347,6 +231,7 @@ focus_tree = {
         }
     }
 	
+	
 	focus = {
         id = ORS_TheUrsanQuestion
         icon = GFX_goal_unknown
@@ -360,12 +245,7 @@ focus_tree = {
             focus = ORS_EndOfWar
         }
         completion_reward = {
-		remove_ideas = { 
-			ORS_PrepareMilitaryIdea
-			ORS_RallyPeopleIdea
-			ORS_LessonsOfWar
-			ORS_PromiseBusinessesIdea
-			}
+		remove_ideas = {ORS_PrepareMilitaryIdea ORS_RallyPeopleIdea ORS_LessonsOfWar ORS_PromiseBusinessesIdea }
 		}
         ai_will_do = {
             factor = 5
@@ -373,46 +253,31 @@ focus_tree = {
     }
 	
 	focus = {
-        id = ORI_post_war_disarmament
+        id = ORS_SpoilsOfWar
         icon = GFX_focus_generic_resource_extraction
-        x = -2
-        y = 1
+        x = 9
+        y = 8
         cost = 5
-        prerequisite = { focus = ORS_TheUrsanQuestion }
-		relative_position_id = ORS_TheUrsanQuestion
-		
 		available = {	
-			NOT = { has_war = yes }
-		}
-		
-        completion_reward = {
-		
-		}
-		
-        ai_will_do = {
-            factor = 5
-        }
-    }
-	
-		
-		focus = {
-        id = ORI_canis_department
-        icon = GFX_goal_unknown
-        x = 4
-        y = 1
-        cost = 10
-		relative_position_id = ORS_TheUrsanQuestion
-		available = {
-			owns_state = 114
-			owns_state = 117
+				ORI = {
+					AND = {
+						has_full_control_of_state = 117
+						has_full_control_of_state = 114 
+						has_full_control_of_state = 113
+						NOT = { has_war_with = URS }
+					}
+				}
 			}
 		
         prerequisite = {
             focus = ORS_TheUrsanQuestion
         }
         completion_reward = {
-#		add_state_core = 114
-#		add_state_core = 117
+		117 = {required_garrison_factor = 0.5}
+		117 = {add_resource = {
+		type = oil 
+		amount = 10}
+		}
 		}
         ai_will_do = {
             factor = 5
@@ -420,179 +285,146 @@ focus_tree = {
     }
 	
 	focus = {
-        id = ORI_canisian_administration
-        icon = GFX_goal_unknown
-        x = -3
-        y = 1
-        cost = 5
-		relative_position_id = ORI_canis_department
-        prerequisite = { focus = ORI_canis_department }
-		
-		available = {
-			owns_state = 114
-		}
-		
-        completion_reward = {
-		
-		}
-		
-        ai_will_do = {
-            factor = 5
-        }
-    }
-	
-	focus = {
-        id = ORI_clearing_the_minefields_act
-        icon = GFX_goal_unknown
-        x = 0
-        y = 1
-        cost = 10
-		relative_position_id = ORI_canisian_administration
-        prerequisite = { focus = ORI_canisian_administration }
-		
-		available = {
-			owns_state = 114
-		}
-		
-        completion_reward = {
-		
-		}
-		
-        ai_will_do = {
-            factor = 5
-        }
-    }
-	
-	focus = {
-        id = ORI_improving_infrastructure
-        icon = GFX_goal_generic_construct_infrastructure
-        x = 0
-        y = 1
-        cost = 10
-		relative_position_id = ORI_clearing_the_minefields_act
-        prerequisite = { focus = ORI_clearing_the_minefields_act }
-		
-		available = {
-			owns_state = 114
-		}
-		
-        completion_reward = {
-		
-		}
-		
-        ai_will_do = {
-            factor = 5
-        }
-    }
-	
-	focus = {
-        id = ORI_repatriating_canisians
-        icon = GFX_goal_unknown
-        x = 2
-        y = 1
-        cost = 5
-		relative_position_id = ORI_canisian_administration
-        prerequisite = { focus = ORI_canisian_administration }
-		
-		available = {
-			owns_state = 114
-		}
-		
-        completion_reward = {
-		# population goes to canis capital
-		}
-		
-        ai_will_do = {
-            factor = 5
-        }
-    }
-	
-	focus = {
-        id = ORI_canis_development
-        icon = GFX_goal_unknown
+        id = ORS_InvestInOilRigs
+        icon = GFX_goal_generic_oil_refinery
         x = 3
-        y = 1
+        y = 9
         cost = 5
-		relative_position_id = ORI_canis_department
-        prerequisite = { focus = ORI_canis_department }
+		available = {			
+			}
 		
-		available = {
-		
-		}
-		
+        prerequisite = {
+            focus = ORS_SpoilsOfWar
+        }
         completion_reward = {
-		
+		114 = {required_garrison_factor = 0.5}
+		114 = {add_resource = {
+		type = oil 
+		amount = 32}
 		}
-		
+		}
         ai_will_do = {
             factor = 5
         }
     }
 	
 	focus = {
-        id = ORI_aluminium_output #in alcor
-        icon = GFX_goal_unknown
-        x = 2
-        y = 1
+        id = ORS_InvestInRubberFactories
+        icon = GFX_focus_generic_rubber
+        x = 3
+        y = 10
         cost = 5
-		relative_position_id = ORI_canis_development
-        prerequisite = { focus = ORI_canis_development }
+		available = {			
+			}
 		
-		available = {
-		
-		}
-		
-        completion_reward = {
-		117 = {
-			add_resource = {
-				type = aluminium 
-				amount = 10
+        prerequisite = {
+            focus = ORS_InvestInOilRigs
+        }
+		completion_reward = {
+			117 = {
+				add_resource = {
+					type = rubber 
+					amount = 12
 				}
 			}
-		}
-		
-        ai_will_do = {
-            factor = 5
-        }
+			}
+			ai_will_do = {
+				factor = 5
+			}
     }
 	
 	focus = {
-        id = ORI_reconstruct_oil_rigs
-        icon = GFX_goal_unknown
-        x = 4
-        y = 1
-        cost = 10
-		relative_position_id = ORI_canis_development
-        prerequisite = { focus = ORI_canis_development }
-		
-		available = {
-		
-		}
-		
-        completion_reward = {
-		114 = {
-			add_resource = {
-				type = oil 
-				amount = 10
-				}
+			id = ORS_ClampDownOnResistence
+			icon = GFX_focus_BRA_end_the_state_of_emergency
+			x = 9
+			y = 9
+			cost = 5
+			available = {			
 			}
 		
+			prerequisite = {
+				focus = ORS_SpoilsOfWar
+			}
+			completion_reward = {
+
+			add_manpower  = -50000
+		
+			add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -5000
+				}
+			}
+			ai_will_do = {
+				factor = 5
+			}
 		}
 		
-        ai_will_do = {
-            factor = 5
-        }
-    }
+		focus = {
+			id = ORS_ConfiscateLand
+			icon = GFX_focus_LAT_suspend_constitution_of_latvia
+			x = 9
+			y = 10
+			cost = 5
+			available = {}
+		
+			prerequisite = {
+				focus = ORS_ClampDownOnResistence
+			}
+			completion_reward = {
+			114 = {add_extra_state_shared_building_slots = 3}
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_DeportUrsans
+			icon = GFX_focus_FIN_parmis_devils
+			x = 6
+			y = 9
+			cost = 5
+			available = {			
+				}
+		
+			prerequisite = {
+				focus = ORS_SpoilsOfWar
+			}
+			completion_reward = {
+		
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_ImproveInfrastructure
+			icon = GFX_goal_generic_construct_infrastructure
+			x = 6
+			y = 11
+			cost = 5
+			available = {			
+			}
+		
+			prerequisite = {focus = ORS_InvestInRubberFactories}
+			prerequisite = {focus = ORS_ConfiscateLand}
+			completion_reward = {
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
 		
 	focus = {
         id = ORI_returning_canis
         icon = GFX_goal_unknown
-        x = 0
-        y = 1
+        x = 1
+        y = 3
         cost = 10
 		relative_position_id = ORS_TheUrsanQuestion
 		available = {			
-		}
+			}
 		
         prerequisite = {
             focus = ORS_TheUrsanQuestion
@@ -607,40 +439,16 @@ focus_tree = {
         }
     }
 		
-		focus = {
-			id = ORS_EndHartTerm # turn of the century
-			icon = GFX_focus_ORI_EndOfHartTerm
-			x = 22
-			y = 0
-			cost = 5
-			available = {
-				ORI_Edward_Spencer = {is_country_leader = yes}
-				date < 1900.12.09
-			
-			}
-			
-			prerequisite = {
-				
-			}
-			
-			completion_reward = {
-				add_political_power = 100
-			}
-			
-			ai_will_do = {
-				factor = 5
-			}
-		}
 		
 		focus = {
 			id = ORS_ExpandTheCivilianSector
 			icon = GFX_goal_generic_construct_civ_factory
-			x = 20
+			x = 18
 			y = 1
 			cost = 10
 			available = {
 				ORI_Edward_Spencer = {is_country_leader = yes}
-#				date < 1901.12.09
+				date < 1900.12.09
 			}
 			
 			prerequisite = {
@@ -673,12 +481,12 @@ focus_tree = {
 		focus = {
 			id = ORS_ExpandBuildingSlots
 			icon = GFX_focus_POL_develop_polish_shipbuilding
-			x = 21
+			x = 19
 			y = 2
 			cost = 10
 			available = {
 				ORI_Edward_Spencer = {is_country_leader = yes}
-#				date < 1901.12.09
+				date < 1900.12.09
 			}
 			
 			prerequisite = {
@@ -704,16 +512,39 @@ focus_tree = {
 				factor = 5
 			}
 		}
+		
+		focus = {
+			id = ORS_Elections
+			icon = GFX_focus_ORI_Hart_Term
+			x = 20
+			y = 4
+			cost = 0.1
+			available = {
+				always = false
+			
+			}
+			
+			prerequisite = {focus = ORS_ExpandBuildingSlots}
+			prerequisite = {focus = ORS_KeepUpTheBoom}
+			
+			completion_reward = {
+				add_political_power = 100
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
 
 		focus = {
 			id = ORS_KeepUpTheBoom
 			icon = GFX_focus_ORI_KeepUpTheBoom
-			x = 23
+			x = 21
 			y = 2
 			cost = 10
 			available = {
 				ORI_Edward_Spencer = {is_country_leader = yes}
-#				date < 1901.12.09
+				date < 1900.12.09
 			
 			}
 			
@@ -736,12 +567,12 @@ focus_tree = {
 		focus = {
 			id = ORS_EconomicBoom
 			icon = GFX_focus_ORI_OrioniteEconomicBoom
-			x = 24
+			x = 22
 			y = 1
 			cost = 10
 			available = {
 				ORI_Edward_Spencer = {is_country_leader = yes}
-#				date < 1901.12.09
+				date < 1902.12.09
 			
 			}
 			
@@ -758,19 +589,44 @@ focus_tree = {
 			}
 		}
 
-		
+		focus = {
+			id = ORS_EndHartTerm
+			icon = GFX_focus_ORI_EndOfHartTerm
+			x = 20
+			y = 0
+			cost = 5
+			available = {
+				ORI_Edward_Spencer = {is_country_leader = yes}
+				date < 1902.12.09
+			
+			}
+			
+			prerequisite = {
+				
+			}
+			
+			completion_reward = {
+				add_political_power = 100
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
 		focus = {
 			id = ORS_HartSecondTerm
 			icon = GFX_focus_ORI_HartsSecondTerm
 			x = 22
-			y = 4
+			y = 5
 			cost = 5
 			available = {
-			has_completed_focus = ORS_TheUrsanQuestion
+				always = false
 			}
 			
-			prerequisite = {focus = ORS_ExpandBuildingSlots}
-			prerequisite = {focus = ORS_KeepUpTheBoom}
+			prerequisite = {
+				focus = ORS_Elections
+			}
 			
 			completion_reward = {
 				add_political_power = 100
@@ -1115,12 +971,36 @@ focus_tree = {
 		}
 		
 		
-		
+		focus = {
+			id = ORS_OrioniteInterventionism
+			icon = GFX_focus_ORI_OrioniteInterventionism
+			x = 40
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_QuestionOfForeignPolicy
+			}
+			
+			mutually_exclusive = { focus = ORS_OrioniteImperialism }
+			mutually_exclusive = { focus = ORS_OrioniteIsolationism }
+			
+			completion_reward = {
+				add_war_support = 0.05 #people want to contain antares
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
 		
 		focus = {
 			id = ORS_OrioniteIsolationism
 			icon = GFX_focus_ORI_OrioniteIsolationism
-			x = 32
+			x = 34
 			y = 1
 			cost = 5
 			available = {
@@ -1158,7 +1038,7 @@ focus_tree = {
 		}
 		
 		focus = {
-		id = ORI_libran_ocean
+		id = ORI_
 		icon = GFX_
 		prerequisite = { focus = ORS_OrioniteIsolationism }
 		relative_position_id = ORS_OrioniteIsolationism
@@ -1190,20 +1070,6 @@ focus_tree = {
 		icon = GFX_
 		prerequisite = { focus = ORS_OrioniteIsolationism }
 		relative_position_id = ORS_OrioniteIsolationism
-		x = 2
-		y = 1
-		cost = 5
-
-		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
-			}
-		}
-		
-		focus = {
-		id = ORI_
-		icon = GFX_
-		prerequisite = { focus = ORS_OrioniteIsolationism }
-		relative_position_id = ORS_OrioniteIsolationism
 		x = 0
 		y = 1
 		cost = 5
@@ -1241,96 +1107,24 @@ focus_tree = {
 			}
 		}
 		
-		# shared
-		
 		focus = {
-		id = ORI_protect_hydra_from_invaders
+		id = ORI_
 		icon = GFX_
-		prerequisite = { focus = ORS_OrioniteIsolationism focus = ORS_OrioniteInterventionism }
+		prerequisite = { focus = ORS_OrioniteIsolationism }
 		relative_position_id = ORS_OrioniteIsolationism
-		x = 4
+		x = 0
 		y = 1
 		cost = 5
 
 		completion_reward = {
 		custom_effect_tooltip = corvus_does_something_tooltip 
-			}
-		}
-		
-		focus = {
-		id = ORI_army_prospects
-		icon = GFX_
-		prerequisite = { focus = ORS_OrioniteIsolationism focus = ORS_OrioniteInterventionism }
-		relative_position_id = ORS_OrioniteIsolationism
-		x = 6
-		y = 1
-		cost = 5
-
-		completion_reward = {
-		custom_effect_tooltip = corvus_does_something_tooltip 
-			}
-		}
-		
-		focus = {
-			id = ORS_OrioniteInterventionism
-			icon = GFX_focus_ORI_OrioniteInterventionism
-			x = 42
-			y = 1
-			cost = 5
-			available = {
-				
-			}
-			
-			prerequisite = {
-				focus = ORS_QuestionOfForeignPolicy
-			}
-			
-			mutually_exclusive = { focus = ORS_OrioniteImperialism }
-			mutually_exclusive = { focus = ORS_OrioniteIsolationism }
-			
-			completion_reward = {
-				add_war_support = 0.05 #people want to contain antares
-			}
-			
-			ai_will_do = {
-				factor = 5
-			}
-		}
-		
-		
-		
-		
-		focus = {
-			id = ORS_ExpandLibranPorts
-			icon = GFX_goal_generic_construct_naval_dockyard
-			x = 4
-			y = 1
-			cost = 5
-			available = {
-				
-			}
-			
-			relative_position_id = ORS_OrioniteInterventionism
-			
-			prerequisite = {
-				focus = ORS_OrioniteImperialism
-				focus = ORS_OrioniteInterventionism
-			}
-			
-			
-			completion_reward = {
-				add_stability = 0.05
-			}
-			
-			ai_will_do = {
-				factor = 5
 			}
 		}
 		
 		focus = {
 			id = ORS_OrioniteImperialism
 			icon = GFX_focus_ORI_OrioniteImperialism
-			x = 50
+			x = 46
 			y = 1
 			cost = 5
 			available = {
@@ -1356,14 +1150,12 @@ focus_tree = {
 		focus = {
 			id = ORS_LookDownSouth
 			icon = GFX_focus_generic_black_sea_focus
-			x = 0
-			y = 1
+			x = 46
+			y = 2
 			cost = 5
 			available = {
 				
 			}
-			
-			relative_position_id = ORS_OrioniteImperialism
 			
 			prerequisite = {
 				focus = ORS_OrioniteImperialism
@@ -1381,8 +1173,8 @@ focus_tree = {
 		focus = {
 			id = ORS_IsolateAuriga
 			icon = GFX_focus_ORI_EncircleAuriga
-			x = 0
-			y = 1
+			x = 46
+			y = 3
 			cost = 5
 			available = {
 				
@@ -1391,8 +1183,6 @@ focus_tree = {
 			prerequisite = {
 				focus = ORS_LookDownSouth
 			}
-			
-			relative_position_id = ORS_LookDownSouth
 			
 			completion_reward = {
 				AUR = {
@@ -1406,16 +1196,37 @@ focus_tree = {
 		}
 		
 		focus = {
-			id = ORS_InvadeAuriga
-			icon = GFX_goal_generic_major_war
-			x = 0
+			id = ORS_RallyTheNationalists
+			icon = GFX_focus_ORI_RallyTheNationalists
+			x = 51
 			y = 2
 			cost = 5
 			available = {
 				
 			}
 			
-			relative_position_id = ORS_LookDownSouth
+			prerequisite = {
+				focus = ORS_OrioniteImperialism
+			}
+			
+			completion_reward = {
+				add_ideas = ORS_NationalistRheotic
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_InvadeAuriga
+			icon = GFX_goal_generic_major_war
+			x = 46
+			y = 4
+			cost = 5
+			available = {
+				
+			}
 			
 			prerequisite = {
 				focus = ORS_IsolateAuriga
@@ -1433,21 +1244,60 @@ focus_tree = {
 			}
 		}
 		
+		
 		focus = {
-			id = ORS_LookUpNorth
-			icon = GFX_focus_generic_mediterranean_sea_focus
-			x = 2
-			y = 1
+			id = ORS_ExpandTheMilitaryIndustry
+			icon = GFX_focus_SOV_merge_plants
+			x = 51
+			y = 3
 			cost = 5
 			available = {
 				
 			}
 			
-			relative_position_id = ORS_OrioniteImperialism
+			prerequisite = {
+				focus = ORS_RallyTheNationalists
+			}
+			
+			completion_reward = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_ExpandLibranPorts
+			icon = GFX_goal_generic_construct_naval_dockyard
+			x = 43
+			y = 2
+			cost = 5
+			available = {
+				
+			}
 			
 			prerequisite = {
 				focus = ORS_OrioniteImperialism
+				focus = ORS_OrioniteInterventionism
 			}
+			
 			
 			completion_reward = {
 				add_stability = 0.05
@@ -1457,11 +1307,62 @@ focus_tree = {
 				factor = 5
 			}
 		}
+		
+		
+		focus = {
+			id = ORS_FoundTheMarineCorps
+			icon = GFX_goal_generic_amphibious_assault
+			x = 51
+			y = 4
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_ExpandTheMilitaryIndustry
+			}
+			
+			completion_reward = {
+				add_ideas = ORS_OMAC
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = ORS_RoundTwo
+			icon = GFX_focus_ORI_InvadeUrsa
+			x = 48
+			y = 4
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = ORS_BuildCanisianNavalBases
+			}
+			
+			completion_reward = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = URS
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
 		focus = {
 			id = ORS_BuildCanisianNavalBases
 			icon = GFX_focus_generic_naval_discipline
-			x = 0
-			y = 1
+			x = 48
+			y = 3
 			cost = 5
 			available = {
 				
@@ -1470,8 +1371,6 @@ focus_tree = {
 			prerequisite = {
 				focus = ORS_LookUpNorth
 			}
-			
-			relative_position_id = ORS_LookUpNorth
 			
 			completion_reward = {
 				add_building_construction = {
@@ -1505,26 +1404,21 @@ focus_tree = {
 		}
 		
 		focus = {
-			id = ORS_RoundTwo
-			icon = GFX_focus_ORI_InvadeUrsa
-			x = 0
+			id = ORS_LookUpNorth
+			icon = GFX_focus_generic_mediterranean_sea_focus
+			x = 48
 			y = 2
 			cost = 5
 			available = {
 				
 			}
 			
-			relative_position_id = ORS_LookUpNorth
-			
 			prerequisite = {
-				focus = ORS_BuildCanisianNavalBases
+				focus = ORS_OrioniteImperialism
 			}
 			
 			completion_reward = {
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = URS
-				}
+				add_stability = 0.05
 			}
 			
 			ai_will_do = {
@@ -1533,12 +1427,11 @@ focus_tree = {
 		}
 		
 		
-		
 		focus = {
 			id = ORS_FinishTheLastManStanding
 			icon = GFX_focus_ORI_InvadeHydrus
-			x = 1
-			y = 1
+			x = 47
+			y = 5
 			cost = 5
 			available = {
 				
@@ -1550,8 +1443,6 @@ focus_tree = {
 			prerequisite = {
 				focus = ORS_InvadeAuriga
 			}
-			
-			relative_position_id = ORS_InvadeAuriga
 			
 			completion_reward = {
 				create_wargoal = {
@@ -1568,8 +1459,8 @@ focus_tree = {
 		focus = {
 			id = ORS_TheEasternTitan
 			icon = GFX_focus_ORI_TheEasternTitan
-			x = 0
-			y = 1
+			x = 47
+			y = 6
 			cost = 5
 			available = {
 				
@@ -1578,8 +1469,6 @@ focus_tree = {
 			prerequisite = {
 				focus = ORS_FinishTheLastManStanding
 			}
-			
-			relative_position_id = ORS_FinishTheLastManStanding
 			
 			completion_reward = {
 				add_ideas = ORS_TheEasternTitan
@@ -1591,108 +1480,14 @@ focus_tree = {
 		}
 		
 		focus = {
-			id = ORS_RallyTheNationalists
-			icon = GFX_focus_ORI_RallyTheNationalists
-			x = 5
-			y = 1
-			cost = 5
-			available = {
-				
-			}
-			
-			relative_position_id = ORS_OrioniteImperialism
-			
-			prerequisite = {
-				focus = ORS_OrioniteImperialism
-			}
-			
-			completion_reward = {
-				add_ideas = ORS_NationalistRheotic
-			}
-			
-			ai_will_do = {
-				factor = 5
-			}
-		}
-		
-		
-		focus = {
-			id = ORS_ExpandTheMilitaryIndustry
-			icon = GFX_focus_SOV_merge_plants
-			x = 0
-			y = 1
-			cost = 5
-			available = {
-				
-			}
-			
-			prerequisite = {
-				focus = ORS_RallyTheNationalists
-			}
-			
-			relative_position_id = ORS_RallyTheNationalists
-			
-			completion_reward = {
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			
-			ai_will_do = {
-				factor = 5
-			}
-		}
-		
-		
-		focus = {
-			id = ORS_FoundTheMarineCorps
-			icon = GFX_goal_generic_amphibious_assault
-			x = 0
+			id = ORS_PrepareToStrikeTheBeast
+			icon = GFX_focus_focus_fra_revolution_utmost
+			x = 54
 			y = 2
 			cost = 5
 			available = {
 				
 			}
-			
-			prerequisite = {
-				focus = ORS_ExpandTheMilitaryIndustry
-			}
-			
-			relative_position_id = ORS_RallyTheNationalists
-			
-			completion_reward = {
-				add_ideas = ORS_OMAC
-			}
-			
-			ai_will_do = {
-				factor = 5
-			}
-		}
-		
-		focus = {
-			id = ORS_PrepareToStrikeTheBeast
-			icon = GFX_focus_focus_fra_revolution_utmost
-			x = 8
-			y = 1
-			cost = 5
-			available = {
-				
-			}
-			
-			relative_position_id = ORS_OrioniteImperialism
 			
 			prerequisite = {
 				focus = ORS_OrioniteImperialism
@@ -1710,8 +1505,8 @@ focus_tree = {
 		focus = {
 			id = ORS_AntiAntareanPropaganda
 			icon = GFX_focus_ORI_AntiAntareanPropaganda
-			x = 0
-			y = 1
+			x = 54
+			y = 3
 			cost = 5
 			available = {
 				
@@ -1720,8 +1515,6 @@ focus_tree = {
 			prerequisite = {
 				focus = ORS_PrepareToStrikeTheBeast
 			}
-			
-			relative_position_id = ORS_PrepareToStrikeTheBeast
 			
 			completion_reward = {
 				add_ideas = ORS_AntiAntareanPropaganda
@@ -1735,14 +1528,12 @@ focus_tree = {
 		focus = {
 			id = ORS_StrikeTheBoogeymanOfCentaura
 			icon = GFX_focus_generic_total_war
-			x = 0
-			y = 2
+			x = 54
+			y = 4
 			cost = 5
 			available = {
 				
 			}
-			
-			relative_position_id = ORS_PrepareToStrikeTheBeast
 			
 			prerequisite = {
 				focus = ORS_AntiAntareanPropaganda
@@ -1763,14 +1554,12 @@ focus_tree = {
 		focus = {
 			id = ORS_TheNorthCentauranExpedition
 			icon = GFX_focus_NOR_hurtigruten
-			x = 10
-			y = 1
+			x = 56
+			y = 2
 			cost = 5
 			available = {
 				
 			}
-			
-			relative_position_id = ORS_OrioniteImperialism
 			
 			prerequisite = {
 				focus = ORS_OrioniteImperialism
@@ -1788,14 +1577,12 @@ focus_tree = {
 		focus = {
 			id = ORS_WarplanRiaa
 			icon = GFX_goal_generic_position_armies
-			x = 0
-			y = 1
+			x = 56
+			y = 3
 			cost = 5
 			available = {
 				
 			}
-			
-			relative_position_id = ORS_TheNorthCentauranExpedition
 			
 			prerequisite = {
 				focus = ORS_TheNorthCentauranExpedition
@@ -1813,14 +1600,12 @@ focus_tree = {
 		focus = {
 			id = ORS_DestroyTheGiantOfTheNorth
 			icon = GFX_focus_ETH_boots_on_the_shore
-			x = 0
-			y = 2
+			x = 56
+			y = 4
 			cost = 5
 			available = {
 				
 			}
-			
-			relative_position_id = ORS_TheNorthCentauranExpedition
 			
 			prerequisite = {
 				focus = ORS_WarplanRiaa
@@ -1841,14 +1626,12 @@ focus_tree = {
 		focus = {
 			id = ORS_FinishOffLibra
 			icon = GFX_focus_SOV_reinforce_northern_naval_bases
-			x = -1
-			y = 1
+			x = 55
+			y = 5
 			cost = 5
 			available = {
 				
 			}
-			
-			relative_position_id = ORS_DestroyTheGiantOfTheNorth
 			
 			prerequisite = {
 				focus = ORS_DestroyTheGiantOfTheNorth
@@ -1872,23 +1655,12 @@ focus_tree = {
 		focus = {
 			id = ORS_TheMasterOfCentaura
 			icon = GFX_focus_ITA_mare_nostrum
-			x = 0
-			y = 1
+			x = 55
+			y = 6
 			cost = 5
 			available = {
-			OR = {
-				AND = {
-				owns_state = 69
-				owns_state = 103
-				}
-				AND = {
-				ANT = { is_puppet_of = ORI }
-				RIA = { is_puppet_of = ORI }
-				}
+				
 			}
-		}
-			
-			relative_position_id = ORS_FinishOffLibra
 			
 			prerequisite = {
 				focus = ORS_FinishOffLibra
@@ -1931,7 +1703,7 @@ focus_tree = {
 		focus = {
 			id = ORS_TheHard1900s
 			icon = GFX_focus_ORI_TheHard1900s
-			x = 60
+			x = 67
 			y = 0
 			cost = 5
 			available = {
@@ -2204,119 +1976,6 @@ focus_tree = {
 			}
 			ai_will_do = {
 				factor = 5
-			}
-		}
-	
-	focus = {
-        id = ORI_undermine_gemina
-        icon = GFX_focus_rom_handle_king
-        x = 4
-        y = 0
-        cost = 5
-		
-		available = {
-		NOT = {	owns_state = 137 }
-		}
-		
-        completion_reward = {
-		
-		}
-		
-        ai_will_do = {
-            factor = 5
-        }
-    }
-	
-	focus = {
-        id = ORI_restrict_gemina
-        icon = GFX_focus_BEL_prisoner_king
-        x = 0
-        y = 1
-        cost = 5
-        prerequisite = { focus = ORI_undermine_gemina }
-		relative_position_id = ORI_undermine_gemina
-		
-		available = {
-			owns_state = 114
-		}
-		
-        completion_reward = {
-		
-		}
-		
-        ai_will_do = {
-            factor = 5
-        }
-    }
-	
-	focus = {
-        id = ORI_reduce_gem_funding
-        icon = GFX_focus_ARG_anti_corruption_policies
-        x = -2
-        y = 1
-        cost = 2
-        prerequisite = { focus = ORI_undermine_gemina }
-		relative_position_id = ORI_undermine_gemina
-		
-		available = {
-			owns_state = 114
-		}
-		
-        completion_reward = {
-		
-		}
-		
-        ai_will_do = {
-            factor = 5
-        }
-    }
-	
-	focus = {
-        id = ORI_increase_control_on_gem
-        icon = GFX_focus_ARG_revive_the_colonial_plan
-        x = 2
-        y = 1
-        cost = 5
-        prerequisite = { focus = ORI_undermine_gemina }
-		relative_position_id = ORI_undermine_gemina
-		
-		available = {
-			owns_state = 114
-		}
-		
-        completion_reward = {
-		
-		}
-		
-        ai_will_do = {
-            factor = 5
-        }
-    }
-		
-		focus = {
-			id = ORS_annex_gemina
-			icon = GFX_focus_GER_autarky_ambitions
-			x = 0
-			y = 1
-			cost = 5
-		relative_position_id = ORI_restrict_gemina
-			available = {
-				date > 1901.01.01
-			}
-			
-			prerequisite = {
-			focus = ORI_restrict_gemina
-			focus = ORI_reduce_gem_funding
-			focus = ORI_increase_control_on_gem
-			}
-			completion_reward = {
-				annex_country = {
-				    target = GEM
-				    transfer_troops = yes
-				}
-			}
-			ai_will_do = {
-				factor = 20
 			}
 		}
 	}

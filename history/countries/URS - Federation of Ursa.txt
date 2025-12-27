@@ -89,9 +89,9 @@ set_popularities = {
 	neutrality = 80
 }
 
-recruit_character = URS_matvei_magor
 #recruit_character = URS_kastus_magor
 recruit_character = URS_eduard_magor
+recruit_character = URS_matvei_magor
 
 #add_country_leader_role = {
 #	character = URS_matvei_magor

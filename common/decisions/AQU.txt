@@ -723,11 +723,20 @@ AQU_army_management = {
 			has_war = yes
 			has_war_support > 0.90
 		}
+		NOT = {
+		has_completed_focus = AQU_control_cg
+		}
 			has_completed_focus = AQU_civil_guard
 			has_political_power > 99
 		}
+		
+		cancel_trigger = {
+		has_completed_focus = AQU_control_cg
+		}
+		
 
 		visible = {
+		is_debug = yes
 			has_completed_focus = AQU_civil_guard
 		#	always = yes
 		}
@@ -743,6 +752,14 @@ AQU_army_management = {
 				add_political_power = -100
 			}
 		}
+		cancel_effect = {
+			hidden_effect = {
+				add_command_power = 20
+				army_experience = 40
+				add_political_power = 100
+			}
+		}
+		
 		remove_effect = {
 		AQU = { country_event = aqu.1 }
 		}

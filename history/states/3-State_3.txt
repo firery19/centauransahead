@@ -10,8 +10,10 @@ state={
 			arms_factory = 2
 			dockyard = 3
 			5318 = {
-				naval_base = 10
-
+				naval_base = 8
+			}
+			4861 = {
+				naval_base = 4
 			}
 
 		}
@@ -20,6 +22,21 @@ state={
 		}
 		victory_points = {
 			5318 5
+		}
+		victory_points = {
+			4958 5
+		}
+		victory_points = {
+			445 5
+		}
+		victory_points = {
+			5722 5
+		}
+		victory_points = {
+			5582 5
+		}
+		victory_points = {
+			4861 5
 		}
 
 	}

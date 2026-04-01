@@ -1,0 +1,31 @@
+
+state={
+	id=214
+	name="STATE_214"
+	resources={
+		steel=0.000
+		tungsten=0.000
+	}
+
+	history={
+		owner = VEG
+		add_core_of = VEG
+		add_claim_by = GRS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 0
+			dockyard = 0
+		}
+		victory_points = {
+		
+		}
+	}
+	provinces={
+		1550 1710 1796 2533 2729 3324 4756 4787 4799 4800 4812 4832 
+	}
+	manpower=2372325
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

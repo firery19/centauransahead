@@ -4,7 +4,7 @@ news_event = { # fall of alcor
 	id = news.1
 	title = news.1.t
 	desc = news.1.d
-	picture = GFX_news_event_soldiers_marching
+	picture = GFX_news_event_japanese_army_parade
 	
 	major = yes
 	
@@ -43,10 +43,12 @@ news_event = { # fall of alcor
 	option = {
 		name = news.1.b
 		trigger = {
+		OR = {
 		TAG = ORI 
 		TAG = HYS
 		TAG = LPS
 		TAG = CNS
+			}
 		}
 	}
 	option = {
@@ -59,13 +61,9 @@ news_event = { # end of grease wars
 	id = news.2
 	title = news.2.t
 	desc = news.2.d
-	picture = GFX_news_event_soldiers_marching
+	picture = GFX_news_event_ast_navy
 	
 	major = yes
-	
-	trigger = {
-	
-	}
 	
 	is_triggered_only = yes
 	
@@ -103,6 +101,118 @@ news_event = { # end of grease wars
 	option = {
 		name = news.2.c
 		trigger = { TAG = URS }
+	}
+}
+
+news_event = { # formation of the d.c
+	id = news.3
+	title = news.3.t
+	desc = news.3.d
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+#	trigger = {
+#		ORI = {
+#		is_in_faction = yes
+#		}
+#	}
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = formed_dragon_compact_flag
+	}
+	
+#	mean_time_to_happen = {
+#		days = 2
+#	}
+	
+	option = {
+		name = news.3.a
+		trigger = {
+			NOT = {
+				TAG = ORI
+				TAG = HYS
+				TAG = LPS
+				TAG = CNS
+				TAG = URS
+			}
+		}
+	}
+	option = {
+		name = news.3.b
+		trigger = {
+		OR = {
+			TAG = ORI 
+			TAG = HYS
+			TAG = LPS
+			TAG = CNS
+			}
+		}
+	}
+	option = {
+		name = news.3.c
+		trigger = { TAG = URS }
+	}
+}
+
+# Start of corvus war
+news_event = {
+	id = news.409
+	title = news.409.t
+	desc = news.409.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		COV = { has_war_with = CET }
+		NOT = { has_global_flag = scw_starts }
+	}
+	
+	immediate = {
+		set_global_flag = scw_starts
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.409.a
+		trigger = {
+			NOT = {
+				TAG = CET
+				TAG = COV
+			}
+		}
+	}
+	option = {
+		name = news.409.b
+		trigger = {
+		TAG = CET
+		AND = {
+			NOT = {
+				48 = { is_core_of = CET }
+				154 = { is_core_of = CET }
+				}
+			}
+		}
+	}
+	option = {
+		name = news.409.b2
+		trigger = {
+		TAG = CET
+		AND = {
+			48 = { is_core_of = CET }
+			154 = { is_core_of = CET }
+			}
+		}
+	}
+	option = {
+		name = news.409.c
+		trigger = { TAG = COV }
 	}
 }
 
@@ -212,7 +322,6 @@ news_event = {
 	trigger = {
 		7 = { is_controlled_by = COV }
 		7 = { is_owned_by = CET }
-		ANT = { has_war_with = CET }
 		NOT = { has_global_flag = fall_of_nauta_ant }
 		NOT = { has_global_flag = fall_of_nauta_cov }
 	}
@@ -320,6 +429,16 @@ news_event = {
 			}
 		}
 	}
+	option = {
+		name = news.414.c
+		trigger = {
+			NOT = {
+				TAG = URS
+				TAG = HYS
+				TAG = ORI
+			}
+		}
+	}
 }
 
 news_event = {
@@ -346,7 +465,7 @@ news_event = {
 	}
 	
 	option = {
-		name = news.410.a
+		name = news.415.a
 		trigger = {
 			NOT = {
 				TAG = CET
@@ -355,11 +474,11 @@ news_event = {
 		}
 	}
 	option = {
-		name = news.410.b
+		name = news.415.b
 		trigger = { TAG = CET }
 	}
 	option = {
-		name = news.410.c
+		name = news.415.c
 		trigger = { TAG = COV }
 	}
 }
@@ -388,7 +507,7 @@ news_event = {
 	}
 	
 	option = {
-		name = news.410.a
+		name = news.416.a
 		trigger = {
 			NOT = {
 				TAG = CET
@@ -397,11 +516,11 @@ news_event = {
 		}
 	}
 	option = {
-		name = news.410.b
+		name = news.416.b
 		trigger = { TAG = CET }
 	}
 	option = {
-		name = news.410.c
+		name = news.416.c
 		trigger = { TAG = COV }
 	}
 }
@@ -430,7 +549,7 @@ news_event = {
 	}
 	
 	option = {
-		name = news.410.a
+		name = news.417.a
 		trigger = {
 			NOT = {
 				TAG = CET
@@ -439,11 +558,124 @@ news_event = {
 		}
 	}
 	option = {
-		name = news.410.b
+		name = news.417.b
 		trigger = { TAG = CET }
 	}
 	option = {
-		name = news.410.c
+		name = news.417.c
 		trigger = { TAG = COV }
 	}
+}
+
+country_event = {
+	id = news.caromite
+	title = news.caromite.t
+	desc = news.caromite.d
+	picture = GFX_report_event_caromite
+	
+	major = no
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_tech = excavation1
+		OR = {
+		has_tech = dispersed_industry
+		has_tech = concentrated_industry3
+		}
+	}
+	
+	immediate = {
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 18
+	}
+	
+	option = {
+		name = news.caromite.a
+		add_stability = 0.05
+		random_core_state = {
+			add_extra_state_shared_building_slots = -1
+		}
+#		add_war_support = 0.05
+	}
+	option = {
+		name = news.caromite.b
+		add_political_power = 10
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -5
+			producer = ROOT
+		}
+		random_core_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+	option = {
+		name = news.caromite.c
+		add_political_power = -10
+		random_core_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+
+news_event = {
+	id = news.700
+	title = news.700.t
+	desc = news.700.d
+	picture = GFX_news_event_017
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.700.a
+		trigger = {
+			NOT = {
+				TAG = CET
+				TAG = ANT
+				TAG = COV
+			}
+		}
+	}
+	option = {
+		name = news.700.b
+		trigger = { TAG = COV }
+	}
+	option = {
+		name = news.700.c
+		trigger = {
+			OR = {
+				TAG = CET
+				TAG = ANT
+			}
+		}
+	}
+}
+
+
+
+country_event = { # refresh focus tree
+	id = news.1111
+	title = news.1111.t
+	desc = news.1111.d
+	picture = GFX_
+	
+	major = no
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	immediate = {
+		mark_focus_tree_layout_dirty = yes
+	}
+	
 }

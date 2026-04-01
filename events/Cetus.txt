@@ -47,28 +47,184 @@ country_event = {
 	}
 }
 
-country_event = { # good management of sc
-    id = CET.10
-    title = TCET10
-    desc = DCET10
-    #picture = GFX_evt_
-
-    is_triggered_only = yes
-
-    option = {
-
-    }
+country_event = {
+	id = cet.4
+	title = cet.4.t
+	desc = cet.4.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = cet.4.a	#sounds good
+		ai_chance = {
+			base = 90
+			modifier = {
+				factor = 0
+				CET = {
+					OR = {
+						has_wargoal_against = ANT
+						is_justifying_wargoal_against = ANT
+					}
+					NOT = {
+						is_in_faction_with = ANT
+					}
+				}
+			}
+		}
+		add_opinion_modifier = { target = ANT modifier = ME_pact }# pact
+		custom_effect_tooltip = germany.11.a.tt
+		add_war_support = -0.01
+		
+		CET = {
+			country_event = { days = 1 id = cet.5 }
+			effect_tooltip = {
+				add_opinion_modifier = { target = ANT modifier = ME_pact }# pact
+			}
+		}
+		set_global_flag = ant_yes_cet_pact
+		#hidden_effect =  { add_timed_idea = { idea = ANT_pact days = 730 } }
+	}
+	option = {
+		name = cet.4.b #no way
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				CET = {
+					NOT = { has_wargoal_against = ANT }
+					NOT = { is_justifying_wargoal_against = ANT }
+				}
+			}
+			modifier = {
+				factor = 0
+				is_in_faction_with = CET
+			}
+		}
+		add_political_power = -50
+		add_opinion_modifier = { target = CET modifier = refused_ME_pact }# no pact
+		CET = {
+			country_event = { days = 1 id = cet.6 }
+		}
+		set_global_flag = cet_no_pact
+	}
 }
 
-country_event = { # bad management of sc
-    id = CET.11
-    title = TCET11
-    desc = DCET11
-    #picture = GFX_evt_
+country_event = {
+	id = cet.5
+	title = cet.5.t
+	desc = cet.5.d
+	picture = GFX_report_event_molotov_signing_pact
+	
+	is_triggered_only = yes
 
-    is_triggered_only = yes
+	option = {
+		name = cet.5.a	#neat
+		
+		diplomatic_relation = { country = ANT relation = non_aggression_pact }
+		add_opinion_modifier = { target = ANT modifier = ME_pact }# pact
+		
+		hidden_effect = {
+			country_event = { hours = 6 id = news.700 }
+		}
+	}
+}
 
-    option = {
+country_event = {
+	id = cet.6
+	title = cet.6.t
+	desc = cet.6.d
+	picture = GFX_report_event_stalin_01
 
-    }
+	is_triggered_only = yes
+
+	option = {
+		name = cet.6.a	#bah
+		add_opinion_modifier = { target = ANT modifier = refused_ME_pact }# no pact
+	}
+}
+
+country_event = { # demand lacertan submit - for lacerta
+	id = cet.7
+	title = cet.7.t
+	desc = cet.7.d
+	picture = GFX_report_event_stalin_01
+
+	is_triggered_only = yes
+
+	option = { # we accept
+		name = cet.7.a
+		CET = { country_event = cet.8 days = 2 }
+		effect_tooltip = {
+		CET = { puppet = LAC }
+		}
+		ai_chance = {
+			base = 99
+		}
+	}
+
+	option = { # put up a fight (annoying)
+		name = cet.7.b
+		CET = { country_event = cet.9 days = 2 }
+		CET = {
+		effect_tooltip = {
+			create_wargoal = {
+				type = annex_everything
+				target = LAC
+				expire = 0
+				}
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = { # accepted
+	id = cet.8
+	title = cet.8.t
+	desc = cet.8.d
+	picture = GFX_report_event_stalin_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = cet.8.a
+		puppet = LAC
+	}
+}
+
+country_event = { # refused
+	id = cet.9
+	title = cet.9.t
+	desc = cet.9.d
+	picture = GFX_report_event_stalin_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = cet.9.a
+		create_wargoal = {
+			type = annex_everything
+			target = LAC
+			expire = 0
+		}
+	}
+}
+
+country_event = { # corvun event recieving deported individuals
+	id = cet.10
+	title = cet.10.t
+	desc = cet.10.d
+	picture = GFX_report_event_stalin_01
+
+	is_triggered_only = yes
+
+	option = {
+		name = cet.10.a
+        53 = { add_manpower = 500000 }
+		
+	}
 }

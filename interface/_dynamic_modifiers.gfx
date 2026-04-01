@@ -1,0 +1,23 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_mod_ANT_army_dynamic"
+		texturefile = "gfx/interface/ideas/ANT_army.dds"
+	}
+    spriteType = {
+		name = "GFX_mod_ANT_navy_dynamic"
+		texturefile = "gfx/interface/ideas/ANT_armada.dds"
+	}
+	spriteType = {
+		name = "GFX_mod_ANT_airforce_dynamic"
+		texturefile = "gfx/interface/ideas/ANT_airforce.dds"
+	}
+	spriteType = {
+		name = "GFX_mod_ANT_compliance_bonus"
+		texturefile = "gfx/interface/state_modifiers/modifiers_generic_industry.dds"
+	}
+		spriteType = {
+		name = "GFX_mod_ANT_scorch_state"
+		texturefile = "gfx/interface/state_modifiers/modifiers_test.dds"
+	}
+}
+ 

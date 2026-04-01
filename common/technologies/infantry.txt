@@ -3,6 +3,7 @@ technologies = {
 	@1890 = 0
 	@1902 = 2 #1902
 	@1904 = 4 #1904
+	@1905 = 5
 	@1906 = 6 #1906
 	@1910 = 8 #1910
 	@1914 = 10 #1914
@@ -1847,10 +1848,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1906
+		start_year = 1905
 		folder = {
 			name = infantry_folder
-			position = { x = 4 y = @1906 }
+			position = { x = 4 y = @1905 }
 		}
 
 		categories = {
@@ -1865,7 +1866,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1906.1.1"
+				date > "1905.1.1"
 			}
 
 			modifier = {

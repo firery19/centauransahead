@@ -2,8 +2,9 @@ state={
 	id=125
 	name="STATE_125"
 	history = {
-		owner = HYS
+		owner = URS
 		add_core_of = HYS
+		add_core_of = CNS
 		buildings = {
 			infrastructure = 1
 		}
@@ -16,6 +17,6 @@ state={
 	}
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-        manpower=23105
+        manpower=79084
         state_category = tiny_island
 }

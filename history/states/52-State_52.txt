@@ -4,7 +4,7 @@ state={
     resources = {
         steel = 19
 		aluminium = 2
-		coal = 5
+		coal = 1 #this +the one cov gets from focus is enough for pre-SCW industry
     }
 	history = {
 		owner = COV

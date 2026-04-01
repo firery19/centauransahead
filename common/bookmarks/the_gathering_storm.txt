@@ -18,7 +18,7 @@ bookmarks = {
 			ideas = {
 				ANT_ppdebuff
 				ANT_industry_idea
-				ANT_army
+				ANT_humiliation1
 			}
 
 		}
@@ -31,9 +31,9 @@ bookmarks = {
 				ORS_PrioritizedMilitary
 			}
 			focuses = {
-				ORS_Elections
+				#ORS_Elections
 				ORS_InvadeCanis
-				ORS_TheHard1900s
+				#ORS_TheHard1900s
 			}
 		}
 		CET = {
@@ -43,7 +43,7 @@ bookmarks = {
 			ideas = {
 				CET_rules_the_waves_idea
 				CET_SC_question_idea
-				CET_independent_armed_forces_idea
+#				CET_independent_armed_forces_idea
 			}
 			focuses = {
 				CET_strengthen_monarch
@@ -82,6 +82,16 @@ bookmarks = {
 		HYS = {
 			history = HYS_1900_DESC
 			ideology = neutrality
+			ideas = {
+			HYS_recently_independent_idea
+			HYS_food_shortages_idea
+			HYS_against_the_goliath_idea
+			}
+			focuses = {
+			HYS_prepare_hydrus_military
+			HYS_seek_orionite_help
+			HYS_dragon_compact
+			}
 		}
 		RIA = {
 			history = RIA_1900_DESC
@@ -89,12 +99,14 @@ bookmarks = {
 			ideas = {
 				RIA_rural_countryside
 				RIA_industrialisation
-
 			}
 		}
 		LBR = {
 			history = LBR_1900_DESC
 			ideology = neutrality
+			ideas = {
+			LBR_isolation_policy_idea
+			}
 		}
 		AQU = {
             minor = yes
@@ -115,11 +127,18 @@ bookmarks = {
             minor = yes
 			history = GRS_1900_DESC
 			ideology = neutrality
+			ideas = {
+			GRS_desert_warriors_idea
+			}
 		}
 		VEG = {
             minor = yes
 			history = VEG_1900_DESC
 			ideology = neutrality
+			ideas = {
+			VEG_queens_blessing_idea
+			VEG_protected_by_murus_idea
+			}
 		}
 		CLB = {
             minor = yes
@@ -158,6 +177,21 @@ bookmarks = {
             minor = yes
 			history = MUS_1900_DESC
 			ideology = neutrality
+		}
+		LGS = {
+			minor = yes
+			history = LGS_1900_DESC
+			ideology = neutrality
+			ideas = {
+				LGS_isolation
+				LGS_industry_0
+				LGS_army_0
+			}
+			focuses = {
+				LGS_save_aquila
+				LGS_mountaineer_army
+				LGS_deport_everyone_to_ocean
+			}
 		}
 
 		effect = {

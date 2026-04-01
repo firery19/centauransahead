@@ -48,6 +48,28 @@
  LAC_keep_to_ourselves:0 "Kneeling In Our Backyard"
  LAC_keep_to_ourselves_desc:0 "We need not proclaim such delusional granduer ambitions. We are perfectly content with staying on this island."
  
+ # events
+ lac.1.t:0 "Lacerta steals Typhon Islands"
+ lac.1.d:0 "
+ lac.1.a:0 "kill them"
+ lac.1.b:0 "do nothing"
+ lac.2.t:0 "Orion retaliates"
+ lac.2.d:0 "
+ lac.2.a:0 "okay"
+ lac.3.t:0 "Orion does nothing"
+ lac.3.d:0 "
+ lac.3.a:0 "noob orion"
+ lac.4.t:0 "Lacerta steals Ara Islands"
+ lac.4.d:0 "
+ lac.4.a:0 "kill them"
+ lac.4.b:0 "
+ lac.5.t:0 "Antares retaliates"
+ lac.5.d:0 "
+ lac.5.a:0 "okay"
+ lac.6.t:0 "Antares does nothing"
+ lac.6.d:0 "
+ lac.6.a:0 "okay antares"
+ 
  # tech
  
  LAC_falling_behind_tech:0 "Falling Behind In Technology"

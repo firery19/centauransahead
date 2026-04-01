@@ -51,6 +51,7 @@ ideas = {
 				consumer_goods_factor = 0.1
                 stability_factor = -0.1
 				production_speed_buildings_factor = -0.2
+				factory_energy_consumption = 0.5
             }
         }
 		
@@ -78,20 +79,20 @@ ideas = {
             modifier = {
                 army_speed_factor = 1
 				dig_in_speed_factor = -1
-				army_core_attack_factor = 0.75
+				army_core_attack_factor = 0.15
             }
 			
 			targeted_modifier = {
 				tag = CET
 				attack_bonus_against = 0.05
-				defense_bonus_against = -0.25
+				defense_bonus_against = -0.3
 				}
 		}
 		
 		COV_consolidate_gains_idea = {
             name = COV_consolidate_gains
 
-            picture = COV_surpise_attack
+            picture = generic_disjointed_gov
             allowed = { original_tag = COV }
             removal_cost = -1
 
@@ -106,60 +107,60 @@ ideas = {
 		COV_renewed_offensive_idea = { # i forgot the 
             name = COV_renewed_offensive
 
-            picture = COV_surpise_attack
+            picture = generic_disjointed_gov
             allowed = { original_tag = COV }
             removal_cost = -1
 
             modifier = {
                 army_speed_factor = 0.5
-				army_defence_factor = -0.125
+				army_defence_factor = -0.15
 				dig_in_speed_factor = -0.5
-				army_core_attack_factor = 0.25
+				army_core_attack_factor = 0.15
             }
 		}
 		
 		COV_mountaineering_idea = {
 
-            picture = COV_surpise_attack
+            picture = generic_disjointed_gov
             allowed = { original_tag = COV }
             removal_cost = -1
 
             modifier = {
-				terrain_penalty_reduction = 0.25
+				terrain_penalty_reduction = 0.1	#still a massive buff... massive??? LOOOOOOOOOOOOOOOOOWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWtaperfade
             }
 		}
 		
-		COV_continued_offensive_idea = { # difference between these two
-            name = COV_renewed_offensive
-
-            picture = COV_surpise_attack
-            allowed = { original_tag = COV }
-            removal_cost = -1
-
-            modifier = {
-                army_speed_factor = 0.5
-				army_defence_factor = -0.175
-				dig_in_speed_factor = -0.75
-				army_core_attack_factor = 0.35
-            }
-		}
+#		COV_continued_offensive_idea = { # difference between these two
+#           name = COV_renewed_offensive
+#
+#           picture = COV_surpise_attack
+#           allowed = { original_tag = COV }
+#           removal_cost = -1
+#
+#           modifier = {
+#              army_speed_factor = 0.5
+#				army_defence_factor = -0.175
+#				dig_in_speed_factor = -0.75
+#				army_core_attack_factor = 0.35
+#           }
+#		}
 		
 		COV_improve_supply_idea = {
 		name = COV_improve_supply
 
-            picture = COV_surpise_attack
+            picture = generic_disjointed_gov
             allowed = { original_tag = COV }
             removal_cost = -1
 
             modifier = {
                 supply_consumption_factor = -0.2
-				supply_combat_penalties_on_core_factor = -0.4
+				supply_combat_penalties_on_core_factor = -0.25
             }
 		}
 		
 		COV_active_rationing_idea = { #toggled
 
-            picture = COV_surpise_attack
+            picture = generic_disjointed_gov
             allowed = { original_tag = COV }
             removal_cost = -1
 
@@ -171,7 +172,7 @@ ideas = {
 		
 		COV_active_rationing_2_idea = { #toggled
 
-            picture = COV_surpise_attack
+            picture = generic_disjointed_gov
             allowed = { original_tag = COV }
             removal_cost = -1
 
@@ -183,7 +184,7 @@ ideas = {
 		
 		COV_heightened_coal_production_idea = { # 
 
-            picture = COV_surpise_attack
+            picture = ARG_resource_extration_focus
             allowed = { original_tag = COV }
             removal_cost = -1
 
@@ -197,7 +198,7 @@ ideas = {
 		
 		COV_issued_warbonds_idea = {
 
-            picture = COV_surpise_attack
+            picture = RAJ_issue_bonds_on_the_stock_market
             allowed = { original_tag = COV }
             removal_cost = -1
 
@@ -208,7 +209,7 @@ ideas = {
 		
 		COV_issued_warbonds_2_idea = { # after repeated uses (triggered by country flag)
 
-            picture = COV_surpise_attack
+            picture = RAJ_issue_bonds_on_the_stock_market
             allowed = { original_tag = COV }
             removal_cost = -1
 
@@ -222,7 +223,7 @@ ideas = {
 		
 		COV_shut_down_markets_idea = {
 
-            picture = COV_surpise_attack
+            picture = CHI_corruption_armed_forces
             allowed = { original_tag = COV }
             removal_cost = -1
 
@@ -235,7 +236,7 @@ ideas = {
 		
 		COV_subsidised_industries_idea = {
 
-            picture = COV_surpise_attack
+            picture = crda
             allowed = { original_tag = COV }
             removal_cost = -1
 
@@ -251,7 +252,7 @@ ideas = {
 		
 		COV_penal_battalion_idea = {
 
-            picture = COV_surpise_attack
+            picture = COG_the_invisible_roof
             allowed = { original_tag = COV }
             removal_cost = -1
 
@@ -262,20 +263,19 @@ ideas = {
 		
 		COV_mafia_rampant_idea = {
 
-            picture = COV_surpise_attack
+            picture = COV_rampant_mafia_idea
             allowed = { original_tag = COV }
             removal_cost = -1
 
             modifier = {
 			stability_factor = -0.05
 			conscription_factor = -0.25
-			consumer_goods_factor = 0.1
             }
 		}
 		
 		COV_mafia_cooperation_idea = {
 
-            picture = COV_surpise_attack
+            picture = COV_rampant_mafia_idea
             allowed = { original_tag = COV }
             removal_cost = -1
 
@@ -289,7 +289,7 @@ ideas = {
 		
 		COV_mafia_cooperation_2_idea = {
 
-            picture = COV_surpise_attack
+            picture = COV_rampant_mafia_idea
             allowed = { original_tag = COV }
             removal_cost = -1
 
@@ -303,7 +303,7 @@ ideas = {
 		
 		COV_mafia_disbanded_idea = {
 
-            picture = COV_surpise_attack
+            picture = COV_suppressed_mafia_idea
             allowed = { original_tag = COV }
             removal_cost = -1
 
@@ -315,7 +315,7 @@ ideas = {
 		
 		COV_mafia_suppressed_idea = {
 
-            picture = COV_surpise_attack
+            picture = COV_suppressed_mafia_idea
             allowed = { original_tag = COV }
             removal_cost = -1
 
@@ -328,7 +328,7 @@ ideas = {
 		
 		COV_martial_law_imposed_idea = {
 
-            picture = COV_surpise_attack
+            picture = idea_caproni
             allowed = { original_tag = COV }
             removal_cost = -1
 

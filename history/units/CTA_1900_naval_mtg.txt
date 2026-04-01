@@ -1,0 +1,97 @@
+units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "La Marina Real"
+		naval_base = 3576
+		task_force = {				
+			name = "Grand Eastern Fleet"
+			location = 3280
+
+			ship = { name = "dSM Repulsar" definition = battleship pride_of_the_fleet = yes equipment = { ship_hull_heavy_1 = { amount = 1 owner = CTA version_name = "Repulsar Class" } } experience = 30}
+			ship = { name = "dSM Rada" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CTA version_name = "Repulsar Class" } } experience = 30 }
+			ship = { name = "dSM Majestad" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CTA version_name = "Repulsar Class" } } experience = 30 }
+
+			ship = { name = "dSM Ferocio" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = CTA version_name = "Ferocio Class" } } experience = 25 }
+			ship = { name = "dSM Nueva Providencia" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = CTA version_name = "Ferocio Class" } } experience = 25 }
+			ship = { name = "dSM San Antonya" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = CTA version_name = "Ferocio Class" } } experience = 25 }
+
+
+			ship = { name = "dSM 17.D" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CTA version_name = "11.C-Series" } } experience = 10 }
+			ship = { name = "dSM 18.D" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CTA version_name = "11.C-Series" } } experience = 10 }
+			ship = { name = "dSM 19.D" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CTA version_name = "11.C-Series" } } experience = 10 }
+			ship = { name = "dSM 20.D" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CTA version_name = "11.C-Series" } } experience = 10}
+			ship = { name = "dSM 21.D" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CTA version_name = "11.C-Series" } } experience = 10}
+			ship = { name = "dSM 22.D" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CTA version_name = "11.C-Series" } } experience = 10}
+			ship = { name = "dSM 23.D" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CTA version_name = "11.C-Series" } } experience = 10}
+			ship = { name = "dSM 24.D" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CTA version_name = "11.C-Series" } } experience = 10}
+			ship = { name = "dSM 25.D" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CTA version_name = "11.C-Series" } } experience = 10}
+
+		}
+		task_force = {				
+			name = "Strait Fleet"
+			location = 3642
+
+			ship = { name = "dSM Prima" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CTA version_name = "Repulsar Class" } } experience = 30 }
+
+			ship = { name = "dSM Sagittarius" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = CTA version_name = "Ferocio Class" } } experience = 25 }
+			ship = { name = "dSM Yumengrad" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = CTA version_name = "Ferocio Class" } } experience = 25 }
+
+			ship = { name = "dSM 01.A" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = CTA version_name = "01.A-Series" } } experience = 10}
+			ship = { name = "dSM 02.A" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = CTA version_name = "01.A-Series" } } experience = 10}
+			ship = { name = "dSM 03.A" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = CTA version_name = "01.A-Series" } } experience = 10 }
+			ship = { name = "dSM 04.A" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = CTA version_name = "01.A-Series" } } experience = 10}
+			ship = { name = "dSM 05.A" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = CTA version_name = "01.A-Series" } } experience = 10}
+			ship = { name = "dSM 06.A" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = CTA version_name = "01.A-Series" } } experience = 10}
+			ship = { name = "dSM 07.A" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = CTA version_name = "01.A-Series" } } experience = 10}
+			ship = { name = "dSM 08.B" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CTA version_name = "11.C-Series" } } experience = 10 }
+			ship = { name = "dSM 09.B" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CTA version_name = "11.C-Series" } } experience = 10}
+			ship = { name = "dSM 10.B" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CTA version_name = "11.C-Series" } } experience = 10}
+
+
+		}
+		task_force = {				
+			name = "Annulus Fleet"
+			location = 3598
+
+			ship = { name = "dSM Ferrum" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = CTA version_name = "Ferocio Class" } } experience = 25 }
+
+			ship = { name = "dSM 11.C" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CTA version_name = "11.C-Series" } } experience = 10 }
+			ship = { name = "dSM 12.C" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CTA version_name = "11.C-Series" } } experience = 10 }
+			ship = { name = "dSM 13.C" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CTA version_name = "11.C-Series" } } experience = 10 }
+			ship = { name = "dSM 14.C" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CTA version_name = "11.C-Series" } } experience = 10 }
+			ship = { name = "dSM 15.C" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CTA version_name = "11.C-Series" } } experience = 10 }
+			ship = { name = "dSM 16.C" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CTA version_name = "11.C-Series" } } experience = 10 }
+
+
+
+
+		}
+	}
+}
+
+instant_effect = {
+### Under Construction Notes ###
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "CTA" 
+			version_name = "Nacional Class"
+		}
+		name = "dSM Nacional"
+		requested_factories = 1
+		progress = 0.49
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "CTA" 
+			version_name = "Nacional Class"
+		}
+		name = "dSM Nacional II"
+		requested_factories = 1
+		progress = 0.39
+		amount = 1
+	}
+}

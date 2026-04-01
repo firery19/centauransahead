@@ -3,16 +3,20 @@ ideas = {
         CTA_democratic_bastion_idea = {
             name = CTA_democratic_bastion
             
-            picture = idea_generic_democratic_drift_bonus
+            picture = generic_fortify_the_borders
             allowed = { original_tag = CTA }
             removal_cost = -1
 
             modifier = {
                 conscription_factor = -0.2
                 training_time_army_factor = 0.5
-				army_speed_factor = -0.1
-				army_defence_factor = 1
-				dig_in_speed_factor = 1
-				forced_surrender_limit = 0.18
+land_bunker_effectiveness_factor = 0.1
+coastal_bunker_effectiveness_factor = 0.2
+production_speed_bunker_factor = -0.2
+production_speed_coastal_bunker_factor = -0.4
+			army_speed_factor = -0.1
+			army_defence_factor = 1
+			dig_in_speed_factor = 1
+			forced_surrender_limit = 0.15
             }
         }

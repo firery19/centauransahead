@@ -1,0 +1,86 @@
+SpriteTypes = {
+	# corvus
+	SpriteType = {
+		name = "GFX_COV_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/COV_infantry_equipment_0.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_COV_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/COV_infantry_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_COV_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/COV_infantry_equipment_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_COV_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/COV_infantry_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_COV_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_3_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_COV_artillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_COV_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/COV_artillery_equipment.dds"
+	}
+	
+	# cetus
+	
+	SpriteType = {
+		name = "GFX_CET_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/CET_infantry_equipment_0.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CET_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/CET_infantry_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CET_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/CET_infantry_equipment_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CET_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/CET_infantry_equipment_3.dds"
+	}
+	
+	# antares
+	
+	SpriteType = {
+		name = "GFX_ANT_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/ANT_infantry_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ANT_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ANT_infantry_equipment_2.dds"
+	}
+	
+	# ursa
+	
+	SpriteType = {
+		name = "GFX_URS_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/URS_infantry_equipment_0.dds"
+	}
+	
+	# vega
+	
+	SpriteType = {
+		name = "GFX_VEG_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/VEG_infantry_equipment_0.dds"
+	}
+}
+

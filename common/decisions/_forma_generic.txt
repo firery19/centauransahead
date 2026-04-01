@@ -1,0 +1,1308 @@
+special_projects_category = {
+	blow_bowstring_canal = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+		
+		available = {
+			controls_state = 120
+			controls_province = 1597
+			controls_province = 1383
+				any_enemy_country = {
+					OR = {
+					controls_state = 121
+					controls_state = 3
+				}
+			}
+		}
+	
+		visible = {
+			has_war = yes
+			NOT = { has_global_flag = SUEZ_CANAL_BLOCKED }
+			any_controlled_state = {
+				OR = {
+					region = 8
+					region = 89
+				}
+			}
+		}
+	
+		fire_only_once = no
+	
+		days_remove = 30
+	
+		cost = 75
+	
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							owns_state = 120
+						}
+					}
+					random_country = {
+						limit = {
+							owns_state = 120
+						}
+						country_event = { id = generic.12 days = 1 }
+					}
+				}
+			}
+		}
+	
+		remove_effect = {
+			if = {
+				limit = {
+					controls_province = 1597
+					controls_province = 1383
+					}
+				}
+				set_country_flag = blew_up_bowstring_canal
+				set_global_flag = BOWSTRING_CANAL_BLOCKED
+				country_event = { id = wtt_news.40 hours = 6}
+			}
+			effect_tooltip = {
+				if = {
+					limit = {
+						ORI = {
+							owns_state = 446
+							owns_state = 453
+						}
+					}
+					add_war_support = -0.05
+					add_stability = -0.05
+				}
+			}
+		ai_will_do = {
+			base = 0
+#			modifier = {
+#				add = 200 # Try to cut the enemy off from the mediterranean if you also occupy Gibraltar
+#				OR = {
+#					has_full_control_of_state = 118
+#					any_allied_country = {
+#						has_full_control_of_state = 118
+#					}
+#				}
+#				has_war = yes
+#				NOT = { tag = ENG }
+#			}
+			modifier = {
+				add = 51 # Somewhat important if the baddies are coming
+				120 = {
+					OWNER = {
+						OR = {
+							tag = ROOT
+							is_in_faction_with = ROOT
+						}
+					}
+				}
+				OR = {
+					3 = {
+						NOT = { controller = { tag = ROOT } }
+						controller = { has_war_with = ROOT }
+					}
+					121 = {
+						NOT = { controller = { tag = ROOT } }
+						controller = { has_war_with = ROOT }
+					}
+				}
+				has_war = yes
+				is_in_faction_with = ORI
+			}
+		}
+	}
+
+	rebuild_bowstring_canal = {
+
+		icon = GFX_decision_generic_special_project
+
+		available = {
+			has_full_control_of_state = 120
+			NOT = {
+				any_enemy_country = {
+					controls_state = 3
+				}
+			}
+			num_of_civilian_factories > 25
+		}
+	
+		visible = {
+			has_global_flag = BOWSTRING_CANAL_BLOCKED
+		}
+	
+		fire_only_once = no
+	
+		days_remove = 180
+	
+		cost = 400
+	
+		modifier = {
+			civilian_factory_use = 25
+		}
+	
+		remove_effect = {
+			if = {
+				limit = {
+					has_full_control_of_state = 120
+					NOT = {
+						any_enemy_country = {
+							controls_state = 3
+						}
+					}
+				}
+				set_country_flag = rebuilt_bowstring
+				clr_global_flag = BOWSTRING_CANAL_BLOCKED
+				country_event = { id = wtt_news.43 hours = 6 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0 # Don't bother if your navy is weak AND not USA
+				has_navy_size = { size < 50 }
+				NOT = { tag = ORI }
+				has_war = yes
+			}
+			modifier = {
+				factor = 200 # Prioritize if you decisively beat USA's navy
+				has_war_with = ORI
+				ORI = { has_navy_size = { size < 50 } }
+				has_navy_size = { size > 100 }
+			}
+			modifier = {
+				factor = 200 # Prioritize if USA
+				tag = ORI
+			}
+			modifier = {
+				factor = 10 # Prioritize if not at war
+				has_war = no
+			}
+		}
+	}
+}
+
+hearts_of_forma_generic_category = {
+	warfare_development_1 = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+		
+		available = {
+		has_tech = improved_infantry_weapons
+		always = no
+		}
+	
+		visible = {
+		always = no
+		}
+	
+		fire_only_once = yes
+	
+		days_remove = 0
+	
+		cost = 75
+	
+		modifier = {
+		
+		}
+
+		complete_effect = {
+		swap_ideas = {
+			remove_idea = trench_warfare_idea
+			add_idea = trench_warfare_2_idea
+			}
+		}
+	
+		remove_effect = {
+		
+		}
+		
+		effect_tooltip = {
+			
+		}
+			
+		ai_will_do = {
+			base = 5
+		}
+	}
+	warfare_development_2 = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+		
+		available = {
+		has_tech = improved_infantry_weapons
+		always = no
+		}
+	
+		visible = {
+		always = no
+		}
+	
+		fire_only_once = yes
+	
+		days_remove = 0
+	
+		cost = 75
+	
+		modifier = {
+		
+		}
+
+		complete_effect = {
+		swap_ideas = {
+			remove_idea = trench_warfare_2_idea
+			add_idea = trench_warfare_3_idea
+			}
+		}
+	
+		remove_effect = {
+		
+		}
+		
+		effect_tooltip = {
+			
+		}
+			
+		ai_will_do = {
+			base = 5
+		}
+	}
+	warfare_development_3 = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+		
+		available = {
+		has_tech = improved_infantry_weapons
+		always = no
+		}
+	
+		visible = {
+		always = no
+		}
+	
+		fire_only_once = yes
+	
+		days_remove = 0
+	
+		cost = 75
+	
+		modifier = {
+		
+		}
+
+		complete_effect = {
+		swap_ideas = {
+			remove_idea = trench_warfare_3_idea
+			add_idea = trench_warfare_4_idea
+			}
+		}
+	
+		remove_effect = {
+		
+		}
+		
+		effect_tooltip = {
+			
+		}
+			
+		ai_will_do = {
+			base = 5
+		}
+	}
+	warfare_development_4 = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+		
+		available = {
+		has_tech = improved_infantry_weapons
+		always = no
+		}
+	
+		visible = {
+		always = no
+		}
+	
+		fire_only_once = yes
+	
+		days_remove = 0
+	
+		cost = 75
+	
+		modifier = {
+		
+		}
+
+		complete_effect = {
+		swap_ideas = {
+			remove_idea = trench_warfare_4_idea
+			add_idea = trench_warfare_5_idea
+			}
+		}
+	
+		remove_effect = {
+		
+		}
+		
+		effect_tooltip = {
+			
+		}
+			
+		ai_will_do = {
+			base = 5
+		}
+	}
+	warfare_development_5 = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+		
+		available = {
+		has_tech = improved_infantry_weapons
+		always = no
+		}
+	
+		visible = {
+		always = no
+		}
+	
+		fire_only_once = yes
+	
+		days_remove = 0
+	
+		cost = 75
+	
+		modifier = {
+		
+		}
+
+		complete_effect = {
+			remove_ideas = trench_warfare_5_idea
+		}
+	
+		remove_effect = {
+		
+		}
+		
+		effect_tooltip = {
+			
+		}
+			
+		ai_will_do = {
+			base = 5
+		}
+	}
+}
+
+########################################################################################
+	
+hof_generic_propaganda_category = {
+	debug_clear_flag = {
+
+		icon = GFX_decision_generic_speech
+
+		available = {
+		is_ai = no
+		}
+
+		visible = {
+		is_debug = yes
+		}
+		
+		fire_only_once = no
+		
+		cost = 0
+		
+		days_remove = 0
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		clr_country_flag = ongoing_propaganda_campaign_flag
+		}
+
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	######################################### country specific
+	
+	
+	CET_navy_production_campaign_decision = {
+
+		icon = GFX_decision_generic_merge_plant_ship
+
+		available = {
+			has_completed_focus = CET_campaigns_prop
+			NOT = { has_country_flag = ongoing_propaganda_campaign_flag }
+			NOT = { has_country_flag = CET_naval_production_cooldown_flag }
+		}
+
+		visible = {
+			original_tag = CET
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		days_remove = 140
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		add_timed_idea = {
+			idea = CET_nav_prod_campaign_idea
+			days = 140
+		}
+		set_country_flag = ongoing_propaganda_campaign_flag
+		set_country_flag = {
+			flag = CET_naval_production_cooldown_flag
+			days = 420
+			value = 1
+			}
+		}
+
+		remove_effect = {
+		clr_country_flag = ongoing_propaganda_campaign_flag
+		}
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				factor = 5
+				has_political_power > 300
+			}
+		}
+	}
+	
+	AQU_burning_vengeance_campaign_decision = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+		available = {
+			has_completed_focus = AQU_the_aquilan_spirit
+			ANT = { has_completed_focus = ANT_scorch }
+			NOT = { has_country_flag = ongoing_propaganda_campaign_flag }
+			NOT = { has_country_flag = burning_vengeance_cooldown_flag }
+		}
+
+		visible = {
+			original_tag = AQU
+		}
+		
+		fire_only_once = no
+		
+		cost = 200
+		
+		days_remove = 140
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		add_timed_idea = {
+			idea = AQU_vengeance_campaign_idea
+			days = 140
+		}
+		set_country_flag = ongoing_propaganda_campaign_flag
+		set_country_flag = {
+			flag = burning_vengeance_cooldown_flag
+			days = 420
+			value = 1
+			}
+		}
+
+		remove_effect = {
+		clr_country_flag = ongoing_propaganda_campaign_flag
+		}
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				factor = 10
+				has_war_with = ANT
+			}
+		}
+	}
+	
+	AQU_forestry_campaign_decision = {
+
+		icon = GFX_decision_generic_forestry
+
+		available = {
+			original_tag = AQU
+			NOT = { has_country_flag = ongoing_propaganda_campaign_flag }
+			NOT = { has_country_flag = forestry_campaign_cooldown_flag }
+		}
+
+		visible = {
+			original_tag = AQU
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		days_remove = 140
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		add_timed_idea = {
+			idea = AQU_forestry_campaign_idea
+			days = 140
+		}
+		set_country_flag = ongoing_propaganda_campaign_flag
+		set_country_flag = {
+			flag = forestry_campaign_cooldown_flag
+			days = 420
+			value = 1
+			}
+		}
+
+		remove_effect = {
+		random_core_state = { prioritize = { 9 34 35 36 38 156 } add_extra_state_shared_building_slots = 1 }
+		clr_country_flag = ongoing_propaganda_campaign_flag
+		}
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				factor = 1
+				num_of_civilian_factories > 20
+			}
+			modifier = {
+				factor = 5
+				has_political_power > 300
+			}
+
+		}
+	}
+	
+	VEG_pastry_selling_campaign_decision = {
+
+		icon = GFX_decision_generic_consumer_goods
+
+		available = {
+			original_tag = VEG
+			NOT = { has_country_flag = ongoing_propaganda_campaign_flag }
+			NOT = { has_country_flag = pastry_selling_campaign_cooldown_flag }
+		}
+
+		visible = {
+			original_tag = VEG
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		days_remove = 140
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		add_timed_idea = {
+			idea = VEG_pastry_selling_campaign_idea
+			days = 140
+		}
+		set_country_flag = ongoing_propaganda_campaign_flag
+		set_country_flag = {
+			flag = pastry_selling_campaign_cooldown_flag
+			days = 420
+			value = 1
+			}
+		}
+
+		remove_effect = {
+		clr_country_flag = ongoing_propaganda_campaign_flag
+		}
+		
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 5
+				has_political_power > 300
+			}
+		
+		}
+	}
+	
+	RIA_eq_scavenging_campaign_decision = {
+
+		icon = GFX_decision_generic_consumer_goods
+
+		available = {
+			original_tag = RIA
+			has_war = yes
+			NOT = { has_country_flag = ongoing_propaganda_campaign_flag }
+			NOT = { has_country_flag = eq_scavenging_campaign_cooldown_flag }
+		}
+
+		visible = {
+			original_tag = RIA
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		days_remove = 140
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		add_timed_idea = {
+			idea = RIA_eq_scavenging_campaign_idea
+			days = 140
+		}
+		set_country_flag = ongoing_propaganda_campaign_flag
+		set_country_flag = {
+			flag = eq_scavenging_campaign_cooldown_flag
+			days = 420
+			value = 1
+			}
+		}
+
+		remove_effect = {
+		clr_country_flag = ongoing_propaganda_campaign_flag
+		}
+		
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 5
+				has_political_power > 300
+			}
+		}
+	}
+	
+	ORI_economic_campaign_decision = {
+
+		icon = GFX_decision_generic_consumer_goods
+
+		available = {
+			original_tag = ORI
+			NOT = { has_country_flag = ongoing_propaganda_campaign_flag }
+			NOT = { has_country_flag = economic_campaign_cooldown_flag }
+		}
+
+		visible = {
+			original_tag = ORI
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		days_remove = 140
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		add_timed_idea = {
+			idea = ORI_economic_campaign_idea
+			days = 140
+		}
+		set_country_flag = ongoing_propaganda_campaign_flag
+		set_country_flag = {
+			flag = economic_campaign_cooldown_flag
+			days = 420
+			value = 1
+			}
+		}
+
+		remove_effect = {
+		clr_country_flag = ongoing_propaganda_campaign_flag
+		}
+		
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 5
+				has_political_power > 300
+			}
+		}
+	}
+	
+	TUC_raise_penal_divisions_campaign_ONCE_decision = { # (meme)
+
+		icon = GFX_decision_generic_confiscation
+
+		available = {
+			original_tag = TUC
+			NOT = { has_country_flag = ongoing_propaganda_campaign_flag }
+		}
+
+		visible = {
+			original_tag = TUC
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+		
+		days_remove = 7
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		set_country_flag = ongoing_propaganda_campaign_flag
+		
+		}
+
+		remove_effect = {
+		clr_country_flag = ongoing_propaganda_campaign_flag
+		division_template = {
+			name = "Penal Division"
+			division_names_group = TUC_PEN_01
+	
+			regiments = {
+			penal_battalion = { x = 0 y = 0 }
+			penal_battalion = { x = 0 y = 1 }
+			penal_battalion = { x = 0 y = 2 }
+			penal_battalion = { x = 1 y = 0 }
+			penal_battalion = { x = 1 y = 1 }
+			penal_battalion = { x = 1 y = 2 }
+			}
+	
+			support = {
+				}
+			}
+		15 = {
+			create_unit = {
+				division = "name = \"243ya 'Dvornik' Shtrafnaya Brigada\" division_template = \"Penal Division\" start_experience_factor = 0" 
+				owner = TUC # < this is important
+				}
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 5
+				has_political_power > 300
+			}
+		}
+	}
+	
+	TUC_industrial_campaign_decision = {
+
+		icon = GFX_decision_generic_consumer_goods
+
+		available = {
+			original_tag = TUC
+			NOT = { has_country_flag = ongoing_propaganda_campaign_flag }
+			NOT = { has_country_flag = industrial_campaign_cooldown_flag }
+		}
+
+		visible = {
+			original_tag = TUC
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		days_remove = 140
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		add_timed_idea = {
+			idea = TUC_industrial_campaign_idea
+			days = 140
+		}
+		set_country_flag = ongoing_propaganda_campaign_flag
+		set_country_flag = {
+			flag = industrial_campaign_cooldown_flag
+			days = 420
+			value = 1
+			}
+		}
+
+		remove_effect = {
+		clr_country_flag = ongoing_propaganda_campaign_flag
+		}
+		
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 5
+				has_political_power > 300
+			}
+		}
+
+	}
+	
+	################################### generic
+	
+	stability_campaign_decision = {
+
+		icon = GFX_decision_generic_speech
+
+		available = {
+			NOT = { has_stability > 0.75 }
+			NOT = { has_country_flag = ongoing_propaganda_campaign_flag }
+			NOT = { has_country_flag = stability_campaign_cooldown_flag }
+		}
+
+		visible = {
+		always = yes
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		days_remove = 140
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		add_timed_idea = {
+			idea = forma_stability_campaign_idea
+			days = 140
+		}
+		set_country_flag = ongoing_propaganda_campaign_flag
+		set_country_flag = {
+			flag = stability_campaign_cooldown_flag
+			days = 280
+			value = 1
+			}
+		}
+
+		remove_effect = {
+		clr_country_flag = ongoing_propaganda_campaign_flag
+		}
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				factor = 1
+				has_stability < 0.49
+			}
+			modifier = {
+				factor = 2
+				has_political_power > 300
+			}
+		}
+	}
+	war_support_campaign_decision = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			NOT = { has_war_support > 0.75 }
+			NOT = { has_country_flag = ongoing_propaganda_campaign_flag }
+			NOT = { has_country_flag = war_support_campaign_cooldown_flag }
+		}
+
+		visible = {
+		always = yes
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		days_remove = 140
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		add_timed_idea = {
+			idea = forma_war_support_campaign_idea
+			days = 140
+		}
+		set_country_flag = ongoing_propaganda_campaign_flag
+		set_country_flag = {
+			flag = war_support_campaign_cooldown_flag
+			days = 280
+			value = 1
+			}
+		}
+
+		remove_effect = {
+		clr_country_flag = ongoing_propaganda_campaign_flag
+		}
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				factor = 1
+				has_war_support < 0.49
+			}
+			modifier = {
+				factor = 2
+				has_political_power > 300
+			}
+		}
+	}
+	
+	politics_campaign_decision = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			
+		if = {
+			limit = { has_government = neutrality }
+			neutrality < 0.75
+		}
+		else_if = {
+			limit = { has_government = auth_dem }
+			auth_dem < 0.75
+		}
+		else_if = {
+			limit = { has_government = democratic_right }
+			democratic_right < 0.75
+		}
+		else_if = {
+			limit = { has_government = democratic }
+			democratic < 0.75
+		}
+		else_if = {
+			limit = { has_government = democratic_left }
+			democratic_left < 0.75
+		}
+		else_if = {
+			limit = { has_government = communism }
+			communism < 0.75
+		}
+		else_if = {
+			limit = { has_government = fascism }
+			fascism < 0.75
+		}
+			NOT = { has_country_flag = ongoing_propaganda_campaign_flag }
+			NOT = { has_country_flag = politics_campaign_cooldown_flag }
+		}
+
+		visible = {
+		always = yes
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		days_remove = 140
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		
+	#	add_timed_idea = {
+	#		idea = forma_politics_campaign_idea
+	#		days = 140
+	#	}
+		set_country_flag = ongoing_propaganda_campaign_flag
+		set_country_flag = {
+			flag = politics_campaign_cooldown_flag
+			days = 280
+			value = 1
+			}
+		}
+
+		remove_effect = {
+		clr_country_flag = ongoing_propaganda_campaign_flag
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.05
+		}
+
+		}
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				factor = 2
+				has_political_power > 300
+			}
+		}
+	}
+	
+	production_campaign_decision = {
+
+		icon = GFX_decision_generic_factory
+
+		available = {
+#			has_completed_focus = CET_campaigns_prop
+			NOT = { has_country_flag = ongoing_propaganda_campaign_flag }
+			NOT = { has_country_flag = production_campaign_cooldown_flag }
+		}
+
+		visible = {
+		always = yes
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		days_remove = 140
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		add_timed_idea = {
+			idea = forma_production_campaign_idea
+			days = 140
+		}
+		set_country_flag = ongoing_propaganda_campaign_flag
+		set_country_flag = {
+			flag = production_campaign_cooldown_flag
+			days = 280
+			value = 1
+			}
+		}
+
+		remove_effect = {
+		clr_country_flag = ongoing_propaganda_campaign_flag
+		}
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				factor = 2
+				has_political_power > 300
+			}
+		}
+	}
+	
+	recruitment_campaign_decision = {
+
+		icon = GFX_decision_generic_military
+
+		available = {
+			NOT = { has_country_flag = ongoing_propaganda_campaign_flag }
+			NOT = { has_country_flag = recruitment_campaign_cooldown_flag }
+		}
+
+		visible = {
+		always = yes
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		days_remove = 140
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		add_timed_idea = {
+			idea = forma_recruitment_campaign_idea
+			days = 140
+		}
+		set_country_flag = ongoing_propaganda_campaign_flag
+		set_country_flag = {
+			flag = recruitment_campaign_cooldown_flag
+			days = 280
+			value = 1
+			}
+		}
+
+		remove_effect = {
+		clr_country_flag = ongoing_propaganda_campaign_flag
+		}
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				factor = 2
+				has_political_power > 300
+			}
+		}
+	}
+	
+	research_campaign_decision = {
+
+		icon = GFX_decision_generic_research
+
+		available = {
+			NOT = { has_country_flag = ongoing_propaganda_campaign_flag }
+			NOT = { has_country_flag = research_campaign_cooldown_flag }
+			NOT = { original_tag = LAC }
+		}
+
+		visible = {
+		always = yes
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		days_remove = 140
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		add_timed_idea = {
+			idea = forma_research_campaign_idea
+			days = 140
+		}
+		set_country_flag = ongoing_propaganda_campaign_flag
+		set_country_flag = {
+			flag = research_campaign_cooldown_flag
+			days = 280
+			value = 1
+			}
+		}
+
+		remove_effect = {
+		clr_country_flag = ongoing_propaganda_campaign_flag
+		}
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				factor = 1
+				has_stability > 0.75
+			}
+			modifier = {
+				factor = 2
+				has_political_power > 300
+			}
+		}
+	}
+	
+	retooling_campaign_decision = {
+
+		icon = GFX_decision_generic_merge_plant_tank
+
+		available = {
+			has_war = yes
+			NOT = { has_country_flag = ongoing_propaganda_campaign_flag }
+			NOT = { has_country_flag = retooling_campaign_cooldown_flag }
+		}
+
+		visible = {
+		NOT = { has_country_flag = retooling_campaign_active }
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		days_remove = 0
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		custom_effect_tooltip = doesnt_trigger_campaign_flag_tt
+		add_ideas = forma_retooling_campaign_idea
+		set_country_flag = retooling_campaign_active
+		}
+
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				factor = 1
+				has_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_political_power > 300
+			}
+		}
+	}
+	
+	retooling_campaign_off_decision = {
+
+		icon = GFX_decision_generic_merge_plant_materiel
+
+		available = {
+			has_war = no
+			has_country_flag = retooling_campaign_active
+			NOT = { has_country_flag = ongoing_propaganda_campaign_flag }
+		}
+
+		visible = {
+		has_country_flag = retooling_campaign_active
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		days_remove = 0
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		remove_ideas = forma_retooling_campaign_idea
+		clr_country_flag = retooling_campaign_active
+		add_timed_idea = {
+			idea = forma_retooling_campaign_cooloff_idea
+			days = 140
+			}
+		set_country_flag = ongoing_propaganda_campaign_flag
+		set_country_flag = {
+			flag = retooling_campaign_cooldown_flag
+			days = 280
+			value = 1
+			}
+		}
+
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 10
+				has_war = no
+			}
+			modifier = {
+				factor = 5
+				has_political_power > 300
+			}
+		}
+	}
+}
+	

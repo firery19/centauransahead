@@ -1,30 +1,88 @@
 # this country is courtesy of guard409 . lingstonia will cross the columban mountains and save aquila !
 
-capital = 58
-add_ideas = {
-	trench_warfare_idea
+capital = 60
+
+oob = "LGS_1900"
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "LGS_1900_naval"
+	create_equipment_variant = {
+		name = "Region Class"
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group =
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = empty
+		}
+	}
 }
-set_research_slots = 2
+recruit_character = LGS_guard_duke
+add_ideas = {
+	limited_exports
+	closed_economy
+	disarmed_nation
 
-set_stability = 0.50
+	LGS_isolation
+	LGS_industry_0
+	LGS_army_0
+	LGS_navy_0
+	solist_country
+	non_solists	
+}
+set_research_slots = 1
 
-set_war_support = 0.50
+set_stability = 0.60
+
+set_war_support = 0.30
 
 add_political_power = 1
 
-set_convoys = 0
+set_convoys = 20
 
 set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 0
-	neutrality = 100
+	democratic_right = 13
+	democratic_left = 19
+	communism = 4
+	fascism = 2
+	neutrality = 62
 }
 
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1900.1.1"
 	election_frequency = 48
-	elections_allowed = No
+	elections_allowed = no
 }
-
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_cruiser = 1
+		coastal_defense_ships = 1
+		basic_battery = 1
+	}
+}
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	basic_train = 1
+	tech_mountaineers = 1
+	# c
+	# d
+	# e
+	# f
+	# g
+	# h
+	# i
+}

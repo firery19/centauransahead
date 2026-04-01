@@ -1,0 +1,76 @@
+ideas = {
+	country = {
+		TUC_factory_focus = {
+            
+			picture = idea_generic_democratic_drift_bonus
+			allowed = { original_tag = TUC }
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.1
+				consumer_goods_factor = 0.2
+				global_building_slots = 1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		TUC_developing_corpocracy = {
+            
+			picture = idea_generic_democratic_drift_bonus
+			allowed = { original_tag = TUC }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.15	
+				consumer_goods_factor = 0.2
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		TUC_corpocracy = {
+            
+			picture = idea_generic_democratic_drift_bonus
+			allowed = { original_tag = TUC }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.3
+				political_power_factor = -0.3
+				consumer_goods_factor = 0.1
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				industrial_capacity_factory = 0.2
+			}
+		}
+		TUC_neo_feudalism = {
+            
+			picture = idea_generic_democratic_drift_bonus
+			allowed = { original_tag = TUC }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = 0.025
+			}
+		}
+		TUC_monopolies = {
+            
+			picture = idea_generic_democratic_drift_bonus
+			allowed = { original_tag = TUC }
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.01
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+
+
+
+	}
+}

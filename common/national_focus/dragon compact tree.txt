@@ -26,8 +26,8 @@ joint_focus = {
 	text_icon = NORDIC_focus_style 
 	allow_branch = {
 		OR = {
-			tag = HYS
-			tag = ORI
+#			tag = HYS
+#			tag = ORI
 		}
 	}
 	available = {
@@ -42,8 +42,8 @@ joint_focus = {
 
 	joint_trigger = {
 		OR = {
-			tag = HYS
-			tag = ORI
+#			tag = HYS
+#			tag = ORI
 		}
 	  }
 
@@ -63,8 +63,8 @@ joint_focus = {
 	text_icon = NORDIC_focus_style 
 	allow_branch = {
 		OR = {
-			tag = HYS
-			tag = ORI
+#			tag = HYS
+#			tag = ORI
 		}
 	}
 	available = {
@@ -74,14 +74,14 @@ joint_focus = {
 		#custom_effect_tooltip = FRA_IND_shared_tree
 	}
 	completion_reward = {
-		give_military_access = ORI
-		give_military_access = HYS
+#		give_military_access = ORI
+#		give_military_access = HYS
 	}
 
 	joint_trigger = {
 		OR = {
-			tag = HYS
-			tag = ORI
+#			tag = HYS
+#			tag = ORI
 		}
 	  }
 

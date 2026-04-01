@@ -51,6 +51,7 @@ ideas = {
             }
         }
         URS_domestic_unrest = {
+		name = URS_domestic_unrest
             picture = hol_liberation
 
             modifier = {
@@ -61,12 +62,23 @@ ideas = {
             }
         }
         URS_domestic_unrest1 = {
+		name = URS_domestic_unrest
             picture = hol_liberation
             modifier = {
 #               democratic_drift = 0.03
 #               communism_drift = 0.01
 #               stability_weekly = -0.004
                 war_support_factor = -0.1
+            }
+        }
+        URS_domestic_unrest2 = {
+		name = URS_domestic_unrest
+            picture = hol_liberation
+            modifier = {
+#               democratic_drift = 0.03
+#               communism_drift = 0.01
+#               stability_weekly = -0.004
+                war_support_factor = -0.05
             }
         }
         URS_domestic_unrest_grease_wars = {
@@ -168,6 +180,7 @@ ideas = {
             }
         }
         URS_cavalry_idea = {
+		name = URS_cavalry_idea
             picture = ETH_national_studs
             modifier = {
                 cavalry_attack_factor = 0.05
@@ -175,11 +188,66 @@ ideas = {
                 #experience_gain_cavalry_combat_factor = 0.1
             }
         }
+        URS_cavalry_2_idea = {
+		name = URS_cavalry_idea
+            picture = ETH_national_studs
+            modifier = {
+                cavalry_attack_factor = 0.05
+                cavalry_defence_factor = 0.10
+                #experience_gain_cavalry_combat_factor = 0.1
+            }
+        }
+        URS_mobwar_idea = {
+            picture = ETH_national_studs
+            modifier = {
+			army_speed_factor = 0.05
+			}
+		}
+        URS_combarms_idea = {
+            picture = ETH_national_studs
+            modifier = {
+			army_speed_factor = 0.025
+			army_attack_factor = 0.025
+			}
+		}
+        URS_combarms_2A_idea = {
+		name = URS_combarms_idea
+            picture = ETH_national_studs
+            modifier = {
+			army_speed_factor = 0.05
+			army_attack_factor = 0.025
+			}
+		}
+        URS_combarms_2B_idea = {
+		name = URS_combarms_idea
+            picture = ETH_national_studs
+            modifier = {
+			army_speed_factor = 0.025
+			army_attack_factor = 0.05
+			}
+		}
         URS_artillery_idea = {
             picture = generic_artillery_regiments
             modifier = {
                 army_artillery_attack_factor = 0.05
-                #army_artillery_defence_factor = 0.05
+                army_artillery_defence_factor = 0.05
+            }
+        }
+        URS_artillery_2A_idea = {
+		name = URS_artillery_idea
+            picture = generic_artillery_regiments
+            modifier = {
+                army_artillery_attack_factor = 0.1
+                army_artillery_defence_factor = 0.05
+            }
+        }
+        URS_artillery_2B_idea = {
+		name = URS_artillery_idea
+            picture = generic_artillery_regiments
+            modifier = {
+				army_infantry_defence_factor = 0.05
+                army_artillery_attack_factor = 0.05
+                army_artillery_defence_factor = 0.1
             }
         }
         URS_suppression_idea2 = {
@@ -198,5 +266,25 @@ ideas = {
 				resistance_damage_to_garrison_on_our_occupied_states = -0.15
 			}
         }
+        URS_strike_pisca_idea = {
+            picture = generic_oppression
+            targeted_modifier = {
+				tag = URS
+				army_attack_factor = 0.1
+			}
+        }
+		
+		URS_return_to_lepus_idea = {
+
+            picture = 
+            allowed = { original_tag = URS }
+            removal_cost = -1
+			
+			targeted_modifier = {
+				tag = LPS
+				attack_bonus_against = 0.1
+				defense_bonus_against = -0.05
+				}
+		}
     }
 }

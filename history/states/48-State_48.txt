@@ -18,7 +18,33 @@ state={
 			arms_factory = 1
 			industrial_complex = 2
 			infrastructure = 3
-		
+			145 = {
+			bunker = 1
+			}
+			4639 = {
+			bunker = 1
+			}
+			2920 = {
+			bunker = 1
+			}
+			156 = {
+			bunker = 1
+			}
+			4441 = {
+			bunker = 1
+			}
+			4383 = {
+			bunker = 1
+			}
+			2837 = {
+			bunker = 1
+			}
+			2870 = {
+			bunker = 1
+			}
+			4235 = {
+			bunker = 1
+			}
 		}
 		1944.1.1.12 = {
 		owner = COV

@@ -1,7 +1,7 @@
 StrikeForce_1 = {
 	allowed = {
 		NOT = {
-			original_tag = ORI
+			original_tag = CET
 			# AAA
 			# BBB
 			# CCC
@@ -46,7 +46,7 @@ StrikeForce_1 = {
 PatrolReconForce_1 = {
 	allowed = {
 		NOT = {
-			original_tag = ORI
+			original_tag = CET
 			# AAA
 			# BBB
 			# CCC
@@ -84,7 +84,7 @@ PatrolReconForce_1 = {
 PatrolDominanceForce_CA_1 = {
 	allowed = {
 		NOT = {
-			original_tag = ORI
+			original_tag = CET
 			# AAA
 			# BBB
 			# CCC
@@ -120,7 +120,7 @@ PatrolDominanceForce_CA_1 = {
 PatrolDominanceForce_BC_1 = {
 	allowed = {
 		NOT = {
-			original_tag = ORI
+			original_tag = CET
 			# AAA
 			# BBB
 			# CCC
@@ -156,7 +156,7 @@ PatrolDominanceForce_BC_1 = {
 ConvoyRaiding_1 = {
 	allowed = {
 		NOT = {
-			original_tag = ORI
+			original_tag = CET
 			# AAA
 			# BBB
 			# CCC
@@ -189,7 +189,7 @@ ConvoyRaiding_1 = {
 ConvoySurfaceRaiding_1 = {
 	allowed = {
 		NOT = {
-			original_tag = ORI
+			original_tag = CET
 			# AAA
 			# BBB
 			# CCC
@@ -222,7 +222,7 @@ ConvoySurfaceRaiding_1 = {
 ConvoyEscort_1 = {
 	allowed = {
 		NOT = {
-			original_tag = ORI
+			original_tag = CET
 			# AAA
 			# BBB
 			# CCC
@@ -255,7 +255,7 @@ ConvoyEscort_1 = {
 MineLaying_1 = {
 	allowed = {
 		NOT = {
-			original_tag = ORI
+			original_tag = CET
 			# AAA
 			# BBB
 			# CCC
@@ -295,7 +295,7 @@ MineLaying_1 = {
 #NavalInvasionSupport_1 = { #Commented out for now as it throws the error, for some reason
 #	allowed = {
 #		NOT = {
-#			original_tag = ORI
+#			original_tag = CET
 #			# AAA
 #			# BBB
 #			# CCC

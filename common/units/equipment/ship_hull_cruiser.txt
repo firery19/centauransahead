@@ -145,6 +145,7 @@ equipments = {
 		visual_level = 0
 		archetype = ship_hull_cruiser
 		priority = 1900
+		naval_dominance_factor = 50
 		
 		
 		module_slots = inherit

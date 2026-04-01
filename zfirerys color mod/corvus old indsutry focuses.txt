@@ -1,0 +1,329 @@
+
+	
+	####################################################################################################
+	################################ INDUSTRY ##########################################################
+	####################################################################################################
+	focus = {
+		id = COV_corvun_industry
+		icon = GFX_focus_generic_modernize_industry
+		x = 5
+		y = 0
+		cost = 5
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_region_development
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = COV_corvun_industry }
+		relative_position_id = COV_corvun_industry
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+				add_tech_bonus = {
+				category = industry
+				bonus = 1.0
+				uses = 1
+				}
+			}
+		}
+		
+#		focus = {
+#		id = COV_railroad
+#		icon = GFX_focus_generic_railroad
+#		prerequisite = { focus = COV_region_development }
+#		relative_position_id = COV_region_development
+#		x = 2
+#		y = 1
+#		#cost = 10
+#		cost = 5
+#
+#		completion_reward = {
+#				build_railway = { #to centralsouth
+#				level = 2
+#				path = {
+#				4136 2741 4219 4629 4321
+#				}
+#				build_railway = { #to east
+#				level = 2
+#					path = {
+#						4136 2806 3237 4122 4145
+#						}
+#						build_railway = { #to southeast
+#						level = 2
+#							path = {
+#								4136 4161 2118 4251 1774 4320 2910 4466 2912
+#								}
+#							build_railway = { #to southwest
+#							level = 2
+#								path = {
+#									4219 2174 1377
+#								}
+#							}
+#						}
+#					}
+#				}
+#			}
+#		}
+		
+		focus = {
+		id = COV_dev_north
+		icon = GFX_focus_COV_dev_north
+		prerequisite = { focus = COV_region_development }
+		relative_position_id = COV_region_development
+		x = -4
+		y = 2
+		cost = 10
+
+		completion_reward = {
+			8 = {
+				add_extra_state_shared_building_slots = 2
+				}
+			}
+		}
+		
+		focus = {
+		id = COV_dev_north_2
+		icon = GFX_focus_COV_dev_north_2
+		prerequisite = { focus = COV_dev_north }
+		relative_position_id = COV_dev_north
+		x = -1
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			53 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		
+		focus = {
+		id = COV_dev_northcentral
+		icon = GFX_focus_COV_dev_northcentral
+		prerequisite = { focus = COV_region_development }
+		relative_position_id = COV_region_development
+		x = -1
+		y = 2
+		cost = 10
+
+		completion_reward = {
+			51 = {
+				add_extra_state_shared_building_slots = 2
+				}
+			}
+		}
+	
+	focus = {
+		id = COV_dev_northcentral_2
+		icon = GFX_focus_COV_dev_northcentral_2
+		prerequisite = { focus = COV_dev_northcentral }
+		relative_position_id = COV_dev_northcentral
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			51 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+	}
+
+		focus = {
+		id = COV_dev_central
+		icon = GFX_focus_COV_dev_central
+		prerequisite = { focus = COV_region_development }
+		relative_position_id = COV_region_development
+		x = 2
+		y = 2
+		cost = 10
+
+		completion_reward = {
+			53 = {
+				add_extra_state_shared_building_slots = 4
+				}
+			}
+		}
+	
+	focus = {
+		id = COV_dev_central_2
+		icon = GFX_focus_COV_dev_central_2
+		prerequisite = { focus = COV_dev_central }
+		relative_position_id = COV_dev_central
+		x = 1
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			53 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				 }
+			}
+		}
+	}
+
+		focus = {
+		id = COV_dev_northeast
+		icon = GFX_focus_COV_dev_northeast
+		prerequisite = { focus = COV_region_development }
+		relative_position_id = COV_region_development
+		x = 8
+		y = 2
+		cost = 10
+
+		completion_reward = {
+			52 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				add_extra_state_shared_building_slots = 3
+				}
+			}
+		}
+	
+	focus = {
+		id = COV_dev_northeast_2
+		icon = GFX_focus_COV_dev_northeast_2
+		prerequisite = { focus = COV_dev_northeast }
+		relative_position_id = COV_dev_northeast
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			52 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+		 	       	type = coal
+		   	       	amount = 1 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = COV_dev_northwest
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = COV_dev_northcentral }
+		prerequisite = { focus = COV_dev_north }
+		relative_position_id = COV_dev_north
+		x = 1
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			51 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			8 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				 }
+			}
+		}
+	}
+	
+	focus = {
+		id = COV_dev_west
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = COV_dev_central }
+		prerequisite = { focus = COV_dev_northcentral }
+		relative_position_id = COV_dev_central
+		x = -1
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			51 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			53 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	

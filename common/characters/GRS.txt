@@ -1,0 +1,28 @@
+characters = {
+    GRS_fernan_flamenco = {
+        name = GRS_fernan_flamenco
+        portraits = {
+            civilian = {
+                large = GFX_portrait_GRS_fernan_flamenco
+            }
+        }
+        country_leader = {
+			ideology = despotism
+			traits = { }
+			expire = "1912.1.1.1"
+		}
+    }
+    GRS_santiago_moreno = {
+        name = GRS_santiago_moreno
+        portraits = {
+            civilian = {
+                large = GFX_portrait_GRS_santiago_moreno
+            }
+        }
+        country_leader = {
+			ideology = despotism
+			traits = { }
+			expire = "1912.1.1.1"
+		}
+    }
+}

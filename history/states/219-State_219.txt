@@ -1,0 +1,30 @@
+
+state={
+	id=219
+	name="STATE_219"
+	resources={
+		steel=0.000
+		tungsten=0.000
+	}
+
+	impassable = yes
+	force_link_ownership_to = 29	#Makes more sense linking desert to desert
+	history={
+		owner = GRS
+		add_core_of = GRS
+		add_claim_by = VEG
+		buildings = {
+			infrastructure = 0
+			industrial_complex = 0
+			arms_factory = 0
+			dockyard = 0
+		}
+	}
+	provinces={
+		355 454 946 1779 2670 2835 3168 3967 3995 4025 4034 4059 4132 4138
+	}
+	manpower=92103
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

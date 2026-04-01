@@ -2,7 +2,10 @@ capital = 2
 
 oob = "HYS_1900"
 add_ideas = {
-	trench_warfare_idea
+	HYS_recently_independent_idea
+	HYS_food_shortages_idea
+	HYS_against_the_goliath_idea
+	HYS_new_army_idea
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -55,24 +58,26 @@ set_research_slots = 3
 
 set_stability = 0.5
 
-set_war_support = 0.75
+set_war_support = 0.5
 
 add_political_power = 1
 
 set_convoys = 25
 
 set_popularities = {
-	democratic = 78
+	democratic = 22
 	communism = 0
 	fascism = 0
-	neutrality = 22
+	auth_dem = 78
 }
 
+recruit_character = HYS_renald_downes
+
 set_politics = {
-	ruling_party = democratic
+	ruling_party = auth_dem
 	last_election = "1900.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 if = {
@@ -90,7 +95,8 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
 		}
 	}
+}

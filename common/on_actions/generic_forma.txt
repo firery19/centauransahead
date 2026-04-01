@@ -1,0 +1,238 @@
+on_actions = {
+	on_subject_free = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = GEM
+					FROM = {
+						original_tag = ORI
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_country = { add_ideas = trench_warfare_idea }
+			25 = {
+				add_dynamic_modifier = {
+					modifier = VEG_murus_plateau_modifier
+				}
+			}
+			214 = {
+				add_dynamic_modifier = {
+					modifier = VEG_murus_plateau_modifier
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			1 = {
+				add_dynamic_modifier = {
+					modifier = desert_dynamic_modifier
+				}
+			}
+			114 = {
+				add_dynamic_modifier = {
+					modifier = desert_dynamic_modifier
+				}
+			}
+			116 = {
+				add_dynamic_modifier = {
+					modifier = desert_dynamic_modifier
+				}
+			}
+			117 = {
+				add_dynamic_modifier = {
+					modifier = desert_dynamic_modifier
+				}
+			}
+			174 = {
+				add_dynamic_modifier = {
+					modifier = desert_dynamic_modifier
+				}
+			}
+			29 = {
+				add_dynamic_modifier = {
+					modifier = desert_dynamic_modifier
+				}
+			}
+			30 = {
+				add_dynamic_modifier = {
+					modifier = desert_dynamic_modifier
+				}
+			}
+			210 = {
+				add_dynamic_modifier = {
+					modifier = desert_dynamic_modifier
+				}
+			}
+			219 = {
+				add_dynamic_modifier = {
+					modifier = desert_dynamic_modifier
+				}
+			}
+			220 = {
+				add_dynamic_modifier = {
+					modifier = desert_dynamic_modifier
+				} 
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			58 = {
+				add_dynamic_modifier = {
+					modifier = macer_mountains_modifier
+				}
+			}
+			59 = {
+				add_dynamic_modifier = {
+					modifier = macer_mountains_modifier
+				}
+			}
+			60 = {
+				add_dynamic_modifier = {
+					modifier = macer_mountains_modifier
+				}
+			}
+			63 = {
+				add_dynamic_modifier = {
+					modifier = macer_mountains_modifier
+				}
+			}
+			56 = {
+				add_dynamic_modifier = {
+					modifier = macer_mountains_small_modifier
+				}
+			}
+			57 = {
+				add_dynamic_modifier = {
+					modifier = macer_mountains_small_modifier
+				}
+			}
+			61 = {
+				add_dynamic_modifier = {
+					modifier = macer_mountains_small_modifier
+				}
+			}
+			205 = {
+				add_dynamic_modifier = {
+					modifier = macer_mountains_small_modifier
+				}
+			}
+			218 = {
+				add_dynamic_modifier = {
+					modifier = macer_mountains_small_modifier
+				}
+			}
+			227 = {
+				add_dynamic_modifier = {
+					modifier = macer_mountains_small_modifier
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			135 = {
+				add_dynamic_modifier = {
+					modifier = rural_unurban_modifier
+				}
+			}
+			137 = {
+				add_dynamic_modifier = {
+					modifier = rural_unurban_modifier
+				}
+			}
+			140 = {
+				add_dynamic_modifier = {
+					modifier = rural_unurban_modifier
+				}
+			}
+			141 = {
+				add_dynamic_modifier = {
+					modifier = rural_unurban_modifier
+				}
+			}
+			142 = {
+				add_dynamic_modifier = {
+					modifier = rural_unurban_modifier
+				}
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					tag = CET
+					FROM = {
+						OR = {
+							tag = ANT
+							is_in_faction_with = ANT
+						}
+					}
+				}
+				AQU = {
+				country_event = {
+					id = formageneric.1
+					days = 3 
+					}
+				}
+				#ANT = {
+				#	annex_country = { target = CET } #cleaner than hoping that the peace conference AI will sort it out
+				#}
+			}
+		}
+	}
+	on_capitulation = { # vulpan fled cetans
+		effect = {
+			if = {
+				limit = {
+					tag = CET
+					NOT = {
+						FROM = {
+							OR = {
+								tag = VUL
+								is_in_faction_with = VUL
+							}
+						}
+					}
+				}
+				VUL = {
+				country_event = {
+					id = formageneric.2
+					days = 7 
+					}
+				}
+			}
+		}
+	}
+	on_capitulation = { # riaan fled cetans
+		effect = {
+			if = {
+				limit = {
+					tag = CET
+					NOT = {
+						FROM = {
+							OR = {
+								tag = RIA
+								is_in_faction_with = RIA
+							}
+						}
+					}
+				}
+				RIA = {
+				country_event = {
+					id = formageneric.3
+					days = 7 
+					}
+				}
+			}
+		}
+	}
+}
+

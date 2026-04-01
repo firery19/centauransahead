@@ -280,7 +280,8 @@ ideas = {
 			ledger = army
 			visible = { 
 				has_military_academy = yes 
-				has_completed_focus = NOR_officers_academy
+#				has_completed_focus = NOR_officers_academy
+				always = no
 			}
 			available = { 
 				NOR_AAT = yes 
@@ -306,8 +307,9 @@ ideas = {
 			available = { 
 				has_military_academy = yes 
 				NOT = {
-					has_completed_focus = CHI_close_whampoa
-					has_completed_focus = CHI_end_military_primacy
+#					has_completed_focus = CHI_close_whampoa
+#					has_completed_focus = CHI_end_military_primacy
+					always = no
 				}
 			}
 			visible = { 
@@ -324,9 +326,10 @@ ideas = {
 			}
 			allowed_to_remove = {
 				OR = {
-					has_completed_focus = CHI_end_military_primacy
-					has_completed_focus = CHI_close_whampoa 
-					has_completed_focus = CHI_focus_on_meritocratic_principles
+#					has_completed_focus = CHI_end_military_primacy
+#					has_completed_focus = CHI_close_whampoa 
+#					has_completed_focus = CHI_focus_on_meritocratic_principles
+					always = no
 				}
 			}
 			ai_will_do = {

@@ -1,20 +1,38 @@
-	ORS_TheHard1900s = {
-		icon = can_send_in_the_zombies
-		enable = {
-			is_controlled_by = ORI
-		}
-		remove_trigger = {
-			NOT = { is_owned_by = URS }
-		}
-			
-		removal_cost = -1
-			modifier = {
-				consumer_goods_factor = 0.4
-				industrial_capacity_factory = -0.3
-				production_speed_buildings_factor  = -0.3
-				stability_weekly = -0.01
-				production_factory_max_efficiency_factor = -0.3
-				production_factory_efficiency_gain_factor = -0.3
-				
-			}
+
+ORS_TheHard1900s = {
+	icon = can_send_in_the_zombies
+	enable = {
+		is_controlled_by = ORI
 	}
+	remove_trigger = {
+		NOT = { is_owned_by = URS }
+	}
+		
+	removal_cost = -1
+		modifier = {
+			consumer_goods_factor = 0.4
+			industrial_capacity_factory = -0.3
+			production_speed_buildings_factor  = -0.3
+			stability_weekly = -0.01
+			production_factory_max_efficiency_factor = -0.3
+			production_factory_efficiency_gain_factor = -0.3
+			
+		}
+}
+
+
+
+####
+#### SOVIET NATIONAL SPIRITS ####
+####
+ORI_corruption_idea_dynamic_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_SOV_second_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+
+	#INITIAL
+	production_factory_efficiency_gain_factor = ORI_corruption_idea_production_factory_efficiency_gain_factor #-0.15
+	production_factory_max_efficiency_factor = ORI_corruption_idea_production_factory_max_efficiency_factor #0.05
+	consumer_goods_factor = ORI_corruption_idea_consumer_goods_factor #0.05
+	production_speed_industrial_complex_factor = ORI_corruption_idea_production_speed_industrial_complex_factor #0.05
+}

@@ -1,4 +1,4 @@
-﻿units = {
+units = {
 
 	##### NAVAL UNITS #####
 	fleet = {
@@ -7,44 +7,131 @@
 		task_force = {				
 			name = "Ravo Command"
 			location = 1774
-			ship = { name = "CS Khorin" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } }
-			ship = { name = "CS Corvō" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } }
-			ship = { name = "CS Rex" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } }
-			ship = { name = "CS Adsum" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Adsum Class" } } }
-			ship = { name = "CS Intrepidus No.1" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
-			ship = { name = "CS Intrepidus No.2" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
-			ship = { name = "CS Intrepidus No.3" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
-			ship = { name = "CS Intrepidus No.4" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
-			ship = { name = "CS Intrepidus No.5" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
-			ship = { name = "CS Brunus No.1" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.2" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.3" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.4" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.5" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.6" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.7" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.8" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.9" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.10" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.11" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.12" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.13" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.14" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.15" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.16" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.17" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Khorin" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } experience = 25 }
+			ship = { name = "CS Corvō" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } experience = 25 }
+			ship = { name = "CS Rex" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } experience = 25 }
+			ship = { name = "CS Adsum" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Adsum Class" } } experience = 25 }
+			ship = { name = "CS Intrepidus No.1" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } experience = 25 }
+			ship = { name = "CS Intrepidus No.2" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } experience = 25 }
+			ship = { name = "CS Intrepidus No.3" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } experience = 25 }
+			ship = { name = "CS Intrepidus No.4" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } experience = 25 }
+			ship = { name = "CS Intrepidus No.5" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.1" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.2" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.3" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.4" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.5" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.6" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.7" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.8" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.9" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.10" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.11" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.12" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.13" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.14" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.15" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.16" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.17" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
 			
 		}
 		task_force = {				
 			name = "Islands Detachment"
 			location = 1096
-			ship = { name = "CS Ixion" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } }
-			ship = { name = "CS Intrepidus No.6" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
-			ship = { name = "CS Intrepidus No.7" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
-			ship = { name = "CS Brunus No.18" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.19" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.20" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.21" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Ixion" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } experience = 25 }
+			ship = { name = "CS Intrepidus No.6" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } experience = 25 }
+			ship = { name = "CS Intrepidus No.7" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.18" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.19" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.20" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.21" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+		}
+		task_force = {				
+			name = "I. Flotilla"
+			location = 1774
+			ship = { name = "CS Cinereus No.1" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.2" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.3" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.4" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.5" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.6" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.7" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.8" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.9" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.10" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.11" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.12" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.13" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.14" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.15" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.16" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.17" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.18" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.19" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.20" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.21" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.22" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.23" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.24" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+
+		}
+		task_force = {				
+			name = "II. Flotilla"
+			location = 2912
+			ship = { name = "CS Cinereus No.25" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.26" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.27" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.28" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.29" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.30" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.31" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.32" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.33" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.34" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.35" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.36" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.37" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.38" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.39" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.40" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.41" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.42" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.43" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.44" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.45" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.46" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.47" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.48" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+
+		}
+		task_force = {				
+			name = "IV. Flotilla"
+			location = 2003
+			ship = { name = "CS Cinereus No.73" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.74" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.75" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.76" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.77" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.78" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.79" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.80" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.81" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.82" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.83" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.84" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.85" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.86" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.87" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.88" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.89" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.90" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.91" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.92" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.93" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.94" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.96" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.97" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+
 		}
 	}
 	
@@ -54,22 +141,50 @@
 		task_force = {				
 			name = "Kraz Command"
 			location = 3890
-			ship = { name = "CS Coronis" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = COV version_name = "Khorin Class" } } }
-			ship = { name = "CS Solis" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Adsum Class" } } }
-			ship = { name = "CS Fortuna" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Adsum Class" } } }
-			ship = { name = "CS Intrepidus 8" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
-			ship = { name = "CS Intrepidus 9" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
-			ship = { name = "CS Intrepidus 10" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
-			ship = { name = "CS Intrepidus 11" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
-			ship = { name = "CS Intrepidus 12" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } }
-			ship = { name = "CS Brunus No.22" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.23" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.24" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.25" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.26" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.27" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.28" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
-			ship = { name = "CS Brunus No.29" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } }
+			ship = { name = "CS Solis" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Adsum Class" } } experience = 25 }
+			ship = { name = "CS Fortuna" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Adsum Class" } } experience = 25 }
+			ship = { name = "CS Intrepidus 8" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } experience = 25 }
+			ship = { name = "CS Intrepidus 9" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } experience = 25 }
+			ship = { name = "CS Intrepidus 10" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } experience = 25 }
+			ship = { name = "CS Intrepidus 11" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } experience = 25 }
+			ship = { name = "CS Intrepidus 12" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = COV version_name = "Intrepidus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.22" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.23" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.24" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.25" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.26" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.27" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.28" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+			ship = { name = "CS Brunus No.29" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COV version_name = "Brunus Class" } } experience = 25 }
+		}
+		task_force = {				
+			name = "III. Flotilla"
+			location = 2795
+
+			ship = { name = "CS Cinereus No.49" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.50" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.51" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.52" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.53" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.54" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.55" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.56" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.57" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.58" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.59" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.60" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.61" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.62" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.63" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.64" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.65" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.66" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.67" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.68" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.69" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.70" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.71" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
+			ship = { name = "CS Cinereus No.72" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = COV version_name = "Cinereus Class" } } experience = 20 }
 		}
 	}
 }

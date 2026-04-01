@@ -1,4 +1,20 @@
 characters = {
+	AQU_ewan_fouwler = { 
+		name = "Ewan Fouwler"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AQU_ewan_fouwler
+				small = GFX_portrait_AQU_ewan_fouwler_small
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { staunch_constitutionalist stout_defender }
+			expire = "1920.1.1.1"
+			id = -1
+		}
+	}
+	
 	AQU_lucas_silva = { 
 		name = "Lucas Silva"
 		portraits = {
@@ -15,18 +31,30 @@ characters = {
 		}
 	}
 	
-	AQU_ewan_fouwler = { 
-		name = "Ewan Fouwler"
+	AQU_francis_stephens  = {
+		name = AQU_francis_stephens
 		portraits = {
 			civilian = {
-				large = GFX_portrait_AQU_ewan_fouwler
-				small = GFX_portrait_AQU_ewan_fouwler_small
+				large = 
+				small =
 			}
 		}
-		country_leader = {
-			ideology = conservatism
-			traits = { staunch_constitutionalist stout_defender }
-			expire = "1920.1.1.1"
-			id = -1
+		advisor = {
+			slot = political_advisor
+#			idea_token = heinrich_himmler
+			allowed = {
+				original_tag = AQU
+			}
+			available = {
+					has_government = neutrality
+#				}
+#				NOT = { has_completed_focus =  }
+			}
+			visible = {
+				has_government = neutrality
+			}
+			traits = {
+				railroad_enthusiast
+			}
 		}
 	}

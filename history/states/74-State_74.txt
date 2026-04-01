@@ -3,40 +3,22 @@ state={
 	id=74
 	name="STATE_74"
 	resources={
-		tungsten=4.000
 		aluminium=16
-		coal=25
 	}
 
 	history={
 		owner = TUC
 		add_core_of = TUC
 		buildings = {
-			
-			industrial_complex = 2
+			industrial_complex = 1
 			infrastructure = 2
-			198 = {
-				naval_base = 4
-
-			}
-
 		}
-		victory_points = {
-			198 18 
-		}
-		1944.1.1.12 = {
-			owner = RIA
-			controller = RIA
-
-}
-
 	}
-
 	provinces={
-		198 357 394 659 685 1074 1125 1274 2268 3491 3533 
+		357 685 1071 1274 2215 3443 3445 3452 3491 
 	}
-	manpower=13224730
+	manpower=3671632
 	buildings_max_level_factor=1.000
-	state_category=large_town
+	state_category=town
 	local_supplies=0.000
 }

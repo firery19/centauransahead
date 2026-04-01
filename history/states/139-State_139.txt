@@ -13,16 +13,28 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3
-			arms_factory = 1
+			arms_factory = 4
 			dockyard = 0
-			6199 = {
+			2464 = {
 				naval_base = 5
 
 			}
 
 		}
 		victory_points = {
-			6199 30 
+			2464 30 
+		}
+		victory_points = {
+			5993 5
+		}
+		victory_points = {
+			1068 5
+		}
+		victory_points = {
+			1230 5
+		}
+		victory_points = {
+			1068 5
 		}
 
 	}
@@ -32,6 +44,6 @@ state={
 	}
 	manpower=27144111
 	buildings_max_level_factor=1.000
-	state_category=megalopolis
+	state_category=large_city
 	local_supplies=0.000
 }

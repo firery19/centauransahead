@@ -19,43 +19,44 @@ state={
 			dockyard = 1
 
 			845 = {
-				coastal_bunker = 10
+				coastal_bunker = 4
 
 			}
 			1013 = {
-				coastal_bunker = 10
+				coastal_bunker = 8
 
 			}
 			3280 = {
-				coastal_bunker = 10
-
+				coastal_bunker = 8
+				naval_base = 5
 			}
 			3626 = {
-				coastal_bunker = 10
+				coastal_bunker = 4
 
 			}
 			3629 = {
-				coastal_bunker = 10
+				coastal_bunker = 4
 
 			}
 			3642 = {
-				coastal_bunker = 10
+				coastal_bunker = 8
+				naval_base = 3
 
 			}
 			3650 = {
-				coastal_bunker = 10
+				coastal_bunker = 4
 
 			}
 			3652 = {
-				coastal_bunker = 10
+				coastal_bunker = 8
 
 			}
 			3660 = {
-				coastal_bunker = 10
+				coastal_bunker = 8
 
 			}
 			3662 = {
-				coastal_bunker = 10
+				coastal_bunker = 8
 
 			}
 

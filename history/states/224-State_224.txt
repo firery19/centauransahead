@@ -1,0 +1,26 @@
+
+state={
+	id=224
+	name="STATE_224"
+	resources={
+		steel=0.000
+		tungsten=0.000
+	}
+
+	impassable = yes
+	force_link_ownership_to = 59
+
+	history={
+		owner = CLB
+		add_core_of = CLB
+		add_core_of = QUA
+
+	}
+	provinces={
+		578 1286 1607 1877 2120 2214 2514 2783 3994 4046 4047 4083 4087 
+	}
+	manpower=67069
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

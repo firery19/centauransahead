@@ -7,9 +7,10 @@
 		task_force = {				
 			name = "Eastern Command"
 			location = 2454
-			ship = { name = "FUS Gomeisa" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = URS version_name = "Gomeisa Class" } } }
-			ship = { name = "FUS Alcor" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = URS version_name = "Gomeisa Class" } } }
-			ship = { name = "FUS Furud" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = URS version_name = "Gomeisa Class" } } }
+			ship = { name = "FUS Magor" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = URS version_name = "Magor Class" } } }
+			ship = { name = "FUS Gomyesa" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = URS version_name = "Gomyesa Class" } } }
+			ship = { name = "FUS Alcor" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = URS version_name = "Gomyesa Class" } } }
+			ship = { name = "FUS Furud" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = URS version_name = "Gomyesa Class" } } }
 			ship = { name = "FUS Tania" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
 			ship = { name = "FUS Alkafzah" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
 			ship = { name = "FUS Borealis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
@@ -18,7 +19,10 @@
 		task_force = {				
 			name = "Western Command"
 			location = 3465
-			ship = { name = "FUS Adhara" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = URS version_name = "Gomeisa Class" } } }
+			ship = { name = "FUS Adhara" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = URS version_name = "Gomyesa Class" } } }
+			ship = { name = "FUS Mirzam" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = URS version_name = "Gomyesa Class" } } }
+			ship = { name = "FUS Aludra" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = URS version_name = "Gomyesa Class" } } }
+			ship = { name = "FUS Unurgunite" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = URS version_name = "Gomyesa Class" } } }
 		}
 	}
 	
@@ -30,8 +34,24 @@
 		task_force = {				
 			name = "Alcor Command"
 			location = 1631
-			ship = { name = "FUS Wezen" definition = battleship equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = URS version_name = "Gomeisa Class" } } }
+			ship = { name = "FUS Wezen" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = URS version_name = "Gomyesa Class" } } }
 		}
 	}
 			
 # add obb to ursa country file, add ship classes
+
+
+instant_effect = {
+### Under Construction Notes ###
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "URS" 
+			version_name = "Potamoi Class"
+		}
+		name = "CIS Fish"
+		requested_factories = 2
+		progress = 0.79
+		amount = 1
+	}
+}

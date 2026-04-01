@@ -58,29 +58,34 @@ add_political_power = 1
 set_convoys = 25 # many industrial and resource exports would make aquilas merchant navy large for its comparatively small coastline
 
 set_popularities = {
-	democratic = 99
-	communism = 0
-	fascism = 0
+	democratic = 30
+	democratic_left = 21
+	democratic_right = 43
+	communism = 3
+	fascism = 2
 	neutrality = 1
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = democratic_right
 	last_election = "1900.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 add_ideas = {
-	trench_warfare_idea
-	AQU_iron_army_idea
 	AQU_lucas_silva_idea
+	AQU_iron_army_idea
 	AQU_outdated_technology_idea
 	AQU_rusting_army_idea
 }
 
 recruit_character = AQU_ewan_fouwler
 recruit_character = AQU_lucas_silva
+recruit_character = AQU_francis_stephens
+
+#country_event = { id = aqu.5 days = 7 random_days = 21 } < test event for dying character < for ursa
+
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

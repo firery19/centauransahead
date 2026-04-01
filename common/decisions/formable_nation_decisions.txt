@@ -11,6 +11,7 @@ form_commonwealthB_category = {
 		}
 
 		available = {
+		has_completed_focus = HYS_unification_discussions
 			custom_trigger_tooltip = {
 				tooltip = form_hydrus_commonwealth_flag
 				hidden_trigger = {
@@ -18,96 +19,6 @@ form_commonwealthB_category = {
 				}
 			}
 			is_subject = no
-			AND = {
-				115 = {
-					controller = {
-						OR = {
-							tag = ROOT
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-				116 = {
-					controller = {
-						OR = {
-							tag = ROOT
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-				118 = {
-					controller = {
-						OR = {
-							tag = ROOT
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-				119 = {
-					controller = {
-						OR = {
-							tag = ROOT
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-				123 = {
-					controller = {
-						OR = {
-							tag = ROOT
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-				130 = {
-					controller = {
-						OR = {
-							tag = ROOT
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-				131 = {
-					controller = {
-						OR = {
-							tag = ROOT
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-				132 = {
-					controller = {
-						OR = {
-							tag = ROOT
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-				133 = {
-					controller = {
-						OR = {
-							tag = ROOT
-							is_in_faction_with = ROOT
-						}
-					}
-				}
-				134 = {
-					controller = {
-						OR = {
-							tag = ROOT
-							is_in_faction_with = ROOT
-							}
-						}
-					}
-					182 = {
-						controller = {
-							OR = {
-								tag = ROOT
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
 			}
 
 		visible = {
@@ -120,13 +31,13 @@ form_commonwealthB_category = {
 		complete_effect = {
 			set_cosmetic_tag = HYR
 			annex_country = {
-			    target = CNS
-			    transfer_troops = yes
-			}
-			annex_country = {
 			    target = LPS
 			    transfer_troops = yes
 				}
+			annex_country = {
+			    target = CNS
+			    transfer_troops = yes
+			}
 			#custom_effect_tooltip = form_country_hydrus_coring_states_tt
 				115 = { add_core_of = ROOT }
 				116 = { add_core_of = ROOT }
@@ -138,6 +49,9 @@ form_commonwealthB_category = {
 				132 = { add_core_of = ROOT }
 				133 = { add_core_of = ROOT }
 				134 = { add_core_of = ROOT }
+				171 = { add_core_of = ROOT }
+				174 = { add_core_of = ROOT }
+				175 = { add_core_of = ROOT }
 				182 = { add_core_of = ROOT }
 			
 
@@ -162,7 +76,7 @@ form_united_grusa_category = {
 	
 	form_grusa_again = {
 
-		icon = decision_cat_generic_hydrus
+		icon = decision_cat_generic_arida
 
 		allowed = {
 			OR = {
@@ -172,52 +86,93 @@ form_united_grusa_category = {
 		}
 
 		available = {
+			NOT = { is_puppet = yes }
 			custom_trigger_tooltip = {
-				tooltip = form_hydrus_commonwealth_flag
+				tooltip = form_grusan_flag
 				hidden_trigger = {
-					NOT = { has_country_flag = form_hydrus_commonwealth_flag }
+				NOT = { has_country_flag = form_grusan_flag }
+				owns_state = 10
+				owns_state = 25
+				owns_state = 26
+				owns_state = 27
+				owns_state = 28
+				owns_state = 29
+				owns_state = 30
+				owns_state = 158
+				owns_state = 159
+				owns_state = 164
+				owns_state = 208
+				owns_state = 209
+				owns_state = 210
+				owns_state = 211
+				owns_state = 212
+				owns_state = 214
+				owns_state = 215
+				owns_state = 216
+				owns_state = 217
 				}
 			}
 			is_subject = no
 			custom_trigger_tooltip = {
-				tooltip = form_country_hydrus_required_states_tt
-				controls_state = 115
-				controls_state = 116
-				controls_state = 118
-				controls_state = 119
-				controls_state = 123
-				controls_state = 130
-				controls_state = 131
-				controls_state = 132
-				controls_state = 133
-				controls_state = 134
+				tooltip = form_country_united_grusa_required_states_tt
+				owns_state = 10
+				owns_state = 25
+				owns_state = 26
+				owns_state = 27
+				owns_state = 28
+				owns_state = 29
+				owns_state = 30
+				owns_state = 158
+				owns_state = 159
+				owns_state = 164
+				owns_state = 208
+				owns_state = 209
+				owns_state = 210
+				owns_state = 211
+				owns_state = 212
+				owns_state = 214
+				owns_state = 215
+				owns_state = 216
+				owns_state = 217
 			}
 		}
 
 		visible = {
 			OR = {
-				original_tag = HYS
+				original_tag = GRS
+				original_tag = VEG
 			}
-			NOT = { has_country_flag = form_hydrus_commonwealth_flag }
+			NOT = { has_country_flag = form_grusan_flag }
 		}
 
 		complete_effect = {
-			custom_effect_tooltip = form_country_hydrus_coring_states_tt
+			custom_effect_tooltip = form_country_grusa_coring_states_tt
 			hidden_effect = {
-				115 = { add_core_of = ROOT }
-				116 = { add_core_of = ROOT }
-				118 = { add_core_of = ROOT }
-				119 = { add_core_of = ROOT }
-				123 = { add_core_of = ROOT }
-				130 = { add_core_of = ROOT }
-				131 = { add_core_of = ROOT }
-				132 = { add_core_of = ROOT }
-				133 = { add_core_of = ROOT }
-				134 = { add_core_of = ROOT }
+				10 = { add_core_of = ROOT remove_claim_by = ROOT }
+				25 = { add_core_of = ROOT remove_claim_by = ROOT }
+				26 = { add_core_of = ROOT remove_claim_by = ROOT }
+				27 = { add_core_of = ROOT remove_claim_by = ROOT }
+				28 = { add_core_of = ROOT remove_claim_by = ROOT }
+				29 = { add_core_of = ROOT remove_claim_by = ROOT }
+				30 = { add_core_of = ROOT remove_claim_by = ROOT }
+				158 = { add_core_of = ROOT remove_claim_by = ROOT }
+				159 = { add_core_of = ROOT remove_claim_by = ROOT }
+				164 = { add_core_of = ROOT remove_claim_by = ROOT }
+				208 = { add_core_of = ROOT remove_claim_by = ROOT }
+				209 = { add_core_of = ROOT remove_claim_by = ROOT }
+				210 = { add_core_of = ROOT remove_claim_by = ROOT }
+				211 = { add_core_of = ROOT remove_claim_by = ROOT }
+				212 = { add_core_of = ROOT remove_claim_by = ROOT }
+				213 = { add_core_of = ROOT remove_claim_by = ROOT }
+				214 = { add_core_of = ROOT remove_claim_by = ROOT }
+				215 = { add_core_of = ROOT remove_claim_by = ROOT }
+				216 = { add_core_of = ROOT remove_claim_by = ROOT }
+				217 = { add_core_of = ROOT remove_claim_by = ROOT }
 			}
+			32 = { add_claim_by = ROOT }
 			hidden_effect = {
 				# news_event = { id = wtt_news.53 hours = 6 }
-				set_country_flag = united_grusa_flag
+				set_country_flag = form_grusan_flag
 			}
 		}
 
@@ -254,6 +209,7 @@ form_rodinia_category = {
 			custom_trigger_tooltip = {
 				tooltip = form_country_ursa_required_states_tt
 				# ursa
+				controls_state = 5
 				controls_state = 84
 				controls_state = 85
 				controls_state = 86
@@ -272,6 +228,18 @@ form_rodinia_category = {
 				controls_state = 71
 				controls_state = 72
 				controls_state = 73
+				controls_state = 187
+				controls_state = 188
+				controls_state = 189
+				controls_state = 190
+				controls_state = 191
+				controls_state = 192
+				controls_state = 193
+				controls_state = 194
+				controls_state = 195
+				controls_state = 196
+				controls_state = 197
+				controls_state = 198
 				}
 			custom_trigger_tooltip = {
 				tooltip = form_country_tucana_required_states_tt
@@ -279,6 +247,11 @@ form_rodinia_category = {
 				controls_state = 74
 				controls_state = 75
 				controls_state = 76
+				controls_state = 196
+				controls_state = 199
+				controls_state = 200
+				controls_state = 201
+				controls_state = 202
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_centauri_required_states_tt
@@ -286,6 +259,8 @@ form_rodinia_category = {
 				controls_state = 77
 				controls_state = 78
 				controls_state = 79
+				controls_state = 203
+				controls_state = 204
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_canis_required_states_tt
@@ -299,17 +274,16 @@ form_rodinia_category = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_hydrus_required_states_tt
-				# north canis
-				controls_state = 2
-				controls_state = 124
-				controls_state = 125
-				controls_state = 127
+				# west hydrus
 				controls_state = 128
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_columba_required_states_tt
-				# north canis
+				# north columba
 				controls_state = 62
+				controls_state = 178
+				controls_state = 185
+				controls_state = 207
 			}
 		}
 
@@ -324,7 +298,9 @@ form_rodinia_category = {
 			set_cosmetic_tag = RDN	
 			custom_effect_tooltip = form_country_rodinia_coring_states_tt
 			hidden_effect = {
-				2 = { add_core_of = ROOT }
+				13 = { add_core_of = ROOT }
+				15 = { add_core_of = ROOT }
+				16 = { add_core_of = ROOT }
 				62 = { add_core_of = ROOT }
 				64 = { add_core_of = ROOT }
 				66 = { add_core_of = ROOT }
@@ -349,8 +325,35 @@ form_rodinia_category = {
 				123 = { add_core_of = ROOT }
 				124 = { add_core_of = ROOT }
 				125 = { add_core_of = ROOT }
-				127 = { add_core_of = ROOT }
 				128 = { add_core_of = ROOT }
+				157 = { add_core_of = ROOT }
+				160 = { add_core_of = ROOT }
+				161 = { add_core_of = ROOT }
+				162 = { add_core_of = ROOT }
+				165 = { add_core_of = ROOT }
+				166 = { add_core_of = ROOT }
+				167 = { add_core_of = ROOT }
+				178 = { add_core_of = ROOT }
+				185 = { add_core_of = ROOT }
+				187 = { add_core_of = ROOT }
+				188 = { add_core_of = ROOT }
+				189 = { add_core_of = ROOT }
+				190 = { add_core_of = ROOT }
+				191 = { add_core_of = ROOT }
+				192 = { add_core_of = ROOT }
+				193 = { add_core_of = ROOT }
+				194 = { add_core_of = ROOT }
+				195 = { add_core_of = ROOT }
+				196 = { add_core_of = ROOT }
+				197 = { add_core_of = ROOT }
+				198 = { add_core_of = ROOT }
+				199 = { add_core_of = ROOT }
+				200 = { add_core_of = ROOT }
+				201 = { add_core_of = ROOT }
+				202 = { add_core_of = ROOT }
+				203 = { add_core_of = ROOT }
+				204 = { add_core_of = ROOT }
+				207 = { add_core_of = ROOT }
 			}
 			hidden_effect = {
 				# news_event = { id = wtt_news.53 hours = 6 }
@@ -368,83 +371,11 @@ form_rodinia_category = {
 	}
 }
 
-form_united_grusa_category = {
-	
-	form_grusa_again = {
-
-		icon = decision_cat_generic_hydrus
-
-		allowed = {
-			OR = {
-				original_tag = GRS
-				original_tag = VEG
-			}
-		}
-
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = form_hydrus_commonwealth_flag
-				hidden_trigger = {
-					NOT = { has_country_flag = form_hydrus_commonwealth_flag }
-				}
-			}
-			is_subject = no
-			custom_trigger_tooltip = {
-				tooltip = form_country_hydrus_required_states_tt
-				controls_state = 115
-				controls_state = 116
-				controls_state = 118
-				controls_state = 119
-				controls_state = 123
-				controls_state = 130
-				controls_state = 131
-				controls_state = 132
-				controls_state = 133
-				controls_state = 134
-			}
-		}
-
-		visible = {
-			OR = {
-				original_tag = HYS
-			}
-			NOT = { has_country_flag = form_hydrus_commonwealth_flag }
-		}
-
-		complete_effect = {
-			custom_effect_tooltip = form_country_hydrus_coring_states_tt
-			hidden_effect = {
-				115 = { add_core_of = ROOT }
-				116 = { add_core_of = ROOT }
-				118 = { add_core_of = ROOT }
-				119 = { add_core_of = ROOT }
-				123 = { add_core_of = ROOT }
-				130 = { add_core_of = ROOT }
-				131 = { add_core_of = ROOT }
-				132 = { add_core_of = ROOT }
-				133 = { add_core_of = ROOT }
-				134 = { add_core_of = ROOT }
-			}
-			hidden_effect = {
-				# news_event = { id = wtt_news.53 hours = 6 }
-				set_country_flag = united_grusa_flag
-			}
-		}
-
-		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 10
-				is_historical_focus_on = yes
-			}
-		}
-	}
-}
 form_redantares_category = {
 	
 	form_redantares = {
 
-		icon = decision_cat_generic_hydrus
+		icon = 
 
 		allowed = {
 			    always = yes

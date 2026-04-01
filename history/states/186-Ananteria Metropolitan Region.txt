@@ -1,0 +1,32 @@
+state={
+	id=186
+	name="STATE_186"
+	resources = {
+
+	}
+	history = {
+		owner = ANT
+		add_core_of = ANT
+		buildings = {
+			dockyard = 1
+			arms_factory = 1 #
+			industrial_complex = 2
+			infrastructure = 4
+			2166 = {
+			naval_base = 10
+			}
+
+		}
+		victory_points = {
+		2166 50
+		}
+
+	}
+	provinces={
+		1264 2166 2960 6373 6301 398 452
+	}
+	manpower=10794530
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+}

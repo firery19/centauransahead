@@ -777,7 +777,7 @@ focus_tree = {
         id = CET_unite_corvuses
         x = 0
         y = 1
-		icon = GFX_focus_ITA_northern_industry
+		icon = GFX_focus_CET_unite_corvus
         relative_position_id = CET_realize_ambitions
 		prerequisite = { focus = CET_realize_ambitions }
         
@@ -1566,7 +1566,7 @@ focus_tree = {
         id = CET_preemptive_strike
         x = -2
         y = 1
-		icon = GFX_focus_COV_the_confederation
+		icon = GFX_focus_CET_preemptive_strike
         relative_position_id = CET_mirren_elke_pact
 		prerequisite = { focus = CET_mirren_elke_pact }
         

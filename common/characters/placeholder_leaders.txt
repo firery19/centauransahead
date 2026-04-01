@@ -1,0 +1,80 @@
+characters = {
+    AUR_generic_character = {	#constitutional monarchy, this is the pm not the king
+        name = AUR_generic_character
+        portraits = {
+            civilian = {
+                large = GFX_portrait_placeholder2
+            }
+        }
+        country_leader = {
+			ideology = liberalism
+			traits = { dealbroker }
+			expire = "1912.1.1.1"
+		}
+    }
+    LAC_generic_character = {
+        name = LAC_generic_character
+        portraits = {
+            civilian = {
+                large = GFX_portrait_placeholder2
+            }
+        }
+        country_leader = {
+			ideology = oligarchism
+			traits = { }
+			expire = "1912.1.1.1"
+		}
+    }
+    TUC_generic_character = {
+        name = TUC_generic_character
+        portraits = {
+            civilian = {
+                large = GFX_portrait_placeholder
+            }
+        }
+        country_leader = {
+			ideology = despotism
+			traits = { captain_of_industry }
+			expire = "1912.1.1.1"
+		}
+    }
+    CTA_generic_character = {
+        name = CTA_generic_character
+        portraits = {
+            civilian = {
+                large = GFX_portrait_placeholder
+            }
+        }
+        country_leader = {
+			ideology = despotism
+			traits = { }
+			expire = "1912.1.1.1"
+		}
+    }
+    CLB_generic_character = {
+        name = CLB_generic_character
+        portraits = {
+            civilian = {
+                large = GFX_portrait_placeholder
+            }
+        }
+        country_leader = {
+			ideology = socialism # conservatism	#i need to test all the different ideologies, change this back to conservatism at some point ig?
+			traits = { }
+			expire = "1912.1.1.1"
+		}
+    }
+    CLB_generic_character_2 = {
+        name = CLB_generic_character_2
+        portraits = {
+            civilian = {
+                large = GFX_portrait_placeholder
+            }
+        }
+        country_leader = {
+			ideology = moderatism
+			traits = { }
+			expire = "1912.1.1.1"
+		}
+    }
+}

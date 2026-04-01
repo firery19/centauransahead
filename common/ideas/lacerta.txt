@@ -1,0 +1,20 @@
+ideas = {
+    country = {
+        LAC_rosehall_star_cannon_idea = {
+            
+            picture =
+            allowed = { original_tag = LAC }
+            removal_cost = -1
+
+            modifier = {
+			army_attack_factor = 10
+			army_core_attack_factor = 100
+			army_defence_factor = 2
+			army_core_defence_factor = 100
+			army_morale = 10
+			army_org = 10
+			initiative_factor = 10
+			}
+        }
+    }
+}

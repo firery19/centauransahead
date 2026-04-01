@@ -17,3 +17,52 @@ URS_colonial_resistance = {
 	compliance_gain = -0.02
 
 }
+
+URS_desert_minefield_modifier = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+
+	army_attack_factor = -0.5
+	army_speed_factor = -0.75
+	local_org_regain = -0.5
+	disable_strategic_redeployment = 1
+}
+
+URS_desert_minefield_2_modifier = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+
+	army_attack_factor = -0.45
+	army_speed_factor = -0.35
+	local_org_regain = -0.25
+}
+
+URS_blown_oil_rigs_modifier = {
+	icon = GFX_modifiers_sabotaged_resource
+
+	state_resource_oil = -120
+}
+
+URS_blown_oil_rigs_2_modifier = {
+	icon = GFX_modifiers_sabotaged_resource
+
+	state_resource_oil = -90
+}
+
+URS_blown_oil_rigs_3_modifier = {
+	icon = GFX_modifiers_sabotaged_resource
+
+	state_resource_oil = -50
+}
+
+
+URS_west_lepus_fort_modifier = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+	targeted_modifier = {
+	army_attack_factor = -0.1
+	army_defence_factor = 0.1
+	dig_in_speed_factor = 0.25
+	max_dig_in_factor = 0.1
+	}
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=221
+	name="STATE_221"
+	resources={
+		steel=0.000
+		tungsten=0.000
+	}
+
+	history={
+		owner = CLB
+		add_core_of = CLB
+		add_core_of = EUR
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 0
+		}
+
+	}
+	provinces={
+		4027 4052 4073 4090 4111 
+	}
+	manpower=324567
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

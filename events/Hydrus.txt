@@ -1,8 +1,8 @@
 add_namespace = hydrus
 
-country_event = {
+country_event = { # a generic event
 	id = hydrus.1
-	title = hydrus.1.t #Hydrus wants help!
+	title = hydrus.1.t
 	desc = hydrus.1.d
 	picture = GFX_
 	
@@ -10,16 +10,39 @@ country_event = {
 	
 	fire_only_once = yes
 	
-	trigger = {
-		ORI = has_country_flag = ORI_accept_hys
-		}
-	}
-	
 	option = {
-		name = hydrus.1.a # Yes
+	name = hydrus.1.a # Yes
+	URS = { annex_country = { target = HYS }}
+	ai_chance = {
+		base = 80
+		modifier = { is_historical_focus_on = yes factor = 10 }
+		modifier = { is_major = yes add = 20 }
 		}
 	}
-		
+	option = {
+		name = hydrus.1.b # NO
+		ai_chance = {
+			base = 20
+			modifier = { is_historical_focus_on = yes factor = 0 }
+			}
+			HYS = {
+			country_event = {
+				id = hydrus.1
+				days = 1
+				hours = 1
+				months = 1
+				random_hours = 1
+				random_days = 2
+			#	tooltip = hydrus.2
+				}
+			}
+		}
+	}
+
+	
+	# 1.2.0
+	
+country_event = { # repurposed for new focus tree
 	id = hydrus.2
 	title = hydrus.2.t #Hydrus wants help!
 	desc = hydrus.2.d
@@ -29,12 +52,981 @@ country_event = {
 	
 	option = {
 		name = hydrus.2.a # Yes
-		set_country_flag = ORI_accept_hys
+		ai_chance = {
+		base = 80
+		modifier = { is_historical_focus_on = yes factor = 10 }
+#		modifier = { is_major = yes add = 1 }
 		}
+		set_global_flag = we_helped_hydrus_f
+		HYS = {
+		country_event = {
+			id = hydrus.3
+			days = 2
+			}
+		}
+		complete_national_focus = ORI_support_hydrus
 	}
 	
 	option = {
 		name = hydrus.2.b # NO
-		set_country_flag = ORI_refuse_hys
+		ai_chance = {
+		base = 20
+		modifier = { is_historical_focus_on = yes factor = 0 }
+		}
+		HYS = {
+		country_event = {
+			id = hydrus.4
+			days = 2
+			}
+		}
+		set_global_flag = we_refused_hydrus_f
+	}
+}
+
+	country_event = { # orion accepts
+	id = hydrus.3
+	title = hydrus.3.t 
+	desc = hydrus.3.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.3.a
+		set_global_flag = orion_helps_hydrus_economy
+		custom_effect_tooltip = orion_aid_focus_unlock
+		}
+	}
+	
+	country_event = { # no
+	id = hydrus.4
+	title = hydrus.4.t 
+	desc = hydrus.4.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.4.a
+		}
+	}
+	
+	country_event = { # event notifying ursa of hydrus shenanigans
+	id = hydrus.5
+	title = hydrus.5.t 
+	desc = hydrus.5.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.5.a # okay
+		HYS = {
+			set_variable = {
+				var = lepus_revolution_counter
+				value = 0
+			}
+		}
+		URS = {
+			set_variable = {
+				var = lepus_revolution_counter
+				value = 0
+				}
+			}
+		}
+	}
+	
+	country_event = { # stir up east lepus
+	id = hydrus.6
+	title = hydrus.6.t 
+	desc = hydrus.6.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.6.a # crackdown
+		add_political_power = -100
+		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = -100
+                producer = URS
+				}
+		132 = { add_resistance = -5 }
+		134 = { add_resistance = -10 }
+		182 = { add_resistance = -10 }
+		132 = { add_compliance = -5 }
+		134 = { add_compliance = -5 }
+		182 = { add_compliance = -5 }
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = 30
+			}
+		}
+	
+	option = {
+		name = hydrus.6.b # calm the riots
+		add_political_power = -25
+		132 = { add_resistance = 10 }
+		134 = { add_resistance = 5 }
+		182 = { add_resistance = 5 }
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		
+		}
+	
+	option = {
+		name = hydrus.6.c
+		132 = { add_resistance = 20 }
+		134 = { add_resistance = 20 }
+		182 = { add_resistance = 20 }
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 3
+				tooltip = add_3_to_revolution_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 3
+				tooltip = add_3_to_revolution_tt
+				}
+			}
+		add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = -30
+			}
+		}
+	}
+	
+	country_event = { # stir up north
+	id = hydrus.7
+	title = hydrus.7.t 
+	desc = hydrus.7.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.7.a # crackdown
+		add_political_power = -100
+		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = -100
+                producer = URS
+				}
+		131 = { add_resistance = -5 }
+		131 = { add_compliance = -5 }
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = 30
+			}
+		}
+	
+	option = {
+		name = hydrus.7.b # calm the riots
+		add_political_power = -25
+		131 = { add_resistance = 10 }
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		}
+	
+	option = {
+		name = hydrus.7.c
+		131 = { add_resistance = 20 }
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 3
+				tooltip = add_3_to_revolution_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 3
+				tooltip = add_3_to_revolution_tt
+				}
+			}
+		add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = -30
+			}
+		}
+	}
+	
+	country_event = { # stir up central
+	id = hydrus.8
+	title = hydrus.8.t 
+	desc = hydrus.8.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.8.a # crackdown
+		add_political_power = -100
+		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = -100
+                producer = URS
+				}
+		add_political_power = -100
+		133 = { add_resistance = -5 }
+		133 = { add_compliance = -5 }
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}	
+		add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = 30
+			}
+		}
+	
+	option = {
+		name = hydrus.8.b # calm the riots
+		add_political_power = -25
+		133 = { add_resistance = 10 }
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		}
+	
+	option = {
+		name = hydrus.8.c
+		133 = { add_resistance = 20 }
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 3
+				tooltip = add_3_to_revolution_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 3
+				tooltip = add_3_to_revolution_tt
+				}
+			}
+		add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = -30
+			}
+		}
+	}
+	
+	country_event = { # stir up west
+	id = hydrus.9
+	title = hydrus.9.t 
+	desc = hydrus.9.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.9.a # crackdown
+		add_political_power = -100
+		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = -100
+                producer = URS
+				}
+		130 = { add_resistance = -5 }
+		130 = { add_compliance = -5 }
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = 30
+			}
+		}
+	
+	option = {
+		name = hydrus.9.b # calm the riots
+		add_political_power = -25
+		130 = { add_resistance = 10 }
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		}
+	
+	option = {
+		name = hydrus.9.c
+		130 = { add_resistance = 20 }
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 3
+				tooltip = add_3_to_revolution_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 3
+				tooltip = add_3_to_revolution_tt
+				}
+			}
+		add_days_mission_timeout = {
+				mission = URS_lepus_spawns_timer
+				days = -30
+			}
+		}
+	}
+	
+	country_event = { # rebellion imminent for ursa
+	id = hydrus.10
+	title = hydrus.10.t 
+	desc = hydrus.10.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.10.a
+		custom_effect_tooltip = 7days_torebellion
+		}
+	}
+	
+	country_event = { # garrison attacked
+	id = hydrus.11
+	title = hydrus.11.t 
+	desc = hydrus.11.d
+	picture = GFX_report_event_DEN_resistance
+	
+	is_triggered_only = yes
+	
+	option = { # reinforce
+		name = hydrus.11.a
+		LPS = {
+			random_core_state = {
+			add_compliance = -10
+			}
+		}
+		add_manpower = -250
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 200
+			target = HYS
+		}
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+	
+	option = { # reprisal
+		name = hydrus.11.b
+		LPS = {
+			random_core_state = {
+			add_resistance = 15
+			}
+		}
+			
+		add_manpower = -500
+		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = -100
+                producer = URS
+				}
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 2
+				tooltip = add_2_to_anger_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 2
+				tooltip = add_2_to_anger_tt
+				}
+			}
+		}
+	
+	option = { # nothing
+		name = hydrus.11.c
+		LPS = {
+			random_core_state = {
+			add_resistance = 10
+			add_compliance = -10
+			}
+		}
+		add_manpower = -1000
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 250
+			target = HYS
+		}
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+	}
+	
+	country_event = { # buildings attacked
+	id = hydrus.12
+	title = hydrus.12.t 
+	desc = hydrus.12.d
+	picture = GFX_report_event_SWE_pajala_bombed_building
+	
+	is_triggered_only = yes
+	
+	option = { # reprisal
+		name = hydrus.12.a
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 2
+				tooltip = add_2_to_anger_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 2
+				tooltip = add_2_to_anger_tt
+				}
+			}
+		}
+	
+	option = { # improve security
+		name = hydrus.12.b
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 1
+				tooltip = add_1_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+	
+	option = { # do nothing
+		name = hydrus.12.c
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		HYS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		URS = {
+			add_to_variable = {
+				var = lepus_anger_counter
+				value = 1
+				tooltip = add_1_to_anger_tt
+				}
+			}
+		}
+	}
+	
+	country_event = { # newspaper
+	id = hydrus.13
+	title = hydrus.13.t 
+	desc = hydrus.13.d
+	picture = GFX_report_event_french_resistance_02
+	
+	is_triggered_only = yes
+	
+	option = { # destroy the newspapers
+		name = hydrus.13.a
+		add_political_power = -50
+		
+		}
+	
+	option = { # do nothing
+		name = hydrus.13.b
+		hidden_effect = {
+		HYS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		}
+		URS = {
+			add_to_variable = {
+				var = lepus_revolution_counter
+				value = 2
+				tooltip = add_2_to_revolution_tt
+				}
+			}
+		}
+	}
+	
+	country_event = { # form D.Compact
+	id = hydrus.14
+	title = hydrus.14.t 
+	desc = hydrus.14.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.14.a
+		ORI = {
+			set_rule = { can_create_factions = yes }
+			create_faction = AntiUrsCoal
+			}
+			hidden_effect = {
+				HYS = {
+				country_event = { 
+					id = orion.1
+					days = 1
+					}
+				}
+				news_event = {
+				id = news.3
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = hydrus.14.b
+		ORI = {
+			set_rule = { can_create_factions = yes }
+			create_faction = AntiUrsCoal
+			}
+			hidden_effect = {
+				HYS = {
+					country_event = { 
+						id = orion.1
+						days = 1
+					}
+				}
+				news_event = {
+					id = news.3
+					days = 2
+				}
+			}
+		}
+	}
+	
+	country_event = { # Little hydra win
+	id = hydrus.15
+	title = hydrus.15.t 
+	desc = hydrus.15.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.15.a
+		add_war_support = 0.05
+		URS = {
+			170 = {
+				transfer_state_to = HYS
+				}
+			}
+		}
+	}
+	
+	country_event = { # Informing ursa /\
+	id = hydrus.16
+	title = hydrus.16.t 
+	desc = hydrus.16.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.16.a
+		add_manpower = -1000
+		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = -100
+			}
+			effect_tooltip = {
+			URS = {
+				170 = {
+				transfer_state_to = HYS
+				}
+			}
+		}
+	}
+	
+	country_event = { # fail
+	id = hydrus.17
+	title = hydrus.17.t 
+	desc = hydrus.17.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.17.a
+		add_manpower = -1000
+		}
+	}
+	
+	country_event = { # informing ursa /\
+	id = hydrus.18
+	title = hydrus.18.t 
+	desc = hydrus.18.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.18.a
+		add_war_support = 0.05
+		}
+	}
+	
+	country_event = {
+	id = hydrus.19
+	title = hydrus.19.t 
+	desc = hydrus.19.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.1.a
+		
+		}
+	}
+	
+	country_event = {
+	id = hydrus.q
+	title = hydrus.q.t 
+	desc = hydrus.q.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.q.a
+		
+		}
+	
+	option = {
+		name = hydrus.q.b
+		
+		}
+	
+	option = {
+		name = hydrus.q.c
+		
+		}
+	}
+	
+	country_event = {
+	id = hydrus.y
+	title = hydrus.y.t 
+	desc = hydrus.y.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.y.a
+		
 		}
 	}

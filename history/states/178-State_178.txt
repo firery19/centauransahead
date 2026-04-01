@@ -6,17 +6,18 @@ state={
 		add_core_of = CLB
 		add_core_of = PHA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			arms_factory = 3
 			}
 		victory_points = {
 			1441 30
-			}
-			victory_points = {
-			3702 5
-			}
 		}
+		victory_points = {
+			3702 5
+		}
+	}
 	provinces={
-		18 484 614 711 789 820 890 924 1058 1133 1203 1341 1441 2007 2568 2624 2803 3101 3633 3636 3649 3656 3667 3670 3684 3701 3702 3711 4001
+		18 127 484 614 711 789 797 820 846 890 924 1058 1119 1133 1203 1341 1441 2007 2568 2624 2803 3101 3633 3636 3649 3656 3667 3670 3679 3684 3687 3701 3702 3711 3731 3795 4001 
 	}
 	manpower=16005362
 	state_category = metropolis

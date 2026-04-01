@@ -1,63 +1,143 @@
 add_namespace = ANT
 #copied from  cetus
-#title (t), option 1 (a), option 2 (b) + event id (example = T+ANT.3 =TANT3)
+#title (t), option 1 (a), option 2 (b) + event id (example = T+ANT.3 =T.ANT.3)
 country_event = {
     id = ANT.1
-    title = TANT1
-    desc = DANT1
-    #picture = GFX_evt_
+    title = T.ANT.1
+    desc = D.ANT.1
+    #picture = GFX_report_event_generic_parliament
 
     is_triggered_only = yes #focus
 
     option = {
-        name = AANT1
-        
-#        custom_effect_tooltip = tt_cet_integration
-
-#        hidden_effect = {
-
-            complete_national_focus = ANT_consolidate_monarchic_powers
-#        }
+        name = A.ANT.1
+	complete_national_focus = ANT_consolidate_monarchic_powers
     }
 
     option = {
-       name = BANT1
-#         hidden_effect = {
-#         complete_national_focus = ANT_strengthen_antarean_democracy
-		complete_national_focus = ANT_consolidate_monarchic_powers
+	name = B.ANT.1
+#	complete_national_focus = ANT_strengthen_antarean_democracy
+	complete_national_focus = ANT_consolidate_monarchic_powers
 	custom_effect_tooltip = "Alternate history not implemented, play the historical path."
-       }
    }
 }
 country_event = {
     id = ANT.2
     title = T.ANT.2
-    desc = D.ANT.2
-    #picture = GFX_evt_
+    desc = ANT_2_D
+    picture = GFX_report_event_generic_riot
+
+    is_triggered_only = yes #focus
+
+
+    option = { 
+        name = A.ANT.2
+#	ANT = {
+#	set_country_flag = ANT_protests_ongoing
+#	}
+	add_ideas = { ANT_protest_negligible }
+	}
+}
+country_event = {
+    id = ANT.5
+    title = T.ANT.5
+    desc = D.ANT.5
+    picture = GFX_report_event_generic_riot
 
     is_triggered_only = yes #focus
 
     option = { 
-        name = AAN2
-        
-#        custom_effect_tooltip = tt_cet_integration
+        name = A.ANT.5
+	ANT = {
+	set_country_flag = ANT_protests_ongoing
+	}
+	}
+}
 
-        hidden_effect = {
-            #57 = {
-            #    add_dynamic_modifier = { modifier = sc_resistance_integration }
-            #}
-            #58 = {
-            #    add_dynamic_modifier =  { modifier = sc_resistance_integration }
-            #}
-            #complete_national_focus = CET_sc_int1
-        }
-    }
+}
+country_event = {
+    id = ANT.3
+    title = T.ANT.3
+    desc = D.ANT.3
+    #picture = GFX_report_event_generic_read_write
 
-    option = {
-        name = BANT2
+    is_triggered_only = yes
 
-        hidden_effect = {
-            #complete_national_focus = CET_sc_occupy
-        }
-    }
+
+    option = { 
+        name = A.ANT.3
+	give_guarantee = ANT
+	diplomatic_relation = {
+	   country = ANT
+ 	   relation = non_aggression_pact
+ 	   active = yes
+	}
+
+}
+#    option = { 
+#       name = B.ANT.3
+#	ANT = { 
+#		add_opinion_modifier = {
+#		    target = COV
+#		    modifier = refused_MR_pact
+#		}
+#	}
+#	}
+}
+country_event = {
+    id = ANT.4
+    title = T.ANT.4
+    desc = D.ANT.4
+    #picture = GFX_report_event_generic_read_write
+
+    is_triggered_only = no
+	trigger = {
+	    tag = ANT
+	    has_country_flag = ANT_protests_ongoing	
+	}
+mean_time_to_happen = { days = 60 }
+
+    option = { 
+        name = A.ANT.4
+#	add_political_power = -25
+	add_stability = -0.05
+
+}
+    option = { 
+        name = B.ANT.4
+	add_political_power = -50
+
+}
+    option = { 
+       name = C.ANT.4
+	add_political_power = 25
+	add_stability = -0.025
+				if = {
+				limit = {
+					has_idea =  ANT_protest_negligible 
+				}
+				swap_ideas = {
+				    remove_idea = ANT_protest_negligible
+				    add_idea = ANT_protest_small
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  ANT_protest_small 
+				}
+				swap_ideas = {
+				    remove_idea = ANT_protest_small
+				    add_idea = ANT_protest_medium
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  ANT_protest_medium 
+				}
+				swap_ideas = {
+				    remove_idea = ANT_protest_medium
+				    add_idea = ANT_protest_large
+				}
+			}
+	}
 }

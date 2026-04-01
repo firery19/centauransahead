@@ -22,6 +22,10 @@
  AQU_improve_cohesiveness_desc:0 "A massive militia needs to know how to organise and defend properly. However, an unintended side effect of cohesive communication allows normal army units to organise better."
  AQU_strength_in_numbers:0 "Strength In Numbers"
  AQU_strength_in_numbers_desc:0 "The Civil Guard shall be present any and everywhere the enemy attempts to take over through our presence in numbers."
+ 
+ AQU_control_cg:0 "Assert Control On the Civil Guard"
+ AQU_control_cg_desc:0 "Lorem Ipsum lalala, You will be §Rpermanently locked out§! of recruiting new Civil Guard units through the decision if you take this."
+ AQU_instant_cancel:0 "§RAny ongoing recruitment of the Civil Guard will be immediately canceled.§!"
  ###
  AQU_standardise_the_cg:0 "Standardising the Civil Guard"
  AQU_standardise_the_cg_desc:0 "The first step to improving the civil guard is to make them more organised in battle."
@@ -94,13 +98,13 @@
  # spirits
  #########
  AQU_iron_army:0 "The Iron Army"
- AQU_iron_army_desc:0 "The “Iron Army” nickname was given to the Aquilans when in the early 1800’s, they held off a major Antarean assault from the south. In the aftermath of that war, the Aquilans were able to retain their borders with minimal losses."
+ AQU_iron_army_desc:0 "The “Iron Army” nickname was given to the Aquilans in the early 1800's when they held off a major Antarean assault from the south. In the aftermath of that war, the Aquilans were able to retain their borders with minimal losses."
  AQU_lucas_silva:0 "King Lucas Silva"
  AQU_lucas_silva_desc:0 "The King of Aquila, although he does not retain any power, he is a good figurehead for our country."
  AQU_outdated_technology:0 "Outdated Technology"
  AQU_outdated_technology_desc:0 "Due to the lack of any major wars, Aquila has neglected its technological department in weapons due to lack of modern combat experiences."
  AQU_rusting_army:0 "Rusting Army"
- AQU_rusting_army_desc:0 "The Iron Army of Aquila has started fading away due to its army not catching up to modern warfare."
+ AQU_rusting_army_desc:0 "The Iron Army of Aquila has started fading away due to its army not catching up to modern warfare. The combat effectiveness of the army is lowered, and will taper in the face of mightier foes during modern war"
  AQU_rusting_army_3_idea:0 "Rusting Army"
  AQU_rusting_army_3_idea_desc:0 "Recent army improvements have remedied the problems in outdated tactics."
  AQU_rusting_army_4_idea:0 "Maintained Army"

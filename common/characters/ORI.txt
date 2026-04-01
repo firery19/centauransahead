@@ -1,10 +1,11 @@
 characters = {
-	ORI_Edward_Spencer = {
-		name = "Edward Spencer"
+	ORI_edward_spencer = {
+		name = "ORI_edward_spencer"
 		
 		portraits = {
 			civilian = {
 			large = GFX_portrait_ORI_Edward_Spencer
+			#small = GFX_portrait_ORI_Edward_Spencer_small
 			}
 		}
 		
@@ -15,7 +16,57 @@ characters = {
 		}
 	}
 	
-	ORI_Kevin_Hart = {
+	ORI_patrick_hardin = {
+		name = "ORI_patrick_hardin"
+		
+		portraits = {
+			civilian = {
+			large = GFX_portrait_ORI_patrick_hardin
+			small = GFX_portrait_ORI_patrick_hardin_small
+			}
+		}
+		
+		country_leader = {
+			ideology = liberalism
+			traits = {}
+			id = -1
+		}
+	}
+	
+	ORI_john_united_democratic = {
+		name = "ORI_john_united_democratic"
+		
+		portraits = {
+			civilian = {
+			large = GFX_portrait_ORI_Kevin_Hart
+			small = GFX_portrait_ORI_Kevin_Hart_small
+			}
+		}
+		
+		country_leader = {
+			ideology = populism
+			traits = {}
+			id = -1
+		}
+	}
+	
+	ORI_alfons_rigo_burkes = {
+		name = "ORI_alfons_rigo_burkes"
+		
+		portraits = {
+			civilian = {
+			large = GFX_portrait_ORI_Kevin_Hart
+			small = GFX_portrait_ORI_Kevin_Hart_small
+			}
+		}
+		
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			id = -1
+		}
+	}
+	ORI_Kevin_Hart = { # unused
 		name = "Kevin Hart"
 		
 		portraits = {
@@ -32,7 +83,7 @@ characters = {
 		}
 	}
 	
-	ORI_Simon_Cromwell = {
+	ORI_Simon_Cromwell = { # unused
 		name = "Simon Cromwell"
 		
 		portraits = {
@@ -49,7 +100,198 @@ characters = {
 		}
 	}
 	
+	# general
+	
+	
+	ORI_theodore_grant = {
+		name = ORI_theodore_grant
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ger_august_von_mackensen
+				small = GFX_idea_GER_august_von_mackensen
+			}
+		}
+		field_marshal = { 
+			traits = { old_guard inflexible_strategist }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	ORI_micheal_carter = {
+		name = ORI_micheal_carter
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ger_august_von_mackensen
+				small = GFX_idea_GER_august_von_mackensen
+			}
+		}
+		field_marshal = { 
+			traits = { desert_fox CNS_canis_native }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	ORI_mailz_krouford = {
+		name = ORI_mailz_krouford
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ger_august_von_mackensen
+				small = GFX_idea_GER_august_von_mackensen
+			}
+		}
+		corps_commander = { 
+			traits = { old_guard ranger }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	
+	ORI_grant_stoun = {
+		name = ORI_grant_stoun
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_wilhelm_list
+				small = GFX_portrait_GER_wilhelm_list_small
+			}
+		}
+		corps_commander = {
+			traits = { desert_fox CNS_canis_native }
+			skill = 1
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	
+	ORI_raian_frost = {
+		name = ORI_raian_frost
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_wilhelm_list
+				small = GFX_portrait_GER_wilhelm_list_small
+			}
+		}
+		corps_commander = {
+			traits = { winter_specialist }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	ORI_david_blaid = {
+		name = ORI_david_blaid
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_wilhelm_list
+				small = GFX_portrait_GER_wilhelm_list_small
+			}
+		}
+		corps_commander = {
+			traits = { trait_engineer fortress_buster }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	ORI_mark_steele = {
+		name = ORI_mark_steele
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_wilhelm_list
+				small = GFX_portrait_GER_wilhelm_list_small
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	ORI_edward_reid = {
+		name = ORI_edward_reid
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_wilhelm_list
+				small = GFX_portrait_GER_wilhelm_list_small
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	# admirals
 
+	ORI_john_wayne = {
+		name = ORI_john_wayne
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_erich_raeder
+				small = GFX_portrait_GER_erich_raeder_small
+			}
+			army = {
+				small = GFX_idea_raeder
+			}
+		}
+		
+		navy_leader = {
+			traits = { old_guard_navy gentlemanly }
+			skill = 5
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 5
+			coordination_skill = 3
+		}
+	}
+
+	ORI_eloise_matthews = {
+		name = ORI_eloise_matthews
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_erich_raeder
+				small = GFX_portrait_GER_erich_raeder_small
+			}
+			army = {
+				small = GFX_idea_raeder
+			}
+		}
+		
+		navy_leader = {
+			traits = { bold battleship_adherent }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
 
 
 

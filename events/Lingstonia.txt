@@ -1,0 +1,166 @@
+add_namespace = LGS
+
+country_event = {
+    id = LGS.1
+    title = T.LGS.1
+    desc = D.LGS.1
+    #picture = GFX_report_event_generic_parliament
+
+    is_triggered_only = yes #focus
+
+    option = {
+        name = A.LGS.1
+		add_timed_idea = {
+		idea = LGS_using_shipyards
+		days = 90
+		}
+    }
+}
+
+country_event = {
+    id = LGS.2
+    title = T.LGS.2
+    desc = D.LGS.2
+    #picture = GFX_report_event_generic_parliament
+
+    is_triggered_only = yes #focus
+
+    option = {
+        name = A.LGS.2
+		add_timed_idea = {
+			idea = LGS_using_shipyards_bb
+			days = 180
+		}
+		add_timed_idea = {
+			idea = LGS_sold_ships
+			days = 180
+		}
+		CET = {
+		transfer_ship = {
+			prefer_name = "CIS Chronos"
+			type = battleship
+			target = LGS
+			exclude_refitting = no
+		}
+		transfer_ship = {
+			prefer_name = "CIS Cybelle"
+			type = battleship
+			target = LGS
+			exclude_refitting = no
+			}
+		}
+		LGS = {
+			add_timed_idea = {
+				idea = LGS_bought_ships
+				days = 180
+			}
+		}
+		LGS = {
+			create_ship = {
+				type = ship_hull_heavy_2
+				equipment_variant = "Kaitos Class"
+				creator = CET
+				name = "LRS Lingstonia"
+			}
+		}
+		LGS = {
+			create_ship = {
+				type = ship_hull_heavy_2
+				equipment_variant = "Kaitos Class"
+				creator = CET
+				name = "LRS Sol"
+			}
+		}
+    }
+
+    option = {
+        name = B.LGS.2
+		LGS = { country_event = LGS.3 }
+	}
+}
+
+
+
+country_event = {
+    id = LGS.3
+    title = T.LGS.3
+    desc = D.LGS.3
+    #picture = GFX_report_event_generic_parliament
+
+    is_triggered_only = yes #focus
+
+    option = {
+        name = A.LGS.3
+		
+    }
+}
+country_event = {
+    id = LGS.4
+    title = T.LGS.4
+    desc = D.LGS.4
+    #picture = GFX_report_event_generic_parliament
+
+    is_triggered_only = yes #focus
+
+    option = {
+        name = A.LGS.4
+		remove_state_claim = 205
+		remove_state_claim = 227
+			diplomatic_relation = {
+				country = LGS
+				relation = non_aggression_pact
+				active = yes
+			}
+    }
+}
+
+country_event = {
+    id = LGS.5
+    title = T.LGS.5
+    desc = D.LGS.5
+    #picture = GFX_report_event_generic_parliament
+
+    is_triggered_only = yes #focus
+
+    option = {
+        name = A.LGS.5
+		remove_state_claim = 63
+    }
+
+}
+country_event = {
+    id = LGS.6
+    title = T.LGS.6
+    desc = D.LGS.6
+    #picture = GFX_report_event_generic_parliament
+
+    is_triggered_only = yes #focus
+
+    option = {
+        name = A.LGS.6
+		CLB = {
+			diplomatic_relation = {
+				country = LGS
+				relation = guarantee
+				active = yes
+			}
+			diplomatic_relation = {
+				country = LGS
+				relation = military_access
+				active = yes
+			}
+		}
+		LGS = {
+			diplomatic_relation = {
+				country = CLB
+				relation = guarantee
+				active = yes
+			}
+			diplomatic_relation = {
+				country = CLB
+				relation = military_access
+				active = yes
+			}
+		}
+    }
+}

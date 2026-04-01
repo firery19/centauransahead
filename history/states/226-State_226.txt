@@ -1,0 +1,29 @@
+
+state={
+	id=226
+	name="STATE_226"
+	resources={
+		steel=0.000
+		tungsten=0.000
+	}
+
+	impassable = yes
+	force_link_ownership_to = 60
+
+	history={
+	#	owner = CLB
+	#	add_core_of = CLB
+	#	add_core_of = QUA
+		owner = LGS
+		add_core_of = LGS
+	#	add_claim_by = CLB
+
+	}
+	provinces={
+		368 1227 1350 1837 1865 2113 3768 3832 3850 3859 
+	}
+	manpower=61003
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

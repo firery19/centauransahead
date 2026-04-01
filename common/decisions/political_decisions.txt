@@ -1789,6 +1789,8 @@ ai_will_do = {
 
     	visible = {
 			NOT = { has_government = democratic }
+			NOT = { has_government = democratic_left }
+			NOT = { has_government = democratic_right }
 		}
 
 		available = {
@@ -1797,6 +1799,8 @@ ai_will_do = {
 	
 		modifier = {
 			democratic_drift = -0.05
+			democratic_left_drift = -0.05
+			democratic_right_drift = -0.05
 			stability_weekly = 0.007
 		}
 	
@@ -1950,12 +1954,21 @@ ai_will_do = {
 		icon = generic_civil_support
 
 		available = {
-			democratic < 0.2
+			democratic < 0.1
+			democratic_left < 0.1
+			democratic_right < 0.1
+
 		}
 
 		visible = {
 			NOT = { has_government = democratic }
-			democratic > 0
+			NOT = { has_government = democratic_left }
+			NOT = { has_government = democratic_right }
+			or = {
+				democratic > 0
+				democratic_left > 0
+				democratic_right > 0
+			}
 		}
 
 		remove_trigger = {
@@ -1963,12 +1976,17 @@ ai_will_do = {
 				OR = {
 					has_country_flag = DEN_allow_democratic_flag
 					has_government = democratic
+					has_government = democratic_left
+					has_government = democratic_right
 				}
 			}
 		}
 	
 		modifier = {
-			democratic_drift = -0.05
+			democratic_drift = -0.03
+			democratic_left_drift = -0.03
+			democratic_right_drift = -0.03
+
 		}
 	
 		days_remove = -1
@@ -1996,6 +2014,46 @@ ai_will_do = {
 			}
 			custom_effect_tooltip = ban_democratic_party_tt
 			add_stability = ban_ideology_var
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var_2
+					value = party_popularity@democratic_left
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var_2
+					value = -1
+				}
+				add_popularity = {
+					ideology = democratic_left
+					popularity = ban_ideology_var_2
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var_2
+					value = 0.66
+				}
+			}
+			custom_effect_tooltip = ban_democratic_party_l_tt
+			add_stability = ban_ideology_var_2
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var_3
+					value = party_popularity@democratic_right
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var_3
+					value = -1
+				}
+				add_popularity = {
+					ideology = democratic_right
+					popularity = ban_ideology_var_3
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var_3
+					value = 0.66
+				}
+			}
+			custom_effect_tooltip = ban_democratic_party_r_tt
+			add_stability = ban_ideology_var_3
 		}
 
 		ai_will_do = {
@@ -2082,6 +2140,8 @@ ai_will_do = {
 			communism_drift = -0.01
 			fascism_drift = 0.03
 			democratic_drift = -0.01
+			democratic_left_drift = -0.01
+			democratic_right_drift = -0.01
 			neutrality_drift = -0.01
 		}
 	
@@ -2103,18 +2163,73 @@ ai_will_do = {
 
 		visible = {
 			has_government = democratic
-			if = { 
-				limit = { 
-					has_dlc = "Battle for the Bosporus"
-				}
-				NOT = { original_tag = GRE }
-			}
+
 		}
 		
 		modifier = {
 			communism_drift = -0.01
 			fascism_drift = -0.01
 			democratic_drift = 0.03
+			democratic_left_drift = 0.01
+			democratic_right_drift = 0.01
+			neutrality_drift = -0.01
+		}
+	
+		days_remove = 360
+		cost = 150
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	institute_press_censorship_democratic_l_state = {
+
+		icon = generic_political_discourse
+
+		available = {
+		always = yes
+		}
+
+		visible = {
+			has_government = democratic_left
+
+		}
+		
+		modifier = {
+			communism_drift = -0.01
+			fascism_drift = -0.01
+			democratic_drift = 0.01
+			democratic_left_drift = 0.03
+			democratic_right_drift = 0.01
+			neutrality_drift = -0.01
+		}
+	
+		days_remove = 360
+		cost = 150
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	institute_press_censorship_democratic_r_state = {
+
+		icon = generic_political_discourse
+
+		available = {
+		always = yes
+		}
+
+		visible = {
+			has_government = democratic_right
+
+		}
+		
+		modifier = {
+			communism_drift = -0.01
+			fascism_drift = -0.01
+			democratic_drift = 0.01
+			democratic_left_drift = 0.01
+			democratic_right_drift = 0.03
 			neutrality_drift = -0.01
 		}
 	
@@ -2148,6 +2263,8 @@ ai_will_do = {
 			communism_drift = 0.03
 			fascism_drift = -0.01
 			democratic_drift = -0.01
+			democratic_left_drift = -0.01
+			democratic_right_drift = -0.01
 			neutrality_drift = -0.01
 		}
 	
@@ -2175,6 +2292,8 @@ ai_will_do = {
 			communism_drift = -0.01
 			fascism_drift = -0.01
 			democratic_drift = -0.01
+			democratic_left_drift = -0.01
+			democratic_right_drift = -0.01
 			neutrality_drift = 0.03
 		}
 	

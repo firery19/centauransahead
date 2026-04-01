@@ -189,3 +189,18 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = aqu.5
+	title = aqu.5.t
+	desc = aqu.5.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.5.a
+		AQU = { retire_character = AQU_ewan_fouwler }
+		promote_character = AQU_lucas_silva
+	}
+}

@@ -37,7 +37,7 @@ search_filter_prios = {
 	
 	focus = {
         id = AQU_the_aquilan_spirit
-        icon = GFX_focus_AFG_fruit_processing
+        icon = GFX_focus_generic_aquila
         x = 36
         y = 0
         cost = 10
@@ -54,7 +54,7 @@ search_filter_prios = {
 	
 	focus = {
         id = AQU_fort_management
-        icon = GFX_focus_BEL_eben_emael_fortress
+        icon = GFX_focus_generic_fortify_aquila
         x = -6
         y = 1
         cost = 10
@@ -83,7 +83,7 @@ search_filter_prios = {
             
         }
         completion_reward = {
-		custom_effect_tooltip = AQU_decision_allow
+		activate_decision = build_n_rof
         }
         ai_will_do = {
             factor = 5
@@ -102,7 +102,7 @@ search_filter_prios = {
             
         }
         completion_reward = {
-		custom_effect_tooltip = AQU_decision_allow
+		activate_decision = build_e_rof
         }
         ai_will_do = {
             factor = 5
@@ -121,7 +121,7 @@ search_filter_prios = {
             
         }
         completion_reward = {
-		custom_effect_tooltip = AQU_decision_allow
+		activate_decision = build_s_rof
         }
         ai_will_do = {
             factor = 5
@@ -140,7 +140,7 @@ search_filter_prios = {
             
         }
         completion_reward = {
-		custom_effect_tooltip = AQU_decision_allow
+		activate_decision = build_w_rof
         }
         ai_will_do = {
             factor = 5
@@ -149,7 +149,7 @@ search_filter_prios = {
 	
 	focus = {
         id = AQU_civil_guard
-        icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
+        icon = GFX_focus_AQU_civil_guard
         x = 0
         y = 1
         cost = 15
@@ -395,6 +395,28 @@ search_filter_prios = {
         }
     }
 	
+	focus = {
+        id = AQU_control_cg
+        icon = GFX_focus_AQU_civil_guard_OLD
+        x =2
+        y = 1
+        cost = 5
+		prerequisite = { focus = AQU_transform_the_cg focus = AQU_strength_in_numbers }
+		relative_position_id = AQU_strength_in_numbers
+        available = {
+            
+        }
+        completion_reward = {
+		set_division_template_lock {
+			division_template = "Civil Guard"
+			is_locked = no
+			}
+		custom_effect_tooltip = AQU_instant_cancel
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
 	
 	focus = {
         id = AQU_army_modernisation
@@ -408,7 +430,7 @@ search_filter_prios = {
             
         }
         completion_reward = {
-		custom_effect_tooltip = AQU_decision_allow
+		activate_decision = fix_army_rust_a
         }
         ai_will_do = {
             factor = 0

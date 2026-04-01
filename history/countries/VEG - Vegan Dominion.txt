@@ -3,9 +3,8 @@ capital = 10
 oob = "VEG_1900"
 
 add_ideas = {
-	VEG_queens_blessing
-	VEG_protected_by_murus
-	trench_warfare_idea
+	VEG_queens_blessing_idea
+	VEG_protected_by_murus_idea
 }
 
 set_technology = {

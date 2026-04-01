@@ -1,5 +1,18 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
-7710;7200;sea;7910;-1;-1;-1;-1;SAGITTARIUS_STRAIT;Sagittarius
+
+
+7910;7200;;sea;7910;-1;-1;-1;SAGITTARIUS_STRAIT;Sagittarius east
+7640;7910;;sea;7910;-1;-1;-1;SAGITTARIUS_STRAIT_WEST;Sagittarius west1
+7710;7910;;sea;7910;-1;-1;-1;SAGITTARIUS_STRAIT_WEST;Sagittarius west2
+7571;7099;sea;1383;-1;-1;-1;-1;BOWSTRING_CANAL;Bowstring
+8171;8216;sea;6114;-1;-1;-1;-1;SPEKULUM_RIVER;Spekulum lake connection test
+7933;8208;sea;1008;-1;-1;-1;-1;GRAND_NORTHERN_CANAL;riaa canal north of lake
+8208;7832;sea;3495;-1;-1;-1;-1;HADINA_RIVER;riaa canal south of lake
+8046;8214;sea;1173;-1;-1;-1;-1;NORWAY_SHAPE_LAKE;from west near canis
+8156;8214;sea;4103;-1;-1;-1;-1;LEPUS_CANAL;from north near hydrus
+
+
+
 # initial unorganised adjacencies
 6756;4077;sea;7852;-1;-1;-1;-1;;canis island east
 3196;3389;lake;8207;-1;-1;-1;-1;;ursa lake
@@ -25,6 +38,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4049;6751;lake;8212;-1;-1;-1;-1;;cetus-belhold
 4049;6755;lake;8212;-1;-1;-1;-1;;behold-cetus2
 4049;4086;lake;8212;-1;-1;-1;-1;;belhold-mainland
+6762;2969;lake;8212;-1;-1;-1;-1;;cetus3-mainland
+6762;2969;lake;8212;-1;-1;-1;-1;;cetus3-mainland
+6753;3902;lake;8212;-1;-1;-1;-1;;oculus-columba
 
 5226;6792;sea;7571;-1;-1;-1;-1;;orion nock
 918;6784;sea;7099;-1;-1;-1;-1;;island of reggin
@@ -110,18 +126,47 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2955;6739;sea;7710;-1;-1;-1;-1;;grusan
 6739;6742;sea;7710;-1;-1;-1;-1;;grusan
 
-# GRUSAN DESERT < testing
-4138;1531;impassable;-1;-1;-1;-1;-1;;grusan desert
-4138;4104;impassable;-1;-1;-1;-1;-1;;grusan desert
-4138;946;impassable;-1;-1;-1;-1;-1;;grusan desert
-355;1531;impassable;-1;-1;-1;-1;-1;;grusan desert
-355;1531;impassable;-1;-1;-1;-1;-1;;grusan desert
-355;2048;impassable;-1;-1;-1;-1;-1;;grusan desert
-355;2048;impassable;-1;-1;-1;-1;-1;;grusan desert
-355;4200;impassable;-1;-1;-1;-1;-1;;grusan desert
-355;2095;impassable;-1;-1;-1;-1;-1;;grusan desert
+2718;3973;impassable;-1;-1;-1;-1;-1;;grusan
+2718;4010;impassable;-1;-1;-1;-1;-1;;grusan
+
+# GRUSA TO COLUMBA IMPASSABLE
+4053;1381;impassable;-1;-1;-1;-1;-1;;grusa-columba
+3998;1381;impassable;-1;-1;-1;-1;-1;;grusa-columba
+2473;1381;impassable;-1;-1;-1;-1;-1;;grusa-columba
+2473;970;impassable;-1;-1;-1;-1;-1;;grusa-columba
+2660;970;impassable;-1;-1;-1;-1;-1;;grusa-columba
+3897;718;impassable;-1;-1;-1;-1;-1;;grusa-columba
+3897;3963;impassable;-1;-1;-1;-1;-1;;grusa-columba
+2569;3867;impassable;-1;-1;-1;-1;-1;;grusa-columba
+2387;3886;impassable;-1;-1;-1;-1;-1;;grusa-columba
+2387;3897;impassable;-1;-1;-1;-1;-1;;grusa-columba
+2387;2590;impassable;-1;-1;-1;-1;-1;;grusa-columba
+2473;2590;impassable;-1;-1;-1;-1;-1;;grusa-columba
+2660;2590;impassable;-1;-1;-1;-1;-1;;grusa-columba
+3886;3863;impassable;-1;-1;-1;-1;-1;;grusa-columba
+872;3954;impassable;-1;-1;-1;-1;-1;;grusa-columba
+872;1310;impassable;-1;-1;-1;-1;-1;;grusa-columba
+872;3997;impassable;-1;-1;-1;-1;-1;;grusa-columba
+872;3935;impassable;-1;-1;-1;-1;-1;;grusa-columba
+4053;3997;impassable;-1;-1;-1;-1;-1;;grusa-columba
+1769;3935;impassable;-1;-1;-1;-1;-1;;grusa-columba
+1769;3954;impassable;-1;-1;-1;-1;-1;;grusa-columba
 
 # VEGA
+# murus
+4315;3106;impassable;-1;-1;-1;-1;-1;;murus
+4315;4297;impassable;-1;-1;-1;-1;-1;;murus
+4315;4354;impassable;-1;-1;-1;-1;-1;;murus
+925;4354;impassable;-1;-1;-1;-1;-1;;murus
+925;4408;impassable;-1;-1;-1;-1;-1;;murus
+2257;3033;impassable;-1;-1;-1;-1;-1;;murus
+2257;4588;impassable;-1;-1;-1;-1;-1;;murus
+2230;4588;impassable;-1;-1;-1;-1;-1;;murus
+2230;4643;impassable;-1;-1;-1;-1;-1;;murus
+2230;4680;impassable;-1;-1;-1;-1;-1;;murus
+2085;4680;impassable;-1;-1;-1;-1;-1;;murus
+2085;42;impassable;-1;-1;-1;-1;-1;;murus
+
 # vega islands
 4524;4557;sea;8099;-1;-1;-1;-1;;vega
 4557;6775;sea;8099;-1;-1;-1;-1;;vega
@@ -135,11 +180,78 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2755;4708;sea;8099;-1;-1;-1;-1;;vega
 4813;6780;sea;8159;-1;-1;-1;-1;;vega
 4813;6781;sea;8159;-1;-1;-1;-1;;vega
+#vega north lake island
+6760;979;lake;8213;-1;-1;-1;-1;;vega
+6760;1910;lake;8213;-1;-1;-1;-1;;aquila
+6760;897;lake;8213;-1;-1;-1;-1;;columba
+
 
 # COLUMBAN / MACER MOUNTAINS < testing
-4083;4119;impassable;-1;-1;-1;-1;-1;;macer mountains
-3140;4142;impassable;-1;-1;-1;-1;-1;;macer mountains
-3140;4174;impassable;-1;-1;-1;-1;-1;;macer mountains
+# Hanssolos Expanded Macer Impassables
+#misc atttached to impassable states
+1838;1090;impassable;-1;-1;-1;-1;-1;;macer mountains
+3726;2133;impassable;-1;-1;-1;-1;-1;;macer mountains
+
+#south euria arm
+1080;3962;impassable;-1;-1;-1;-1;-1;;macer mountains
+1080;3934;impassable;-1;-1;-1;-1;-1;;macer mountains
+3934;3080;impassable;-1;-1;-1;-1;-1;;macer mountains
+2980;3080;impassable;-1;-1;-1;-1;-1;;macer mountains
+2980;146;impassable;-1;-1;-1;-1;-1;;macer mountains
+2980;2472;impassable;-1;-1;-1;-1;-1;;macer mountains
+
+#blob 1
+1191;3271;impassable;-1;-1;-1;-1;-1;;macer mountains
+1191;3685;impassable;-1;-1;-1;-1;-1;;macer mountains
+1191;1056;impassable;-1;-1;-1;-1;-1;;macer mountains
+3090;1056;impassable;-1;-1;-1;-1;-1;;macer mountains
+3090;3006;impassable;-1;-1;-1;-1;-1;;macer mountains
+3090;3743;impassable;-1;-1;-1;-1;-1;;macer mountains
+3743;3758;impassable;-1;-1;-1;-1;-1;;macer mountains
+3743;926;impassable;-1;-1;-1;-1;-1;;macer mountains
+926;3789;impassable;-1;-1;-1;-1;-1;;macer mountains
+#clb-ria
+1309;2342;impassable;-1;-1;-1;-1;-1;;macer mountains
+1309;1817;impassable;-1;-1;-1;-1;-1;;macer mountains
+1817;138;impassable;-1;-1;-1;-1;-1;;macer mountains
+1467;1817;impassable;-1;-1;-1;-1;-1;;macer mountains
+1467;666;impassable;-1;-1;-1;-1;-1;;macer mountains
+1467;2903;impassable;-1;-1;-1;-1;-1;;macer mountains
+2903;3297;impassable;-1;-1;-1;-1;-1;;macer mountains
+#ridge towards cetus
+#4024 2448 impassable -1 -1 -1 -1 -1  macer mountains
+2448;4093;impassable;-1;-1;-1;-1;-1;;macer mountains
+2448;4068;impassable;-1;-1;-1;-1;-1;;macer mountains
+4068;4093;impassable;-1;-1;-1;-1;-1;;macer mountains
+4093;4100;impassable;-1;-1;-1;-1;-1;;macer mountains
+4100;4140;impassable;-1;-1;-1;-1;-1;;macer mountains
+#blob 2
+3821;3190;impassable;-1;-1;-1;-1;-1;;macer mountains
+3821;1134;impassable;-1;-1;-1;-1;-1;;macer mountains
+1134;3124;impassable;-1;-1;-1;-1;-1;;macer mountains
+1134;993;impassable;-1;-1;-1;-1;-1;;macer mountains
+3117;993;impassable;-1;-1;-1;-1;-1;;macer mountains
+3117;3837;impassable;-1;-1;-1;-1;-1;;macer mountains
+3117;3876;impassable;-1;-1;-1;-1;-1;;macer mountains
+3876;1476;impassable;-1;-1;-1;-1;-1;;macer mountains
+1476;1861;impassable;-1;-1;-1;-1;-1;;macer mountains
+#blob3
+1190;3976;impassable;-1;-1;-1;-1;-1;;macer mountains
+1190;2055;impassable;-1;-1;-1;-1;-1;;macer mountains
+2055;3217;impassable;-1;-1;-1;-1;-1;;macer mountains
+3217;3987;impassable;-1;-1;-1;-1;-1;;macer mountains
+3217;1604;impassable;-1;-1;-1;-1;-1;;macer mountains
+1604;3930;impassable;-1;-1;-1;-1;-1;;macer mountains
+1604;3917;impassable;-1;-1;-1;-1;-1;;macer mountains
+#blob
+146;892;impassable;-1;-1;-1;-1;-1;;macer mountains
+146;3815;impassable;-1;-1;-1;-1;-1;;macer mountains
+3815;2472;impassable;-1;-1;-1;-1;-1;;macer mountains
+3815;2664;impassable;-1;-1;-1;-1;-1;;macer mountains
+
+
+
+
 
 # HYDRUS
 # north yelman islands
@@ -238,5 +350,5 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 
 -1;-1;-1;-1;-1;-1;-1;-1;;
 -1;-1;;-1;-1;-1;-1;-1;-1 
-2745;6793;sea;75033;-1;-1;-1;-1;;cetan islands
+2745;6793;sea;75033;-1;-1;-1;-1;;cetan islands # < i wonder what this is .?
 #x;x;sea;x;-1;-1;-1;-1;;x

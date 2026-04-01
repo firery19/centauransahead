@@ -1,0 +1,33 @@
+state={
+	id=199
+	name="STATE_199"
+	resources={
+		aluminium = 0
+		steel = 13
+		tungsten = 12
+		chromium = 27
+		coal = 17
+	}
+	history={
+		owner = TUC
+		add_core_of = TUC
+		buildings = {
+			arms_factory = 0
+			industrial_complex = 0
+			infrastructure = 2
+			3358 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			
+		}
+	}
+	provinces={
+		497 769 1007 1017 2358 2383 2671 3358 3380 
+	}
+	manpower=1006767
+	state_category=rural
+	buildings_max_level_factor=1
+	local_supplies=0
+}

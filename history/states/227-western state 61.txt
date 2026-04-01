@@ -1,0 +1,38 @@
+
+state={
+	id=227
+	name="STATE_227"
+	resources={
+		steel=6.000
+	}
+
+	history={
+	#	owner = CLB
+	#	add_core_of = CLB
+		add_core_of = QUA
+		owner = LGS
+		add_core_of = LGS
+		add_claim_by = CLB
+		buildings = {
+			industrial_complex = 0
+			infrastructure = 2
+
+		}
+		victory_points = {
+			1538 2
+		}
+
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+
+		}
+	}
+	provinces={
+		1538 3758 3791 926 3836 3865 3879 2384 1838
+	}
+	manpower=3135792
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

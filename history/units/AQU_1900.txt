@@ -45,7 +45,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 14
+		location = 4563
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
@@ -78,7 +78,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 4453
+		location = 4377
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
@@ -89,7 +89,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 1800
+		location = 4278
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.76
@@ -122,7 +122,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 860
+		location = 362
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.83
@@ -133,7 +133,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 9
 		}
-		location = 5038
+		location = 5084
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.92
@@ -144,7 +144,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 10
 		}
-		location = 2019
+		location = 4962
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.98
@@ -155,7 +155,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 4887
+		location = 1061
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.9
@@ -177,7 +177,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 13
 		}
-		location = 1713
+		location = 4831
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.94
@@ -188,7 +188,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 14
 		}
-		location = 4408
+		location = 4563
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.92
@@ -204,7 +204,97 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.81
 	}
-	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 423
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 335
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 5082
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.79
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 2485
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.78
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 1920
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.77
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 2826
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.76
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 1949
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 5076
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.74
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 4408
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.73
+	}
+#
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -254,7 +344,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 1413
+		location = 2140
 		division_template = "Civil Guard"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -265,7 +355,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 14
+		location = 4563
 		division_template = "Civil Guard"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -287,7 +377,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 4473
+		location = 8223
 		division_template = "Civil Guard"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -298,9 +388,71 @@ units = {
 			is_name_ordered = yes
 			name_order = 9
 		}
-		location = 5068
+		location = 4556
 		division_template = "Civil Guard"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 4563
+		division_template = "Civil Guard"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 4794
+		division_template = "Civil Guard"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 8223
+		division_template = "Civil Guard"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "AQU"
+		}
+		requested_factories = 2
+		progress = 0
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "AQU"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "AQU"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
 	}
 }

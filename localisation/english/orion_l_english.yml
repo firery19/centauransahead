@@ -7,7 +7,7 @@
  ORS_RallyPeople_desc:0 "In order to secure victory in the impending conflict, it is imperative that we rally the people to our cause. By mobilizing widespread support and fostering a united front, we can strengthen our position and enhance our chances of success in the upcoming war."
  ORS_ContactHydrus:0 "Contact Hydrus"
  ORS_ContactHydrus_desc:0 "To aid Hydrus in the upcoming war, we must initiate diplomatic efforts, establish communication channels, and forge a strategic alliance. This united front will ensure our collective strength and resilience against the challenges that lie ahead."
- orion.1.d:0 "Orion has reached out to us requesting to form an alliance for an upcoming conflict against Ursa."
+
  ORS_RallyPeopleIdea:0 "Rally The People"
  ORS_PrepareMilitary:0 "Prepare The Military"
  ORS_PromiseBusinesses:0 "Promise The Businesses"
@@ -17,10 +17,16 @@
  ORS_InvestInHydrusiteMilitaryIndustry:0 "Invest In the Hydrusite Military Complex"
  ORS_TrainHydrusites:0 "Train Hydrusite Militias"
  ORS_BattleExperience:0 "Lessons Of War"
- orion.1.a:0 "Perhaps it would be a wise choice if we accept."
- orion.1.b:0 "No! We can take Canis on our own!"
- orion.1.t:0 "Orion reaches out to us!
- orion.1.d:0 "In the wake of the rebellion in Hydrus, we've been preparing to liberate all Ursan colonies. Since then, Orion has been watching us with a close eye, and now, they have invited us to join their coalition against Ursa."
+ #orion.1.d:0 "Orion has reached out to us requesting to form an alliance for an upcoming conflict against Ursa."
+ #orion.1.a:0 "Perhaps it would be a wise choice if we accept."
+ #orion.1.b:0 "No! We can take Canis on our own!"
+ #orion.1.t:0 "Orion reaches out to us!
+ #orion.1.d:0 "In the wake of the rebellion in Hydrus, we've been preparing to liberate all Ursan colonies. Since then, Orion has been watching us with a close eye, and now, they have invited us to join their coalition against Ursa."
+ #orion.1.a:0 "Perhaps it would be a wise choice if we accept."
+ #orion.1.b:0 "No! We can take Canis on our own!"
+ orion.1.t:0 "Orion accepts"
+ orion.1.d:0 "Orion has ratified the treaty to form the Dragon Compact with Hydrus and Lepus."
+ orion.1.a:0 "Thats great."
  AntiUrsCoal:0 "Dragon Compact"
  ORS_TheUrsanQuestion:0 "The Ursan Question"
  ORS_EndOfWar:0 "Force Ursan Negotiations"
@@ -30,7 +36,7 @@
  ORS_InvestInOilRigs:0 "Invest In Oil Rigs"
  ORS_InvestInRubberFactories:0 "Invest in Rubber Factories"
  ORS_ImproveInfrastructure:0 "Improve Canisian Infrastructure"
- ORS_ConfiscateLand:0 "Confiscate Ursan Propriety"
+ ORS_ConfiscateLand:0 "Confiscate Ursan Property"
  orion.2.t:0 "Orion sends us a peace deal!"
  orion.2.d:0 "Now that we have lost our last Hydran colony, Orion wants to sign a peace treaty that'll give them and Hydrus our last colony and reperations for war. Shall we accept?"
  orion.2.a:0 "We've lost our colony, waging this war isn't worth the trouble."
@@ -63,9 +69,6 @@
  ORS_InviteTheOpposition:0 "Invite The Opposition"
  ORS_VictoryForHart:0 "Victory For Hart and Orion!"
  ORS_ExpandTheVenetaiaBureauOfResearch:0 "Expand The Venetaia Research Bureau"
- ORS_OrioniteImperialism:0 "Orionite Imperialism"
- ORS_OrioniteInterventionism:0 "Orionite Interventionism"
- ORS_OrioniteIsolationism:0 "Orionite Isolationism"
  ORS_QuestionOfForeignPolicy:0 "Question Of Foreign Policy"
  ORS_ExpandLibranPorts:0 "Expand Libran Ports"
  ORS_LookDownSouth:0 "Look Down South"
@@ -98,3 +101,52 @@
  orion.6.t:0 "The Economy Crashes!"
  orion.6.d:0 "After the discovery of oil in Canis, many oil companies in Orion have flocked there to gain as much profit as possible. At first, it went well till we've decided to aid Hydrusite rebels. Since then, the Ursan government has placed an embargo on us, and ever since the economy has began to stagnate. Coupled with other problems that only serve to worsen the situation, it became clear to everyone that it's only a matter of time till the economy collapses. And now, the time has come."
  orion.6.a:0 "Can it get any worse than this?"
+
+ # ----------- /\ everything up there is messy and im not cleaning that up
+ # focus
+ ORS_OrioniteImperialism:0 "Orionite Imperialism"
+ ORS_OrioniteImperialism_desc:0 "Within our past, the Kingdom of Orion was once a great empire, conquering many lands in Hydra that we still own today. We should revisit our past and continue the takeover of the world this time. Though, this may not be popular with the people."
+ ORS_OrioniteInterventionism:0 "Orionite Interventionism"
+ ORS_OrioniteInterventionism_desc:0 "Orion cannot stand by and watch as other nations tip the balance of power in the world. We will take means to attack any nations that dare threaten it."
+ ORS_OrioniteIsolationism:0 "Orionite Isolationism"
+ ORS_OrioniteIsolationism_desc:0 "Orion does not need to interfere in other countries affairs. We will look inward and manage our country instead."
+ 
+ 
+ ORI_embezzle_military_funds:0 "Embezzle Military Funds"
+ ORI_embezzle_military_funds_desc:0 "The massive budget for the military doesn't seem so necessary, does it? We should funnel some of those funds to somewhere else."
+ 
+ ORI_the_canis_issue:0 "The Canis Issue"
+ ORI_the_canis_issue_desc:0 "Canis has returned to our hands once again since the Landfall War. However, it will take time to reintegrate it into Orion."
+ ORI_confiscate_ursan_property:0 "Confiscate Ursan Property"
+ ORI_confiscate_ursan_property_desc:0 "Companies that operated in occupied Canis like the Motya-Renat Consortium benefited from the occupation there. Whatever properties and assets they had in Canis should be confiscated and distributed among Canisians."
+ 
+ # idea
+ ORS_RampantGovernmentCorruption_desc:0 "Status: [OrionCorruptionCounter]" #[?orion_corruption_counter|Y0]
+ 
+ # event
+ 
+ # tooltip
+ low_corruption:0 "§GLow Corruption§!"
+ medium_corruption:0 "§GMedium Corruption§!"
+ high_corruption:0 "§YHigh Corruption§!"
+ rampant_corruption:0 "§ORampant Corruption§!"
+ uncontrollable_corruption:0 "§RUncontrolled Corruption§!"
+ add_cr_little:0 "§YAdds a little corruption.§!"
+ add_cr_some:0 "§OAdds some corruption.§!"
+ add_cr_many:0 "§RAdds lots of corruption.§!"
+ add_cr_alot:0 "§PAdds too much corruption.§!"
+ we_helped_hydrus_f:0 "We agreed to help Hydrus"
+ we_refused_hydrus_f:0 "We refused to help Hydrus"
+ ORI_continue_invading_others_tt:0 "Affirms Orionite domination over Hydra."
+ ORI_the_last_offensive_war_tt:0 "§GIncreased bonuses against Ursa§!, but the requirements for any future offensive wars are §Rdramatically increased§!."
+ # misc
+ ORI_democratic_right_party:0 "National-Republican Party"
+ ORI_democratic_left_party:0 "United-Democratic Party"
+ ORI_democratic_party:0 "Enterprise-Reform Alliance"
+ 
+ # leaders
+ ORI_edward_spencer:0 "Edward Spencer"
+ ORI_patrick_hardin:0 "Patrick Hardin"
+ ORI_john_united_democratic:0 "John Ulysses Dixon"
+ ORI_alfons_rigo_burkes:0 "Alfons Rigo Burkes"
+ 

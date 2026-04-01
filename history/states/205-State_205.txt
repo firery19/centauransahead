@@ -1,0 +1,28 @@
+state={
+	id=205
+	name="STATE_205"
+	
+	history={
+#		owner = CLB
+#		add_core_of = CLB
+		add_core_of = NOH
+		owner = LGS
+		add_core_of = LGS
+		add_claim_by = CLB
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+		}
+		1944.1.1.12 = {
+			owner = RIA
+			controller = RIA
+		}
+	}
+	provinces={
+		138 817 1191 1309 2133 3061 3090 3108 3726 3746 
+	}
+	manpower=3830209
+	state_category=rural
+	buildings_max_level_factor=1
+	local_supplies=0
+}

@@ -7,28 +7,33 @@ state={
 	}
 
 	history={
-		owner = CLB
-		add_core_of = CLB
-		add_core_of = QUA
+	#	owner = CLB
+	#	add_core_of = CLB
+	#	add_core_of = QUA
+		owner = LGS
+		add_core_of = LGS
+	#	add_claim_by = CLB
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
-
+		#	arms_factory = 1	POOR ass country + gets factories from focustree
 		}
 		victory_points = {
 			2364 7 
+		}
+		victory_points = {
+			2357 9
 		}
 		1944.1.1.12 = {
 			owner = ANT
 			controller = ANT
 
-}
+		}
 	}
-
 	provinces={
-		36 218 321 334 368 1109 1165 1227 1350 1467 1538 1661 1837 1865 1950 2000 2113 2313 2357 2364 2381 2482 2793 3186 3297 3746 3758 3768 3791 3827 3832 3850 3859 3881 3899 3902 3910 3921 3970 
+		36 121 218 321 334 1109 1165 1467 1661 1950 2000 2313 2357 2364 2381 2482 2793 3186 3243 3297 3827 3881 3884 3899 3902 3910 3916 3921 
 	}
-	manpower=3940162
+	manpower=3899159
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

@@ -58,6 +58,7 @@ add_political_power = 1
 
 set_convoys = 25
 
+set_cosmetic_tag = GEMORION
 
 set_popularities = {
 	democratic = 55
@@ -74,7 +75,7 @@ set_politics = {
 }
 
 add_ideas = {
-	trench_warfare_idea
+	GEM_autonomous_country
 
 }
 

@@ -193,3 +193,24 @@ units = {
 		start_equipment_factor = 0.7
 	}
 }
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "LBR"
+		}
+		requested_factories = 1
+		progress = 0
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "LBR"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+}

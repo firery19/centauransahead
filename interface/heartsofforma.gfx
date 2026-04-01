@@ -13,6 +13,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/dynamite1.dds"
 	}
 	
+	# autonomy 
+	
+	
+	spriteType = {
+		name = "GFX_autonomy_skorpii_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_skorpii_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_autonomy_skorpii_integrated_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_skorpii_integrated_icon.dds"
+	}
+	
 	# caromite
 	
 	spriteType = {
@@ -23,18 +36,91 @@ spriteTypes = {
 		name = "GFX_report_event_caromite"
 		texturefile = "gfx/event_pictures/report_event_caromite.dds"
 	}
-	# other
+	
+	# state modifiers
+	
+	spriteType = {
+		name = "GFX_modifiers_generic_mountains"
+		texturefile = "gfx/interface/state_modifiers/modifiers_generic_mountains.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_modifiers_generic_mountains_big"
+		texturefile = "gfx/interface/state_modifiers/modifiers_generic_mountains_big.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_modifiers_generic_desert"
+		texturefile = "gfx/interface/state_modifiers/modifiers_generic_desert.dds"
+	}
+	
+	
+
+	## Decision images
+
+	SpriteType = {
+		name = "GFX_decision_cat_generic_south_corvus"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_south_corvus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_decision_cat_generic_rodinia"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_rodinia.dds"
+	}
+	
 	spriteType = {
 		name = "GFX_decision_cat_generic_hydrus"
 		texturefile = "gfx/interface/decisions/decision_cat_generic_hydrus.dds"
 	}
+	
 	spriteType = {
 		name = "GFX_decision_cat_generic_lepus"
 		texturefile = "gfx/interface/decisions/decision_cat_generic_lepus.dds"
 	}
+	
 	spriteType = {
 		name = "GFX_decision_cat_generic_canis"
 		texturefile = "gfx/interface/decisions/decision_cat_generic_canis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_decision_cat_generic_north_corvus"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_north_corvus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_decision_cat_generic_south_centaura_1"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_south_centaura_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_decision_cat_generic_south_centaura_2"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_south_centaura_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_generic_arida"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_arida.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_empty_placeholder"
+		texturefile = "gfx/interface/nothing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_democratic_left_group"
+		texturefile = "gfx/interface/ideologies/democratic_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_democratic_right_group"
+		texturefile = "gfx/interface/ideologies/democratic_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_auth_dem_group"
+		texturefile = "gfx/interface/ideologies/neutrality_group.dds"
 	}
 	
 	# menu interface wawawa!!
@@ -60,12 +146,12 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_long_tile"
-		texturefile = "gfx/interface/border_tiled_menu_screen_a.dds"
+		name = "GFX_anturus"
+		texturefile = "gfx/interface/anturus.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_empty_placeholder"
-		texturefile = "gfx/interface/nothing.dds"
+		name = "GFX_long_tile"
+		texturefile = "gfx/interface/border_tiled_menu_screen_a.dds"
 	}
 }

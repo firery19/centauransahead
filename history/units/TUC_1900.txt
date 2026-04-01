@@ -37,7 +37,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 548
+		location = 1071
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -224,7 +224,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 19
 		}
-		location = 1000
+		location = 1514
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
@@ -283,5 +283,35 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "TUC"
+		}
+		requested_factories = 1
+		progress = 0
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "TUC"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "TUC"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
 	}
 }

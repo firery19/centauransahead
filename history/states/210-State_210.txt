@@ -1,0 +1,31 @@
+
+state={
+	id=210
+	name="STATE_210"
+	resources={
+		steel=9.000
+		tungsten=4.000
+	}
+
+	history={
+		owner = GRS
+		add_core_of = GRS
+		add_claim_by = VEG
+		buildings = {
+			infrastructure = 1
+# 0 building slots	industrial_complex = 1
+			arms_factory = 0
+			dockyard = 0
+		}
+		victory_points = {
+		4325 5
+		}
+	}
+	provinces={
+		438 444 799 1050 1238 2338 2895 3201 3708 3722 3751 3774 3784 3799 3824 3854 3867 3878 3887 3918 3939 
+	}
+	manpower=253932
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

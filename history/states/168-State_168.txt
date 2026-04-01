@@ -4,6 +4,7 @@ state={
 	history={
 		owner = RIA
 		add_core_of = RIA
+		add_claim_by = VUL
 		buildings = {
 			infrastructure = 1
 			6555 = {

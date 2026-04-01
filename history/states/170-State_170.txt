@@ -2,7 +2,8 @@ state={
 	id=170
 	name="STATE_170"
 	history={
-		owner = HYS
+		owner = URS
+		#add_claim_by = URS
 		add_core_of = HYS
 		buildings = {
 			infrastructure = 1
@@ -17,7 +18,7 @@ state={
 	provinces={
 		376 2147 2276 3749 6737 
 	}
-	manpower=20913
+	manpower=220913
 	state_category = small_island
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

@@ -3,7 +3,7 @@ capital = 20
 oob = "LBR_1900"
 
 add_ideas = {
-	trench_warfare_idea
+	LBR_isolation_policy_idea
 }
 
 set_technology = {
@@ -39,6 +39,8 @@ set_popularities = {
 	fascism = 0
 	neutrality = 100
 }
+
+recruit_character = LBR_generic_leader
 
 set_politics = {
 	ruling_party = neutrality

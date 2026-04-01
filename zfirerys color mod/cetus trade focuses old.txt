@@ -1,0 +1,100 @@
+
+	
+	focus = {
+        id = CET_trade
+        x = 5
+        y = 1
+		icon = GFX_focus_generic_industrialists
+        relative_position_id = CET_friendly_with_all
+		prerequisite = { focus = CET_friendly_with_all }
+        
+        #search_filters =
+        cost = 10
+
+        completion_reward = {
+		custom_effect_tooltip = filler_focus_tt
+		}
+	}
+	
+	focus = {
+        id = CET_look_for_deals
+        x = 0
+        y = 1
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+        relative_position_id = CET_trade
+		prerequisite = { focus = CET_trade }
+        
+        #search_filters =
+        cost = 10
+
+        completion_reward = {
+		custom_effect_tooltip = filler_focus_tt
+		}
+	}
+	
+	focus = {
+        id = CET_aquilan_trade
+        x = 1
+        y = 1
+		icon = GFX_focus_generic_aquila
+        relative_position_id = CET_look_for_deals
+		prerequisite = { focus = CET_look_for_deals }
+		mutually_exclusive = { focus = CET_antarean_trade }
+        
+        #search_filters =
+        cost = 10
+
+        completion_reward = {
+		custom_effect_tooltip = filler_focus_tt
+		}
+	}
+	
+	focus = {
+        id = CET_hydran_imports
+        x = 0
+        y = 1
+		icon = GFX_focus_BRA_cafe_com_leite_politics
+        relative_position_id = CET_aquilan_trade
+		prerequisite = { focus = CET_aquilan_trade }
+        
+        #search_filters =
+        cost = 10
+
+        completion_reward = {
+		custom_effect_tooltip = filler_focus_tt
+		}
+	}
+	
+	focus = {
+        id = CET_aurigan_business
+        x = 0
+        y = 1
+		icon = GFX_focus_SOV_breadbasket_of_the_union
+        relative_position_id = CET_hydran_imports
+		prerequisite = { focus = CET_hydran_imports }
+        
+        #search_filters =
+        cost = 10
+
+        completion_reward = {
+		custom_effect_tooltip = filler_focus_tt
+		}
+	}
+	
+	focus = {
+        id = CET_antarean_trade
+        x = -1
+        y = 1
+		icon = GFX_focus_generic_ant
+        relative_position_id = CET_look_for_deals
+		prerequisite = { focus = CET_look_for_deals }
+		prerequisite = { focus = CET_mirren_elke_pact }
+		mutually_exclusive = { focus = CET_aquilan_trade }
+        
+        #search_filters =
+        cost = 10
+
+        completion_reward = {
+		custom_effect_tooltip = filler_focus_tt
+		}
+	}

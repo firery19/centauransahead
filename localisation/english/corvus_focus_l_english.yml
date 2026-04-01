@@ -66,6 +66,35 @@
  COV_southern_offensive:0 "Southern Offensive"
  COV_southern_offensive_desc:0 "A southern offensive would allow us to reclaim the rest of South Corvus."
  
+ #####################
+ ### Antarean Diplomacy~
+ ######################
+ 
+ COV_antarean_diplomacy:0 "Antarean Diplomacy"
+ COV_antarean_diplomacy_desc:0 "The Antares Imperium share similar values and ideologies with us, and they trade with us essential supplies. Wouldn't it be a no-brainer to continue these friendly diplomatic relations?"
+ COV_increase_trade_wtih_ant:0 "Increased Trade with Antares"
+ COV_increase_trade_wtih_ant_desc:0 "
+ COV_officer_exchange:0 "Officer Exchange"
+ COV_officer_exchange_desc:0 "
+ COV_ant_military_cooperation:0 "Antarean Military Cooperation"
+ COV_ant_military_cooperation_desc:0 "
+ COV_tech_sharing:0 "Technology Sharing"
+ COV_tech_sharing_desc:0 "
+ 
+ ##########################
+ # political not historical
+ ##########################
+ COV_reapproachment:0 "Cetan Reapproachement"
+ COV_reapproachment_desc:0 "We will use diplomatic ways to regain South Corvus."
+ COV_contact_cetus:0 "Contact Cetus"
+ COV_contact_cetus_desc:0 "We will reestablish diplomatic contact with Cetus."
+ COV_concessions:0 "Concessions"
+ COV_concessions_desc:0 "We will concede something to Cetus to further our diplomatic way of resolving this."
+ COV_iron_and_oil:0 "Iron and Oil Agreement"
+ COV_iron_and_oil_desc:0 "Cetus wants steel and oil to power their navy. We need these resources to power our country. We will allow a larger share of resources to Cetus."
+ COV_nauta_compromise:0 "The Nauta Compromise"
+ COV_nauta_compromise_desc:0 "The Nauta Compromise seeks to return parts of South Corvus back to Corvus. Although we may hope for a full return, it is unlikely."
+ 
  # - wartime administration
  COV_wartime_administration:0 "Wartime Administration"
  COV_wartime_administration_desc:0 "
@@ -106,25 +135,12 @@
  COV_demobilise_desc:0 "
  COV_continue_on:0 "Continue On"
  COV_continue_on_desc:0 "
- ##########################
- # political not historical
- ##########################
- COV_reapproachment:0 "Cetan Reapproachement"
- COV_reapproachment_desc:0 "We will use diplomatic ways to regain South Corvus."
- COV_contact_cetus:0 "Contact Cetus"
- COV_contact_cetus_desc:0 "We will reestablish diplomatic contact with Cetus."
- COV_concessions:0 "Concessions"
- COV_concessions_desc:0 "We will concede something to Cetus to further our diplomatic way of resolving this."
- COV_iron_and_oil:0 "Iron and Oil Agreement"
- COV_iron_and_oil_desc:0 "Cetus wants steel and oil to power their navy. We need these resources to power our country. We will allow a larger share of resources to Cetus."
- COV_nauta_compromise:0 "The Nauta Compromise"
- COV_nauta_compromise_desc:0 "The Nauta Compromise seeks to return parts of South Corvus back to Corvus. Although we may hope for a full return, it is unlikely."
  ##########
  # industry
  ##########
- COV_industry:0 "Modernize Our Industry"
- COV_industry_desc:0 "Industry"
- COV_region_development:0 "Region Development"
+ COV_corvun_industry:0 "Modernize Our Industry"
+ COV_corvun_industry_desc:0 "A nation's industry is an integral part towards a functioning nation. Ever since our country was crippled from the invasion by Cetus, we have neglected any industrial development."
+ COV_region_development:0 "Regional Development"
  COV_region_development_desc:0 "
  COV_railroad:0 "Connect The Centre"
  COV_railroad_desc:0 "Our railways in Central Corvus is not up to the northern railways standard. We will improve it now."
@@ -179,7 +195,7 @@
  ##########
  COV_research:0 "Establish Research Facility Q"
  COV_research_desc:0 "We will establish a research facility for military and civil purposes."
- COV_research_military:0 "Military Research"
+ COV_research_military:0 "Experimental Military Designs"
  COV_research_military_desc:0 "
  COV_research_gun:0 "Small Arms Research"
  COV_research_gun_desc:0 "For an army, the most important thing it has is the individual soldier. For them to fight better, we should focus on small arms research."

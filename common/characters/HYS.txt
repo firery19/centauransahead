@@ -1,0 +1,48 @@
+characters = {
+    HYS_renald_downes = {
+        name = HYS_renald_downes
+        portraits = {
+            civilian = {
+                large = GFX_portrait_HYS_renald_downes
+            }
+        }
+        country_leader = {
+			ideology = moderatism
+			traits = { }
+			expire = "1912.1.1.1"
+		}
+    }
+
+	GER_wilhelm_keitel = {
+		name = GER_wilhelm_keitel
+		portraits = {
+			army = {
+				small = GFX_idea_wilhelm_keitel
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = wilhelm_keitel
+			allowed = {
+				original_tag = HYS
+			}
+			visible = {
+			always = yes
+#				OR = {
+#				has_government = neutrality
+#				has_government = democracy
+#				}
+			}
+			available = {
+			has_global_flag = orion_helps_hydrus_economy
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+}

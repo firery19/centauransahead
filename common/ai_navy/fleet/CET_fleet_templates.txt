@@ -1,0 +1,51 @@
+CET_dominance_fleet_1 = {
+	required_taskforces = {
+		CET_StrikeForce_1 = 1
+		CET_PatrolDominanceForce_1 = 1
+		CET_PatrolReconForce_1 = 1
+	}	
+	optional_taskforces = {
+		CET_StrikeForce_1 = 2
+		CET_PatrolDominanceForce_1 = 2
+		CET_PatrolReconForce_1 = 2		
+	}
+}
+CET_dominance_fleet_2 = {
+	required_taskforces = {
+		CET_StrikeForce_1 = 1
+		CET_PatrolDominanceForce_1 = 2
+		CET_PatrolReconForce_1 = 2
+	}	
+	optional_taskforces = {
+		CET_StrikeForce_1 = 2
+		CET_PatrolDominanceForce_1 = 3
+		CET_PatrolReconForce_1 = 3		
+	}
+}
+
+CET_small_patrol_fleet_1 = {
+	required_taskforces = {
+		CET_PatrolReconForce_1 = 1
+	}	
+	optional_taskforces = {
+		CET_PatrolReconForce_1 = 2		
+	}
+}
+
+CET_raiding_fleet_1 = {
+	required_taskforces = {
+		CET_ConvoySurfaceRaiding_1 = 1
+	}	
+	optional_taskforces = {
+		CET_ConvoySurfaceRaiding_1 = 4
+	}
+}
+
+CET_escort_fleet_1 = {
+	required_taskforces = {
+		CET_ConvoyEscort_1 = 1
+	}
+	optional_taskforces = {
+		CET_ConvoyEscort_1 = 2
+	}
+}

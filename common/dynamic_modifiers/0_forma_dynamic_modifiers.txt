@@ -61,7 +61,7 @@ AQU_the_scorch_dynamic_modifier = { #State Modifier
 
 	icon = GFX_modifiers_generic_defense
     supply_factor = 0.6
-	army_defense_factor = 0.8
+	army_defense_factor = 0.95
 }
 
 CET_sector_funded = { #State Modifier
@@ -71,4 +71,81 @@ CET_sector_funded = { #State Modifier
     state_production_speed_bunker_factor = 1
 	state_production_speed_land_fort_factor = 1
 	state_production_speed_anti_air_building_factor = 1
+}
+
+VEG_murus_plateau_modifier = { #State Modifier
+	enable = { always = yes }
+	attacker_modifier = yes
+
+	icon = GFX_decision_generic_mountain_fortification
+	air_cas_present_factor = -0.5
+	army_attack_factor = -0.5
+	army_speed_factor = -0.2
+	ground_attack_factor = -0.5
+}
+
+macer_mountains_modifier = { #State Modifier
+	enable = { always = yes }
+	attacker_modifier = yes
+
+	icon = GFX_modifiers_generic_mountains_big
+	air_cas_present_factor = -0.6
+	army_attack_factor = -0.4
+	army_speed_factor = -0.4
+	ground_attack_factor = -0.6
+#	local_org_regain = -0.25
+	state_production_speed_rail_way_factor = -0.9	#building railways in a mountain kinda hard yo
+}
+
+macer_mountains_small_modifier = { #State Modifier
+	enable = { always = yes }
+	attacker_modifier = yes
+
+	icon = GFX_modifiers_generic_mountains
+	air_cas_present_factor = -0.3
+	army_attack_factor = -0.2
+	army_speed_factor = -0.2
+	ground_attack_factor = -0.3
+#	local_org_regain = -0.05
+	state_production_speed_rail_way_factor = -0.5	#building railways in a mountain kinda hard yo
+}
+
+desert_dynamic_modifier = { #State Modifier
+	enable = { always = yes }
+	attacker_modifier = yes
+
+	icon = GFX_modifiers_generic_desert
+	army_attack_factor = -0.35
+	army_speed_factor = -0.1
+	state_production_speed_rail_way_factor = -0.3	#same for deserts
+}
+
+tundra_dynamic_modifier = { #State Modifier
+	enable = { always = yes }
+	attacker_modifier = yes
+
+	icon = GFX_modifiers_generic_defense
+	army_attack_factor = -0.5
+	army_speed_factor = -0.5
+}
+
+rural_unurban_modifier = { #State Modifier
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_defense
+	local_building_slots_factor = -0.5
+	recruitable_population_factor = -0.05
+	production_speed_buildings_factor = -0.05
+}
+
+
+unplanned_offensive = { #State Modifier
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_defense
+	air_cas_present_factor = -0.75
+	army_attack_factor = -0.9
+	army_speed_factor = -0.75
+	ground_attack_factor = -0.75
+	local_org_regain = -0.5
 }

@@ -2,8 +2,9 @@ state={
 	id=171
 	name="STATE_171"
 	history={
-		owner = HYS
+		owner = URS
 		add_core_of = HYS
+		add_core_of = LPS
 		buildings = {
 			infrastructure = 1
 		}

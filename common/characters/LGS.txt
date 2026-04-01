@@ -1,0 +1,15 @@
+characters = {
+    LGS_guard_duke = {
+        name = LGS_guard_duke
+        portraits = {
+            civilian = {
+                large = GFX_portrait_LGS_leader
+            }
+        }
+        country_leader = {
+			ideology = despotism
+			traits = { humble }
+			expire = "1962.1.1.1"
+		}
+    }
+}

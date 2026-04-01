@@ -19,6 +19,145 @@ adjacency_rule = {
     {
         army = no
         navy = no
+        submarine = yes
+        trade = no
+    }
+    enemy =
+    {
+        army = no
+        navy = no
+        submarine = yes
+        trade = no
+    }
+    friend =
+    {
+        army = yes
+        navy = yes
+        submarine = yes
+        trade = yes
+    }
+    neutral =
+    {
+        army = yes
+        navy = yes
+        submarine = yes
+        trade = yes
+    }
+
+    required_provinces = { 3280 697 3662 49 6724 }
+
+    is_disabled = {
+        OR = {
+            has_global_flag = SAGITTARIUS_SHOOT_ON_SIGHT
+            has_country_flag = SAGITTARIUS_BLOCKED_FOR_COUNTRY
+            has_country_flag = SUEZ_SANCTIONS_FLAG
+        }
+        tooltip = suez_blocked_tt
+    }
+
+    icon = 697
+    offset = { 1 0 0 }
+}
+adjacency_rule = {
+    name = "SAGITTARIUS_STRAIT_WEST"
+
+    contested =
+    {
+        army = no
+        navy = no
+        submarine = yes
+        trade = no
+    }
+    enemy =
+    {
+        army = no
+        navy = no
+        submarine = yes
+        trade = no
+    }
+    friend =
+    {
+        army = yes
+        navy = yes
+        submarine = yes
+        trade = yes
+    }
+    neutral =
+    {
+        army = yes
+        navy = yes
+        submarine = yes
+        trade = yes
+    }
+
+    required_provinces = { 425 3677 3642 619 3652}
+
+    is_disabled = {
+        OR = {
+            has_global_flag = SAGITTARIUS_SHOOT_ON_SIGHT
+            has_country_flag = SAGITTARIUS_BLOCKED_FOR_COUNTRY
+            has_country_flag = SUEZ_SANCTIONS_FLAG
+        }
+        tooltip = suez_blocked_tt
+    }
+
+    icon = 3677
+    offset = { 1 0 0 }
+}
+#BOWSTRING CANAL
+adjacency_rule = {
+    name = "BOWSTRING_CANAL"
+
+    contested =
+    {
+        army = no
+        navy = no
+        submarine = no
+        trade = no
+    }
+    enemy =
+    {
+        army = no
+        navy = no
+        submarine = no
+        trade = no
+    }
+    friend =
+    {
+        army = yes
+        navy = yes
+        submarine = yes
+        trade = yes
+    }
+    neutral =
+    {
+        army = yes
+        navy = yes
+        submarine = yes
+        trade = yes
+    }
+
+    required_provinces = { 1383 1597 }
+
+    is_disabled = {
+        OR = {
+            has_global_flag = BOWSTRING_CANAL_BLOCKED
+            has_country_flag = BOWSTRING_CANAL_BLOCKED_FOR_COUNTRY
+            has_country_flag = BOWSTRING_CANAL_SANCTIONS_FLAG
+        }
+        tooltip = suez_blocked_tt
+    }
+
+    icon = 1383
+    offset = { 0 8 0 }
+}
+adjacency_rule = {
+    name = "SPEKULUM_RIVER"
+
+    contested =
+    {
+        army = no
+        navy = no
         submarine = no
         trade = no
     }
@@ -39,22 +178,206 @@ adjacency_rule = {
     neutral =
     {
         army = no
-        navy = yes
-        submarine = yes
+        navy = no
+        submarine = no
         trade = yes
     }
 
-    required_provinces = { 425 3677 619 3212 3678 49 697 3280 3662 1013 3660 3652 3642 7910 }
+    required_provinces = { 6073 6114 2440 876 6059 6144 1162 24}
 
     is_disabled = {
         OR = {
-            has_global_flag = SAGITTARIUS_SHOOT_ON_SIGHT
-            has_country_flag = SAGITTARIUS_BLOCKED_FOR_COUNTRY
-            has_country_flag = SUEZ_SANCTIONS_FLAG
+            has_global_flag = SPEKULUM_RIVER_BLOCKED
+            has_country_flag = SPEKULUM_RIVER_BLOCKED_FOR_COUNTRY
+            has_country_flag = SPEKULUM_RIVER_SANCTIONS_FLAG
         }
         tooltip = suez_blocked_tt
     }
 
-    icon = 7910
+    icon = 6114
+    offset = { 1 0 0 }
+}
+adjacency_rule = {
+    name = "GRAND_NORTHERN_CANAL"
+
+    contested =
+    {
+        army = no
+        navy = no
+        submarine = no
+        trade = no
+    }
+    enemy =
+    {
+        army = no
+        navy = no
+        submarine = no
+        trade = no
+    }
+    friend =
+    {
+        army = yes
+        navy = yes
+        submarine = yes
+        trade = yes
+    }
+    neutral =
+    {
+        army = no
+        navy = no
+        submarine = no
+        trade = yes
+    }
+
+    required_provinces = { 1462 1008 756 1740 3395 3420 2475 1281 777 889 908}
+
+    is_disabled = {
+        OR = {
+            has_global_flag = GRAND_NORTHERN_CANAL_BLOCKED
+            has_country_flag = GRAND_NORTHERN_CANAL_BLOCKED_FOR_COUNTRY
+            has_country_flag = GRAND_NORTHERN_CANAL_SANCTIONS_FLAG
+        }
+        tooltip = suez_blocked_tt
+    }
+
+    icon = 1008
+    offset = { -2 0 0 }
+}
+adjacency_rule = {
+    name = "HADINA_RIVER"
+
+    contested =
+    {
+        army = no
+        navy = no
+        submarine = no
+        trade = no
+    }
+    enemy =
+    {
+        army = no
+        navy = no
+        submarine = no
+        trade = no
+    }
+    friend =
+    {
+        army = yes
+        navy = yes
+        submarine = yes
+        trade = yes
+    }
+    neutral =
+    {
+        army = no
+        navy = no
+        submarine = no
+        trade = yes
+    }
+
+    required_provinces = { 3495 3513 1646 }
+
+    is_disabled = {
+        OR = {
+            has_global_flag = HADINA_RIVER_CANAL_BLOCKED
+            has_country_flag = HADINA_RIVER_CANAL_BLOCKED_FOR_COUNTRY
+            has_country_flag = HADINA_RIVER_CANAL_SANCTIONS_FLAG
+        }
+        tooltip = suez_blocked_tt
+    }
+
+    icon = 3495
+    offset = { -1 0 0 }
+}
+adjacency_rule = {
+    name = "NORWAY_SHAPE_LAKE"
+
+    contested =
+    {
+        army = no
+        navy = no
+        submarine = no
+        trade = no
+    }
+    enemy =
+    {
+        army = no
+        navy = no
+        submarine = no
+        trade = no
+    }
+    friend =
+    {
+        army = yes
+        navy = yes
+        submarine = yes
+        trade = yes
+    }
+    neutral =
+    {
+        army = no
+        navy = no
+        submarine = no
+        trade = yes
+    }
+
+    required_provinces = { 4401 1258 1173 3276 4446 }
+
+    is_disabled = {
+        OR = {
+            has_global_flag = PISCA_RIVER_CANAL_BLOCKED
+            has_country_flag = PISCA_RIVER_CANAL_BLOCKED_FOR_COUNTRY
+            has_country_flag = PISCA_RIVER_CANAL_SANCTIONS_FLAG
+        }
+        tooltip = suez_blocked_tt
+    }
+
+    icon = 1173
+    offset = { 1 0 0 }
+}
+adjacency_rule = {
+    name = "LEPUS_CANAL"
+
+    contested =
+    {
+        army = no
+        navy = no
+        submarine = no
+        trade = no
+    }
+    enemy =
+    {
+        army = no
+        navy = no
+        submarine = no
+        trade = no
+    }
+    friend =
+    {
+        army = yes
+        navy = yes
+        submarine = yes
+        trade = yes
+    }
+    neutral =
+    {
+        army = no
+        navy = no
+        submarine = no
+        trade = yes
+    }
+
+    required_provinces = { 550 56 4134 4103 4056 }
+
+    is_disabled = {
+        OR = {
+            has_global_flag = PISCA_RIVER_CANAL_BLOCKED
+            has_country_flag = PISCA_RIVER_CANAL_BLOCKED_FOR_COUNTRY
+            has_country_flag = PISCA_RIVER_CANAL_SANCTIONS_FLAG
+        }
+        tooltip = suez_blocked_tt
+    }
+
+    icon = 550
     offset = { 1 0 0 }
 }

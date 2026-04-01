@@ -2,29 +2,737 @@ focus_tree = {
 	id = hydrus_focus
 	
 	country = {
-		factor = 0
+		base = 0
 		
 		modifier = {
-			add = 10
+			add = 100
 			tag = HYS
 		}
 	}
 	
-	shared_focus = army_effort
-	shared_focus = naval_effort
-	shared_focus = aviation_effort
-	shared_focus = industrial_effort
-	shared_focus = political_effort
+	
+	initial_show_position = {
+		focus = HYS_seek_arms_deal_orion
+	}
+	
+#	shared_focus = army_effort
+#	shared_focus = naval_effort_hydrus
+#	shared_focus = aviation_effort
+#	shared_focus = industrial_effort_hydrus
+#	shared_focus = construction_effort_2
+#	shared_focus = political_effort
 	
 	default = no
 	
 	continuous_focus_position = { x = 50 y = 1000 }
 	
 	focus = {
-		id = HYS_seek_help_test_1
-		icon = GFX_goal_demand_sudetenland
-		x = 30
-		cost = 0
-
+		id = HYS_rebuilding_the_country
+		icon = GFX_focus_SOV_organize_wreckers
+		x = 9
+#		y = 5
+		y = 0
+		cost = 5
+		
+        ai_will_do = {
+            base = 5
+        }
+		
 		completion_reward = {
+			swap_ideas = {
+				add_idea = HYS_recently_independent_2_idea
+				remove_idea = HYS_recently_independent_idea
+				}
+			}
 		}
+	
+	focus = {
+		id = HYS_rally_workers
+		icon = GFX_focus_generic_full_employment
+		prerequisite = { focus = HYS_rebuilding_the_country }
+		relative_position_id = HYS_rebuilding_the_country
+		x = 0
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		completion_reward = {
+			add_ideas = low_economic_mobilisation
+			}
+		}
+		
+	focus = {
+		id = HYS_prepare_hydrus_military
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = HYS_rebuilding_the_country }
+		relative_position_id = HYS_rebuilding_the_country
+		x = -6
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		completion_reward = {
+		army_experience = 5
+			}
+		}
+		
+	focus = {
+		id = HYS_sieze_ursan_weapon_caches
+#		icon = GFX_focus_AFG_scavenging 
+		icon = GFX_focus_AUS_raid_military_storages
+		prerequisite = { focus = HYS_prepare_hydrus_military }
+		relative_position_id = HYS_prepare_hydrus_military
+		x = -2
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		completion_reward = {
+		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 1000
+                producer = URS
+				}
+			}
+		}
+		
+	focus = {
+		id = HYS_start_training_units
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HYS_prepare_hydrus_military }
+		relative_position_id = HYS_prepare_hydrus_military
+		x = 0
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            base = 6
+        }
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = HYS_recruiting_new_army_idea
+				days = 180
+				}
+			}
+		}
+		
+	focus = {
+		id = HYS_local_produced_guns
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = HYS_start_training_units }
+		relative_position_id = HYS_start_training_units
+		x = -1
+		y = 1
+		cost = 10
+		
+		available = {
+		has_completed_focus = HYS_establish_local_industries
+		}
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		completion_reward = {
+			2 = { 
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+		}
+		
+	focus = {
+		id = HYS_establish_high_command
+		icon = GFX_focus_PRC_army_command
+		prerequisite = { focus = HYS_prepare_hydrus_military }
+		relative_position_id = HYS_prepare_hydrus_military
+		x = 2
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            base = 6
+        }
+		
+		completion_reward = {
+			add_command_power = 30
+			swap_ideas = {
+				add_idea = HYS_new_army_2_idea
+				remove_idea = HYS_new_army_idea
+				}
+			}
+		}
+		
+	focus = {
+		id = HYS_resolve_conscription_errors
+		icon = GFX_focus_AFG_adopt_nufus
+		prerequisite = { focus = HYS_establish_high_command }
+		prerequisite = { focus = HYS_start_training_units }
+		relative_position_id = HYS_establish_high_command
+		x = -1
+		y = 1
+		cost = 3
+
+        ai_will_do = {
+            base = 6
+        }
+		
+		completion_reward = {
+			add_command_power = 30
+			swap_ideas = {
+				add_idea = HYS_new_army_3_idea
+				remove_idea = HYS_new_army_2_idea
+				}
+			}
+		}
+		
+	focus = {
+		id = HYS_sieze_abandoned_ursan_factories
+		icon = GFX_focus_DEN_heavy_regulations
+		prerequisite = { focus = HYS_rally_workers }
+		relative_position_id = HYS_rally_workers
+		x = 2
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		
+		completion_reward = {
+		2 = { 
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+#	focus = {
+#		id = HYS_kickstart_production
+#		icon = GFX_goal_generic_construction
+#		prerequisite = { focus = HYS_rally_workers }
+#		relative_position_id = HYS_rally_workers
+#		x = 0
+#		y = 1
+#		cost = 5
+#
+#		ai_will_do = {
+#			base = 5
+#		}
+#		
+#		completion_reward = {
+#		add_timed_idea = {
+#			idea = HYS_temporary_boost_idea
+#			days = 90
+#				}
+#			}
+#		}
+		
+	focus = {
+		id = HYS_exploitation_resources
+		icon = GFX_focus_generic_resource_extraction
+		prerequisite = { focus = HYS_rally_workers }
+		relative_position_id = HYS_rally_workers
+#		prerequisite = { focus = HYS_kickstart_production }
+#		relative_position_id = HYS_kickstart_production
+		x = -1
+		y = 3
+		cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		completion_reward = {
+		2 = {
+			add_resource = {
+				type = aluminium 
+				amount = 2
+					}
+				}
+			}
+		}
+		
+	focus = {
+		id = HYS_offshore_oil_drilling
+		icon = GFX_focus_generic_offshore_oil_rig
+		prerequisite = { focus = HYS_exploitation_resources }
+		prerequisite = { focus = HYS_finnsberg_shipbuilders	}
+		relative_position_id = HYS_exploitation_resources
+		x = 1
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		completion_reward = {
+		126 = {
+			add_resource = {
+				type = oil 
+				amount = 10
+					}
+				}
+			}
+		}
+		
+	focus = {
+		id = HYS_ingram_mountain_mining
+		icon = GFX_focus_generic_mining_industry
+		prerequisite = { focus = HYS_exploitation_resources }
+		prerequisite = { focus = HYS_ingram_industry }
+		relative_position_id = HYS_exploitation_resources
+		x = 3
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		completion_reward = {
+			173 = {
+			add_resource = {
+				type = steel 
+				amount = 10
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = HYS_establish_local_industries
+		icon = GFX_focus_AFG_a_modern_economy
+		prerequisite = { focus = HYS_rally_workers }
+		relative_position_id = HYS_rally_workers
+		x = 0
+		y = 1
+		cost = 2
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = HYS_newly_established_factories_idea
+				days = 720
+			}
+		}
+	}
+		
+	focus = {
+		id = HYS_finnsberg_shipbuilders
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		prerequisite = { focus = HYS_establish_local_industries }
+		relative_position_id = HYS_establish_local_industries
+		x = 0
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		completion_reward = {
+		2 = {
+		add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				}
+			}
+	}
+	
+	focus = {
+		id = HYS_ingram_industry
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = HYS_establish_local_industries }
+		relative_position_id = HYS_establish_local_industries
+		x = 2
+		y = 1
+		cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		completion_reward = {
+		173 = {
+		add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}	
+			2 = {
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+				add_extra_state_shared_building_slots =1
+			}
+		}
+	}
+		
+	focus = {
+		id = HYS_restore_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = HYS_finnsberg_shipbuilders }
+		prerequisite = { focus = HYS_ingram_industry }
+		relative_position_id = HYS_finnsberg_shipbuilders
+		x = 1
+		y = 1
+		cost = 10
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		completion_reward = {
+		127 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+		#		add_extra_state_shared_building_slots = 3
+			}
+			128 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+			}
+			129 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = HYS_make_farmlands
+#		icon = GFX_focus_generic_economic_recovery
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = HYS_rally_workers }
+		relative_position_id = HYS_rally_workers
+		x = -2
+		y = 1
+		cost = 10
+#		overlay = GFX_focus_fast_overlay_generic_clock
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		completion_reward = {
+			swap_ideas = {
+				add_idea = HYS_food_shortages_2_idea
+				remove_idea = HYS_food_shortages_idea
+			}
+		}
+	}
+		
+	focus = {
+		id = HYS_fix_food_shortage
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = HYS_make_farmlands }
+		relative_position_id = HYS_make_farmlands
+		x = 0
+		y = 1
+		cost = 10
+
+		available = {
+			NOT = {
+			has_idea = URS_hydrus_trade_destruction
+			}
+			has_country_flag = {
+				flag = done_sow_farmland_flag
+				days > 280
+			}
+			custom_trigger_tooltip = {
+				tooltip = farmland_focus_days
+				has_country_flag = {
+					flag = done_sow_farmland_flag
+					days > 280
+				}
+			}
+		}
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		completion_reward = {
+		remove_ideas = HYS_food_shortages_2_idea
+		}
+	}
+		
+		
+		
+	# ORION HELP !!!!
+		
+	focus = {
+		id = HYS_seek_orionite_help
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 14
+		y = 0
+#		y = 7
+		cost = 5
+
+        ai_will_do = {
+            base = 100
+        }
+		
+		completion_reward = {
+		ORI = {
+			country_event = hydrus.2
+			}
+		}
+	}
+		
+	focus = {
+		id = HYS_orionite_aid
+		icon = GFX_focus_generic_merchant_fleet
+#		prerequisite = { focus = HYS_kickstart_production }
+		prerequisite = { focus = HYS_rebuilding_the_country }
+		prerequisite = { focus = HYS_seek_orionite_help }
+#		relative_position_id = HYS_kickstart_production
+#		x = 5
+#		y = 1
+		relative_position_id = HYS_seek_orionite_help
+		x = 0
+		y = 1
+		cost = 5
+		
+		available = {
+		has_global_flag = orion_helps_hydrus_economy
+		NOT = {
+			has_idea = URS_hydrus_trade_destruction
+			}
+		}
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		completion_reward = {
+		add_equipment_to_stockpile = {
+                type = convoy
+                amount = 75
+                producer = ORI
+				}
+			}
+		}
+		
+	focus = {
+		id = HYS_orion_industrial_might
+		icon = GFX_focus_mex_privatisation
+		prerequisite = { focus = HYS_seek_orionite_help }
+		relative_position_id = HYS_orionite_aid
+		x = -1
+		y = 1
+		cost = 5
+		
+		available = {
+		has_global_flag = orion_helps_hydrus_economy
+		NOT = {
+			has_idea = URS_hydrus_trade_destruction
+			}
+		}
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 2 }
+		}
+	}
+		
+	focus = {
+		id = HYS_seek_arms_deal_orion
+		icon = GFX_focus_PER_stand_with_giants
+		prerequisite = { focus = HYS_seek_orionite_help }
+		relative_position_id = HYS_orionite_aid
+		x = 1
+		y = 1
+		cost = 5
+		
+		available = {
+		has_global_flag = orion_helps_hydrus_economy
+		NOT = {
+			has_idea = URS_hydrus_trade_destruction
+			}
+		}
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		completion_reward = {
+		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 1000
+                producer = ORI
+				}
+			}
+		}
+		
+#	focus = {
+#		id = HYS_aid_future_nations
+#		icon = GFX_focus_BEL_paul_emile_janson
+#		prerequisite = { focus = HYS_orion_industrial_might }
+#		relative_position_id = HYS_orion_industrial_might
+#		x = 0
+#		y = 1
+#		cost = 5
+#		
+#		available = {
+#		NOT = {
+#			has_idea = URS_hydrus_trade_destruction
+#			}
+#		}
+#
+#		ai_will_do = {
+#			base = 5
+#		}
+		
+#		completion_reward = {
+#			custom_effect_tooltip = independence_builder_orion
+#			set_global_flag = independence_building_factories
+#			}
+#		}
+		
+	focus = {
+		id = HYS_subsidise_civ_industry
+		icon = GFX_focus_generic_modernize_industry
+		prerequisite = { focus = HYS_orion_industrial_might }
+		prerequisite = { focus = HYS_establish_local_industries }
+#		prerequisite = { focus = HYS_ingram_industry }
+#		prerequisite = { focus = HYS_kickstart_production }
+		relative_position_id = HYS_orion_industrial_might
+		x = -1
+		y = 2
+		cost = 5
+		
+		available = {
+		NOT = {
+			has_idea = URS_hydrus_trade_destruction
+			}
+		}
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+				}
+				reduce_focus_completion_cost = {
+				focus = { HYS_functional_economy }
+					cost = 35
+				}
+				custom_effect_tooltip = PHI_clock_tt
+			}
+		}
+		
+	focus = {
+		id = HYS_subsidise_arms_industry
+		icon = GFX_focus_generic_military_industry
+		prerequisite = { focus = HYS_orion_industrial_might }
+		prerequisite = { focus = HYS_seek_arms_deal_orion }
+		relative_position_id = HYS_orion_industrial_might
+		x = 1
+		y = 1
+		cost = 5
+		
+		available = {
+		NOT = {
+			has_idea = URS_hydrus_trade_destruction
+			}
+		}
+
+        ai_will_do = {
+            base = 5
+        }
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+				}
+			}
+		}
+		
+	focus = {
+		id = HYS_unification_discussions
+		icon = GFX_focus_AFG_parliamentary_democracy
+		x = 18
+		y = 0
+		cost = 5
+
+		ai_will_do = {
+		base = 5
+		}
+		
+		available = {
+		country_exists = CNS
+		country_exists = LPS
+		NOT = {
+			AND = {
+				has_war_with = URS
+				CNS = { has_war_with = URS }
+				LPS = { has_war_with = URS }
+			}
+		}
+	}
+		
+	completion_reward = {
+		custom_effect_tooltip = filler_focus_tt 
+		}
+	}
+}
+		
+		
+		

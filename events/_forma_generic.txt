@@ -1,0 +1,180 @@
+add_namespace = formageneric
+add_namespace = warfareadvancement
+
+country_event = {
+	id = formageneric.1
+	title = formageneric.1.t
+	desc = formageneric.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = formageneric.1.a
+	}
+	option = {
+		name = formageneric.1.b
+	}
+}
+
+country_event = {
+	id = formageneric.2
+	title = formageneric.2.t
+	desc = formageneric.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = formageneric.2.a
+	}
+	option = {
+		name = formageneric.2.b
+	}
+}
+
+country_event = {
+	id = formageneric.3
+	title = formageneric.3.t
+	desc = formageneric.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = formageneric.3.a
+	}
+	option = {
+		name = formageneric.3.b
+	}
+}
+
+country_event = {
+	id = formageneric.4
+	title = formageneric.4.t
+	desc = formageneric.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = formageneric.4.a
+	}
+	option = {
+		name = formageneric.4.b
+	}
+}
+
+country_event = {
+	id = formageneric.2
+	title = formageneric.2.t
+	desc = formageneric.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = formageneric.2.a
+	}
+	option = {
+		name = formageneric.2.b
+	}
+}
+
+country_event = {
+	id = warfareadvancement.1
+	title = warfareadvancement.1.t
+	desc = warfareadvancement.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = no
+	trigger = {
+	#date > 1904.12.31
+	date > 1905.1.1
+	date < 1905.1.2
+	}
+	option = {
+		name = warfareadvancement.1.a
+		swap_ideas = {
+			remove_idea = trench_warfare_idea
+			add_idea = trench_warfare_2_idea
+		}
+	}
+}
+
+country_event = {
+	id = warfareadvancement.2
+	title = warfareadvancement.2.t
+	desc = warfareadvancement.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = no
+	trigger = {
+	date > 1910.1.1
+	date < 1910.1.2
+	}
+	option = {
+		name = warfareadvancement.2.a
+		swap_ideas = {
+			remove_idea = trench_warfare_2_idea
+			add_idea = trench_warfare_3_idea
+		}
+	}
+}
+
+country_event = {
+	id = warfareadvancement.3
+	title = warfareadvancement.3.t
+	desc = warfareadvancement.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = no
+	trigger = {
+	date > 1915.1.1
+	date < 1915.1.2
+	}
+	option = {
+		name = warfareadvancement.3.a
+		swap_ideas = {
+			remove_idea = trench_warfare_3_idea
+			add_idea = trench_warfare_4_idea
+		}
+	}
+}
+
+country_event = {
+	id = warfareadvancement.4
+	title = warfareadvancement.4.t
+	desc = warfareadvancement.4.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = no
+	trigger = {
+	date > 1920.1.1
+	date < 1920.1.2
+	}
+	option = {
+		name = warfareadvancement.4.a
+		swap_ideas = {
+			remove_idea = trench_warfare_4_idea
+			add_idea = trench_warfare_5_idea
+		}
+	}
+}
+
+country_event = {
+	id = warfareadvancement.5
+	title = warfareadvancement.5.t
+	desc = warfareadvancement.5.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = no
+	trigger = {
+	date > 1925.1.1
+	date < 1925.1.2
+	}
+	option = {
+		name = warfareadvancement.5.a
+		remove_ideas = trench_warfare_5_idea
+	}
+}

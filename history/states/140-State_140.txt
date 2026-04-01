@@ -8,22 +8,25 @@ state={
 		add_core_of = ORI
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
-			arms_factory = 1
-			dockyard = 0
-			5998 = {
+			industrial_complex = 2
+			arms_factory = 0
+			dockyard = 1
+			683 = {
 				naval_base = 4
 			}
-			6112 = {
+			6154 = {
 				naval_base = 2
 			}
 
 		}
 		victory_points = {
-			6112 10 
+			6154 10 
 		}
 		victory_points = {
-			5998 30 
+			683 30 
+		}
+		victory_points = {
+			5842 5 
 		}
 
 	}
@@ -36,6 +39,6 @@ state={
 	}
 	manpower=19928913
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	state_category=city
 	local_supplies=0.000
 }

@@ -6,9 +6,12 @@ state={
 		add_core_of = LBR
 		buildings = {
 			infrastructure = 2
+			5776 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {
-			2727 1
+			5776 3
 		}
 	}
 	provinces={

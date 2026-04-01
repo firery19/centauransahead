@@ -11,9 +11,8 @@ country_event = { # on action replaced
 	
     option = {
         name = cov.1.a
-        hidden_effect = {
-            complete_national_focus = COV_initial_offensive
-        }
+		complete_national_focus = COV_wartime_administration
+		complete_national_focus = COV_implement_rationing_policy
     }
 }
 
@@ -30,28 +29,54 @@ country_event = {
 		name = cov.2.a
 		effect_tooltip = {
 			puppet = COV
+			set_autonomy = {
+				target = COV
+				autonomous_state = autonomy_skorpii_integrated
+			}
 		}
 	}
 }
 
-# End of SCW, Corvus expanded Antares aid - event for SPD
+# End of SCW, Corvus expanded Antares aid - event for COV
 country_event = {
 	id = cov.3
 	title = cov.3.t
 	desc = cov.3.desc
 	picture = GFX_report_event_generic_parliament
 	
-	is_triggered_only = yes
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+		AND = {
+			has_completed_focus = COV_request_antarean_intervention
+			COV = { NOT = { has_war = yes } }
+			}
+		}
+	
 
 	immediate = {
 		hidden_effect = {
 			ANT = { puppet = COV }
+			set_autonomy = {
+				target = COV
+				autonomous_state = autonomy_skorpii_integrated
+				end_wars = yes
+				end_civil_wars = yes
+			}
+			ANT = { country_event = cov.2 }
 		}
 	}
 	
 	option = { # Ok
 		name = cov.3.a
 		effect_tooltip = {
+			set_autonomy = {
+				target = COV
+				autonomous_state = autonomy_skorpii_integrated
+				end_wars = yes
+				end_civil_wars = yes
+			}
 			ANT = { puppet = COV }
 		}
 	}
@@ -69,13 +94,13 @@ country_event = {
 	option = {
 		name = cov.4.a # Yes
 		ai_chance = {base = 99}
-		create_faction = Solstice
+		ANT = { create_faction = "Solstice Pact" }
 		add_to_faction = COV
 		COV = {
 				add_ai_strategy = {
-						type = alliance
-						id = "ANT"
-						value = 200
+					type = alliance
+					id = "ANT"
+					value = 200
 				}
 			}
 		}
@@ -85,4 +110,135 @@ country_event = {
 		name = cov.4.b # NO 
 		ai_chance = {base = 1}
 	}
+}
+
+
+
+country_event = { # reminder
+    id = cov.5
+    title = cov.5.t
+    desc = cov.5.d
+    picture = GFX_report_event_gre_cabinet_meeting
+
+    is_triggered_only = yes #focus 
+	fire_only_once = yes
+	
+    option = {
+        name = cov.5.a
+		
+    }
+}
+
+country_event = { # test
+    id = cov.6
+    title = cov.6.t
+    desc = cov.6.d
+    picture = GFX_report_event_gre_cabinet_meeting
+
+    is_triggered_only = yes #focus 
+	fire_only_once = yes
+	
+    option = {
+		name = cov.6.a
+		create_purchase_contract = {
+			seller = ANT
+			buyer = COV
+			civilian_factories = 2
+			equipment = {
+				type = artillery_equipment
+				amount = 300
+			}
+		}
+    }
+}
+
+# CIVIL WAR!!! - Event for Italy
+country_event = {
+	id = cov.7
+	title = cov.7.t
+	desc = cov.7.desc
+	picture = GFX_report_event_ITA_italian_civil_war
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		
+		}
+	}
+
+	# Monarchist
+	option = { 
+		name = cov.7.a
+
+		ai_chance = {
+			base = 0
+		}
+		start_civil_war = {
+			ruling_party = fascism
+			ideology = neutrality #SPLITTING TAG
+			size = 0.65
+		}
+
+		hidden_effect = {
+			news_event = { id = bba_news.110 hours = 2 }
+		}
+	}
+
+	# Fascist
+	option = { 
+		name = cov.7.b
+
+		ai_chance = {
+			base = 1
+		}
+		start_civil_war = {
+			ideology = fascism #SPLITTING TAG
+			size = 0.35
+		}
+
+		hidden_effect = {
+			news_event = { id = bba_news.110 hours = 2 }
+		}
+	}
+}
+
+country_event = {
+    id = cov.8
+    title = cov.8.t
+    desc = cov.8.d
+    picture = GFX_report_event_gre_cabinet_meeting
+
+    is_triggered_only = yes #focus 
+	fire_only_once = yes
+	
+    option = {
+        name = cov.8.a
+		
+    }
+	
+    option = {
+        name = cov.8.b
+		
+    }
+}
+
+country_event = {
+    id = cov.q
+    title = cov.q.t
+    desc = cov.q.d
+    picture = GFX_report_event_gre_cabinet_meeting
+
+    is_triggered_only = yes #focus 
+	fire_only_once = yes
+	
+    option = {
+        name = cov.q.a
+		
+    }
+	
+    option = {
+        name = cov.q.b
+		
+    }
 }

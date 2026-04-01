@@ -3,13 +3,21 @@ state={
 	id=63
 	name="STATE_63"
 	history = {
-		owner = RIA
-		add_core_of = RIA
-		add_core_of = QUA
+	#	owner = RIA
+	#	add_core_of = RIA
+	#	add_core_of = QUA
+	#	add_claim_by = CLB
+		owner = LGS
+		add_core_of = LGS
+	#	add_claim_by = CLB
+		add_claim_by = RIA
 		buildings = {
 			arms_factory = 0
 			industrial_complex = 0
-			infrastructure = 2
+			infrastructure = 1
+			639 = {
+				naval_base = 2
+				}
 		}
 		victory_points = {
 			639 11
@@ -21,10 +29,10 @@ state={
 }
 	}
 	provinces={
-		639 666 1619 2903 3835 
+		639 666 1619 1817 2903 3835 
 	}
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
         manpower=2734390
-        state_category = town
+        state_category = rural
 }

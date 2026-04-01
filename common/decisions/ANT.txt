@@ -1,140 +1,779 @@
-ANT_bocchiland = {
-	debug_bocchi = {
+ANT_army_reform_category = {
+	ANT_reform_timer = {
+		icon = GFX_decision_unknown
+		activation = {
+			tag = ANT
+			has_completed_focus = ANT_reorganize_army
+		}
+		available = {
+			has_completed_focus = ANT_finish_army_reform
+		}
+		selectable_mission = yes
+		is_good = yes
+		days_mission_timeout = 1080
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			army_experience = 50
+			add_war_support = 0.05
+			custom_effect_tooltip = ant_modify_imp_army_by
+			add_to_variable = {
+			    var = ANT_army_plan_spirit
+			    value = 0.3
+			    tooltip = ant_30_max_plan_15_mastery_gain
+			}
+			add_to_variable = {
+				var = ANT_army_doctrine_spirit
+				value = 0.15
+			}
+			
+		}
+		timeout_effect = {
+			add_political_power = -100
+		}
+		ai_will_do = {
+			base = 1000
 
-		icon = ger_reichskommissariats
+		}
+	}
+	ANT_equipment_adequacy = {
+
+		icon = GFX_decision_generic_prepare_civil_war
 
 		available = {
-			NOT = { country_exists = BCH }
-		}
-		
-		visible = {
-			is_debug = yes
-		}
-		
-		cost = 0
-
-		ai_will_do = {
-			factor = 0
+		#	tag = ANT
+			has_completed_focus = ANT_new_artillery
+			has_completed_focus = ANT_new_cav_tech
+			has_tech = infantry_weapons1
+			has_tech = artillery1
 			}
+
+		visible = {
+			tag = ANT
+			OR = {
+				has_completed_focus = ANT_reorganize_army
+				is_debug = yes
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 20
+		complete_effect = {
+
+		}
+		remove_effect = { 
+		custom_effect_tooltip = ant_modify_imp_army_by
+			add_to_variable = {
+				var = ANT_army_atk_spirit
+				value = 0.025
+				tooltip = ant_2p5_army_art_attack_tt
+			}
+			add_to_variable = {
+				var = ANT_army_def_spirit
+				value = 0.025
+			}
+
+		}
+		ai_will_do = {
+			base = 10
+
+		}
+	}
+	ANT_equipment_production = {
+
+		icon = GFX_decision_generic_industry
+
+		available = {
+		#	tag = ANT
+			has_completed_focus = ANT_prepare_war_industry
+			has_tech = advanced_machine_tools
+			arms_factory > 19
+			or = {
+				has_completed_focus = ANT_expand_mauser
+				has_completed_focus = ANT_more_artillery
+			}
+		}
+
+		visible = {
+			tag = ANT
+			OR = {
+				has_completed_focus = ANT_reorganize_army
+				is_debug = yes
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 20
+		complete_effect = {
+
+		}
+		remove_effect = {
+			add_to_variable = { ANT_army_output_spirit = 0.05 }
+			custom_effect_tooltip = ant_modify_imp_army_by
+			custom_effect_tooltip = ant_5_factory_output_tt
+		}
+		ai_will_do = {
+			base = 10
+
+		}
+	}
+	ANT_army_size_big = {
+
+		icon = GFX_decision_generic_military
+
+		available = {
+		#	tag = ANT
+			has_army_manpower = {
+			    size > 2500000
+			}
+			}
+
+		visible = {
+			tag = ANT
+			OR = {
+				has_completed_focus = ANT_reorganize_army
+				is_debug = yes
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 20
+		complete_effect = {
+
+		}
+		remove_effect = { 
+			add_to_variable = { ANT_army_org_spirit = 0.05 }
+			add_to_variable = { ANT_army_pop_spirit = 0.05 }
+			custom_effect_tooltip = ant_modify_imp_army_by
+			custom_effect_tooltip = ant_5_div_org_5_recpop_factor
+
+		}
+		ai_will_do = {
+			base = 10
+
+		}
+	}
+	ANT_logistics = {
+
+		icon = GFX_decision_generic_trucks
+
+		available = {
+		#	tag = ANT
+			has_equipment = {
+			    motorized_equipment_0 > 1999
+			}
+			has_equipment = {
+			    train_equipment > 399
+			}
+			OR = {
+				has_completed_focus = ANT_develop_rural_infrastructure
+				has_completed_focus = ANT_connect_urban_areas
+			}
+		}
+
+		visible = {
+			tag = ANT
+			OR = {
+				has_completed_focus = ANT_reorganize_army
+				is_debug = yes
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 20
+		complete_effect = {
+
+		}
+		remove_effect = { 
+			add_to_variable = { ANT_army_supply_spirit = -0.05	}
+			add_to_variable = { ANT_army_hubrange_spirit = 0.05	}
+			custom_effect_tooltip = ant_modify_imp_army_by
+			custom_effect_tooltip = ant_5_suphub_range_neg5_supconsumption_tt
+
+		}
+		ai_will_do = {
+			base = 10
+
+		}
+	}
+	ANT_auxiliary_forces = {
+
+		icon = GFX_decision_generic_reorganize_irregulars
+
+		available = {
+		#	tag = ANT
+			has_completed_focus = ANT_monarch3
+			has_stability > 0.7
+			has_war_support > 0.5
+			}
+
+		visible = {
+			tag = ANT
+			OR = {
+				has_completed_focus = ANT_reorganize_army
+				is_debug = yes
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = aux_force_variable? # to hanssolo, this value is found in ant country file	
+		days_remove = 20
+		complete_effect = {
+			custom_effect_tooltip = ant_cheaper_with_army_state_decision_active_tt
+
+		}
+		remove_effect = { 
+			custom_effect_tooltip = ant_modify_imp_army_by
+			custom_effect_tooltip = ant_4_recpop_factor
+#			if = {
+#				limit = { NOT = { 
+#					has_decision = ANT_army_with_a_state
+#					has_country_flag = army_reform_prussia 
+#				}}
+#				add_political_power = -75
+#			}
+			add_to_variable = { ANT_army_pop_spirit = 0.04 }
+
+		}
+		ai_will_do = {
+			base = 10
+
+		}
+	}
+	ANT_depoliticize_army = {
+
+		icon = GFX_decision_generic_political_discourse
+
+		available = {
+		#	tag = ANT
+			NOT = { 
+				has_decision = ANT_army_with_a_state
+			}
+			fascism < 0.1
+		}
+		visible = {
+			tag = ANT
+			OR = {
+				AND = {
+					has_completed_focus = ANT_reorganize_army
+					NOT = { has_country_flag = army_reform_mutually_exclusive_decision }
+				}
+				is_debug = yes
+			}
+		}
+		
+
+		fire_only_once = yes
+
+		cost = 100
+		days_remove = 20
+		complete_effect = {
+		}
+		remove_effect = { 
+			add_to_variable = { ANT_army_pp_spirit = -0.05 }
+			add_to_variable = { ANT_army_morale_spirit = 0.1 }
+			custom_effect_tooltip = ant_modify_imp_army_by
+			custom_effect_tooltip = ant_neg5_pp_10_div_recovery_tt
+			set_country_flag = army_reform_mutually_exclusive_decision
+
+		}
+		ai_will_do = {
+			base = 1
+
+		}
+	}
+	ANT_army_with_a_state = {
+
+		icon = GFX_decision_generic_intelligence_operation
+
+		available = {
+		#	tag = ANT
+			NOT = { 
+				has_decision = ANT_depoliticize_army
+			}
+			fascism > 0.25
+		}
+		visible = {
+			tag = ANT
+			OR = {
+				AND = {
+					has_completed_focus = ANT_reorganize_army
+					NOT = { has_country_flag = army_reform_mutually_exclusive_decision }
+				}
+				is_debug = yes
+			}
+		}
+		
+
+		fire_only_once = yes
+
+		cost = 100
+		days_remove = 20
+		complete_effect = {
+		}
+		remove_effect = {
+		add_to_variable = {
+			var = aux_force_variable
+			value = -75
+			tooltip = ant_lower_75_cost_pp_tt
+			}
+			add_to_variable = { ANT_army_pp_spirit = 0.05 }
+#			add_to_variable = { ANT_army_morale_spirit = -0.1 }
+			add_to_variable = { ANT_army_ws_spirit = 0.1 }
+			custom_effect_tooltip = ant_modify_imp_army_by
+			custom_effect_tooltip = ant_imp_army_add_5_pp_10_warsupport_tt
+			set_country_flag = army_reform_mutually_exclusive_decision
+#			set_country_flag = army_reform_prussia
+		}
+		ai_will_do = {
+			base = 10
+
+		}
+	}
+	ANT_expand_officer_training = {
+
+		icon = GFX_decision_generic_army_support
+
+		available = {
+		#	tag = ANT
+
+
+			}
+
+		visible = {
+			check_variable = {
+			    ANT_decision_counter_1 < 0.5
+			}
+			tag = ANT
+			OR = {
+				has_completed_focus = ANT_reorganize_army
+				is_debug = yes
+			}
+		}
+
+		fire_only_once = no
+
+		custom_cost_trigger = {
+		    command_power > 50
+		    has_army_experience > 15
+		}
+		custom_cost_text = decision_cost_CP_50_ArmXP_15
+		days_remove = 20
+		complete_effect = {
+			custom_effect_tooltip = ant_can_select_4_times
+			hidden_effect = { 
+				army_experience = -15
+				add_command_power = -50
+			}
+			add_to_variable = { ANT_decision_counter_1 = 0.1 }
+		}
+		remove_effect = { 
+			custom_effect_tooltip = ant_modify_imp_army_by
+			custom_effect_tooltip = ant_2p5_army_xp_gain_tt
+			add_to_variable = { ANT_army_xp_spirit = 0.025}
+
+		}
+		ai_will_do = {
+			base = 1
+
+		}
+	}
+	ANT_expand_reservists = {
+
+		icon = GFX_decision_generic_belgian_colonial_helmet
+
+		available = {
+		#	tag = ANT
+			}
+
+		visible = {
+			check_variable = {
+			    ANT_decision_counter_2 < 0.4
+			}
+			tag = ANT
+			OR = {
+				has_completed_focus = ANT_reorganize_army
+				is_debug = yes
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 20
+		custom_cost_trigger = {
+			command_power > 50
+			political_power > 50
+		}
+		custom_cost_text = decision_cost_CP_50_pp_50
 
 		complete_effect = {
+			custom_effect_tooltip = ant_can_select_3_times
 			hidden_effect = {
-					every_state = {
-						limit = {
-							OR = {
-								state = 111
-							}
-							is_owned_by = ANT
-						}
-						BCH = {
-							transfer_state = PREV
-						}
-					}
-					111 = { add_core_of = BCH }
+				add_political_power = -50
+				add_command_power = -50
 			}
-			release_on_controlled = BCH
-			BCH = {
-				set_state_controller = 111
-				ANT = {
-					puppet = PREV
-					if = {
-						limit = {
-							NOT = { has_dlc = "Death or Dishonor" }
-							has_government = neutrality
-						}
-						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet end_wars = no end_civil_wars = no }
-					}
-					else = {
-						set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat  end_wars = no end_civil_wars = no }
-					}
-				}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.02
+			}
+			add_to_variable = { ANT_decision_counter_2 = 0.1 }
+		}		
 
-			#	set_cosmetic_tag = BCH
-		#		create_country_leader = {
-			#		name = "Hitori Gotoh"
-		#			desc = "POLITICS_HITORI_GOTOH_DESC"
-			#		picture = GFX_portrait_Hitori_Gotoh
-				#	expire = "1999.1.1"
-		#			ideology = conservatism
-				#	traits = {
-				#	}
-			#	}
-			}
+		remove_effect = { 
+			custom_effect_tooltip = ant_modify_imp_army_by
+			custom_effect_tooltip = ant_2_recpop_factor
+			add_to_variable = { ANT_army_pop_spirit = 0.02}
+			
+
+		}
+		ai_will_do = {
+			base = 1
+
 		}
 	}
 }
-ANT_south_centauran_conquest = {
+ANT_industry_category = {
 
-		ANT_unity_speech = {
-
-		icon = generic_prepare_civil_war
-
-		available = {
-			IF = {
-				limit = {
-					tag = ANT
-				}
-				OR = {
-				has_wargoal_against = CET
-				has_wargoal_against = AQU
-				}
+}
+ANT_protest_category = {
+	ANT_protests_worsen = {
+		icon = GFX_decision_revolt
+		activation = {
+			tag = ANT
+			has_country_flag = ANT_protests_ongoing
+			NOT = { 
+				has_country_flag = ANT_protest_peace 
+				has_idea = ANT_protest_large 
 			}
 		}
+		available = {
+			OR = {
+			has_country_flag = ANT_protest_peace 
+			NOT = { has_country_flag = ANT_protests_ongoing }
+			}
+		}
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 30
+#		days_mission_timeout = 10
+		fire_only_once = no
+		days_re_enable = -1
 
-		visible = {
-			is_debug = yes
+#		ai_will_do = { factor = 100 }
+
+		timeout_effect = {
 			if = {
-				NOT = { has_global_flag = scw_over }
+				limit = {
+					has_idea =  ANT_protest_negligible 
+				}
+				swap_ideas = {
+				    remove_idea = ANT_protest_negligible
+				    add_idea = ANT_protest_small
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  ANT_protest_small 
+				}
+				swap_ideas = {
+				    remove_idea = ANT_protest_small
+				    add_idea = ANT_protest_medium
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  ANT_protest_medium 
+				}
+				swap_ideas = {
+				    remove_idea = ANT_protest_medium
+				    add_idea = ANT_protest_large
 				}
 			}
 
-		fire_only_once = yes
-
-		cost = 75
+		}
 
 		complete_effect = {
-			add_war_support = 0.05
+
+		}
+
+		remove_effect = {
+		}
+	}
+	ANT_reduce_protest = {
+
+		icon = GFX_decision_generic_arrest
+
+		available = {
+			tag = ANT
+			has_country_flag = ANT_protests_ongoing
+			has_completed_focus = ANT_protest4
+			NOT = { has_idea = ANT_protest_negligible}
+		}
+
+		visible = {
+			tag = ANT
+			OR = {
+				has_country_flag = ANT_protests_ongoing
+				is_debug = yes
+			}
+		}
+
+		fire_only_once = no
+
+		cost = 50
+		days_remove = 7
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_idea =  ANT_protest_large 
+				}
+				swap_ideas = {
+				    remove_idea = ANT_protest_large
+				    add_idea = ANT_protest_medium
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  ANT_protest_small 
+				}
+				swap_ideas = {
+				    remove_idea = ANT_protest_small
+				    add_idea = ANT_protest_negligible
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  ANT_protest_medium 
+				}
+				swap_ideas = {
+				    remove_idea = ANT_protest_medium
+				    add_idea = ANT_protest_small
+				}
+			}
+add_popularity = {
+    ideology = communism
+    popularity = -0.01
+}
+add_popularity = {
+    ideology = democratic
+    popularity = -0.01
+}
+
 		}
 
 		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 201
-				has_war_support < 0.6
-			}
+			base = 1000
+
 		}
 	}
-	ANT_intervene_corvus = {
+	ANT_reduce_protest2 = {
 
-		icon = generic_prepare_civil_war
+		icon = GFX_decision_generic_scorched_earth
 
 		available = {
-			COV = { is_in_faction_with = ANT }
-			COV = { has_war_with = CET }
+			tag = ANT
+			has_country_flag = ANT_protests_ongoing
+			has_completed_focus = ANT_protest4
+			NOT = { has_idea = ANT_protest_negligible}
+			divisions_in_state = {
+				size > 4
+				state = 186
+			}
+			divisions_in_state = {
+				size > 2
+				state = 110
+			}
+			divisions_in_state = {
+				size > 3
+				state = 109
+			}
+			divisions_in_state = {
+				size > 4
+				state = 107
+			}
+			divisions_in_state = {
+				size > 3
+				state = 101
+			}
+			divisions_in_state = {
+				size > 2
+				state = 104
+			}
+
+
+
+
+
+		}
+
+		visible = {
+			tag = ANT
+			OR = {
+				has_country_flag = ANT_protests_ongoing
+				is_debug = yes
+			}
+		}
+
+		fire_only_once = no
+
+		cost = 25
+		days_remove = 3
+
+		remove_effect = {
+			add_stability = -0.025
+			add_manpower = -5000
+			custom_effect_tooltip = in_all_major_cities
+			damage_building = {
+			  type = infrastructure
+			  state = 186
+			  damage = 1
+			}
+			hidden_effect = {
+			damage_building = {
+			  type = infrastructure
+			  state = 110
+			  damage = 1
+			}
+			damage_building = {
+			  type = infrastructure
+			  state = 109
+			  damage = 1
+			}
+			damage_building = {
+			  type = infrastructure
+			  state = 107
+			  damage = 1
+			}
+			damage_building = {
+			  type = infrastructure
+			  state = 101
+			  damage = 1
+			}
+			damage_building = {
+				type = infrastructure
+				state = 104
+				damage = 1
+				}
+			}
+
+			if = {
+				limit = {
+					has_idea =  ANT_protest_large 
+				}
+				swap_ideas = {
+				    remove_idea = ANT_protest_large
+				    add_idea = ANT_protest_medium
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  ANT_protest_small 
+				}
+				swap_ideas = {
+				    remove_idea = ANT_protest_small
+				    add_idea = ANT_protest_negligible
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  ANT_protest_medium 
+				}
+				swap_ideas = {
+				    remove_idea = ANT_protest_medium
+				    add_idea = ANT_protest_small
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 1000
+
+		}
+	}
+	ANT_negotiate_protest = {
+
+		icon = GFX_decision_generic_political_discourse
+
+		available = {
+			tag = ANT
+			has_country_flag = ANT_protests_ongoing
+			has_completed_focus = ANT_protest5
 			}
 
 		visible = {
-			is_debug = yes
-
-			#COV = { is_in_faction_with = ANT }
-		}
+			tag = ANT
+			OR = {
+				has_country_flag = ANT_protests_ongoing
+				is_debug = yes
+			}		}
 
 		fire_only_once = yes
 
-		cost = 75
-
+		cost = 100
+		days_remove = 40
 		complete_effect = {
-		declare_war_on = {
-            target = CET
-            type = annex_everything
-			}
-		}
 
+		}
+		remove_effect = { 
+			add_political_power = -50
+			add_stability = 0.05
+			set_country_flag = ANT_protest_peace
+			custom_effect_tooltip = "Protests will no longer grow!"
+		}
 		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 201
-				COV = { has_war_with = CET }
-			}
+			base = 1000
+
 		}
 	}
+	ANT_assasinate = {
+
+		icon = GFX_decision_generic_assassination
+
+		available = {
+			tag = ANT
+			has_country_flag = ANT_protests_ongoing
+			has_completed_focus = ANT_protest5b
+			}
+
+		visible = {
+			tag = ANT
+			OR = {
+				has_country_flag = ANT_protests_ongoing
+				is_debug = yes
+			}		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 20
+		complete_effect = {
+
+		}
+		remove_effect = { 
+#			add_political_power = -25
+			add_stability = -0.075
+			set_country_flag = ANT_protest_peace
+			custom_effect_tooltip = "Protests will no longer grow!"
+		}
+		ai_will_do = {
+			base = 1000
+
+		}
+	}
+}
+
+ANT_navy_reform_category = {
+
+
+
+}

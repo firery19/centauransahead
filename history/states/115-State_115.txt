@@ -15,6 +15,15 @@ state={
 			3714 = {
 				naval_base = 3
 			}
+			3289 = {
+				naval_base = 5
+			}
+			3643 = {
+				naval_base = 1
+			}
+			2949 = {
+				naval_base = 4
+			}
 		}
 		victory_points = {
 		3643 5
@@ -49,6 +58,6 @@ state={
 	}
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-        manpower=10452673
+        manpower=10352673
         state_category = town
 }

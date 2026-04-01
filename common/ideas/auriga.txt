@@ -1,0 +1,15 @@
+ideas = {
+    country = {
+        AUR_king = {
+            
+            picture = SWE_king_gustaf
+            allowed = { original_tag = AUR }
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = 0.1
+
+			}
+        }
+    }
+}

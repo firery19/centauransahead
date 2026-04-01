@@ -1,9 +1,9 @@
-capital = 17
+capital = 163
 
 oob = "LAC_1900"
-add_ideas = {
-	trench_warfare_idea
-}
+
+recruit_character = LAC_generic_character
+
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1
@@ -22,27 +22,29 @@ set_technology = {
 	# i
 }
 
+172 = {	set_demilitarized_zone = yes }
+
 set_research_slots = 1
 
-set_stability = 0.6
+set_stability = 0.4
 
-set_war_support = 0.3
+set_war_support = 0.2
 
 add_political_power = 1
 
 set_convoys = 10
 
 set_popularities = {
-	democratic = 1
-	communism = 0
+	democratic_left = 29
+	communism = 4		#noone likes this shithole of a country
 	fascism = 0
-	neutrality = 99
+	auth_dem = 67		#probably some corrupt caribbean/african dictatorship
 }
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1900.1.1"
+	ruling_party = auth_dem
+	last_election = "1899.1.6"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 

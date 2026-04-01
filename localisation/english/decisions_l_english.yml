@@ -89,8 +89,18 @@
  decision_cost_CP_50_PP_100:0 "£command_power  §Y50§! £pol_power  §Y100§!"
  decision_cost_CP_50_PP_100_blocked:0 "£command_power  §R50§! £pol_power  §R100§!"
  decision_cost_CP_50_PP_100_tooltip:0 "It costs £command_power  §Y50§! £pol_power  §Y100§! to take the decision"
- 
- decision_cost_pp_25_ie_1000:0 "£pol_power  §Y25§! £infantry_equipment_text_icon  §Y1000§!"
+#
+ decision_cost_CP_50_ArmXP_15:0 "£command_power  §Y50§! £army_experience  §Y15§!"
+ decision_cost_CP_50_ArmXP_15_blocked:0 "£command_power  §R50§! £army_experience  §R15§!"
+ decision_cost_CP_50_ArmXP_15_tooltip:0 "It costs £command_power  §Y50§! £army_experience  §Y15§! to take the decision"
+
+
+ decision_cost_CP_25_ArmXP_15:0 "£command_power  §Y25§! £army_experience  §Y15§!"
+ decision_cost_CP_25_ArmXP_15_blocked:0 "£command_power  §R25§! £army_experience  §R15§!"
+ decision_cost_CP_25_ArmXP_15_tooltip:0 "It costs £command_power  §Y25§! £army_experience  §Y15§! to take the decision"
+
+#
+ decision_cost_pp_25_ie_1000:0 "£pol_power  §Y25§! £infantry_equipment_text_icon  §Y1000§" 
  decision_cost_pp_25_ie_1000_blocked:0 "£pol_power  §R25§! £infantry_equipment_text_icon  §R1000§!"
  decision_cost_pp_25_ie_1000_tooltip:0 "It costs £pol_power  §Y25§! £infantry_equipment_text_icon  §Y1000§! to take the decision"
  
@@ -125,6 +135,7 @@
  decision_cost_MP_300_PP_15: "£manpower_texticon  §Y300§! £pol_power §Y15§!"
  decision_cost_MP_300_PP_15_blocked: "£manpower_texticon  §R300§! £pol_power §R15§!"
  decision_cost_MP_300_PP_15_tooltip: "It costs £manpower_texticon  §Y300§! and £pol_power §Y15§! to take this decision"
+
 
  decision_cost_ie_500_MP_500_CP_25:0 "£infantry_equipment_text_icon  §Y500§! £manpower_texticon  §Y500§! £command_power  §Y25§!"
  decision_cost_ie_500_MP_500_CP_25_blocked:0 "£infantry_equipment_text_icon  §R500§! £manpower_texticon  §R500§! £command_power  §R25§!"

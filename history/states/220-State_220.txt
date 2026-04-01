@@ -1,0 +1,21 @@
+
+state={
+	id=220
+	name="STATE_220"
+
+	impassable = yes
+	force_link_ownership_to = 210	#Makes more sense linking desert to desert
+
+	history={
+		owner = GRS
+		add_core_of = GRS
+		add_claim_by = VEG
+	}
+	provinces={
+		620 630 854 1252 1289 1475 1541 3717 3737 3779 3802 3814 3822 3839 3851 3869 
+	}
+	manpower=122945
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

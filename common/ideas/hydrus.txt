@@ -1,9 +1,68 @@
 ideas = {
     country = {
+        HYS_food_shortages_idea = {
+		name = HYS_food_shortages
+            
+            picture = HYS_food_shortages
+            allowed = { original_tag = HYS }
+            removal_cost = -1
+
+            modifier = {
+			consumer_goods_factor = 0.2
+			production_speed_buildings_factor = -0.2
+			industrial_capacity_factory = -0.2
+			monthly_population = -0.2
+            }
+        }
+        HYS_food_shortages_2_idea = {
+		name = HYS_food_shortages
+            
+            picture = HYS_food_shortages
+            allowed = { original_tag = HYS }
+            removal_cost = -1
+
+            modifier = {
+			consumer_goods_factor = 0.1
+			production_speed_buildings_factor = -0.2
+			industrial_capacity_factory = -0.1
+            }
+        }
+		
+		HYS_against_the_goliath_idea = {
+		name = HYS_against_the_goliath
+            
+            picture = HYS_against_the_goliath
+            allowed = { original_tag = HYS }
+            removal_cost = -1
+
+            modifier = {
+			war_support_factor = 0.25
+			stability_factor = -0.1
+			army_core_defence_factor = 0.1
+            }
+			targeted_modifier = {
+			tag = URS
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+			}
+        }
+		
+		HYS_no_army_serves_the_state_idea = {
+		name = HYS_no_army_serves_the_state
+            
+            picture = 
+            allowed = { original_tag = HYS }
+            removal_cost = -1
+
+            modifier = {
+			conscription_factor = 0.1
+            }
+        }
+		
         HYS_recently_independent_idea = {
 		name = HYS_recently_independent
             
-            picture = idea_COV_revanchism
+            picture = HYS_recently_independent
             allowed = { original_tag = HYS }
             removal_cost = -1
 
@@ -16,78 +75,20 @@ ideas = {
         HYS_recently_independent_2_idea = {
 		name = HYS_recently_independent
             
-            picture = idea_COV_revanchism
+            picture = HYS_recently_independent
             allowed = { original_tag = HYS }
             removal_cost = -1
 
             modifier = {
-			army_core_defence_factor = 0.2
+			army_core_defence_factor = 0.1
 			political_power_gain = -0.1
             }
         }
 		
-		HYS_inexperienced_industry_idea = {
-            
-            picture = idea_COV_revanchism
-            allowed = { always = no }
-            removal_cost = -1
-
-            modifier = {
-			production_speed_buildings_factor  = -0.2
-			consumer_goods_factor = 0.2
-			}
-		}
-		
-		HYS_inexperienced_industry_2_idea = {
-            
-            picture = idea_COV_revanchism
-            allowed = { always = no }
-            removal_cost = -1
-
-            modifier = {
-			production_speed_buildings_factor = -0.1
-			}
-		}
-		
-		HYS_functional_economy_idea = {
-            
-            picture = idea_COV_revanchism
-            allowed = { always = no }
-            removal_cost = -1
-
-            modifier = {
-			production_speed_buildings_factor = 0.2
-			industrial_capacity_factory = 0.1
-			}
-		}
-		
-		HYS_newly_established_factories_idea = {
-            
-            picture = idea_COV_revanchism
-            allowed = { always = no }
-            removal_cost = -1
-
-            modifier = {
-			production_speed_industrial_complex_factor = 1
-			production_speed_arms_factory_factor = 1
-			}
-		}
-		
-		HYS_temporary_boost_idea = {
-            
-            picture = idea_COV_revanchism
-            allowed = { always = no }
-            removal_cost = -1
-
-            modifier = {
-			industrial_capacity_factory = 1
-			}
-		}
-		
 		HYS_new_army_idea = {
 		name = HYS_new_army
             
-            picture = idea_COV_revanchism
+            picture = HYS_new_army
             allowed = { always = no }
             removal_cost = -1
 
@@ -104,18 +105,104 @@ ideas = {
 		HYS_new_army_2_idea = {
 		name = HYS_new_army
             
-            picture = idea_COV_revanchism
+            picture = HYS_new_army
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+				conscription_factor = -0.25
+				army_core_defence_factor = 2
+				army_infantry_attack_factor = -0.25
+				experience_gain_army_unit_factor = -0.25
+				max_planning_factor = -0.5
+#				experience_loss_factor = -0.1
+            }
+        }
+		
+		HYS_new_army_3_idea = {
+		name = HYS_new_army
+            
+            picture = HYS_new_army
             allowed = { always = no }
             removal_cost = -1
 
             modifier = {
 				army_core_defence_factor = 2
-				army_infantry_attack_factor = -0.5
-				experience_gain_army_unit_factor = -0.5
-				max_planning_factor = -0.9
-				experience_loss_factor = -0.1
+				army_infantry_attack_factor = -0.25
+				experience_gain_army_unit_factor = -0.25
+				max_planning_factor = -0.5
             }
         }
+		
+		HYS_inexperienced_industry_idea = {
+            
+            picture = 
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+			production_speed_buildings_factor  = -0.2
+			consumer_goods_factor = 0.2
+			}
+		}
+		
+		HYS_inexperienced_industry_2_idea = {
+            
+            picture = 
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+			production_speed_buildings_factor = -0.1
+			}
+		}
+		
+		HYS_functional_economy_idea = {
+            
+            picture = 
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+			production_speed_buildings_factor = 0.2
+			industrial_capacity_factory = 0.1
+			}
+		}
+		
+		HYS_newly_established_factories_idea = {
+            
+            picture = 
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+			production_speed_industrial_complex_factor = 0.1
+			production_speed_arms_factory_factor = 0.1
+			}
+		}
+		
+		HYS_recruiting_new_army_idea = {
+            
+            picture = 
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+				training_time_army_factor = -0.25
+				
+			}
+		}
+		
+		HYS_temporary_boost_idea = {
+            
+            picture = 
+            allowed = { always = no }
+            removal_cost = -1
+
+            modifier = {
+			industrial_capacity_factory = 1
+			}
+		}
 
 		lepus_kick_them_out = {
 
@@ -139,7 +226,7 @@ ideas = {
 		}
 		santa_sent = {
             
-            picture = idea_COV_revanchism
+            picture = 
             allowed = { always = no }
             removal_cost = -1
 

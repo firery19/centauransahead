@@ -42,5 +42,15 @@ ideas = {
 
             }
         }
+		VUL_island_exile = {
+            picture = 
+            allowed = { original_tag = VUL }
+            removal_cost = -1
+
+            modifier = {
+			forced_surrender_limit = -0.25
+
+            }
+        }
     }
 }

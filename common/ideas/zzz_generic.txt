@@ -1,35 +1,4 @@
 ideas = {
-	country = {
-		###combat idea to make combat more like ww1##
-        		trench_warfare_idea = {
-            		name = "1900s Warfare"
-            
-            		picture = GFX_idea_RAJ_private_military_complex
-            		allowed = {
-					always = yes
-				}
-            		removal_cost = -1
-
-            		modifier = {
-				#+10 entrenchment 	better to be on the defence
-				#+50% org		battles are slower
-				#-50% combat width	more units in a battle
-				#-30% HP		more losses
-				#-30% div. attack	less losses :( slower battle
-				#-50% max planning 	incentivise micro over battle plan
-				#+10% reinforce rate	harder to breakthrough
-
-				max_dig_in = 15
-				army_org_factor = 0.75
-				combat_width_factor = -0.5
-				army_strength_factor = -0.1
-				army_attack_factor = -0.3
-				max_planning_factor = -0.5
-				land_reinforce_rate = 0.1
-				attrition = -0.3		#due to lower hp units were taking massive amounts of losses to attrition, more than most nations could replace
-            		}
-        	}
-	}
 	hidden_ideas = {
 
 
@@ -206,7 +175,7 @@ ideas = {
 
 			
 			modifier = {
-				fascism_drift = -0.1
+				fascism_drift = 0.1
 			}
 		}
 		MTG_TEST_NAVAL_IDEA = { #MTG_TODO_GABRIEL: remove before shipping

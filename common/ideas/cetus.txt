@@ -6,7 +6,6 @@ ideas = {
             picture = generic_production_bonus
             allowed = {
                 original_tag = CET
-                has_completed_focus = CET_democratic_keep_emperor
             }
             removal_cost = -1
 
@@ -24,6 +23,42 @@ ideas = {
                 stability_factor = -0.2
                 political_power_gain = -0.5
 #                stability_weekly = -0.001 #0.5
+            }
+        }
+		
+		CET_bop_drift_navy_idea = {
+            name = CET_bop_drift
+
+            picture = CET_independent_armed_forces
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+				power_balance_weekly = -0.0025
+            }
+        }
+		
+		CET_bop_drift_middle_idea = {
+            name = CET_bop_drift
+
+            picture = CET_independent_armed_forces
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+			stability_factor = 0.05
+            }
+        }
+		
+		CET_bop_drift_army_idea = {
+            name = CET_bop_drift
+
+            picture = CET_independent_armed_forces
+            allowed = { original_tag = CET }
+            removal_cost = -1
+
+            modifier = {
+				power_balance_weekly = 0.0025
             }
         }
 
@@ -44,6 +79,7 @@ ideas = {
                 training_time_army_factor = 0.3
                 political_power_gain = -0.2
                 conscription_factor = -0.5
+				power_balance_weekly = -0.1
             }
         }
 		

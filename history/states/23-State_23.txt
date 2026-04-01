@@ -9,17 +9,16 @@ state={
 		buildings = {
 			infrastructure = 3
 			6158 = {
-				supply_node = 1
-
+				naval_base = 1
 			}
-
 		}
 		victory_points = {
-			6158 15 
+			6158 8
 		}
-
+		victory_points = {
+			6197 8
+		}
 	}
-
 	provinces={
 		2654 6158 6174 6197 6832 6836 6852 
 	}

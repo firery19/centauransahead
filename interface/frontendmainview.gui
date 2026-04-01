@@ -279,24 +279,107 @@ guiTypes = {
 	### MAIN MENU PANEL (bottom)
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
-		position = { x=150 y =0}
-		size = { width = 360 height = 450 }
+		position = { x=0 y =0}
+		size = { width = 960 height = 450 }
 		Orientation = CENTER
 		Origo = center		
 
 		positionType = {
 			name = "subscription_size"
-			position = { x = 620 y = 575 }
+			position = { x = 960 y = 575 }
 		}
 
 		background = {
 			name = "Background"		
 			quadTextureSprite ="GFX_tiled_window"
 		}
+		
+		iconType = {
+			name = "dividerAL" # main part left
+			position = { x = -630 y = 287 }
+			spriteType = "GFX_long_tile"
+			centerposition = yes
+			orientation = upper_right
+			alwaysTransparent = yes
+		}
+		
+		iconType = {
+			name = "dividerBL" # bottom mask
+			position = { x = -630 y = 531 }
+			spriteType = "GFX_border_tiled"
+			centerposition = yes
+			orientation = upper_right
+			alwaysTransparent = yes
+		}
+		
+		ButtonType = {
+			name = "forma_button"
+			position = { x=280 y=20 }
+			quadTextureSprite ="forum"
+			clicksound = click_default
+			pdx_tooltip = "MENU_FORUM"
+			#web_link = "https://widekita.com/"
+			web_link = "https://docs.google.com/document/d/1KUlw3y5jDb2cuME2I_zbUt6xOYEgS4Bst1qBZMQxlEQ"
+			scale = 0.9
+		}
+		
+		instantTextBoxType = {
+			name ="mod_info_title"
+			position = { x = 50 y = 20 }
+			textureFile = ""
+			font = "hoi_24header"
+			text = "LUCKY_STAR"
+			format = left
+			maxWidth = 300
+			maxHeight = 300	
+			orientation = LEFT
+		}
+		
+		instantTextBoxType = {
+			name ="extra_details_mod"
+			position = { x = 170 y = 40 }
+			textureFile = ""
+			font = "garamond_16"
+			text = "LUCKY_STAR_OVA"
+			format = left
+			maxWidth = 300
+			maxHeight = 300	
+			orientation = LEFT
+		}
+		
+		instantTextBoxType = {
+			name ="mod_info"
+			position = { x = 25 y = 60 }
+			textureFile = ""
+			font = "hoi_16typewriter"
+			text = "TAKOPIS_ORIGINAL_SIN"
+			format = left
+			maxWidth = 300
+			maxHeight = 300	
+			orientation = LEFT
+		}
+		
+		iconType = {
+			name = "dividerAR" # main part right
+			position = { x = -330 y = 287 }
+			spriteType = "GFX_long_tile"
+			centerposition = yes
+			orientation = upper_right
+			alwaysTransparent = yes
+		}
+		
+		iconType = {
+			name = "dividerBR" # bottom mask
+			position = { x = -330 y = 531 }
+			spriteType = "GFX_border_tiled"
+			centerposition = yes
+			orientation = upper_right
+			alwaysTransparent = yes
+		}
 
 		instantTextBoxType = {
 			name ="mod_version"
-			position = { x = 129 y = -200 }
+			position = { x = 149 y = -200 } #129
 			textureFile = ""
 			font = "hoi_24header"
 			text = "TITLE_CARD"
@@ -308,9 +391,9 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name ="mod_version_desc"
-			position = { x = 140 y = -80 }
+			position = { x = 160 y = -80 } #140
 			textureFile = ""
-			font = "arial12"
+			font = "hoi_16typewriter"
 			text = "TOKIDOKI_BOSOTTO_ROSHIA_GO_DE_DEDERU_TONARI_NO_ALYA_SAN"
 			format = centre
 			maxWidth = 280
@@ -318,9 +401,63 @@ guiTypes = {
 			orientation = CENTER
 		}
 		
+		iconType = {
+			name = "left_flag"
+			position = { x = -240 y = 90 }
+			spriteType = "GFX_anturus"
+			centerposition = yes
+			orientation = upper_right
+			alwaysTransparent = yes
+		}
+		
+		iconType = {
+			name = "central_flag" # hidden when left and right is visible
+			position = { x = -180 y = 90 }
+			spriteType = "GFX_empty_placeholder" #"GFX_hyderus"
+			centerposition = yes
+			orientation = upper_right
+			alwaysTransparent = yes
+		}
+		
+		iconType = {
+			name = "right_flag"
+			position = { x = -100 y = 90 }
+			spriteType = "GFX_hyderus"
+			centerposition = yes
+			orientation = upper_right
+			alwaysTransparent = yes
+		}
+		
+		iconType = {
+			name = "antares_1"
+			position = { x = -280 y = 40 }
+			spriteType = "GFX_autonomy_skorpii_icon"
+			centerposition = yes
+			orientation = upper_right
+			alwaysTransparent = yes
+		}
+		
+		iconType = {
+			name = "antares_2"
+			position = { x = -80 y = 40 }
+			spriteType = "GFX_autonomy_skorpii_integrated_icon"
+			centerposition = yes
+			orientation = upper_right
+			alwaysTransparent = yes
+		}
+		
+		iconType = {
+			name = "placeholder_nijika"
+			position = { x = -50 y = 400 }
+			spriteType = "GFX_empty_placeholder" # "GFX_nijika" #
+			centerposition = yes
+			orientation = upper_right
+			alwaysTransparent = yes
+		}
+		
 		instantTextBoxType = {
 			name ="mod_version_changelog_title"
-			position = { x = 125 y = -15 }
+			position = { x = 140 y = -15 }
 			textureFile = ""
 			font = "hoi_24header"
 			text = "Changelog"
@@ -332,73 +469,19 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name ="mod_version_changelog"
-			position = { x = 155 y = 20 }
+			position = { x = 170 y = 20 }
 			textureFile = ""
-			font = "arial12"
+			font = "hoi_16typewriter"
 			text = "BOCCHI_THE_ROCK"
 			format = left
-			maxWidth = 300
+			maxWidth = 280
 			maxHeight = 300	
 			orientation = CENTER
-		}
-		
-		iconType = {
-			name = "dividerA" # main part
-			position = { x = -50 y = 287 }
-			spriteType = "GFX_long_tile"
-			centerposition = yes
-			orientation = upper_right
-			alwaysTransparent = yes
-		}
-		
-		iconType = {
-			name = "dividerB" # bottom mask
-			position = { x = -50 y = 531 }
-			spriteType = "GFX_border_tiled"
-			centerposition = yes
-			orientation = upper_right
-			alwaysTransparent = yes
-		}
-		
-		iconType = {
-			name = "left_flag"
-			position = { x = 30 y = 90 }
-			spriteType = "GFX_japan"
-			centerposition = yes
-			orientation = upper_right
-			alwaysTransparent = yes
-		}
-		
-		iconType = {
-			name = "central_flag" # hidden when left and right is visible
-			position = { x = 90 y = 90 }
-			spriteType = "GFX_empty_placeholder" #"GFX_hyderus"
-			centerposition = yes
-			orientation = upper_right
-			alwaysTransparent = yes
-		}
-		
-		iconType = {
-			name = "right_flag"
-			position = { x = 170 y = 90 }
-			spriteType = "GFX_china"
-			centerposition = yes
-			orientation = upper_right
-			alwaysTransparent = yes
-		}
-		
-		iconType = {
-			name = "placeholder_nijika"
-			position = { x = 100 y = 400 }
-			spriteType = "GFX_empty_placeholder" # "GFX_nijika" #
-			centerposition = yes
-			orientation = upper_right
-			alwaysTransparent = yes
 		}
 			
 		ButtonType = {
 			name = "single_player_button"
-			position = { x = 16 y = 18 }
+			position = { x = 336 y = 18 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_SINGLE_PLAYER"				
@@ -408,7 +491,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "multi_player_button"
-			position = { x = 16 y = 58}
+			position = { x = 336 y = 58}
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_MULTI_PLAYER"			
@@ -426,7 +509,7 @@ guiTypes = {
 		instantTextBoxType = {
 
 			name ="version_label"
-			position = { x = 35 y = 411 }
+			position = { x = 335 y = 411 }
 			textureFile = ""
 			font = "hoi_18b"
 			borderSize = {x = 0 y = 0}
@@ -438,13 +521,13 @@ guiTypes = {
 
 		positionType = {
 			name = "version_label_subscription_position"
-			position = { x = 35 y = 539 }
+			position = { x = 355 y = 539 }
 		}
 		
 		
 		ButtonType = {
 			name = "settings_button"
-			position = { x = 16 y = 98 }
+			position = { x = 336 y = 98 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "OPTIONS"
 			buttonFont = "hoi_24header"
@@ -454,7 +537,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "career_profile_button"
-			position = { x = 16 y = 138 }
+			position = { x = 336 y = 138 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			buttonText = "MENU_BAR_CAREER_PROFILE"
 			buttonFont = "hoi_24header"
@@ -473,7 +556,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "friends_button"
-			position = { x = 16 y = 178 }
+			position = { x = 336 y = 178 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			buttonText = "MENU_BAR_FRIENDS"
 			buttonFont = "hoi_24header"
@@ -483,7 +566,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "credits_button"
-			position = {  x = 16 y = 218 }
+			position = {  x = 336 y = 218 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_CREDITS"
 			buttonFont = "hoi_24header"
@@ -493,7 +576,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 16 y = 258 }
+			position = { x = 336 y = 258 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "Nudge!"
 			buttonFont = "hoi_24header"
@@ -501,7 +584,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 16 y = 300 }
+			position = { x = 336 y = 300 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_EXIT"			
@@ -512,25 +595,13 @@ guiTypes = {
 
 		iconType = {
 			name = "subscription_divider"
-			position = { x = 4 y = 336 }
+			position = { x = 324 y = 336 }
 			spriteType = "GFX_main_lobby_divider"
 		}
-
-#		instantTextBoxType = {
-#
-#			name ="wawawawawa"
-#			position = { x = 35 y = 411 }
-#			textureFile = ""
-#			font = "hoi_18b"
-#			borderSize = {x = 0 y = 0}
-#			text = "wawawa"	
-#			format = centre
-#			maxWidth = 250
-#			maxHeight = 20	
-#		}
+		
 		containerWindowType = {
 			name = "subscription_widget"
-			position = { x = 16 y = 352 }
+			position = { x = 336 y = 352 }
 			size = { width = 288 height = 108 }
 
 			ButtonType = {
@@ -545,7 +616,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "subscription_widget_subscribed"
-			position = { x = 16 y = 352 }
+			position = { x = 336 y = 352 }
 			size = { width = 288 height = 108 }
 
 			ButtonType = {
@@ -629,6 +700,7 @@ guiTypes = {
         containerWindowType = {
             name = "first_row"
 			position = { x=48 y=-17 }
+			#position = { x=-102 y=-17 }
             ButtonType = {
                 name = "homepage_button"
                 position = { x=0 y=0 }
@@ -667,6 +739,7 @@ guiTypes = {
         containerWindowType = {
             name = "second_row"
 			position = { x=30 y=19 }
+			#position = { x=-120 y=19 }
             ButtonType = {
                 name = "bluesky_button"
                 position = { x=0 y=0 }

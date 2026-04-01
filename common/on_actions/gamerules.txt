@@ -1,0 +1,115 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			# Game Rules - Decolonization
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = columba_fragmented_status
+						option = COLUMBA_SPLIT
+					}
+					NOT = {
+					has_game_rule = {
+						rule = lingstonia_status
+						option = DESTROY_LINGSTONIA
+						}
+					}
+				}
+				CLB = {
+					release = PHA
+					release = NOH
+					release = EUR
+					release = QUA
+				}
+			}
+			IF = {
+				limit = {
+					has_game_rule = {
+						rule = lingstonia_status
+						option = DESTROY_LINGSTONIA
+					}
+					NOT = {
+					has_game_rule = {
+						rule = columba_fragmented_status
+						option = COLUMBA_SPLIT
+						}
+					}
+				}
+				#CLB = { # < testing
+				#	release = QUA
+				#}
+				CLB = {
+					transfer_state = 60
+					transfer_state = 226
+					transfer_state = 227
+					transfer_state = 205
+					add_state_core = 60
+					add_state_core = 226
+					add_state_core = 227
+					add_state_core = 205
+				}
+				QUA = {
+					add_state_core = 60
+					add_state_core = 226
+					add_state_core = 63
+				}
+				RIA = {
+					transfer_state = 63
+					add_state_core = 63
+				}
+				LGS = {
+					remove_state_core = 63
+					remove_state_core = 226
+					remove_state_core = 60
+					remove_state_core = 227
+					remove_state_core = 205
+				}
+			}
+			IF = {
+				limit = {
+					AND = {
+					has_game_rule = {
+						rule = columba_fragmented_status
+						option = COLUMBA_SPLIT
+					}
+					has_game_rule = {
+						rule = lingstonia_status
+						option = DESTROY_LINGSTONIA
+						}
+					}
+				}
+				CLB = {
+					release = PHA
+					release = NOH
+					release = EUR
+					release = QUA
+				}
+				QUA = {
+					transfer_state = 60
+					transfer_state = 226
+					transfer_state = 227
+					add_state_core = 60
+					add_state_core = 63
+					add_state_core = 226
+					add_state_core = 227
+				}
+				NOH = {
+					transfer_state = 205
+					add_state_core = 205
+				}
+				RIA = {
+					transfer_state = 63
+					add_state_core = 63
+				}
+				LGS = {
+					remove_state_core = 63
+					remove_state_core = 226
+					remove_state_core = 60
+					remove_state_core = 227
+					remove_state_core = 205
+				}
+			}
+		}
+	}
+}
+

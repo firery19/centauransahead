@@ -1,0 +1,8 @@
+﻿l_english:
+ LINGSTONIA_EXISTS:0 "Lingstonian Status"
+ RULE_OPTION_DEFAULT_COUNTRY_DESC:0 "The world is same as historical."
+ RULE_OPTION_LINGSTONIA_DEAD:0 "Lingstonia Gone"
+ RULE_OPTION_LINGSTONIA_DEAD_DESC:0 "Reverts Lingstonia to dusts."
+ COLUMBA_FRAGMENTED_STATUS:0 "Columban Status"
+ RULE_OPTION_COLUMBA_DESTROYED:0 "Disunited Columban Territories"
+ RULE_OPTION_COLUMBA_DESTROYED_DESC:0 "All releasable nations in Columba will be released as free and independent nations upon game-start."

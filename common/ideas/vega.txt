@@ -1,8 +1,8 @@
 ideas = {
     country = {
-        VEG_queens_blessing = {
+        VEG_queens_blessing_idea = {
             
-            picture = idea_COV_revanchism
+            picture = VEG_queens_blessing
             allowed = { original_tag = VEG }
             removal_cost = -1
 
@@ -13,17 +13,16 @@ ideas = {
 				army_core_defence_factor = 0.2
             }
         }
-		VEG_protected_by_murus = {
+        VEG_protected_by_murus_idea = {
             
-            picture = idea_COV_revanchism
+            picture = VEG_protected_by_murus_1
             allowed = { original_tag = VEG }
             removal_cost = -1
 
             modifier = {
-                max_planning = 0.2
-				max_dig_in = 5 # 0.2 is absolutely nothing
-				terrain_penalty_reduction = 0.1
-				planning_speed = -0.2
+				army_core_defence_factor = 0.1
+				max_dig_in_factor = 0.2
+				max_planning_factor = -0.25
             }
         }
     }

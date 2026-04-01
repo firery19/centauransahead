@@ -1,0 +1,47 @@
+ideas = {
+	country = {
+		GEM_autonomous_country = {
+			picture = 
+		
+			allowed = {
+				tag = GEM
+			}
+			
+			available = {
+			}
+			
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = 0.1
+				research_speed_factor = 0.15
+				stability_factor = -0.1
+				}
+			}
+		}
+		
+	tank_manufacturer = {
+		ORI_test = {
+
+			picture = GER_MAN
+			
+			allowed = {
+				original_tag = ORI
+			}
+
+			visible = {
+				has_completed_focus = ORI_orion_army
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

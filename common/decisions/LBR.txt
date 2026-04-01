@@ -1,0 +1,34 @@
+LBR_generic_category = {
+	LBR_remove_isolate_policy = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+		is_ai = no
+		}
+		
+		fire_only_once = no
+		
+		cost = 1
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		remove_ideas = LBR_isolation_policy_idea
+		}
+		
+		remove_effect = {
+		
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

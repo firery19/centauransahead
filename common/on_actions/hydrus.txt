@@ -1,0 +1,16 @@
+on_actions = {
+	on_peace = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = BCH
+					FROM = {
+						original_tag = CAI
+					}
+				}
+				ANT = { puppet = COV }
+			}
+		}
+	}
+}
+

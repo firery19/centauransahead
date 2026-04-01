@@ -1,4 +1,4 @@
-capital = 103
+capital = 104	#capital of ara is aemevia
 
 set_research_slots = 2
 

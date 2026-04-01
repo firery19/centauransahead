@@ -1,6 +1,6 @@
 ANT_scorched_state = {
 	enable = { always = yes }
-	icon = chi_war_of_resistance3
+	icon = GFX_mod_ANT_scorch_state
 	state_resources_factor = -0.5
 	state_production_speed_buildings_factor = -0.5
 	local_supplies = -0.9
@@ -8,4 +8,90 @@ ANT_scorched_state = {
 	compliance_gain	 = -0.02
 	local_factories = -0.5
 #	local_supplies_for_controller = -5
+}
+
+ANT_test_dynamic_idea = {
+	icon = chi_war_of_resistance3
+	weekly_manpower = 2
+	stability_factor = test_variable
+}
+
+ANT_compliance_bonus_cet_aqu = {
+	icon = GFX_mod_ANT_compliance_bonus
+	remove_trigger = { 
+		OR = { 
+			THIS = { is_core_of = ANT } 
+			THIS = { NOT = { is_owned_by = ANT } }
+		}
+	}
+	compliance_growth = 0.4
+	local_factories = 0.2
+	local_resources = 0.2
+}
+
+ANT_union_of_antarean_youth = {
+	icon = GFX_mod_ANT_compliance_bonus
+
+	compliance_growth = 0.6
+	resistance_target = -0.1
+	local_factories = 0.1
+	local_resources = 0.1
+}
+
+###################      MILITARY      ###################
+
+ANT_army_dynamic = {
+#	icon = NORDIC_army_communist
+	icon = GFX_mod_ANT_army_dynamic
+
+	experience_gain_army_factor = ANT_army_xp_spirit
+	conscription_factor = ANT_army_pop_spirit
+	army_org_factor = ANT_army_org_spirit
+	army_morale_factor = ANT_army_morale_spirit
+	initiative_factor = ANT_army_initiative_spirit
+	max_planning_factor  = ANT_army_plan_spirit 		#max_planning is broken apparently, acts as max_planning_factor so might as well just have it has factor instead to avoid confusion
+	supply_node_range = ANT_army_hubrange_spirit
+	supply_consumption_factor = ANT_army_supply_spirit
+	max_dig_in = ANT_army_entrench_spirit
+
+	war_support_factor = ANT_army_ws_spirit
+	political_power_factor = ANT_army_pp_spirit
+	industrial_capacity_factory = ANT_army_output_spirit
+
+	land_mastery_gain_factor = ANT_army_doctrine_spirit
+
+	army_artillery_attack_factor = ANT_army_arty_atk_spirit
+	army_artillery_defence_factor = ANT_army_arty_def_spirit
+	army_infantry_attack_factor = ANT_army_inf_atk_spirit
+	army_infantry_defence_factor = ANT_army_inf_def_spirit
+	army_armor_attack_factor = ANT_army_tank_atk_spirit
+	army_armor_defence_factor = ANT_army_tank_def_spirit
+	cavalry_attack_factor = ANT_army_cav_atk_spirit
+	cavalry_defence_factor = ANT_army_cav_def_spirit
+	motorized_attack_factor = ANT_army_mot_atk_spirit
+	motorized_defence_factor = ANT_army_mot_def_spirit
+	army_armor_speed_factor = ANT_army_tank_spd_spirit
+#	cavalry_speed_factor = ANT_army_cavalry_spd_spirit	#currently broken and not recognised by the game
+	
+	army_attack_factor = ANT_army_atk_spirit
+	army_defence_factor = ANT_army_def_spirit
+	army_speed_factor = ANT_army_spd_spirit
+	
+	
+}
+ANT_navy_dynamic = {
+#	icon = NORDIC_navy_communist
+	icon = GFX_mod_ANT_navy_dynamic
+
+
+	experience_gain_navy_factor = ANT_navy_xp_spirit	
+	naval_retreat_speed = ANT_navy_retreat_spirit
+	navy_org_factor = ANT_navy_org_spirit
+	naval_morale_factor = ANT_navy_morale_spirit
+	shore_bombardment_bonus = ANT_navy_shore_spirit
+	naval_invasion_capacity = ANT_navy_invasion_cap_spirit
+	naval_invasion_prep_speed = ANT_navy_invasion_prep_spirit
+	naval_light_gun_hit_chance_factor = ANT_navy_lg_hit_spirit
+	naval_torpedo_hit_chance_factor = ANT_navy_torp_hit_spirit
+
 }

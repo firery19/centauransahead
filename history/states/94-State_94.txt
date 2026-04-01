@@ -7,7 +7,7 @@ state={
 		add_claim_by = ANT
 		add_claim_by = SKO
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2 #coastal regions of cetus pretty developed compared to inner regions
 		}
 	}
 	provinces={

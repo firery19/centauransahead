@@ -1,0 +1,2094 @@
+focus_tree = {
+    id = LGS_focus # April Fools!
+    default = no
+    country = {
+        factor = 0
+        modifier = {
+            add = 50
+            tag = LGS
+        }
+    }
+    continuous_focus_position = { x = 25 y = 1080 }
+
+search_filter_prios = {
+	FOCUS_FILTER_POLITICAL = 1010
+	
+	FOCUS_FILTER_RESEARCH = 522
+	
+	FOCUS_FILTER_INDUSTRY = 509
+
+	FOCUS_FILTER_BALANCE_OF_POWER = 200
+	FOCUS_FILTER_SOV_POLITICAL_PARANOIA = 111
+	FOCUS_FILTER_PROPAGANDA = 110
+	FOCUS_FILTER_MISSIOLINI = 110
+	FOCUS_FILTER_ARMY_XP = 103
+	FOCUS_FILTER_NAVY_XP = 102
+	FOCUS_FILTER_AIR_XP = 101
+
+}
+	initial_show_position = {
+		focus = LGS_great_lingstonia
+	}
+	shared_focus = army_effort
+	shared_focus = naval_effort
+	shared_focus = aviation_effort
+
+	
+	focus = {
+        id = LGS_great_lingstonia
+        icon = GFX_focus_generic_aquila
+        x = 26
+        y = 0
+        cost = 10
+        available = {
+            
+        }
+        completion_reward = {
+            add_stability = 0.05
+
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+	
+	focus = {
+        id = LGS_end_isolation
+        icon = GFX_goal_generic_positive_trade_relations
+        x = 4
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_great_lingstonia }
+		relative_position_id = LGS_great_lingstonia
+        available = {
+            
+        }
+        completion_reward = {
+		swap_ideas = {
+			remove_idea = LGS_isolation
+			add_idea = LGS_neutral
+		}
+		add_ideas = limited_exports
+
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+	
+	focus = {
+        id = LGS_sollist_supremacy
+        icon = GFX_focus_SWI_establish_pro_helvetia
+        x = 1
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_end_isolation }
+		relative_position_id = LGS_end_isolation
+        available = {
+            
+        }
+        completion_reward = {
+		swap_ideas = { 
+			remove_idea = solist_country 
+			add_idea = solist_country_upgrade
+			}
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+	
+	focus = {
+        id = LGS_sunshine_rays
+        icon = GFX_focus_JAP_expand_the_showa_research_association
+        x = 0
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_sollist_supremacy }
+		relative_position_id = LGS_sollist_supremacy
+        available = {
+			num_of_civilian_factories > 10	#start with 1 research slot so has to be easier to get more
+        }
+        completion_reward = {
+		add_research_slot = 1
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+	
+	focus = {
+        id = LGS_establish_diplomacy
+        icon = GFX_focus_generic_improve_the_administration
+        x = -1
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_end_isolation }
+		relative_position_id = LGS_end_isolation
+        available = {
+            
+        }
+        completion_reward = {
+		RIA = { country_event = LGS.5 }
+
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+	
+	focus = {
+        id = LGS_formalise_columba
+        icon = GFX_focus_generic_diplomacy_columba
+        x = 0
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_establish_diplomacy }
+		relative_position_id = LGS_establish_diplomacy
+        available = {
+            
+        }
+        completion_reward = {
+		CLB = { country_event = LGS.4}
+		effect_tooltip = {
+			CLB = {
+				diplomatic_relation = {
+				country = LGS
+				relation = non_aggression_pact
+				active = yes
+				}
+			}
+			remove_state_claim = 205
+			remove_state_claim = 227
+
+		}
+		custom_effect_tooltip = CLB_approval_tt
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+	
+	focus = {
+        id = LGS_clb_military_pact
+        icon = GFX_goal_tripartite_pact
+        x = 0
+        y = 2
+        cost = 10
+	prerequisite = { focus = LGS_formalise_columba }
+	relative_position_id = LGS_formalise_columba
+	mutually_exclusive = { focus = LGS_columban_war }
+
+        available = {
+            
+        }
+        completion_reward = {
+		CLB = { country_event = LGS.6 }
+	effect_tooltip = {
+		CLB = {
+			diplomatic_relation = {
+				country = LGS
+				relation = guarantee
+				active = yes
+			}
+			diplomatic_relation = {
+				country = LGS
+				relation = military_access
+				active = yes
+			}
+		}
+		LGS = {
+			diplomatic_relation = {
+				country = CLB
+				relation = guarantee
+				active = yes
+			}
+			diplomatic_relation = {
+				country = CLB
+				relation = military_access
+				active = yes
+			}
+		}
+	}
+	custom_effect_tooltip = CLB_approval_tt
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+	
+	focus = {
+        id = LGS_save_aquila
+        icon = GFX_focus_generic_aquila
+        x = -3
+        y = 2
+        cost = 5
+	prerequisite = { focus = LGS_establish_diplomacy }
+	prerequisite = { focus = LGS_shining_example_of_country }
+	relative_position_id = LGS_establish_diplomacy
+        available = {
+        	AQU = { 
+			OR = { 
+				has_defensive_war = yes 
+				surrender_progress > 0.05 
+				has_war_with = ANT 
+				}
+			}
+        }
+        completion_reward = {
+		remove_ideas = LGS_neutral
+		add_war_support = 0.1
+		add_ideas = LGS_volunteers
+		set_rule = {
+			desc = TAG_my_rule_description
+			can_send_volunteers = yes
+			}
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+	
+	focus = {
+        id = LGS_liberation_war
+        icon = GFX_focus_generic_fortify_aquila
+        x = 0
+        y = 2
+        cost = 5
+	prerequisite = { focus = LGS_save_aquila }
+	prerequisite = { focus = LGS_clb_military_pact focus = LGS_columban_war }
+	relative_position_id = LGS_save_aquila
+        available = {
+            
+        }
+        completion_reward = {
+		custom_effect_tooltip = AQU_war_tt
+		every_country = {
+        limit = {
+            has_war_with = AQU
+        }
+        LGS = {
+            add_to_war = {
+                targeted_alliance = AQU
+                enemy = PREV
+                hostility_reason = asked_to_join
+            }
+        }
+    }
+		any_country = {
+			limit = {has_war_with = AQU}
+			LGS = {
+				add_to_war = {
+   					targeted_alliance = AQU
+   					enemy = ROOT
+   					hostility_reason = asked_to_join
+				}
+			}
+		}
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+	
+	focus = {
+        id = LGS_shining_example_of_country
+        icon = GFX_focus_ARG_defense_and_democracy
+        x = -6
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_great_lingstonia }
+		relative_position_id = LGS_great_lingstonia
+        available = {
+            
+        }
+        completion_reward = {
+		add_political_power = 100
+		add_war_support = 0.05
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+	
+	focus = {
+        id = LGS_lingston_nationalism
+        icon = GFX_goal_generic_national_unity
+        x = -4
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_shining_example_of_country }
+		relative_position_id = LGS_shining_example_of_country
+        available = {
+            
+        }
+        completion_reward = {
+		add_ideas = LGS_nationalism
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+	
+	focus = {
+        id = LGS_deport_everyone_to_ocean
+        icon = GFX_focus_deport
+	x = -1
+#	x = 0
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_shining_example_of_country }
+		relative_position_id = LGS_shining_example_of_country
+		mutually_exclusive = { focus = LGS_keep_not_solists_people }
+        available = {
+            
+        }
+        completion_reward = {
+		remove_ideas = non_solists
+		every_state = {
+			limit = {
+			is_owned_by = LGS
+			}
+			add_manpower = -25000
+			}
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+	
+	focus = {
+        id = LGS_keep_not_solists_people
+        icon = GFX_goal_generic_major_alliance
+	x = 1
+#	x = 2
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_shining_example_of_country }
+		relative_position_id = LGS_shining_example_of_country
+		mutually_exclusive = { focus = LGS_deport_everyone_to_ocean }
+        available = {
+            
+        }
+        completion_reward = {
+		swap_ideas = {
+			remove_idea = non_solists
+			add_idea = non_solists_upgrade
+			}
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+	
+	focus = {
+        id = LGS_fascist_lapdog
+        icon = GFX_goal_support_fascism
+        x = -7
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_deport_everyone_to_ocean }
+		relative_position_id = LGS_deport_everyone_to_ocean
+		mutually_exclusive = { focus = LGS_commie_bastard }
+		mutually_exclusive = { focus = LGS_three_democracies }
+		mutually_exclusive = { focus = LGS_duchy_of_lingstonia }
+        available = {
+            
+        }
+        completion_reward = {
+		start_civil_war = {
+			ruling_party = fascism
+			# Original country's ideology changes to communism
+			ideology = ROOT
+			# Breakaway gets old ideology of ROOT
+			army_ratio = 0.3		
+			capital = 227
+			states = {
+				205 227 63
+			}
+			keep_all_characters = yes
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
+        }
+        ai_will_do = {
+            base = 1
+        }
+    }
+	
+	focus = {
+        id = LGS_privatise_everything
+        icon = GFX_focus_mex_privatisation	#GFX_goal_generic_dangerous_deal
+        x = 0
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_fascist_lapdog }
+		relative_position_id = LGS_fascist_lapdog
+        available = {
+            has_civil_war = no
+        }
+        completion_reward = {
+		60 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+				}
+			}
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+	
+focus = {
+        id = LGS_commie_bastard
+        icon = GFX_goal_support_communism
+        x = -3
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_deport_everyone_to_ocean }
+		relative_position_id = LGS_deport_everyone_to_ocean
+		mutually_exclusive = { focus = LGS_fascist_lapdog }
+		mutually_exclusive = { focus = LGS_three_democracies }
+		mutually_exclusive = { focus = LGS_duchy_of_lingstonia }
+        available = {
+            
+        }
+        completion_reward = {
+		start_civil_war = {
+			ruling_party = communism
+			# Original country's ideology changes to communism
+			ideology = ROOT
+			# Breakaway gets old ideology of ROOT
+			army_ratio = 0.4			
+			capital = 63
+			states = {
+				63 227
+			}
+			keep_all_characters = yes
+			
+        	}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.35
+		}
+	}
+        ai_will_do = {
+            base = 1
+        }
+}
+	
+	focus = {
+        id = LGS_share_one_share_all
+        icon = GFX_focus_generic_communist_industry
+        x = 0
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_commie_bastard }
+		relative_position_id = LGS_commie_bastard
+        available = {
+            has_civil_war = no
+        }
+        completion_reward = {
+		60 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+				}
+			}
+		63 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+				}
+			}
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+	
+	focus = {
+        id = LGS_duchy_of_lingstonia
+        icon = GFX_focus_generic_monarchy_1
+        x = 1
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_deport_everyone_to_ocean focus = LGS_keep_not_solists_people }
+		relative_position_id = LGS_deport_everyone_to_ocean
+		mutually_exclusive = { focus = LGS_fascist_lapdog }
+		mutually_exclusive = { focus = LGS_commie_bastard }
+		mutually_exclusive = { focus = LGS_three_democracies }
+
+        available = {
+            
+        }
+        completion_reward = {
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.2
+			}
+		}
+        ai_will_do = {
+            base = 2
+        }
+    }
+	
+	focus = {
+        id = LGS_elevate_to_empire
+        icon = GFX_focus_ETH_the-italo_ethiopian_empire
+        x = 0
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_duchy_of_lingstonia }
+		relative_position_id = LGS_duchy_of_lingstonia
+        available = {
+            
+        }
+        completion_reward = {
+		add_political_power = 250
+		set_cosmetic_tag = LINGEMP
+        }
+        ai_will_do = {
+            base = 0
+        }
+    }
+	
+	focus = {
+        id = LGS_claim_oculum
+        icon = GFX_goal_generic_territory_or_war
+        x = 0
+        y = 1
+        cost = 5
+		prerequisite = { focus = LGS_elevate_to_empire focus = LGS_privatise_everything }
+		relative_position_id = LGS_elevate_to_empire
+        available = {
+            
+        }
+        completion_reward = {
+		add_state_claim = 50
+		add_state_claim = 55
+		add_state_claim = 52
+        }
+        ai_will_do = {
+            base = 0
+        }
+    }
+	focus = {
+        id = LGS_claim_north_corvus
+        icon = GFX_goal_generic_territory_or_war
+        x = -2
+        y = 1
+        cost = 5
+		prerequisite = { focus = LGS_elevate_to_empire focus = LGS_privatise_everything }
+		relative_position_id = LGS_elevate_to_empire
+        available = {
+            
+        }
+        completion_reward = {
+		add_state_claim = 8
+		add_state_claim = 51
+        }
+        ai_will_do = {
+            base = 0
+        }
+    }
+	focus = {
+        id = LGS_war_corvus
+        icon = GFX_focus_generic_attack_corvus
+        x = 1
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_claim_oculum }
+	prerequisite = { focus = LGS_claim_north_corvus }
+		relative_position_id = LGS_claim_north_corvus
+        available = {
+            
+        }
+        completion_reward = {
+		create_wargoal = {
+			type = take_state_focus
+			target = COV
+			generator = { 8 55 52 51}
+			}
+        }
+        ai_will_do = {
+            base = 0
+        }
+    }
+	focus = {
+        id = LGS_corvo-lingstonian_reich
+        icon = GFX_goal_generic_attack_allies
+        x = -7
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_war_corvus }
+	prerequisite = { focus = LGS_privatise_everything }
+	relative_position_id = LGS_war_corvus
+        available = {
+		controls_state = 8
+		controls_state = 55
+		controls_state = 52
+		controls_state = 51
+        }
+        completion_reward = {
+		set_cosmetic_tag = COVLGS
+		add_state_core = 8
+		add_state_core = 55
+		add_state_core = 52
+		add_state_core = 51
+		add_state_core = 50
+		add_state_claim = 53
+		add_state_claim = 40
+		add_state_claim = 48
+
+		add_state_claim = 154
+
+
+		create_wargoal = {
+			type = take_state_focus
+			target = CET
+			generator = { 50 40 48 154 }
+		}
+
+
+        }
+        ai_will_do = {
+            base = 0
+        }
+    }
+	focus = {
+        id = LGS_columban_war
+        icon = GFX_focus_generic_attack_columba
+        x = 2
+        y = 1
+		cost = 10
+		prerequisite = { focus = LGS_elevate_to_empire }
+		relative_position_id = LGS_elevate_to_empire
+		mutually_exclusive = { focus = LGS_clb_military_pact}
+        available = {
+            
+        }
+        completion_reward = {
+		add_state_claim = 61
+		add_state_claim = 59
+		hidden_effect = {
+			add_state_claim = 225
+			add_state_claim = 224
+		}
+		create_wargoal = {
+			type = take_state_focus
+			target = CLB
+			generator = { 59 225 224 61}
+			}
+        }
+        ai_will_do = {
+            base = 0
+        }
+    }
+	focus = {
+        id = LGS_integrate_clb
+        icon = GFX_goal_generic_forceful_treaty
+        x = 2
+        y = 2
+        cost = 10
+	prerequisite = { focus = LGS_columban_war }
+	relative_position_id = LGS_elevate_to_empire
+	mutually_exclusive = { focus = LGS_clb_military_pact}
+        available = {
+		controls_state = 61
+		controls_state = 59
+		hidden_trigger = {
+			controls_state = 225
+			controls_state = 224
+			}
+        }
+        completion_reward = {
+		add_state_core = 61
+		add_state_core = 59
+		hidden_effect = {
+			add_state_core = 225
+			add_state_core = 224
+			}
+        }
+        ai_will_do = {
+            base = 0
+        }
+    }
+	focus = {
+        id = LGS_three_democracies
+        icon = GFX_goal_support_democracy
+        x = 3
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_keep_not_solists_people }
+		relative_position_id = LGS_keep_not_solists_people
+		mutually_exclusive = { focus = LGS_fascist_lapdog }
+		mutually_exclusive = { focus = LGS_commie_bastard }
+		mutually_exclusive = { focus = LGS_duchy_of_lingstonia }
+        available = {
+            
+        }
+        completion_reward = {
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}       
+		add_popularity = {
+			ideology = democratic_left
+			popularity = 0.3
+		}
+		add_popularity = {
+			ideology = democratic_right
+			popularity = 0.25
+		}
+		add_ideas = constitutional_monarch_guard_iv
+		set_politics = {
+			ruling_party = democratic_left
+			elections_allowed = yes
+			last_election = 1900.06.00
+			election_frequency = 48
+		}
+	}
+        ai_will_do = {
+            base = 10
+        }
+    }
+	
+	# INDUSTRIAL !!!!!!!!!!!!!!!!!!!!!
+	focus = {
+        id = LGS_industrialisation
+        icon = GFX_goal_generic_production
+        x = 5
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_end_isolation }
+		relative_position_id = LGS_end_isolation
+        available = {
+            
+        }
+        completion_reward = {
+		swap_ideas = {
+			remove_idea = LGS_industry_0
+			add_idea = LGS_industry_1
+		}
+		60 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+        ai_will_do = {
+            base = 5
+        }
+    }
+	focus = {
+        id = LGS_new_rails
+        icon = GFX_goal_generic_construct_infrastructure
+        x = -1
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_industrialisation }
+		relative_position_id = LGS_industrialisation
+        available = {
+            
+        }
+        completion_reward = {
+
+		build_railway = {
+			level = 2
+			build_only_on_allied = yes
+		
+			fallback = yes
+			path = { 2357 2381 3902 2793 639 }
+			start_province = 2357
+			target_province = 639
+		}
+		build_railway = {
+			level = 1
+			build_only_on_allied = yes
+		
+			fallback = yes
+			path = { 639 3827 3297 334 2364 }
+			start_province = 639
+			target_province = 2364
+		}
+		build_railway = {
+			level = 1
+			build_only_on_allied = yes
+		
+			fallback = yes
+			path = { 2364 3726 1309 817 }
+			start_province = 2364
+			target_province = 817
+		}
+		63 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+add_equipment_to_stockpile = {
+    type = train_equipment_1
+    amount = 10
+    producer = CLB
+}
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+	focus = {
+        id = LGS_self_sufficiency
+        icon = GFX_goal_generic_consumer_goods
+        x = 1
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_industrialisation }
+	relative_position_id = LGS_industrialisation
+        available = {
+            
+        }
+        completion_reward = {
+		if = {	#for tooltip
+			limit = { NOT = {has_idea = LGS_industry_1 has_idea = LGS_industry_b1} }
+			swap_ideas = {
+				remove_idea = LGS_industry_1
+				add_idea = LGS_industry_a1
+			}
+		}
+		if = {
+			limit = { has_idea = LGS_industry_b1 }
+			swap_ideas = {
+				remove_idea = LGS_industry_b1
+				add_idea = LGS_industry_2
+			}
+		}
+		if = {
+			limit = { has_idea = LGS_industry_1 }
+			swap_ideas = {
+				remove_idea = LGS_industry_1
+				add_idea = LGS_industry_a1
+			}
+		}
+
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+	
+	focus = {
+        id = LGS_develop_country
+        icon = GFX_goal_generic_construct_civilian
+        x = -3
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_new_rails }
+	relative_position_id = LGS_self_sufficiency
+        available = {
+            
+        }
+
+        completion_reward = {
+		if = {	#for tooltip
+			limit = { NOT = {has_idea = LGS_industry_1 has_idea = LGS_industry_a1} }
+			swap_ideas = {
+				remove_idea = LGS_industry_1
+				add_idea = LGS_industry_b1
+			}
+		}
+		if = {
+			limit = { has_idea = LGS_industry_a1 }
+			swap_ideas = {
+				remove_idea = LGS_industry_a1
+				add_idea = LGS_industry_2
+			}
+		}
+		if = {
+			limit = { has_idea = LGS_industry_1 }
+			swap_ideas = {
+				remove_idea = LGS_industry_1
+				add_idea = LGS_industry_b1
+			}
+		}
+
+		60 = {
+			set_state_category = large_town
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}    
+		205 = {
+			set_state_category = town
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		63 = {
+			set_state_category = town
+		}
+		227 = {
+			set_state_category = town
+			add_building_construction = {
+				type = supply_node
+				level = 1
+				instant_build = yes
+				province = 1538
+			}
+		}
+	}
+        ai_will_do = {
+            base = 5
+        }
+    }
+	
+	focus = {
+        id = LGS_more_factories
+        icon = GFX_goal_generic_construct_civ_factory
+        x = -1
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_self_sufficiency }
+	prerequisite = { focus = LGS_new_rails }
+
+		relative_position_id = LGS_self_sufficiency
+        available = {
+            
+        }
+        completion_reward = {
+		60 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}        
+		205 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}  
+	}
+        ai_will_do = {
+            base = 5
+        }
+    }
+	
+	focus = {
+        id = LGS_resources_spawn
+        icon = GFX_goal_generic_construction2
+        x = 1
+        y = 1
+        cost = 10
+		prerequisite = { focus = LGS_self_sufficiency }
+		relative_position_id = LGS_self_sufficiency
+        available = {
+            
+        }
+        completion_reward = {
+		60 = {
+			add_resource = {
+				type = chromium
+				amount = 3
+			}
+			add_resource = {
+				type = steel
+				amount = 6
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		} 
+		227 = {
+			add_resource = {
+				type = coal
+				amount = 2
+			}
+			add_resource = {
+				type = aluminium
+				amount = 3
+			}
+			add_resource = {
+				type = steel
+				amount = 6
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		} 
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+focus = {
+        id = LGS_four_year_plan
+        icon = GFX_focus_generic_industry_1
+        x = 0
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_develop_country }
+	prerequisite = { focus = LGS_more_factories }
+	prerequisite = { focus = LGS_resources_spawn }
+	relative_position_id = LGS_more_factories
+        available = {
+            
+        }
+        completion_reward = {
+		add_timed_idea = {
+            	     idea = LGS_4_y_p
+            	     days = 1440
+		}
+		custom_effect_tooltip = LGS_4yp_warning_tt
+	}
+        ai_will_do = {
+		base = 5
+        }
+}
+focus = {
+        id = LGS_year_1_infra
+        icon = GFX_focus_generic_road_investment
+        x = -3
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_four_year_plan }
+	relative_position_id = LGS_four_year_plan
+        available = {
+        	has_idea = LGS_4_y_p
+        }
+        completion_reward = {
+		every_owned_state = {
+			limit = { impassable = no }
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		} 
+        }
+        ai_will_do = {
+		base = 5
+        }
+}
+focus = {
+        id = LGS_year_2_coastal
+        icon = GFX_goal_generic_construct_naval_dockyard
+        x = -1
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_four_year_plan }
+	relative_position_id = LGS_four_year_plan
+        available = {
+		has_idea = LGS_4_y_p
+        }
+        completion_reward = {
+		every_owned_state = {
+			limit = { is_coastal = yes }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+
+		}
+		63 = {
+			set_state_category = large_town
+
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				instant_build = yes
+				province = 639
+			}
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				instant_build = yes
+				province = 666
+			}
+		}
+        }
+        ai_will_do = {
+		base = 5
+        }
+}
+focus = {
+        id = LGS_year_3_light_industry
+        icon = GFX_focus_generic_industry_2
+        x = 1
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_four_year_plan }
+	relative_position_id = LGS_four_year_plan
+        available = {
+        	has_idea = LGS_4_y_p
+        }
+        completion_reward = {
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}		
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}		
+		}
+        }
+        ai_will_do = {
+		base = 5
+        }
+}
+focus = {
+        id = LGS_year_4_heavy_industry
+        icon = GFX_focus_generic_military_industry
+        x =3
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_four_year_plan }
+	prerequisite = { focus = LGS_mil_factories }
+
+	relative_position_id = LGS_four_year_plan
+        available = {
+		has_idea = LGS_4_y_p
+        }
+        completion_reward = {
+		custom_effect_tooltip = LGS_2_slots_tt
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = no
+				}
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = no
+				}
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = no
+				}
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = no
+				}
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+        }
+        ai_will_do = {
+		base = 5
+        }
+}
+focus = {
+        id = LGS_finish_industry
+        icon = GFX_focus_generic_industry_3
+        x = 0
+        y = 2
+        cost = 10
+	prerequisite = { focus = LGS_year_1_infra }
+	prerequisite = { focus = LGS_year_2_coastal }
+	prerequisite = { focus = LGS_year_3_light_industry }
+	prerequisite = { focus = LGS_year_4_heavy_industry }
+		
+	relative_position_id = LGS_four_year_plan
+        available = {
+        	has_idea = LGS_4_y_p
+		num_of_civilian_factories > 16
+		num_of_military_factories > 5
+		num_of_naval_factories > 3
+        }
+        completion_reward = {
+		swap_ideas = {
+			remove_idea = LGS_industry_2
+			add_idea = LGS_industry_3
+		}
+add_research_slot = 1
+        }
+        ai_will_do = {
+		base = 5
+        }
+}
+focus = {
+        id = LGS_military
+        icon = GFX_focus_generic_military_mission
+        x = 11
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_end_isolation }
+
+		
+	relative_position_id = LGS_end_isolation
+        available = {
+        }
+        completion_reward = {
+		swap_ideas = {
+			remove_idea = LGS_army_0
+			add_idea = LGS_army_1
+		#	add_army_experience = 50
+		}
+		if = { limit = {has_idea = disarmed_nation}
+		add_ideas = volunteer_only
+		}
+        }
+        ai_will_do = {
+		base = 5
+        }
+}
+focus = {
+        id = LGS_equipment
+        icon = GFX_focus_AUS_raid_military_storages
+        x = -1
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_military }
+
+		
+	relative_position_id = LGS_military
+        available = {
+
+        }
+        completion_reward = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2500
+			producer = AQU
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 300
+			producer = CLB
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 120
+			producer = TUC
+		}
+        }
+        ai_will_do = {
+		base = 5
+        }
+}
+focus = {
+        id = LGS_units
+        icon = GFX_goal_generic_small_arms
+        x = 1
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_military }
+
+		
+	relative_position_id = LGS_military
+        available = {
+
+        }
+        completion_reward = {
+		if = { limit = { or = { has_idea = disarmed_nation has_idea = volunteer_only} }
+
+		add_ideas = limited_conscription
+		}
+		custom_effect_tooltip = LGS_units1_tt
+		division_template = {
+			name = "Territorial Brigade"
+			is_locked = no
+			division_names_group = LGS_INF_03
+			priority = 1
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 0 y = 3 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+				militia = { x = 1 y = 3 }
+
+			}
+	
+			support = {
+			#	engineer = { x = 0 y = 0 }
+			#	artillery = {x = 0 y = 1}
+			}
+		}
+		60 = {
+			create_unit = { 
+				division = "name = \"4th Territorial Brigade\" division_template = \"Territorial Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.85 force_equipment_variants = { infantry_equipment_0 = { creator = "AQU" } }"  
+				owner = LGS 
+			}
+		}
+		63 = {
+			create_unit = { division = "name = \"5th Territorial Brigade\" division_template = \"Territorial Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.85 force_equipment_variants = { infantry_equipment_0 = { creator = "AQU" } }"  owner = LGS }
+		}
+		205 = {
+			create_unit = { division = "name = \"6th Territorial Brigade\" division_template = \"Territorial Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.85 force_equipment_variants = { infantry_equipment_0 = { creator = "AQU" } }"  owner = LGS }
+		}
+        }
+        ai_will_do = {
+		base = 5
+        }
+}
+focus = {
+        id = LGS_army_reform
+        icon = GFX_focus_generic_advanced_military_studies
+        x = 0
+        y = 2
+        cost = 10
+	prerequisite = { focus = LGS_equipment focus = LGS_units }
+
+		
+	relative_position_id = LGS_military
+        available = {
+
+        }
+        completion_reward = {
+		swap_ideas = {
+			remove_idea = LGS_army_1
+			add_idea = LGS_army_2
+		}
+		army_experience = 100
+
+        }
+        ai_will_do = {
+		base = 5
+        }
+}
+focus = {
+        id = LGS_regular_units
+        icon = GFX_focus_GER_demonstration_of_military_achievements
+        x = 2
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_army_reform }
+
+		
+	relative_position_id = LGS_army_reform
+        available = {
+
+        }
+        completion_reward = {
+		custom_effect_tooltip = LGS_units2_tt
+		division_template = {
+			name = "Infantry Division"
+			is_locked = no
+			division_names_group = LGS_INF_02
+			priority = 1
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+
+			}
+	
+			support = {
+				engineer = { x = 0 y = 0 }
+				artillery = {x = 0 y = 1}
+			}
+		}
+		60 = {
+			create_unit = { division = "name = \"3rd Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.3 force_equipment_variants = { support_equipment_1 = { creator = "CLB" } artillery_equipment_1 = { creator = "TUC"} }"  owner = LGS }
+		}
+		63 = {
+			create_unit = { division = "name = \"4th Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.3 force_equipment_variants = { support_equipment_1 = { creator = "CLB" } artillery_equipment_1 = { creator = "TUC"} }"  owner = LGS }
+		}
+		division_template = {
+			name = "Guards Division"
+			is_locked = no
+			division_names_group = LGS_MNT_02
+			priority = 2
+			regiments = {
+				mountaineers = { x = 0 y = 0 }
+				mountaineers = { x = 0 y = 1 }
+				mountaineers = { x = 1 y = 0 }
+				mountaineers = { x = 1 y = 1 }
+				mountaineers = { x = 2 y = 0 }
+				mountaineers = { x = 2 y = 1 }
+
+			}
+	
+			support = {
+				engineer = { x = 0 y = 0 }
+				artillery = {x = 0 y = 1}
+			}
+		}
+		227 = {
+			create_unit = { division = "name = \"2nd New Guards Division\" division_template = \"Guards Division\" start_experience_factor = 0.75 force_equipment_variants = { infantry_equipment_1 = { creator = "AQU" } support_equipment_1 = { creator = "CLB" } artillery_equipment_1 = { creator = "TUC"} }"  owner = LGS }
+		}
+
+
+	}
+        ai_will_do = {
+		base = 5
+        }
+}
+focus = {
+        id = LGS_mil_factories
+        icon = GFX_goal_generic_construct_mil_factory
+        x = -2
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_army_reform }
+
+		
+	relative_position_id = LGS_army_reform
+        available = {
+		has_completed_focus = LGS_more_factories
+
+        }
+        completion_reward = {
+		random_owned_state = {
+			limit = {
+
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			     
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1600
+			producer = LGS
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 120
+			producer = LGS
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 60
+			producer = LGS
+		}
+	}
+        ai_will_do = {
+		base = 5
+        }
+}
+focus = {
+        id = LGS_better_army
+        icon = GFX_focus_NORDIC_dem_army
+        x = 0
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_army_reform }
+
+		
+	relative_position_id = LGS_army_reform
+        available = {
+
+        }
+        completion_reward = {
+		swap_ideas = {
+			remove_idea = LGS_army_2
+			add_idea = LGS_army_3
+		}
+	}
+        ai_will_do = {
+		base = 5
+        }
+}
+focus = {
+        id = LGS_regular_army
+        icon = GFX_goal_generic_allies_build_infantry
+        x = -1
+        y = 1
+        cost = 10
+	mutually_exclusive = { focus = LGS_mountaineer_army }
+	relative_position_id = LGS_better_army
+	prerequisite = { focus = LGS_better_army }
+
+        available = {
+
+        }
+        completion_reward = {
+		swap_ideas = {
+			remove_idea = LGS_army_3
+			add_idea = LGS_army_4a
+		}
+	}
+        ai_will_do = {
+		base = 5
+        }
+}
+focus = {
+        id = LGS_mountaineer_army
+        icon = GFX_focus_GRE_a_land_of_mountains
+        x = 1
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_better_army }
+	mutually_exclusive = { focus = LGS_regular_army }
+		
+	relative_position_id = LGS_better_army
+        available = {
+
+        }
+        completion_reward = {
+		swap_ideas = {
+			remove_idea = LGS_army_3
+			add_idea = LGS_army_4b
+		}
+	}
+        ai_will_do = {
+		base = 5
+        }
+}
+focus = {
+        id = LGS_establish_navy
+        icon = GFX_goal_generic_build_navy
+        x = 4
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_military }
+		
+	relative_position_id = LGS_military
+        available = {
+
+        }
+        completion_reward = {
+		swap_ideas = {
+			remove_idea = LGS_navy_0
+			add_idea = LGS_navy_1
+		}
+		set_technology = {
+			basic_torpedo = 1
+			early_ship_hull_light = 1
+			early_ship_hull_cruiser = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_coastal_defense_ship
+				version_name = "Region Class"
+				creator = LGS
+			}
+			requested_factories = 1
+			progress = 0.6
+			name = "LRS Ling"
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_coastal_defense_ship
+				version_name = "Region Class"
+				 creator = LGS
+			}
+			requested_factories = 1
+			progress = 0.6
+			name = "LRS Stonnland"
+			amount = 1
+		}
+add_timed_idea = {
+    idea = LGS_bought_ships
+    days = 90
+}
+COV = {
+	country_event = LGS.1
+}
+CET = {
+	country_event = LGS.1
+}
+LGS = {
+    create_ship = {
+        type = ship_hull_light_1
+        equipment_variant = "Brunus Class"
+        creator = COV
+        name = "LRS Vigilant"
+    }
+}
+hidden_effect = {
+LGS = {
+    create_ship = {
+        type = ship_hull_light_1
+        equipment_variant = "Brunus Class"
+        creator = COV
+        name = "LRS Observant"
+    }
+}
+LGS = {
+    create_ship = {
+        type = ship_hull_light_1
+        equipment_variant = "Brunus Class"
+        creator = COV
+        name = "LRS Effective"
+    }
+}
+LGS = {
+    create_ship = {
+        type = ship_hull_light_1
+        equipment_variant = "Brunus Class"
+        creator = COV
+        name = "LRS Reactive"
+    }
+}
+LGS = {
+    create_ship = {
+        type = ship_hull_light_1
+        equipment_variant = "Brunus Class"
+        creator = COV
+        name = "LRS Fierce"
+    }
+}
+LGS = {
+    create_ship = {
+        type = ship_hull_light_1
+        equipment_variant = "Brunus Class"
+        creator = COV
+        name = "LRS Destructive"
+    }
+}}
+LGS = {
+    create_ship = {
+        type = ship_hull_light_1
+        equipment_variant = "Daphne Class"
+        creator = CET
+        name = "LRS Repulsive"
+    }
+}
+hidden_effect = {
+LGS = {
+    create_ship = {
+        type = ship_hull_light_1
+        equipment_variant = "Daphne Class"
+        creator = CET
+        name = "LRS Aggressive"
+    }
+}
+LGS = {
+    create_ship = {
+        type = ship_hull_light_1
+        equipment_variant = "Daphne Class"
+        creator = CET
+        name = "LRS Lingstonite"
+    }
+}
+LGS = {
+    create_ship = {
+        type = ship_hull_light_1
+        equipment_variant = "Daphne Class"
+        creator = CET
+        name = "LRS Excessive"
+    }
+}
+LGS = {
+    create_ship = {
+        type = ship_hull_light_1
+        equipment_variant = "Daphne Class"
+        creator = CET
+        name = "LRS Great"
+    }
+}
+LGS = {
+    create_ship = {
+        type = ship_hull_light_1
+        equipment_variant = "Daphne Class"
+        creator = CET
+        name = "LRS Brave"
+			}
+		}
+	}}
+        ai_will_do = {
+		base = 5
+        }
+}
+focus = {
+        id = LGS_train_ships
+        icon = GFX_goal_generic_navy_cruiser
+        x = -1
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_establish_navy }
+		
+	relative_position_id = LGS_establish_navy
+        available = {
+
+        }
+        completion_reward = {
+		swap_ideas = {
+			remove_idea = LGS_navy_1
+			add_idea = LGS_navy_2
+		}
+		navy_experience = 100
+	}
+        ai_will_do = {
+		base = 5
+        }
+}
+focus = {
+        id = LGS_dockyards
+        icon = GFX_focus_generic_refit_civilian_ships
+        x = 1
+        y = 1
+        cost = 10
+	prerequisite = { focus = LGS_establish_navy }
+		
+	relative_position_id = LGS_establish_navy
+        available = {
+
+        }
+        completion_reward = {
+		every_owned_state = {
+			limit = { is_coastal = yes }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+
+
+		}
+		63 = {
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				instant_build = yes
+				province = 639
+			}
+		}
+		set_technology = {
+			basic_cruiser_armor_scheme = 1
+			basic_ship_hull_cruiser = 1
+			basic_light_battery = 1
+		}
+		create_equipment_variant = {
+			name = "Duchy Class"
+			type = ship_hull_cruiser_2
+			name_group = 
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_2
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				fixed_ship_secondaries_slot = ship_secondaries_2
+				front_1_custom_slot = ship_light_medium_battery_2
+				mid_1_custom_slot = ship_torpedo_1
+				mid_2_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_light_medium_battery_2
+			}
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_2
+				version_name = "Duchy Class"
+				 creator = LGS
+			}
+			requested_factories = 1
+			progress = 0.15
+			name = "LRS Duchy"
+			amount = 1
+		}
+		hidden_effect = {
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_2
+				version_name = "Duchy Class"
+				 creator = LGS
+			}
+			requested_factories = 1
+			progress = 0.1
+			name = "LRS Duke"
+			amount = 1
+		
+		}
+		create_equipment_variant = {
+			name = "S05 Class Torpedo Boat"
+			type = ship_hull_torpedo_1
+			name_group =
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = empty
+				fixed_ship_anti_air_slot = empty
+
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = empty
+			}
+			obsolete = no
+		}
+
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_torpedo_1
+				version_name = "S05 Class Torpedo Boat"
+				 creator = LGS
+			}
+			requested_factories = 1
+			progress = 0.8
+			name = "LRS S05A"
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_torpedo_1
+				version_name = "S05 Class Torpedo Boat"
+				 creator = LGS
+			}
+			requested_factories = 1
+			progress = 0.8
+			name = "LRS S05B"
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_torpedo_1
+				version_name = "S05 Class Torpedo Boat"
+				 creator = LGS
+			}
+			requested_factories = 1
+			progress = 0.8
+			name = "LRS S05C"
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_torpedo_1
+				version_name = "S05 Class Torpedo Boat"
+				 creator = LGS
+			}
+			requested_factories = 1
+			progress = 0.8
+			name = "LRS S05D"
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_torpedo_1
+				version_name = "S05 Class Torpedo Boat"
+				 creator = LGS
+			}
+			requested_factories = 1
+			progress = 0.7
+			name = "LRS S05E"
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_torpedo_1
+				version_name = "S05 Class Torpedo Boat"
+				 creator = LGS
+			}
+			requested_factories = 1
+			progress = 0.7
+			name = "LRS S05F"
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_torpedo_1
+				version_name = "S05 Class Torpedo Boat"
+				 creator = LGS
+			}
+			requested_factories = 1
+			progress = 0.7
+			name = "LRS S05G"
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_torpedo_1
+				version_name = "S05 Class Torpedo Boat"
+				 creator = LGS
+			}
+			requested_factories = 1
+			progress = 0.7
+			name = "LRS S05H"
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_torpedo_1
+				version_name = "S05 Class Torpedo Boat"
+				 creator = LGS
+			}
+			requested_factories = 1
+			progress = 0.6
+			name = "LRS S05I"
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_torpedo_1
+				version_name = "S05 Class Torpedo Boat"
+				 creator = LGS
+			}
+			requested_factories = 1
+			progress = 0.6
+			name = "LRS S05J"
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_torpedo_1
+				version_name = "S05 Class Torpedo Boat"
+				 creator = LGS
+			}
+			requested_factories = 1
+			progress = 0.6
+			name = "LRS S05K"
+			amount = 1
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_torpedo_1
+				version_name = "S05 Class Torpedo Boat"
+				 creator = LGS
+			}
+			requested_factories = 1
+			progress = 0.6
+			name = "LRS S05L"
+			amount = 1
+			}
+		}
+	}
+        ai_will_do = {
+		base = 5
+        }
+}
+focus = {
+	id = LGS_dominate_ianis
+	icon = GFX_focus_NORDIC_dem_navy
+	x = 1
+	y = 1
+	cost = 10
+	prerequisite = { focus = LGS_train_ships }
+	prerequisite = { focus = LGS_dockyards }
+	
+	relative_position_id = LGS_train_ships
+	available = {
+	
+	}
+
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = LGS_navy_2
+			add_idea = LGS_navy_3
+		}
+	set_technology = {
+			early_ship_hull_heavy = 1
+			basic_ship_hull_heavy = 1
+			basic_heavy_armor_scheme = 1
+		}
+	CET = {
+		country_event = LGS.2
+		}
+	effect_tooltip = {
+		add_timed_idea = {
+			idea = LGS_bought_ships
+			days = 180
+		}
+		LGS = {
+			create_ship = {
+				type = ship_hull_heavy_2
+				equipment_variant = "Kaitos Class"
+				creator = CET
+				name = "LRS Lingstonia"
+			}
+		}
+		LGS = {
+			create_ship = {
+				type = ship_hull_heavy_2
+				equipment_variant = "Kaitos Class"
+				creator = CET
+				name = "LRS Sol"
+			}
+		}
+	}
+	custom_effect_tooltip = LGS_chronos_tt
+	custom_effect_tooltip = LGS_chronos_tt
+	custom_effect_tooltip = CET_approval_tt
+	}
+	ai_will_do = {
+		base = 5
+		}
+	}
+#end
+}

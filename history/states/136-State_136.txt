@@ -21,7 +21,16 @@ state={
 			6314 20 
 		}
 		victory_points = {
-			1851 10 
+			1851 1 
+		}
+		victory_points = {
+			2203 10
+		}
+		victory_points = {
+			6447 5 
+		}
+		victory_points = {
+			2486 5 
 		}
 
 	}
@@ -31,6 +40,6 @@ state={
 	}
 	manpower=25178817
 	buildings_max_level_factor=1.000
-	state_category=megalopolis
+	state_category=city
 	local_supplies=0.000
 }

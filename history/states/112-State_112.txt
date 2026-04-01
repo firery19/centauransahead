@@ -4,6 +4,7 @@ state={
 	history = {
 		owner = URS
 		add_core_of = CNS
+		add_claim_by = URS
 		add_claim_by = ORI
 		buildings = {
 			infrastructure = 2

@@ -1,0 +1,1560 @@
+ANT_south_centauran_integration_category = {
+	ANT_integrate_nauta_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 7
+			7 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 7 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		NOT = { 7 = { is_core_of = ANT} }
+		OR = {
+			owns_state = 43
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		days_remove = 720
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			7 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = { NOT = { has_full_control_of_state = 7 } factor = 0 }
+			
+		}
+	}
+	ANT_integrate_mira_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 43
+			43 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 43 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		NOT = { 50 = { is_core_of = ANT} }
+		OR = {
+			owns_state = 43
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 360
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			43 = { set_state_name = "ant_mira_region_2" }
+			43 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = { NOT = { has_full_control_of_state = 43 } factor = 0 }
+			
+		}
+	}
+	ANT_integrate_menkar_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 45
+			45 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 45 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 45
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 70
+		
+		days_remove = 360
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			45 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = { NOT = { has_full_control_of_state = 45 } factor = 0 }
+			
+		}
+	}
+	ANT_integrate_whitemouth_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 46
+			46 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 46 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 46
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 70
+		
+		days_remove = 540
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			46 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = { NOT = { has_full_control_of_state = 46 } factor = 0 }
+			
+		}
+	}
+	ANT_integrate_se_cetus_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 44
+			44 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 44 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 44
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 180
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			44 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = { NOT = { has_full_control_of_state = 44 } factor = 0 }
+			
+		}
+	}
+	ANT_integrate_e_cetus_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 41
+			41 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 41 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 41
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		days_remove = 180
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			41 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = { NOT = { has_full_control_of_state = 41 } factor = 0 }
+			
+		}
+	}
+	ANT_integrate_c_cetus_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 42
+			42 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 42 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 42
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 70
+		
+		days_remove = 180
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			42 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = { NOT = { has_full_control_of_state = 42 } factor = 0 }
+			
+		}
+	}
+	ANT_integrate_w_cetus_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 47
+			47 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 47 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 47
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 90
+		
+		days_remove = 180
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			47 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = { NOT = { has_full_control_of_state = 47 } factor = 0 }
+			
+		}
+	}
+	ANT_integrate_n_cetus_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 40
+			40 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 40 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 40
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 90
+		
+		days_remove = 180
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			40 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = { NOT = { has_full_control_of_state = 40 } factor = 0 }
+			
+		}
+	}
+	ANT_integrate_ne_cetus_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 39
+			39 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 39 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 39
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 90 #70
+		
+		days_remove = 180
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			39 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = { NOT = { has_full_control_of_state = 39 } factor = 0 }
+			
+		}
+	}
+	ANT_integrate_andromeda_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 49
+			49 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 49 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 49
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 70
+		
+		days_remove = 180
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			49 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = { NOT = { has_full_control_of_state = 49 } factor = 0 }
+		}
+	}
+	ANT_reintegrate_s_andromeda_region = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			owns_state = 94
+			94 = {
+			resistance < 10
+			compliance > 50
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 94 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 94
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 30
+		
+		days_remove = 90
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			94 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+		}
+	}
+	ANT_integrate_cet_occulum_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 50
+			94 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 50 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 50
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 20
+		
+		days_remove = 180
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			50 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+		}
+	}
+	ANT_reintegrate_n_lepus_region = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			owns_state = 35
+			35 = {
+			resistance < 10
+			compliance > 50
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 35 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 35
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 30
+		
+		days_remove = 90
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			35 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+		}
+	}
+	ANT_reintegrate_aquilan_coast_region = {
+
+		icon = GFX_decision_generic_nationalism
+
+		available = {
+			owns_state = 31
+			31 = {
+			resistance < 10
+			compliance > 50
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 31 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 31
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 30
+		
+		days_remove = 90
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			31 = {
+			add_core_of = ANT
+			}
+			
+		}
+		
+		ai_will_do = {
+			base = 5
+		}
+	}
+	ANT_integrate_s_aquila_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 36
+			36 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 36 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 36
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 70
+		
+		days_remove = 360
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			36 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = { NOT = { has_full_control_of_state = 36 } factor = 0 }
+			
+		}
+	}
+	ANT_integrate_cet_aqu_border_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 37
+			owns_state = 152
+			37 = {
+			resistance < 10
+			compliance > 70
+			}
+			152 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 37 state = 152 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 37
+			owns_state = 152
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 70
+		
+		days_remove = 180
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			37 = {
+			add_core_of = ANT
+			}
+			152 = {
+				add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = { NOT = { has_full_control_of_state = 37 } factor = 0 }
+			
+		}
+	}
+	ANT_integrate_w_aquila_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 38
+			owns_state = 156
+			38 = {
+			resistance < 10
+			compliance > 70
+			}
+			156 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 38 state = 156 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 38
+			owns_state = 156
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 70
+		
+		days_remove = 520
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			38 = {
+			add_core_of = ANT
+			}
+			156 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = { NOT = { has_full_control_of_state = 38 } factor = 0 }
+			
+		}
+	}
+	ANT_integrate_volucris_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 9
+			9 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 9 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 9
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		days_remove = 720
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			9 = {
+			add_core_of = ANT
+			9 = { set_state_name = "ant_volucris_region" }
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = { NOT = { has_full_control_of_state = 9 } factor = 0 }
+			
+		}
+	}
+	ANT_integrate_e_aquila_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 34
+			34 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 34 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 34
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 250
+		
+		days_remove = 70
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			34 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = { NOT = { has_full_control_of_state = 34 } factor = 0 }
+			
+		}
+	}
+	ANT_integrate_murus_aquila_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 32
+			32 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 32 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 32
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 70
+		
+		days_remove = 360
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			32 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = { NOT = { has_full_control_of_state = 32 } factor = 0 }
+			
+		}
+	}
+
+	ANT_integrate_n_aquila_region = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 33
+			33 = {
+			resistance < 10
+			compliance > 70
+			}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 33 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		OR = {
+			owns_state = 33
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 90
+		
+		days_remove = 180
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			33 = {
+			add_core_of = ANT
+			}
+		}
+		
+		ai_will_do = {
+			base = 5
+			modifier = { NOT = { has_full_control_of_state = 33 } factor = 0 }
+			
+		}
+	}
+	ANT_statusq_persean = {		#just for larping and shit
+		icon = GFX_decision_generic_decision
+		available = {
+			NOT = { has_decision = ANT_give_land_cet_internal }
+			owns_state = 152
+			owns_state = 37
+			has_completed_focus = ANT_resolve_internal_disputes
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 152 state = 37 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+		visible = {
+			has_completed_focus = ANT_resolve_internal_disputes
+		NOT = { has_country_flag = ANT_statusq_persean }
+		OR = {
+			owns_state = 152
+			owns_state = 37
+			is_debug = yes
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		complete_effect = {
+			set_country_flag = ANT_statusq_persean
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	ANT_give_land_cet_internal = {		#just for larping and shit
+
+		icon = GFX_decision_generic_break_treaty
+
+		available = {
+			NOT = { has_decision = ANT_statusq_persean }
+			owns_state = 152
+			owns_state = 37
+			has_completed_focus = ANT_resolve_internal_disputes
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 152 state = 37 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+			has_completed_focus = ANT_resolve_internal_disputes
+		NOT = { has_country_flag = ANT_statusq_persean }
+		OR = {
+			owns_state = 152
+			owns_state = 37
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 75
+		
+		days_remove = 14
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			set_country_flag = ANT_statusq_persean
+			CET = { 
+				add_state_core = 152 
+				add_state_core = 37
+			}
+			AQU = { 
+				remove_state_core = 152 
+				remove_state_core = 37 
+				add_state_claim = 152
+				add_state_claim = 37
+			}
+		}
+		
+		ai_will_do = {
+			base = 0
+			
+		}
+	}
+	ANT_give_land_sko_small_internal = {		#just for larping and shit
+
+		icon = GFX_decision_generic_decision
+
+		available = {
+			NOT = { has_decision = ANT_give_land_sko_internal }
+
+			owns_state = 94
+			owns_state = 43
+			has_completed_focus = ANT_resolve_internal_disputes
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 94 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+			has_completed_focus = ANT_resolve_internal_disputes
+		NOT = { has_country_flag = ANT_give_land_sko }
+		OR = {
+			owns_state = 94
+			owns_state = 43
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		days_remove = 14
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			set_country_flag = ANT_give_land_sko
+			SKO = { 
+				remove_state_claim = 43
+			}
+			CET = { 
+				remove_state_core = 94
+				add_state_claim = 94
+			}
+		}
+		
+		ai_will_do = {
+			base = 10
+			
+		}
+	}
+	ANT_give_land_sko_internal = {		#just for larping and shit
+
+		icon = GFX_decision_generic_break_treaty
+
+		available = {
+			NOT = { has_decision = ANT_give_land_sko_small_internal }
+			owns_state = 94
+			owns_state = 43
+			has_completed_focus = ANT_resolve_internal_disputes
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 94 state = 43 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+			has_completed_focus = ANT_resolve_internal_disputes
+		NOT = { has_country_flag = ANT_give_land_sko }
+		OR = {
+			owns_state = 94
+			owns_state = 43
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 75
+		
+		days_remove = 14
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			set_country_flag = ANT_give_land_sko
+			SKO = { 
+				add_state_core = 43
+				remove_state_claim = 43
+			}
+			CET = { 
+				remove_state_core = 94 
+				remove_state_core = 43 
+				add_state_claim = 94
+				add_state_claim = 43
+			}
+		}
+		
+		ai_will_do = {
+			base = 0
+			
+		}
+	}
+	ANT_give_land_lup_internal = {		#just for larping and shit
+
+		icon = GFX_decision_generic_decision
+
+		available = {
+			owns_state = 35
+			owns_state = 31
+			has_completed_focus = ANT_resolve_internal_disputes
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 35 state = 31 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+			has_completed_focus = ANT_resolve_internal_disputes
+		OR = {
+			owns_state = 35
+			owns_state = 31
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 75
+		
+		days_remove = 14
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			AQU = { 
+				remove_state_core = 35 
+				remove_state_core = 31 
+				add_state_claim = 35
+				add_state_claim = 31
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+			
+		}
+	}
+	ANT_give_land_cov = {
+
+		icon = GFX_decision_generic_operation
+
+		available = {
+			NOT = { has_decision = ANT_integrate_cet_occulum_region }	#just for tt
+			owns_state = 50
+			COV = { is_puppet_of = ANT}
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 50 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		NOT = { 50 = { is_core_of = ANT} }
+		OR = {
+			owns_state = 50
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+		
+		days_remove = 14
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+			add_political_power = 25
+		}
+
+		remove_effect = {
+			ANT = { remove_state_claim = 50 remove_state_core = 50 }
+			50 = { transfer_state_to = COV }	#give corvus an event about this like "oh antares gave us this state we are so happy"
+			COV = { add_state_core= 50 }
+			CET = { remove_state_core = 50 add_state_claim = 50}
+		}
+		
+		ai_will_do = {
+			base = 5
+			
+		}
+	}
+	ANT_give_land_grs = {			#just for larping and shit
+
+		icon = GFX_decision_generic_operation
+
+		available = {
+			NOT = { has_decision = ANT_integrate_murus_aquila_region }	#just for tt
+
+			owns_state = 32
+			GRS = { 
+				is_puppet_of = ANT
+				owns_state = 25
+			}
+		#	has_completed_focus = ANT_punish_aquila
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 32 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
+
+		visible = {
+		NOT = { 32 = { is_core_of = ANT} }
+		OR = {
+			owns_state = 32
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0#75
+		
+		days_remove = 14
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+			add_political_power = 75
+		}
+
+		remove_effect = {
+			ANT = { remove_state_claim = 32 remove_state_core = 32 }
+			32 = { transfer_state_to = GRS }	#give grusa an event about this like "oh antares gave us this state we are so happy"
+			GRS = { 
+				add_state_core = 32 
+			}
+			AQU = { 
+				remove_state_core = 32 
+				add_state_claim = 32
+			}
+
+		}
+		
+		ai_will_do = {
+			base = 0
+			
+		}
+	}
+}
+
+ANT_skorpii_management_category = {
+	ANT_establish_skorpii_grusii = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			owns_state = 1
+		}
+
+		visible = {
+		OR = {
+			owns_state = 1
+			is_debug = yes
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		days_remove = 1
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			hidden_effect = {
+					every_state = {
+						limit = {
+							AND = {
+								state = 10
+							}
+							is_owned_by = ANT
+						}
+						BCH = {
+							transfer_state = PREV
+						}
+					}
+					95 = { add_core_of = BCH }
+			}
+			release_on_controlled = BCH
+			BCH = {
+				set_state_controller = 95
+				set_state_owner = 95
+				ANT = {
+					puppet = PREV
+					set_autonomy = { target = PREV autonomy_state = autonomy_skorpii  end_wars = no end_civil_wars = no }
+				}
+
+			#	set_cosmetic_tag = BCH
+		#		create_country_leader = {
+			#		name = "Hitori Gotoh"
+		#			desc = "POLITICS_HITORI_GOTOH_DESC"
+			#		picture = GFX_portrait_Hitori_Gotoh
+				#	expire = "1999.1.1"
+		#			ideology = conservatism
+				#	traits = {
+				#	}
+			#	}
+			}
+		}
+		
+		ai_will_do = {
+			base = 10
+			modifier = { NOT = { AND = { country_exists = GRS country_exists = VEG } factor = 0 }
+			
+		}
+	}
+}

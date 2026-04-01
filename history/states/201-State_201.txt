@@ -1,0 +1,26 @@
+state={
+	id=201
+	name="STATE_201"
+	resources={
+		
+	}
+	history={
+		owner = TUC
+		add_core_of = TUC
+		buildings = {
+			arms_factory = 0
+			industrial_complex = 0
+			infrastructure = 2
+		}
+		victory_points = {
+			
+		}
+	}
+	provinces={
+		107 501 715 779 2272 2648 2683 2828 2885 3508 3514 3520 3526 3528 3548 
+	}
+	manpower=4181694
+	state_category=town
+	buildings_max_level_factor=1
+	local_supplies=0
+}

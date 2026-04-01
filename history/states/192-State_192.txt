@@ -1,0 +1,29 @@
+state={
+	id=192
+	name="STATE_192"
+	resources={
+		
+	}
+	history={
+		owner = RIA
+		add_core_of = RIA
+		buildings = {
+			arms_factory = 0
+			industrial_complex = 1
+			infrastructure = 3
+			3420 = {
+				naval_base = 1
+				}
+		}
+		victory_points = {
+			
+		}
+	}
+	provinces={
+		39 418 850 908 1166 1322 1618 1627 2609 3390 3395 3403 3420 3432 
+	}
+	state_category=town
+	manpower=12122315
+	buildings_max_level_factor=1
+	local_supplies=0
+}

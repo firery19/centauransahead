@@ -158,7 +158,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 1619
+	#	location = 1619	Lingstonia update
+		location = 3665
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -169,7 +170,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 7
 		}
-		location = 639
+	#	location = 639	Lingstonia update
+		location = 1565
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -180,7 +182,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 3835
+	#	location = 3835	Lingstonia update
+		location = 1524
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -191,7 +194,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 9
 		}
-		location = 2903
+	#	location = 2903	Lingstonia update
+		location = 3573
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -202,7 +206,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 10
 		}
-		location = 666
+	#	location = 666	Lingstonia update
+		location = 3675
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -213,7 +218,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 1817
+	#	location = 1817	Lingstonia update
+		location = 1390
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -697,7 +703,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 55
 		}
-		location = 1817
+	#	location = 1817	Lingstonia update
+		location = 1390
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -1053,5 +1060,35 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "RIA"
+		}
+		requested_factories = 2
+		progress = 0
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "RIA"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "RIA"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
 	}
 }

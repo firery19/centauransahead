@@ -1,12 +1,15 @@
 focus_tree = {
 	id = antares-focustree-valpha
-        continuous_focus_position = { x = 60 y = 20 }
+        continuous_focus_position = { x = 10 y = 10 }
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
 			tag = ANT
 		}
+	}
+	initial_show_position = {
+		focus = ANT_consolidate_power
 	}
 	#Consolidate power
 	focus = {
@@ -243,7 +246,7 @@ focus = {
     y = 4
     cost = 5
     search_filters = {
-        FOCUS_FILTER_INDUSTRY
+        FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH
     }
     prerequisite = { focus = ANT_fund_construction_companies }
     mutually_exclusive = { focus = ANT_develop_rural_areas }
@@ -317,7 +320,7 @@ focus = {
 	y = 4
 	cost = 10
 	search_filters = {
-		FOCUS_FILTER_INDUSTRY
+		FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH
 	}
 	prerequisite = { focus = ANT_fund_construction_companies  }
 	mutually_exclusive = { focus = ANT_centralized_industry  }
@@ -988,7 +991,7 @@ focus = {
 				}
 				add_stability = -0.05
 				
-        103 = {
+        186 = {
 
             add_manpower = 2000000
             add_extra_state_shared_building_slots = 2
@@ -1017,7 +1020,7 @@ focus = {
             }
         }
         109 = { add_manpower = -2000000 }
-        104 = { add_manpower = -2000000 }
+        103 = { add_manpower = -2000000 }
         105 = { add_manpower = -2000000 }
     }
 }
@@ -1048,8 +1051,10 @@ focus = {
                 type = industrial_complex
                 level = 1
                 instant_build = yes
-}
-}
+	}
+            add_manpower = 1000000
+
+	}
        104 = {
             add_building_construction = {
                 type = infrastructure
@@ -1061,8 +1066,10 @@ focus = {
                 type = industrial_complex
                 level = 1
                 instant_build = yes
-}
-}
+	}
+            add_manpower = 1000000
+
+	}
        109 = {
             add_building_construction = {
                 type = infrastructure
@@ -1074,11 +1081,17 @@ focus = {
                 type = industrial_complex
                 level = 1
                 instant_build = yes
-}
-}
+	}
+            add_manpower = 1000000
+
+	}
            	     add_timed_idea = {
             	     idea = ANT_paying_for_funding_idea
-            	     days = 140}
+            	     days = 140	}
+
+        111 = { add_manpower = -1000000 }
+        98 = { add_manpower = -1000000 }
+        106 = { add_manpower = -1000000 }
     }
 }
 
@@ -1100,7 +1113,7 @@ focus = {
             limit = {
                 is_owned_by = ROOT # Ensures it only applies to your country's owned states
             }
-            add_manpower = 1000000
+            add_manpower = 100000
         }
     }
 }
@@ -1235,36 +1248,50 @@ swap_ideas = {
             	     days = 140}
 
         107 = {
-            add_extra_state_shared_building_slots = 2
-            add_building_construction = {
-                type = industrial_complex
-                level = 1
-                instant_build = yes}
-            add_building_construction = {
-                type = infrastructure
-                level = 1
-                instant_build = yes 
-}}
-        104 = {
-            add_extra_state_shared_building_slots = 2
-            add_building_construction = {
-                type = industrial_complex
-                level = 1
-                instant_build = yes
-}}
-        109 = {
-            add_extra_state_shared_building_slots = 2
-            add_building_construction = {
-                type = industrial_complex
-                level = 1
-                instant_build = yes}
             add_building_construction = {
                 type = infrastructure
                 level = 1
                 instant_build = yes 
 
             }
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes}
+
+            add_manpower = 1000000
+}
+
+        104 = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+}
+            add_manpower = 1000000
+
+}
+        109 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+                instant_build = yes 
+
+            }
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes}
+
+            add_manpower = 1000000
+
         }
+        111 = { add_manpower = -1000000 }
+        98 = { add_manpower = -1000000 }
+        106 = { add_manpower = -1000000 }
     }
 }
 # Connect Urban Areas
@@ -1638,7 +1665,7 @@ focus = {
 	x = 13
 	y = 9
 	cost = 10
-	search_filters = { FOCUS_FILTER_INDUSTRY }
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EQUIPMENT }
 	prerequisite = { focus=ANT_prepare_war_industry}
         mutually_exclusive = { focus = ANT_sustainable_spending }
 	ai_will_do = { factor = 2 }
@@ -1702,24 +1729,24 @@ focus = {
 
 
 # x
-focus = {
-	id = ANT_x
-	icon = GFX_goal_unknown
-	x = 0
-	y = 0
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_}
-	mutually_exclusive = { focus = ANT_ }
-	ai_will_do = { factor = 0  } #CHANGE THIS TO FACTOR = 1#################
-	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+#focus = {
+#	id = ANT_x
+#	icon = GFX_goal_unknown
+#	x = 0
+#	y = 0
+#	cost = 10
+#	search_filters = { FOCUS_FILTER_UNFINISHED }
+#	prerequisite = {focus = ANT_}
+#	mutually_exclusive = { focus = ANT_ }
+#	ai_will_do = { factor = 0  } #CHANGE THIS TO FACTOR = 1#################
+#	completion_reward = {
+#custom_effect_tooltip=ant_placeholder_tt
 #hidden_effect = {
 #country_event = { id = ANT.1 days = 1 random_days = 2 }
 #country_event = { id = ANT.2 days = 3 random_days = 10 }
 #		}
-	}
-}
+#	}
+#}
 
 
 ########################## POLITICAL BRANCH 1 ######################################
@@ -1768,7 +1795,7 @@ focus = {
 	completion_reward = {
 		country_event = {
                 	id = ANT.1
-                	random_days = 1
+                	random_days = 0
             	}
 	}
 }
@@ -1779,7 +1806,7 @@ focus = {
 	x = 2
 	y = 4
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_POLITICAL }
 	prerequisite = {focus = ANT_emperors_speech}
         mutually_exclusive = { focus = ANT_strengthen_antarean_democracy }
 	ai_will_do = { factor = 99 }
@@ -1788,8 +1815,11 @@ focus = {
 		    remove_idea = ANT_ppdebuff
 		    add_idea = ANT_ppdebuff2
 		}
-
-#custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		country_event = {
+                	id = ANT.2
+			days = 7
+                	random_days = 7
+            	}
 
 	}
 }
@@ -1800,14 +1830,33 @@ focus = {
 	x = 8
 	y = 4
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_POLITICAL }
 	prerequisite = {focus = ANT_emperors_speech}
 	available = { always = no }
         mutually_exclusive = { focus = ANT_consolidate_monarchic_powers }
-	ai_will_do = { factor = 0 }
+	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+add_popularity = {
+    ideology = democratic
+    popularity = 0.05
+}
+add_popularity = {
+	ideology = democratic_left
+	popularity = 0.05
+}
+add_popularity = {
+	ideology = democratic_right
+	popularity = 0.05
+}
+add_popularity = {
+    ideology = fascism
+    popularity = -0.1
+}
+add_popularity = {
+    ideology = neutrality
+    popularity = -0.05
+}
+add_stability = 0.1
 	}
 }
 # authoritarian1
@@ -1817,23 +1866,33 @@ focus = {
 	x = 1
 	y = 5
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS  }
 	prerequisite = {focus = ANT_consolidate_monarchic_powers}
 	ai_will_do = { factor = 2 }
 	completion_reward = {
-			add_political_power = 120
-
+		add_political_power = 120
+		if = {
+			limit = { NOT = { has_country_flag = ANT_protests_ongoing has_completed_focus = ANT_protest6 } }
+			random = {
+				chance = 40
+				country_event = {
+                			id = ANT.5
+					days = 2
+                			random_days = 7
+            			}
+			}
+		}
 	}
 }
 # authoritarian2
 focus = {
 	id = ANT_authoritarian2
-	icon = GFX_goal_generic_demand_territory
-	x = 3
-	y = 5
+	icon = GFX_focus_generic_monarchist_sentiment
+	x = 1
+	y = 7
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_consolidate_monarchic_powers}
+	search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS  }
+	prerequisite = {focus = ANT_authoritarian1}
 	ai_will_do = { factor = 2 }
 		completion_reward = {
 			add_stability = 0.05
@@ -1845,11 +1904,11 @@ focus = {
 focus = {
 	id = ANT_authoritarian3
 	icon =  GFX_goal_generic_territory_or_war
-	x = 1
-	y = 6
+	x = 3
+	y = 5
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_authoritarian1}
+	search_filters = {  FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS  }
+	prerequisite = {focus = ANT_consolidate_monarchic_powers}
         
 	ai_will_do = { factor = 2 }
 	completion_reward = {
@@ -1864,43 +1923,67 @@ focus = {
 	id = ANT_authoritarian4
 	icon = GFX_focus_generic_strike_at_democracy3
 	x = 3
-	y = 7
+	y = 6
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_authoritarian2}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
+	prerequisite = {focus = ANT_authoritarian3}
         
 	ai_will_do = { factor = 2 }
 	completion_reward = {
 			add_popularity = { ideology = communism popularity = -0.05 }
 			add_popularity = { ideology = democratic popularity = -0.10 }
 
-			
-			
+		if = {
+			limit = { NOT = { has_country_flag = ANT_protests_ongoing has_completed_focus = ANT_protest6 } }
+			random = {
+				chance = 40
+				country_event = {
+                			id = ANT.5
+					days = 2
+                			random_days = 7
+            			}
+			}
+		}			
 		
 	}
 }
 focus = {
 	id = ANT_authoritarian5a
-	icon = GFX_goal_generic_forceful_treaty
+	icon = GFX_focus_usa_voter_registration_act
 	x = 2
 	y = 8
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_authoritarian3}
+	search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_POLITICAL }
+	prerequisite = {focus = ANT_authoritarian2}
 	prerequisite = {focus = ANT_authoritarian4}
+	continue_if_invalid = yes
 	available = { 
 		OR = { 
 			ANT = { is_ai = yes } 
-			democratic < 0.15 communism < 0.10 
+			AND = {
+				democratic < 0.20
+				communism < 0.10 
+			}
+			AND = {
+				democratic < 0.25
+				communism < 0.05
+			}
+
 		}
 	}
-
-        
-	ai_will_do = { factor = 2 }
+	ai_will_do = { factor = 20 }
 	completion_reward = {
-					swap_ideas = {
-		    remove_idea = ANT_ppdebuff2
-		    add_idea = ANT_ppdebuff3
+		swap_ideas = {
+			remove_idea = ANT_ppdebuff2
+			add_idea = ANT_ppdebuff3
+		}
+		if = {
+			limit = { NOT = { has_country_flag = ANT_protests_ongoing has_completed_focus = ANT_protest6 } }
+			country_event = {
+                		id = ANT.5
+				days = 2
+                		random_days = 7
+            		}
 		}
 	}
 }
@@ -1910,12 +1993,28 @@ focus = {
 	x = 2
 	y = 10
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_STABILITY
+	FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS  }
 	prerequisite = {focus = ANT_authoritarian5a}
 	prerequisite = {focus = ANT_protest6}
-	available = { neutrality > 0.7 }
-        
-	ai_will_do = { factor = 2 }
+	continue_if_invalid = yes
+	available = {  
+			OR = {  
+				is_ai = yes 
+				OR ={
+					neutrality > 0.7
+					AND = {
+						neutrality > 0.5
+						fascism > 0.2
+				 	}
+					AND = {
+						neutrality > 0.6
+						fascism > 0.1
+				 	}
+				}
+			}
+        }
+	ai_will_do = { factor = 20 }
 	completion_reward = {
 
 			swap_ideas = {
@@ -1930,8 +2029,10 @@ focus = {
 	x = 5
 	y = 5
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_consolidate_monarchic_powers focus = ANT_strengthen_antarean_democracy}
+	search_filters = {  }
+	prerequisite = {
+		focus = ANT_consolidate_monarchic_powers 
+		focus = ANT_strengthen_antarean_democracy}
    available = {
 		has_idea = ANT_patriotism0
     }
@@ -1951,7 +2052,8 @@ focus = {
 	x = 5
 	y = 6
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_STABILITY
+}
 	prerequisite = {focus = ANT_monarch1}
    available = {
        NOT = { has_idea = ANT_ppdebuff  has_idea = ANT_ppdebuff2}
@@ -1972,7 +2074,8 @@ focus = {
 	x = 5
 	y = 7
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT
+}
 	prerequisite = {focus = ANT_monarch2}
    available = { #instead of has_idea ppdebuff4, incase the spirit can be further upgraded
        NOT = {  has_idea = ANT_ppdebuff  
@@ -1994,133 +2097,204 @@ focus = {
 # x
 focus = {
 	id = ANT_strengthen_military
-	icon = GFX_goal_generic_military_spheree
+	icon = GFX_focus_BRA_reach_out_to_military_dem
 	x = 2
 	y = 2
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_antiextremism}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	prerequisite = { focus = ANT_antiextremism }
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_stability = -0.05
+		add_popularity = {
+		    ideology = fascism
+		    popularity = 0.1
+		}
+		add_popularity = {
+		    ideology = neutrality
+		    popularity = 0.05
+		}
+		custom_effect_tooltip = ant_modify_imp_army_by
+		add_to_variable = {
+		    var = ANT_army_pp_spirit
+		    value = 0.05
+		    tooltip = ant_imp_army_add_5_pp_tt
+		}
 	}
 }
 # x
+
 focus = {
 	id = ANT_protest1
-	icon = GFX_goal_unknown
+	icon = GFX_focus_generic_strike_at_democracy1
 	x = -2
 	y = 5
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 5
+	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_FRA_POLITICAL_VIOLENCE  }
 	prerequisite = {focus = ANT_consolidate_monarchic_powers}
-        
-	ai_will_do = { factor = 1 }
+	available = { has_country_flag = ANT_protests_ongoing}
+	ai_will_do = { factor = 10 }
+	
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_political_power = 25
+		add_ideas = ANT_crackdown_small
 	}
 }
+
 # x
 focus = {
 	id = ANT_protest2
-	icon = GFX_goal_unknown
-	x = -4
-	y = 6
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_protest1}
+	icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
+	x = -5
+	y = 7
+	cost = 5
+	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_FRA_POLITICAL_VIOLENCE  }
+	prerequisite = {focus = ANT_protest3}
 	prerequisite = {focus = ANT_strengthen_military}
-        
-	ai_will_do = { factor = 1 }
+	available = { has_country_flag = ANT_protests_ongoing}
+      
+	ai_will_do = { factor = 2 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_stability = -0.05
+		add_political_power = 100
+		add_popularity = {
+		ideology = democratic
+		popularity = -0.05
+	}
+	swap_ideas = {
+		remove_idea = ANT_crackdown_medium
+		add_idea = ANT_crackdown_large
+		}
 	}
 }
+
 # x
 focus = {
 	id = ANT_protest3
-	icon = GFX_goal_unknown
+	icon = GFX_focus_generic_manpower
 	x = -2
 	y = 6
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 5
+	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_FRA_POLITICAL_VIOLENCE  }
 	prerequisite = {focus = ANT_protest1}
+	available = { has_country_flag = ANT_protests_ongoing}
         
-	ai_will_do = { factor = 1 }
+	ai_will_do = { factor = 10 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_stability = 0.025
+		add_political_power = -25
+		swap_ideas = {
+			remove_idea = ANT_crackdown_small
+			add_idea = ANT_crackdown_medium
+		}
 	}
 }
+
 # x
 focus = {
 	id = ANT_protest4
-	icon = GFX_goal_unknown
+	icon = GFX_focus_spr_crush_the_revolution
 	x = -3
 	y = 7
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_protest3}
-        
-	ai_will_do = { factor = 1 }
+	cost = 5
+	search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE FOCUS_FILTER_POLITICAL }
+	prerequisite = { focus = ANT_protest3 }
+	available = { has_country_flag = ANT_protests_ongoing }
+	ai_will_do = { factor = 10 }
+	
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_stability = -0.05
+		add_political_power = 25
+		custom_effect_tooltip = protest_reduce_tt
+		set_country_flag = ANT_click_protest
 	}
 }
 
 # x
 focus = {
 	id = ANT_protest5
-	icon = GFX_goal_unknown
+	icon = GFX_SOV_autonomous_soviet_republics_ccp_2d_sov_compatibility
 	x = -1
-	y =8
+	y = 8
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_FRA_POLITICAL_VIOLENCE  }
 	prerequisite = {focus = ANT_protest3}
-	prerequisite = {focus = ANT_authoritarian3}
-        
-	ai_will_do = { factor = 1 }
+	prerequisite = {focus = ANT_authoritarian2}
+    available = { has_country_flag = ANT_protests_ongoing }
+	mutually_exclusive = { focus = ANT_protest5b }        
+	ai_will_do = { factor = 10 }
+	
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+	# add_political_power = -50
+		custom_effect_tooltip = protest_stop_grow_tt
+		add_ideas = ANT_conciliation1
 	}
 }
+
 # x
 focus = {
 	id = ANT_protest5b
-	icon = GFX_goal_unknown
+	icon = GFX_focus_IRQ_attempted_assasination_of_sidqi
 	x = -3
-	y =8
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	y = 8
+	cost = 5
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_FRA_POLITICAL_VIOLENCE  }
 	prerequisite = {focus = ANT_protest4}
-        mutually_exclusive = { focus = ANT_protest5 }
-	ai_will_do = { factor = 1 }
+	available = { has_country_flag = ANT_protests_ongoing}
+	mutually_exclusive = { focus = ANT_protest5 }
+	ai_will_do = { factor = 10 }
+	
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_stability = -0.05
+		custom_effect_tooltip = protest_stop_grow_tt
 	}
 }
+
 # x
 focus = {
 	id = ANT_protest6
-	icon = GFX_goal_unknown
+	icon = GFX_goal_generic_forceful_treaty
 	x = -2
-	y =9
+	y = 9
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_protest5 focus = ANT_protest5b}
-	prerequisite = {focus = ANT_protest4}
-        
-	ai_will_do = { factor = 1 }
+	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_FRA_POLITICAL_VIOLENCE  }
+	prerequisite = { focus = ANT_protest5 focus = ANT_protest5b }
+	prerequisite = { focus = ANT_protest4 }
+	available = { 
+		OR = {
+			is_ai = yes 
+			AND = {
+				NOT = { has_idea = ANT_protest_small }
+				NOT = { has_idea = ANT_protest_medium }
+				NOT = { has_idea = ANT_protest_large }
+			}
+		}
+	}
+	ai_will_do = { factor = 100 }
+	
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		ANT = {
+			clr_country_flag = ANT_protests_ongoing
+			clr_country_flag = ANT_protest_peace
+			clr_country_flag = ANT_click_protest
+		}
+		remove_ideas = { 
+			ANT_crackdown_small
+			ANT_crackdown_medium
+			ANT_crackdown_large
+			ANT_protest_negligible 
+			ANT_protest_small 
+			ANT_protest_medium
+			ANT_protest_large
+			ANT_conciliation1
+		}
+		add_political_power = 100		
+		add_stability = 0.1
+		add_timed_idea = {
+			idea = ANT_recovery
+			days = 360
+		}
 	}
 }
 # x
@@ -2131,17 +2305,19 @@ focus = {
 	x = -2
 	y =10
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_STABILITY }
 	prerequisite = {focus = ANT_protest6}
-        mutually_exclusive = { focus = ANT_military_coup }
+	mutually_exclusive = { focus = ANT_military_coup }
 	ai_will_do = { factor = 99 }
+	
     completion_reward = {
+	add_stability =  0.05
         create_intelligence_agency = {
-            name = "Ka-Ink. Sekret Sekurity Servise"
+            name = ant_intel_agency
         }
-
     }
 }
+
 # military_coup
 focus = {
 	id = ANT_military_coup
@@ -2151,31 +2327,35 @@ focus = {
 	x = -7
 	y = 10
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_POLITICAL }
 	prerequisite = {focus = ANT_protest2}
-	prerequisite = {focus = ANT_protest4}
+	prerequisite = {focus = ANT_protest5b}
 	available = { always = no }
-
-        mutually_exclusive = { focus = ANT_reform_intelligence_service }
+	mutually_exclusive = { focus = ANT_reform_intelligence_service }
 	ai_will_do = { factor = 1 }
+	
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		add_stability = -0.1
 	}
 }
+
 focus = {
 	id = ANT_military_junta
 	icon = GFX_focus_generic_military_dictatorship
 	x = -7
 	y = 11
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_POLITICAL }
 	prerequisite = {focus = ANT_military_coup}
-        
 	ai_will_do = { factor = 1 }
+	
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_political_power = 150
+		#event to decide your leader and path
 	}
 }
 
@@ -2187,13 +2367,13 @@ focus = {
 	x = 0
 	y = 11
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_POLITICAL }
 	prerequisite = {focus = ANT_reform_intelligence_service}
 	prerequisite = {focus = ANT_authoritarian5}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		set_rule = { can_create_factions = yes }
 
 	}
 }
@@ -2203,42 +2383,44 @@ focus = {
 	x = 3
 	y = 12
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_POLITICAL }
 	prerequisite = {focus = ANT_foreign_policy}
         
 	ai_will_do = { factor = 2 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		give_guarantee = COV
+		COV = { country_event = { id = ANT.3 days = 1 random_days = 1 } }
 	}
 }
+
 focus = {
 	id = ANT_royal_marrige
 	icon = GFX_focus_generic_royal_wedding
 	x = 3
 	y = 13
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_UNFINISHED }
 	prerequisite = {focus = ANT_help_corvus}
         
 	ai_will_do = { factor = 2 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		custom_effect_tooltip= ant_placeholder_tt
 
 	}
 }
+
 focus = {
 	id = ANT_support_help_corvun_military
 	icon = GFX_focus_generic_military_mission
 	x = 3
 	y = 14
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_UNFINISHED }
 	prerequisite = {focus = ANT_royal_marrige}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		COV = { country_event = { id = ANT.3 days = 1 random_days = 1 } }
 
 	}
 }
@@ -2249,12 +2431,12 @@ focus = {
 	x = -1
 	y = 12
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_UNFINISHED }
 	prerequisite = {focus = ANT_foreign_policy}
         mutually_exclusive = { focus = ANT_subversive_activities }
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		custom_effect_tooltip= ant_placeholder_tt
 
 	}
 }
@@ -2264,12 +2446,12 @@ focus = {
 	x = -1
 	y = 13
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_UNFINISHED }
 	prerequisite = {focus = ANT_economic_domination}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		custom_effect_tooltip= ant_placeholder_tt
 
 	}
 }
@@ -2279,12 +2461,12 @@ focus = {
 	x = -1
 	y = 14
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_UNFINISHED }
 	prerequisite = {focus = ANT_controll_neighbouring_economies}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		custom_effect_tooltip=ant_placeholder_tt
 
 	}
 }
@@ -2295,13 +2477,12 @@ focus = {
 	x = 1
 	y = 12
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_UNFINISHED }
 	prerequisite = {focus = ANT_foreign_policy}
         mutually_exclusive = { focus = ANT_economic_domination }
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+upgrade_intelligence_agency = upgrade_form_department
 	}
 }
 focus = {
@@ -2310,12 +2491,12 @@ focus = {
 	x = 1
 	y = 13
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_UNFINISHED }
 	prerequisite = {focus = ANT_subversive_activities}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		custom_effect_tooltip=ant_placeholder_tt
 
 	}
 }
@@ -2325,12 +2506,12 @@ focus = {
 	x = 1
 	y = 14
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_UNFINISHED }
 	prerequisite = {focus = ANT_expand_spy_agency}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		custom_effect_tooltip=ant_placeholder_tt
 
 	}
 }
@@ -2343,49 +2524,25 @@ custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
 
 
 
-# Prepare for war with Cetus
-focus = {
-	id = ANT_prepare_for_war_with_cetus
-	icon = GFX_goal_generic_major_war
-	x = 5
-	y = 15
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	ai_will_do = { factor = 99 }
-	prerequisite = {focus = ANT_prepare_war_industry}
-	prerequisite = {focus = ANT_authoritarian5}
-	prerequisite = {focus = ANT_help_corvus}
-	prerequisite = {focus = ANT_prepare_navy_war_cetus focus = ANT_prepare_army_war_cetus focus = ANT_im_not_doing_all_those_focuses}
-	will_lead_to_war_with = CET
-    available = {
-		OR = {
-		CET = {has_war_with = COV}
-		date > 1911.1.1
-		has_army_manpower = { size > 3000000 }
-		}
-	}
-	completion_reward = {
-	custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-	}
-}
+
 
 
 # skip army and navy paths since they are uncomplete
-focus = {
-	id = ANT_im_not_doing_all_those_focuses
-	icon = GFX_goal_unknown
-	x = 27
-	y = 12
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_}
-        
-	ai_will_do = { factor = 1 }
-	completion_reward = {
-custom_effect_tooltip="O Heeeeeelllll nah I'm not doing all those focuses!"
-
-	}
-}
+#focus = {
+#	id = ANT_im_not_doing_all_those_focuses
+#	icon = GFX_goal_unknown
+#	x = 27
+#	y = 12
+#	cost = 10
+#	search_filters = { FOCUS_FILTER_UNFINISHED }
+#	prerequisite = {focus = ANT_}
+#      
+#	ai_will_do = { factor = 1 }
+#	completion_reward = {
+#custom_effect_tooltip="O Heeeeeelllll nah I'm not doing all those focuses!"
+#
+#	}
+#}
 
 ################## MILITARY SHIT ##########################
 
@@ -2393,20 +2550,24 @@ custom_effect_tooltip="O Heeeeeelllll nah I'm not doing all those focuses!"
 # long timer that you need to do X focuses, research X techs and have X factories to complete
 focus = {
 	id = ANT_army_reform
-	icon = GFX_goal_unknown
+	icon = GFX_focus_chi_army_reform
 	x = 35
 	y = 0
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MANPOWER }
 	prerequisite = {focus = ANT_}
         
-	ai_will_do = { factor = 0.01 }
+	ai_will_do = { factor = 1 }
 	completion_reward = {
 		add_doctrine_cost_reduction = {
 			cost_reduction = 0.25
 			uses = 1
 			category = land_doctrine
 		}
+	swap_ideas = {
+    remove_idea = ANT_humiliation1
+    add_idea = ANT_humiliation2
+}
 
 	}
 }
@@ -2414,11 +2575,11 @@ focus = {
 # xp
 focus = {
 	id = ANT_analyse_war_games
-	icon = GFX_goal_unknown
+	icon = GFX_SOV_desperate_measures_ccp_2d_sov_compatibility
 	x = 34
 	y = 1
 	cost = 5
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_ARMY_XP  }
 	prerequisite = {focus = ANT_army_reform}
         
 	ai_will_do = { factor = 1 }
@@ -2431,11 +2592,11 @@ focus = {
 # add tech e/VIII and better arty, or give like uh 20k e/VIII in stockpile and 5k arty
 focus = {
 	id = ANT_equipment_needs
-	icon = GFX_goal_unknown
+	icon = GFX_goal_generic_axis_build_infantry
 	x = 33
 	y = 2
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_EQUIPMENT }
 	available = {
 		has_completed_focus = ANT_euskor_industry }
 	prerequisite = {focus = ANT_analyse_war_games}
@@ -2458,28 +2619,36 @@ focus = {
 # modify navy with shore bombardment bonus??
 focus = {
 	id = ANT_army_navy_coop
-	icon = GFX_goal_unknown
+	icon = GFX_focus_NORDIC_com_institution_2
 	x = 36
 	y = 1
 	cost = 5
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_army_reform}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-# +10% shore bombardment bonus
+		custom_effect_tooltip = ant_modify_imp_navy_by
+		add_to_variable = {
+		var = ANT_navy_invasion_cap_spirit
+		value = 1
+		tooltip = ant_nav_cap_prep_tt
+		}
+		add_to_variable = {
+			var = ANT_navy_invasion_prep_spirit
+			value = 0.1
+		}
 	}
 }
 
 # doctrine or xp?
 focus = {
 	id = ANT_army_navy_war_game
-	icon = GFX_goal_unknown
+	icon = GFX_SOV_naval_infantry_ccp_2d_sov_compatibility
 	x = 35
 	y = 2
 	cost = 5
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_analyse_war_games}
 	prerequisite = {focus = ANT_army_navy_coop}
         
@@ -2487,107 +2656,151 @@ focus = {
 	completion_reward = {
 		army_experience	= 15
 		navy_experience	= 10
+		custom_effect_tooltip = ant_modify_imp_navy_by
+		add_to_variable = {
+			var = ANT_navy_shore_spirit
+			value = 0.05
+			tooltip = ant_5_shore_boost_tt
+		}
 	}
 }
 
 # arty research bonus or more arty idk
 focus = {
 	id = ANT_rethink_arty_doctrine
-	icon = GFX_goal_unknown
+	icon = GFX_goal_generic_army_artillery
 	x = 31
 	y = 2
-	cost = 5
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 10
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_analyse_war_games}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-# +5% arty soft attack
+	custom_effect_tooltip = ant_modify_imp_army_by
+	add_to_variable = {
+		var = ANT_army_arty_atk_spirit
+		value = 0.1
+		tooltip = ant_10_art_boost_tt
+		}
 	}
 }
 
 # idk
 focus = {
 	id = ANT_learn_from_grease_war
-	icon = GFX_goal_unknown
+	icon = GFX_SOV_military_engineering_university_ccp_2d_sov_compatibility
 	x = 34
 	y = 3
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_army_navy_war_game}
 	prerequisite = {focus = ANT_equipment_needs}
 	available = {
 		or = {
 		has_global_flag = grease_wars_start
 		date > 1904.01.01	#incase grease war flag doesn't register or start or smt
-	}}
+	}
+	has_completed_focus = ANT_solve_coms_isssue
+	}
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+	swap_ideas = {
+		remove_idea = ANT_humiliation3
+		add_idea = ANT_humiliation4
+		}
 	}
 }
 
 # doctrine
 focus = {
 	id = ANT_reorganize_army
-	icon = GFX_goal_unknown
+	icon = GFX_focus_generic_army_doctrines_2
 	x = 30
 	y = 4
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_ARMY_XP }
 	prerequisite = {focus = ANT_learn_from_grease_war}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-# doctrine bonus, waiting for update in case code changes
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.3
+			uses = 3
+			category = land_doctrine
+		}
+		add_mastery = {
+ 			amount = 50
+			folder = land
+			track = infantry
+		}
+	custom_effect_tooltip = ant_modify_imp_army_by
+		add_to_variable = {
+			var = ANT_army_xp_spirit
+			value = 0.2
+			tooltip = ant_20_army_xp_gain_tt
+		}
+	custom_effect_tooltip = ant_3year_army_reform_plan_start_tt
+	unlock_decision_category_tooltip = ANT_army_reform_category
+	activate_mission_tooltip = ANT_reform_timer
 	}
 }
 
 # navy cotridren
 focus = {
 	id = ANT_navy_reform
-	icon = GFX_goal_unknown
+#	icon = GFX_goal_generic_navy_doctrines_tactics
+	icon = GFX_focus_ETH_an_ethiopian_navy_in_exile
 	x = 40
 	y = 5
 	cost = 5
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_NAVY_XP }
 	prerequisite = {focus = ANT_learn_from_grease_war}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
 		navy_experience = 30
-
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.75
+			uses = 1
+			category = naval_doctrine
+		}
+	custom_effect_tooltip = ant_modify_imp_navy_by
+		add_to_variable = {
+			var = ANT_navy_xp_spirit
+			value = 0.2
+			tooltip = ant_20_navy_xp_gain_tt
+		}
 	}
 }
 
 # idk
 focus = {
 	id = ANT_solve_coms_isssue
-	icon = GFX_goal_unknown
+	icon = GFX_goal_generic_cavalry
 	x = 38
 	y = 2
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 5
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_army_navy_coop}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-# + 5% initiative
+	swap_ideas = {
+		remove_idea = ANT_humiliation2
+		add_idea = ANT_humiliation3
+		}
 	}
 }
 
 # radio research bonus
 focus = {
 	id = ANT_radio_tech
-	icon = GFX_goal_unknown
+	icon = GFX_focus_generic_radio_communication
 	x = 38
 	y = 3
 	cost = 5
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_RESEARCH }
 	prerequisite = {focus = ANT_solve_coms_isssue}
         
 	ai_will_do = { factor = 1 }
@@ -2603,65 +2816,59 @@ focus = {
 # 
 focus = {
 	id = ANT_new_battleline_doctrine
-	icon = GFX_goal_unknown
+	icon = GFX_focus_generic_navy_battleship2
 	x = 38
 	y = 6
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_NAVY_XP}
 	prerequisite = {focus = ANT_navy_reform}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-# doctrine bonus
+	add_doctrine_cost_reduction = {
+		cost_reduction = 0.5
+		uses = 1
+		category = naval_doctrine
 	}
-}
-
-# x
-focus = {
-	id = ANT_need_for_more_ships
-	icon = GFX_goal_unknown
-	x = 39
-	y = 7
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_new_battleline_doctrine}
-        
-	ai_will_do = { factor = 1 }
-	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-# temp cost reduction
-	}
-}
-
-# x
-focus = {
-	id = ANT_better_designs
-	icon = GFX_goal_unknown
-	x = 37
-	y = 7
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_new_battleline_doctrine}
-        
-	ai_will_do = { factor = 1 }
-	completion_reward = {
-		add_tech_bonus = {
-		    bonus = 1
-		    uses = 2
-		    category = 	naval_equipment
+	# doctrine bonus
+	add_mastery = {
+		amount = 100
+		folder = navy
+		sub_doctrine = line_of_battle
+		track = capital_ships
 		}
 	}
 }
 
 # x
 focus = {
+	id = ANT_need_for_more_ships
+	icon = GFX_focus_generic_refit_civilian_ships
+	x = 39
+	y = 7
+	cost = 10
+	search_filters = { FOCUS_FILTER_EQUIPMENT }
+	prerequisite = {focus = ANT_new_battleline_doctrine}
+        
+	ai_will_do = { factor = 1 }
+	completion_reward = {
+	#	add_timed_idea = {
+	#		idea = ANT_bb_boost_idea
+	#		days = 720
+	#	}# temp cost reduction
+		add_ideas = ANT_bb_boost_idea
+	}
+}
+
+
+# x
+focus = {
 	id = ANT_rethink_screens
-	icon = GFX_goal_unknown
+	icon = GFX_goal_generic_navy_cruiser
 	x = 42
 	y = 6
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_RESEARCH }
 	prerequisite = {focus = ANT_navy_reform}
         
 	ai_will_do = { factor = 1 }
@@ -2677,674 +2884,1209 @@ focus = {
 # CL
 focus = {
 	id = ANT_torpedo_focus
-	icon = GFX_goal_unknown
+	icon = GFX_goal_generic_air_naval_bomber
 	x = 44
 	y = 07
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_rethink_screens}
-        mutually_exclusive = { focus = ANT_gun_focus }
+	mutually_exclusive = { focus = ANT_gun_focus }
 	ai_will_do = { factor = 1 }
+	
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 3
+			category = cat_torpedoes
+		}
+		custom_effect_tooltip = ant_modify_imp_navy_by
+		add_to_variable = { ANT_navy_torp_hit_spirit = 0.2 }
+#		custom_effect_tooltip = ant_modify_imp_army_by
+		custom_effect_tooltip = ant_20_torp_hit_chance_tt
 	}
 }
 
 # CL
 focus = {
 	id = ANT_gun_focus
-	icon = GFX_goal_unknown
+	icon = GFX_focus_generic_cruiser2
 	x = 42
 	y = 7
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_rethink_screens}
-        mutually_exclusive = { focus = ANT_torpedo_focus }
+	mutually_exclusive = { focus = ANT_torpedo_focus }
 	ai_will_do = { factor = 1 }
+	
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 3
+			category = naval_artillery
+		}
+		custom_effect_tooltip = ant_modify_imp_navy_by
+		add_to_variable = { ANT_navy_lg_hit_spirit = 0.2 }
+#		custom_effect_tooltip = ant_modify_imp_army_by
+		custom_effect_tooltip = ant_light_gun_20_hit_chance_tt
 	}
 }
 
 # x
 focus = {
 	id = ANT_more_destroyers
-	icon = GFX_goal_unknown
+	icon = GFX_focus_generic_destroyer
 	x = 46
 	y = 7
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_EQUIPMENT }
 	prerequisite = {focus = ANT_rethink_screens}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-# temp dd cost reduction
-	}
-}
-
-# x
-focus = {
-	id = ANT_torpedo_dd
-	icon = GFX_goal_unknown
-	x = 46
-	y = 8
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_more_destroyers}
-        
-	ai_will_do = { factor = 1 }
-	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+	#	add_timed_idea = {
+	#		idea = ANT_dd_boost_idea
+	#		days = 720
+	#	}# temp dd cost reduction
+		add_ideas = ANT_dd_boost_idea
 	}
 }
 
 # gains bonus for production of capitals if one focus is done, screens if the other is done and both if both are completed
 focus = {
 	id = ANT_increase_budget
-	icon = GFX_goal_unknown
+	icon = GFX_focus_SWE_italian_destroyers
 	x = 40
 	y = 8
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {
-      	  or = {focus = ANT_need_for_more_ships
-	focus = ANT_more_destroyers}
-        
+	search_filters = { FOCUS_FILTER_NAVY_XP }
+	prerequisite = { focus = ANT_need_for_more_ships focus = ANT_more_destroyers}
+	available = {not = {has_idea = ANT_paying_for_funding_idea}}
 	ai_will_do = { factor = 1 }
+	
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		navy_experience = 50
+		add_timed_idea = {
+			idea = ANT_paying_for_funding_idea
+			days = 140
+		}
+		add_timed_idea = {
+			idea = ANT_dockyard_boost_idea
+			days = 360
+		}# temp cost reduction
 	}
 }
 
 # x
 focus = {
 	id = ANT_xpand_mainland_dockyards
-	icon = GFX_goal_unknown
+	icon = GFX_SOV_expand_shipbuilding_plants_ccp_2d_sov_compatibility
 	x = 37
 	y = 9
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	prerequisite = {focus = ANT_increase_budget}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		186 = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+               		type = dockyard
+                	level = 1
+                	instant_build = yes
+            }
+		}
+		110 = {
+			add_extra_state_shared_building_slots = 1
+            		add_building_construction = {
+               			type = dockyard
+                		level = 1
+                		instant_build = yes
 
+            		}
+		}
+		103 = {
+			add_extra_state_shared_building_slots = 1
+            		add_building_construction = {
+               			type = dockyard
+                		level = 1
+                		instant_build = yes
+
+            		}
+		}
+		98 = {
+			add_extra_state_shared_building_slots = 1
+            	add_building_construction = {
+               		type = dockyard
+                	level = 1
+                	instant_build = yes
+            }
+		}
 	}
 }
 
-# x
-focus = {
-	id = ANT_new_dockyards
-	icon = GFX_goal_unknown
-	x = 41
-	y = 9
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_increase_budget}
-        
-	ai_will_do = { factor = 1 }
-	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
-	}
-}
-
-# x
-focus = {
-	id = ANT_island_dockyard
-	icon = GFX_goal_unknown
-	x = 39
-	y = 9
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_increase_budget}
-        
-	ai_will_do = { factor = 1 }
-	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
-	}
-}
 # gives more naval base and dockyard in northead
 focus = {
 	id = ANT_expand_northead
-	icon = GFX_goal_unknown
+	icon = GFX_focus_POL_develop_polish_shipbuilding
 	x = 37
 	y = 10
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	prerequisite = {focus = ANT_xpand_mainland_dockyards}
         mutually_exclusive = { focus = ANT_new_anticetus_base }
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-        108 = {
-            add_extra_state_shared_building_slots = 1
-            add_building_construction = {
-                type = dockyard
-                level = 1
-                instant_build = yes
-
-            }
-
-       add_building_construction = {
-            type = naval_base
-            level = 2
-            province = 3226
-            instant_build = yes 
-        }
-
-	}}
+	custom_effect_tooltip = northead_base_tt
+		108 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+            		}
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				province = 3226
+				instant_build = yes 
+			}
+		}
+	}
 }
 # add new naval base lvl 6 in devon 5429
 focus = {
 	id = ANT_new_anticetus_base
-	icon = GFX_goal_unknown
+	icon = GFX_goal_generic_navy_battleship
 	x = 35
 	y = 10
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	prerequisite = {focus = ANT_xpand_mainland_dockyards}
         mutually_exclusive = { focus = ANT_expand_northead }
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-        108 = {
-            add_extra_state_shared_building_slots = 1
-            add_building_construction = {
-                type = dockyard
-                level = 1
-                instant_build = yes
-
-            }
-       add_building_construction = {
-            type = naval_base
-            level = 5
-            province = 5429
-            instant_build = yes 
-        }
-
-	}}
-}
-# more dockyards and naval bases in pre-existing eastern ports
-focus = {
-	id = ANT_expand_eastern_bases
-	icon = GFX_goal_unknown
-	x = 39
-	y = 10
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_xpand_mainland_dockyards}
-	prerequisite = {focus = ANT_island_dockyard}
-        
-	ai_will_do = { factor = 1 }
-	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		custom_effect_tooltip = devon_base_tt
+		108 = {
+			add_extra_state_shared_building_slots = 1
+        		add_building_construction = {
+        			type = dockyard
+        			level = 1
+        			instant_build = yes
+	
+         		}
+			add_building_construction = {
+				type = naval_base
+				level = 5
+				province = 5429
+				instant_build = yes 
+        		}
+		}	
 	}
 }
-# gives building slots and dockyards in developed bases
-focus = {
-	id = ANT_develop_new_bases
-	icon = GFX_goal_unknown
-	x = 40
-	y = 11
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_new_ship_bases}
-	prerequisite = {focus = ANT_new_anticetus_base focus = ANT_expand_northead focus = ANT_expand_eastern_bases}
-        
-	ai_will_do = { factor = 1 }
-	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
 
-	}
-}
-# needs a bunch of ships, gives navy ask and def against cetus for 360 days
-focus = {
-	id = ANT_prepare_navy_war_cetus
-	icon = GFX_goal_unknown
-	x = 40
-	y = 12
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 
-	prerequisite = {focus = ANT_develop_new_bases}
-        
-	ai_will_do = { factor = 1 }
-	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
 
-	}
-}
-# 
-focus = {
-	id = ANT_new_cruisers
-	icon = GFX_goal_unknown
-	x = 43
-	y = 9
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_torpedo_focus focus = ANT_gun_focus}
-	prerequisite = {focus = ANT_increase_budget}
-        
-	ai_will_do = { factor = 1 }
-	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
-	}
-}
-focus = {
-	id = ANT_new_destroyers
-	icon = GFX_goal_unknown
-	x = 46
-	y =9
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_torpedo_dd}
-	prerequisite = {focus = ANT_increase_budget }
-        
-	ai_will_do = { factor = 1 }
-	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
-	}
-}
-focus = {
-	id = ANT_new_ship_bases
-	icon = GFX_goal_unknown
-	x = 41
-	y = 10
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_new_dockyards}
-
-        
-	ai_will_do = { factor = 1 }
-	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
-	}
-}
 #armyarmyarmyarmyarmyarmyarmyarmyaleexeilivesarmyarmyarmyarmyarmyarmyarmyarmyarmy
 
 # x
 focus = {
 	id = ANT_increase_procurement_funding
-	icon = GFX_goal_unknown
+	icon = GFX_focus_RAJ_special_economic_zones
 	x = 35
 	y = 5
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 5
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	prerequisite = {focus = ANT_reorganize_army}
-        
+        available = { NOT = {has_idea = ANT_paying_for_funding_idea}}
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+           	     add_timed_idea = {
+            	     	idea = ANT_paying_for_funding_idea
+            	     	days = 140
+		}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		add_tech_bonus = {
+		    bonus = 0.5
+		    uses = 2
+		    category = infantry_weapons
+		}
+           	     add_timed_idea = {
+            	     	idea = ANT_production_boost_idea
+            	     	days = 140
+		}
 	}
 }
 # add arty mio
 focus = {
 	id = ANT_expand_rheinmettall
-	icon = GFX_goal_unknown
+	icon = GFX_goal_generic_construct_mil_factory
 	x = 34
 	y = 6
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 5
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	prerequisite = {focus = ANT_increase_procurement_funding}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		mio:ANT_rheinmetall_organization = {
+			add_mio_size = 1
+			add_mio_funds_gain_factor = 0.25
+			add_mio_research_bonus = 0.05		
+		}
 	}
 }
 # upgrade inf mio
 focus = {
 	id = ANT_expand_mauser
-	icon = GFX_goal_unknown
+	icon = GFX_focus_generic_reorient_production
 	x = 36
 	y = 6
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 5
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EQUIPMENT }
 	prerequisite = {focus = ANT_increase_procurement_funding}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		mio:ANT_mauser_organization = {
+			add_mio_size = 1
+			add_mio_funds_gain_factor = 0.25
+			add_mio_research_bonus = 0.05		
+		}
+		add_ideas = ANT_infeq_boost_idea
 
 	}
 }
 # inf production bonus + mils
 focus = {
 	id = ANT_mass_production_eviii
-	icon = GFX_goal_unknown
+	icon = GFX_goal_generic_small_arms
 	x = 35
 	y = 7
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 5
+	search_filters = { FOCUS_FILTER_EQUIPMENT }
 	prerequisite = {focus = ANT_expand_mauser}
-        
+        available = { has_tech = infantry_weapons1 }
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		custom_effect_tooltip = ant_20k_guns_tt
+		add_equipment_to_stockpile = {
+		    type = infantry_equipment_1
+		    amount = 20000
+		    producer = ANT
+		}
+		mio:ANT_mauser_organization = {
+			add_mio_funds = 1000
+		}
 
 	}
 }
 # arty tech bonus
 focus = {
 	id = ANT_new_artillery
-	icon = GFX_goal_unknown
+	icon = GFX_focus_PER_construct_air_defenses
 	x = 33
 	y = 7
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 4
+	search_filters = { FOCUS_FILTER_RESEARCH }
 	prerequisite = {focus = ANT_expand_rheinmettall}
 	prerequisite = {focus = ANT_new_arty_tactics}
+#        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		add_tech_bonus = {
+		    bonus = 0.5
+		    ahead_reduction = 1
+		    uses = 2
+		    category = artillery
+		}
+#		custom_effect_tooltip = ANT_space_tt
 
+		mio:ANT_rheinmetall_organization = {
+			add_mio_research_bonus = 0.1		
+		}
 	}
 }
 # arty production bonus + mil
 focus = {
 	id = ANT_more_artillery
-	icon = GFX_goal_unknown
+	icon = GFX_goal_generic_production
 	x = 33
 	y = 8
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 4
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EQUIPMENT }
 	prerequisite = {focus = ANT_expand_rheinmettall}
+#        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		mio:ANT_rheinmetall_organization = {
+			add_mio_funds = 1000	
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_ideas = ANT_arty_boost_idea
 
 	}
 }
 # x
 focus = {
 	id = ANT_new_inf_doctrine
-	icon = GFX_goal_unknown
+	icon = GFX_goal_generic_allies_build_infantry
 	x = 24
 	y = 6
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 5
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_reorganize_army}
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
+
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_mastery = {
+		    amount = 100
+		    folder = land
+		    track = infantry
+		}
+		add_to_variable = { ANT_army_int_def_spirit = -0.1}
+		add_to_variable = { ANT_army_inf_atk_spirit = 0.05}
+		custom_effect_tooltip = ant_modify_imp_army_by
+		custom_effect_tooltip = ant_5_less_def_5_more_attack_infantry_tt
 	}
 }
 # x
 focus = {
 	id = ANT_mg_tactocs
-	icon = GFX_goal_unknown
+	icon = GFX_goal_fortify_the_westwall
 	x = 25
 	y = 7
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 4
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF FOCUS_FILTER_RESEARCH }
 	prerequisite = {focus = ANT_new_inf_doctrine}
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
+
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_to_variable = { ANT_army_inf_def_spirit = 0.05}
+		custom_effect_tooltip = ant_modify_imp_army_by
+		custom_effect_tooltip = ant_5_def_infantry_tt
+		add_tech_bonus = {
+		    bonus = 0.75
+		    uses = 2
+		    technology = support_weapons 
+			technology = support_weapons2 
+			technology = support_weapons3 
+			technology = support_weapons4 
+		}
 	}
 }
 # x
 focus = {
 	id = ANT_defensive_tactics
-	icon = GFX_goal_unknown
+	icon = GFX_goal_generic_defence
 	x = 25
 	y = 8
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 4
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_mg_tactocs}
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
+
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_to_variable = { ANT_army_defence_spirit = 0.05}
+		add_to_variable = { ANT_army_entrench_spirit = 10}
+		custom_effect_tooltip = ant_modify_imp_army_by
+		custom_effect_tooltip = ant_5_def_infantry_10_entrenchment_tt
+		add_mastery = {
+		    amount = 50
+		    folder = land
+		    track = infantry
+		}
 	}
 }
 # x
 focus = {
 	id = ANT_new_division
-	icon = GFX_goal_unknown
+	icon = GFX_goal_generic_build_tank
 	x = 23
 	y = 7
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 4
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_new_inf_doctrine}
-        
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		add_to_variable = { ANT_army_org_spirit = 0.05}
+		custom_effect_tooltip = ant_modify_imp_army_by
+		custom_effect_tooltip = ant_5_org_army_tt
+		custom_effect_tooltip = ant_new_inf_template_improve_use_focus_tt
 
+	if = { 
+		limit = { 
+			has_completed_focus = ANT_more_armoured_car
+		}
+		division_template = {
+			name = "New Infantry Division"
+			is_locked = yes
+#			division_cap = 6
+			division_names_group = ANT_INF_01
+			priority = 2
+			regiments = {
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3}
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				infantry = { x = 2 y = 3}
+				infantry = { x = 3 y = 0 }
+				infantry = { x = 3 y = 1 }
+				infantry = { x = 3 y = 2 }
+				infantry = { x = 3 y = 3}
+
+				armored_car = { x = 4 y = 0 }	#later replace with tanks
+
+
+				artillery_brigade = { x = 0 y = 0}
+				artillery_brigade = { x = 0 y = 1}
+				artillery_brigade = { x = 0 y = 2}
+
+			}
+	
+			support = {
+				engineer = { x = 0 y = 0 }
+				artillery = {x = 0 y = 1}
+				recon = {x = 0 y = 2}
+#				field_hospital = {x = 0 y = 4}
+				logistics_company = {x = 0 y = 3}
+		
+			}
+		}
+	}
+	else = {
+		division_template = {
+			name = "New Infantry Division"
+			is_locked = yes
+#			division_cap = 6
+			division_names_group = ANT_INF_01
+			priority = 2
+			regiments = {
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3}
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				infantry = { x = 2 y = 3}
+				infantry = { x = 3 y = 0 }
+				infantry = { x = 3 y = 1 }
+				infantry = { x = 3 y = 2 }
+				infantry = { x = 3 y = 3}
+
+
+				artillery_brigade = { x = 0 y = 0}
+				artillery_brigade = { x = 0 y = 1}
+				artillery_brigade = { x = 0 y = 2}
+
+			}
+	
+			support = {
+				engineer = { x = 0 y = 0 }
+				artillery = {x = 0 y = 1}
+				recon = {x = 0 y = 2}
+#				field_hospital = {x = 0 y = 4}
+				logistics_company = {x = 0 y = 3}
+		
+			}
+		}
+	}
+	
 	}
 }
 # x
 focus = {
 	id = ANT_regimental_reorganization
-	icon = GFX_goal_unknown
+	icon = GFX_focus_generic_full_social_mobilization
 	x = 23
 	y = 8
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 4
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_EQUIPMENT}
 	prerequisite = {focus = ANT_new_division}
-        
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		set_division_template_lock = {
+		    division_template = "New Infantry Division"
+#			division_template = "test"
+		    is_locked = no
+		}
+#	custom_effect_tooltip = ANT_new_divisons_tt	#no work D: < i wont touch this,-firery
 
+	add_timed_idea = {
+		idea = ANT_training_boost_idea
+		days = 360
+	}
+#	custom_effect_tooltip = "Spawns in 6 divisions of the new template"
+#	hidden_effect = {
+		186 = {
+			create_unit = { division = "name = \"CXXXIII. Guards Infantry Division\" division_template = \"New Infantry Division\" start_experience_factor = 0.4"  owner = ANT }
+		}
+		104 = {
+			create_unit = { division = "name = \"CXLII. Ara-Guards Infantry Division\" division_template = \"New Infantry Division\" start_experience_factor = 0.3"  owner = ANT }
+		}
+		110 = {
+			create_unit = { division = "name = \"CXL. Skorpius Infantry Division\" division_template = \"New Infantry Division\" start_experience_factor = 0.3"  owner = ANT }
+		}
+		109 = {
+			create_unit = { division = "name = \"CXLI. Skorpius Infantry Division\" division_template = \"New Infantry Division\" start_experience_factor = 0.3"  owner = ANT }
+		}
+		107 = {
+			create_unit = { division = "name = \"CXLVI. Lupus Infantry Division\" division_template = \"New Infantry Division\" start_experience_factor = 0.3"  owner = ANT }
+		}
+		101 = {
+			create_unit = { division = "name = \"CXLIV. Norma Infantry Division\" division_template = \"New Infantry Division\" start_experience_factor = 0.3"  owner = ANT }
+		}
+#	}
 	}
 }
 # x
 focus = {
 	id = ANT_arty_cordination
-	icon = GFX_goal_unknown
+	icon = GFX_goal_generic_army_artillery2
 	x = 21
 	y = 8
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 5
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF  }
 	prerequisite = {focus = ANT_new_division}
-        
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_to_variable = { 
+			var = ANT_army_org_spirit 
+			value = 0.05 
+		}
+		add_to_variable = { ANT_army_arty_atk_spirit = 0.05 }
+		add_to_variable = { ANT_army_inf_def_spirit = -0.05 }
+		custom_effect_tooltip = ant_modify_imp_army_by
+		custom_effect_tooltip = ant_5_org_5_art_attack_5_less_inf_defence_tt
 	}
 }
 # x
 focus = {
 	id = ANT_queen_of_battle
-	icon = GFX_goal_unknown
+	icon = GFX_focus_generic_manpower
 	x = 24
 	y = 9
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 5
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF FOCUS_FILTER_MANPOWER}
 	prerequisite = {focus = ANT_regimental_reorganization}
 	prerequisite = {focus = ANT_defensive_tactics}
-        
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
+#        mutually_exclusive = { focus = ANT_modern_cavalry }        
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		custom_effect_tooltip = ant_modify_imp_army_by
+		custom_effect_tooltip = ant_5_inf_attack_5_less_cav_attack_5_recpop_factor_tt
+		add_to_variable = {
+			var = ANT_army_cav_atk_spirit
+			value = -0.05
+		}
+		add_to_variable = {
+			var = ANT_army_inf_atk_spirit
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ANT_army_pop_spirit
+			value = 0.05
+		}
 	}
 }
 # x
 focus = {
 	id = ANT_cavalry_analysis
-	icon = GFX_goal_unknown
+	icon = GFX_goal_generic_cavalry
 	x = 28
 	y = 6
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 5
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_reorganize_army}
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
+
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		army_experience = 25
+		add_to_variable = { ANT_army_cav_def_spirit = -0.05}
+		custom_effect_tooltip = ant_modify_imp_army_by
+		add_to_variable = {
+			var = ANT_army_cav_atk_spirit
+			value = 0.05
+			tooltip = ant_cav_5_attack_5_less_def_tt
+		}
 
 	}
 }
 # x
 focus = {
 	id = ANT_new_cav_tech
-	icon = GFX_goal_unknown
+	icon = GFX_focus_generic_truck
 	x = 27
 	y = 7
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
-	prerequisite = {focus = ANT_cavalry_analysis}
-        
+	cost = 4
+	search_filters = { FOCUS_FILTER_RESEARCH }
+	prerequisite = { focus = ANT_cavalry_analysis }
+	available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
+
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			ahead_reduction = 1
+			technology = motorised_infantry
+#			technology = mechanised_infantry
+		}
 	}
 }
 # x
 focus = {
 	id = ANT_motorized_cavalry
-	icon = GFX_goal_unknown
+	icon = GFX_goal_generic_army_motorized
 	x = 27
 	y = 8
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 4
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_EQUIPMENT }
 	prerequisite = {focus = ANT_new_cav_tech}
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
+
         mutually_exclusive = { focus = ANT_horse_supremacy }
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+	custom_effect_tooltip = ant_new_semi_motorised_div_improve_use_focus_tt
+	if = { 
+		limit = { 
+			has_completed_focus = ANT_more_armoured_car
+		}
+		division_template = {
+			name = "Motorised Kavalry Division"
+#			is_locked = yes
+#			division_cap = 6
+			division_names_group = ANT_MEC_01
+			priority = 2
+			template_counter = 5
+			regiments = {
+				cavalry = { x = 1 y = 0 }
+				cavalry = { x = 1 y = 1 }
+				cavalry = { x = 1 y = 2 }
+				motorized = { x = 2 y = 0 }
+				motorized = { x = 2 y = 1 }
+				motorized = { x = 2 y = 2 }
+				armored_car = { x = 3 y = 0 }
+				armored_car = { x = 3 y = 1 }
+				armored_car = { x = 3 y = 2 }
 
+				mot_artillery_brigade = { x = 0 y = 0}
+				mot_artillery_brigade = { x = 0 y = 1}
+
+			}
+	
+			support = {
+				engineer = { x = 0 y = 0 }
+				artillery = {x = 0 y = 1}
+				mot_recon = {x = 0 y = 2}
+#				field_hospital = {x = 0 y = 4}
+				logistics_company = {x = 0 y = 3}
+		
+			}
+		}
+	}
+	else = { 
+
+		division_template = {
+			name = "Motorised Kavalry Division"
+#			is_locked = yes
+#			division_cap = 6
+			division_names_group = ANT_MEC_01
+			priority = 2
+			template_counter = 5
+			regiments = {
+				cavalry = { x = 1 y = 0 }
+				cavalry = { x = 1 y = 1 }
+				cavalry = { x = 1 y = 2 }
+				motorized = { x = 2 y = 0 }
+				motorized = { x = 2 y = 1 }
+				motorized = { x = 2 y = 2 }
+				motorized = { x = 3 y = 0 }
+				motorized = { x = 3 y = 1 }
+				motorized = { x = 3 y = 2 }
+
+				mot_artillery_brigade = { x = 0 y = 0}
+				mot_artillery_brigade = { x = 0 y = 1}
+
+			}
+	
+			support = {
+				engineer = { x = 0 y = 0 }
+				artillery = {x = 0 y = 1}
+				mot_recon = {x = 0 y = 2}
+#				field_hospital = {x = 0 y = 4}
+				logistics_company = {x = 0 y = 3}
+		
+			}
+		}
+	}
+		186 = {
+			create_unit = { division = "name = \"Ananteria Motorised Guard-Huzzar Division XXIV\" division_template = \"Motorised Kavalry Division\" start_experience_factor = 0.4"  owner = ANT }
+		}
+		104 = {
+			create_unit = { division = "name = \"XXIII. Motorised Kavalry Division\" division_template = \"Motorised Kavalry Division\" start_experience_factor = 0.3"  owner = ANT }
+		}
+		110 = {
+			create_unit = { division = "name = \"XXII. Motorised Kavalry Special Force\" division_template = \"Motorised Kavalry Division\" start_experience_factor = 0.3"  owner = ANT }
+		}
+
+		
 	}
 }
 # x
 focus = {
 	id = ANT_breakthrough_exploitation
-	icon = GFX_goal_unknown
+	icon = GFX_focus_POL_belarus_army
 	x = 29
 	y = 7
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 4
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_cavalry_analysis}
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
+
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.25
+			uses = 1
+			category = land_doctrine
+		}
+		add_to_variable = {
+			ANT_army_mot_atk_spirit = 0.05
+		}
+		add_to_variable = {
+			ANT_army_spd_spirit = 0.05
+		}
+		custom_effect_tooltip = ant_modify_imp_army_by
+		add_to_variable = {
+			var = ANT_army_cav_atk_spirit
+			value = 0.05
+			tooltip = ant_5_mot_cav_attack_5_army_speed_tt
+		}	
 	}
 }
 # x
 focus = {
 	id = ANT_horse_supremacy
-	icon = GFX_goal_unknown
+	icon = GFX_focus_generic_horse_studs
 	x = 29
 	y = 8
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 4
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_breakthrough_exploitation}
         mutually_exclusive = { focus = ANT_motorized_cavalry }
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
+
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+add_mastery = {
+    amount = 300
+    # FILTERS:
+    folder = land
+#    grand_doctrine = mobile_warfare
+    sub_doctrine = mounted_infantry
+#    track = infantry
+    index = 1
+}
+		add_to_variable = {
+			ANT_army_mot_atk_spirit = -0.1
+		}
+#		add_to_variable = {
+#			ANT_army_inf_atk_spirit = -0.05
+#		}
+		custom_effect_tooltip = ant_modify_imp_army_by
+		add_to_variable = {
+			var = ANT_army_cav_atk_spirit
+			value = 0.1
+			tooltip = ant_mot_attack_less_10_cav_attack_10
+		}
 
 	}
 }
 # x
 focus = {
 	id = ANT_modern_cavalry
-	icon = GFX_goal_unknown
+	icon = GFX_focus_BEL_the_french_horse_and_the_red_rider
 	x = 28
 	y = 9
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 5
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF FOCUS_FILTER_ARMY_XP }
 	prerequisite = {focus = ANT_motorized_cavalry focus = ANT_horse_supremacy}
-        
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
+
+#        mutually_exclusive = { focus = ANT_queen_of_battle }
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+army_experience = 25
+		add_to_variable = {
+			ANT_army_mot_atk_spirit = 0.05
+		}
+		add_to_variable = {
+			ANT_army_inf_def_spirit = -0.05
+		}
+		custom_effect_tooltip = ant_modify_imp_army_by
+		add_to_variable = {
+			var = ANT_army_cav_atk_spirit
+			value = 0.1
+			tooltip = ant_5_mot_attack_5_less_inf_def_10_cav_attack_tt
+		}
 	}
 }
 # x
 focus = {
 	id = ANT_new_arty_tactics
-	icon = GFX_goal_unknown
+	icon = GFX_goal_generic_army_artillery2
 	x = 32
 	y = 6
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 5
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_reorganize_army}
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
+
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_mastery = {
+			amount = 100
+			folder = land
+			track = combat_support
+		}
+		custom_effect_tooltip = ant_modify_imp_army_by
+		custom_effect_tooltip = ant_5_art_attack_tt
+		add_to_variable = {
+			var = ANT_army_arty_atk_spirit
+			value = 0.05
+		}
 	}
 }
 # x
 focus = {
 	id = ANT_artillery_barrage
-	icon = GFX_goal_unknown
+	icon = GFX_focus_SWE_let_fly_all_guns
 	x = 31
 	y = 7
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 4
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF FOCUS_FILTER_RESEARCH }
 	prerequisite = {focus = ANT_new_arty_tactics}
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
+
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_to_variable = { ANT_army_arty_atk_spirit = 0.05}
+		custom_effect_tooltip = ant_modify_imp_army_by
+		custom_effect_tooltip = ant_5_art_attack_tt
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			technology = tech_recon
+			technology = tech_recon2
+			technology = tech_recon3
+			technology = tech_recon4
+		}
 	}
 }
 # x
 focus = {
 	id = ANT_long_range_arty
-	icon = GFX_goal_unknown
+	icon = GFX_focus_generic_anti_tank_guns
 	x = 31
 	y = 8
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 4
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_artillery_barrage}
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
+
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_to_variable = { ANT_army_arty_def_spirit = 0.1}
+		custom_effect_tooltip = ant_modify_imp_army_by
+		custom_effect_tooltip = ant_10_art_def_tt
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			technology = artillery2
+			technology = artillery3
+			technology = artillery4
+			technology = artillery5
+		}
 	}
 }
 # x
 focus = {
 	id = ANT_superior_firepower
-	icon = GFX_goal_unknown
+	icon = GFX_focus_RAJ_mountain_guns
 	x = 32
 	y = 9
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 5
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_long_range_arty}
 	prerequisite = {focus = ANT_more_artillery}
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
+
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_mastery = {
+			amount = 100
+			folder = land
+			track = combat_support
+		}
+		add_tech_bonus = {
+			bonus = 0.4
+			uses = 2
+			technology = artillery2
+			technology = artillery3
+			technology = artillery4
+			technology = artillery5
+		}
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
 	}
 }
+focus = {
+	id = ANT_armoured_car
+	icon = GFX_focus_SWE_lynx_armored_car
+	x = 26
+	y = 5
+	cost = 4
+	search_filters = { FOCUS_FILTER_RESEARCH }
+	prerequisite = {focus = ANT_reorganize_army}
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
+
+        
+	ai_will_do = { factor = 1 }
+	completion_reward = {
+add_tech_bonus = {
+    bonus = 0.75
+    uses = 1
+    technology = armored_car1
+    technology = armored_car2
+    technology = armored_car3
+}
+	}
+}
+focus = {
+	id = ANT_more_armoured_car
+	icon = GFX_focus_CHL_domestic_production_of_the_willys_mb
+	x = 26
+	y = 6
+	cost = 4
+	search_filters = { FOCUS_FILTER_EQUIPMENT }
+	prerequisite = {focus = ANT_armoured_car}
+#	prerequisite = {focus = ANT_increase_procurement_funding}
+        available = {  has_tech = armored_car1 }
+        available = {  has_completed_focus = ANT_increase_procurement_funding }
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
 
 
+        
+	ai_will_do = { factor = 1 }
+	completion_reward = {
+		custom_effect_tooltip = ant_800_armored_car_tt
+		add_equipment_to_stockpile = {
+			type = gw_armored_car_equipment
+			amount = 800
+			producer = ANT
+		}
+	}
+}
+focus = {
+	id = ANT_experimental_tank
+	icon = GFX_focus_NORDIC_com_research
+	x = 26
+	y = 9
+	cost = 5
+	search_filters = { FOCUS_FILTER_RESEARCH }
+	prerequisite = {focus =  ANT_more_armoured_car focus =  ANT_new_cav_tech}
+        available = {  has_completed_focus = ANT_increase_procurement_funding }
+        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
+
+
+        
+	ai_will_do = { factor = 1 }
+	completion_reward = {
+add_tech_bonus = {
+    bonus = 0.75
+#   ahead_reduction = 1
+    uses = 2
+    technology = gwtank_chassis
+
+}
+	}
+}
+# E1911 tank
+focus = {
+	id = ANT_build_tank
+	icon = GFX_goal_generic_production2
+	x = 26
+	y = 10
+	cost = 5
+	search_filters = { FOCUS_FILTER_EQUIPMENT }
+	prerequisite = { focus =  ANT_experimental_tank}
+        available = {  has_tech = gwtank_chassis }
+
+        
+	ai_will_do = { factor = 1 }
+	completion_reward = {
+		create_equipment_variant = {
+			name = "Tank, E/1911"
+			type = light_tank_chassis_0
+#			parent_version = 1
+			modules = {
+				main_armament_slot = tank_heavy_machine_gun
+				turret_type_slot = tank_light_fixed_superstructure_turret
+#				suspension_type_slot =
+#				armor_type_slot =
+#				engine_type_slot =
+				special_type_slot_1 = additional_machine_guns
+				special_type_slot_2 = additional_machine_guns
+#				special_type_slot_3 = additional_machine_guns
+
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 4
+				tank_nsb_armor_upgrade = 3
+			}
+			icon = "GFX_ENG_basic_light_tank_medium"
+			model = ENG_MKIV_light_tank_entity
+#			design_team = mio:ENG_vauxhall_organization
+		}
+		custom_effect_tooltip = ant_400_female_tank_tt
+		add_equipment_to_stockpile = {
+			type = light_tank_chassis_0
+			amount = 400
+			variant_name = "E/1911"
+		}
+	}
+
+}
+# E1912 tank (the one that looks like german A7V)
+focus = {
+	id = ANT_improved_tank
+	icon = GFX_focus_NZL_bob_semple_tank
+	x = 26
+	y = 11
+	cost = 5
+	search_filters = { FOCUS_FILTER_EQUIPMENT }
+	prerequisite = { focus =  ANT_build_tank}
+
+        
+	ai_will_do = { factor = 1 }
+	completion_reward = {
+		create_equipment_variant = {
+			name = "Tank, E/1912"
+			type = medium_tank_chassis_0
+#			parent_version = 1
+			modules = {
+				main_armament_slot = tank_small_cannon_2
+				turret_type_slot = tank_medium_fixed_superstructure_turret
+#				suspension_type_slot =
+#				armor_type_slot =
+#				engine_type_slot =
+				special_type_slot_1 = secondary_turret_hmg
+				special_type_slot_2 = additional_machine_guns
+				special_type_slot_3 = additional_machine_guns
+	
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 4
+				tank_nsb_armor_upgrade = 3
+			}
+			icon = "GFX_ENG_basic_light_tank_medium"
+			model = ENG_MKIV_light_tank_entity
+#			design_team = mio:ENG_vauxhall_organization
+		}
+		custom_effect_tooltip = ant_800_male_tank_tt
+		add_equipment_to_stockpile = {
+			type = medium_tank_chassis_0
+			amount = 800
+			variant_name = "E/1912"
+		}
+	}
+}
 
 
 
@@ -3358,41 +4100,103 @@ custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
 # x
 focus = {
 	id = ANT_finish_army_reform
-	icon = GFX_goal_unknown
+	icon = GFX_focus_chi_army_reform
 	x = 30
 	y = 10
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 5
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_superior_firepower focus = ANT_modern_cavalry focus = ANT_queen_of_battle}
 
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
+		army_experience = 50
+		air_experience = 5
+		add_mastery = {
+			amount = 100
+			folder = land
+			track = operations
+		}
+		
+		add_to_variable = { ANT_army_org_spirit = 0.1 }
+		add_to_variable = { ANT_army_morale_spirit = 0.1 }
+#		add_to_variable = { ANT_army_plan_spirit = 0.3 }
+		custom_effect_tooltip = ant_modify_imp_army_by
+		custom_effect_tooltip = ant_10_org_10_div_recovery_tt
 
+	#		add_to_variable = {
+	#			var = ANT_army_atk_spirit
+	#			value = 0.025
+	#			tooltip = "This will modify Antares Imperial Army with +2.5% army attack and defence" < please tell me if you wanna readd this, so i can do the loc - firery
+	#		}
+	#		add_to_variable = {
+	#			var = ANT_army_def_spirit
+	#			value = 0.025
+	#		}
 	}
 }
-
-
-# needs a bunch of manpower in field, givesarmy ask and def against cetus for 360 days
 focus = {
 	id = ANT_prepare_army_war_cetus
-	icon = GFX_goal_unknown
+	icon = GFX_SOV_the_means_to_wage_war_ccp_2d_sov_compatibility
 	x = 30
 	y = 12
 	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MILITARY_BUFF FOCUS_FILTER_EQUIPMENT }
 #	prerequisite = {focus = ANT_expand_northead focus = ANT_new_anticetus_base}
 	prerequisite = {focus = ANT_finish_army_reform}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-custom_effect_tooltip="PLACEHOLDER, DOES NOTHING"
-
+		add_war_support = 0.05
+		add_timed_idea = {
+			idea = ANT_production_boost_idea
+			days = 180
+		}
+		add_timed_idea = {
+			idea = ANT_small_combat_boost_idea
+			days = 360
+		}
 	}
 }
 
-#TEEMPORARYRRYRYRYYRYRYRYRYRYRYRYRYRYRRY##################################################################################################################################################################
+# Prepare for war with Cetus
+focus = {
+	id = ANT_prepare_for_war_with_cetus
+	icon = GFX_goal_generic_major_war
+	x = 7
+	y = 15
+	cost = 10
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT}
+	ai_will_do = { factor = 99 }
+	prerequisite = {focus = ANT_prepare_war_industry}
+	prerequisite = {focus = ANT_authoritarian5}
+	prerequisite = {focus = ANT_help_corvus}
+	prerequisite = {
+	#	focus = ANT_prepare_army_war_cetus
+	#	focus = ANT_prepare_navy_war_cetus
+	#	focus = ANT_im_not_doing_all_those_focuses
+	}
+	will_lead_to_war_with = CET
+    available = {
+		NOT = { has_idea = ANT_humiliation1 has_idea = ANT_humiliation2 has_idea = ANT_humiliation3 }
+		OR = {
+		CET = {has_war_with = COV}
+		date > 1911.1.1
+		has_army_manpower = { size > 3000000 }
+		}
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = ANT_humiliation4
+			add_idea = ANT_humiliation4b
+		}	
+	}
+}
+
+# needs a bunch of manpower in field, givesarmy ask and def against cetus for 360 days
+
+
+#TEEMPORARYRRYRYRYYRYRYRYRYRYRYRYRYRYRRY################################################################################################################################################################## not anymore
 # Intervene in the SCW
 focus = {
 	id = ANT_warcetus
@@ -3403,25 +4207,38 @@ focus = {
 	search_filters = { FOCUS_FILTER_ANNEXATION  }
 	ai_will_do = { factor = 10 }
 	bypass = {
-	AND = {
-		COV = { has_war_with = CET }
-		COV = { is_in_faction_with = ANT }
+	OR = {
+		ANT = { has_war_with = CET }
+		CET = { is_puppet_of = ANT }
+#		is_in_faction_with = CET	backstab OK
+		NOT = { country_exists = CET }
 		}
 	}
 
-#	available = {
-#         has_completed_focus = ANT_prepare_for_war_with_cetus }
-	 prerequisite = {focus = ANT_prepare_for_war_with_cetus}
+	available = {
+#       	has_completed_focus = ANT_prepare_for_war_with_cetus 
+	}
+	prerequisite = {focus = ANT_prepare_for_war_with_cetus}
 
     	will_lead_to_war_with = CET
 	completion_reward = {
+		SKO = {
+			remove_state_claim = 94
+			add_state_core = 94
+		}
+		declare_war_on = {
+ 			target = CET
+			type = take_state_focus
+			generator = { 43 7 46 45 94 41 44 42 39 40 47 49 }
 
-create_wargoal = {
-					type = annex_everything
-					generator = {43}
-					target = CET
-					expire = 0
-				}
+		}
+	
+
+#		create_wargoal = {
+#			type = take_state_focus
+#			target = CET
+#			generator = { 43 7 46 45 94 41 44 42 39 40 47 49 }
+#		}
 
 	}
 }
@@ -3429,37 +4246,47 @@ create_wargoal = {
 focus = {
 	id = ANT_skorpiivus
 	icon = GFX_focus_COV_the_confederation
-	x = 15
+	x = 16
 	y = 19
 	cost = 10
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	prerequisite = {focus = ANT_warcetus}
         mutually_exclusive = { focus = ANT_corvbad }
-
-	ai_will_do = { factor = 0 }
+	available = {
+		COV = {
+			is_free_or_subject_of_root = yes
+			has_completed_focus = COV_request_antarean_intervention
+		}
+	}
+	ai_will_do = { 
+		factor = 100
+	}
+	bypass = { COV = { is_puppet_of = ANT } }
 	completion_reward = {
-puppet = COV
+		puppet = COV
 
 	}
 }
 # corvus got too much war score >:(
 focus = {
 	id = ANT_corvbad
-	icon = GFX_goal_generic_major_war
-	x = 11
+	icon = GFX_focus_generic_attack_corvus
+	x = 14
 	y = 19
 	cost = 10
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	prerequisite = {focus = ANT_warcetus}
         mutually_exclusive = { focus = ANT_skorpiivus }
-
-	ai_will_do = { factor = 100 }
+	bypass = { COV = {is_puppet_of = ANT} }
+	ai_will_do = { 
+		factor = 1
+	}
 will_lead_to_war_with = COV
 
 	completion_reward = {
 declare_war_on = {
     target = COV
-    type = puppet
+    type = puppet_wargoal_focus
 }
 
 	}
@@ -3467,19 +4294,31 @@ declare_war_on = {
 # burn forest hahahahah
 focus = {
     id = ANT_waraquila
-    icon = GFX_focus_generic_aquila
+    icon = GFX_focus_generic_attack_aquila
     x = 13
     y = 21
     cost = 10
-    search_filters = { FOCUS_FILTER_ANNEXATION }
+    search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_BUFF}
     prerequisite = { focus = ANT_warcetus }
     available = {
        NOT = { has_war_with = CET }
     }
+	bypass = {
+	OR = {
+		ANT = { has_war_with = AQU }
+		AQU = { is_puppet_of = ANT }
+#		is_in_faction_with = CET	backstab OK
+		NOT = { country_exists = AQU }
+		}
+	}
     ai_will_do = { factor = 10 }
     will_lead_to_war_with = AQU
 
     completion_reward = {
+	swap_ideas = {
+ 	   remove_idea = ANT_humiliation4b
+  	   add_idea = ANT_humiliation5
+}
 	LUP = {
 		remove_state_claim = 35
 		remove_state_claim = 31
@@ -3490,16 +4329,22 @@ focus = {
             target = AQU
             type = annex_everything
 }}}
+
+
+		
+
+		
 # Break the Ring of Fire
 focus = {
 	id = ANT_fortress_busting
-	icon = GFX_goal_unknown
+	icon = GFX_goal_generic_major_war
 	x =  12
 	y = 22
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 5
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_waraquila}
 	mutually_exclusive = { focus = ANT_ }
+	available = { has_war_with = AQU }
 	ai_will_do = { factor = 20  } #CHANGE THIS TO FACTOR = 1#################
 	completion_reward = {
 		add_timed_idea = {
@@ -3511,75 +4356,39 @@ focus = {
 # the scorch
 focus = {
 	id = ANT_scorch
-	icon = GFX_goal_unknown
+	icon = GFX_focus_generic_total_war
 	x = 14
 	y = 22
-	cost = 10
-	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 5
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_waraquila}
 	mutually_exclusive = { focus = ANT_ }
+	available = { has_war_with = AQU }
 	ai_will_do = { factor = 10  } #CHANGE THIS TO FACTOR = 1#################
 	completion_reward = {
-		34 = {
-				add_dynamic_modifier = {
-					modifier = ANT_scorched_state
-#					scope = ITA
-					days = 720
-				}
+		every_owned_state = {
+			limit = { or = { state = 9 state = 36 state = 35 state = 37 state = 38 state = 156 } }
+			add_extra_state_shared_building_slots = -1
+			damage_building = {
+				type = infrastructure
+				damage = 5
 			}
-		35 = {
-				add_dynamic_modifier = {
-					modifier = ANT_scorched_state
-#					scope = ITA
-					days = 720
-				}
+			add_dynamic_modifier = {
+				modifier = ANT_scorched_state
+				days = 720
 			}
-		36 = {
-				add_dynamic_modifier = {
-					modifier = ANT_scorched_state
-#					scope = ITA
-					days = 720
-				}
-			}
-		37 = {
-				add_dynamic_modifier = {
-					modifier = ANT_scorched_state
-#					scope = ITA
-					days = 720
-				}
-			}
-		38 = {
-				add_dynamic_modifier = {
-					modifier = ANT_scorched_state
-#					scope = ITA
-					days = 720
-				}
-			}
-		9 = {
-				add_dynamic_modifier = {
-					modifier = ANT_scorched_state
-#					scope = ITA
-					days = 720
-				}
-			}
-		156 = {
-				add_dynamic_modifier = {
-					modifier = ANT_scorched_state
-#					scope = ITA
-					days = 720
-				}
-			}
+		}
 		AQU = {	
 			country_event = { 
 				id = aqu.4
 				}
-			}
+		}
 	}
 }
 # when will vega release
 focus = {
 	id = ANT_warvega
-	icon = GFX_goal_generic_major_war
+	icon = GFX_focus_generic_attack_vega
 	x = 13
 	y = 23
 	cost = 10
@@ -3588,17 +4397,26 @@ focus = {
 	available = {
 		NOT = {  has_war_with = aqu } }
 	ai_will_do = { factor = 10 }
-will_lead_to_war_with = VEG
-
+	will_lead_to_war_with = VEG
+	bypass = {
+	OR = {
+		ANT = { has_war_with = VEG }
+		VEG = { is_puppet_of = ANT }
+#		is_in_faction_with = CET	backstab OK
+		NOT = { country_exists = VEG }
+		}
+	}
 	completion_reward = {
-declare_war_on = {
-    target = VEG
-    type = annex_everything
-}}}
+		declare_war_on = {
+			target = VEG
+			type = annex_everything
+		}
+	}
+}
 # Gru from despicable me
 focus = {
 	id = ANT_wargrs
-	icon = GFX_goal_generic_major_war
+	icon = GFX_focus_generic_attack_grusa
 	x = 13
 	y = 25
 	cost = 10
@@ -3607,17 +4425,222 @@ focus = {
 	available = {
 		NOT = {  has_war_with = veg } }
 	ai_will_do = { factor = 10 }
-will_lead_to_war_with = GRS
-
+	will_lead_to_war_with = GRS
+	bypass = {
+	OR = {
+		ANT = { has_war_with = GRS }
+		GRS = { is_puppet_of = ANT }
+#		is_in_faction_with = CET	backstab OK
+		NOT = { country_exists = GRS }
+		}
+	}
 	completion_reward = {
-add_ideas = ANT_worldconquest
-declare_war_on = {
-    target = GRS
-    type = annex_everything
-}
+		add_ideas = ANT_worldconquest
+		declare_war_on = {
+			target = GRS
+			type = annex_everything
+		}
 
 	}
 }
+focus = {
+	id = ANT_worldconquest	#incase wargrs gets bypassed
+	icon = GFX_goal_generic_major_war
+	x = 13
+	y = 26
+	cost = 10
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	prerequisite = {focus = ANT_wargrs}
+	available = {
+	#	NOT = {  has_war_with = grs } 
+	}
+	ai_will_do = { factor = 10 }
+	bypass = {	}
 
+	completion_reward = {
+		add_ideas = ANT_worldconquest
+
+
+	}
+}
+focus = {
+	id = ANT_integrate_cetus
+	icon = GFX_focus_generic_cetus
+	x = 24
+	y = 23
+	cost = 10
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	prerequisite = {focus = ANT_warcetus}
+	available = {
+		NOT = {  has_war_with = cet } }
+	ai_will_do = { factor = 10 }
+	completion_reward = {
+		add_state_claim = 43
+		add_state_claim = 7
+		add_state_claim = 49
+		add_state_claim = 46
+		add_state_claim = 43
+		add_state_claim = 45
+		add_state_claim = 44
+		add_state_claim = 43
+		add_state_claim = 42
+		add_state_claim = 41
+		add_state_claim = 47
+		add_state_claim = 40
+		add_state_claim = 39
+		add_state_claim = 50
+		SKO = {	add_state_claim = 43 }
+		every_owned_state = {
+			limit = {
+				is_core_of = CET
+				not = { is_core_of = ANT }
+			}
+			add_compliance = 15
+		} 
+	}
+}
+focus = {
+	id = ANT_integrate_aquila
+	icon = GFX_focus_generic_aquila
+	x = 20
+	y = 23
+	cost = 10
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	prerequisite = {focus = ANT_waraquila}
+	available = {
+		NOT = {  has_war_with = aqu } }
+	ai_will_do = { factor = 10 }
+	completion_reward = {
+		add_state_claim = 156
+		add_state_claim = 36
+		add_state_claim = 34
+		add_state_claim = 32
+		add_state_claim = 37
+		add_state_claim = 38
+		add_state_claim = 9
+		add_state_claim = 152
+		add_state_claim = 33
+		every_owned_state = {
+			limit = {
+				is_core_of = AQU
+				not = { is_core_of = ANT }
+			}
+			add_compliance = 15
+		} 
+	}
+}
+focus = {
+	id = ANT_integrate_south_centaura
+	icon = GFX_focus_CET_emperor_south	#make smt better
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	prerequisite = { focus = ANT_integrate_cetus }
+	prerequisite = { focus = ANT_integrate_aquila }
+	relative_position_id = ANT_integrate_cetus
+	x = -2
+	y = 1
+	cost = 10
+
+	ai_will_do = {
+		factor = 5
+	}
+		
+	completion_reward = {
+		unlock_decision_category_tooltip = ANT_south_centauran_integration_category
+	}
+}
+focus = {
+	id = ANT_resolve_internal_disputes
+	icon = GFX_goal_generic_forceful_treaty
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	prerequisite = { focus = ANT_integrate_south_centaura }
+	x = 21
+	y = 25
+	cost = 10
+
+	ai_will_do = {
+		factor = 5
+	}
+		
+	completion_reward = {
+		custom_effect_tooltip = ant_redraw_boundries_decision_tt
+	}
+}
+focus = {
+	id = ANT_rebuild_aquila
+	icon = GFX_goal_generic_construct_civilian
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
+	prerequisite = { focus = ANT_integrate_aquila }
+	x = 19
+	y = 24
+	cost = 10
+
+	ai_will_do = {
+		factor = 5
+	}
+		
+	completion_reward = {
+		add_political_power = -100
+		add_stability = 0.05
+		every_owned_state = {
+			limit = { or = { state = 9 state = 36 state = 35 state = 37 state = 38 state = 156 } }
+			add_extra_state_shared_building_slots = 1
+			add_compliance = 10
+			remove_dynamic_modifier = {
+				modifier = ANT_scorched_state
+				days = 720
+			}
+
+		}	
+	}
+}
+focus = {
+	id = ANT_new_administration
+	icon = GFX_focus_generic_improve_the_administration
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	prerequisite = { focus = ANT_integrate_south_centaura }
+	mutually_exclusive = { focus = ANT_continuity }
+	x = 23
+	y = 25
+	cost = 10
+
+	ai_will_do = {
+		factor = 5
+	}
+		
+	completion_reward = {
+		add_political_power = -50
+	#	add_stability = -0.05
+		every_owned_state = {
+			limit = { NOT = { is_core_of = ANT } }
+			add_compliance = -10
+			add_resistance = 10
+			add_dynamic_modifier = {
+				modifier = ANT_compliance_bonus_cet_aqu
+			}
+		}
+	}
+}
+focus = {
+	id = ANT_continuity
+	icon = GFX_goal_generic_national_unity
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	prerequisite = { focus = ANT_integrate_south_centaura }
+	mutually_exclusive = { focus = ANT_new_administration }
+	x = 25
+	y = 25
+	cost = 10
+
+	ai_will_do = {
+		factor = 5
+	}
+		
+	completion_reward = {
+		add_stability = 0.05
+		every_owned_state = {
+			limit = { NOT = { is_core_of = ANT } }
+			add_compliance = 10
+		}
+	}
+}
 #END
 }

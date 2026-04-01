@@ -4,8 +4,12 @@ spriteTypes = {
 	################
 	##PLACEHOLDER###
 	################
-
 	
+	SpriteType = {
+		name = "GFX_"
+		texturefile = "gfx/interface/goals/f.dds"
+	}
+
 	SpriteType = {
 		name = "GFX_focus_PLACEHOLDER"
 		texturefile = "gfx/interface/goals/focus_PLACEHOLDER.dds"
@@ -15,12 +19,20 @@ spriteTypes = {
 	################### MOD ICONS ##################
 	## PUT ANY VANILLA FILES BEFORE THE MOD FILES ##
 	
-	###########
-	# generic #
-	###########
+	#########################
+	# generic country icons #
+	#########################
+	
+	# icons
+	
 	SpriteType = {
-		name = "GFX_focus_generic_ant_cap"
-		texturefile = "gfx/interface/goals/focus_generic_ant_cap.dds"
+		name = "GFX_focus_generic_cetus"
+		texturefile = "gfx/interface/goals/focus_generic_cetus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_corvus"
+		texturefile = "gfx/interface/goals/focus_generic_corvus.dds"
 	}
 	
 	SpriteType = {
@@ -34,23 +46,90 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_focus_generic_cetus"
-		texturefile = "gfx/interface/goals/focus_generic_cetus.dds"
+		name = "GFX_focus_generic_antares"
+		texturefile = "gfx/interface/goals/focus_generic_antares.dds"
 	}
 	
 	SpriteType = {
-		name = "GFX_focus_generic_corvus"
-		texturefile = "gfx/interface/goals/focus_generic_corvus.dds"
+		name = "GFX_focus_generic_vega"
+		texturefile = "gfx/interface/goals/focus_generic_vega.dds"
 	}
 	
 	SpriteType = {
-		name = "GFX_focus_generic_attack_columba"
-		texturefile = "gfx/interface/goals/focus_generic_attack_columba.dds"
+		name = "GFX_focus_generic_grusa"
+		texturefile = "gfx/interface/goals/focus_generic_grusa.dds"
 	}
 	
 	SpriteType = {
-		name = "GFX_focus_generic_attack_ursa"
-		texturefile = "gfx/interface/goals/focus_generic_attack_ursa.dds"
+		name = "GFX_focus_generic_lacerta"
+		texturefile = "gfx/interface/goals/focus_generic_lacerta.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_columba"
+		texturefile = "gfx/interface/goals/focus_generic_columba.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_riaa"
+		texturefile = "gfx/interface/goals/focus_generic_riaa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_vulpa"
+		texturefile = "gfx/interface/goals/focus_generic_vulpa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_tucana"
+		texturefile = "gfx/interface/goals/focus_generic_tucana.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_centauri"
+		texturefile = "gfx/interface/goals/focus_generic_centauri.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_ursa"
+		texturefile = "gfx/interface/goals/focus_generic_ursa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_hydrus"
+		texturefile = "gfx/interface/goals/focus_generic_hydrus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_orion"
+		texturefile = "gfx/interface/goals/focus_generic_orion.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_auriga"
+		texturefile = "gfx/interface/goals/focus_generic_auriga.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_musca"
+		texturefile = "gfx/interface/goals/focus_generic_musca.dds"
+	}
+	
+	# attack icons
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_cetus"
+		texturefile = "gfx/interface/goals/focus_generic_attack_cetus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_corvus"
+		texturefile = "gfx/interface/goals/focus_generic_attack_corvus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_aquila"
+		texturefile = "gfx/interface/goals/focus_generic_attack_aquila.dds"
 	}
 	
 	SpriteType = {
@@ -59,15 +138,204 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_focus_generic_attack_cetus"
-		texturefile = "gfx/interface/goals/focus_generic_attack_cetus.dds"
+		name = "GFX_focus_generic_attack_ant"
+		texturefile = "gfx/interface/goals/focus_generic_attack_ant.dds"
 	}
 	
 	SpriteType = {
-		name = "GFX_focus_generic_attack_aquila"
-		texturefile = "gfx/interface/goals/focus_generic_attack_aquila.dds"
+		name = "GFX_focus_generic_attack_vega"
+		texturefile = "gfx/interface/goals/focus_generic_attack_vega.dds"
 	}
 	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_grusa"
+		texturefile = "gfx/interface/goals/focus_generic_attack_grusa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_lacerta"
+		texturefile = "gfx/interface/goals/focus_generic_attack_lacerta.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_columba"
+		texturefile = "gfx/interface/goals/focus_generic_attack_columba.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_riaa"
+		texturefile = "gfx/interface/goals/focus_generic_attack_riaa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_vulpa"
+		texturefile = "gfx/interface/goals/focus_generic_attack_vulpa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_tucana"
+		texturefile = "gfx/interface/goals/focus_generic_attack_tucana.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_centauri"
+		texturefile = "gfx/interface/goals/focus_generic_attack_centauri.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_ursa"
+		texturefile = "gfx/interface/goals/focus_generic_attack_ursa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_hydrus"
+		texturefile = "gfx/interface/goals/focus_generic_attack_hydrus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_orion"
+		texturefile = "gfx/interface/goals/focus_generic_attack_orion.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_auriga"
+		texturefile = "gfx/interface/goals/focus_generic_attack_auriga.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_attack_musca"
+		texturefile = "gfx/interface/goals/focus_generic_attack_musca.dds"
+	}
+	
+	# diplomacy icons
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_cetus"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_cetus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_corvus"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_corvus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_aquila"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_aquila.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_antares"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_antares.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_vega"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_vega.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_grusa"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_grusa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_lacerta"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_lacerta.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_columba"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_columba.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_riaa"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_riaa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_vulpa"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_vulpa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_tucana"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_tucana.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_centauri"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_centauri.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_ursa"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_ursa.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_hydrus"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_hydrus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_lepus"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_lepus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_canis"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_canis.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_orion"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_orion.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_auriga"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_auriga.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_diplomacy_musca"
+		texturefile = "gfx/interface/goals/focus_generic_diplomacy_musca.dds"
+	}
+	
+	###########
+	# generic #
+	###########
+	SpriteType = {
+		name = "GFX_focus_generic_ant_cap"
+		texturefile = "gfx/interface/goals/focus_generic_ant_cap.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_ant_cooperation" # same as diplomacy_antares
+		texturefile = "gfx/interface/goals/focus_generic_ant_cooperation.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_antarean_advisors"
+		texturefile = "gfx/interface/goals/focus_generic_antarean_advisors.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_antares_and_corvus"
+		texturefile = "gfx/interface/goals/focus_generic_antares_and_corvus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_aquila_lupus"
+		texturefile = "gfx/interface/goals/focus_generic_aquila_lupus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_west_lepus"
+		texturefile = "gfx/interface/goals/focus_generic_west_lepus.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_focus_generic_no_image"
@@ -80,26 +348,48 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_generic_attack_cetus"
-		texturefile = "gfx/interface/goals/focus_generic_attack_cetus.dds"
+		name = "GFX_focus_generic_fortify_aquila"
+		texturefile = "gfx/interface/goals/focus_generic_fortify_aquila.dds"
 	}
-
-	## Decision images
-
+	
 	SpriteType = {
-		name = "GFX_decision_cat_generic_south_corvus"
-		texturefile = "gfx/interface/decisions/decision_cat_generic_south_corvus.dds"
+		name = "GFX_focus_generic_dragon_compact"
+		texturefile = "gfx/interface/goals/focus_generic_dragon_compact.dds"
 	}
-
+	
 	SpriteType = {
-		name = "GFX_decision_cat_generic_hydrus"
-		texturefile = "gfx/interface/decisions/decision_cat_generic_hydrus.dds"
+		name = "GFX_focus_generic_infrastructure_build_1"
+		texturefile = "gfx/interface/goals/focus_generic_infrastructure_build_1.dds"
 	}
-
+	
 	SpriteType = {
-		name = "GFX_decision_cat_generic_rodinia"
-		texturefile = "gfx/interface/decisions/decision_cat_generic_rodinia.dds"
+		name = "GFX_focus_generic_infrastructure_build_2"
+		texturefile = "gfx/interface/goals/focus_generic_infrastructure_build_2.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_bunkers"
+		texturefile = "gfx/interface/goals/focus_generic_bunkers.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_generic_cavalry_mobwar"
+		texturefile = "gfx/interface/goals/focus_generic_cavalry_mobwar.dds"
+	}
+	
+	# aquila
+	
+	
+	SpriteType = {
+		name = "GFX_focus_AQU_civil_guard"
+		texturefile = "gfx/interface/goals/focus_AQU_civil_guard.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_AQU_civil_guard_OLD"
+		texturefile = "gfx/interface/goals/focus_AQU_civil_guard_OLD.dds"
+	}
+	
 	#########
 	# cetus #
 	#########
@@ -112,39 +402,47 @@ spriteTypes = {
 		name = "GFX_focus_CET_general_staff"
 		texturefile = "gfx/interface/goals/focus_CET_general_staff.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_focus_CET_place_under_stars"
 		texturefile = "gfx/interface/goals/focus_CET_place_under_stars.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_focus_CET_fishing_heritage"
 		texturefile = "gfx/interface/goals/focus_CET_fishing_heritage.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_focus_CET_economic_boom"
 		texturefile = "gfx/interface/goals/focus_CET_economic_boom.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_focus_CET_greater_cetus"
 		texturefile = "gfx/interface/goals/focus_CET_greater_cetus.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_focus_CET_peaceful_revolution"
 		texturefile = "gfx/interface/goals/focus_CET_peaceful_revolution.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_focus_CET_free_media"
 		texturefile = "gfx/interface/goals/focus_CET_free_media.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_focus_CET_every_man_himself"
 		texturefile = "gfx/interface/goals/focus_CET_every_man_himself.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_focus_CET_naval_officers"
 		texturefile = "gfx/interface/goals/focus_CET_naval_officers.dds"
 	}
-
+	#####
 	SpriteType = {
 		name = "GFX_focus_CET_plan_corvus"
 		texturefile = "gfx/interface/goals/focus_CET_plan_corvus.dds"
@@ -188,6 +486,42 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_CET_carran_fort"
 		texturefile = "gfx/interface/goals/focus_CET_carran_fort.dds"
+	}
+	######
+	
+	SpriteType = {
+		name = "GFX_focus_CET_preemptive_strike"
+		texturefile = "gfx/interface/goals/focus_CET_preemptive_strike.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_CET_unite_corvus"
+		texturefile = "gfx/interface/goals/focus_CET_unite_corvus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_CET_integrate_north_corvus"
+		texturefile = "gfx/interface/goals/focus_CET_integrate_north_corvus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_CET_winged_whale"
+		texturefile = "gfx/interface/goals/focus_CET_winged_whale.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_CET_king_of_west_centaura"
+		texturefile = "gfx/interface/goals/focus_CET_king_of_west_centaura.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_CET_emperor_south"
+		texturefile = "gfx/interface/goals/focus_CET_emperor_south.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_CET_armynavy_cooperate"
+		texturefile = "gfx/interface/goals/focus_CET_armynavy_cooperate.dds"
 	}
 	#########
 	# orion #
@@ -325,8 +659,13 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_focus_ORI_TheHard1900s"
-		texturefile = "gfx/interface/goals/focus_ORI_TheHard1900s.dds"
+		name = "GFX_focus_COV_the_confederation"
+		texturefile = "gfx/interface/goals/focus_COV_the_confederation.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_COV_aviation_fly"
+		texturefile = "gfx/interface/goals/focus_COV_aviation_fly.dds"
 	}
 	##### ANTARES #######
 	SpriteType = {
@@ -358,6 +697,20 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_URS_recruit_retired_warcriminal"
 		texturefile = "gfx/interface/goals/URS/focus_URS_recruit_retired_warcriminal.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_URS_meteor_chasers_1"
+		texturefile = "gfx/interface/goals/focus_URS_meteor_chasers_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_URS_meteor_chasers_2"
+		texturefile = "gfx/interface/goals/focus_URS_meteor_chasers_2.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_focus_deport"
+		texturefile = "gfx/interface/focus_generic_deport.png"
 	}
 #end
 }

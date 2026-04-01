@@ -1,0 +1,132 @@
+division_template = {
+	name = "Infantry Brigade"
+	division_names_group = LGS_INF_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        	infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = {x = 0 y = 1}
+	}
+}
+division_template = {
+	name = "Territorial Regiment"
+	division_names_group = LGS_INF_03
+	priority = 0
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 0 y = 3 }
+	}
+	
+	support = {
+
+	}
+}
+division_template = {
+	name = "Royal Guards Brigade"
+	division_names_group = LGS_MNT_01
+	priority = 2
+
+	regiments = {
+		mountaineers = {x = 0 y = 0}
+		mountaineers = {x = 0 y = 1}
+		mountaineers = {x = 1 y = 0}
+		mountaineers = {x = 1 y = 1}
+	}
+
+	support = {
+		artillery = {x = 0 y = 1}
+		engineer = {x = 0 y = 0}
+	}
+}
+units = {
+	division = {
+		name = "1st 'Dukes Finest' Guards Brigade"
+		location = 2357
+		division_template = "Royal Guards Brigade"
+		force_equipment_variants = { 
+			infantry_equipment_0 = { creator = "AQU" } 
+			support_equipment_1 = { creator = "CLB" } 
+			artillery_equipment_1 = { creator = "COV"}
+		}
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 639
+		division_template = "Infantry Brigade"
+		force_equipment_variants = { 
+			infantry_equipment_0 = { creator = "AQU" } 
+			support_equipment_1 = { creator = "CLB" } 
+			artillery_equipment_1 = { creator = "COV"}
+		}
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 2364
+		division_template = "Infantry Brigade"
+		force_equipment_variants = { 
+			infantry_equipment_0 = { creator = "AQU" } 
+			support_equipment_1 = { creator = "CLB" } 
+			artillery_equipment_1 = { creator = "COV"}
+		}
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "1st Territorial Regiment"
+		location = 2384
+		division_template = "Territorial Regiment"
+		force_equipment_variants = { 
+			infantry_equipment_0 = { creator = "AQU" } 
+			support_equipment_1 = { creator = "CLB" } 
+			artillery_equipment_1 = { creator = "COV"}
+		}
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}	
+	division = {
+		name = "2nd Territorial Regiment"
+		location = 817
+		division_template = "Territorial Regiment"
+		force_equipment_variants = { 
+			infantry_equipment_0 = { creator = "AQU" } 
+			support_equipment_1 = { creator = "CLB" } 
+			artillery_equipment_1 = { creator = "COV"}
+		}
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {
+		name = "3rd Territorial Regiment"
+		location = 666
+		division_template = "Territorial Regiment"
+		force_equipment_variants = { 
+			infantry_equipment_0 = { creator = "AQU" } 
+			support_equipment_1 = { creator = "CLB" } 
+			artillery_equipment_1 = { creator = "COV"}
+		}
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.35
+	}	
+
+}
+	

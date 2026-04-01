@@ -68,6 +68,7 @@ peace_ai_desires = {
 	ANT_dont_south_corvus_takeover = {
         peace_action_type = take_states
         enable = {
+			COV = { has_war_with = CET }
             FROM = {
                 tag = ROOT
             }
@@ -81,6 +82,6 @@ peace_ai_desires = {
                 original_tag = ANT
             }
         }
-        ai_desire = -100
+        ai_desire = -10000
     }
 }

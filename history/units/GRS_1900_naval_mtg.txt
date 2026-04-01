@@ -1,0 +1,91 @@
+units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Libran Fleet"
+		naval_base = 3793
+		task_force = {				
+			name = "1. Lineship Group"
+			location =  3793
+			ship = { name = "BdR Prima" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRS version_name = "Reina Class" } } }
+			ship = { name = "BdR Rubigo" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRS version_name = "CLA Class" } } }
+			ship = { name = "BdR DD2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRS version_name = "DD2 Class" } } }
+		}
+		task_force = {				
+			name = "2. Lineship Group"
+			location = 3793
+			ship = { name = "BdR Baten" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRS version_name = "Reina Class" } } }
+			ship = { name = "BdR Nyodymium" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRS version_name = "CAL Class" } } }
+			ship = { name = "BdR Nestos" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRS version_name = "DD2 Class" } } }
+		}
+	#	task_force = {				
+	#		name = "3 Command"
+	#		location = 3793
+	#		ship = { name = "BdR Quintus" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRS version_name = "Reina Class" } } }
+	#		ship = { name = "BdR Kulshalm" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRS version_name = "DD1 Class" } } }
+	#	}
+	}
+	
+	fleet = {
+		name = "Northern Fleet"
+		naval_base = 2167
+		task_force = {				
+			name = "3. Lineship Group"
+			location = 2167
+			ship = { name = "BdR Quintus" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRS version_name = "Reina Class" } } }
+			ship = { name = "BdR Kulshalm" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRS version_name = "DD1 Class" } } }
+		}
+		task_force = {				
+			name = "4. Lineship Group"
+			location = 2167
+			ship = { name = "BdR Axol" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRS version_name = "Reina Class" } } }
+			ship = { name = "BdR DD1" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRS version_name = "DD1 Class" } } }
+		}
+
+
+		
+	}
+	
+	fleet = {
+		name = "Western Fleet"
+		naval_base = 3715
+		task_force = {				
+			name = "5. Lineship Group"
+			location = 3715
+			ship = { name = "BdR Rada" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GRS version_name = "Reina Class" } } }
+			ship = { name = "BdR Rhesus" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRS version_name = "DD2 Class" } } }
+		}
+	#	task_force = {				
+	#		name = "6 Command"
+	#		location = 3715
+	#		ship = { name = "BdR Nyodymium" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRS version_name = "CAL Class" } } }
+	#		ship = { name = "BdR Nestos" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = GRS version_name = "DD2 Class" } } }
+	#	}
+	}
+}
+
+instant_effect = {
+### Under Construction Notes ###
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "GRS" 
+			version_name = "Flamenco Class"
+		}
+		name = "BdR Flamenco"
+		requested_factories = 2
+		progress = 0.52
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "GRS" 
+			version_name = "Flamenco Class"
+		}
+		name = "BdR Rey Tiburcio II"
+		requested_factories = 2
+		progress = 0.03
+		amount = 1
+	}
+}

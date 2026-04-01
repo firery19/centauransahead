@@ -24,7 +24,7 @@ ideas = {
 		AQU_lucas_silva_idea = {
             name = AQU_lucas_silva
             
-            picture = idea_iron_army
+            picture = NOR_king_haakon_vii_ns
             allowed = { original_tag = AQU }
             removal_cost = -1
 

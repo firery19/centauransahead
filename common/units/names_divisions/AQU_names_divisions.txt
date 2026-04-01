@@ -45,7 +45,7 @@ AQU_INF_01 = {
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { AQU_INF_01 }
 
-	fallback_name = "%d Infantry Division"
+	fallback_name = "%dth Infantry Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
@@ -56,6 +56,12 @@ AQU_INF_01 = {
 		3 = { "%drd Infantry Division" }
 		4 = { "%dth Infantry Division" }
 		5 = { "%dth Infantry Division" }
+		6 = { "%dth Infantry Division" }
+		7 = { "%dth Infantry Division" }
+		8 = { "%dth Infantry Division" }
+		9 = { "%dth Infantry Division" }
+		12 = { "%dth Infantry Division" }
+		11 = { "%dth Infantry Division" }	#which schizophrenic made this fucking list are you too retarded to count?
 		42 = { "%dnd Infantry Division" }
 		43 = { "%drd Infantry Division" }
 		44 = { "%dth Infantry Division" }
@@ -67,9 +73,6 @@ AQU_INF_01 = {
 		53 = { "%drd Infantry Division" }
 		54 = { "%dth Infantry Division" }
 		55 = { "%dth Infantry Division" }
-		7 = { "%dth Infantry Division" }
-		8 = { "%dth Infantry Division" }
-		9 = { "%dth Infantry Division" }
 		15 = { "%dth Infantry Division" }
 		18 = { "%dth Infantry Division" }
 		38 = { "%dth Infantry Division" }
@@ -77,11 +80,8 @@ AQU_INF_01 = {
 		59 = { "%dth Infantry Division" }
 		61 = { "%dst Infantry Division" }
 		66 = { "%dth Infantry Division" }
-		12 = { "%dth Infantry Division" }
 		23 = { "%drd Infantry Division" }
 		46 = { "%dth Infantry Division" }
-		6 = { "%dth Infantry Division" }
-		11 = { "%dth Infantry Division" }
 		812 = { "%dth Infantry Division" }
 		47 = { "%dth Infantry Division" }
 		56 = { "%dth Infantry Division" }
@@ -179,7 +179,7 @@ AQU_INF_01 = {
 
 	division_types = { "infantry" }
 
-	fallback_name = "%d Civil Guard"
+	fallback_name = "%dth Civil Guard"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.

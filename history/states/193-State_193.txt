@@ -1,0 +1,26 @@
+state={
+	id=193
+	name="STATE_193"
+	resources={
+		
+	}
+	history={
+		owner = RIA
+		add_core_of = RIA
+		buildings = {
+			arms_factory = 0
+			industrial_complex = 0
+			infrastructure = 2
+		}
+		victory_points = {
+			
+		}
+	}
+	provinces={
+		105 108 225 387 420 766 1517 2343 2693 3401 3427 3436 3485 
+	}
+	state_category=rural
+	manpower=8120928
+	buildings_max_level_factor=1
+	local_supplies=0
+}

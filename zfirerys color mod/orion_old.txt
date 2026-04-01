@@ -1,0 +1,2311 @@
+focus_tree = {
+    id = CIR_focus
+    default = no
+    country = {
+        factor = 0
+        modifier = {
+            add = 50
+            #tag = ORI
+			tag = CIR
+        }
+    }
+#	shared_focus = dc_focus_start
+    continuous_focus_position = { x = 25 y = 680 }
+	
+	initial_show_position = {
+		focus = CIR_EndHartTerm
+	}
+	
+	focus = {
+        id = CIR_prepare_to_liberate_canis
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 16
+        y = 0
+        cost = 5
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = CIR_thirst_for_trouble
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 0
+        y = 1
+        cost = 10
+		relative_position_id = CIR_prepare_to_liberate_canis
+        prerequisite = { focus = CIR_prepare_to_liberate_canis }
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = CIR_water_the_hydrus_thorn
+        icon = GFX_goal_generic_construct_infrastructure
+        x = -2
+        y = 1
+        cost = 10
+		relative_position_id = CIR_thirst_for_trouble
+        prerequisite = { focus = CIR_thirst_for_trouble }
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = CIR_sneak_weapons_to_rebels
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 2
+        y = 1
+        cost = 10
+		relative_position_id = CIR_thirst_for_trouble
+        prerequisite = { focus = CIR_thirst_for_trouble }
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = CIR_provoke_ursa
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 0
+        y = 1
+        cost = 10
+		relative_position_id = CIR_thirst_for_trouble
+        prerequisite = { focus = CIR_thirst_for_trouble }
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+
+    focus = {
+        id = CIR_CanisCrisis
+        icon = GFX_goal_generic_territory_or_war
+        x = 10
+        y = 0
+        cost = 5
+        available = {
+            
+        }
+        completion_reward = {
+            add_stability = 0.05
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    
+    focus = {
+        id = CIR_Intervene
+        icon = GFX_focus_generic_manpower
+        x = 10
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = CIR_CanisCrisis
+        }
+        completion_reward = {
+            add_war_support = 0.05
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    
+    focus = {
+        id = CIR_RallyPeople
+        icon = "GFX_focus_generic_infiltration"
+        x = 11    
+        y = 2
+        cost = 5
+        prerequisite = {
+            focus = CIR_Intervene
+        }
+        completion_reward = {
+            add_ideas = CIR_RallyPeopleIdea
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    
+    focus = {
+        id = CIR_ContactHydrus
+        icon = GFX_focus_NOR_approach_kretsen
+        x = 9    
+        y = 2
+        cost = 5
+        prerequisite = {
+            focus = CIR_Intervene
+        }
+        completion_reward = {
+			set_rule = { can_create_factions = yes }
+			create_faction = AntiUrsCoal 
+			hidden_effect = {
+				HYS = {
+					country_event = { 
+						id = orion.1  days = 1 }
+				}
+				news_event = {
+				id = news.3
+				days = 2
+				}
+			}
+        }
+        ai_will_do = {
+            factor = 5
+        }
+	}
+
+    
+
+    focus = {
+        id = CIR_PromiseBusinesses
+        icon = GFX_focus_NORDIC_com_capstone_civilian
+        x = 13
+        y = 3
+        cost = 5
+        prerequisite = {
+            focus = CIR_RallyPeople
+        }
+        completion_reward = {
+            add_ideas=CIR_PromiseBusinessesIdea
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = CIR_PrepareMilitary
+        icon = GFX_focus_generic_limited_social_mobilization
+        x = 11
+        y = 3
+        cost = 5
+        prerequisite = {
+            focus = CIR_RallyPeople
+        }
+        completion_reward = {
+           add_ideas=CIR_PrepareMilitaryIdea
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = CIR_BattleExperience
+        icon = GFX_focus_generic_full_employment
+        x = 11
+        y = 4
+        cost = 5
+        prerequisite = {
+            focus = CIR_PrepareMilitary
+        }
+        completion_reward = {
+           add_ideas=CIR_LessonsOfWar
+        }
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+		id = CIR_TrainHydrusites
+		icon = GFX_focus_ITA_blackshirts
+		x = 9
+		y = 3
+		cost = 5
+		prerequisite = {
+			focus = CIR_ContactHydrus
+		}
+		completion_reward = {
+			HYS = {
+				add_ideas=CIR_PrepareMilitaryIdea
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	
+	focus = {
+		id = CIR_InvestInHydrusiteMilitaryIndustry
+		icon = GFX_focus_DEN_no_regulations
+		x = 9
+		y = 4
+		cost = 5
+		prerequisite = {
+			focus = CIR_TrainHydrusites
+		}
+		completion_reward = {
+			HYS = {
+				add_ideas = CIR_PromiseBusinessesIdea
+			}
+		}
+			ai_will_do = {
+				factor = 5
+			}
+		
+	}
+		focus = {
+			id = CIR_InvadeCanis
+			icon = GFX_goal_generic_attack_allies
+			x = 10
+			y = 5
+			cost = 5
+			prerequisite = {focus = CIR_InvestInHydrusiteMilitaryIndustry}
+			prerequisite = {focus = CIR_BattleExperience}
+			completion_reward = {
+				create_wargoal = {
+					type = annex_everything
+					generator = {114 117}
+					target = URS
+					expire = 0
+				}
+			}
+			ai_will_do = {
+				factor = 5 
+			}
+		}	
+	
+	focus = {
+        id = CIR_EndOfWar
+        icon = GFX_focus_generic_treaty
+        x = 10
+        y = 6
+        cost = 5
+		available = {
+			ORI = {
+				AND = {
+						has_full_control_of_state = 117
+						has_full_control_of_state = 119
+						has_full_control_of_state = 114
+						has_full_control_of_state = 116
+						has_full_control_of_state = 115
+						has_full_control_of_state = 118
+					}
+				}
+			}
+
+		
+        prerequisite = {
+            focus = CIR_InvadeCanis
+        }
+        completion_reward = {
+			URS = {
+				country_event = {id = orion.2 days = 1}
+			}
+		}
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = CIR_TheUrsanQuestion
+        icon = GFX_goal_unknown
+        x = 10
+        y = 7
+        cost = 5
+		available = {			
+			}
+		
+        prerequisite = {
+            focus = CIR_EndOfWar
+        }
+        completion_reward = {
+		remove_ideas = { 
+			CIR_PrepareMilitaryIdea
+			CIR_RallyPeopleIdea
+			CIR_LessonsOfWar
+			CIR_PromiseBusinessesIdea
+			}
+		}
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+		
+		focus = {
+        id = CIR_canis_department
+        icon = GFX_goal_unknown
+        x = 4
+        y = 1
+        cost = 10
+		relative_position_id = CIR_TheUrsanQuestion
+		available = {
+			owns_state = 114
+			owns_state = 117
+			}
+		
+        prerequisite = {
+            focus = CIR_TheUrsanQuestion
+        }
+        completion_reward = {
+#		set_state_name = 
+#		add_state_core = 114
+#		add_state_core = 117
+		}
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = CIR_canisian_administration
+        icon = GFX_goal_unknown
+        x = -3
+        y = 1
+        cost = 5
+		relative_position_id = CIR_canis_department
+        prerequisite = { focus = CIR_canis_department }
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = CIR_clearing_the_minefields_act
+        icon = GFX_goal_unknown
+        x = 0
+        y = 1
+        cost = 10
+		relative_position_id = CIR_canisian_administration
+        prerequisite = { focus = CIR_canisian_administration }
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = CIR_improving_infrastructure
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 0
+        y = 1
+        cost = 10
+		relative_position_id = CIR_clearing_the_minefields_act
+        prerequisite = { focus = CIR_clearing_the_minefields_act }
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = CIR_repatriating_canisians
+        icon = GFX_goal_unknown
+        x = 2
+        y = 1
+        cost = 5
+		relative_position_id = CIR_canisian_administration
+        prerequisite = { focus = CIR_canisian_administration }
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		# population goes to canis capital
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = CIR_canis_development
+        icon = GFX_goal_unknown
+        x = 3
+        y = 1
+        cost = 5
+		relative_position_id = CIR_canis_department
+        prerequisite = { focus = CIR_canis_department }
+		
+		available = {
+		
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = CIR_aluminium_output #in alcor
+        icon = GFX_goal_unknown
+        x = 2
+        y = 1
+        cost = 5
+		relative_position_id = CIR_canis_development
+        prerequisite = { focus = CIR_canis_development }
+		
+		available = {
+		
+		}
+		
+        completion_reward = {
+		117 = {
+			add_resource = {
+				type = aluminium 
+				amount = 10
+				}
+			}
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = CIR_reconstruct_oil_rigs
+        icon = GFX_goal_unknown
+        x = 4
+        y = 1
+        cost = 10
+		relative_position_id = CIR_canis_development
+        prerequisite = { focus = CIR_canis_development }
+		
+		available = {
+		
+		}
+		
+        completion_reward = {
+		114 = {
+			add_resource = {
+				type = oil 
+				amount = 10
+				}
+			}
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+		
+	focus = {
+        id = CIR_returning_canis
+        icon = GFX_goal_unknown
+        x = 0
+        y = 1
+        cost = 10
+		relative_position_id = CIR_TheUrsanQuestion
+		available = {			
+		}
+		
+        prerequisite = {
+            focus = CIR_TheUrsanQuestion
+        }
+		prerequisite = { focus = CIR_ClampDownOnResistence }
+        completion_reward = {
+		add_state_core = 114
+		add_state_core = 117
+		}
+        ai_will_do = {
+            factor = 5
+        }
+    }
+		
+		focus = {
+			id = CIR_EndHartTerm # turn of the century
+			icon = GFX_focus_CIR_EndOfHartTerm
+			x = 22
+			y = 0
+			cost = 5
+			available = {
+				ORI_Edward_Spencer = {is_country_leader = yes}
+				date < 1900.12.09
+			
+			}
+			
+			prerequisite = {
+				
+			}
+			
+			completion_reward = {
+				add_political_power = 100
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_ExpandTheCivilianSector
+			icon = GFX_goal_generic_construct_civ_factory
+			x = 20
+			y = 1
+			cost = 10
+			available = {
+				ORI_Edward_Spencer = {is_country_leader = yes}
+#				date < 1901.12.09
+			}
+			
+			prerequisite = {
+				focus = CIR_EndHartTerm
+			}
+			
+			completion_reward = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+						}
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_ExpandBuildingSlots
+			icon = GFX_focus_POL_develop_polish_shipbuilding
+			x = 21
+			y = 2
+			cost = 10
+			available = {
+				ORI_Edward_Spencer = {is_country_leader = yes}
+#				date < 1901.12.09
+			}
+			
+			prerequisite = {
+				focus = CIR_ExpandTheCivilianSector
+			}
+			
+			completion_reward = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		focus = {
+			id = CIR_KeepUpTheBoom
+			icon = GFX_focus_CIR_KeepUpTheBoom
+			x = 23
+			y = 2
+			cost = 10
+			available = {
+				ORI_Edward_Spencer = {is_country_leader = yes}
+#				date < 1901.12.09
+			
+			}
+			
+			prerequisite = {
+				focus = CIR_EconomicBoom
+			}
+			
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = CIR_EconomicBoom
+					add_idea = CIR_EconomicBoom2
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		focus = {
+			id = CIR_EconomicBoom
+			icon = GFX_focus_CIR_OrioniteEconomicBoom
+			x = 24
+			y = 1
+			cost = 10
+			available = {
+				ORI_Edward_Spencer = {is_country_leader = yes}
+#				date < 1901.12.09
+			
+			}
+			
+			prerequisite = {
+				focus = CIR_EndHartTerm
+			}
+			
+			completion_reward = {
+				add_ideas = CIR_EconomicBoom
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		
+		focus = {
+			id = CIR_HartSecondTerm
+			icon = GFX_focus_CIR_HartsSecondTerm
+			x = 22
+			y = 4
+			cost = 5
+			available = {
+			has_completed_focus = CIR_TheUrsanQuestion
+			}
+			
+			prerequisite = {focus = CIR_ExpandBuildingSlots}
+			prerequisite = {focus = CIR_KeepUpTheBoom}
+			
+			completion_reward = {
+				add_political_power = 100
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		focus = {
+			id = CIR_ExtinguishCorruption
+			icon = GFX_focus_CIR_ExtinguishCorruption
+			x = 24
+			y = 6
+			cost = 5
+			available = {
+				ORI_Edward_Spencer = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = CIR_HartSecondTerm
+			}
+			
+			completion_reward = {
+				add_stability = 0.05
+				swap_ideas = {
+					remove_idea = CIR_RampantGovernmentCorruption
+					add_idea = CIR_RampantGovernmentCorruption1
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		
+		focus = {
+			id = CIR_SlightlyIncreaseMilitaryBudget
+			icon = GFX_focus_CIR_IncreaseMilitaryBudget
+			x = 24
+			y = 7
+			cost = 5
+			available = {
+				ORI_Edward_Spencer = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = CIR_ExtinguishCorruption
+			}
+			
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = CIR_PrioritizedMilitary
+					add_idea = CIR_PrioritizedMilitary1
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_InviteTheOpposition
+			icon = GFX_goal_generic_intelligence_exchange
+			x = 26
+			y = 7
+			cost = 5
+			available = {
+				ORI_Edward_Spencer = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = CIR_ExtinguishCorruption
+			}
+			
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = CIR_PrioritizedMilitary
+					add_idea = CIR_PrioritizedMilitary1
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+	focus = {
+			id = CIR_InvestInGeminiIndustry
+			icon = GFX_focus_generic_low_cost_housing
+			x = 22
+			y = 6
+			cost = 5
+			available = {
+				ORI_Edward_Spencer = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = CIR_HartSecondTerm
+			}
+			
+			completion_reward = {
+			add_timed_idea = {
+				idea = CIR_BorrowedLoans
+				days = 180
+			}
+			
+			137 = {
+				limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_ExpandLemmingSteelMills
+			icon = GFX_focus_generic_steel
+			x = 22
+			y = 7
+			cost = 5
+			available = {
+				ORI_Edward_Spencer = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = CIR_InvestInGeminiIndustry
+			}
+			
+			completion_reward = {
+				143 = {
+					add_resource = {
+						type = steel
+						amount = 12
+					}
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_RestrictCompanies
+			icon = GFX_focus_CIR_RestrictBusinesses
+			x = 22
+			y = 8
+			cost = 5
+			available = {
+				ORI_Edward_Spencer = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = CIR_ExpandLemmingSteelMills
+			}
+			
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = CIR_RampantGovernmentCorruption1
+					add_idea = CIR_RampantGovernmentCorruption2
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_CareForTheElderlyAct
+			icon = GFX_focus_CIR_CareForTheElderlyAct
+			x = 24
+			y = 8
+			cost = 5
+			available = {
+				ORI_Edward_Spencer = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = CIR_SlightlyIncreaseMilitaryBudget
+			}
+			
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = CIR_GovernmentSubisidies
+					add_idea = CIR_GovernmentSubisidies1
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_ExpandTheVenetaiaBureauOfResearch
+			icon = GFX_focus_research2
+			x = 20
+			y = 6
+			cost = 5
+			available = {
+				ORI_Edward_Spencer = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = CIR_HartSecondTerm
+			}
+			
+			completion_reward = {
+				add_research_slot = 1
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		
+		focus = {
+			id = CIR_HartPropaganda
+			icon = GFX_goal_generic_propaganda
+			x = 20
+			y = 7
+			cost = 5
+			available = {
+				ORI_Edward_Spencer = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = CIR_ExpandTheVenetaiaBureauOfResearch
+			}
+			
+			completion_reward = {
+				add_timed_idea = {
+					idea = CIR_HartCampaigning
+					days = 140
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_IncreaseBuildingSpeed
+			icon = GFX_focus_POL_warsaw_main_station
+			x = 20
+			y = 8
+			cost = 5
+			available = {
+				ORI_Edward_Spencer = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = CIR_HartPropaganda
+			}
+			
+			completion_reward = {
+				add_timed_idea = {
+					idea = CIR_BuildingSpeed
+					days = 365
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_VictoryForHart
+			icon = GFX_focus_spr_torchbearers_of_tomorrow
+			x = 22
+			y = 9
+			cost = 5
+			available = {
+				ORI_Edward_Spencer = {is_country_leader = yes}
+			}
+			
+			prerequisite = {
+				focus = CIR_IncreaseBuildingSpeed
+			}
+			
+			prerequisite = {
+				focus = CIR_RestrictCompanies
+			}
+			prerequisite = {
+				focus = CIR_CareForTheElderlyAct
+			}
+			completion_reward = {
+				add_timed_idea = {
+					idea = CIR_HartCampaigning
+					days = 140
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_QuestionOfForeignPolicy
+			icon = GFX_focus_CIR_QuestionOfForeignPolicy
+			x = 40
+			y = 0
+			cost = 5
+			available = {
+			has_completed_focus = CIR_TheUrsanQuestion
+			}
+			
+			prerequisite = {
+			}
+			
+			completion_reward = {
+				add_stability = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		
+		
+		
+		focus = {
+			id = CIR_OrioniteIsolationism
+			icon = GFX_focus_CIR_OrioniteIsolationism
+			x = 32
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = CIR_QuestionOfForeignPolicy
+			}
+			
+			mutually_exclusive = { focus = CIR_OrioniteImperialism }
+			mutually_exclusive = { focus = CIR_OrioniteInterventionism }
+			
+			completion_reward = {
+				add_stability = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+		id = CIR_strong_economy
+		icon = GFX_
+		prerequisite = { focus = CIR_OrioniteIsolationism }
+		relative_position_id = CIR_OrioniteIsolationism
+		x = -4
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = CIR_handle_internal_affairs
+		icon = GFX_
+		prerequisite = { focus = CIR_OrioniteIsolationism }
+		relative_position_id = CIR_OrioniteIsolationism
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = CIR_investigate_corruption
+		icon = GFX_
+		prerequisite = { focus = CIR_handle_internal_affairs }
+		relative_position_id = CIR_handle_internal_affairs
+		x = -2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = CIR_xxxx
+		icon = GFX_
+		prerequisite = { focus = CIR_handle_internal_affairs }
+		relative_position_id = CIR_handle_internal_affairs
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = CIR_declaration_of_peace
+		icon = GFX_
+		prerequisite = { focus = CIR_OrioniteIsolationism }
+		relative_position_id = CIR_OrioniteIsolationism
+		x = 2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = CIR_increase_defence_budget
+		icon = GFX_
+		prerequisite = { focus = CIR_declaration_of_peace focus = CIR_army_prospects }
+		relative_position_id = CIR_declaration_of_peace
+		mutually_exclusive = { focus = CIR_decrease_defence_budget }
+		x = 2
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = CIR_decrease_defence_budget
+		icon = GFX_
+		prerequisite = { focus = CIR_declaration_of_peace }
+		relative_position_id = CIR_declaration_of_peace
+		mutually_exclusive = { focus = CIR_increase_defence_budget }
+		x = 0
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		# shared
+		
+		focus = {
+		id = CIR_protect_hydra_from_invaders
+		icon = GFX_
+		prerequisite = { focus = CIR_OrioniteIsolationism focus = CIR_OrioniteInterventionism }
+		relative_position_id = CIR_OrioniteIsolationism
+		x = 4
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+		id = CIR_army_prospects
+		icon = GFX_
+		prerequisite = { focus = CIR_OrioniteIsolationism focus = CIR_OrioniteInterventionism }
+		relative_position_id = CIR_OrioniteIsolationism
+		x = 6
+		y = 1
+		cost = 5
+
+		completion_reward = {
+		custom_effect_tooltip = corvus_does_something_tooltip 
+			}
+		}
+		
+		focus = {
+			id = CIR_OrioniteInterventionism
+			icon = GFX_focus_CIR_OrioniteInterventionism
+			x = 42
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = CIR_QuestionOfForeignPolicy
+			}
+			
+			mutually_exclusive = { focus = CIR_OrioniteImperialism }
+			mutually_exclusive = { focus = CIR_OrioniteIsolationism }
+			
+			completion_reward = {
+				add_war_support = 0.05 #people want to contain antares
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		
+		
+		
+		focus = {
+			id = CIR_ExpandLibranPorts
+			icon = GFX_goal_generic_construct_naval_dockyard
+			x = 4
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			relative_position_id = CIR_OrioniteInterventionism
+			
+			prerequisite = {
+				focus = CIR_OrioniteImperialism
+				focus = CIR_OrioniteInterventionism
+			}
+			
+			
+			completion_reward = {
+				add_stability = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_OrioniteImperialism
+			icon = GFX_focus_CIR_OrioniteImperialism
+			x = 50
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = CIR_QuestionOfForeignPolicy
+			}
+			
+			mutually_exclusive = { focus = CIR_OrioniteInterventionism}
+			mutually_exclusive = { focus = CIR_OrioniteIsolationism }
+			
+			completion_reward = {
+				add_war_support = -0.05 #realistically people would oppose going on offensive wars
+			}
+			
+			ai_will_do = {
+				factor = 0 #ruins historical games; should only be playable path for the player or non hist AI
+			}
+		}
+		
+		focus = {
+			id = CIR_LookDownSouth
+			icon = GFX_focus_generic_black_sea_focus
+			x = 0
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			relative_position_id = CIR_OrioniteImperialism
+			
+			prerequisite = {
+				focus = CIR_OrioniteImperialism
+			}
+			
+			completion_reward = {
+				add_stability = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_IsolateAuriga
+			icon = GFX_focus_CIR_EncircleAuriga
+			x = 0
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = CIR_LookDownSouth
+			}
+			
+			relative_position_id = CIR_LookDownSouth
+			
+			completion_reward = {
+				AUR = {
+					add_ideas = CIR_IsolatedEconomy 
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_InvadeAuriga
+			icon = GFX_goal_generic_major_war
+			x = 0
+			y = 2
+			cost = 5
+			available = {
+				
+			}
+			
+			relative_position_id = CIR_LookDownSouth
+			
+			prerequisite = {
+				focus = CIR_IsolateAuriga
+			}
+			
+			completion_reward = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = AUR
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_LookUpNorth
+			icon = GFX_focus_generic_mediterranean_sea_focus
+			x = 2
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			relative_position_id = CIR_OrioniteImperialism
+			
+			prerequisite = {
+				focus = CIR_OrioniteImperialism
+			}
+			
+			completion_reward = {
+				add_stability = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		focus = {
+			id = CIR_BuildCanisianNavalBases
+			icon = GFX_focus_generic_naval_discipline
+			x = 0
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = CIR_LookUpNorth
+			}
+			
+			relative_position_id = CIR_LookUpNorth
+			
+			completion_reward = {
+				add_building_construction = {
+					type = supply_node
+					is_port = yes
+					level = 1
+					instant_build = yes
+					province = 1384
+				}
+				
+				add_building_construction = {
+					type = supply_node
+					is_port = yes
+					level = 1
+					instant_build = yes
+					province = 2734
+				}
+				
+				add_building_construction = {
+					type = supply_node
+					is_port = yes
+					level = 1
+					instant_build = yes
+					province = 2332
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_RoundTwo
+			icon = GFX_focus_CIR_InvadeUrsa
+			x = 0
+			y = 2
+			cost = 5
+			available = {
+				
+			}
+			
+			relative_position_id = CIR_LookUpNorth
+			
+			prerequisite = {
+				focus = CIR_BuildCanisianNavalBases
+			}
+			
+			completion_reward = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = URS
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		
+		
+		focus = {
+			id = CIR_FinishTheLastManStanding
+			icon = GFX_focus_CIR_InvadeHydrus
+			x = 1
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = CIR_RoundTwo
+			}
+			prerequisite = {
+				focus = CIR_InvadeAuriga
+			}
+			
+			relative_position_id = CIR_InvadeAuriga
+			
+			completion_reward = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = HYS
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_TheEasternTitan
+			icon = GFX_focus_CIR_TheEasternTitan
+			x = 0
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = CIR_FinishTheLastManStanding
+			}
+			
+			relative_position_id = CIR_FinishTheLastManStanding
+			
+			completion_reward = {
+				add_ideas = CIR_TheEasternTitan
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_RallyTheNationalists
+			icon = GFX_focus_CIR_RallyTheNationalists
+			x = 5
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			relative_position_id = CIR_OrioniteImperialism
+			
+			prerequisite = {
+				focus = CIR_OrioniteImperialism
+			}
+			
+			completion_reward = {
+				add_ideas = CIR_NationalistRheotic
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		
+		focus = {
+			id = CIR_ExpandTheMilitaryIndustry
+			icon = GFX_focus_SOV_merge_plants
+			x = 0
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = CIR_RallyTheNationalists
+			}
+			
+			relative_position_id = CIR_RallyTheNationalists
+			
+			completion_reward = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		
+		focus = {
+			id = CIR_FoundTheMarineCorps
+			icon = GFX_goal_generic_amphibious_assault
+			x = 0
+			y = 2
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = CIR_ExpandTheMilitaryIndustry
+			}
+			
+			relative_position_id = CIR_RallyTheNationalists
+			
+			completion_reward = {
+				add_ideas = CIR_OMAC
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_PrepareToStrikeTheBeast
+			icon = GFX_focus_focus_fra_revolution_utmost
+			x = 8
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			relative_position_id = CIR_OrioniteImperialism
+			
+			prerequisite = {
+				focus = CIR_OrioniteImperialism
+			}
+			
+			completion_reward = {
+				add_stability = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_AntiAntareanPropaganda
+			icon = GFX_focus_CIR_AntiAntareanPropaganda
+			x = 0
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = CIR_PrepareToStrikeTheBeast
+			}
+			
+			relative_position_id = CIR_PrepareToStrikeTheBeast
+			
+			completion_reward = {
+				add_ideas = CIR_AntiAntareanPropaganda
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_StrikeTheBoogeymanOfCentaura
+			icon = GFX_focus_generic_total_war
+			x = 0
+			y = 2
+			cost = 5
+			available = {
+				
+			}
+			
+			relative_position_id = CIR_PrepareToStrikeTheBeast
+			
+			prerequisite = {
+				focus = CIR_AntiAntareanPropaganda
+			}
+			
+			completion_reward = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = ANT
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_TheNorthCentauranExpedition
+			icon = GFX_focus_NOR_hurtigruten
+			x = 10
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			relative_position_id = CIR_OrioniteImperialism
+			
+			prerequisite = {
+				focus = CIR_OrioniteImperialism
+			}
+			
+			completion_reward = {
+				add_stability = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_WarplanRiaa
+			icon = GFX_goal_generic_position_armies
+			x = 0
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			relative_position_id = CIR_TheNorthCentauranExpedition
+			
+			prerequisite = {
+				focus = CIR_TheNorthCentauranExpedition
+			}
+			
+			completion_reward = {
+				add_ideas = CIR_WarPlanRiaa
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_DestroyTheGiantOfTheNorth
+			icon = GFX_focus_ETH_boots_on_the_shore
+			x = 0
+			y = 2
+			cost = 5
+			available = {
+				
+			}
+			
+			relative_position_id = CIR_TheNorthCentauranExpedition
+			
+			prerequisite = {
+				focus = CIR_WarplanRiaa
+			}
+			
+			completion_reward = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = RIA
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_FinishOffLibra
+			icon = GFX_focus_SOV_reinforce_northern_naval_bases
+			x = -1
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			relative_position_id = CIR_DestroyTheGiantOfTheNorth
+			
+			prerequisite = {
+				focus = CIR_DestroyTheGiantOfTheNorth
+			}
+			prerequisite = {
+				focus = CIR_StrikeTheBoogeymanOfCentaura
+			}
+			
+			completion_reward = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = LBR
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_TheMasterOfCentaura
+			icon = GFX_focus_ITA_mare_nostrum
+			x = 0
+			y = 1
+			cost = 5
+			available = {
+			OR = {
+				AND = {
+				owns_state = 69
+				owns_state = 103
+				}
+				AND = {
+				ANT = { is_puppet_of = ORI }
+				RIA = { is_puppet_of = ORI }
+				}
+			}
+		}
+			
+			relative_position_id = CIR_FinishOffLibra
+			
+			prerequisite = {
+				focus = CIR_FinishOffLibra
+			}
+			
+			completion_reward = {
+				add_ideas = CIR_TheMasterOfCentaura
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_TheMasterOfForma
+			icon = GFX_focus_SOV_international_union_of_soviet_republics
+			x = 51
+			y = 8
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = CIR_TheMasterOfCentaura
+			}
+			prerequisite = {
+				focus = CIR_TheEasternTitan
+			}
+			completion_reward = {
+				add_ideas = CIR_MasterOfForma
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_TheHard1900s
+			icon = GFX_focus_CIR_TheHard1900s
+			x = 60
+			y = 0
+			cost = 5
+			available = {
+				always = false
+			}
+			
+			completion_reward = {
+			
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_OurCourseOfAction
+			icon = GFX_
+			x = 67
+			y = 1
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = CIR_TheHard1900s
+			}
+			
+			completion_reward = {
+				country_event  = { id = orion.7 }
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_LowerTaxes
+			icon = GFX_focus_DEN_no_regulations
+			x = 64
+			y = 2
+			cost = 5
+			available = {
+				
+			}
+			
+			mutually_exclusive = { focus = CIR_ProvideSupportToSmallBusinesses}
+			
+			prerequisite = {
+				focus = CIR_OurCourseOfAction
+			}
+			
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = CIR_TheHard1900s
+					add_idea = CIR_TheHard1900s1T
+				}
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_ProvideSupportToSmallBusinesses
+			icon = GFX_focus_DEN_limited_regulations
+			x = 70
+			y = 2
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = CIR_OurCourseOfAction
+			}
+			
+			completion_reward = {
+				swap_ideas = {
+						remove_idea = CIR_TheHard1900s
+						add_idea = CIR_TheHard1900s1C
+				}
+				add_political_power = -150
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_TemporarilyCeaseWelfarePayments
+			icon = GFX_focus_DEN_limited_regulations
+			x = 68
+			y = 3
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = CIR_ProvideSupportToSmallBusinesses
+			}
+			
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = CIR_TheHard1900s1C
+					add_idea = CIR_TheHard1900s2C
+				}
+				add_stability = -0.15
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_RedirectGovernmentFunds
+			icon = GFX_focus_DEN_limited_regulations
+			x = 68
+			y = 3
+			cost = 5
+			available = {
+				
+			}
+			
+			prerequisite = {
+				focus = CIR_ProvideSupportToSmallBusinesses
+			}
+			
+			completion_reward = {
+				swap_ideas = {
+						remove_idea = CIR_TheHard1900s1C
+						add_idea = CIR_TheHard1900s2C
+				}
+				add_stability = -0.15
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_SeizeCompanyAssets
+			icon = GFX_focus_GER_autarky_ambitions
+			x = 68
+			y = 4
+			cost = 5
+			available = {
+					
+			}
+			
+			prerequisite = {
+				focus = CIR_RedirectGovernmentFunds
+			}
+			completion_reward = {
+				add_timed_idea = {idea = CIR_SeizedCompanyAssets days = 360}
+				add_stability = -0.15
+				139 = {
+					limit = {
+							free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}	
+					add_extra_state_shared_building_slots = 1
+					
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_CompromiseWithWorkers
+			icon = GFX_focus_GER_autarky_ambitions
+			x = 70
+			y = 3
+			cost = 5
+			available = {
+					
+			}
+			
+			prerequisite = {
+				focus = CIR_ProvideSupportToSmallBusinesses
+			}
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = CIR_WorkerStrikes
+					add_idea = CIR_WorkerStrikes1
+				}
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_CompromiseWithWorkers
+			icon = GFX_focus_GER_autarky_ambitions
+			x = 70
+			y = 3
+			cost = 5
+			available = {
+					
+			}
+			
+			prerequisite = {
+				focus = CIR_ProvideSupportToSmallBusinesses
+			}
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = CIR_WorkerStrikes
+					add_idea = CIR_WorkerStrikes1
+				}
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		focus = {
+			id = CIR_InvestInUrbanInfrastructure
+			icon = GFX_focus_GER_autarky_ambitions
+			x = 70
+			y = 4
+			cost = 5
+			available = {
+					
+			}
+			
+			prerequisite = {
+				focus = CIR_CompromiseWithWorkers
+			}
+			completion_reward = {
+				remove_ideas = CIR_WorkerStrikes1
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		focus = {
+			id = CIR_BuildMoreSchools
+			icon = GFX_focus_GER_autarky_ambitions
+			x = 72
+			y = 3
+			cost = 5
+			available = {
+					
+			}
+			
+			prerequisite = {
+				focus = CIR_ProvideSupportToSmallBusinesses
+			}
+			completion_reward = {
+				add_ideas =  CIR_ExpandedEducationSector
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	
+	focus = {
+        id = CIR_undermine_gemina
+        icon = GFX_focus_rom_handle_king
+        x = 4
+        y = 0
+        cost = 5
+		
+		available = {
+		NOT = {	owns_state = 137 }
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = CIR_restrict_gemina
+        icon = GFX_focus_BEL_prisoner_king
+        x = 0
+        y = 1
+        cost = 5
+        prerequisite = { focus = CIR_undermine_gemina }
+		relative_position_id = CIR_undermine_gemina
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = CIR_reduce_gem_funding
+        icon = GFX_focus_ARG_anti_corruption_policies
+        x = -2
+        y = 1
+        cost = 2
+        prerequisite = { focus = CIR_undermine_gemina }
+		relative_position_id = CIR_undermine_gemina
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+	
+	focus = {
+        id = CIR_increase_control_on_gem
+        icon = GFX_focus_ARG_revive_the_colonial_plan
+        x = 2
+        y = 1
+        cost = 5
+        prerequisite = { focus = CIR_undermine_gemina }
+		relative_position_id = CIR_undermine_gemina
+		
+		available = {
+			owns_state = 114
+		}
+		
+        completion_reward = {
+		
+		}
+		
+        ai_will_do = {
+            factor = 5
+        }
+    }
+		
+		focus = {
+			id = CIR_annex_gemina
+			icon = GFX_focus_GER_autarky_ambitions
+			x = 0
+			y = 1
+			cost = 5
+		relative_position_id = CIR_restrict_gemina
+			available = {
+				date > 1901.01.01
+			}
+			
+			prerequisite = {
+			focus = CIR_restrict_gemina
+			focus = CIR_reduce_gem_funding
+			focus = CIR_increase_control_on_gem
+			}
+			completion_reward = {
+				annex_country = {
+				    target = GEM
+				    transfer_troops = yes
+				}
+			}
+			ai_will_do = {
+				factor = 20
+		}
+	}
+}
+	
+	
+	
+	
+	
+
+

@@ -5,17 +5,19 @@ state={
 		owner = ORI
 		add_core_of = ORI
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 2
 			arms_factory = 0
-			dockyard = 0
-			4768 = {
-				naval_base = 3
-
-			}
+			dockyard = 1
 			5218 = {
 				naval_base = 4
+			}
+			5039 = {
+				naval_base = 3
+			}
 
+			4768 = {
+				naval_base = 1
 			}
 
 		}
@@ -30,6 +32,9 @@ state={
 		}
 		victory_points = {
 			5039 5
+		}
+		victory_points = {
+			5591 5
 		}
 
 	}

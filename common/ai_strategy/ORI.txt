@@ -1,0 +1,102 @@
+
+attack_ursan_east_canis = {
+	allowed = {
+		original_tag = ORI
+		original_tag = HYS
+		original_tag = LPS
+		original_tag = CNS
+	}
+	enable = {
+		has_war_with = URS
+	}
+	abort = {
+		OR = {
+			date > 1905.9.1 # if we haven't succeeded by now, maybe try somewhere else
+			115 = { is_controlled_by_ROOT_or_ally = yes }
+			118 = { is_controlled_by_ROOT_or_ally = yes }
+			119 = { is_controlled_by_ROOT_or_ally = yes }
+			175 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+	}
+	ai_strategy = {
+		type = area_priority
+		id = ursan_east_canis
+		value = 10
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = great_canis_desert
+		value = -10
+	}
+	
+	ai_strategy = {
+		type = front_unit_request
+		area = ursan_east_canis
+		value = 1
+	}
+}
+
+dont_attack_minefields = {
+	allowed = {
+		original_tag = ORI
+		original_tag = HYS
+		original_tag = LPS
+		original_tag = CNS
+		original_tag = URS
+	}
+	enable = {
+	OR = {
+		114 = { has_dynamic_modifier = { URS_desert_minefield_modifier } }
+		114 = { has_dynamic_modifier = { URS_desert_minefield_2_modifier } }
+		}
+	}
+	abort = {
+		OR = {
+			date > 1905.9.1 # if we haven't succeeded by now, maybe punch through desert
+			115 = { is_controlled_by_ROOT_or_ally = yes }
+			118 = { is_controlled_by_ROOT_or_ally = yes }
+			119 = { is_controlled_by_ROOT_or_ally = yes }
+			175 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+	}
+	ai_strategy = {
+		type = area_priority
+		id = ursan_east_canis
+		value = 30
+	}
+	
+	ai_strategy = {
+		type = force_concentration_target_weight
+		state = 114
+		value = -30
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = great_canis_desert
+		value = -200
+	}
+	
+	ai_strategy = {
+		type = front_unit_request
+		area = ursan_east_canis
+		value = 1
+	}
+}
+
+dont_garrison_useless = {
+	allowed = {
+		original_tag = ORI
+	}
+	enable = {
+		has_war = yes
+	}
+	abort = {
+		has_war = no
+	}
+	ai_strategy = {
+		type = garrison
+		value = -10
+	}
+}

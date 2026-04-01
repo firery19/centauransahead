@@ -1,0 +1,111 @@
+### REGULAR DESTROYER NAMES###
+CTA_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { CTA }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }		
+
+	can_use = { always = yes }
+
+	prefix = "dSM "								
+	fallback_name = "Destroyer %s"					
+
+	unique = {											
+	}
+}
+
+### HEAVY CRUISER NAMES###
+CTA_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { CTA }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser light_cruiser }
+	
+	can_use = { always = yes }
+	
+	prefix = "dSM "								
+	fallback_name = "Cruiser %s"
+
+	unique = {
+	}
+}
+
+### BATTLESHIP NAMES ###
+CTA_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { CTA }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship}
+	
+	prefix = "dSM "								
+	fallback_name = "Battleship %s"		
+
+	unique = {
+	#	"Repulsar" "Repulsar II"	#19th century
+		"Nacional" "Nacional II"	#1900s
+		"Resistencia" "Resistencia II" "Resistencia III" "Resistencia IV"		#1910/20 probably
+		"Triunfo" "Triunfo II" "Triunfo III" "Triunfo IV" "Triunfo V" "Triunfo VI"	#1920/30 probably
+	}
+}
+
+### BATTLECRUISER NAMES ###
+CTA_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { CTA }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "dSM "								
+	fallback_name = "Battlecruiser %s"		
+
+	unique = {
+ 	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+CTA_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { CTA }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "dSM "							
+	fallback_name = "Carrier %s"		
+
+	unique = {
+	}
+}
+### SUBMARINES ###
+CTA_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { CTA }
+	
+	can_use = { always = yes }
+	
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "dSM "							
+	fallback_name = "U-%s"
+	
+	unique = {
+
+	}
+}

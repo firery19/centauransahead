@@ -1,0 +1,189 @@
+spriteTypes = {
+	## MOD IDEAS/SPIRITS ##
+	spriteType = {
+		name = "GFX_idea_RAJ_private_military_complex"
+		texturefile = "gfx/interface/ideas/idea_RAJ_private_military_complex.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_1900_warfare"
+		texturefile = "gfx/interface/ideas/idea_1900_warfare.dds"
+	}
+	spriteType = {
+    	name = "GFX_idea_NORDIC_army_communist"
+    	texturefile = "gfx/interface/ideas/NORDIC_army_communist.dds"
+	}
+		spriteType = {
+    	name = "GFX_idea_ANT_navy_dynamic"
+    	texturefile = "gfx/interface/ideas/NORDIC_navy_communist.dds"
+	}
+	#characters
+
+	spriteType = {
+		name = "GFX_idea_GER_heinrich_himmler"
+		texturefile = "gfx/interface/ideas/idea_GER_heinrich_himmler.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_anna_khorin_small"
+		texturefile = "gfx/interface/ideas/idea_anna_khorin_small.dds"
+	}
+
+
+
+	# cetus
+	spriteType = {
+		name = "GFX_idea_cetus_rules_the_waves"
+		texturefile = "gfx/interface/ideas/idea_cetus_rules_the_waves.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CET_independent_armed_forces"
+		texturefile = "gfx/interface/ideas/idea_CET_independent_armed_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CET_sc_question"
+		texturefile = "gfx/interface/ideas/idea_CET_SC_question.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CET_allocate_funds_idea"
+		texturefile = "gfx/interface/ideas/idea_CET_allocate_funds_idea.dds"
+	}
+
+	# orion
+	spriteType = {
+		name = "GFX_idea_ORI_Corruption"
+		texturefile = "gfx/interface/ideas/idea_ORI_Corruption.dds"			
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ORI_PrioritizedMilitary"
+		texturefile = "gfx/interface/ideas/idea_ORI_PrioritizedMilitary.dds"			
+	}
+
+	spriteType = {
+		name = "GFX_idea_ORI_GovernmentSubsidies"
+		texturefile = "gfx/interface/ideas/idea_ORI_GovernmentSubsidies.dds"			
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ORI_RapidIndustrialization"
+		texturefile = "gfx/interface/ideas/idea_ORI_RapidIndustrialization.dds"			
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ORI_TheHard1900s"
+		texturefile = "gfx/interface/ideas/idea_ORI_TheHard1900s.dds"			
+	}
+	
+	# corvus
+	spriteType = {
+		name = "GFX_idea_COV_revanchism_idea"
+		texturefile = "gfx/interface/ideas/idea_COV_revanchism_idea.dds"			
+	}
+
+	spriteType = {
+		name = "GFX_idea_COV_revanchism_2_idea"
+		texturefile = "gfx/interface/ideas/idea_COV_revanchism_2_idea.dds"			
+	}
+
+	spriteType = {
+		name = "GFX_idea_COV_surprise_attack_idea"
+		texturefile = "gfx/interface/ideas/idea_COV_surprise_attack.dds"			
+	}
+
+	spriteType = {
+		name = "GFX_idea_COV_dysfunctional_economy_idea"
+		texturefile = "gfx/interface/ideas/idea_COV_dysfunctional_economy_idea.dds"			
+	}
+
+	spriteType = {
+		name = "GFX_idea_COV_rampant_mafia_idea"
+		texturefile = "gfx/interface/ideas/idea_COV_rampant_mafia_idea.dds"			
+	}
+
+	spriteType = {
+		name = "GFX_idea_COV_suppressed_mafia_idea"
+		texturefile = "gfx/interface/ideas/idea_COV_suppressed_mafia_idea.dds"			
+	}
+
+	#aquila
+	spriteType = {
+		name = "GFX_idea_AQU_iron_army_idea"
+		texturefile = "gfx/interface/ideas/idea_AQU_iron_army_idea.dds"			
+	}
+
+	spriteType = {
+		name = "GFX_idea_AQU_outdated_technology_idea"
+		texturefile = "gfx/interface/ideas/idea_AQU_outdated_technology_idea.dds"			
+	}
+
+	spriteType = {
+		name = "GFX_idea_AQU_rusting_army_idea"
+		texturefile = "gfx/interface/ideas/idea_AQU_rusting_army_idea.dds"			
+	}
+
+	spriteType = {
+		name = "GFX_idea_AQU_maintained_army_idea"
+		texturefile = "gfx/interface/ideas/idea_AQU_maintained_army_idea.dds"			
+	}
+
+	spriteType = {
+		name = "GFX_idea_AQU_modern_army_idea"
+		texturefile = "gfx/interface/ideas/idea_AQU_modern_army_idea.dds"			
+	}
+	
+	spriteType = {
+		name = "GFX_idea_respect_army_idea"
+		texturefile = "gfx/interface/ideas/idea_respect_army_idea.dds"
+	}
+
+	# antares
+	spriteType = {
+		name = "GFX_idea_ANT_efficientagriculturidea"
+		texturefile = "gfx/interface/ideas/idea_ANT_efficientagriculturidea.dds"			
+	}
+	
+	# vega
+	spriteType = {
+		name = "GFX_idea_VEG_protected_by_murus_1"
+		texturefile = "gfx/interface/ideas/idea_VEG_protected_by_murus_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_VEG_protected_by_murus_2"
+		texturefile = "gfx/interface/ideas/idea_VEG_protected_by_murus_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_VEG_queens_blessing"
+		texturefile = "gfx/interface/ideas/idea_VEG_queens_blessing.dds"
+	}
+	
+	# grusa
+	spriteType = {
+		name = "GFX_idea_GRS_desert_warriors"
+		texturefile = "gfx/interface/ideas/idea_GRS_desert_warriors.dds"
+	}
+	
+	# hydrus
+	spriteType = {
+		name = "GFX_idea_HYS_recently_independent"
+		texturefile = "gfx/interface/ideas/idea_HYS_recently_independent.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HYS_food_shortages"
+		texturefile = "gfx/interface/ideas/idea_HYS_food_shortages.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HYS_against_the_goliath"
+		texturefile = "gfx/interface/ideas/idea_HYS_against_the_goliath.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HYS_against_the_goliath2"
+		texturefile = "gfx/interface/ideas/idea_HYS_against_the_goliath2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HYS_new_army"
+		texturefile = "gfx/interface/ideas/idea_HYS_new_army.dds"
+	}
+	
+	
+	#
+}

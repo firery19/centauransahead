@@ -9,7 +9,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = despotism
-			traits = { hawk }
+			traits = { autocratic_imperialist }
 			expire = "1902.1.1.1"
 			id = -1
 		}
@@ -28,6 +28,290 @@ characters = {
 			traits = { }
 			expire = "1938.1.1.1"
 			id = -1
+		}
+	}
+	
+	# general
+	
+	
+	URS_petr_trolivoch = {
+		name = URS_petr_trolivoch
+		portraits = {
+			civilian = {
+				large = GFX_portrait_URS_petr_trolivoch
+				small = GFX_portrait_URS_petr_trolivoch_small
+			}
+		}
+		field_marshal = { 
+			traits = { old_guard inflexible_strategist }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+			visible = {
+				has_government = neutrality
+			} # he shall only be loyal to the king
+		}
+	}
+	
+	URS_vlado_patroshenkov = {
+		name = URS_vlado_patroshenkov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ger_august_von_mackensen
+				small = GFX_idea_GER_august_von_mackensen
+			}
+		}
+		field_marshal = { 
+			traits = { trait_engineer }
+			skill = 2
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	URS_john_shuudan = {
+		name = URS_john_shuudan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ger_august_von_mackensen
+				small = GFX_idea_GER_august_von_mackensen
+			}
+		}
+		corps_commander = { 
+			traits = { naval_invader URS_dubious_loyalty }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	
+	URS_konstantin_sakantsev = {
+		name = URS_konstantin_sakantsev
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_wilhelm_list
+				small = GFX_portrait_GER_wilhelm_list_small
+			}
+		}
+		corps_commander = {
+			traits = { desert_fox CNS_canis_native }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	URS_vaderii_sotkach = {
+		name = URS_vaderii_sotkach
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_wilhelm_list
+				small = GFX_portrait_GER_wilhelm_list_small
+			}
+		}
+		corps_commander = {
+			traits = { winter_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	URS_markovoch_dmitrienok = {
+		name = URS_markovoch_dmitrienok
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_wilhelm_list
+				small = GFX_portrait_GER_wilhelm_list_small
+			}
+		}
+		corps_commander = {
+			traits = { career_officer CNS_canis_native }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	
+	URS_dontrov_artemich = {
+		name = URS_dontrov_artemich
+		portraits = {
+			army = {
+				large = GFX_portrait_URS_dontrov_artemich
+				small = GFX_portrait_URS_dontrov_artemich_small
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	URS_solkon_skoroded = {
+		name = URS_solkon_skoroded
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_wilhelm_list
+				small = GFX_portrait_GER_wilhelm_list_small
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	# admirals
+
+	URS_enrik_pavolvich = {
+		name = URS_enrik_pavolvich
+		portraits = {
+			army = {
+				large = GFX_portrait_URS_enrik_pavolvich
+				small = GFX_portrait_URS_enrik_pavolvich_small
+			}
+			army = {
+				small = GFX_idea_raeder
+			}
+		}
+		
+		navy_leader = {
+			traits = { fleet_protector }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 4
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+
+	URS_vasilii_kachalo = {
+		name = URS_vasilii_kachalo
+		portraits = {
+			army = {
+				large = GFX_portrait_URS_vasilii_kachalo
+				small = GFX_portrait_URS_vasilii_kachalo_small
+			}
+			army = {
+				small = GFX_idea_raeder
+			}
+		}
+		
+		navy_leader = {
+			traits = { green_water_expert navy_career_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+
+	URS_dobrodub_ozolinsh = { # king
+		name = URS_dobrodub_ozolinsh
+		portraits = {
+			army = {
+				large = GFX_portrait_URS_dobrodub_ozolinsh
+				small = GFX_portrait_URS_dobrodub_ozolinsh_small
+			}
+			army = {
+				small = GFX_idea_raeder
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = raeder
+			allowed = {
+				original_tag = URS
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = GER_erich_raeder
+					}
+				}
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+		
+		navy_leader = {
+			traits = { old_guard_navy ironside gunnery_expert battleship_adherent }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+
+	URS_arthur_artevoch = {
+		name = URS_arthur_artevoch
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_erich_raeder
+				small = GFX_portrait_GER_erich_raeder_small
+			}
+			army = {
+				small = GFX_idea_raeder
+			}
+		}
+		
+		navy_leader = {
+			traits = { seawolf }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+
+	URS_arsenii_oskolkovoch = {
+		name = URS_arsenii_oskolkovoch
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_erich_raeder
+				small = GFX_portrait_GER_erich_raeder_small
+			}
+			army = {
+				small = GFX_idea_raeder
+			}
+		}
+		
+		navy_leader = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
 		}
 	}
 	

@@ -37,7 +37,7 @@ BUL_historical_plan = {
 	}
 
 	focus_factors = {
-		ORS_OrioniteImperialism = 0
+#		ORS_OrioniteImperialism = 0
 	}
 
 	research = {
@@ -45,7 +45,8 @@ BUL_historical_plan = {
 	}
 
 	ideas = {
-
+		silent_workhorse = 100 #ant needs that pp
+		popular_figurehead = 5
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)

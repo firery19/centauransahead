@@ -13,3 +13,229 @@ characters = {
 			id = -1
 		}
 	}
+	ANT_test_field_marshall = {
+		name = "Lasram Lief"
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "GFX_portrait_SOV_georgy_zhukov"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ludwig_beck
+			allowed = {
+				original_tag = ANT
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+		field_marshal = {
+			traits = { 	media_personality 
+				#	armor_officer 
+					war_hero 
+				#	winter_specialist 
+					old_guard
+					brilliant_strategist
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 5
+
+		}
+
+	}
+	ANT_test_general = {
+		name = "Nate Hewgens"
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "GFX_portrait_SOV_georgy_zhukov"
+			}
+		}
+		corps_commander = {
+			traits = {# 	media_personality 
+				#	armor_officer 
+				#	war_hero 
+				#	winter_specialist 
+					fortress_buster
+					ranger
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 4
+
+		}
+
+	}
+	ANT_general = {
+		name = "Steiner Motangrep"
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "GFX_portrait_SOV_georgy_zhukov"
+			}
+		}
+		corps_commander = {
+			traits = {# 	media_personality 
+				#	armor_officer 
+				#	war_hero 
+				#	winter_specialist 
+				#	fortress_buster
+				#	ranger
+					trait_reckless
+					urban_assault_specialist
+					trickster
+					politically_connected
+			}
+			skill = 3
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 2
+
+		}
+
+	}
+	ANT_general1 = {
+		name = "Bobert Johnson"
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "GFX_portrait_SOV_georgy_zhukov"
+			}
+		}
+		corps_commander = {
+			traits = { trait_cautious
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+
+		}
+
+	}
+	ANT_general2 = {
+		name = "Simon of Akrab II"
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "GFX_portrait_SOV_georgy_zhukov"
+			}
+		}
+		corps_commander = {
+			traits = {	brilliant_strategist career_officer
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 2
+
+		}
+
+	}
+
+
+
+
+
+#####	ADMIRALS	######
+
+	ANT_test_admiral = { 
+		name = "Jellicoe Nelson"
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_erich_raeder
+				small = GFX_portrait_GER_erich_raeder_small
+			}
+			army = {
+				small = GFX_idea_raeder
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = raeder
+			allowed = {
+				original_tag = ANT
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+
+			cost = 100
+			ai_will_do = {
+				base = 1
+			}
+		}
+		
+		navy_leader = {
+			traits = { battleship_adherent naval_lineage gentlemanly }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 2
+		}	
+	}
+	ANT_admiral = { 
+		name = "Skipper Hipper"
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_erich_raeder
+				small = GFX_portrait_GER_erich_raeder_small
+			}
+			army = {
+				small = GFX_idea_raeder
+			}
+		}
+
+
+
+		
+		
+		navy_leader = {
+			traits = {  naval_lineage old_guard_navy inshore_fighter }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+	}
+	ANT_admiral1 = { 
+		name = "Seall Ahoead"
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_erich_raeder
+				small = GFX_portrait_GER_erich_raeder_small
+			}
+			army = {
+				small = GFX_idea_raeder
+			}
+		}
+
+
+
+		
+		
+		navy_leader = {
+			traits = {  lone_wolf ironside cuts_corners }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}

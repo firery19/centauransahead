@@ -1,0 +1,29 @@
+state={
+	id=207
+	name="STATE_207"
+	history={
+		owner = CLB
+		add_core_of = CLB
+		add_core_of = PHA
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 3
+			2945 = {
+			naval_base = 2
+			}
+		}
+		victory_points = {
+			788 5
+		}
+		victory_points = {
+			2945 5 
+		}
+	}
+	provinces={
+		514 788 1100 1169 1363 2212 2945 3759 3760 3761 3771 3777 3790 3804 3817 3823 3833 3857 
+	}
+	manpower=5712811
+	state_category=city
+	buildings_max_level_factor=1
+	local_supplies=0
+}

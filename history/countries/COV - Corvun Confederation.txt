@@ -2,6 +2,13 @@ capital = 51
 
 oob = "COV_1900"
 
+set_power_balance = {
+	id = COV_mafia_balance
+	left_side = COV_mafia_side
+    right_side = COV_government_side
+    set_value = -0.45
+}
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "COV_1900_naval_mtg"
@@ -69,6 +76,7 @@ set_popularities = {
 	communism = 0
 	fascism = 2
 	neutrality = 98
+#	absolute_monarchy = 98
 }
 
 set_politics = {
@@ -79,20 +87,21 @@ set_politics = {
 }
 
 add_ideas = {
-
-	trench_warfare_idea
-
-		COV_revanchism_idea
-		COV_dysfunctional_economy_idea
-		COV_mafia_rampant_idea
-		limited_conscription
-		low_economic_mobilisation
-		forma_militarism
-		}
+	COV_revanchism_idea
+	COV_dysfunctional_economy_idea
+	COV_mafia_rampant_idea
+	limited_conscription
+	low_economic_mobilisation
+	forma_militarism
+}
 
 recruit_character = COV_oliver_khorin
 recruit_character = COV_henry_khorin
-#recruit_character = COV_
+recruit_character = COV_anna_khorin
+recruit_character = COV_winterhall_graze
+recruit_character = COV_john_corvus
+recruit_character = COV_john_corvuntes
+#recruit_character = 
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -113,6 +122,34 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
+	create_equipment_variant = {
+		name = "Cinereus Class"
+		type = ship_hull_torpedo_1
+		name_group = COV_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = empty
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+		}
+	}
+#	create_equipment_variant = {
+#		name = "Cinereus Class"
+#		type = ship_hull_light_1
+#		name_group = 
+#		parent_version = 0
+#		modules = {
+#			fixed_ship_battery_slot = empty
+#			fixed_ship_anti_air_slot = empty
+#			fixed_ship_fire_control_system_slot = empty
+#			fixed_ship_radar_slot = empty
+#			fixed_ship_engine_slot = light_ship_engine_1
+#			fixed_ship_torpedo_slot = ship_torpedo_1
+#			mid_1_custom_slot = empty
+#			rear_1_custom_slot = empty
+#		}
+#	}
 	# Light Cruisers #
 	create_equipment_variant = {
 		name = "Intrepidus Class"

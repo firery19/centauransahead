@@ -12,8 +12,8 @@ state={
 		add_core_of = CET
 		buildings = {
 			industrial_complex = 2
-			dockyard = 3
-			infrastructure = 3
+			dockyard = 6
+			infrastructure = 4
 			5032 = {
 				naval_base = 4
 

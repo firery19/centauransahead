@@ -6,7 +6,7 @@ state={
 		add_core_of = AQU
 		buildings = {
 			industrial_complex = 1
-			infrastructure = 3
+			infrastructure = 2
 			4923 = {
 				bunker = 3
 			}
@@ -16,6 +16,9 @@ state={
 			3191 = {
 				bunker = 3
 			}
+		}
+		victory_points = {
+			4794 10
 		}
 	}
 	provinces={

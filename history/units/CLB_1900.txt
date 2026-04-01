@@ -5,10 +5,11 @@ division_template = {
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+
 	}
 	
 	support = {
@@ -65,7 +66,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 4037
+		location = 3897
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
@@ -198,7 +199,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 2364
+	#	location = 2364	Lingstonia update
+		location = 3271
 		division_template = "Frontier Guards"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -209,7 +211,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 121
+	#	location = 121	Lingstonia update
+		location = 525
 		division_template = "Frontier Guards"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -242,7 +245,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 3140
+		location = 772
 		division_template = "Frontier Guards"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -275,7 +278,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 4009
+		location = 2660
 		division_template = "Frontier Guards"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -286,7 +289,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 9
 		}
-		location = 1877
+		location = 1503
 		division_template = "Frontier Guards"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -297,7 +300,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 10
 		}
-		location = 4003
+		location = 4036
 		division_template = "Frontier Guards"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -341,9 +344,40 @@ units = {
 			is_name_ordered = yes
 			name_order = 14
 		}
-		location = 1837
+	#	location = 2793	Lingstonia update
+		location = 848
 		division_template = "Frontier Guards"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "CLB"
+		}
+		requested_factories = 2
+		progress = 0
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "CLB"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "CLB"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
 	}
 }

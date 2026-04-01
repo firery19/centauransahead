@@ -42,7 +42,7 @@ tags={
 	"Utilities"
 }
 picture="thumbnail.png"
-version="1.1.3AG"
+version="1.2.0"
 supported_version="1.17.*"
 path="C:/Users/firer/Documents/Paradox Interactive/Hearts of Iron IV/mod/centauransahead"
 remote_file_id="3559962856"

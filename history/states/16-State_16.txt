@@ -4,6 +4,7 @@ state={
 	name="STATE_16"
 	resources={
 		steel=12.000
+		coal = 9
 	}
 
 	history={
@@ -19,24 +20,21 @@ state={
 
 			infrastructure = 3
 			3625 = {
-				naval_base = 4
-				coastal_bunker = 8
+			#	naval_base = 4
+				coastal_bunker = 4
 
 			}
 			3634 = {
-				coastal_bunker = 8
+				coastal_bunker = 4
 
 			}
 			3028 = {
-				coastal_bunker = 8
+				coastal_bunker = 4
+				naval_base = 4
 
 			}
 			3599 = {
-				coastal_bunker = 8
-
-			}
-			3598 = {
-				coastal_bunker = 8
+				coastal_bunker = 4
 
 			}
 
@@ -49,12 +47,11 @@ state={
 		}
 
 	}
-
 	provinces={
-		95 1703 1819 2390 3028 3177 3578 3598 3599 3607 3615 3625 3634 
+		1703 1819 2390 3028 3177 3599 3607 3615 3625 3634 
 	}
-	manpower=10380584
+	manpower=6689350
 	buildings_max_level_factor=1.000
-	state_category=metropolis
+	state_category=city
 	local_supplies=0.000
 }

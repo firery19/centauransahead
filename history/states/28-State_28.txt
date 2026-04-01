@@ -5,6 +5,9 @@ state={
 		owner = VEG
 		add_core_of = VEG
 		add_claim_by = GRS
+		buildings = {
+			infrastructure = 2
+		}
 		victory_points = {
 			6760 1
 		}

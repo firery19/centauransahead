@@ -18,7 +18,6 @@ if = {
 		early_destroyer = 1
 		basic_destroyer = 1
 		early_light_cruiser = 1
-		basic_light_cruiser = 1
 		early_heavy_cruiser = 1
 		early_battleship = 1
 		basic_battleship = 1
@@ -73,24 +72,40 @@ add_political_power = 1
 
 set_convoys = 275
 
-recruit_character = ORI_Edward_Spencer
+recruit_character = ORI_edward_spencer
+recruit_character = ORI_alfons_rigo_burkes
+recruit_character = ORI_patrick_hardin
+recruit_character = ORI_john_united_democratic
+
+recruit_character = ORI_theodore_grant
+recruit_character = ORI_micheal_carter
+recruit_character = ORI_mailz_krouford
+recruit_character = ORI_grant_stoun
+recruit_character = ORI_raian_frost
+recruit_character = ORI_david_blaid
+recruit_character = ORI_mark_steele
+recruit_character = ORI_edward_reid
+
+recruit_character = ORI_john_wayne
+recruit_character = ORI_eloise_matthews
 
 set_popularities = {
-	democratic = 98
+	democratic_right = 48	#nrp
+	democratic = 21		#era
+	democratic_left = 29	#udp
 	communism = 0
 	fascism = 0
 	neutrality = 2
 }
 
 set_politics = {
-	ruling_party = democratic
-	last_election = "1900.1.1"
+	ruling_party = democratic_right
+	last_election = "1898.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 add_ideas = {
-	trench_warfare_idea
 	ORS_RampantGovernmentCorruption
 	ORS_PrioritizedMilitary
 	ORS_GovernmentSubisidies
@@ -207,6 +222,27 @@ if = {
 			rear_1_custom_slot = ship_medium_battery_2
 		}
 	}
+	# Battlecruisers #
+	create_equipment_variant = {
+		name = "Enceladus Class"
+		type = ship_hull_heavy_1
+		name_group = ORI_BC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bc_1
+			front_1_custom_slot = ship_heavy_battery_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	
 	# Battleships #
 	create_equipment_variant = {
 		name = "Pollux Class"

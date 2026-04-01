@@ -4,6 +4,11 @@ state={
 	history = {
 		owner = AQU
 		add_core_of = AQU
+		buildings = {
+			industrial_complex = 0
+			arms_factory = 0
+			infrastructure = 1
+		}
 	}
 	provinces={
 		1430 1776 2021 3170 4217 4236 4253 4296 4332 4353 

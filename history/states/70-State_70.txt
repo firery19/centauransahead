@@ -11,7 +11,7 @@ state={
 		add_core_of = RIA
 		buildings = {
 			arms_factory = 0
-			industrial_complex = 1
+			industrial_complex = 0
 			infrastructure = 2
 
 		}
@@ -23,12 +23,11 @@ state={
 		}
 
 	}
-
 	provinces={
-		16 71 73 88 92 164 209 219 220 340 418 420 530 569 756 777 850 868 889 908 945 955 1008 1166 1281 1285 1322 1462 1480 1527 1618 1627 1740 1770 1792 2343 2361 2475 2609 3099 3166 3353 3359 3360 3372 3382 3383 3390 3395 3401 3403 3420 3427 6554 
+		16 71 73 92 164 209 219 220 340 530 569 945 955 1285 1480 1527 3099 3166 3353 3359 3360 3372 3382 
 	}
-	manpower=21150197
+	manpower=4924671
 	buildings_max_level_factor=1.000
-	state_category=large_town
+	state_category=rural
 	local_supplies=0.000
 }

@@ -10,3 +10,153 @@ south_corvus_decisions = {
         base = 100
     }
 }
+
+#centauran_exodus_decision_category = {}
+hearts_of_forma_generic_category = {
+
+	icon = 
+
+	picture = 
+
+	allowed = {
+	always = yes
+	}
+	visible = {
+	always = yes
+#	OR = {
+#		NOT = { country_exists = CET }
+#		NOT = { country_exists = AQU }
+#		NOT = { country_exists = VEG }
+#		NOT = { country_exists = GRS }
+#		NOT = { country_exists = CLB }
+#		NOT = { country_exists = RIA }
+#		NOT = { country_exists = TUC }
+#		NOT = { country_exists = CTA }
+#		}
+	}
+    priority = {
+        base = 3
+    }
+}
+hof_generic_propaganda_category = {
+
+	icon = 
+
+	picture = 
+
+	allowed = {
+	always = yes
+	}
+	
+	visible = {
+	always = yes
+	}
+	
+    priority = {
+        base = 12
+    }
+}
+
+special_projects_category = {
+
+	icon = 
+
+	picture = 
+
+	allowed = {
+	always = yes
+	}
+    priority = {
+        base = 1
+    }
+}
+
+LBR_generic_category = {
+
+	icon = 
+
+	picture = 
+
+	allowed = {
+	original_tag = LBR
+	}
+	visible = {
+	original_tag = LBR
+	}
+    priority = {
+        base = 1
+    }
+}
+
+LAC_generic_category = {
+
+	icon = 
+
+	picture = 
+
+	allowed = {
+	original_tag = LAC
+	}
+	visible = {
+	original_tag = LAC
+	OR = {
+		is_debug = yes
+		has_completed_focus = LAC_the_intertwined_fates
+		has_completed_focus = LAC_rebuild_rosehall
+		}
+	}
+    priority = {
+        base = 100
+    }
+}
+
+ANT_bocchiland = {
+
+	icon = GFX_decision_category_spr_the_seeds_of_revolution
+
+	picture = GFX_decision_cat_generic_south_corvus
+	
+	visible_when_empty = yes
+	
+	allowed = {
+		original_tag = CAI
+	}
+	
+	visible = {
+		is_debug = yes
+	}
+	priority = {
+		base = 1
+		modifier = {
+			add = 1000
+			tag = CAI
+		}
+	}
+}
+
+ANT_south_centauran_conquest = {
+
+	icon = GFX_decision_category_spr_the_seeds_of_revolution
+
+	picture = GFX_decision_cat_generic_south_centaura
+	
+	visible_when_empty = no
+	
+	allowed = {
+		#original_tag = ANT
+		always = no
+	}
+	
+	visible = {
+		always = no
+		#has_completed_focus = ANT_prepare_for_war_with_cetus
+	}
+	priority = {
+		base = 1
+		modifier = {
+			add = 10
+			tag = ANT
+		}
+	}
+}
+

@@ -151,51 +151,162 @@ ideas = {
 #INDUSTRY1
 #BOOOSTSStS
 		ANT_construction_boost_idea = {
-            name =  "Civilian construction boost"
+            name =  "Civilian Construction Boost"
             
             picture = ast_all_in
-            allowed = { original_tag = ANT }
+            allowed = {  }
             removal_cost = -1
 
             modifier = {
-                production_speed_industrial_complex_factor = 0.3
-				production_speed_infrastructure_factor = 0.6
+#		production_speed_industrial_complex_factor = 0.3
+#		production_speed_infrastructure_factor = 0.6
+		production_speed_industrial_complex_factor = 0.2
+		production_speed_infrastructure_factor = 0.4
             }
         }
 		ANT_construction_boost2_idea = {
-            name = "General construction boost"
+            name = "General Construction Boost"
             
             picture = ast_all_in
-            allowed = { original_tag = ANT }
+            allowed = {  }
             removal_cost = -1
 
             modifier = {
+#		production_speed_buildings_factor = 0.15
 		production_speed_buildings_factor = 0.2
             }
         }
 		ANT_military_boost_idea = {
-            name = "Military construction boost"
+            name = "Military Construction Boost"
             
             picture = ast_all_in
             allowed = { original_tag = ANT }
             removal_cost = -1
 
             modifier = {
-                production_speed_arms_factory_factor = 0.3
+#		production_speed_arms_factory_factor = 0.3
+		production_speed_arms_factory_factor = 0.2
 
             }
         }
 		ANT_production_boost_idea = {
-            name = "Military production boost"
+            name = "Military Production Boost"
             
             picture = low_economic_mobilisation
             allowed = { original_tag = ANT }
             removal_cost = -1
 
             modifier = {
-                industrial_capacity_factory = 0.3
+#		industrial_capacity_factory = 0.3
+                industrial_capacity_factory = 0.2
 
             }
+        }
+		ANT_infeq_boost_idea = {
+            name = "Rifle Mass Production"
+			
+			allowed = {
+				 original_tag = ANT 
+			}
+
+
+			removal_cost = -1
+
+			picture = raj_rifle_factory_ishapore
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+	ANT_arty_boost_idea = {
+            name = "Artillery Mass Production"
+            
+            picture = generic_artillery_regiments
+            allowed = { original_tag = ANT }
+            removal_cost = -1
+
+			equipment_bonus = {
+			artillery = {
+				build_cost_ic = -0.1 instant = yes
+			}
+            }
+        }
+	ANT_training_boost_idea = {
+            name = "Army Expansion"
+            
+            picture = chi_army_corruption3
+            allowed = { original_tag = ANT }
+            removal_cost = -1
+
+		modifier = {
+			training_time_army_factor = -0.3
+            }
+        }
+	ANT_small_combat_boost_idea = {	#preferably only used with shorter time frame
+            name = "Prepared Army"
+            
+            picture = chi_army_corruption3
+            allowed = { original_tag = ANT }
+            removal_cost = -1
+
+		modifier = {
+			army_attack_factor = 0.05  
+			army_defence_factor = 0.05          
+		}
+        }
+	ANT_big_combat_boost_idea = {	#preferably only used with shorter time frame
+            name = "Prepared Army"
+            
+            picture = chi_army_corruption3
+            allowed = { original_tag = ANT }
+            removal_cost = -1
+
+		modifier = {
+			army_attack_factor = 0.1 
+			army_defence_factor = 0.1         
+		}
+        }
+	ANT_dd_boost_idea = {
+            name = "Destroyer & Torpedoboat Mass Production"
+            
+            picture = CZE_skoda_shipyards
+            allowed = { original_tag = ANT }
+            removal_cost = -1
+
+			equipment_bonus = {
+			ship_hull_light = {
+				build_cost_ic = -0.1 instant = yes
+			}
+            }
+        }
+	ANT_bb_boost_idea = {
+            name = "Large-Scale Steelpot Construction"
+            
+            picture = AUS_naval_efficiency_idea
+            allowed = { original_tag = ANT }
+            removal_cost = -1
+
+			equipment_bonus = {
+			ship_hull_heavy = {
+				build_cost_ic = -0.1 instant = yes
+			}
+            }
+        }
+	ANT_dockyard_boost_idea = {
+            name = "Increased Dockyard Funding"
+            
+            picture = AUS_streamline_cruiser_production_idea
+            allowed = { original_tag = ANT }
+            removal_cost = -1
+
+		modifier = {
+#			industrial_capacity_dockyard = 0.3
+			industrial_capacity_dockyard = 0.3
+
+		}
+            
         }
 #INDUSTRY2INDUSTRY2INDUSTRY2INDSUTRY2INDUSTRY2
 
@@ -208,7 +319,7 @@ ideas = {
 
             modifier = {
 			consumer_goods_factor = 0.2
-			production_factory_max_efficiency_factor = 0.1
+			production_factory_max_efficiency_factor = 0.2
 			production_factory_efficiency_gain_factor = -0.1
 			line_change_production_efficiency_factor = -0.1
 			conversion_cost_civ_to_mil_factor = -0.7
@@ -234,7 +345,7 @@ ideas = {
             removal_cost = -1
 
             modifier = {
-				consumer_goods_factor = 0.1
+		consumer_goods_factor = 0.05
 		monthly_population = 0.4
 		supply_factor = 0.2
 		supply_node_range = 0.2
@@ -248,9 +359,9 @@ ideas = {
             removal_cost = -1
 
             modifier = {
-surrender_limit = 0.05
-army_core_attack_factor = 0.1
-army_core_defence_factor = 0.1
+		surrender_limit = 0.05
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
             }
         }
 		ANT_patriotism0 = {
@@ -261,11 +372,11 @@ army_core_defence_factor = 0.1
             removal_cost = -1
 
             modifier = {
-war_stability_factor = 0.1
-war_support_factor = 0.05
-surrender_limit = 0.05
-army_core_attack_factor = 0.1
-army_core_defence_factor = 0.1
+		war_stability_factor = 0.1
+		war_support_factor = 0.05
+		surrender_limit = 0.05
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
             }
         }
 		ANT_patriotism1 = {
@@ -276,12 +387,11 @@ army_core_defence_factor = 0.1
             removal_cost = -1
 
             modifier = {
-war_stability_factor = 0.1
-
-war_support_factor = 0.05
-surrender_limit = 0.05
-army_core_attack_factor = 0.15
-army_core_defence_factor = 0.15
+		war_stability_factor = 0.1
+		war_support_factor = 0.05
+		surrender_limit = 0.05
+		army_core_attack_factor = 0.15
+		army_core_defence_factor = 0.15
 
             }
         }
@@ -293,13 +403,12 @@ army_core_defence_factor = 0.15
             removal_cost = -1
 
             modifier = {
-war_stability_factor = 0.15
-
-war_support_factor = 0.05
-surrender_limit = 0.05
-army_core_attack_factor = 0.2
-army_core_defence_factor = 0.2
-neutrality_drift = 0.02
+		war_stability_factor = 0.15
+		war_support_factor = 0.05
+		surrender_limit = 0.05
+		army_core_attack_factor = 0.2
+		army_core_defence_factor = 0.2
+		neutrality_drift = 0.02
             }
         }
 		ANT_patriotism3 = {
@@ -310,13 +419,12 @@ neutrality_drift = 0.02
             removal_cost = -1
 
             modifier = {
-war_stability_factor = 0.2
-
-war_support_factor = 0.1
-surrender_limit = 0.15
-army_core_attack_factor = 0.3
-army_core_defence_factor = 0.3
-neutrality_drift = 0.02
+		war_stability_factor = 0.2
+		war_support_factor = 0.1
+		surrender_limit = 0.15
+		army_core_attack_factor = 0.3
+		army_core_defence_factor = 0.3
+		neutrality_drift = 0.02
             }
         }
 #######POLITICAL##########
@@ -330,6 +438,7 @@ neutrality_drift = 0.02
             modifier = {
 		political_power_factor = -0.4
 		neutrality_drift = -0.02
+		stability_factor = 0.1
             }
         }
 		ANT_ppdebuff2 = {
@@ -342,7 +451,7 @@ neutrality_drift = 0.02
             modifier = {
 		political_power_factor = -0.4
 		neutrality_drift = -0.01
-		stability_factor = -0.1
+#		stability_factor = -0.1
             }
         }
 		ANT_ppdebuff3 = {
@@ -354,7 +463,7 @@ neutrality_drift = 0.02
 
             modifier = {
 		political_power_factor = -0.2
-		stability_factor = -0.2
+		stability_factor = -0.1
             }
         }
 		ANT_ppdebuff4 = {
@@ -366,13 +475,192 @@ neutrality_drift = 0.02
 
             modifier = {
 		political_power_factor = -0.2
+		stability_factor = 0.1
+#		war_support_factor = 0.1
             }
         }
+		ANT_protest_negligible = {
+            name = protests_tiny
+            
+            picture = chi_war_of_resistance
+            allowed = { 
+		original_tag = ANT 
+		has_country_flag = ANT_protests_ongoing
+	    }            removal_cost = -1
+
+            modifier = {
+		stability_factor = -0.025
+		war_support_factor = -0.025
+		stability_weekly = -0.0
+            }
+        }
+		ANT_protest_small = {
+            name = protests_small
+            
+            picture = chi_war_of_resistance
+            allowed = { 
+		original_tag = ANT 
+		has_country_flag = ANT_protests_ongoing
+	    }            removal_cost = -1
+
+            modifier = {
+		stability_factor = -0.05
+		war_support_factor = -0.05
+		stability_weekly = -0.0
+		neutrality_drift = -0.01
+            }
+        }
+		ANT_protest_medium = {
+            name = protests_med
+            
+            picture = chi_war_of_resistance2
+            allowed = { 
+		original_tag = ANT 
+		has_country_flag = ANT_protests_ongoing
+	    }            removal_cost = -1
+
+            modifier = {
+		stability_factor = -0.05
+		war_support_factor = -0.05
+		stability_weekly = -0.0015
+		neutrality_drift = -0.02
+
+            }
+        }
+		ANT_protest_large = {
+            name = protests_big
+            
+            picture = chi_war_of_resistance3
+            allowed = { 
+		original_tag = ANT 
+		has_country_flag = ANT_protests_ongoing
+	    }            removal_cost = -1
+
+            modifier = {
+		stability_factor = -0.05
+		war_support_factor = -0.05
+		stability_weekly = -0.003
+		neutrality_drift = -0.03
+
+            }
+        }
+		ANT_crackdown_small = {
+            name = crack_small
+            
+            picture = NOR_anti_communist_sentiment
+            allowed = { 
+		original_tag = ANT 
+		has_country_flag = ANT_protests_ongoing
+	    }            removal_cost = -1
+
+            modifier = {
+		political_power_factor = -0.025
+		stability_factor = 0.025
+		war_support_factor = -0.025
+		stability_weekly = 0.001
+
+
+            }
+        }
+		ANT_crackdown_medium = {
+            name = crack_med
+            
+            picture = NOR_anti_communist_sentiment
+            allowed = { 
+		original_tag = ANT 
+		has_country_flag = ANT_protests_ongoing
+	    }            removal_cost = -1
+
+            modifier = {
+		political_power_factor = -0.05
+		stability_factor = 0.05
+		war_support_factor = -0.05
+		stability_weekly = 0.002
+		communism_drift = -0.01
+		democratic_drift = -0.01
+		fascism_drift = 0.01
+            }
+        }
+		ANT_crackdown_large = {
+            name = crack_big
+            
+            picture = NOR_anti_communist_sentiment
+            allowed = { 
+		original_tag = ANT 
+		has_country_flag = ANT_protests_ongoing
+	    }            removal_cost = -1
+
+            modifier = {
+		political_power_factor = -0.075
+		stability_factor = 0.1
+		war_support_factor = -0.1
+		stability_weekly = 0.003
+		communism_drift = -0.03
+		democratic_drift = -0.03
+		fascism_drift = 0.03
+            }
+        }
+		ANT_conciliation1 = {
+            name = protests_friendly
+            
+            picture = SOV_consolidate_power_ccp_sov_compatibility
+            allowed = { 
+		original_tag = ANT 
+		has_country_flag = ANT_protests_ongoing
+	    }
+            removal_cost = -1
+
+            modifier = {
+		political_power_factor = -0.1
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		stability_weekly = 0.002
+            }
+        }
+		ANT_conciliation2 = {
+            name = protests_friendly
+            
+            picture = SOV_consolidate_power_ccp_sov_compatibility
+            allowed = { original_tag = ANT }
+            removal_cost = -1
+
+            modifier = {
+		political_power_factor = -0.2
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		stability_weekly = 0.004
+            }
+        }
+		ANT_recovery = {
+            name = protest_recovery
+            
+            picture = SOV_consolidate_power_ccp_sov_compatibility
+            allowed = { original_tag = ANT }
+            removal_cost = -1
+            modifier = {
+		stability_factor = -0.1
+		stability_weekly = 0.002
+            }
+	#	remove = {
+	#		add_stability = 0.05
+	#	}
+        }
+
+
+
+
+
+
+
+
+
+
+
 #######WAR REELATEDE#######
 		ANT_army = {
             name = "Antares Imperial Army"
             
-            picture =NORDIC_army_communist
+            picture = NORDIC_army_communist
             allowed = { original_tag = ANT }
             removal_cost = -1
 
@@ -381,7 +669,7 @@ experience_gain_army_factor = -0.5
 conscription_factor = -0.5
 army_org_factor = 0.1
 army_morale_factor = 0.1
-initiative_factor = 0.3
+initiative_factor = -0.05
             }
         }
 		ANT_navy = {
@@ -409,6 +697,129 @@ naval_morale_factor = 0.1
             modifier = {
 experience_gain_air_factor = -0.5	
 
+            }
+        }
+		ANT_humiliation1 = {
+            name = "aquilan_humiliation"
+            
+            picture = RAJ_private_military_complex
+            allowed = { original_tag = ANT }
+		cancel = {
+			OR = {
+				NOT = { country_exists = AQU }
+				 AQU = { is_puppet_of = ANT }
+			}
+		}
+            removal_cost = -1
+
+            modifier = {
+		war_support_factor = -0.2	
+		experience_gain_army_factor = -0.1
+		conscription_factor = -0.25
+		army_org_factor = -0.2
+		army_morale_factor = -0.2
+		initiative_factor = -0.05
+            }
+        }
+		ANT_humiliation2 = {
+            name = "aquilan_humiliation"
+            
+            picture = RAJ_private_military_complex
+            allowed = { original_tag = ANT }
+		cancel = {
+			OR = {
+				NOT = { country_exists = AQU }
+				 AQU = { is_puppet_of = ANT }
+			}
+		}
+            removal_cost = -1
+
+            modifier = {
+		war_support_factor = -0.15
+		conscription_factor = -0.2
+		army_org_factor = -0.2
+		army_morale_factor = -0.2
+		initiative_factor = -0.05
+            }
+        }
+		ANT_humiliation3 = {
+            name = "aquilan_humiliation"
+            
+            picture = RAJ_private_military_complex
+            allowed = { original_tag = ANT }
+		cancel = {
+			OR = {
+				NOT = { country_exists = AQU }
+				 AQU = { is_puppet_of = ANT }
+			}
+		}
+            removal_cost = -1
+
+            modifier = {
+		war_support_factor = -0.15
+		conscription_factor = -0.2
+		army_org_factor = -0.05
+		army_morale_factor = -0.2
+            }
+        }
+		ANT_humiliation4 = {
+            name = "aquilan_humiliation"
+            
+            picture = RAJ_private_military_complex
+            allowed = { original_tag = ANT }
+		cancel = {
+			OR = {
+				NOT = { country_exists = AQU }
+				 AQU = { is_puppet_of = ANT }
+			}
+		}
+            removal_cost = -1
+
+            modifier = {
+		war_support_factor = -0.1
+		conscription_factor = -0.2
+		army_morale_factor = -0.05
+            }
+        }
+		ANT_humiliation4b = {
+            name = "aquilan_humiliation"
+            
+            picture = RAJ_private_military_complex
+            allowed = { original_tag = ANT }
+		cancel = {
+			OR = {
+				NOT = { country_exists = AQU }
+				 AQU = { is_puppet_of = ANT }
+			}
+		}
+            removal_cost = -1
+
+            modifier = {
+		war_support_factor = -0.05
+		conscription_factor = -0.15
+		army_morale_factor = -0.05
+            }
+        }
+		ANT_humiliation5 = {
+            name = "aquilan_revenge"
+            
+            picture = generic_purge
+            allowed = { original_tag = ANT }
+		cancel = {
+			OR = {
+				NOT = { country_exists = AQU }
+				 AQU = { is_puppet_of = ANT }
+			}
+		}
+            removal_cost = -1
+		targeted_modifier = { 
+			tag = AQU 
+			attack_bonus_against = 0.05 
+		}
+            modifier = {
+		conscription_factor = -0.05
+#		war_support_factor = 0.05
+#		army_morale_factor = 0.05
             }
         }
 		ANT_worldconquest = {
@@ -444,11 +855,12 @@ fortification_collateral_chance = 0.5
 
             modifier = {
 		terrain_penalty_reduction = 0.75
+		army_offence_factor = 0.05
 		army_defence_factor = -0.25
-		max_dig_in_factor - 0.5
+		max_dig_in_factor = -0.25
             }
         }
-}
+
 		ANT_wallvegabreak = {
             name = "Breaking the Murus"
             
@@ -456,10 +868,26 @@ fortification_collateral_chance = 0.5
             allowed = { original_tag = ANT }
             removal_cost = -1
 
-            modifier = {
-		generate_wargoal_tension = -0.5
+            targeted_modifier = {
+		tag = VEG attack_bonus_against = 0.1
             }
         }
+	ANT_compliance_vega = {
+		name = "Administration of New Territories"
+            
+		picture =
+		allowed = { original_tag = ANT }
+		removal_cost = -1
+
+		modifier = {
+			compliance_growth = 0.001
+		}
+        }
+
+
+
+
+
 
 
 #end

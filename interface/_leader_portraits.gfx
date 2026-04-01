@@ -52,12 +52,15 @@ spriteTypes = {
 		name = "GFX_portrait_ORI_Simon_Cromwell_small"
 		texturefile = "gfx/leaders/ORI/portrait_ORI_Simon_Cromwell_small.dds"
 	}
+	
+	# commanders
+	
 
 	# hydrus
 	
 	spriteType = {
-		name = "GFX_portrait_HYS_parliament_building"
-		texturefile = "gfx/leaders/HYS/portrait_HYS_parliament_building.dds"
+		name = "GFX_portrait_HYS_renald_downes"
+		texturefile = "gfx/leaders/HYS/portrait_HYS_renald_downes.dds"
 	}
 	
 	# antares
@@ -77,6 +80,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_URS_matvei_magor"
 		texturefile = "gfx/leaders/URS/portrait_URS_matvei_magor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_URS_enrik_pavolvich"
+		texturefile = "gfx/leaders/URS/portrait_URS_enrik_pavolvich.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_URS_dobrodub_ozolinsh"
+		texturefile = "gfx/leaders/URS/portrait_URS_dobrodub_ozolinsh.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_URS_vasilii_kachalo"
+		texturefile = "gfx/leaders/URS/portrait_URS_vasilii_kachalo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_URS_petr_trolivoch"
+		texturefile = "gfx/leaders/URS/portrait_URS_petr_trolivoch.dds"
 	}
 
 	# cetus
@@ -109,10 +132,10 @@ spriteTypes = {
 	
 	# grusa
 	
-#	spriteType = {
-#		name = "GFX_portrait_GRS_
-#		texturefile = "gfx/leaders/GRS
-#	}
+	spriteType = {
+		name = "GFX_portrait_GRS_fernan_flamenco"
+		texturefile = "gfx/Leaders/GRS/portrait_GRS_fernan_flamenco.dds"
+	}
 
 	# riaa
 	
@@ -126,5 +149,28 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_LBR_generic_leader"
 		texturefile = "gfx/leaders/LBR/portrait_LBR_generic_leader.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_portrait_placeholder"
+		texturefile = "gfx/leaders/generic/portrait_placeholder.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_placeholder2"
+		texturefile = "gfx/leaders/generic/portrait_placeholder2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_MUS_pavelija_vieno"
+		texturefile = "gfx/leaders/MUS/portrait_MUS_pavelija_vieno.dds"
+	}
+
+
+
+	spriteType = {
+		name = "GFX_portrait_LGS_leader"
+		texturefile = gfx/leaders/CLB/colombia_guy.dds
 	}
 }

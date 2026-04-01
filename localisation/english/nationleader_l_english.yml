@@ -3,8 +3,35 @@
  RIA_ivan_riaa:0 "Ivan Selskoy" # walomega 20/9/25
  #LBR_generic_leader:0 "Princeps Fortuitus"
  LBR_generic_leader:0 "Arthur Catto" # walomega 20/9/25
- HYS_parliament_building:0 "Hydrus Parliament"
+ HYS_renald_downes:0 "Renald Downes"
+ TUC_generic_character:0 "John Tucana"
+ CTA_generic_character:0 "John Centauri"
+ AUR_generic_character:0 "John Auriga"
+ LAC_generic_character:0 "John Lacerta"
+ CLB_generic_character:0 "John Columba"
+ VUL_vadik_zvezda:0 "Vadik Zvezda"
+ GRS_fernan_flamenco:0 "Fernan Flamenco"
+ MUS_pavelija_vieno:0 "Pavelija Vieno"
+ # --- ursan military temp
+ # admirals
+ URS_dobrodub_ozolinsh:0 "Dobrodub Ozolinsh"
+ URS_enrik_pavolvich:0 "Enrik Pavlovich"
+ URS_vasilii_kachalo:0 "Vasilii Kachalo"
+ URS_arsenii_oskolkovoch:0 "Arsenii Oskolkovoch"
+ URS_arthur_artevoch:0 "Arthur Artevoch"
  
+ 
+ 
+ 
+ # army
+ URS_petr_trolivoch:0 "Petr Trolivoch"
+ URS_vlado_patroshenkov:0 "Vlado Patroshenkov"
+ URS_john_shuudan:0 "John Shuudan"
+ URS_konstantin_sakantsev:0 "Konstantin Sakantsev"
+ URS_vaderii_sotkach:0 "Vaderii Sotkach"
+ URS_markovoch_dmitrienok:0 "Markovoch Dmitrienok"
+ URS_dontrov_artemich:0 "Dontrov Artemich"
+ URS_solkon_skoroded:0 "Solkon Skoroded"
  
  # misc
  industrial_heartland:0 "Industrial Heartland"

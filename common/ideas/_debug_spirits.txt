@@ -1,6 +1,20 @@
 ideas = {
 
 	country = {
+		guard409s_pysop_legacy = {
+			allowed = {
+				original_tag = LGS
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				army_defence_factor = 100
+			}
+		}
 		add_production_efficiency = {
 			allowed = {
 				always = no
@@ -16,6 +30,34 @@ ideas = {
 			}
 		}
 		decrease_production_efficiency = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+						
+			modifier = {
+				production_factory_efficiency_gain_factor = -100
+			}
+		}
+		surrender_now = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+						
+			modifier = {
+				surrender_limit  = -0.85
+			}
+		}
+		cp_up = {
 			allowed = {
 				always = no
 			}

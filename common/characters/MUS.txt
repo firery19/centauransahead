@@ -1,0 +1,15 @@
+characters = {
+    MUS_pavelija_vieno = {
+        name = MUS_pavelija_vieno
+        portraits = {
+            civilian = {
+                large = GFX_portrait_MUS_pavelija_vieno
+            }
+        }
+        country_leader = {
+			ideology = moderatism
+			traits = { }
+			expire = "1962.1.1.1"
+		}
+    }
+}

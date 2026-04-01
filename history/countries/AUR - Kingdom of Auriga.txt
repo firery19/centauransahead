@@ -1,8 +1,11 @@
 capital = 4
 
 oob = "AUR_1900"
+
+recruit_character = AUR_generic_character
+
 add_ideas = {
-	trench_warfare_idea
+	AUR_king
 }
 set_technology = {
 	infantry_weapons = 1
@@ -24,23 +27,24 @@ set_technology = {
 
 set_research_slots = 2
 
-set_stability = 0.5
+set_stability = 0.6
 
-set_war_support = 0.50
+set_war_support = 0.20
 
 add_political_power = 1
 
-set_convoys = 391
+set_convoys = 250	#391
 
 set_popularities = {
-	democratic = 2
+	democratic = 48
+	democratic_left = 42
 	communism = 0
 	fascism = 0
-	neutrality = 98
+	neutrality = 10
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1900.1.1"
 	election_frequency = 48
 	elections_allowed = no

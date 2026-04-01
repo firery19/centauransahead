@@ -38,9 +38,15 @@ state={
 			4831 = {
 				bunker = 2
 			}
+			5076 = {
+				bunker = 3
+			}
 		}
 		victory_points = {
 			1329 30
+		}
+		victory_points = {
+			423 5
 		}
 		1944.1.1.12 = {
 			owner = ANT
@@ -49,7 +55,7 @@ state={
 }
 	}
 	provinces={
-		335 423 512 1329 1808 3139 4831 4865 4928 4975
+		335 423 512 1329 1808 3139 4831 4865 4928 4975 5028 5076 8224
 	}
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

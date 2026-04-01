@@ -4,9 +4,13 @@ state={
 	history = {
 		owner = RIA
 		add_core_of = RIA
+		add_claim_by = VUL
 		buildings = {
 			dockyard = 0
 			infrastructure = 2
+			3675 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {
 			3675 17

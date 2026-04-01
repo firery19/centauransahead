@@ -1,0 +1,21 @@
+
+state={
+	id=222
+	name="STATE_222"
+
+	impassable = yes
+	force_link_ownership_to = 218
+
+	history={
+		owner = CLB
+		add_core_of = CLB
+		add_core_of = EUR
+	}
+	provinces={
+		312 435 699 956 1513 1533 1592 1985 2586 3103 3958 3972 3978 4004 4009 4017 4037 4051 4084 
+	}
+	manpower=70401
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

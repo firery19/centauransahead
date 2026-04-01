@@ -1,0 +1,15 @@
+characters = {
+    VUL_vadik_zvezda = {
+        name = VUL_vadik_zvezda
+        portraits = {
+            civilian = {
+                large = GFX_portrait_placeholder
+            }
+        }
+        country_leader = {
+			ideology = despotism
+			traits = { }
+			expire = "1962.1.1.1"
+		}
+    }
+}

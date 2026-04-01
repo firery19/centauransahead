@@ -7,8 +7,11 @@ state={
 		add_claim_by = ORI
 		buildings = {
 			infrastructure = 1
-			4345 = {
-				naval_base = 3
+			2526 = {
+				naval_base = 6
+			}
+			4719 = {
+				naval_base = 2
 			}
 		}
 		victory_points = {

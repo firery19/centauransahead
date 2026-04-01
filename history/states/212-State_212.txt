@@ -1,0 +1,36 @@
+
+state={
+	id=212
+	name="STATE_212"
+	resources={
+		steel=9.000
+		tungsten=4.000
+	}
+
+	history={
+		owner = GRS
+		add_core_of = GRS
+		add_claim_by = VEG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 0
+			2167 = {
+				naval_base = 2
+				
+			}
+		}
+		victory_points = {
+		4325 5
+		}
+
+	}
+	provinces={
+		2167 2403 3697 3719 3735 
+	}
+	manpower=3001239
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

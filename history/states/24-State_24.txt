@@ -8,19 +8,26 @@ state={
 		add_core_of = LBR
 		buildings = {
 			infrastructure = 2
-			5717 = {
-				supply_node = 1
+			5805 = {
 				naval_base = 1
-
 			}
-
+			5714 = {
+				naval_base = 1
+			}
+			6831 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {
-			5717 1 
+			5805 1 
 		}
-
+		victory_points = {
+			5714 1 
+		}
+		victory_points = {
+			6831 1 
+		}
 	}
-
 	provinces={
 		48 2476 2597 2658 5558 5589 5714 5717 5805 6811 6823 6826 6831 6833 6835 6837 
 	}

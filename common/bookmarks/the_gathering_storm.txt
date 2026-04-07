@@ -178,21 +178,6 @@ bookmarks = {
 			history = MUS_1900_DESC
 			ideology = neutrality
 		}
-		LGS = {
-			minor = yes
-			history = LGS_1900_DESC
-			ideology = neutrality
-			ideas = {
-				LGS_isolation
-				LGS_industry_0
-				LGS_army_0
-			}
-			focuses = {
-				LGS_save_aquila
-				LGS_mountaineer_army
-				LGS_deport_everyone_to_ocean
-			}
-		}
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !

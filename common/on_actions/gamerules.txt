@@ -11,7 +11,7 @@ on_actions = {
 					NOT = {
 					has_game_rule = {
 						rule = lingstonia_status
-						option = DESTROY_LINGSTONIA
+						option = RETURN_LINGSTONIA
 						}
 					}
 				}
@@ -22,11 +22,12 @@ on_actions = {
 					release = QUA
 				}
 			}
+			# here lies the destroy lingstonia gamerule - on_action - readd if lgs returns - z
 			IF = {
 				limit = {
 					has_game_rule = {
 						rule = lingstonia_status
-						option = DESTROY_LINGSTONIA
+						option = RETURN_LINGSTONIA
 					}
 					NOT = {
 					has_game_rule = {
@@ -35,46 +36,48 @@ on_actions = {
 						}
 					}
 				}
-				#CLB = { # < testing
-				#	release = QUA
-				#}
 				CLB = {
-					transfer_state = 60
-					transfer_state = 226
-					transfer_state = 227
-					transfer_state = 205
-					add_state_core = 60
-					add_state_core = 226
-					add_state_core = 227
-					add_state_core = 205
+					remove_state_core = 60
+					remove_state_core = 205
+					remove_state_core = 226
+					remove_state_core = 227
+					add_state_claim = 205
+					add_state_claim = 227
+					remove_state_claim = 63
+					remove_state_claim = 64
 				}
 				QUA = {
-					add_state_core = 60
-					add_state_core = 226
-					add_state_core = 63
+					remove_state_core = 60
+					remove_state_core = 226
+					remove_state_core = 63
 				}
 				RIA = {
-					transfer_state = 63
-					add_state_core = 63
+					remove_state_core = 63
+					add_state_claim = 63
 				}
 				LGS = {
-					remove_state_core = 63
-					remove_state_core = 226
-					remove_state_core = 60
-					remove_state_core = 227
-					remove_state_core = 205
+					transfer_state = 60
+					transfer_state = 63
+					transfer_state = 205
+					transfer_state = 226
+					transfer_state = 227
+					add_state_core = 60
+					add_state_core = 63
+					add_state_core = 205
+					add_state_core = 226
+					add_state_core = 227
 				}
 			}
 			IF = {
 				limit = {
 					AND = {
 					has_game_rule = {
-						rule = columba_fragmented_status
-						option = COLUMBA_SPLIT
+						rule = lingstonia_status
+						option = RETURN_LINGSTONIA
 					}
 					has_game_rule = {
-						rule = lingstonia_status
-						option = DESTROY_LINGSTONIA
+						rule = columba_fragmented_status
+						option = COLUMBA_SPLIT
 						}
 					}
 				}
@@ -83,30 +86,30 @@ on_actions = {
 					release = NOH
 					release = EUR
 					release = QUA
+					remove_state_claim = 63
+					remove_state_claim = 64
 				}
 				QUA = {
+					remove_state_core = 60
+					remove_state_core = 63
+					remove_state_core = 226
+					remove_state_core = 227
+				}
+				RIA = {
+					remove_state_core = 63
+					add_state_claim = 63
+				}
+				LGS = {
 					transfer_state = 60
+					transfer_state = 63
+					transfer_state = 205
 					transfer_state = 226
 					transfer_state = 227
 					add_state_core = 60
 					add_state_core = 63
+					add_state_core = 205
 					add_state_core = 226
 					add_state_core = 227
-				}
-				NOH = {
-					transfer_state = 205
-					add_state_core = 205
-				}
-				RIA = {
-					transfer_state = 63
-					add_state_core = 63
-				}
-				LGS = {
-					remove_state_core = 63
-					remove_state_core = 226
-					remove_state_core = 60
-					remove_state_core = 227
-					remove_state_core = 205
 				}
 			}
 		}

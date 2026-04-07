@@ -3,12 +3,12 @@ state={
 	name="STATE_205"
 	
 	history={
-#		owner = CLB
-#		add_core_of = CLB
+		owner = CLB
+		add_core_of = CLB
 		add_core_of = NOH
-		owner = LGS
-		add_core_of = LGS
-		add_claim_by = CLB
+#		owner = LGS
+#		add_core_of = LGS
+#		add_claim_by = CLB
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2

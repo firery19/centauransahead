@@ -463,6 +463,7 @@ focus_tree = {
 				add_idea = HYS_food_shortages_2_idea
 				remove_idea = HYS_food_shortages_idea
 			}
+			set_country_flag = done_sow_farmland_flag
 		}
 	}
 		

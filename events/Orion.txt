@@ -183,9 +183,12 @@ country_event = { #Ursa accepts
 			set_state_controller = 171
 			}
 		}
-	}
 			
 		hidden_effect = {
+		white_peace = URS
+		HYS = { white_peace = URS }
+		CNS = { white_peace = URS }
+		LPS = { white_peace = URS }
 			182 = {
 				set_demilitarized_zone = no
 			}
@@ -204,7 +207,9 @@ country_event = { #Ursa accepts
 			130 = {
 				set_demilitarized_zone = no
 			}
-		white_peace = URS
+
+
+
 		}
 	}
 }

@@ -47,4 +47,16 @@ difficulty_settings = {
 		countries = { VEG GRS }
 		multiplier = 2.0
 	}
+	difficulty_setting = {
+		key = "custom_diff_strong_clb"
+		modifier = diff_strong_ai_generic
+		countries = { CLB }
+		multiplier = 2.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_hyr"
+		modifier = diff_strong_ai_generic
+		countries = { HYS LPS CNS }
+		multiplier = 2.0
+	}
 }

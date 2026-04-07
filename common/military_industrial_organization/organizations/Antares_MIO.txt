@@ -1,0 +1,423 @@
+ANT_mauser_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_mauser
+
+	override_trait = {
+		token = generic_mio_trait_armor_piercing_rounds
+
+		position = { x=0 y=2 }
+	}
+
+	override_trait = {
+		token = generic_mio_trait_advanced_barrel_forging
+
+		position = { x=1 y=2 }
+	}
+
+	override_trait = {
+		token = generic_mio_trait_reinforced_stocks
+
+		position = { x=3 y=0 }
+	}
+
+	override_trait = {
+		token = generic_mio_trait_medium_machineguns
+
+		position = { x=0 y=2 }
+	}
+	
+	allowed = {	 
+		OR = {
+			original_tag = ANT 
+			AND = {
+				original_tag = ETH
+				has_dlc = "By Blood Alone"
+			}
+		}
+	}
+	
+	visible = {
+		IF = {
+			limit = { FROM = { original_tag = ETH } }
+			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+		}
+	}
+	
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = ANT } }
+			}
+			FROM = { NOT = { has_war_with = ANT } }
+		}
+
+		IF = {
+			limit = {
+				FROM = { NOT  = { original_tag = ANT } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_country_flag = has_invited_GER_mauser_organization_flag
+				}
+			}
+		}
+	}
+
+	add_trait = {
+		token = GER_mio_trait_experienced_manufacturer
+		name = GER_mio_trait_experienced_manufacturer
+		icon = GFX_generic_mio_trait_icon_reliability
+		special_trait_background = yes
+
+		position = { x=-1 y=0 }  
+		relative_position_id = generic_mio_trait_drum_pattern_sights
+
+		visible = {
+			FROM = { original_tag = ANT }
+		}
+
+		equipment_bonus = {
+			reliability = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = GER_mio_trait_export_models
+		name = GER_mio_trait_export_models
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+
+		position = { x=-1 y=1 }  
+		relative_position_id = generic_mio_trait_drum_pattern_sights
+
+		visible = {
+			FROM = { original_tag = ANT }
+		}
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.03
+			production_cost_factor = -0.03
+		}
+		
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = GER_mio_trait_karabiner
+		name = GER_mio_trait_karabiner
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+
+		position = { x=0 y=1 }  
+		relative_position_id = generic_mio_trait_reinforced_stocks
+
+		visible = {
+			FROM = { original_tag = ANT }
+		}
+
+		all_parents = {	generic_mio_trait_reinforced_stocks }
+
+		equipment_bonus = {
+			soft_attack = 0.03
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.03
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = GER_mio_trait_sturmgewehr
+		name = GER_mio_trait_sturmgewehr
+		icon = GFX_generic_mio_department_icon_infantry_offense
+		special_trait_background = yes
+
+		position = { x=2 y=2 }
+		relative_position_id = generic_mio_trait_bolt_action
+
+		any_parent = { generic_mio_trait_semi_auto generic_mio_trait_bolt_action }
+
+		visible = {
+			FROM = { original_tag = ANT }
+		}
+
+		available = {
+			FROM = {
+				has_tech = advanced_infantry_weapons
+			}
+		}
+
+		equipment_bonus = {
+			soft_attack = 0.07
+			breakthrough = 0.03
+		}
+
+		production_bonus = {
+			production_cost_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+}
+ANT_rheinmetall_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_rheinmetall
+	
+	allowed = {	
+		OR = {
+			original_tag = ANT 
+			AND = {
+				original_tag = GRE
+				has_dlc = "Battle for the Bosporus"
+			}
+			AND = {
+				original_tag = HUN
+				has_dlc = "Gotterdammerung"
+			}
+		}
+	}
+
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = ANT } }
+			}
+			FROM = { NOT = { has_war_with = ANT } }
+		}
+	}
+
+	visible = {
+		IF = {
+			limit = { FROM = { original_tag = HUN } }
+			FROM = { has_completed_focus = wuw_HUN_seek_german_contracts }
+		}
+	}
+
+	add_trait = { 
+		token = GER_mio_trait_3_7_cm_pak
+		name = GER_mio_trait_3_7_cm_pak
+		icon = GFX_generic_mio_department_icon_anti_tank
+		special_trait_background = yes
+
+		position = { x = 1 y = 0 }
+		relative_position_id = generic_mio_trait_big_guns
+
+		#any_parent = { generic_mio_trait_cantilever_wing_structure }
+
+		limit_to_equipment_type = { 
+			anti_tank_equipment
+		}
+
+		equipment_bonus = {
+			ap_attack = 0.05
+			hard_attack = 0.05
+			soft_attack = 0.1
+		}
+	}
+
+	add_trait = { 
+		token = GER_mio_trait_7_5_cm_pak
+		name = GER_mio_trait_7_5_cm_pak
+		icon = GFX_generic_mio_trait_icon_ap_attack
+		special_trait_background = yes
+
+		position = { x = 0 y = 1 }
+		relative_position_id = GER_mio_trait_3_7_cm_pak
+
+		any_parent = { GER_mio_trait_3_7_cm_pak }
+
+		limit_to_equipment_type = { 
+			anti_tank_equipment
+		}
+
+		equipment_bonus = {
+			ap_attack = 0.05
+			hard_attack = 0.1
+		}
+	}
+
+	add_trait = { 
+		token = GER_mio_trait_versatile_carriage
+		name = GER_mio_trait_versatile_carriage
+		icon = GFX_generic_mio_department_icon_anti_air
+		special_trait_background = yes
+
+		position = { x = 1 y = 1 }
+		relative_position_id = generic_mio_trait_rapid_fire
+
+		all_parents = {
+			generic_mio_trait_rapid_fire
+			generic_mio_trait_advanced_barrel_forging
+		}
+
+		limit_to_equipment_type = { 
+			anti_tank_equipment
+			anti_air_equipment
+		}
+
+		equipment_bonus = {
+			ap_attack = 0.03
+			hard_attack = 0.03
+			air_attack = 0.05
+		}
+	}
+
+	add_trait = { 
+		token = GER_mio_trait_dual_recoil_mechanism
+		name = GER_mio_trait_dual_recoil_mechanism
+		icon = GFX_generic_mio_department_icon_artillery
+		special_trait_background = yes
+
+		position = { x = 1 y = 1 }
+		relative_position_id = generic_mio_trait_advanced_barrel_forging
+
+		all_parents = {
+			generic_mio_trait_advanced_barrel_forging
+			generic_mio_trait_big_guns
+		}
+
+		available = {
+			FROM = {
+				has_tech = artillery3
+			}
+		}
+
+		limit_to_equipment_type = { 
+			artillery_equipment
+		}
+
+		equipment_bonus = {
+			soft_attack = 0.1
+			build_cost_ic = 0.05
+		}
+	}
+}
+
+ANT_germaniawerft_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_germaniawerft
+
+	override_trait = {
+		token = generic_mio_trait_internal_armor_belt
+		
+		position = { x=1 y=0 }
+	}
+
+	override_trait = {
+		token = generic_mio_trait_advanced_armor_design
+		
+		position = { x=0 y=2 }
+	}
+
+	override_trait = {
+		token = generic_mio_trait_anti_air_layout
+		
+		position = { x=3 y=0 }
+	}
+	
+	allowed = {	
+		original_tag = ANT 
+	}
+
+	add_trait = {  
+		token = GER_mio_trait_history_of_battleships
+		name = GER_mio_trait_history_of_battleships
+		icon = GFX_generic_mio_department_icon_ship_capital_ship_production
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_internal_armor_belt
+
+		position = { x=1 y=0 }  
+
+		available = {
+            FROM = {			#omg paradox uses ai assistance to code bruh and they are too lazy to even hide it
+        #        has_completed_focus = GER_plan_z
+		has_completed_focus = ANT_need_for_more_ships
+            }
+        }
+
+        limit_to_equipment_type = { mio_cat_eq_all_battleship }
+
+      	equipment_bonus = {
+			hg_attack = 0.05
+			build_cost_ic = -0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {  
+		token = GER_mio_trait_krupp_guns
+		name = GER_mio_trait_krupp_guns
+		icon = GFX_generic_mio_department_icon_ship_capital_ship_weapons
+		special_trait_background = yes
+
+		relative_position_id = GER_mio_trait_history_of_battleships
+
+		all_parents = { GER_mio_trait_history_of_battleships }
+		position = { x=0 y=1 }  
+
+		available = {
+			FROM = {
+				has_completed_focus = ANT_expand_rheinmettall
+			}
+		}
+
+      	equipment_bonus = {
+			hg_attack = 0.05
+			lg_attack = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {  
+		token = GER_mio_trait_h_class_battleships
+		name = GER_mio_trait_h_class_battleships
+		icon = GFX_generic_mio_department_icon_ship_capital_ship_quality
+		special_trait_background = yes
+
+		relative_position_id = GER_mio_trait_krupp_guns
+
+		all_parents = { GER_mio_trait_krupp_guns }
+
+		position = { x=0 y=1 }  
+
+		available = {
+			FROM = {
+				has_completed_focus = ANT_xpand_mainland_dockyards
+			}
+		}
+
+        limit_to_equipment_type = { mio_cat_eq_all_battleship }
+
+      	equipment_bonus = {
+			hg_armor_piercing = 0.05
+			naval_speed = 0.05
+			build_cost_ic = -0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+}

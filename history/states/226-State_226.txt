@@ -11,11 +11,11 @@ state={
 	force_link_ownership_to = 60
 
 	history={
-	#	owner = CLB
-	#	add_core_of = CLB
-	#	add_core_of = QUA
-		owner = LGS
-		add_core_of = LGS
+		owner = CLB
+		add_core_of = CLB
+		add_core_of = QUA
+	#	owner = LGS
+	#	add_core_of = LGS
 	#	add_claim_by = CLB
 
 	}

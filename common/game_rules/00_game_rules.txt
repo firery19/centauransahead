@@ -673,12 +673,17 @@ lingstonia_status = {
 	default = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_COUNTRY_DESC"
+		desc = "RULE_OPTION_DEFAULT_LINGSTONIA_DESC"
 	}
+#	option = {
+#		name = DESTROY_LINGSTONIA
+#		text = "RULE_OPTION_LINGSTONIA_DEAD"
+#		desc = "RULE_OPTION_LINGSTONIA_DEAD_DESC"
+#	}
 	option = {
-		name = DESTROY_LINGSTONIA
-		text = "RULE_OPTION_LINGSTONIA_DEAD"
-		desc = "RULE_OPTION_LINGSTONIA_DEAD_DESC"
+		name = RETURN_LINGSTONIA
+		text = "RULE_OPTION_RETURN_LINGSTONIA"
+		desc = "RULE_OPTION_RETURN_LINGSTONIA_DESC"
 	}
 }
 
@@ -694,43 +699,6 @@ columba_fragmented_status = {
 		name = COLUMBA_SPLIT
 		text = "RULE_OPTION_COLUMBA_DESTROYED"
 		desc = "RULE_OPTION_COLUMBA_DESTROYED_DESC"
-	}
-}
-
-africa_colonization_status = {
-	name = "AFRICA_COLONIZATION_STATUS"
-	required_dlc = "Man the Guns"
-	group = "RULE_GROUP_GAME_SETUP"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_COLONIZATION_DESC"
-	}
-	option = {
-		name = AFRICA_DECOLONIZED
-		text = "RULE_OPTION_AFRICA_DECOLONIZED"
-		desc = "RULE_OPTION_AFRICA_DECOLONIZED_DESC"
-	}
-}
-
-oceania_colonization_status = {
-	name = "OCEANIA_COLONIZATION_STATUS"
-	required_dlc = "Man the Guns"
-	group = "RULE_GROUP_GAME_SETUP"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_COLONIZATION_DESC"
-	}
-	option = {
-		name = OCEANIA_DECOLONIZED
-		text = "RULE_OPTION_OCEANIA_DECOLONIZED"
-		desc = "RULE_OPTION_OCEANIA_DECOLONIZED_DESC"
-	}
-	option = {
-		name = OCEANIA_UNITED
-		text = "RULE_OPTION_OCEANIA_UNITED"
-		desc = "RULE_OPTION_OCEANIA_UNITED_DESC"
 	}
 }
 

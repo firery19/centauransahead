@@ -16,6 +16,16 @@ state={
 			industrial_complex = 2
 			arms_factory = 0
 			dockyard = 0
+		#	stronghold_network = 1
+			1796 = {
+				bunker = 4
+			}
+			4799 = {
+				bunker = 4
+			}
+			1710 = {
+				bunker = 4
+			}
 		}
 		victory_points = {
 		

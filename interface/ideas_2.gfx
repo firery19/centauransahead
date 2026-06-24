@@ -106,8 +106,19 @@ spriteTypes = {
 	}
 
 	#aquila
+	
+   	spriteType = {
+		name = "GFX_idea_AQU_national_assembly"
+		texturefile = "gfx/interface/ideas/idea_AQU_national_assembly.png"
+	}
+	
+   	spriteType = {
+		name = "GFX_idea_AQU_conservative_majority"
+		texturefile = "gfx/interface/ideas/idea_AQU_conservative_majority.png"
+	}
+	
 	spriteType = {
-		name = "GFX_idea_AQU_iron_army_idea"
+		name = "GFX_idea_fake_iron_army_1"
 		texturefile = "gfx/interface/ideas/idea_AQU_iron_army_idea.dds"			
 	}
 
@@ -117,7 +128,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_AQU_rusting_army_idea"
+		name = "GFX_idea_fake_iron_army_2"
 		texturefile = "gfx/interface/ideas/idea_AQU_rusting_army_idea.dds"			
 	}
 
@@ -132,14 +143,31 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_respect_army_idea"
-		texturefile = "gfx/interface/ideas/idea_respect_army_idea.dds"
+		name = "GFX_idea_AQU_farming"
+		texturefile = "gfx/interface/ideas/idea_AQU_farming_idea.png"
 	}
+	
+   	spriteType = {
+		name = "GFX_idea_AQU_commercial_industries"
+		texturefile = "gfx/interface/ideas/idea_AQU_com_industry.png"
+	}
+	
+   	spriteType = {
+		name = "GFX_idea_AQU_iron_army"
+		texturefile = "gfx/interface/ideas/idea_AQU_iron_army.png"
+	}
+	
+   	spriteType = {
+		name = "GFX_idea_AQU_civi_guard"
+		texturefile = "gfx/interface/ideas/idea_AQU_civil_guard.png"
+	}
+	
+
 
 	# antares
 	spriteType = {
-		name = "GFX_idea_ANT_efficientagriculturidea"
-		texturefile = "gfx/interface/ideas/idea_ANT_efficientagriculturidea.dds"			
+		name = "GFX_idea_ANT_efficient_farming_idea"
+		texturefile = "gfx/interface/ideas/idea_ANT_farming.dds"			
 	}
 	
 	# vega

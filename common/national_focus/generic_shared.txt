@@ -270,13 +270,17 @@ shared_focus = {
 		search_filters = {   FOCUS_FILTER_RESEARCH }
 		
 		available = {
-			if = {
-			OR = {
-				has_tech = iw_small_airframe
-				has_tech = early_fighter
+		IF = {
+			limit = {
+				has_dlc = "By Blood Alone"
 				}
+				has_tech = iw_small_airframe
+			}
+			ELSE = {
+				has_tech = early_fighter
 			}
 		}
+		
 		available_if_capitulated = yes
 
 
@@ -580,7 +584,7 @@ shared_focus = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 9
 		y = 0
-		cost = 10
+		cost = 16
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		
@@ -596,10 +600,10 @@ shared_focus = {
 
 		complete_tooltip = {
 			navy_experience = 25
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = dockyard
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -634,7 +638,7 @@ shared_focus = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -661,10 +665,10 @@ shared_focus = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 3
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -711,7 +715,7 @@ shared_focus = {
 		x = -1
 		y = 1
 		relative_position_id = naval_effort
-		cost = 15
+		cost = 10
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 
@@ -732,15 +736,25 @@ shared_focus = {
 		}
 
 		completion_reward = {
+
+			add_mastery_bonus = {
+				name = flexible_navy
+				bonus = 0.1
+				days = 240
+				grand_doctrine = new_convoy_raiding
+			}
+			add_mastery_bonus = {
+				name = flexible_navy
+				bonus = 0.1
+				days = 240
+				grand_doctrine = new_base_strike
+			}
+
 			add_doctrine_cost_reduction = {
-				name = sub_op_bonus
+				name = flexible_navy
 				cost_reduction = 0.5
 				uses = 2
-				technology = convoy_interdiction_ti
-				technology = unrestricted_submarine_warfare
-				technology = wolfpacks
-				technology = advanced_submarine_warfare
-				technology = combined_operations_raiding
+				category = naval_doctrine
 			}
 		}
 	}
@@ -753,7 +767,7 @@ shared_focus = {
 		x = 1
 		y = 1
 		relative_position_id = naval_effort
-		cost = 15
+		cost = 10
 		
 		search_filters = {   FOCUS_FILTER_RESEARCH }
 
@@ -772,13 +786,27 @@ shared_focus = {
 				}
 			}
 		}
+		
 
 		completion_reward = {
+
+			add_mastery_bonus = {
+				name = large_navy
+				bonus = 0.1
+				days = 240
+				grand_doctrine = new_fleet_in_being
+			}
+			add_mastery_bonus = {
+				name = large_navy
+				bonus = 0.1
+				days = 240
+				grand_doctrine = new_base_strike
+			}
 			add_doctrine_cost_reduction = {
-				name = fleet_in_being_bonus
+				name = large_navy
 				cost_reduction = 0.25
 				uses = 2
-				category = fleet_in_being_tree
+				category = naval_doctrine
 			}
 		}
 	}
@@ -963,21 +991,12 @@ shared_focus = {
 			factor = 3
 			modifier = {
 				factor = 0
-				date < 1908.1.1
-				OR = { 
-					# we dont want chinese minors to go crazy on slots early since they get eaten
-					tag = GXC 
-					tag = YUN
-					tag = SHX
-					tag = XSM
-					tag = BEL
-					tag = LUX
-					tag = HOL
-					tag = DEN
+				date < 1903.1.1
+				OR = {
 
 					# we also dont want tiny nations to go crazy with slots right away
 					num_of_controlled_states < 5
-				}				
+				}			
 			}
 		}
 	}
@@ -989,7 +1008,7 @@ shared_focus = {
 		x = -1
 		y = 1
 		relative_position_id = industrial_effort
-		cost = 10
+		cost = 16
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
 		available_if_capitulated = yes
@@ -1063,7 +1082,7 @@ shared_focus = {
 		x = 1
 		y = 1
 		relative_position_id = industrial_effort
-		cost = 10
+		cost = 16
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
 		available_if_capitulated = yes
@@ -1136,7 +1155,7 @@ shared_focus = {
 		x = 0
 		y = 1
 		relative_position_id = construction_effort
-		cost = 10
+		cost = 16
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
 		available_if_capitulated = yes
@@ -1209,7 +1228,7 @@ shared_focus = {
 		x = 0
 		y = 1
 		relative_position_id = production_effort
-		cost = 10		
+		cost = 16		
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 
 		available_if_capitulated = yes
@@ -1282,7 +1301,7 @@ shared_focus = {
 		x = 0
 		y = 1
 		relative_position_id = construction_effort_2
-		cost = 10
+		cost = 16
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available_if_capitulated = yes
@@ -1377,7 +1396,7 @@ shared_focus = {
 		x = 0
 		y = 1
 		relative_position_id = production_effort_2
-		cost = 10
+		cost = 16
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
 		available_if_capitulated = yes
@@ -1450,7 +1469,7 @@ shared_focus = {
 		x = 0
 		y = 1
 		relative_position_id = infrastructure_effort
-		cost = 10
+		cost = 16
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available_if_capitulated = yes
@@ -1545,7 +1564,7 @@ shared_focus = {
 		x = 2
 		y = 1
 		relative_position_id = infrastructure_effort
-		cost = 10
+		cost = 16
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
 		available_if_capitulated = yes
@@ -1718,7 +1737,7 @@ shared_focus = {
 	shared_focus = {
 		id = political_effort
 		icon = GFX_goal_generic_demand_territory
-		x = 19
+		x = 20
 		y = 0
 		cost = 15
 	
@@ -1743,7 +1762,7 @@ shared_focus = {
 				has_government = neutrality
 			}
 		}
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = political_effort
 		cost = 15
@@ -1781,6 +1800,7 @@ shared_focus = {
 		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = collectivist_ethos }
 		mutually_exclusive = { focus = internationalism_focus }
+		mutually_exclusive = { focus = monarchism_focus }
 		available = {
 			OR = {
 				has_government = fascism
@@ -1832,6 +1852,7 @@ shared_focus = {
 		icon = GFX_goal_support_communism #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = collectivist_ethos }
 		mutually_exclusive = { focus = nationalism_focus }
+		mutually_exclusive = { focus = monarchism_focus }
 		available = {
 			if = {
 				limit = { original_tag = CHI }
@@ -1878,20 +1899,88 @@ shared_focus = {
 				days = 720
 			}
 		}
-	}	
+	}
+
+	shared_focus = {
+		id = monarchism_focus
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = collectivist_ethos focus = liberty_ethos }
+		mutually_exclusive = { focus = internationalism_focus }
+		mutually_exclusive = { focus = nationalism_focus }
+		mutually_exclusive = { focus = conservative_focus }
+		mutually_exclusive = { focus = social_dem_focus }
+		mutually_exclusive = { focus = liberal_focus }
+		available = {
+			has_government = neutrality
+		}
+		x = 2
+		y = 1
+		relative_position_id = collectivist_ethos
+		cost = 15
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = neutrality
+				}
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					NOT = { has_government = neutrality }
+				}
+			}
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = monarchism_idea
+				days = 720
+			}
+		}
+	}
+
+	shared_focus = {
+		id = heredity
+		icon = GFX_focus_generic_monarchy_2
+		prerequisite = { focus = monarchism_focus }
+		x = 0
+		y = 1
+		relative_position_id = monarchism_focus
+		cost = 15
+	
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
 
 	shared_focus = {
 		id = liberty_ethos
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_generic_swooping_falcon
 		prerequisite = { focus = political_effort }
 		mutually_exclusive = { focus = collectivist_ethos }
 		available = {
 			OR = {
 				has_government = democratic
+				has_government = democratic_left
+				has_government = democratic_right
 				has_government = neutrality
 			}
 		}
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = political_effort
 		cost = 15
@@ -1923,6 +2012,162 @@ shared_focus = {
 
 		completion_reward = {
 			add_ideas = liberty_ethos_focus
+		}
+	}
+
+	shared_focus = {
+		id = conservative_focus
+		icon = GFX_focus_generic_blue_flags
+		prerequisite = { focus = liberty_ethos }
+		mutually_exclusive = { focus = monarchism_focus }
+		mutually_exclusive = { focus = social_dem_focus }
+		mutually_exclusive = { focus = liberal_focus }
+#		available = {
+#			OR = {
+#				has_government = democratic
+#				has_government = neutrality
+#			}
+#		}
+		x = 0
+		y = 1
+		relative_position_id = liberty_ethos
+		cost = 15
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = democratic_right
+				}
+			}			
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					NOT = { has_government = democratic_right }
+				}
+			}
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = conservatism_idea
+				days = 720
+			}
+			set_politics = {
+				ruling_party = democratic_right
+				elections_allowed = yes
+				election_frequency = 48
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = social_dem_focus
+		icon = GFX_focus_generic_social_democracy
+		prerequisite = { focus = liberty_ethos }
+		mutually_exclusive = { focus = conservative_focus }
+		mutually_exclusive = { focus = monarchism_focus }
+		mutually_exclusive = { focus = liberal_focus }
+		available = {
+		
+		}
+		x = 2
+		y = 1
+		relative_position_id = liberty_ethos
+		cost = 15
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = democratic_left
+				}
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					NOT = { has_government = democratic_left }
+				}
+			}
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = socialism_idea
+				days = 720
+			}
+			set_politics = {
+				ruling_party = democratic_left
+				elections_allowed = yes
+				election_frequency = 48
+			}
+		}
+	}
+
+	shared_focus = {
+		id = liberal_focus
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = liberty_ethos }
+		mutually_exclusive = { focus = conservative_focus }
+		mutually_exclusive = { focus = social_dem_focus }
+		mutually_exclusive = { focus = monarchism_focus }
+		available = {
+		
+		}
+		x = 4
+		y = 1
+		relative_position_id = liberty_ethos
+		cost = 15
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = democratic
+				}
+			}			
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					NOT = { has_government = democratic }
+				}
+			}
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = liberalism_idea
+				days = 720
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+				election_frequency = 48
+			}
 		}
 	}
 
@@ -1976,11 +2221,11 @@ shared_focus = {
 	shared_focus = {
 		id = neutrality_focus
 		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = liberty_ethos }
+		prerequisite = { focus = conservative_focus focus = liberal_focus focus = social_dem_focus }
 		mutually_exclusive = { focus = interventionism_focus }
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = liberty_ethos
+		relative_position_id = conservative_focus
 		cost = 15
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2013,11 +2258,11 @@ shared_focus = {
 	shared_focus = {
 		id = interventionism_focus
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = liberty_ethos }
+		prerequisite = { focus = liberal_focus focus = social_dem_focus }
 		mutually_exclusive = { focus = neutrality_focus }
-		x = 2
+		x = -1
 		y = 1
-		relative_position_id = liberty_ethos
+		relative_position_id = liberal_focus
 		cost = 15
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2076,6 +2321,24 @@ shared_focus = {
 	}
 
 	shared_focus = {
+		id = protection
+		icon = GFX_focus_generic_coastal_fort
+		prerequisite = { focus = neutrality_focus focus = heredity }
+		x = -2
+		y = 1
+		relative_position_id = neutrality_focus
+		cost = 15
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = protection_idea
+		}
+	}
+
+	shared_focus = {
 		id = deterrence
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = neutrality_focus }
@@ -2090,6 +2353,24 @@ shared_focus = {
 
 		completion_reward = {
 			add_ideas = deterrence
+		}
+	}
+
+	shared_focus = {
+		id = unity
+		icon = GFX_focus_generic_happy_cheer
+		prerequisite = { focus = deterrence }
+		x = 0
+		y = 1
+		relative_position_id = deterrence
+		cost = 15
+	
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
 		}
 	}
 
@@ -2132,8 +2413,8 @@ shared_focus = {
 	shared_focus = {
 		id = indoctrination_focus
 		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = political_correctness }
-		x = 0
+		prerequisite = { focus = political_correctness focus = heredity }
+		x = 1
 		y = 1
 		relative_position_id = political_correctness
 		cost = 15
@@ -2169,17 +2450,18 @@ shared_focus = {
 	shared_focus = {
 		id = why_we_fight
 		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = foreign_expeditions focus = deterrence }
+		prerequisite = { focus = foreign_expeditions focus = deterrence focus = protection focus = unity }
 		available = { 
 			OR = { 
 				threat > 0.75 
 				has_defensive_war = yes 
 			}
 		}
+		mutually_exclusive = { focus = ideological_fanaticism }
 
 		continue_if_invalid = yes
 		
-		x = -2
+		x = -4
 		y = 1
 		relative_position_id = foreign_expeditions
 		cost = 15
@@ -2204,11 +2486,12 @@ shared_focus = {
 		id = political_commissars
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = indoctrination_focus }
+		prerequisite = { focus = political_correctness }
 		available = {
 		}
 		x = 0
-		y = 1
-		relative_position_id = indoctrination_focus
+		y = 2
+		relative_position_id = political_correctness
 		cost = 15
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
@@ -2238,8 +2521,9 @@ shared_focus = {
 	shared_focus = {
 		id = ideological_fanaticism
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = paramilitarism focus = political_commissars }
-		x = 1
+		prerequisite = { focus = paramilitarism focus = political_commissars focus = indoctrination_focus }
+		mutually_exclusive = { focus = why_we_fight }
+		x = 3
 		y = 1
 		relative_position_id = paramilitarism
 		cost = 15
@@ -2247,6 +2531,14 @@ shared_focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available_if_capitulated = yes
+		available = {
+			if = {
+				limit = {
+				has_completed_focus = internationalism_focus
+				}
+				has_completed_focus = political_commissars
+			}
+		}
 
 		completion_reward = {
 			add_ideas = ideological_fanaticism_focus
@@ -2275,7 +2567,7 @@ shared_focus = {
 				}
 			}
 		}		
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = ideological_fanaticism
 		cost = 15

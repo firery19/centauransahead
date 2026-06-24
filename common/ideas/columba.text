@@ -1,0 +1,18 @@
+ideas = {
+    country = {
+        CLB_lots_of_mountains_idea = {
+        name = Unforgiving_terrain
+        
+        picture = Focus_generic_mountain_troops
+        allowed = { original_tag = CLB }
+        removal_cost = -1
+
+        modifier = {
+                local_resources_factor = -0.3
+                cic_construction_boost_factor = -0.5
+                global_building_slots_factor = -0.3
+                conscription_factor = -0.5
+                }
+        }
+    }
+}

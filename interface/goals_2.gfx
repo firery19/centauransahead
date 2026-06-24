@@ -305,6 +305,124 @@ spriteTypes = {
 	}
 	
 	###########
+	#  Aquila #
+	###########
+	SpriteType = {
+		name = "GFX_focus_AQU_status_quo"
+		texturefile = "gfx/interface/goals/focus_AQU_status_quo.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_AQU_the_senate"
+		texturefile = "gfx/interface/goals/focus_AQU_the_senate.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_AQU_tight_cg_policy"
+		texturefile = "gfx/interface/goals/focus_AQU_tight_cg.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_AQU_loose_cg_policy"
+		texturefile = "gfx/interface/goals/focus_AQU_loose_cg_policy.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_AQU_iron_army"
+		texturefile = "gfx/interface/goals/focus_AQU_iron_army.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_AQU_army_fund"
+		texturefile = "gfx/interface/goals/focus_AQU_army_fund.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_AQU_war_antares"
+		texturefile = "gfx/interface/goals/focus_AQU_war_antares.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_AQU_iron_army1"
+		texturefile = "gfx/interface/goals/focus_AQU_iron_army3.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_AQU_iron_army2"
+		texturefile = "gfx/interface/goals/focus_AQU_iron_army2.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_AQU_anti_ant_propaganda"
+		texturefile = "gfx/interface/goals/focus_AQU_anti_antares_propaganda.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_AQU_M99_1"
+		texturefile = "gfx/interface/goals/focus_AQU_M99_1.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_AQU_M99_2"
+		texturefile = "gfx/interface/goals/focus_AQU_M99_2.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_AQU_M12_1"
+		texturefile = "gfx/interface/goals/focus_AQU_M12_1.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_AQU_M12_2"
+		texturefile = "gfx/interface/goals/focus_AQU_M12_2.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_AQU_people"
+		texturefile = "gfx/interface/goals/focus_AQU_people.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_AQU_funds"
+		texturefile = "gfx/interface/goals/focus_AQU_funds.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_AQU_war_factories"
+		texturefile = "gfx/interface/goals/focus_AQU_war_factories.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_AQU_fort_burning"
+		texturefile = "gfx/interface/goals/focus_AQU_fort_burning.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_AQU_review_doctrine_pre_reform"
+		texturefile = "gfx/interface/goals/focus_AQU_review_doctrine_pre_reform.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_AQU_blue_skies"
+		texturefile = "gfx/interface/goals/focus_AQU_blue_skies.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_AQU_observe_the_AIAF"
+		texturefile = "gfx/interface/goals/focus_AQU_observe_the_AIAF.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_AQU_lesson_canis"
+		texturefile = "gfx/interface/goals/focus_AQU_lesson_canis.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_AQU_defend_our_sky"
+		texturefile = "gfx/interface/goals/focus_AQU_defend_our_sky.png"
+	}
+	
+	###########
 	# generic #
 	###########
 	SpriteType = {
@@ -710,7 +828,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_focus_deport"
-		texturefile = "gfx/interface/focus_generic_deport.png"
+		texturefile = "gfx/interface/goals/focus_generic_deport.dds"
 	}
 #end
 }

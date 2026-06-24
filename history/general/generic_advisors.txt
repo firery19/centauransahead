@@ -279,7 +279,15 @@ every_possible_country = {
 			traits = { air_close_air_support_2 }
 			cost = 100
 			available = {
-				has_tech = early_fighter
+			IF = {
+				limit = {
+					has_dlc = "By Blood Alone"
+					}
+					has_tech = iw_small_airframe
+				}
+				ELSE = {
+					has_tech = early_fighter
+				}
 			}
 		}
 		portraits = { 
@@ -292,7 +300,15 @@ every_possible_country = {
 			slot = air_chief
 			traits = { air_chief_all_weather_2 }
 			available = {
-				has_tech = early_fighter				
+			IF = {
+				limit = {
+					has_dlc = "By Blood Alone"
+					}
+					has_tech = iw_small_airframe
+				}
+				ELSE = {
+					has_tech = early_fighter
+				}			
 			}
 			cost = 100
 		}

@@ -18,6 +18,7 @@
  STATE_16:0 "Central Centauri"
  STATE_17:1 "Lacerta"
  STATE_18:0 "Musca"
+ MUS_STATE_18:0 "Sarvijaan Islands"
  STATE_19:0 "Libratum"
  STATE_20:0 "East Librae"
  STATE_21:1 "Western Libran Islands"
@@ -236,18 +237,18 @@
  STATE_200:0 "Zaporozhe"
  STATE_201:0 "Eastern Tucana"
  STATE_202:0 "Central Tucana"
- STATE_203:0 "Cherkasy"
- STATE_204:0 "Bobruysk" # end 3
+ STATE_203:0 "Northeast Centauri"
+ STATE_204:0 "Northwest Centauri" # end 3
  STATE_205:0 "Northwestern Macer Mountains"
  LGS_STATE_205:0 "Lower Ling Valley"
  STATE_206:0 "Minsk"
  STATE_207:0 "Vitebsk"
  STATE_208:0 "North Grusa" #Luga
- GRS_STATE_209:0 "Grusan Border Region"
+ GRS_STATE_209:0 "Grusan Plains"
  STATE_209:0 "Central Aridan Region"
  STATE_210:0 "North Árida Desert"
  STATE_211:0 "Grusan Annulus Coast" #Burgas
- STATE_212:0 "Plovdiv Region"
+ STATE_212:0 "Northeastern Grusa"
  STATE_213:0 "Murmansk"
  STATE_213_FIN: "Kuolan Niemimaa"
  STATE_214:0 "South Vega"
@@ -255,8 +256,8 @@
  STATE_216:0 "Olonets Region"
  STATE_217:0 "North Vegan Coastal Region"
  STATE_218:0 "South Euria Region" # end 4
- STATE_219:0 "Moscow"
- STATE_220:0 "Kursk"
+ STATE_219:0 "Sorthern Árida Desert"
+ STATE_220:0 "Nouthern Árida Desert"
  STATE_221:0 "South Digitus Trail"
  STATE_222:0 "Eastern Macer Mountains"
  STATE_223:0 "Central Macer Mountains"

@@ -2750,101 +2750,7 @@ spriteTypes = {
 	
 	# AQUILA################################################################################################################################
 	
-	SpriteType = {
-			name = "GFX_focus_generic_fortify_aquila_shine"
-			texturefile = "gfx/interface/goals/focus_generic_fortify_aquila.dds"
-			effectFile = "gfx/FX/buttonstate.lua"
-			animation = {
-				animationmaskfile = "gfx/interface/goals/focus_generic_fortify_aquila.dds"
-				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-				animationlooping = no			# yes or no ;)
-				animationtime = 0.75				# in seconds
-				animationdelay = 0			# in seconds
-				animationblendmode = "add"       #add, multiply, overlay
-				animationtype = "scrolling"      #scrolling, rotating, pulsing
-				animationrotationoffset = { x = 0.0 y = 0.0 }
-				animationtexturescale = { x = 2.0 y = 1.0 } 
-			}
-		
-			animation = {
-				animationmaskfile = "gfx/interface/goals/focus_generic_fortify_aquila.dds"
-				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-				animationlooping = no			# yes or no ;)
-				animationtime = 0.75				# in seconds
-				animationdelay = 0			# in seconds
-				animationblendmode = "add"       #add, multiply, overlay
-				animationtype = "scrolling"      #scrolling, rotating, pulsing
-				animationrotationoffset = { x = 0.0 y = 0.0 }
-				animationtexturescale = { x = 2.0 y = 1.0 } 
-			}
-		legacy_lazy_load = no
-	}
-	
-	SpriteType = {
-			name = "GFX_focus_AQU_civil_guard_shine"
-			texturefile = "gfx/interface/goals/focus_AQU_civil_guard.dds"
-			effectFile = "gfx/FX/buttonstate.lua"
-			animation = {
-				animationmaskfile = "gfx/interface/goals/focus_AQU_civil_guard.dds"
-				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-				animationlooping = no			# yes or no ;)
-				animationtime = 0.75				# in seconds
-				animationdelay = 0			# in seconds
-				animationblendmode = "add"       #add, multiply, overlay
-				animationtype = "scrolling"      #scrolling, rotating, pulsing
-				animationrotationoffset = { x = 0.0 y = 0.0 }
-				animationtexturescale = { x = 2.0 y = 1.0 } 
-			}
-		
-			animation = {
-				animationmaskfile = "gfx/interface/goals/focus_AQU_civil_guard.dds"
-				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-				animationlooping = no			# yes or no ;)
-				animationtime = 0.75				# in seconds
-				animationdelay = 0			# in seconds
-				animationblendmode = "add"       #add, multiply, overlay
-				animationtype = "scrolling"      #scrolling, rotating, pulsing
-				animationrotationoffset = { x = 0.0 y = 0.0 }
-				animationtexturescale = { x = 2.0 y = 1.0 } 
-			}
-		legacy_lazy_load = no
-	}
-	
-	SpriteType = {
-			name = "GFX_focus_AQU_civil_guard_OLD_shine"
-			texturefile = "gfx/interface/goals/focus_AQU_civil_guard_OLD.dds"
-			effectFile = "gfx/FX/buttonstate.lua"
-			animation = {
-				animationmaskfile = "gfx/interface/goals/focus_AQU_civil_guard_OLD.dds"
-				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-				animationlooping = no			# yes or no ;)
-				animationtime = 0.75				# in seconds
-				animationdelay = 0			# in seconds
-				animationblendmode = "add"       #add, multiply, overlay
-				animationtype = "scrolling"      #scrolling, rotating, pulsing
-				animationrotationoffset = { x = 0.0 y = 0.0 }
-				animationtexturescale = { x = 2.0 y = 1.0 } 
-			}
-		
-			animation = {
-				animationmaskfile = "gfx/interface/goals/focus_AQU_civil_guard_OLD.dds"
-				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-				animationlooping = no			# yes or no ;)
-				animationtime = 0.75				# in seconds
-				animationdelay = 0			# in seconds
-				animationblendmode = "add"       #add, multiply, overlay
-				animationtype = "scrolling"      #scrolling, rotating, pulsing
-				animationrotationoffset = { x = 0.0 y = 0.0 }
-				animationtexturescale = { x = 2.0 y = 1.0 } 
-			}
-		legacy_lazy_load = no
-	}
+
 	
 	# antares #############################################################################################################################
 	
@@ -3105,4 +3011,777 @@ spriteTypes = {
 			}
 		legacy_lazy_load = no
 	}
+	
+	###########
+	#  Aquila #
+	###########
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_status_quo_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_status_quo.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_status_quo.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_status_quo.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_the_senate_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_the_senate.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_the_senate.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_the_senate.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_generic_fortify_aquila_shine"
+			texturefile = "gfx/interface/goals/focus_generic_fortify_aquila.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_generic_fortify_aquila.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_generic_fortify_aquila.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_civil_guard_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_civil_guard.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_civil_guard.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_civil_guard.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_civil_guard_OLD_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_civil_guard_OLD.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_civil_guard_OLD.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_civil_guard_OLD.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_tight_cg_policy_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_tight_cg.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_tight_cg.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_tight_cg.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_loose_cg_policy_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_loose_cg_policy.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_loose_cg_policy.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_loose_cg_policy.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_army_fund_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_army_fund.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_army_fund.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_army_fund.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_iron_army_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_iron_army.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_iron_army.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_iron_army.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+			name = "GFX_focus_AQU_war_antares_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_war_antares.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_war_antares.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_war_antares.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_generic_iron_army1_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_iron_army3.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_iron_army3.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_iron_army3.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_generic_iron_army2_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_generic_iron_army2.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_generic_iron_army2.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_generic_iron_army2.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_anti_ant_propaganda_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_anti_antares_propaganda.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_anti_antares_propaganda.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_anti_antares_propaganda.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_M99_1_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_M99_1.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_M99_1.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_M99_1.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_M99_2_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_M99_2.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_M99_2.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_M99_2.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_M12_1_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_M12_1.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_M12_1.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_M12_1.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_M12_2_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_M12_2.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_M12_2.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_M12_2.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_people_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_people.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_people.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_people.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+			name = "GFX_focus_AQU_funds_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_funds.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_funds.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_funds.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_war_factories_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_war_factories.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_war_factories.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_war_factories.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_fort_burning_shine"
+			texturefile = "gfx/interface/goals/focus_AQU_fort_burning.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_fort_burning.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_fort_burning.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_review_doctrine_pre_reform"
+			texturefile = "gfx/interface/goals/focus_AQU_review_doctrine_pre_reform.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_review_doctrine_pre_reform.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_review_doctrine_pre_reform.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_blue_skies"
+			texturefile = "gfx/interface/goals/focus_AQU_blue_skies.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_blue_skies.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_blue_skies.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+			name = "GFX_focus_AQU_defend_our_sky"
+			texturefile = "gfx/interface/goals/focus_AQU_defend_our_sky.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_defend_our_sky.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		
+			animation = {
+				animationmaskfile = "gfx/interface/goals/focus_AQU_defend_our_sky.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+				animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75				# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"       #add, multiply, overlay
+				animationtype = "scrolling"      #scrolling, rotating, pulsing
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 2.0 y = 1.0 } 
+			}
+		legacy_lazy_load = no
+	}
+	
 }

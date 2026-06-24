@@ -379,7 +379,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="mod_version"
-			position = { x = 149 y = -200 } #129
+			position = { x = 159 y = -200 } #129
 			textureFile = ""
 			font = "hoi_24header"
 			text = "TITLE_CARD"
@@ -391,7 +391,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name ="mod_version_desc"
-			position = { x = 160 y = -80 } #140
+			position = { x = 170 y = -80 } #140
 			textureFile = ""
 			font = "hoi_16typewriter"
 			text = "TOKIDOKI_BOSOTTO_ROSHIA_GO_DE_DEDERU_TONARI_NO_ALYA_SAN"
@@ -404,7 +404,7 @@ guiTypes = {
 		iconType = {
 			name = "left_flag"
 			position = { x = -240 y = 90 }
-			spriteType = "GFX_anturus"
+			spriteType = "GFX_empty_placeholder"# "GFX_anturus"
 			centerposition = yes
 			orientation = upper_right
 			alwaysTransparent = yes
@@ -412,8 +412,8 @@ guiTypes = {
 		
 		iconType = {
 			name = "central_flag" # hidden when left and right is visible
-			position = { x = -180 y = 90 }
-			spriteType = "GFX_empty_placeholder" #"GFX_hyderus"
+			position = { x = -170 y = 90 }
+			spriteType = "GFX_libura" #"GFX_hyderus" #GFX_empty_placeholder
 			centerposition = yes
 			orientation = upper_right
 			alwaysTransparent = yes
@@ -422,7 +422,7 @@ guiTypes = {
 		iconType = {
 			name = "right_flag"
 			position = { x = -100 y = 90 }
-			spriteType = "GFX_hyderus"
+			spriteType = "GFX_empty_placeholder"
 			centerposition = yes
 			orientation = upper_right
 			alwaysTransparent = yes
@@ -430,7 +430,7 @@ guiTypes = {
 		
 		iconType = {
 			name = "antares_1"
-			position = { x = -280 y = 40 }
+			position = { x = -270 y = 40 }
 			spriteType = "GFX_autonomy_skorpii_icon"
 			centerposition = yes
 			orientation = upper_right
@@ -439,7 +439,7 @@ guiTypes = {
 		
 		iconType = {
 			name = "antares_2"
-			position = { x = -80 y = 40 }
+			position = { x = -70 y = 40 }
 			spriteType = "GFX_autonomy_skorpii_integrated_icon"
 			centerposition = yes
 			orientation = upper_right
@@ -457,7 +457,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name ="mod_version_changelog_title"
-			position = { x = 140 y = -15 }
+			position = { x = 155 y = -15 }
 			textureFile = ""
 			font = "hoi_24header"
 			text = "Changelog"
@@ -469,7 +469,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name ="mod_version_changelog"
-			position = { x = 170 y = 20 }
+			position = { x = 180 y = 20 }
 			textureFile = ""
 			font = "hoi_16typewriter"
 			text = "BOCCHI_THE_ROCK"

@@ -96,9 +96,9 @@
  ANT_authoritarian1:0 "Emergency Monarchic Powers"
  ANT_authoritarian1_desc:0 "To get all of our needed authoritarian reforms done we must consolidate monarchic power and give emergency powers to Kalvin."
  ANT_authoritarian2:0 "Utilize Popular Support"
- ANT_authoritarian2_desc:0 "The emperor is very popular amongst the people of Antares. From Lepus to Ara, praise for the emperor can be heard. This popular support will be a crucial part for allowing the emperor to create his absolute monarchy."
+ ANT_authoritarian2_desc:0 "The Emperor is very popular amongst the people of Antares. From Lepus to Ara, praise for the Emperor can be heard. This popular support will be a crucial part for allowing the Emperor to create his absolute monarchy."
  ANT_authoritarian3:0 "Aggresive Campaigning"
- ANT_authoritarian3_desc:0 "There are however many people opposed against this increased authoritarianism. We must start a massive propaganda campaign to make support for the emperor unquestionable."
+ ANT_authoritarian3_desc:0 "There are however many people opposed against this increased authoritarianism. We must start a massive propaganda campaign to make support for the Emperor unquestionable."
  ANT_authoritarian4:0 "Massive Crackdowns"
  ANT_authoritarian4_desc:0 "We will do massive crackdowns and raids on oposition parties and organizations. Any republicans or socialists will be forced underground."
  ANT_authoritarian5a:0 "Suspend Democratic Institutions"
@@ -324,7 +324,7 @@
 
  ANT_eq_trigger_tt:0 "Has more than §Y80K§! in Infantry Equipment in the army"
  ANT_space_tt:0 "tooltip test why doesnt this work bruh" # custom_effect_tooltip = ANT_space_tt
- ANT_new_divisions_tt:0 "Spawns in §Y6§! divisions of the new template in major cities"
+ ANT_new_divisons_tt:0 "\nSpawns in §Y6§! divisions of the new template in major cities."
  
 
  
@@ -344,15 +344,15 @@
  antarean_nationalism_desc:0 "Antares is perhaps the most nationalistic country in all of Centaura. The people of Antares are proud of their nation and its history, and they are willing to fight to protect it."
  
  antarean_democracy:0 "Antarean Democracy"
- antarean_democracy_desc:0 "The Supreme Kouncil is Antares' legislature and their cooperation is needed for the emperor to implent his agenda and govern effectively. A large amount of the emperor's political power is spent on maintaining Kouncil support."
+ antarean_democracy_desc:0 "The Supreme Kouncil is Antares' legislature and their cooperation is needed for the Emperor to implent his agenda and govern effectively. A large amount of the Emperor's political power is spent on maintaining Kouncil support."
  
  antarean_democracy_unfriendly:0 "Antarean Democracy"
- antarean_democracy_unfriendly_desc:0 "The Supreme Kouncil is Antares' legislature and their cooperation is needed for the emperor to implent his agenda and govern effectively. The Emperor's moves towards absolute monarchy has made the Kouncil very unfriendly towards him, and they are destabilizing the regime. A large amount of the emperor's political power is spent on maintaining Kouncil support."
+ antarean_democracy_unfriendly_desc:0 "The Supreme Kouncil is Antares' legislature and their cooperation is needed for the Emperor to implent his agenda and govern effectively. The Emperor's moves towards absolute monarchy has made the Kouncil very unfriendly towards him, and they are destabilizing the regime. A large amount of the Emperor's political power is spent on maintaining Kouncil support."
  antarean_democracy_unfriendly2:0 "Antarean Democracy"
- antarean_democracy_unfriendly2_desc:0 "The Supreme Kouncil is Antares' legislature and their cooperation is needed for the emperor to implent his agenda and govern effectively. The Emperor's moves towards absolute monarchy has made the Kouncil very unfriendly towards him, and they are destabilizing the regime. A medium amount of the emperor's political power is spent on maintaining Kouncil support."
+ antarean_democracy_unfriendly2_desc:0 "The Supreme Kouncil is Antares' legislature and their cooperation is needed for the Emperor to implent his agenda and govern effectively. The Emperor's moves towards absolute monarchy has made the Kouncil very unfriendly towards him, and they are destabilizing the regime. A medium amount of the Emperor's political power is spent on maintaining Kouncil support."
  
  antarean_democracy_pacified:0 "Antarean Democracy"
- antarean_democracy_pacified_desc:0 "The Supreme Kouncil is Antares' legislature and their cooperation is needed for the emperor to implent his agenda and govern effectively. The Kouncil has been succesfully subjugated and is only nominally independent, allowing the emperor to rule with absolute power. A medium amount of the emperor's political power is spent on maintaining Kouncil support."
+ antarean_democracy_pacified_desc:0 "The Supreme Kouncil is Antares' legislature and their cooperation is needed for the Emperor to implent his agenda and govern effectively. The Kouncil has been succesfully subjugated and is only nominally independent, allowing the Emperor to rule with absolute power. A medium amount of the Emperor's political power is spent on maintaining Kouncil support."
  
  protests_tiny:0 "Negligible Protests"
  protests_tiny_desc:0 "Students, liberals, and socialists are protesting against our ever-expanding power and desire for war. Stupid hippies, why can't you let me play HoI4?"
@@ -381,18 +381,19 @@
  decentral_industry_desc:0 "Antares, the great scorpion of Centaura has always been a major power. Throughout the Second Industrial Revolution in the mid-1800s, Antares has been the second largest industrial power in the world. We are developing a decentralized industry across the entire nation to truly make Antares a modernised and developed nation."
  
  aquilan_humiliation:0 "Aquilan Humiliation"
- aquilan_humiliation_desc:0 "The disastrous outcome and humilation which resulted from the 1875 Antrean-Aquila war still lies in recent memory for the people of Antares."
+ aquilan_humiliation_desc:0 "The disastrous outcome and humilation which resulted from the 1875 Antarean-Aquila war still lies in recent memory for the people of Antares."
  aquilan_revenge:0 "Revenge against Aquila"
  aquilan_revenge_desc:0 "We have reformed and strengthened our army so that even the mightiest forces in Forma cannot resist it; it is time we have our revenge against the puny Aquilans! \n\nNOTE: This idea will be removed once Aquila is either subjugated or annexed. "
 
 # Country Flags
  ANT_protests_ongoing:0 "The Internal Political Situation is Highly Violent and Unstable"
  ANT_protest_peace:0 "A Resolution to the Internal Situation Has Been Found"
+ army_reform_mutually_exclusive_decision:0 "Selected Mutually Exclusive Decision"
 
 # Ideologies
  ANT_neutrality_party:0 "House of Tau"
  ANT_neutrality_party_long:0 "House of Tau"
- ANT_auth_dem_party:0 "Supreme Kouncil (C)"
+ ANT_auth_dem_party:0 "Supreme Kouncil (K)"
  ANT_auth_dem_party_long:0 "Supreme Kouncil - Conservative Faction"
  ANT_democratic_right_party:0 "Supreme Kouncil (M)"
  ANT_democratic_right_party_long:0 "Supreme Kouncil - Moderate Faction"
@@ -454,6 +455,8 @@
  ANT_give_land_cov:0 "Cede Minor Islands to Corvus"
  ANT_give_land_grs:0 "Rectify the Triplum War"
 
+ ANT_skorpii_management_category:0 "Skorpii Management"
+ ANT_establish_skorpii_grusii:0 "Establish Skorpii Grusii"
 #MIO
  ANT_germaniawerft_organization:0 "Ananteria Imperial Shipyards" #TEMP NAME, GET SOME LORE ON ACTUALL MILITARY INDUSTRIAL CORPORATIONS
  ANT_germaniawerft_organization_desc:0 "TESTTEST"
@@ -474,6 +477,8 @@
  ant_redraw_boundries_decision_tt:0 "Unlocks Decisions to §YResolve Internal Disputes§!, §ROnce and For All!§!"
  northead_base_tt:0 "Expands the naval base in §YNorthead§! to level §G8§!"
  devon_base_tt:0 "Builds up the naval base in §YDevon§! to level §G6§!"
+ ANT_centralized_industry_tt:0 "This path is §Gshorter§! and will lead to §Yfactories§! §Cquicker§!.\n\n"
+ ANT_decentralized_industry_tt:0 "This path is §Rlonger§! but will eventually lead to §Gmore§! §Yfactories§!.\n\n"
 
  
  ##imperial army

@@ -14,5 +14,395 @@ ideas = {
 				acclimatization_hot_climate_gain_factor = 1
             }
         }
+        
+         GRS_devastation_at_cabo_vesca_idea = {
+            picture = gre_political_instability_republican
+            allowed = { original_tag = GRS }
+            removal_cost = -1
+            modifier = {
+    war_support_factor = -0.2
+    experience_gain_navy_factor = -0.2
+    naval_accidents_chance = 0.15
+    naval_morale_factor = -0.15
+    naval_retreat_chance = 0.30
+    naval_damage_factor = -0.15
+    naval_defense_factor = -0.05
+    naval_speed_factor = -0.05         
+       }
+        }
+        GRS_reforming_navy_0 = {
+
+            picture = generic_the_london_naval_treaty
+
+            allowed = {
+                original_tag = GRS
+            }
+
+            modifier = {
+                navy_org_factor = -0.20
+                naval_morale_factor = -0.15  
+                naval_coordination = -0.20       
+                }
+        }
+
+        GRS_reforming_navy_1 = {
+
+            picture = generic_the_london_naval_treaty
+
+            allowed = {
+                original_tag = GRS
+            }
+
+            modifier = {
+                naval_coordination = -0.10
+                naval_morale_factor = -0.10
+            }
+        }
+
+        GRS_reforming_navy_2 = {
+
+            picture = generic_the_london_naval_treaty
+
+            allowed = {
+                original_tag = GRS
+            }
+
+            modifier = {
+                naval_morale_factor = -0.05
+                naval_coordination = 0.05
+            }
+        }
+
+        GRS_reforming_navy_3 = {
+
+            picture = generic_the_london_naval_treaty
+
+            allowed = {
+                original_tag = GRS
+            }
+
+            modifier = {
+                naval_coordination = 0.10
+                naval_morale_factor = 0.05
+            }
+        }
+
+        GRS_reforming_navy_4 = {
+
+            picture = generic_the_london_naval_treaty
+
+            allowed = {
+                original_tag = GRS
+            }
+
+            modifier = {
+                naval_coordination = 0.15
+                naval_morale_factor = 0.10            
+                }
+        }
+
+        GRS_reforming_navy_5 = {
+
+            picture = generic_the_london_naval_treaty
+
+            allowed = {
+                original_tag = GRS
+            }
+
+            modifier = {
+                naval_coordination = 0.20
+                naval_morale_factor = 0.15
+            }
+        }
+
+        GRS_new_grand_armada = {
+
+            picture = generic_coastal_defense_ships2
+
+            allowed = {
+                original_tag = GRS
+            }
+
+            modifier = {
+                war_support_factor = 0.05
+                naval_coordination = 0.25
+    experience_gain_navy_factor = 0.10
+    naval_accidents_chance = -0.15
+    naval_morale_factor = 0.15
+    naval_retreat_chance = 0.05
+    naval_damage_factor = 0.15
+    naval_defense_factor = 0.10
+    naval_speed_factor = 0.10             
+     }
+        }
+        GRS_new_grand_armada = {
+
+            picture = generic_coastal_defense_ships2
+
+            allowed = {
+                original_tag = GRS
+            }
+
+            modifier = {
+                war_support_factor = 0.05
+                naval_coordination = 0.25
+    experience_gain_navy_factor = 0.10
+    naval_accidents_chance = -0.15
+    naval_morale_factor = 0.15
+    naval_retreat_chance = 0.05
+    naval_damage_factor = 0.15
+    naval_defense_factor = 0.10
+    naval_speed_factor = 0.10             
+     }
+        }
+        GRS_new_grand_armada2 = {
+
+            picture = generic_coastal_defense_ships2
+
+            allowed = {
+                original_tag = GRS
+            }
+
+            modifier = {
+                war_support_factor = 0.05
+                naval_coordination = 0.25
+    experience_gain_navy_factor = 0.10
+    naval_accidents_chance = -0.15
+    naval_morale_factor = 0.15
+    naval_retreat_chance = 0.05
+    naval_damage_factor = 0.25
+    naval_defense_factor = 0.10
+    naval_speed_factor = -0.05           
+     }
+        }
+        GRS_new_grand_armada3 = {
+
+            picture = generic_coastal_defense_ships2
+
+            allowed = {
+                original_tag = GRS
+            }
+
+            modifier = {
+                war_support_factor = 0.05
+                naval_coordination = 0.25
+    experience_gain_navy_factor = 0.10
+    naval_accidents_chance = -0.15
+    naval_morale_factor = 0.15
+    naval_retreat_chance = 0.05
+    naval_damage_factor = 0.05
+    naval_defense_factor = 0.05
+    naval_speed_factor = 0.25            
+     }
+        }
+        GRS_new_grand_armada4 = {
+
+            picture = generic_coastal_defense_ships2
+
+            allowed = {
+                original_tag = GRS
+            }
+
+            modifier = {
+                war_support_factor = 0.05
+                naval_coordination = 0.25
+    experience_gain_navy_factor = 0.10
+    naval_accidents_chance = -0.15
+    naval_morale_factor = 0.15
+    naval_retreat_chance = 0.05
+    naval_damage_factor = 0.17
+    naval_defense_factor = 0.07
+    naval_speed_factor = 0.12             
+     }
+        }
+        GRS_new_grand_armada5 = {
+
+            picture = NORDIC_navy_monarchist
+
+            allowed = {
+                original_tag = GRS
+            }
+
+            modifier = {
+                war_support_factor = 0.10
+                naval_coordination = 0.25
+    experience_gain_navy_factor = 0.20
+    naval_accidents_chance = -0.20
+    naval_morale_factor = 0.15
+    naval_retreat_chance = -0.05
+    naval_damage_factor = 0.20
+    naval_defense_factor = 0.15
+    naval_speed_factor = 0.20           
+     }
+        }
+        GRS_expanded_naval_academy = {
+        picture = BRA_navy
+        allowed = {
+                original_tag = GRS
+            }
+
+            modifier = {
+            navy_leader_start_level = 1 
+            naval_doctrine_cost_factor = -0.10
+            experience_gain_navy_factor = 0.15        
+     }
+        }
+        
+        GRS_avenging_cabo_vesca = {
+        picture = FRA_scw_intervention_republicans_focus
+        allowed = {
+                original_tag = GRS
+            }
+            modifier = {
+            army_attack_factor = 0.20
+            army_morale_factor = 0.05
+            army_org_factor = 0.05
+            breakthrough_factor = 0.3       
+     }
+
+
+    }
+    GRS_naval_design_bureau = {
+	picture = generic_navy
+
+	modifier = {
+		research_speed_factor = 0.05
+		experience_gain_navy_factor = 0.05
+	}
+}
+
+GRS_admiralty_reforms = {
+	picture = generic_political_reform
+
+	modifier = {
+		navy_leader_cost_factor = -0.10
+		experience_gain_navy_factor = 0.10
+		political_power_gain = 0.05
+	}
+}
+
+GRS_fleet_war_games = {
+	picture = generic_navy
+
+	modifier = {
+		naval_coordination = 0.10
+		positioning = 0.05
+	}
+}
+
+GRS_marine_assault_training = {
+	picture = generic_marines
+
+	modifier = {
+		special_forces_cap = 0.05
+		special_forces_attack_factor = 0.05
+	}
+}
+
+GRS_amphibious_logistics = {
+	picture = generic_transport
+
+	modifier = {
+		naval_invasion_capacity = 20
+		out_of_supply_factor = -0.15
+	}
+  }
+  
+        GRS_emptiness_of_the_interior = {
+    picture = generic_economic_crisis
+     allowed = { original_tag = GRS }
+            removal_cost = -1
+
+            modifier = {
+                    stability_factor = -0.05
+    consumer_goods_factor = 0.25
+    production_speed_buildings_factor = -0.15
+    local_resources_factor = -0.20
+    
+            }
+        }
+        
+        GRS_the_centimado_idea = {
+    picture = eng_service_overseas
+     allowed = { original_tag = GRS }
+            removal_cost = -1
+
+            modifier = {
+                    stability_factor = 0.05
+                    army_core_defence_factor = 0.05
+                    resistance_activity = -0.05
+                    resistance_growth = -0.05
+                    training_time_factor = 0.05
+            }
+        } 
+        
+         GRS_the_flamenco_dynasty_idea = {
+    picture = por_monarchist_uprising
+     allowed = { original_tag = GRS }
+            removal_cost = -1
+
+            modifier = {
+                    political_power_gain = 0.25
+                    drift_defence_factor = 0.1
+                    neutrality_drift = 0.01
+                }
+           }
+           
+           GRS_desert_aviators = {
+    picture = BRA_air_force
+
+    allowed = {
+        original_tag = GRS
+    }
+
+    modifier = {
+        air_accidents_factor = -0.10
+        air_ace_generation_chance_factor = 0.10
+        air_agility_factor = 0.05
+    }
+}
+
+GRS_flying_artillery_idea = {
+    picture = generic_air_payment
+
+    allowed = {
+        original_tag = GRS
+    }
+
+    modifier = {
+        air_close_air_support_org_damage_factor	= 0.10
+        air_cas_efficiency = 0.05
+        air_bombing_targetting = 0.05
+    }
+}
+
+GRS_royal_fighter_squadron_idea = {
+    picture = eng_special_air_service
+
+    allowed = {
+        original_tag = GRS
+    }
+
+    modifier = {
+        air_home_defence_factor = 0.10
+        air_superiority_efficiency = 0.05
+        air_weather_penalty = -0.05
+    }
+}
+
+GRS_desert_aviators_upgrade = {
+    picture = BRA_air_force
+
+    allowed = {
+        original_tag = GRS
+    }
+
+    modifier = {
+        air_accidents_factor = -0.20
+        air_ace_generation_chance_factor = 0.15
+        air_agility_factor = 0.10
+    }
+}
+
     }
 }

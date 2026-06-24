@@ -123,6 +123,21 @@ spriteTypes = {
 		texturefile = "gfx/leaders/AQU/portrait_AQU_ewan_fouwler.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_portrait_AQU_leonard_falkner"
+		texturefile = "gfx/leaders/AQU/portrait_AQU_leonard_falkner.dds"
+	} 
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_john_aquila"
+		texturefile = "gfx/leaders/AQU/portrait_AQU_john_f_aquila.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_AQU_john_aquila_jr"
+		texturefile = "gfx/leaders/AQU/portrait_AQU_john_f_aquila_jr.png"
+	}
+	
 	# vega
 	
 	spriteType = {
@@ -136,6 +151,20 @@ spriteTypes = {
 		name = "GFX_portrait_GRS_fernan_flamenco"
 		texturefile = "gfx/Leaders/GRS/portrait_GRS_fernan_flamenco.dds"
 	}
+	
+	    spriteType = {
+        name = "GFX_portrait_GRS_xavier_navarro"
+        texturefile = "gfx/leaders/GRS/portrait_GRS_xavier_navarro.dds"
+    }
+
+	 spriteType = {
+        name = "GFX_portrait_GRS_valentine_flamenco"
+        texturefile = "gfx/leaders/GRS/portrait_GRS_valentine_flamenco.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_GRS_emperor_valentine"
+        texturefile = "gfx/leaders/GRS/portrait_GRS_emperor_valentine.dds"
+    }
 
 	# riaa
 	

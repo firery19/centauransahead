@@ -151,7 +151,21 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_libura"
+		texturefile = "gfx/interface/libura.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_long_tile"
 		texturefile = "gfx/interface/border_tiled_menu_screen_a.dds"
+	}
+	
+	########
+	#aquila#
+	########
+	
+	spriteType = {
+		name = "GFX_decision_cat_aqu_national_assembly"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_assembly.dds"
 	}
 }

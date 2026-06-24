@@ -15,7 +15,12 @@
  
  form_country_rodinia_coring_states_tt:0 "Cores all listed territories above"
  
- 
+ form_super_musca_category:0 "Greater Musca"
+ form_super_musca_category_desc:0 "We take lands."
+ form_super_musca2_category:0 "Unist Empire"
+ form_super_musca2_category_desc:0 "We take lands."
+ jaatflag:0 "www"
+ jaatflag2:0 "sss."
  
  
  form_commonwealthB_category:0 "Form the Hydrus Commonwealth"
@@ -32,6 +37,15 @@
  form_grusan_flag:0 "Grusa has been reunited into one"
  form_country_united_grusa_required_states_tt:0 "Requires all Aridan states (cores of [GRS.GetName] and [VEG.GetName])"
  form_country_grusa_coring_states_tt:0 "Cores all [VEG.GetName] and [GRS.GetName] states. Also adds claim on [32.GetName]."
+ decide_capital_north:0 "Moving Capital to Leopolis"
+ return_capital_south:0 "Return to Santa Mireia"
+ 
+ reuinte_columba_category:0 "Uniting Columba"
+ reuinte_columba_category_desc:0 "Calls to unify has never been stronger than ever! The threat of Riaa to the north is the driving force between the unification of the Columban states..."
+ reuniting_columba_again:0 "Columban Unification"
+ reform_columba_flag:0 "§YColumban Territories§! have §YUnited§!"
+ form_nation_columba_required_states_tt:0 "Requires all cores of §Y[CLB.GetName]§!."
+ reform_columba_coring_states_tt:0 "Cores all §Y[CLB.GetName]§! states."
  
  form_redantares_category:0 "Colour Changer"
  form_redantares:0 "Change the colour of Antares to red"
@@ -84,6 +98,8 @@
  forma_retooling_campaign_cooloff_idea:0 "Ongoing Campaign"
  forma_retooling_campaign_cooloff_idea_desc:0 "" 
  
+ VEG_pastry_selling_campaign_idea:0 "Exporting Food"
+ VEG_pastry_selling_campaign_idea_desc:0 ""
  CET_nav_prod_campaign_idea:0 "Ongoing Naval Production Campaign"
  CET_nav_prod_campaign_idea_desc:0 ""
  AQU_vengeance_campaign_idea:0 "Vengeance Campaign"
@@ -146,6 +162,7 @@
  desert_dynamic_modifier:0 "Desert"
  macer_mountains_modifier:0 "Macer Mountains"
  macer_mountains_small_modifier:0 "Lesser Macer Mountains"
+ VEG_murus_plateau_modifier:0 "Murus Plateau"
  
  CTA_battery_line_dynamix_modifier:0 "Coastal Battery Fortifications"
  CTA_defence_line_dynamic_modifier:0 "Defensive Fortifications"
@@ -154,14 +171,37 @@
  autonomy_skorpii:0 "Skorpii"
  autonomy_skorpii_integrated:0 "Integrated Skorpii"
  
- TITLE_CARD:0 "1.2.05 Update"
+ TITLE_CARD:0 "1.2.06 Update"
  LUCKY_STAR:0 "General Mod Timeline"
  LUCKY_STAR_OVA:0 "More details -->"
  TAKOPIS_ORIGINAL_SIN:0 "1899 - 1901: Hydrus and Lepus gains independence, setting the stage for the Grease Wars.\n\n1902 - 1905: Grease Wars, Ursa VS Orion and allies. Ursa lights oil wells on fire in retreat, causing the Cerberus Oil Fires.\n\n1906: Grease War ends, Orion wins. Canis gains independence from Ursa; Hydrus, Lepus and Canis unite as a Commonwealth.\n\n1908: Corvus invades Cetus to retake lost territory with precious coal mines.\n\n1911: As Corvun supplies dwindle in the war against Cetus, they grows desperate and requests Antarean intervention against Cetus. In return, Corvus agrees to being vassalised by Antares.\n\n1911: Antares invades Cetus. Many naval units flee north to Riaa and Vulpa. Corvus is integrated into Antares as Skorpii Korvus.\n\n1912: Antares attacks Aquila, the "Ring of Fire" holds initial Antarean attacks."#In an attempt to root out Aquilan resistance, Antares begins setting forests ablaze. The fire goes out of control quickly and results in 10% of the country burnt by the end of the year.
- TOKIDOKI_BOSOTTO_ROSHIA_GO_DE_DEDERU_TONARI_NO_ALYA_SAN:0 "Lingstonia is now a gamerule." #In this update, Hydrus gets the newest content!! Now you get to play past the Grease Wars with actual focuses.
- BOCCHI_THE_ROCK:0 "Antares Imperium\n- Added integration decisions\n- Added Antarean army focus branch\n- Added more political focuses\n\nHydrus\n- Added a focus tree\n\n----------- Miscellaneous -------------\nMap changes\n- Added more states in North Centaura, Vega and Grusa\n- Terrain changes\n- More water canals\n\nMore things that I don't know. "
+ TOKIDOKI_BOSOTTO_ROSHIA_GO_DE_DEDERU_TONARI_NO_ALYA_SAN:0 "Do you have any bug reports?" #Its been a while, hasn't it? #In this update, Hydrus gets the newest content!! Now you get to play past the Grease Wars with actual focuses.
+ BOCCHI_THE_ROCK:0 "- Updated the generic focus tree to include the new ideologies.\n\n- Fixed some bugs"
  
+ #"Antares Imperium\n- Added integration decisions\n- Added Antarean army focus branch\n- Added more political focuses\n\nHydrus\n- Added a focus tree\n\n----------- Miscellaneous -------------\nMap changes\n- Added more states in North Centaura, Vega and Grusa\n- Terrain changes\n- More water canals\n\nNew random events\n- I don't know. "
  #- Added this side panel\n\n- Added coal into the map\n\n- Changed states and strategic regions\n\n- Update tech according to vanilla
+ 
+ monarchism_focus:0 "Monarchism Focus"
+ monarchism_focus_desc:0 "The monarchy is an integral part of our nation and we must continue its stable path."
+ conservative_focus:0 "Conservative Focus"
+ conservative_focus_desc:0 "
+ social_dem_focus:0 "Social Focus"
+ social_dem_focus_desc:0 "
+ liberal_focus:0 "Liberal Focus"
+ liberal_focus_desc:0 "
+ socialism_idea:0 "Socialism"
+ conservatism_idea:0 "Conservatism"
+ liberalism_idea:0 "Liberalism"
+ monarchism_idea:0 "Monarchism"
+ heredity:0 "Heredity"
+ heredity_desc:0 "A stable line of succession, important to every monarchy."
+ protection:0 "Protection"
+ protection_desc:0 "As a proud nation, we must defend our territory from other countries that seek to attack us."
+ protection_idea:0 "Protection"
+ protection_idea_desc:0 "Defending our land from other aggression!"
+ unity:0 "Unity"
+ unity_desc:0 "United under the democratic banner, our society stands more stable."
+ kamikaze_focus_tooltip:1 "Allows §YKamikaze Strike§! air missions, suicide attacks against enemy ships.\n"
  
  SAGITTARIUS_STRAIT:0 "Sagittarius Strait - Eastern Entrance"
  SAGITTARIUS_STRAIT_WEST:0 "Sagittarius Strait - Western Entrance"

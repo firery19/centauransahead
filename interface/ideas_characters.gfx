@@ -1,5 +1,17 @@
 spriteTypes = {
-
+    
+	### AQU
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_John_F_Aquila_small"
+		texturefile = "gfx/interface/ideas/portrait_AQU_John_F_Aquila_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_John_F_Aquila_jr_small"
+		texturefile = "gfx/interface/ideas/portrait_AQU_John_F_Aquila_Jr_small.png"
+	}
+	
 	### AFG
 
 	spriteType = {

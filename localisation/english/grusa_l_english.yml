@@ -1,0 +1,295 @@
+﻿l_english:
+
+# --- LEADERS ---
+ GRS_fernan_flamenco:0 "Fernan Flamenco"
+ GRS_valentine_flamenco:0 "Valentine Flamenco"
+ GRS_emperor_valentine:0 "Emperor Valentine I"
+ GRS_xavier_navarro:0 "Xavier Navarro"
+ 
+# --- IDEAS ---
+ GRS_desert_warriors_idea:0 "Desert Warriors"
+ GRS_desert_warriors_idea_desc:0 "Grusa is the only nation on Centaura with the vast Arida Desert covering the majority of their lands. The Grusan people have learned to overcome the harsh challenges of the desert climate."
+ 
+ GRS_masters_of_the_arida_idea:0 "Masters of the Arida"
+ GRS_masters_of_the_arida_idea_desc:0 "To outsiders the Arida is an unforgiving and hostile wasteland. To us it is our home, our soldiers have learned to live, move, and fight within it, turning the desert into a decisive advantage against any who dare cross it."
+ 
+ GRS_the_flamenco_dynasty_idea: "The Flamenco Dynasty"
+ GRS_the_flamenco_dynasty_idea_desc: "The Flamenco’s have ruled Grusa for centuries. They hold uncontentested power over Grusa."
+
+ GRS_devastation_at_cabo_vesca_idea:0 "Devastation at Cabo Vesca"
+ GRS_devastation_at_cabo_vesca_idea_desc:0 "The naval engagement at Cabo Vesca, 1868, left the Grusan fleet crippled and subsequently led to Grusa losing the Strait War. The navy's confidence never truly recovered, despite being formidable on paper, the navy's will to fight remains uncertain."
+  
+ GRS_reforming_navy_0:0 "Pathetic Naval Reforms"
+ GRS_reforming_navy_0_desc:0 "The humiliation at Cabo Vesca shattered confidence in the Grusan Navy. Decades of poor management and outdated doctrine have left the fleet a shadow of its former self."
+
+ GRS_reforming_navy_1:0 "Reforming Navy"
+ GRS_reforming_navy_1_desc:0 "Attempts at reform have begun, but the navy remains plagued by incompetence and outdated practices."
+
+ GRS_reforming_navy_2:0 "Recovering Navy"
+ GRS_reforming_navy_2_desc:0 "The first reforms have shown promise. Supply chains and officer standards are slowly improving."
+
+ GRS_reforming_navy_3:0 "Reorganized Navy"
+ GRS_reforming_navy_3_desc:0 "The navy has begun adopting modern doctrines and command structures, greatly improving coordination."
+
+ GRS_reforming_navy_4:0 "Modernizing Armada"
+ GRS_reforming_navy_4_desc:0 "Grusa's dockyards and naval academies are once again producing capable ships and officers."
+
+ GRS_reforming_navy_5:0 "Resurgent Grand Armada"
+ GRS_reforming_navy_5_desc:0 "The Grand Armada has largely recovered from its historic humiliation and now stands among the strongest fleets in the region."
+
+ GRS_new_grand_armada:0 "The New Grand Armada"
+ GRS_new_grand_armada_desc: "We no longer bear the shame of the humiliation of our defeat at Cabo Vesca. That chapter has been closed. We have moved on, adapted, and modernised where we had faltered. From the lessons of defeat, a stronger navy has been forged, disciplined, resolute, and unyielding. The Grusan flag flies high upon the seas once more, carried by ships worthy of our name. Our naval pride, once thought lost, has returned renewed, and with it, the will to command the waters as we did before."
+
+ GRS_new_grand_armada2:0 "The New Grand Armada"
+ GRS_new_grand_armada2_desc: "We no longer bear the shame of the humiliation of our defeat at Cabo Vesca. That chapter has been closed. We have moved on, adapted, and modernised where we had faltered. From the lessons of defeat, a stronger navy has been forged, disciplined, resolute, and unyielding. The Grusan flag flies high upon the seas once more, carried by ships worthy of our name. Our naval pride, once thought lost, has returned renewed, and with it, the will to command the waters as we did before."
+
+ GRS_new_grand_armada3:0 "The New Grand Armada"
+ GRS_new_grand_armada3_desc: "We no longer bear the shame of the humiliation of our defeat at Cabo Vesca. That chapter has been closed. We have moved on, adapted, and modernised where we had faltered. From the lessons of defeat, a stronger navy has been forged, disciplined, resolute, and unyielding. The Grusan flag flies high upon the seas once more, carried by ships worthy of our name. Our naval pride, once thought lost, has returned renewed, and with it, the will to command the waters as we did before."
+
+ GRS_new_grand_armada4:0 "The New Grand Armada"
+ GRS_new_grand_armada4_desc: "We no longer bear the shame of the humiliation of our defeat at Cabo Vesca. That chapter has been closed. We have moved on, adapted, and modernised where we had faltered. From the lessons of defeat, a stronger navy has been forged, disciplined, resolute, and unyielding. The Grusan flag flies high upon the seas once more, carried by ships worthy of our name. Our naval pride, once thought lost, has returned renewed, and with it, the will to command the waters as we did before."
+ 
+ GRS_emptiness_of_the_interior:0 "Emptiness of the Interior"
+ GRS_emptiness_of_the_interior_desc:0 "The vast Arida consumes the Grusan heartland. Grusa has few places to farm, fewer places to build, and the fishing industry must work overtime to break even."
+
+ GRS_new_grand_armada5:0 "Grusan Naval Hegemony"
+ GRS_new_grand_armada5_desc:0 "The humiliation of Cabo Vesca no longer defines us. What was once a symbol of national shame has become the foundation of our resurgence. Through reforms, innovation and unwavering determination and strength, the King's Grand Amarda has been transformed into a force stronger than ever before. The Grusan flag once again flies high across the seas."
+
+ GRS_expanded_naval_academy:0 "Expanded Naval Academy"
+ GRS_expanded_naval_academy_desc:0 "The expansion of the Royal Naval Academy has allowed us to train a greater number of officers while raising educational standards throughout the fleet. Future admirals will enter service with a deeper understanding of modern naval warfare, ensuring the Armada remains prepared for the challenges of the new century."
+ 
+ GRS_avenging_cabo_vesca: "Avenging Cabo Vesca"
+ GRS_avenging_cabo_vesca_desc: "Centauri will finally learn what defeat truly is. On that fateful day, our brave sailors were cut down by their cannons, their sacrifice left unanswered for far too long. But that time has passed. Today, our vengeance will be enacted. We will not falter, nor will we forget. The Centaurians will be crushed, their strength broken, and what is rightfully ours will be reclaimed. For every life lost, for every name remembered, we will answer with fury."
+ 
+ GRS_the_centimado_idea:0 "The Centimado"
+ GRS_the_centimado_idea_desc:0 "The Centimado are responsible for guarding city gates, government buildings and state officials. They are highly trained and disciplined, and will always defend their post."
+ 
+ GRS_desert_aviators:0 "Desert Aviators"
+ GRS_desert_aviators_desc:0 "Flying over the Arida desert demands discipline, endurance and skill. Grusan pilots are trained to navigate through sandstorms, extreme temperatures and vast stretches of barren terrain."
+ 
+ GRS_desert_aviators_upgrade:0 "Desert Aces"
+ GRS_desert_aviators_upgrade_desc:0 "The harsh skies of Arida has brought forward an elite group of pilots whose skill is unmatched throughout the region."
+
+ GRS_flying_artillery_idea:0 "Air-to-Ground Support"
+ GRS_flying_artillery_idea_desc:0 "Aircraft will be used to support ground troops, delivering firepower from above, striking with guns, bombs and any other means at our disposal."
+ 
+ GRS_royal_fighter_squadron_idea: "Royal Fighter Squadron"
+ GRS_royal_fighter_squadron_idea_desc: "We will prioritise the formation of a Royal Fighter Squadron, ensuring control of our skies through speed, discipline and superior pilots."
+
+ GRS_centauri_dominance:0 "Centaurian Dominance of the Strait"
+ GRS_centauri_dominance_desc:0 "Centauri has established overwhelming influence over the Sagittarius Strait. Merchant captains increasingly defer to Centaurian authority, whilst Grusan patrols struggle to maintain their authority in the strait."
+
+ GRS_centauri_advantage:0 "Centaurian Advantage"
+ GRS_centauri_advantage_desc:0 "Centauri maintains a growing advantage within the Sagittarius Strait. Grusan toll collectors face resistance from merchants and regional powers increasingly look toward Centauri as the dominant guarantor of maritime security within the Sagittarius."
+
+ GRS_contested_strait:0 "Contested Strait"
+ GRS_contested_strait_desc:0 "Neither Grusa or Centauri possess control over the Sagittarius Strait."
+
+ GRS_grusan_advantage:0 "Grusan Advantage"
+ GRS_grusan_advantage_desc:0 "Grusan patrols maintain a respected and effective presence throughout the Sagittarius Strait. Merchant vessels largely comply with toll regulations, strengthening our influence over regional maritime affairs."
+
+ GRS_grusan_strait_dominance:0 "Grusan Dominance of the Strait"
+ GRS_grusan_strait_dominance_desc:0 "Grusa stands as the unquestioned master of the Sagittarius Strait. Our tolling fleets dominate regional waters, foreign merchants bow to our authority, and Centaurian influence has been severely weakened."
+ 
+ GRS_low_tolls:0 "Low Strait Tolls"
+ GRS_low_tolls_desc:0 "Toll rates across the Sagittarius Strait remain relatively modest. Merchants pass through with little resistance and foreign powers have few reasons to object enforcement."
+
+ GRS_moderate_tolls:0 "Moderate Strait Tolls"
+ GRS_moderate_tolls_desc:0 "We have established a balanced tolling policy throughout the Sagittarius Strait. Trade revenues remain healthy whilst foreign merchants and neighbouring powers largely tolerate our presence in the region."
+ 
+ GRS_high_tolls:0 "High Strait Tolls"
+ GRS_high_tolls_desc:0 "Toll rates have risen considerably across the Sagittarius. Merchants and foreign governments are becoming increasingly frustrated by our growing demands."
+ 
+ GRS_extortionate_tolls:0 "Extortionate Strait Tolls"
+ GRS_extortionate_tolls_desc:0 "The Sagittarius Strait has become a source of immense wealth for Grusa. Merchant captains are subjected to crushing tolls, inspections and arbitrary fees, whilst inflaming regional resentment towards Grusa."
+ 
+  # ----- parties ----
+ GRS_neutrality_party:0 "House Flamenco"
+ GRS_neutrality_party_long:0 "House of Flamenco" 
+ GRS_fascism_party:0 "Grusan Armed Forces"
+ GRS_fascism_party_long:0 "Senior Military Officers and Admirals"
+ GRS_auth_dem_party:0 "Unification Movement"
+ GRS_auth_dem_party_long:0 "Grusii-Vego Unification Movement"
+
+
+
+
+ # ---- decisions ------------------------- 
+ GRS_vega_influence:0 "Grusan Influence over Vega"
+ GRS_pressure_vega:0 "Promote Change in Vega"
+ GRS_diplomatic_mission:0 "Send Diplomatic Mission"
+ GRS_economic_investment:0 "Invest in Vega"
+ GRS_military_advisors:0 "Send Military Advisors"
+ GRS_support_of_unification:0 "Grusan influence in Vega"
+ GRS_support_of_unification_desc:0 "Grusa and Vega have been rivals ever since the former broke away from the Grusan empire; And yet the people of each nation are so alike. Under old leadership unification would never happen, but under Xavier's guidance, we may now undertake efforts to persuade the Vegan people and her majesty, Alina Verde, that we should put aside our differences once and for all and unite again as one. That is if the Vegans allow unification to happen.\n\n§YCurrent Influence in Vega:§! [?GRS_influence_VEG]"
+ GRS_secret_propaganda_missions:0 "Secret propaganda missions"
+ GRS_continued_outreach:0 "Continued diplomatic outreach"
+ GRS_economic_cooperation:0 "Trade goods"
+ GRS_cultural_exchange:0 "Cultural exchange"
+ GRS_demand_referendum:0 "Demand a referendum"
+ 
+ 
+ 
+ GRS_sagittarius_category:0 "Influence over the Sagittarius Strait"
+ GRS_sagittarius_category_desc:0 "The Sagittarius Strait remains fiercely contested between Grusa and Centauri. If we are to continue tolling merchant vessels we must proceed carefully; excessive tolls or the seizure of foreign cargo will anger the powers that rely upon the strait, whilst scaling back tolling will slowly allow Centauri to strengthen its influence over the region. These competing pressures must be carefully managed if we seek to maintain our dominance over the Sagittarius.\n\nCurrent Toll Policy: [GRS_toll_level_text]\nCurrent Strait Control: [GRS_control_level_text]"
+ 
+ 
+ GRS_inspect_foreign_merchants:0 "Inspect Foreign Merchants"
+ GRS_inspect_foreign_merchants_desc:0 "Merchant traffic through the strait shall be subjected to inspections and searches by Grusan sailors."
+ GRS_escort_friendly_convoys:0 "Escort Friendly Convoys"
+ GRS_escort_friendly_convoys_desc:0 "Escorting friendly merchant vessels will improve trade confidence and reinforce our influence over the Sagittarius Strait."
+ GRS_naval_crackdown:0 "Naval Crackdown"
+ GRS_naval_crackdown_desc:0 "A temporary surge in naval enforcement will restore order and authority throughout the Sagittarius Strait."
+ GRS_suspend_toll_collections:0 "Suspend Toll Collections"
+ GRS_suspend_toll_collections_desc:0 "An emergency rollback of toll collection policies may calm tensions and restore confidence in Grusan authority."
+
+ GRS_toll_level_text_low:0 "§7Low§!"
+ GRS_toll_level_text_moderate:0 "§YModerate§!"
+ GRS_toll_level_text_high:0 "§OHigh§!"
+ GRS_toll_level_text_extortionate:0 "§RExtortionate§!"
+
+ GRS_control_centauri_dominant:0 "§RCentaurian Dominance§!"
+ GRS_control_centauri_favoured:0 "§OCentaurian Favoured§!"
+ GRS_control_contested:0 "§YContested§!"
+ GRS_control_grusan_favoured:0 "§7Grusan Favoured§!"
+ GRS_control_grusan_dominant:0 "§GGrusan Dominance§!"
+ 
+ GRS_raise_tolls:0 "Raise Strait Tolls"
+ GRS_raise_tolls_desc:0 "Increasing toll rates will greatly improve state revenues, though excessive taxation risks alienating merchants and foreign powers."
+ GRS_reduce_tolls:0 "Reduce Strait Tolls"
+ GRS_reduce_tolls_desc:0 "Reducing tolls will ease tensions and improve commercial relations throughout the Sagittarius Strait."
+ GRS_expand_patrols:0 "Expand Strait Patrols"
+ GRS_expand_patrols_desc:0 "Additional naval patrols will reinforce Grusan authority throughout the Sagittarius Strait."
+ GRS_reduce_patrols:0 "Reduce Patrol Presence"
+ GRS_reduce_patrols_desc:0 "Scaling back patrol operations will reduce strain on the navy, though it risks weakening our control over the strait."
+ 
+ GRS_naval_reforms:0 "Naval Reforms"
+ GRS_naval_reforms_desc:0 "Cabo Vesca, 1868, The Strait War. The King's Grand Armada was destroyed in a single catastrophic blow. Yet the disaster has no need to define us forever. Through extensive reforms, modern doctrine, and renewed investment, we may once again forge a fleet worthy of ruling the seas.\n\nThe current state of the Naval Reform: [GRS_naval_reform]"
+ GRS_officer_training_programs:0 "Officer Training Programs"
+ GRS_officer_training_programs_desc:0 "A modern navy requires competent officers capable of adapting to new forms of warfare."
+ GRS_modernize_naval_logistics:0 "Modernize Naval Logistics"
+ GRS_modernize_naval_logistics_desc:0 "Efficient supply chains and coordinated dockyard operations are essential for sustaining the fleet."
+ GRS_update_fleet_coordination:0 "Update Fleet Coordination"
+ GRS_update_fleet_coordination_desc:0 "Improved communications and command structures will allow the fleet to operate more effectively."
+ GRS_establish_naval_war_college:0 "Establish Naval War College"
+ GRS_establish_naval_war_college_desc:0 "A dedicated naval academy will prepare a new generation of officers and strategists."
+ GRS_expand_coastal_shipyards:0 "Expand Coastal Shipyards"
+ GRS_expand_coastal_shipyards_desc:0 "Additional dockyard facilities will accelerate repairs and ship construction."
+ GRS_rebuild_the_grand_armada:0 "Rebuild the Grand Armada"
+ GRS_rebuild_the_grand_armada_desc:0 "The humiliation of Cabo Vesca will finally be overcome as Grusa restores its naval prestige."
+ GRS_expand_naval_academies:0 "Expand Naval Academies"
+ GRS_expand_naval_academies_desc:0 "Expanding naval education will ensure a steady flow of trained personnel for the fleet."
+ GRS_recommission_old_vessels:0 "Recommission Old Vessels"
+ GRS_recommission_old_vessels_desc:0 "Several aging warships can still serve if properly repaired and modernized."
+ GRS_standardize_naval_doctrine:0 "Standardize Naval Doctrine"
+ GRS_standardize_naval_doctrine_desc:0 "A unified doctrine will improve coordination between squadrons and commanders."
+ GRS_expand_drydock_capacity:0 "Expand Drydock Capacity"
+ GRS_expand_drydock_capacity_desc:0 "Larger and more capable drydocks will support the maintenance of modern warships."
+ GRS_integrate_coastal_defenses:0 "Integrate Coastal Defenses"
+ GRS_integrate_coastal_defenses_desc:0 "Coastal fortifications and naval patrols must work together to secure our shores."
+ GRS_naval_industrial_expansion:0 "Naval Industrial Expansion"
+ GRS_naval_industrial_expansion_desc:0 "Expanding naval industry will allow Grusa to compete with the great maritime powers." 
+ GRS_naval_reform_state_0:0 "§tPathetic§!"
+ GRS_naval_reform_state_1:0 "§RLackluster§!"
+ GRS_naval_reform_state_2:0 "§ORecovering§!"
+ GRS_naval_reform_state_3:0 "§YCompetent§!"
+ GRS_naval_reform_state_4:0 "§7Modernizing§!"
+ GRS_naval_reform_state_5:0 "§GResurgent§!"
+ GRS_naval_reform_state_6:0 "§CGrand Armada Restored§!"
+
+  
+ # ----- focuses ------
+ GRS_accept_the_loss_at_cabo_vesca:0 "Accept the Loss at Cabo Vesca"
+ GRS_accept_the_loss_at_cabo_vesca_desc:0 "The disaster at Cabo Vesca remains one of the greatest humiliations in our naval history. It was a decisive defeat that ensured our loss in the Strait War. Rather than dwell upon old memories or fantasise about what might have been, we must learn from our mistakes and rebuild our navy into what it once was: mighty and formidable" 
+ GRS_learn_from_errors:0 "Learn from the mistakes"
+ GRS_learn_from_errors_desc:0 "We will analyse accounts from the battle, point our fingers at what went wrong, and make adjustments so it never happens again."
+ GRS_begin_the_reforms:0 "Begin the reforms"
+ GRS_begin_the_reforms_desc:0 "We will start to reform our navy, though it will take time."
+ GRS_naval_reform_program:0 "Naval Dockyard Program"
+ GRS_naval_reform_program_desc:0 "We will initiate the Naval Dockyard Program, it will allow us to build more dockyards within due time."
+ GRS_expand_leopolis_dockyards:0 "Expand Leopolis Dockyards"
+ GRS_expand_leopolis_dockyards_desc:0 "Leopolis is the beating heart of Grusa, expanding the docks will allow us to build more ships."
+ GRS_develop_northern_ports:0 "Develop Northern ports" 
+ GRS_develop_northern_ports_desc:0 "Developing our nothern ports will allow us to have a stronger presence on the Sagittarius Strait."
+ GRS_libran_dockyards:0 "Libran Ocean dockyards"
+ GRS_libran_dockyards_desc:0 "The Libran ocean is vast, if we are to have any impact on the ocean, we will build more dockyards on our Eastern coast."
+ GRS_royal_screens:0 "Destroyer Effort"
+ GRS_royal_screens_desc:0 "We will put more effort into building smaller screen ships."
+ GRS_knights_of_the_libran_ocean:0 "Knights of the Libran Ocean"
+ GRS_knights_of_the_libran_ocean_desc:0 "We will put more effort into building Cruisers."
+ GRS_restore_the_armada:0 "Restore the Armada"
+ GRS_restore_the_armada_desc:0 "We will prioritse battleships over all other vessels."
+ GRS_new_grand_armada:0 "The New Grand Amarda"
+ GRS_new_grand_armada_desc:0 "We have adapted and moved on from Cabo Vesca. Those lost will never be forgotton but their sacrifice has strengthed our navy to be formidable once again"
+ GRS_rapida_class_destroyer:0 "Rapida Class Destroyer"
+ GRS_rapida_class_destroyer_desc:0 "Quick, agile and nimble. The Rapida Class destroyers are a more advanced and up-to-date destroyer."
+ GRS_arida_class_cruiser:0 "Arida Class Cruiser"
+ GRS_arida_class_cruiser_desc:0 "Named after our formidable desert, the Arida Class cruiser is a more advanced and up-to-date cruiser."
+ GRS_valentine_class_battleship:0 "Valentine Class Battleship"
+ GRS_valentine_class_battleship_desc:0 "Named after Valentine Flamenco, the Valentine Class battleship is a more advanced and lethal Steelpot battleship."
+ GRS_new_ship_of_the_line:0 "New Ship of the Line"
+ GRS_new_ship_of_the_line_desc:0 "The time has come to develop a new capital ship for the navy. While its final specifications have yet to be decided, one thing is certain. It must surpass even the mighty Super-Steelpots in size, firepower and armour."
+ GRS_armour_and_guns:0 "Armour and Guns"
+ GRS_armour_and_guns_desc:0 "Before a new warship can be designed, extensive research must be conducted into more modern naval armour and heavier guns."
+ GRS_leopolis_class_dreadnought:0 "Leopolis Class Dreadnought"
+ GRS_leopolis_class_dreadnought_desc:0 "The Leopolis class will become the pride of the King's Grand Armada. Enormous, heavily armed and exceptionally costly, these dreadnoughts will dominate the seas and destroy any vessel unfortunate enough to challenge them."
+ GRS_new_admirals:0 "New Admirals"
+ GRS_new_admirals_desc:0 "A new generation of naval leadership is required. Promising officers who have distinguished themselves through skill, discipline and innovation will be elevated to the rank of admiral."
+ GRS_expand_naval_academy:0 "Expand the Naval Academy"
+ GRS_expand_naval_academy_desc:0 "Our naval academies must be expanded to meet the growing demands of a modern fleet. Better facilities and greater enrollment will ensure a steady supply of capable officers and admirals."
+ GRS_prepare_for_an_invasion:0 "Prepare for an Invasion"
+ GRS_prepare_for_an_invasion_desc:0 "The wound of Cabo Vesca has not healed. Detailed plans will be drawn up for a future invasion of Centauri, ensuring that when the time comes our forces will be ready."
+ GRS_avenge_cabo_vesca:0 "Avenge Cabo Vesca"
+ GRS_avenge_cabo_vesca_desc:0 "Grusan sailors perished beneath Centaurian guns at Cabo Vesca. Their sacrifice will not be forgotten, nor will their deaths go unanswered. The time has come to seek justice for the fallen."
+ GRS_dominate_the_libran_ocean:0 "Dominate the Libran Ocean"
+ GRS_dominate_the_libran_ocean_desc:0 "With our northern rival defeated, the Libran Ocean lies open before us. By expanding our naval presence we will establish unquestioned naval hegemony across the region." 
+ GRS_naval_design_bureau:0 "Royal Naval Design Bureau"
+ GRS_naval_design_bureau_desc:0 "A dedicated bureau of naval architects, engineers, and strategists has been assembled to oversee the design of future warships. Their work ensures that every vessel launched under the Grusan flag reflects the latest innovations in naval warfare."
+ GRS_advanced_gunnery_trials:0 "Advanced Gunnery Trials"
+ GRS_advanced_gunnery_trials_desc:0 "The guns of tomorrow cannot be forged through theory alone. Extensive testing and live-fire exercises will reveal the strengths and weaknesses of our newest naval artillery."
+ GRS_admiralty_reforms:0 "Admiralty Reforms"
+ GRS_admiralty_reforms_desc:0 "The structure of the Admiralty has been modernised and streamlined. A more efficient command system will allow our officers to respond to threats with greater speed and flexibility."
+ GRS_fleet_war_games:0 "Fleet War Games"
+ GRS_fleet_war_games_desc:0 "Large-scale naval exercises have become a regular occurrence. These war games allow officers to test new tactics, improve coordination, and prepare for future conflicts."
+ GRS_marine_assault_training:0 "Marine Assault Training"
+ GRS_marine_assault_training_desc:0 "Specialised assault forces have begun training for large-scale amphibious operations. These elite formations will spearhead future landings upon hostile shores."
+ GRS_amphibious_logistics:0 "Amphibious Logistics"
+ GRS_amphibious_logistics_desc:0 "A successful invasion depends not only upon ships and soldiers, but upon the ability to sustain them. Improved logistical planning ensures our forces remain supplied even during prolonged overseas operations."
+ GRS_study_naval_armour:0 "Study Naval Armour"
+ GRS_study_naval_armour_desc:0 "Armour is the backbone of any modern ship, inadequate armour, or adding it to the wrong places will put Grusan sailors at risk. Studying why and where armour should and should not be welded too is critical to warship design." 
+ GRS_begin_production_of_aeroplanes:0 "Begin Production of Aeroplanes"
+ GRS_begin_production_of_aeroplanes_desc:0 "Aircraft are rapidly becoming a prominent feature of modern warfare. Grusa must establish a domestic aviation industry before it is left behind."
+ GRS_desert_flight_training:0 "Desert Flight Training"
+ GRS_desert_flight_training_desc:0 "The skies above Arida provide ideal conditions for training skilled pilots capable of operating in even the harshest environments."
+ GRS_construction_of_air_bases:0 "Construction of Air Bases"
+ GRS_construction_of_air_bases_desc:0 "An air force requires more than aircraft alone. New airfields will provide the infrastructure needed to launch our aircraft."
+ GRS_flying_artillery:0 "Flying Artillery"
+ GRS_flying_artillery_desc:0 "Aircraft can serve as extensions of the army, striking enemy positions and supporting troops from above."
+ GRS_royal_fighter_squadron:0 "Royal Fighter Squadron"
+ GRS_royal_fighter_squadron_desc:0 "Elite fighter pilots will form the backbone of our growing air force, defending Grusan skies and challenging enemy aircraft."
+ GRS_streamline_domestic_production:0 "Streamline Domestic Production"
+ GRS_streamline_domestic_production_desc:0 "By standardising designs and coordinating industrial efforts, we can greatly increase the efficiency of aircraft production."
+
+ 
+ 
+ GRS_deport_disloyal_vegans:0 "Deport Vegan Loyalists"
+ GRS_deport_disloyal_vegans_desc:0 "We will deport any Vegans who are not loyal to Grusa. Their insolence will not be tolerated and they will be forcefully sent to our neighbours." # I LOVE LARPING
+ 
+ # ----- misc ----------
+ GRS_centimado_equipment_tt:0 "We will seize Centimado equipment."
+ GRS_penal_equipment_tt:0 "Old equipment stores will be stripped bare."
+ GRS_fallback_lines_tt:0 "§CConstructs several level One and Two fortifications in Northern Arida Desert§!"
+ GRS_coastal_lines_tt:0 "§CConstructs coastal fortifications in South Grusa,Leopolis Region and Northeastern Grusa§!"
+ GRS_leopolis_lines_tt:0 "§CConstructs level Three fortifications around Leopolis§!"
+ GRS_desert_lines_tt:0 "§CConstructs level Two fortifications at chokepoints in the Arida Desert§!"
+ GRS_plains_lines_tt:0 "§CConstructs level Two fortifications on the Grusan-Vegan border§!"
+ GRS_north_coast_tt:0 "§CConstructs level Two coastal fortifications along the Sagittarius Strait§!"
+ GRS_imprisoned_council_tt:0 "§tTHIS WILL PREVENT YOU FROM HIRING ANY §! §CPOLITICAL ADVISORS§! §tHIRE THEM BEFORE YOU TAKE THIS FOCUS!§!"
+ GRS_non_historical_tt:0 "§6This branch features content that is not part of Grusa's official lore. If you would prefer a more lore-friendly experience, another path may be more suitable.§!"
+
+
+
+
+
+
+

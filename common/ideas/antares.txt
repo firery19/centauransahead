@@ -340,7 +340,7 @@ ideas = {
 		ANT_farming_idea  = {
             name = "Efficient Farming"
             
-            picture = GFX_idea_ANT_efficientagriculturidea
+            picture = ANT_efficient_farming_idea
             allowed = { original_tag = ANT }
             removal_cost = -1
 

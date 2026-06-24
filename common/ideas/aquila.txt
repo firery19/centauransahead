@@ -1,25 +1,5 @@
 ideas = {
     country = {
-        AQU_iron_army_idea = {
-            name = AQU_iron_army
-            
-            picture = idea_iron_army
-            allowed = { original_tag = AQU }
-            removal_cost = -1
-
-            modifier = {
-				army_core_defence_factor = 0.2
-                conscription_factor = -0.3
-				experience_gain_army_unit_factor = 0.1
-				experience_loss_factor = 0.2
-                training_time_army_factor = 0.5
-				army_speed_factor = -0.1
-				dig_in_speed_factor = 1
-				forced_surrender_limit = 0.15
-				ai_focus_naval_factor = 0
-				ai_focus_naval_air_factor = 0
-            }
-        }
 		
 		AQU_lucas_silva_idea = {
             name = AQU_lucas_silva
@@ -41,81 +21,213 @@ ideas = {
             removal_cost = -1
 
             modifier = {
-                research_speed_factor = -0.1
+                research_speed_factor = -0.3
+			}
+            research_bonus = {
+            armor = -0.7
+			infantry_weapons = -0.6
             }
         }
 		
+		AQU_dummy_idea_iron_army = {
+            name = "The Iron Army"
+            
+            picture = AQU_iron_army
+			
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+			
+			modifier = {
+            custom_modifier_tooltip = AQU_fake_modifier_ia
+			}
+			
+        }
+		
+		AQU_dummy_idea_civil_guard = {
+            name = "The Civil Guard"
+            
+            picture = AQU_civi_guard
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+			modifier = {
+            custom_modifier_tooltip = AQU_fake_modifier_cg
+			}
+        }
+		
+		AQU_civil_guard_2 = {
+            name = "The Civil Guard"
+            
+            picture = GFX
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+			modifier = {
+			    modifier_army_sub_unit_militia_defence_factor = 0.02
+			    modifier_army_sub_unit_militia_speed_factor = 0.02
+				supply_consumption_factor = -0.1
+				stability_factor = -0.02
+				consumer_goods_factor = 0.01
+			}
+        }
+		
+		AQU_civil_guard_3 = {
+            name = "The Civil Guard"
+            
+            picture = GFX
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+			modifier = {
+			    modifier_army_sub_unit_militia_defence_factor = 0.02
+			    modifier_army_sub_unit_militia_speed_factor = 0.02
+			}
+        }
+		
 		AQU_rusting_army_idea = {
-            name = AQU_rusting_army
+            name = "Rusting Iron Army"
             
             picture = idea_AQU_rusting_army
             allowed = { original_tag = AQU }
             removal_cost = -1
 
             modifier = {
+			    training_time_army_factor = 0.3
+				experience_gain_army_factor = -0.3
+				experience_gain_army_unit_factor = 0.1
                 army_attack_factor = -0.5
-				army_core_attack_factor = 0.4
-				army_core_defence_factor = 1
-				experience_gain_army_factor = -0.1
+				army_defence_factor = -0.5
+				army_core_defence_factor = 0.5
+				army_core_attack_factor = 1.5
+				dig_in_speed_factor = 1
+				ai_focus_naval_factor = 0
+				ai_focus_naval_air_factor = 0
             }
         }
 		
 		AQU_rusting_army_2_idea = {
-            name = AQU_rusting_army
+            name = "Rusting Iron Army"
             
             picture = AQU_rusting_army_idea
             allowed = { original_tag = AQU }
             removal_cost = -1
 
             modifier = {
-                army_attack_factor = -0.45
-				army_core_attack_factor = 0.35
-				army_core_defence_factor = 0.9
-				army_defence_factor = 0.1
-				experience_gain_army_factor = -0.1
+			    training_time_army_factor = 0.4
+				experience_gain_army_factor = -0.25
+				experience_gain_army_unit_factor = 0.1
+                army_attack_factor = -0.5
+				army_defence_factor = -0.40
+				army_core_defence_factor = 0.5
+				army_core_attack_factor = 1.5
+				dig_in_speed_factor = 1
+				ai_focus_naval_factor = 0
+				ai_focus_naval_air_factor = 0
             }
         }
 		
 		AQU_rusting_army_3_idea = {
+            name = "Rusting Iron Army"
             
             picture = AQU_rusting_army_idea
             allowed = { original_tag = AQU }
             removal_cost = -1
 
             modifier = {
-                army_attack_factor = -0.25
-				army_core_attack_factor = 0.2
-				army_core_defence_factor = 0.6
-				army_defence_factor = 0.4
-				experience_gain_army_factor = -0.05
+			    training_time_army_factor = 0.4
+				experience_gain_army_factor = -0.20
+				experience_gain_army_unit_factor = 0.1
+                army_attack_factor = -0.40
+				army_defence_factor = -0.40
+				army_core_defence_factor = 0.5
+				army_core_attack_factor = 1.4
+				dig_in_speed_factor = 1
+				ai_focus_naval_factor = 0
+				ai_focus_naval_air_factor = 0
             }
         }
 		
 		AQU_rusting_army_4_idea = {
-            
+            name = "Rusting Iron Army"
+			
+            picture = AQU_rusting_army_idea
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+			    training_time_army_factor = 0.4
+				experience_gain_army_factor = -0.10
+				experience_gain_army_unit_factor = 0.1
+                army_attack_factor = -0.30
+				army_defence_factor = -0.30
+				army_core_defence_factor = 0.5
+				army_core_attack_factor = 1.30
+				dig_in_speed_factor = 1
+				ai_focus_naval_factor = 0
+				ai_focus_naval_air_factor = 0
+            }
+        }
+		
+		AQU_rusting_army_5_idea = {
+            name = "Rusting Iron Army"
+			
             picture = AQU_maintained_army_idea
             allowed = { original_tag = AQU }
             removal_cost = -1
 
             modifier = {
-                army_attack_factor = -0.1
-				army_core_attack_factor = 0.2
-				army_core_defence_factor = 0.4
-				army_defence_factor = 0.6
+			    training_time_army_factor = 0.4
 				experience_gain_army_factor = -0.05
+				experience_gain_army_unit_factor = 0.1
+                army_attack_factor = -0.20
+				army_defence_factor = -0.20
+				army_core_defence_factor = 0.5
+				army_core_attack_factor = 1.20
+				dig_in_speed_factor = 1
+				ai_focus_naval_factor = 0
+				ai_focus_naval_air_factor = 0
             }
         }
 		
-		AQU_rusting_army_5_idea = {
-            
+		AQU_rusting_army_6_idea = {
+            name = "Rusting Iron Army"
+			
             picture = AQU_modern_army_idea
             allowed = { original_tag = AQU }
             removal_cost = -1
-
+			
             modifier = {
-				army_defence_factor = 0.8
-				army_core_defence_factor = 0.2
-				army_core_attack_factor = 0.2
+			    training_time_army_factor = 0.4
+				experience_gain_army_factor = 0.1
+				experience_gain_army_unit_factor = 0.1
+                army_attack_factor = -0.10
+				army_defence_factor = -0.10
+				army_core_defence_factor = 0.5
+				army_core_attack_factor = 1.10
+				dig_in_speed_factor = 1
+				ai_focus_naval_factor = 0
+				ai_focus_naval_air_factor = 0
+            }
+        }
+		
+		AQU_rusting_army_7_idea = {
+            name = "Rusting Iron Army"
+			
+            picture = AQU_modern_army_idea
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+			
+            modifier = {
+			    training_time_army_factor = 0.4
+				experience_gain_army_factor = 0.1
+				experience_gain_army_unit_factor = 0.1
+                army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_core_defence_factor = 0.5
+				army_core_attack_factor = 1
+				dig_in_speed_factor = 1
+				ai_focus_naval_factor = 0
+				ai_focus_naval_air_factor = 0
             }
         }
 		
@@ -259,8 +371,433 @@ army_morale_factor = -0.2
 
             }
         }
+		AQU_foreign_loans_one = {
+            name = "foreign loans"
+            picture = generic_foreign_capital 
+            allowed = { original_tag = AQU }
+            removal_cost = -1
 
+            modifier = {
+			production_speed_arms_factory_factor  = 0.03
+            consumer_goods_factor = 0.03
+            }
+        }
+		
+		AQU_two_foreign_loans = {
+            name = "foreign loans"
+            picture = generic_foreign_capital
+            allowed = { original_tag = AQU }
+			removal_cost = -1
+            modifier = {
+			production_speed_industrial_complex_factor = 0.04
+            consumer_goods_factor = 0.03
+            }
+        }
+		
+		AQU_wartime_bonds = {
+            name = "Wartime Bonds"
+            picture = generic_foreign_capital
+            allowed = { original_tag = AQU }
+            removal_cost = -1
 
+            modifier = {
+			production_speed_arms_factory_factor = 0.05
+            consumer_goods_factor = -0.1
+            }
+        }
+		
+		AQU_economic_failure = {
+            name = "Economic failure"
+            picture = CHI_inefficient_economy
+            allowed = { original_tag = AQU }
+            removal_cost = -1
 
+            modifier = {
+			industrial_capacity_factory = -0.3
+			production_speed_buildings_factor = -0.3
+            consumer_goods_factor = 0.2
+            }
+        }
+
+		AQU_economic_effort_idea_one = {
+            name = "Economic efforts"
+            picture = ARG_civilian_economy_boost
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+            modifier = {
+			production_speed_arms_factory_factor  = 0.05
+			industrial_capacity_factory = -0.05
+			political_power_factor = -0.03
+            }
+        }
+		
+		AQU_economic_effort_idea_two = {
+            name = "Economic efforts"
+            picture = ARG_civilian_economy_boost
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+			factory_energy_consumption = 0.1
+			production_speed_arms_factory_factor  = 0.1
+			consumer_goods_factor = 0.05
+			industrial_capacity_factory = -0.1
+			political_power_factor = -0.03
+            }
+        }
+		
+		AQU_economic_effort_idea_three = {
+            name = "Economic efforts"
+            picture = ARG_civilian_economy_boost
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+			factory_energy_consumption = 0.1
+			production_speed_arms_factory_factor  = 0.15
+			consumer_goods_factor = 0.1
+			industrial_capacity_factory = -0.1
+			political_power_factor = -0.03
+            }
+        }
+		
+		AQU_rapid_economic_growth = {
+            name = "Rapid Economic Growth"
+            picture = generic_economic_increase
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+			industrial_capacity_factory = 0.1
+			consumer_goods_factor = 0.10
+            }
+        }
+
+		AQU_cheap_labour = {
+            name = "Cheap Labour"
+            picture = FIN_the_workers_state	
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+			industrial_capacity_factory = 0.05
+			stability_factor = -0.10
+			political_power_gain = -0.3
+            }
+        }
+		
+		AQU_low_factory_tax = {
+            name = "Low Factory Tax"
+            picture = generic_local_self_management
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+			industrial_capacity_factory = 0.05
+			consumer_goods_factor = 0.05
+            }
+        }
+
+		AQU_rural_highway  = {
+            name = "Rural Highway"
+            
+            picture = ARG_invest_in_roads
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+				consumer_goods_factor = 0.04
+		        supply_factor = 0.08
+		        supply_node_range = 0.08
+            }
+        }
+		
+		AQU_farmer_aid  = {
+            name = "Financial Support for Farmers"
+            
+            picture = POL_looming_peasants_strike
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+            production_speed_buildings_factor = 0.1
+			consumer_goods_factor = 0.04
+            }
+        }
+		
+		AQU_modern_agriculture_economy  = {
+            name = "Modern Agriculture Economy"
+            
+            picture = LIT_invested_in_farms
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+            local_resources_factor = 0.1
+			consumer_goods_factor = -0.10
+			stability_factor = 0.1
+		    production_speed_buildings_factor = 0.07
+			attrition_for_controller = -0.2
+			industrial_capacity_factory = 0.075
+            }
+        }
+		
+		AQU_conservative_majority  = {
+            name = "Conservative Majority"
+            
+            picture = GFX_idea_AQU_conservative_majority
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+            drift_defence_factor = 0.20	
+			democratic_right_drift = 0.05
+			party_popularity_stability_factor = 0.1
+            }
+        }
+		
+		AQU_early_industrialized = {
+            name = "Early Industrialized Economy"
+            
+            picture = GFX_idea_AQU_conservative_majority
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+            consumer_goods_factor = -0.10
+			production_speed_buildings_factor = -0.1
+            }
+        }
+		
+		AQU_agricultural_sectors_1 = {
+            name = "Aquila's Agricultural Sectors"
+            
+            picture = AQU_farming
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+            local_resources_factor = 0.01
+            }
+        }
+		
+		AQU_agricultural_sectors_2 = {
+            name = "Aquila's Agricultural Sectors"
+            
+            picture = AQU_farming
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+            local_resources_factor = 0.05
+            }
+        }
+		
+		AQU_agricultural_sectors_3 = {
+            name = "Aquila's Agricultural Sectors"
+            
+            picture = AQU_farming
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+            local_resources_factor = 0.05
+			no_supply_grace = 7
+            }
+        }
+		
+		AQU_agricultural_sectors_4 = {
+            name = "Aquila's Agricultural Sectors"
+            
+            picture = AQU_farming
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+            local_resources_factor = 0.10
+			no_supply_grace = 7
+            }
+        }
+		
+		AQU_agricultural_sectors_5 = {
+            name = "Aquila's Agricultural Sectors"
+            
+            picture = AQU_farming
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+            local_resources_factor = 0.10
+			no_supply_grace = 7
+			local_building_slots_factor = 0.04
+            }
+        }
+		
+		AQU_agricultural_sectors_6 = {
+            name = "Aquila's Agricultural Sectors"
+            
+            picture = AQU_farming
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+            local_resources_factor = 0.10
+			no_supply_grace = 7
+			local_building_slots_factor = 0.04
+			research_speed_factor = 0.025
+            }
+        }
+		
+		AQU_commercial_industry_1 = {
+            name = "Aquila Commercial Industry"
+            
+            picture = AQU_commercial_industries
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+            production_factory_efficiency_gain_factor = 0.03
+            }
+        }
+		
+		AQU_commercial_industry_2 = {
+            name = "Aquila Commercial Industry"
+            
+            picture = AQU_commercial_industries
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+            production_factory_efficiency_gain_factor = 0.06
+			consumer_goods_factor = 0.02
+            }
+        }
+		
+		AQU_commercial_industry_3 = {
+            name = "Aquila Commercial Industry"
+            
+            picture = AQU_commercial_industries
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+            production_factory_efficiency_gain_factor = 0.06
+			production_factory_max_efficiency_factor = 0.05
+			consumer_goods_factor = 0.04
+            }
+        }
+		
+		AQU_commercial_industry_4 = {
+            name = "Aquila Commercial Industry"
+            
+            picture = AQU_commercial_industries
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+            production_factory_efficiency_gain_factor = 0.06
+			production_factory_max_efficiency_factor = 0.1
+			consumer_goods_factor = 0.04
+            }
+        }
+		
+		AQU_the_ministry_of_foreign_affairs = {
+            name = "Ministry of Foreign Affairs"
+            
+            picture = GFX
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+            opinion_gain_monthly_factor = 0.05
+			improve_relations_maintain_cost_factor = -0.1
+			diplomatic_acceptance_score = 3
+            }
+        }
+		
+		AQU_neutrality_act = {
+            name = "Neutrality Act"
+            
+            picture = GFX
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+            enemy_justify_war_goal_time = 0.3
+			offensive_war_stability_factor = -0.30
+			justify_war_goal_time = 0.3
+			}
+        }
+		
+		AQU_operation_orangee = {
+            name = "Operation Orange"
+            
+            picture = GFX
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            targeted_modifier = {
+            tag = ANT
+			attack_bonus_against = 0.05
+			defense_bonus_against = 0.10
+            }
+        }
+	
+		AQU_operation_greenn = {
+            name = "Operation Green"
+            
+            picture = GFX
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            targeted_modifier = {            
+            tag = CET
+			attack_bonus_against  = 0.05
+			defense_bonus_against = 0.10
+            }
+        }                    
+
+		AQU_defend_the_ring_of_fire = {
+            name = "Hold the Ring of Fire!"
+            
+            picture = GFX
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+			fortification_damage = 0.2
+			fortification_collateral_chance = 0.2
+			}
+            targeted_modifier = {
+            tag = ANT
+			defense_bonus_against = 0.10
+            }
+        }
+		
+		AQU_promate_patriotism = {
+            name = "Promate Patriotism"
+            
+            picture = GFX
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+            modifier = {
+			recruitable_population = 0.5
+			}
+        }
+		
+    	AQU_tank_production = {
+            name = "Emergency Tank Production"
+            
+            picture = man_five_year_plan_tank
+            allowed = { original_tag = AQU }
+            removal_cost = -1
+
+			equipment_bonus = {
+			tank = {
+				build_cost_ic = -0.1 instant = yes
+			}
+            }
+        }
 	}
 }

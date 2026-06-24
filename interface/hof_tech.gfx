@@ -82,5 +82,17 @@ SpriteTypes = {
 		name = "GFX_VEG_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/VEG_infantry_equipment_0.dds"
 	}
+	
+	# aquila
+	
+	SpriteType = {
+		name = "GFX_AQU_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/AQU_infantry_equipment_2.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_AQU_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/AQU_infantry_equipment_1.png"
+	}
 }
 

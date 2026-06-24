@@ -10,7 +10,7 @@
  ######
  # army
  ######
- AQU_civil_guard:0 "Civil Guard Management"
+ AQU_civil_guard:0 "The Civil Guard"
  AQU_civil_guard_desc:0 "The Civil Guard supports our troops during wartime in urban areas. Improvements could be made."
  AQU_raise_penal_battalions:0 "Penal Battalions"
  AQU_raise_penal_battalions_desc:0 "Our country is at war. Criminals such as murderers and theives will be allowed to enlist in exchange for a small glimmer of hope of freedom."
@@ -62,6 +62,46 @@
  AQU_observe_the_canis_war:0 "Observe The Canis War"
  AQU_observe_the_canis_war_desc:0 "Across the Libran Ocean, a conflict has broken out in the region of Canis. We should keep an eye on the modern battle tactics both sides use by sending "journalists"."
  
+ #########
+ # focuses
+ #########
+ 
+ AQU_address_the_parliament:0 "The Senate"
+ 
+ AQU_military_funding_bill:0 "Review The Military Budget"
+ 
+ AQU_the_Aquila_Royal_Army:0 "Improve The Aquila Royal Army"
+ 
+ AQU_2nd_Antarean_Aquilan_war_defend:0 "The 2nd Antarean-Aquilan War"
+ 
+ AQU_increase_regular_troop_training:0 "Increase Regular Training"
+ 
+ AQU_NCO_training:0 "Increase NCO Training"
+ 
+ AQU_review_the_doctrine_pre_reform:0 "Review The Doctrine"
+ 
+ AQU_wartime_propaganda:0 "Wartime Propaganda"
+ 
+ AQU_adopting_M99_rifle:0 "Adopt The M99"
+ AQU_adopting_M99_rifle_desc:0 "While our army uses the old and trusty single shot Albus Graham rifle series, it is time to adopt a completely new weapon. Most of the armies on our continent use some type of bolt action rifle, like for example, the not-so-long-ago adopted Modelo 1898 in Vega. We should adopt a new bolt action rifle, as they have faster fire rate and are overall more effective. Our army has enough iron and wood, as well as industry for the production. We can leave the Albus Graham rifles to the irregulars, but our main army needs to be equipped with the best weapons we can offer!"
+ 
+ AQU_adopting_efforts:0 "M99 Adopting Efforts"
+ AQU_adopting_efforts_desc:0 ""
+ 
+ AQU_develop_the_M2:0 "Develop The M2"
+ 
+ AQU_M2_production_efforts:0 "M2 Production Efforts"
+ 
+ AQU_wartime_factories:0 "Convert Civilian Factories"
+ 
+ AQU_national_defense_bond:0 "National Defense Bonds"
+ 
+ AQU_hold_the_ring_of_fire_at_all_cost:0 "Hold The Ring Of Fire At All Cost!"
+ 
+ AQU_unite_the_people:0 "Promate Nationalism"
+ 
+ AQU_new_form_of_communication:0 "A New Form Of Communication"
+ 
  ########
  # events
  ########
@@ -72,6 +112,62 @@
  aqu.4.t:0 "The Scorch"
  aqu.4.d:0 "Antares is burning our forests to make it easier to attack!"
  aqu.4.a:0 "Oh no!"
+ 
+ ###event abondon the radicals
+ aqu.1118965.t:0 "Cutting ties"
+ aqu.1118965.d:0 "For years, we were on good terms with social democrats while they were nothing but a bunch of opportunists, who would jump at every opportunity to criticize us and steal our votes. No more! We would rather enter these elections alone than with these rats!"
+ aqu.1118965.a:0 "We are better off on our own..."
+ 
+ ###event coalition with the Socialist
+ aqu.1118964.t:0 "We are stronger together!"
+ aqu.1118964.d:0 "Although we were not always on the best of terms with the social democrats, we have little to no chance to win the upcoming elections without them. Maybe it would be good to put our grudges aside for the time being and try negotiating forming a coalition with them?"
+ aqu.1118964.a:0 "Towards victory!"
+ 
+ ###coalition path speech 1
+ aqu.1118966.t:0 "Falkner's speech"
+ aqu.1118966.d:0 "For several last decades, our government has been doing nothing but stealing. Fouwler and his party own many companies in our country and have been avoiding taxes while paying minimal wages to our people. This ends now! We need to stop this and build even more factories than we have now. Antares is growing its army fast while we've been neglecting it for decades, thinking the peace would last forever. We shall develop ourselves even more, so that we can defend Aquila! "
+ aqu.1118966.a:0 "For a better Aquila!"
+ 
+ ###coalition path speech 2
+ aqu.1118967.t:0 "XXX's speech"
+ aqu.1118967.d:0 "Our people are struggling due to the companies having too much power over our economy. We need fair wages and jobs for everyone, who can work. And for those who can't work, we shall strengthen our social safety net, so they can have a nice life just like anyone else. together, hand in hand, we will fight for fair wages, more free time, general happiness and decreasing unemployment in our beloved country!"
+ aqu.1118967.a:0 "For the people of Aquila!"
+ 
+ ###a meeting with the socailist
+ aqu.1118968.t:0 "A meeting with the Socialist"
+ aqu.1118968.d:0 "L: Well, let´s see... we aren´t that different, you want jobs for the people and we want industrialization, which can provide jobs as well. \n\nSD: That is mostly correct. However, we want more powerful worker unions and fair wages for our people, too. \n\nL: Look, our country is not in the best situation at the moment, we can´t afford to pay workers as much as you demand. \n\nSD: While we agree to support the industrialization, we want fair treatment of workers and better wages. \n\nL: Very well. I will think about it." 
+ aqu.1118968.a:0 "........"
+ 
+ ###speech for the border regions
+ aqu.1118969.t:0 "Border region speech"
+ aqu.1118969.d:0 "The government has been neglecting our border regions for many years, all while focusing on the heartlands of our country. This ends now! If we win the elections, we will focus on improving the quality of life here. We will build better roads for you all, as well as electrify the countryside, so that you all can have life as good as the inhabitants of Volucris!"
+ aqu.1118969.a:0 "Long Live Aquila!"
+ 
+ ###criticize the foreign policy
+ aqu.1118970.t:0 "Speech on foreign policy" 
+ aqu.1118970.d:0 "Our country borders a dangerous aggressive empire to the south which tried attacking us not so long ago. Yet our government refuses to have good relations with any of our neighbours, saying we are stronger when we are alone, rather than pacting with Cetans. However, we need to have good relations with our neighbours in order to live in peace."
+ aqu.1118970.a:0 "An inspiring speech"
+ 
+ ###criticize the economic policy
+ aqu.1118971.t:0 "Outdated economy"
+ aqu.1118971.d:0 "Our current government does nothing but invest in forestry and agriculture, while keeping Aquila a backwards country. All the modern countries of the world, like Antares or Orion, invested in their industrial sector long ago and look how strong they are! It is time to invest in factories, since outdated armies have no place in our turbulent world. However, we cannot achieve a modern army with a government like the one we have now. By voting for us, you are also voting for a happy and safe future of our beloved nation, as only with a modern economy can we produce modern weaponry and machinery!"
+ aqu.1118971.a:0 "We need change!"
+ 
+ ###meet with the worker unions
+ aqu.1118972.t:0 "A promise to the workers"
+ aqu.1118972.d:0 "In Aquila, it is normal for workers to work 12 hour shifts, which leaves very little time for family and other things. We believe workers should work for 8 hours at most! You may say that isn´t possible while keeping the productivity on its current level, however, if we modernize our economy and buy new machinery, it won´t be a problem. This government has done nothing but bully the workers and robbing them of their time. By voting for us, you are also voting for happy future of the workers of this country, as well as their families!"
+ aqu.1118972.a:0 "For a fair working environment!"
+ 
+ ###appeal to the farmers
+ aqu.1118973.t:0 "A safeguard for the farmers"
+ aqu.1118973.d:0 "While our agricultural sector is well developed, you, farmers, get often damaged by natural disasters, like tornadoes, which are quite common in our lands. And while our current government keeps expanding your fields and sector, they refuse to cover the costs for damages, which made several farmers go bankrupt. If you vote for us, we will do everything we can to pass a law that helps cover the costs of the damages from natural disasters, as well as grant farmers more subsidies."
+ aqu.1118973.a:0 "Stable farms, stable food supplies."
+ 
+ ###election day
+ aqu.18661112.t:0 "Election day!"
+ aqu.18661112.d:0 "The day we've been waiting for is finally here. The voter turnout this year is much higher than normally, as the people from all across the country decided to go vote even though the voting places are often far away from them due to our dense forests. However, thanks to the Aquilan election and political systems, the elections are fair for everyone. Thankfully, the electoral race has been mostly clean and fair. All the parties are promising better life for the populace. Nevertheless, only one party can win, that party is... "
+ aqu.18661112.a:0 "And the winner is.....!"
+ 
  ###########
  # decisions
  ###########
@@ -94,10 +190,15 @@
  civil_guard_recruitment:0 "Civil Guard Recruitment"
  civil_guard_recruitment_desc:0 "Forming militias to support the army in times of war."
  
+ ###
+ AQU_the_national_assembly:0 "The Senate"
+ AQU_the_national_assembly_desc:0 "After the peaceful Democratic Revolution, the Council of advisors began implementing democratic reforms. Institutions like the State Constitutional Court or the Senate were established. The Council was replaced with Executive council led by the First Councilor, who would then serve for 5 years. The Executive council consists of 10 members. \n\nThe Senate is located in the capital of Aquila, Volucris. Senators are elected by the people in national elections for 5 years and hold the power to elect the First Councilor. \n\nConservative Seats: [?AQU_senate_conservative_var|+1%]. \nLiberal Seats: [?AQU_senate_liberal_var|+1%]. \nDemocratic Socialist Seats: [?AQU_senate_social_democratic_var|+1%]."
+ 
+ 
  #########
  # spirits
  #########
- AQU_iron_army:0 "The Iron Army"
+ AQU_iron_army:0 "The Iron Army real"
  AQU_iron_army_desc:0 "The “Iron Army” nickname was given to the Aquilans in the early 1800's when they held off a major Antarean assault from the south. In the aftermath of that war, the Aquilans were able to retain their borders with minimal losses."
  AQU_lucas_silva:0 "King Lucas Silva"
  AQU_lucas_silva_desc:0 "The King of Aquila, although he does not retain any power, he is a good figurehead for our country."
@@ -124,6 +225,15 @@
  AQU_newgens_idea:0 "New Generation"
  AQU_newgens_idea_desc:0 "The old generations, stuck with their defensive positions and slow attacks cannot be trusted to lead the changing landscapes of war. Our new officers will handle the innovation and thinking of the new warfare to come."
 
+ ############
+ #dummy ideas
+ ############
+ AQU_dummy_idea_iron_army_desc:0 "The “Iron Army” nickname was given to the Aquilans in the early 1800's when they held off a major Antarean assault from the south. In the aftermath of that war, the Aquilans were able to retain their borders with minimal losses."
+ AQU_fake_modifier_ia:0 "Army Experience Gain: [?AQU_army_xp|%+=] \nDivision Experience Gain: [?AQU_army_unit_xp|%+=] \nMax Entrenchment: [?AQU_max_trench|+=] \nEntrenchment speed: [?AQU_dig|%+=] \nDivision Attack: [?AQU_army_attack|%+=] \nDivision Defense: [?AQU_army_defend|%+=] \nDivision Attack on core territory: [?AQU_army_attack_core|%+=] \nDivision Defense on core territory: [?AQU_army_defend_core|%+=] \nArtillery Attack: [?AQU_artillery_attack|%+=] \nArtillery Defense: [?AQU_artillery_defend|%+=] \nDivision Organization: [?AQU_org|%+=] \nDivision Recovery Rate: [?AQU_morale|%+=]"
+
+ AQU_dummy_idea_civil_guard_desc:0 "Civil Guards are civilian volunteers and policemen who were called up in their country's hour of need. Due to not being a professional army, they do not have standardized equipment or uniforms, and carry a variety of self-owned or captured firearms and wear anything from civilian coats and hats to police uniforms. "
+ AQU_fake_modifier_cg:0 "Stability: [?AQU_cg_stability|%+=] \nMilitia Defense: [?AQU_cg_defend|%+=] \nMilitia Attack: [?AQU_cg_attack|%+=] \nMilitia Speed: [?AQU_cg_speed|%+=] \nMilitia Resistance Damage: [?AQU_cg_guerilla|%+=]"
+
  ######
  # misc
  ######
@@ -146,4 +256,72 @@
  
  
  
- # When faced with everything, you cant do anything.
+ # When faced with everything, you cant do anything. <-?
+ 
+ 
+ #######
+ #custom tooltip
+ ######
+ 
+ AQU_add_on_to_iron_army_idea_tt:0 "Modify §YThe Iron Army§! by"
+ 
+ AQU_iron_army_buff_1_tt:0 "   Army Experience Gain: §G+2.5%§!\n   Division Training Time: §Y+10.0%§!\n   Division Defense: §G+2.5%§!"
+ 
+ AQU_artillery_buff_2dot5_idea_tt:0 "   Artillery Attack: §G+2.5%§!\n   Artillery Defence: §G+2.5%§!"
+ 
+ AQU_artillery_buff_defend_2dot5_idea_tt:0 "   Artillery Defence: §G+2.5%§!"
+ 
+ AQU_artillery_buff_attack_2dot5_idea_tt:0 "   Artillery Attack: §G+2.5%§!"
+ 
+ AQU_artillery_buff_attack_1_idea_tt:0 "   Artillery Attack: §G+10.0%§!"
+ 
+ AQU_artillery_buff_defend_1_idea_tt:0 "   Artillery Defence: §G+10.0%§!"
+ 
+ AQU_org_morale_buff_idea_tt:0 "   Division Organization: §G+0.5%§!\n   Recovery Rate: §G+0.5%§!"
+ 
+ AQU_org_buff_idea_tt:0 "   Division Organization: §G+0.5%§!"
+ 
+ AQU_defend_buff_0dot5_idea_tt:0 "   Division Defense: §G+0.5%§!"
+ 
+ AQU_defend_buff_1_idea_tt:0 "   Division Defense: §G+10.0%§!"
+ 
+ AQU_attack_buff_1_idea_tt:0 "   Division Attack: §G+10.0%§!"
+ 
+ AQU_max_trech_buff_0dot5_idea_tt:0 "   Max Entrenchment: §G+0.5§!"
+ 
+ AQU_add_on_to_civil_guard_idea_tt:0 "Modify §YThe Civil Guard§! by"
+  
+ AQU_cg_defend_tt:0 "   Civil Guard Defence: §G+1.0§!"
+ 
+ AQU_cg_defend_0dot2_tt:0 "   Civil Guard Defence: §G+2.0§!"
+ 
+ AQU_cg_defend_5_tt:0 "   Civil Guard Attack: §G+5.0§!"
+ 
+ AQU_cg_attack_0dot2_tt:0 "   Civil Guard Attack: §G+2.0§!"
+ 
+ AQU_cg_attack_4_tt:0 "   Civil Guard Attack: §G+4.0§!"
+ 
+ AQU_cg_speed_tt:0 "   Civil Guard Speed: §G+2.0§!"
+ 
+ AQU_cg_speed_1_tt:0 "   Civil Guard Speed: §G+1.0§!"
+ 
+ AQU_cg_guerilla_0dot5_tt:0"   Resistance Growth: §G+5.0§!"
+ 
+ AQU_cg_guerilla_1_tt:0"   Resistance Growth: §G+10.0§!" 
+ 
+ AQU_cg_guerilla_20_tt:0"   Resistance Growth: §G+20.0§!" 
+ 
+ AQU_unlock_M99_tt:0 "Add technology: §YM99§!."
+ 
+ AQU_M99_tt:0 "§Y1.50K§! units of Aquilan §YM99§! is added to the national stockpile."
+ 
+ AQU_M2_tt:0 "§Y2.00K§! units of Aquilan §YM2§! is added to the national stockpile."
+ 
+ AQU_unlock_M2_tt:0 "Add technology: §YM2§!."
+ 
+ AQU_focus_defend_volicris_tt:0 "Add §Y6§! §GLevel 2§! §YLand Forts§! near §YVolucris§!"
+ 
+ AQU_focus_defend_talona_tt:0 "Add §Y4§! §GLevel 2§! §YLand Forts§! near §YTalona§!"
+ 
+ AQU_unlock_early_fighter_tt:0 "Add technology: §YFighter Plane§!."
+ 

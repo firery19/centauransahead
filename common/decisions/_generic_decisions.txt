@@ -1781,9 +1781,6 @@ generic_refit_civilian_ships_category = {
 				}
 				has_tech = early_ship_hull_light
 			}
-			else = {
-				has_tech = early_destroyer
-			}
 		}
 		days_remove = 50
 

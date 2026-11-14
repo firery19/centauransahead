@@ -484,8 +484,8 @@ characters = {
 		name = AQU_francis_stephens
 		portraits = {
 			civilian = {
-				large = 
-				small =
+				#large = 
+				#small =
 			}
 		}
 		advisor = {

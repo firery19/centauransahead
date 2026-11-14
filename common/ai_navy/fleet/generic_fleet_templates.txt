@@ -8,9 +8,9 @@ generic_dominance_fleet_1 = {
 	}	
 	optional_taskforces = {
 		StrikeForce_1 = 1
-		BattlelineForce_1
-		BattlelineForce_2
-		BattlelineForce_3
+		BattlelineForce_1 = 1
+		BattlelineForce_2 = 1
+		BattlelineForce_3 = 1
 		PatrolReconForce_1 = 1
 		PatrolDominanceForce_CA_1 = 1
 	}

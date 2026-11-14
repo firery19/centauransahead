@@ -508,7 +508,7 @@ guiTypes = {
 		iconType = {
 			name = "central_flag" # hidden when left and right is visible
 			position = { x = -170 y = 90 }
-			spriteType = "GFX_libura" #"GFX_hyderus" #GFX_empty_placeholder
+			spriteType = "GFX_aquiler" #GFX_libura #"GFX_hyderus" #GFX_empty_placeholder
 			centerposition = yes
 			orientation = upper_right
 			alwaysTransparent = yes

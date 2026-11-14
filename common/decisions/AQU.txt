@@ -503,205 +503,9 @@ AQU_ring_of_fire = {
 }
 
 AQU_army_management = {
-	fix_army_rust_a = {
-
-		icon = generic_construction
-
-		allowed = {
-			always = yes
-		}
-
-		cost = 100
-		fire_only_once = yes
-
-		days_remove = 365
-
-		available = {
-			has_completed_focus = AQU_army_modernisation
-		}
-
-		visible = {
-			has_completed_focus = AQU_army_modernisation
-			NOT = { has_country_flag = fix_1_rust }
-		}
-
-		modifier = {
-		
-		}
-
-		complete_effect = {
-			
-		}
-		remove_effect = {
-		swap_ideas = {
-			add_idea = AQU_rusting_army_2_idea
-			remove_idea = AQU_rusting_army_idea
-			}
-			set_country_flag = fix_1_rust
-		}
-	}
-	
-	fix_army_rust_b = {
-
-		icon = generic_construction
-		
-		allowed = {
-			always = yes
-		}
-		
-		cost = 50
-		fire_only_once = yes
-
-		days_remove = 365
-
-		available = {
-		OR = {
-			has_completed_focus = AQU_new_thinking
-			has_completed_focus = AQU_observe_the_canis_war
-			}
-		}
-
-		visible = {
-			has_country_flag = fix_1_rust
-		}
-
-		modifier = {
-		
-		}
-
-		complete_effect = {
-			
-		}
-		remove_effect = {
-		swap_ideas = {
-			add_idea = AQU_rusting_army_3_idea
-			remove_idea = AQU_rusting_army_2_idea
-			}
-			hidden_effect = {
-			set_country_flag = fix_2_rust
-			clr_country_flag = fix_1_rust
-			}
-		}
-	}
-	fix_army_rust_c = {
-
-		icon = generic_construction
-		
-		allowed = {
-			always = yes
-		}
-		
-		cost = 50
-		fire_only_once = yes
-
-		days_remove = 365
-
-		available = {
-		OR = {
-			has_completed_focus = AQU_new_thinking
-			has_completed_focus = AQU_observe_the_canis_war
-			}
-		}
-
-		visible = {
-			has_country_flag = fix_2_rust
-		}
-
-		modifier = {
-		
-		}
-
-		complete_effect = {
-			
-		}
-		remove_effect = {
-		swap_ideas = {
-			add_idea = AQU_rusting_army_4_idea
-			remove_idea = AQU_rusting_army_3_idea
-			}
-			hidden_effect = {
-			set_country_flag = fix_3_rust
-			clr_country_flag = fix_2_rust
-			}
-		}
-	}
-	fix_army_rust_d = {
-
-		icon = generic_construction
-		
-		allowed = {
-			always = yes
-		}
-		
-		cost = 50
-		fire_only_once = yes
-
-		days_remove = 365
-
-		available = {
-		OR = {
-			has_completed_focus = AQU_innovate
-			}
-		}
-
-		visible = {
-			has_country_flag = fix_3_rust
-		}
-
-		modifier = {
-		
-		}
-
-		complete_effect = {
-			
-		}
-		remove_effect = {
-		swap_ideas = {
-			add_idea = AQU_rusting_army_5_idea
-			remove_idea = AQU_rusting_army_4_idea
-			}
-			hidden_effect = {
-			clr_country_flag = fix_3_rust
-			}
-		}
-	}
-	civil_guard_debug = {
-
-		icon = generic_construction
-		
-		allowed = {
-			always = yes
-		}
-		
-		cost = 0
-		fire_only_once = no
-
-		days_remove = 0
-
-		available = {
-		always = yes
-		}
-
-		visible = {
-			is_debug = yes
-		}
-
-		modifier = {
-		
-		}
-
-		complete_effect = {
-			
-		}
-		remove_effect = {
-			clr_country_flag = AQU_cg_a
-			clr_country_flag = AQU_cg_b
-			clr_country_flag = AQU_cg_c
-		}
-	}
 	civil_guard_recruitment = {
 
-		icon = generic_construction
+		icon = generic_military
 		
 		allowed = {
 			always = yes
@@ -710,35 +514,33 @@ AQU_army_management = {
 		cost = 0
 		fire_only_once = no
 
-		days_remove = 180
-		
+		days_remove = 30
+	
 		custom_cost_trigger = {
-			command_power > 19
-			has_army_experience > 39
+			command_power > 9
+			has_army_experience > 9
 		}
 		
 		custom_cost_text = decision_cost_CP_20_ArmXP_40
 		available = {
+		has_war = yes
 		OR = {
-			has_war = yes
-			has_war_support > 0.90
+		has_completed_focus = AQU_integrate_cg
+		has_completed_focus = AQU_integrate_cgww
+		has_completed_focus = AQU_increase_cg
+		has_completed_focus = AQU_increase_cg_bawewewaewa
 		}
-		NOT = {
-		has_completed_focus = AQU_control_cg
-		}
-			has_completed_focus = AQU_civil_guard
-			has_political_power > 99
 		}
 		
-		cancel_trigger = {
-		has_completed_focus = AQU_control_cg
-		}
 		
-
 		visible = {
 		is_debug = yes
-			has_completed_focus = AQU_civil_guard
-		#	always = yes
+		OR = {
+		has_completed_focus = AQU_integrate_cg
+		has_completed_focus = AQU_integrate_cgww
+		has_completed_focus = AQU_increase_cg
+		has_completed_focus = AQU_increase_cg_bawewewaewa
+		}
 		}
 
 		modifier = {
@@ -747,22 +549,1179 @@ AQU_army_management = {
 
 		complete_effect = {
 			hidden_effect = {
-				add_command_power = -20
-				army_experience = -40
-				add_political_power = -100
+				add_command_power = -10
+				army_experience = -10
 			}
 		}
 		cancel_effect = {
 			hidden_effect = {
-				add_command_power = 20
-				army_experience = 40
-				add_political_power = 100
+				add_command_power = 10
+				army_experience = 10
 			}
 		}
 		
 		remove_effect = {
 		AQU = { country_event = aqu.1 }
 		}
+	}	
+	
+	AQU_wartime_army_reform = {
+
+		icon = generic_army_support
+		
+		allowed = {
+			always = yes
+		}
+		
+		cost = 0
+		fire_only_once = no
+
+		days_remove = 100
+	
+		custom_cost_trigger = {
+			has_army_experience > 199
+		}
+		
+		custom_cost_text = decision_cost_ArmXP_200
+		available = {
+        check_variable = {
+            var = AQU_military_reform_decision
+             AQU_military_reform_decision < 6
+        }
+		}
+		
+		
+		visible = {
+        check_variable = {
+            var = AQU_military_reform_decision
+             AQU_military_reform_decision < 6
+        }
+		OR = {
+		is_debug = yes
+		has_completed_focus = AQU_desperate_military_reforms
+		has_completed_focus = AQU_wartime_military_reforms		
+		has_completed_focus = AQU_wartime_military_reforms_generic
+		}
+		}
+
+		modifier = {
+		
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				army_experience = -200
+			}
+		}
+		cancel_effect = {
+			hidden_effect = {
+				army_experience = 200
+			}
+		}
+		
+		remove_effect = {
+			AQU = {
+			add_to_variable = {
+				var = AQU_military_reform_decision
+				value = 1
+			}
+			custom_effect_tooltip = AQU_add_on_to_iron_army_idea_tt
+			add_to_variable = { AQU_army_attack = 0.05 }
+			add_to_variable = { AQU_army_defend = 0.05}
+			custom_effect_tooltip = AQU_attack_buff_0dot5_idea_tt
+			custom_effect_tooltip = AQU_defend_buff_0dot5_idea_tt
+			}
+		}
 	}
 }
 
+###
+AQU_fuckyou_i_hate_this = { ####UNUSED
+
+}
+
+###
+AQU_the_national_assembly = {
+	AQU_the_election_liberal = { ######### THIS DECISION IS OUTDATED AND UNUSED
+		icon = generic_political_actions
+		available = {
+        always = no
+		}
+		allowed = {
+        always = no
+		}
+		visible = {
+
+		} 
+		cost = 50
+		fire_only_once = no
+
+		days_mission_timeout = 200
+		timeout_effect = {
+		country_event = { id = aqu.18661112 }
+		}
+	}
+	
+}
+
+AQU_test = {
+	### timeout missions that checks who win the election
+	AQU_the_election_conservative = { ###ignore the name, the conservative part doesn't mean it only works on the conservate path.
+		icon = generic_political_actions
+		available = {
+        always = no
+		}
+		allowed = {
+        always = no
+		}
+		visible = {
+
+		}
+
+		fire_only_once = no
+
+		days_mission_timeout = 200
+		remove_effect = {
+		country_event = { id = aqu.18661112 }
+		}
+	}
+	
+    ###make state blue
+	AQU_9_blu = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+		
+		ai_will_do = {
+		base = 100
+		}
+		
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 9
+		}
+		has_completed_focus = AQU_support_the_tories
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+		
+		modifier = {
+        
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_9_support = 10 }
+		
+		if = {
+			limit = {
+				check_variable = { AQU_state_9_support > 0 }
+			}   
+			set_variable = { AQU_state_9_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_9_support < 0 }
+			}
+			set_variable = { AQU_state_9_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_9_alignment = 1 }
+		}
+		}
+	} #end
+	
+	AQU_31_blu = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		ai_will_do = {
+		base = 100
+		}
+		
+		cost = 100
+		fire_only_once = no
+
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 31
+		}
+		has_completed_focus = AQU_support_the_tories
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_31_support = 10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_31_support > 0 }
+			}   
+			set_variable = { AQU_state_31_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_31_support < 0 }
+			}
+			set_variable = { AQU_state_31_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_31_alignment = 1 }
+		}
+		}
+	} #end
+
+	AQU_32_blu = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		ai_will_do = {
+		base = 100
+		}
+		
+		cost = 100
+		fire_only_once = no
+
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 32
+		}
+		has_completed_focus = AQU_support_the_tories
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_32_support = 10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_32_support > 0 }
+			}   
+			set_variable = { AQU_state_32_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_32_support < 0 }
+			}
+			set_variable = { AQU_state_32_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_32_alignment = 1 }
+		}
+		}
+	} #end
+	
+	AQU_38_blu = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		ai_will_do = {
+		base = 100
+		}
+		
+		cost = 100
+		fire_only_once = no
+
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 38
+		}
+		has_completed_focus = AQU_support_the_tories
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_38_support = 10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_38_support > 0 }
+			}   
+			set_variable = { AQU_state_38_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_38_support < 0 }
+			}
+			set_variable = { AQU_state_38_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_38_alignment = 1 }
+		}
+		}
+	} #end
+	
+	AQU_156_blu = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		ai_will_do = {
+		base = 100
+		}
+		
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 156
+		}
+		has_completed_focus = AQU_support_the_tories
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_156_support = 10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_156_support > 0 }
+			}   
+			set_variable = { AQU_state_156_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_156_support < 0 }
+			}
+			set_variable = { AQU_state_156_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_156_alignment = 1 }
+		}
+		}
+	} #end
+	
+	AQU_36_blu = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+		
+		ai_will_do = {
+		base = 100
+		}
+
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 36
+		}
+		has_completed_focus = AQU_support_the_tories
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_36_support = 10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_36_support > 0 }
+			}   
+			set_variable = { AQU_state_36_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_36_support < 0 }
+			}
+			set_variable = { AQU_state_36_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_36_alignment = 1 }
+		}
+		}
+	} #end
+	
+	AQU_35_blu = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		ai_will_do = {
+		base = 100
+		}
+		
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 35
+		}
+		has_completed_focus = AQU_support_the_tories
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+		
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_35_support = 10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_35_support > 0 }
+			}   
+			set_variable = { AQU_state_35_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_35_support < 0 }
+			}
+			set_variable = { AQU_state_35_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_35_alignment = 1 }
+		}
+		}
+	} #end
+	
+	AQU_37_blu = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		ai_will_do = {
+		base = 100
+		}
+		
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 37
+		}
+		has_completed_focus = AQU_support_the_tories
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_37_support = 10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_37_support > 0 }
+			}   
+			set_variable = { AQU_state_37_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_37_support < 0 }
+			}
+			set_variable = { AQU_state_37_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_37_alignment = 1 }
+		}
+		}
+	} #end
+	AQU_228_blu = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		ai_will_do = {
+		base = 100
+		}
+		
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 228
+		}
+		has_completed_focus = AQU_support_the_tories
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_228_support = 10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_228_support > 0 }
+			}   
+			set_variable = { AQU_state_228_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_228_support < 0 }
+			}
+			set_variable = { AQU_state_228_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_228_alignment = 1 }
+		}
+		}
+	} #end
+	AQU_34_blu = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		ai_will_do = {
+		base = 100
+		}
+		
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 34
+		}
+		has_completed_focus = AQU_support_the_tories
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_34_support = 10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_34_support > 0 }
+			}   
+			set_variable = { AQU_state_34_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_34_support < 0 }
+			}
+			set_variable = { AQU_state_34_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_34_alignment = 1 }
+		}
+		}
+	} #end
+	AQU_152_blu = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		ai_will_do = {
+		base = 100
+		}
+		
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 152
+		}
+		has_completed_focus = AQU_support_the_tories
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_152_support = 10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_152_support > 0 }
+			}   
+			set_variable = { AQU_state_152_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_152_support < 0 }
+			}
+			set_variable = { AQU_state_152_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_152_alignment = 1 }
+		}
+		}
+	} #end
+	AQU_33_blu = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		ai_will_do = {
+		base = 100
+		}
+		
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 33
+		}
+		has_completed_focus = AQU_support_the_tories
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_33_support = 10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_33_support > 0 }
+			}   
+			set_variable = { AQU_state_33_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_33_support < 0 }
+			}
+			set_variable = { AQU_state_33_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_33_alignment = 1 }
+		}
+		}
+	} #end
+	
+    ###make state yellow
+	AQU_9_ylw = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 9
+		}
+		has_completed_focus = AQU_support_the_whigs
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+		
+		visible = {
+
+		}
+
+		modifier = {
+        
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_9_support = -10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_9_support > 0 }
+			}   
+			set_variable = { AQU_state_9_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_9_support < 0 }
+			}
+			set_variable = { AQU_state_9_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_9_alignment = 1 }
+		}
+		}
+	} #end
+	
+	AQU_31_ylw = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 31
+		}
+		has_completed_focus = AQU_support_the_whigs
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_31_support = -10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_31_support > 0 }
+			}   
+			set_variable = { AQU_state_31_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_31_support < 0 }
+			}
+			set_variable = { AQU_state_31_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_31_alignment = 1 }
+		}
+		}
+	} #end
+
+	AQU_32_ylw = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 32
+		}
+		}
+		
+		visible = {
+		has_completed_focus = AQU_support_the_whigs
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_32_support = -10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_32_support > 0 }
+			}   
+			set_variable = { AQU_state_32_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_32_support < 0 }
+			}
+			set_variable = { AQU_state_32_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_32_alignment = 1 }
+		}
+		}
+	} #end
+	
+	AQU_38_ylw = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 38
+		}
+		}
+		
+		visible = {
+		has_completed_focus = AQU_support_the_whigs
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_38_support = -10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_38_support > 0 }
+			}   
+			set_variable = { AQU_state_38_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_38_support < 0 }
+			}
+			set_variable = { AQU_state_38_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_38_alignment = 1 }
+		}
+		}
+	} #end
+	
+	AQU_156_ylw = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 156
+		}
+		}
+		
+		visible = {
+		has_completed_focus = AQU_support_the_whigs
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_156_support = -10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_156_support > 0 }
+			}   
+			set_variable = { AQU_state_156_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_156_support < 0 }
+			}
+			set_variable = { AQU_state_156_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_156_alignment = 1 }
+		}
+		}
+	} #end
+	
+	AQU_36_ylw = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 36
+		}
+		}
+		
+		visible = {
+		has_completed_focus = AQU_support_the_whigs
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_36_support = -10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_36_support > 0 }
+			}   
+			set_variable = { AQU_state_36_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_36_support < 0 }
+			}
+			set_variable = { AQU_state_36_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_36_alignment = 1 }
+		}
+		}
+	} #end
+	
+	AQU_35_ylw = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 35
+		}
+		}
+		
+		visible = {
+		has_completed_focus = AQU_support_the_whigs
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_35_support = -10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_35_support > 0 }
+			}   
+			set_variable = { AQU_state_35_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_35_support < 0 }
+			}
+			set_variable = { AQU_state_35_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_35_alignment = 1 }
+		}
+		}
+	} #end
+	
+	AQU_37_ylw = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 37
+		}
+		}
+		
+		visible = {
+		has_completed_focus = AQU_support_the_whigs
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_37_support = -10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_37_support > 0 }
+			}   
+			set_variable = { AQU_state_37_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_37_support < 0 }
+			}
+			set_variable = { AQU_state_37_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_37_alignment = 1 }
+		}
+		}
+	} #end
+	AQU_228_ylw = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 228
+		}
+		}
+		
+		visible = {
+		has_completed_focus = AQU_support_the_whigs
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_228_support = -10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_228_support > 0 }
+			}   
+			set_variable = { AQU_state_228_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_228_support < 0 }
+			}
+			set_variable = { AQU_state_228_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_228_alignment = 1 }
+		}
+		}
+	} #end
+	AQU_34_ylw = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 34
+		}
+		}
+		
+		visible = {
+		has_completed_focus = AQU_support_the_whigs
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_34_support = -10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_34_support > 0 }
+			}   
+			set_variable = { AQU_state_34_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_34_support < 0 }
+			}
+			set_variable = { AQU_state_34_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_34_alignment = 1 }
+		}
+		}
+	} #end
+	AQU_152_ylw = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 152
+		}
+		}
+		
+		visible = {
+		has_completed_focus = AQU_support_the_whigs
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_152_support = -10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_152_support > 0 }
+			}   
+			set_variable = { AQU_state_152_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_152_support < 0 }
+			}
+			set_variable = { AQU_state_152_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_152_alignment = 1 }
+		}
+		}
+	} #end
+	AQU_33_ylw = { #start
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		cost = 100
+		fire_only_once = no
+
+		visible = {
+		check_variable = {
+			AQU_click_election_state = 33
+		}
+		}
+		
+		visible = {
+		has_completed_focus = AQU_support_the_whigs
+		has_completed_focus = AQU_prepare_for_the_elections
+		has_idea = AQU_first_campaign
+		}
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+		add_to_variable = { AQU_state_33_support = -10 }
+		if = {
+			limit = {
+				check_variable = { AQU_state_33_support > 0 }
+			}   
+			set_variable = { AQU_state_33_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_33_support < 0 }
+			}
+			set_variable = { AQU_state_33_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_33_alignment = 1 }
+		}
+		}
+	} #end
+	
+}
+	

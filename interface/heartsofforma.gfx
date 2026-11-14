@@ -156,6 +156,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_aquiler"
+		texturefile = "gfx/interface/aquiler.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_long_tile"
 		texturefile = "gfx/interface/border_tiled_menu_screen_a.dds"
 	}

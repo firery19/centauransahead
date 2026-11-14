@@ -1,0 +1,32 @@
+##COLUMBA
+
+CLB_disjointed_country_dynamic = {
+    icon = GFX_focus_generic_mountain_troops
+
+    local_resources_factor = CLB_DClocal_resources
+    conscription_factor = CLB_DCconscription
+    global_building_slots_factor = CLB_DCbuilding_slots
+    surrender_limit = CLB_DCsurrender
+}
+
+CLB_underfunded_armed_forces_dynamic = {
+    icon = GFX_idea_CLB_army_bad
+
+    conscription_factor = CLB_ufaf_conscription
+    war_support_factor = CLB_ufaf_war_support
+    experience_gain_army_factor = CLB_ufaf_xp_gain
+    land_doctrine_cost_factor = CLB_ufaf_doctrine_cost
+    army_defence_factor = CLB_ufaf_defence
+    army_attack_factor = CLB_ufaf_attack
+    army_org_factor = CLB_ufaf_org
+}
+
+CLB_farming_dynamic = { # farm
+    icon = GFX_focus_generic_price_controls
+        
+    consumer_goods_factor = CLB_farm_goods_factor
+    monthly_population = CLB_farm_monthly_population
+    stability_factor = CLB_farm_stability
+}           
+        
+        

@@ -5,6 +5,9 @@ state={
 		owner = GEM
 		add_core_of = ORI
 		add_core_of = GEM
+1901.1.1 = {
+	owner = ORI
+}
 		buildings = {
 			infrastructure = 2
 		}

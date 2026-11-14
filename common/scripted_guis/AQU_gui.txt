@@ -1,0 +1,116 @@
+scripted_gui = {
+aqu_gui = {
+    window_name = "aqu_states"
+    context_type = decision_category
+    effects = {
+      state_9_click = {
+          set_variable = {
+            AQU_click_election_state = 9
+			
+          }
+      }
+      state_31_click = {
+          set_variable = {
+            AQU_click_election_state = 31
+          }
+      }
+      state_32_click = {
+          set_variable = {
+            AQU_click_election_state = 32
+          }
+      }
+      state_38_click = {
+          set_variable = {
+            AQU_click_election_state = 38
+          }
+      }
+      state_156_click = {
+          set_variable = {
+            AQU_click_election_state = 156
+          }
+      }
+      state_36_click = {
+          set_variable = {
+            AQU_click_election_state = 36
+          }
+      }
+      state_35_click = {
+          set_variable = {
+            AQU_click_election_state = 35
+          }
+      }
+      state_37_click = {
+          set_variable = {
+            AQU_click_election_state = 37
+          }
+      }
+      state_228_click = {
+          set_variable = {
+            AQU_click_election_state = 228
+          }
+      }
+      state_34_click = {
+          set_variable = {
+            AQU_click_election_state = 34
+          }
+      }
+      state_152_click = {
+          set_variable = {
+            AQU_click_election_state = 152
+          }
+      }
+      state_33_click = {
+          set_variable = {
+            AQU_click_election_state = 33
+          }
+      }
+	  
+	  }
+
+###########the thing up here is to click gui stuff
+
+		properties = {
+	
+		state_9 = {
+			frame = AQU_state_9_alignment
+			}
+		state_31 = {
+			frame = AQU_state_31_alignment
+			}
+		state_32 = {
+			frame = AQU_state_32_alignment
+		}
+		state_38 = {
+			frame = AQU_state_38_alignment
+		}
+		state_156 = {
+			frame = AQU_state_156_alignment
+		}
+		state_36 = {
+			frame = AQU_state_36_alignment
+		}
+		state_35 = {
+			frame = AQU_state_35_alignment
+		}
+		state_37 = {
+			frame = AQU_state_37_alignment
+		}
+		state_228 = {
+			frame = AQU_state_228_alignment
+		}
+		state_34 = {
+			frame = AQU_state_34_alignment
+		}
+		state_152 = {
+			frame = AQU_state_152_alignment
+		}
+		state_33 = {
+			frame = AQU_state_33_alignment
+		}
+		
+		}
+
+############the thing here is to change the frame (color)
+	}
+}
+

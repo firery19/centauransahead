@@ -4,8 +4,11 @@ state={
 	history = {
 		owner = CET
 		add_core_of = CET
-		add_claim_by = ANT
+		add_claim_by = ANT	#removed cuz this is not pristis plains	#unremoved this since this was also lost in the pristis plains war
 		add_claim_by = SKO
+1947.1.1 = {
+	owner = ANT
+}
 		buildings = {
 			infrastructure = 2 #coastal regions of cetus pretty developed compared to inner regions
 		}
@@ -17,4 +20,6 @@ state={
 	local_supplies=0.000
         manpower=367309
         state_category = rural
+
+
 }

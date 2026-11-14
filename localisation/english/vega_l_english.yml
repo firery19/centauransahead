@@ -1,0 +1,74 @@
+﻿l_english:
+ VEG_alina_verda:0 "Alina Verda"
+ 
+ VEG_fight_grusa:0 "Fight Grusa"
+ VEG_fight_grusa_desc:0 "You're itching to fight them aren't you? Don't you wanna attack the vile Grusans? Don't you? Go on, take the focus and attack Grusa. No one is stopping you..."
+ 
+ VEG_the_vegan_olive:0 "Another Year Under Her Gaze"
+ VEG_the_vegan_olive_desc:0 "Spread Vega cheer with me"
+ VEG_border_wargames:0 "Military Issues"
+ VEG_border_wargames_desc:0 "To defend our country, the military must be involved in its defence."
+ VEG_murus_branch:0 "Murus Plateau"
+ VEG_murus_branch_desc:0 "The defence of the Murus Plateau is very important. Without it, Vega would easily fall to any foreign invaders in the south."
+ VEG_reinforce_bunkers:0 "Reinforce Bunkers"
+ VEG_reinforce_bunkers_desc:0 "Use reinforced concrete instead of rocks"
+ VEG_anti_air_forts:0 "Construct Anti-Air Positions"
+ VEG_anti_air_forts_desc:0 "Planes are going to destroy our bunkers so lets shoot them down!!!"
+ VEG_fortified_artillery_bunkers:0 "Fortified Artillery Positions"
+ VEG_fortified_artillery_bunkers_desc:0 "A big cannon can prevent an army from advancing. Putting them into a bunker would make it harder to take out too, so lets construct some fortified positions with cannons."
+ VEG_strengthen_lake_influence:0 "Construct [28.GetName] Defences"
+ VEG_strengthen_lake_influence_desc:0 "[28.GetName] is a strategic island that controls the ??? Lake region. Because the enemy could bypass the Murus Plateau through the lake, we must control this island to deter any amphibious attacks."
+ 
+ VEG_coastal_defence:0 "Coastal Defences"
+ VEG_coastal_defence_desc:0 "Our navy, weak. A cheap solution? Building coastal defences to deter any enemies from attempting to land troops."
+ VEG_reinforce_eastern_isles:0 "Reinforcing [27.GetName]"
+ VEG_reinforce_eastern_isles_desc:0 "[27.GetName] is a strategic archilepago that controls our coasts. To deter any navy from getting close to our shores, our hold on these islands must be strengthened."
+ VEG_buy_centauri_boats:0 "Purchasing Ships From Centauri"
+ VEG_buy_centauri_boats_desc:0 "Centauri has sold ships to us before, so we could procure more ships through them..."
+ 
+ VEG_anti_grusan_forts:0 "The Grusan Menace"
+ VEG_anti_grusan_forts_desc:0 "The House of Flamenco denies the true succession of our Queen Lucia Verde, arguing that a woman was not fit for the throne. Because of this, we must watch outand defend any hostile Grusan attacks."
+ VEG_fortify_plains:0 "Northern Plains Fortifications"
+ VEG_fortify_plains_desc:0 "The first step is to make sure our country will not fall to attacks by building a defensive line in the north."
+ VEG_the_power_to_strike_north:0 "The Power To Strike North"
+ VEG_the_power_to_strike_north_desc:0 "The Grusan Navy, with power that rivals the Antarean Navy is going to be an obstacle if we go to war. With this, we must make sure to construct a navy capable to stand with the strongest in order to fight."
+ VEG_offensive_strikes:0 "Cooperative Attacks"
+ VEG_offensive_strikes_desc:0 "ship and infantry cooperation strike"
+ 
+ VEG_metal_works_corp:0 "Metal Works"
+ VEG_metal_works_corp_desc:0 "Plenty of iron can be found in the Murus Plateau. We should continue extracting the many minerals and ores from the region."
+ VEG_armored_infantry:0 "Armored Infantry Improvements"
+ VEG_armored_infantry_desc:0 "Our infantry which possesses armor plates for combat have proven its usefulness in close quarters combat. Even so, its effectiveness cannot be stated outside of protecting soldiers from shrapnel. Improving upon this could increase the survivability rates of our soldiers." # Due to the ambundance of iron, we can equip our soldiers with steel plates in battle.
+ VEG_armored_personnel_carriers:0 "Build APCs"
+ VEG_armored_personnel_carriers_desc:0 "It seems thicker metal can resist light bullets and shrapnel. Welding these onto vehicles can prove useful in transportation safety and combat."
+ VEG_standard_issue_browplate:0 "Issue Browplates"
+ VEG_standard_issue_browplate_desc:0 "These plates are designed to protect soldiers from a bullet from piercing through a helmet. I think."
+ VEG_mining_plateau:0 "The Mining Plateau"
+ VEG_mining_plateau_desc:0 "lots of ores here u know"
+ VEG_improve_mining_tech:0 "Improve Extraction Techniques"
+ VEG_improve_mining_tech_desc:0 "extracting ores.."
+ 
+ 
+ VEG_the_crown_navy:0 "a Marinha da Coroa"
+ VEG_the_crown_navy_desc:0 "The Navy of the Crown"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ VEG_queens_blessing_idea:0 "Legacy of Lucia"
+ VEG_queens_blessing_idea_desc:0 "The Vegan state traces its origins to when a succession crisis divided Grusa and a heroic battle when the first Queen and her knights defeated the Grusan army, who were driven back to the Árida desert. Having successfully protected the sovereignty of her state, and with witnesses praising the heroics of the queen, Lucia Verde was given the Astranist name Lyra by a priest, and in honor of the queen, her new state would be named Vega, Lyra's brightest star."
+ VEG_protected_by_murus_idea:0 "Protected by Murus"
+ VEG_protected_by_murus_idea_desc:0 "The Murus Plateau is a high rocky ridge extending across the Aquila-Vega border. Sometimes nicknamed El Muro, the plateau had been used by the ancient Grusan Empire to fend off any invaders approaching from Aquila. It still serves that purpose, however protecting the new Vegan country rather than the old unified Grusa."
+ 

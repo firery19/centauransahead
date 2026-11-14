@@ -11,6 +11,9 @@ state={
 	history={
 		owner = TUC
 		add_core_of = TUC
+1944.1.1 = {
+	owner = URS
+}
 		buildings = {
 			arms_factory = 0
 			industrial_complex = 0
@@ -30,4 +33,5 @@ state={
 	state_category=rural
 	buildings_max_level_factor=1
 	local_supplies=0
+
 }

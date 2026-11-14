@@ -156,7 +156,10 @@ technologies = {
 				factor = 2
 				is_major = yes
 			}
-
+			modifier = {
+				factor = 20
+				has_completed_focus = URS_aircraft_innovation
+			}
 			modifier = {
 				num_of_military_factories < 7
 				factor = 0.1
@@ -978,7 +981,7 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 1902
+		start_year = 1908
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1041,11 +1044,11 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 1920
+		start_year = 1924
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 7 }
 		}
 		
 		categories = {
@@ -1078,11 +1081,11 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 1907
+		start_year = 1912
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = -1.2 y = 3 }
+			position = { x = -1.2 y = 4 }
 		}
 		
 		categories = {
@@ -1114,7 +1117,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1902
+		start_year = 1908
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1147,7 +1150,7 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 1905
+		start_year = 1908
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1272,7 +1275,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1902
+		start_year = 1908
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1579,7 +1582,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1902
+		start_year = 1908
 
 		folder = {
 			name = bba_air_techs_folder

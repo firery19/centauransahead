@@ -21,5 +21,24 @@ ideas = {
 				defense_bonus_against = 0.25
             }
         }
+        URS_terms_of_peace_restriction_idea = { # humiliation under the loss of the grease wars ( IT SHOULD BE TEMPORARY, AN IDEA WITH DAYS, maybe 4 - 6 years )
+            
+            picture = idea_COV_revanchism
+            allowed = { 
+			OR = {
+				original_tag = ORI 
+				original_tag = HYS 
+				original_tag = LPS 
+				original_tag = CNS 
+				}
+			}
+            removal_cost = -1
+
+            modifier = {
+				join_faction_tension = 0.85 # prevent the Dragon Compact from reforming, allowing Ursa to recapture colonies, not 100% because a world in chaos wouldn't abide by old treaties
+				political_power_factor = -0.1
+				drift_defence_factor = -0.1
+            }
+        }
     }
 }

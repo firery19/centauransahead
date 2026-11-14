@@ -12,6 +12,19 @@ characters = {
 			expire = "1912.1.1.1"
 		}
     }
+    GRS_fernan_flamenco_ill = {
+        name = GRS_fernan_flamenco_ill
+        portraits = {
+            civilian = {
+                large = GFX_portrait_GRS_fernan_flamenco_ill
+            }
+        }
+        country_leader = {
+			ideology = despotism
+			traits = { }
+			expire = "1912.1.1.1"
+		}
+    }
     GRS_santiago_moreno = {
         name = GRS_santiago_moreno
         portraits = {
@@ -25,4 +38,79 @@ characters = {
 			expire = "1912.1.1.1"
 		}
     }
+    GRS_valentine_flamenco = {
+        name = GRS_valentine_flamenco
+        portraits = {
+            civilian = {
+                large = GFX_portrait_GRS_valentine_flamenco
+            }
+        }
+        country_leader = {
+			ideology = despotism
+			traits = { }
+			expire = "1965.1.1.1"
+		}
+    }
+    GRS_prince_valentine = {
+        name = GRS_prince_valentine
+
+        portraits = {
+            civilian = {
+            large = GFX_portrait_GRS_prince_valentine_small
+                small = GFX_portrait_GRS_prince_valentine_small
+            }
+        }
+
+        advisor = {
+            slot = political_advisor
+            idea_token = GRS_prince_valentine
+
+            allowed = {
+                original_tag = GRS
+            }
+
+available = {
+    NOT = {
+        has_country_leader = {
+            character = GRS_valentine_flamenco
+            ruling_only = yes
+        }
+        has_country_leader = {
+            character = GRS_xavier_navarro
+            ruling_only = yes
+        }
+    }
+}
+            traits = {
+                staunch_monarchist
+                Editor
+            }
+        }
+    }
+    GRS_emperor_valentine = {
+        name = GRS_emperor_valentine
+        portraits = {
+            civilian = {
+                large = GFX_portrait_GRS_emperor_valentine
+            }
+        }
+        country_leader = {
+			ideology = despotism
+			traits = { }
+			expire = "1965.1.1.1"
+		}
+    }
+    GRS_xavier_navarro = {
+        name = GRS_xavier_navarro
+        portraits = {
+            civilian = {
+                large = GFX_portrait_GRS_xavier_navarro
+            }
+        }
+        country_leader = {       
+			ideology = moderatism
+			traits = { popular_figurehead }
+			expire = "1965.1.1.1"
+		}
+    }  
 }

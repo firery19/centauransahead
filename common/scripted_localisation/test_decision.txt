@@ -1,0 +1,3 @@
+decision_cost_CP_50_ArmXP_15 = {
+    text = decision_cost_CP_50_ArmXP_15
+}

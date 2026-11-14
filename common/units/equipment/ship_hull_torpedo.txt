@@ -22,17 +22,17 @@ equipments = {
 		alias = torpedoboat
 		priority = 2000
 
-	#	upgrades = {
-	#		ship_torpedo_upgrade
-	#		destroyer_engine_upgrade
-#	#		ship_ASW_upgrade
-#	#		ship_anti_air_upgrade
-	#	}
+		upgrades = {
+			ship_torpedo_upgrade
+			destroyer_engine_upgrade
+#			ship_ASW_upgrade
+#			ship_anti_air_upgrade
+		}
 
 		module_slots = {
 			fixed_ship_battery_slot = {
 				required = no
-				allowed_module_categories = { ship_light_battery dp_light_battery}
+				allowed_module_categories = { ship_light_battery dp_light_battery ship_anti_air }
 			}
 			fixed_ship_anti_air_slot = {
 				required = no
@@ -51,10 +51,10 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-				#	ship_mine_warfare
-				#	ship_mine_layer
+					ship_mine_warfare
+					ship_mine_layer
 					ship_anti_air
-				#	ship_depth_charge
+					ship_depth_charge
 				}
 			}
 		}
@@ -65,7 +65,7 @@ equipments = {
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
-#			mid_1_custom_slot = empty
+			mid_1_custom_slot = empty
 		}
 		
 		lg_armor_piercing = 0
@@ -114,7 +114,23 @@ equipments = {
 		#alias = destroyer_1
 		naval_dominance_factor = 1
 		
-		module_slots = inherit
+		module_slots = {
+			fixed_ship_battery_slot = inherit
+			fixed_ship_anti_air_slot = inherit
+			fixed_ship_torpedo_slot = inherit
+			fixed_ship_engine_slot = inherit
+
+		#	mid_1_custom_slot = {
+		#		required = no
+		#		allowed_module_categories = {
+		#			ship_torpedo
+		#			ship_anti_air
+		#			ship_light_battery
+		#			dp_light_battery
+		#		}
+		#	}
+		}
+
 	}
 
 	ship_hull_torpedo_2 = {
@@ -132,20 +148,16 @@ equipments = {
 			fixed_ship_torpedo_slot = inherit
 			fixed_ship_engine_slot = inherit
 
-			mid_1_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					ship_torpedo
-					ship_anti_air
-				#	ship_light_battery
-				#	dp_light_battery
-				}
-			}
+			mid_1_custom_slot = inherit
+
 		}
 
 		default_modules = {
-			mid_1_custom_slot = empty
+			fixed_ship_battery_slot = empty
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			mid_1_custom_slot = empty
 		}
 
 

@@ -1,0 +1,14 @@
+
+has_ant_support = {
+	custom_trigger_tooltip = {
+	tooltip = LEO_has_ant_support_tt
+	has_country_flag = flg_has_ant_support
+	}
+}
+
+has_ant_extent_support = {
+	custom_trigger_tooltip = {
+	tooltip = LEO_has_ant_support_2_tt
+	has_country_flag = flg_has_extent_ant_support
+	}
+}

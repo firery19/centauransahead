@@ -16,7 +16,7 @@ ideas = {
 		}
 		TUC_developing_corpocracy = {
             
-			picture = idea_generic_democratic_drift_bonus
+			picture = tur_etatism_bonus
 			allowed = { original_tag = TUC }
 			removal_cost = -1
 

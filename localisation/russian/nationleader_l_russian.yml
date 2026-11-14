@@ -1,0 +1,36 @@
+﻿l_russian:
+ #RIA_ivan_riaa:0 "Иван Риаа" 
+ RIA_ivan_riaa:0 "Иван Сельской" # walomega 20/9/25
+ #LBR_generic_leader:0 "Принцепс Фортуитус"
+ LBR_generic_leader:0 "Артур Катто" # walomega 20/9/25
+ HYS_renald_downes:0 "Ренальд Даунс"
+ TUC_generic_character:0 "Джон Тукана"
+ CTA_generic_character:0 "Джон Кентаври"
+ AUR_generic_character:0 "Джон Аурига"
+ LAC_generic_character:0 "Джон Лацерта"
+ CLB_generic_character:0 "Джон Колумба"
+ VUL_vadik_zvezda:0 "Вадик Звезда"
+ GRS_fernan_flamenco:0 "Фернан Фламенко"
+ MUS_pavelija_vieno:0 "Павелия Виено"
+ # --- временные урсанские военные
+ # адмиралы
+ URS_dobrodub_ozolinsh:0 "Добродуб Озолиньш"
+ URS_enrik_pavolvich:0 "Энрик Павлович"
+ URS_vasilii_kachalo:0 "Василий Качало"
+ URS_arsenii_oskolkovoch:0 "Арсений Оскольковоч"
+ URS_arthur_artevoch:0 "Артур Артевоч"
+
+ # армия
+ URS_petr_trolivoch:0 "Пётр Троливоч"
+ URS_vlado_patroshenkov:0 "Владо Патрошенков"
+ URS_john_shuudan:0 "Джон Шуудан"
+ URS_konstantin_sakantsev:0 "Константин Саканцев"
+ URS_vaderii_sotkach:0 "Вадерий Соткач"
+ URS_markovoch_dmitrienok:0 "Марковоч Дмитриенок"
+ URS_dontrov_artemich:0 "Донтров Артемич"
+ URS_solkon_skoroded:0 "Солкон Скородед"
+
+ # разное
+ industrial_heartland:0 "Промышленное сердце"
+ industrialized_metropolis:0 "Индустриальный мегаполис"
+ industrialized_megalopolis:0 "Индустриальный мегалополис"

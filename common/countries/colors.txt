@@ -38,9 +38,13 @@ VEG = {
 	color = rgb { 82 145 145 }
 	color_ui  = rgb { 52 115 115 }
 }
-GRS = {
-	color = rgb { 145 82 74 }
-	color_ui  = rgb { 115 52 44 }
+#GRS = {
+#	color = rgb { 145 82 74 }
+#	color_ui  = rgb { 115 52 44 }
+#}
+GRS = {		#testing with flag colours modified
+	color = rgb { 150 50 100 }
+	color_ui  = rgb { 120 40 80}
 }
 CLB = {
 	color = rgb { 240 207 23 }
@@ -54,13 +58,33 @@ VUL = {
 	color = rgb { 147 112 64 }
 	color_ui  = rgb { 117 82 34 }
 }
-TUC = {
-	color = rgb { 136 213 134 }
-	color_ui  = rgb { 106 183 104 }
+#TUC = {
+#	color = rgb { 136 213 134 }
+#	color_ui  = rgb { 106 183 104 }
+#}
+#TUC = {	#testing with flag colours
+#	color = rgb { 160 35 35 }
+#	color_ui  = rgb { 160 35 35}
+#}
+#TUC = {	#testing with flag colours modofied
+#	color = rgb { 160 60 60 }
+#	color_ui  = rgb { 160 60 60}
+#}
+TUC = {		#testing based on vibes
+	color = rgb { 40 160 80 }
+	color_ui  = rgb { 54 167 156}	#CZE colours
 }
-CTA = {
-	color = rgb { 231 122 75 }
-	color_ui  = rgb { 201 92 45 }
+#CTA = {
+#	color = rgb { 231 122 75 }
+#	color_ui  = rgb { 201 92 45 }
+#}
+#CTA = {	#testing with flag colours
+#	color = rgb { 2 54 84 }
+#	color_ui  = rgb { 2 54 84 }
+#}
+CTA = {		#testing with flag colours modified
+	color = rgb { 60 110 130 }
+	color_ui  = rgb { 40 120 160 }
 }
 LAC = {
 	color = rgb { 238 193 196 }
@@ -155,3 +179,11 @@ NOH = {
 #	color = rgb { 99 0 43 }
 #	color = rgb { 231 172 23 }
 #}
+LEO = {
+	color = rgb { 128 222 33 }
+	color_ui  = rgb { 98 192 3 }
+}
+ERI = {
+	color = rgb { 225  169  89 }
+	color_ui  = rgb { 225  169  89 }
+}

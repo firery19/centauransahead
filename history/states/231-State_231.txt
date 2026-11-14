@@ -1,0 +1,38 @@
+
+state={
+	id=231
+	name="STATE_231"
+	resources={
+		coal = 5
+		tungsten = 2
+		steel = 5
+	}
+	history={
+		owner = CET
+		add_core_of = CET
+		add_core_of = ERI
+		add_dynamic_modifier = { 
+			modifier = eridanus_state_modifier
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			dockyard = 0
+		}
+		victory_points = {
+			3153 1
+		}
+	}
+	provinces={
+		166 359 749 959 1828 2006 2790 4203 4252 4272 4290 4301 4312 4364 4416 
+	}
+	manpower=2212386
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

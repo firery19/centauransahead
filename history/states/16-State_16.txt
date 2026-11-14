@@ -10,6 +10,9 @@ state={
 	history={
 		owner = CTA
 		add_core_of = CTA
+1945.1.1 = {
+	owner = RIA
+}
 		add_dynamic_modifier = { 
 		modifier = CTA_defence_line_dynamic_modifier
 		}
@@ -40,10 +43,13 @@ state={
 
 		}
 		victory_points = {
-			3028 30 
+			2390 5 
 		}
 		victory_points = {
-			95 5 
+			3634 5 
+		}
+		victory_points = {
+			1819 5 
 		}
 
 	}

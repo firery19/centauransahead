@@ -1,26 +1,64 @@
 areas = {
+	#centaura
+	#south centaura
 
     murus_plateau = {
         strategic_regions = {
-            25
-			32
+            20
         }
     }
 	
-	macer_mountains = {
+	south_corvus = {
 		strategic_regions = {
-			56
-			58
-			59
-			60
-			63
+			16
 		}
 	}
 	
-	south_corvus = {
+	south_cetus = {
 		strategic_regions = {
-			48
-			154
+			17
+		}
+	}
+	
+	south_aquila = {
+		strategic_regions = {
+			21
+		}
+	}
+	
+	#north centaura
+	
+	macer_mountains = {
+		strategic_regions = {
+			29
+			30
+			47
+		}
+	}
+	
+	tucana_region = {
+		strategic_regions = {
+			42
+		}
+	}
+	
+	centauri_region = {
+		strategic_regions = {
+			35
+		}
+	}
+	
+	# hydra
+	
+	lepus_region = {
+		strategic_regions = {
+			4
+		}
+	}
+	
+	hydrus_region = {
+		strategic_regions = {
+			5
 		}
 	}
 	
@@ -32,9 +70,17 @@ areas = {
 	
 	ursan_east_canis = {
 		strategic_regions = {
+			9
+			85
+		}
+	}
+	
+	canis_region = {
+		strategic_regions = {
 			8
 			9
 			85
+			86
 		}
 	}
 	

@@ -53,15 +53,8 @@ spriteTypes = {
 		name = "GFX_modifiers_generic_desert"
 		texturefile = "gfx/interface/state_modifiers/modifiers_generic_desert.dds"
 	}
-	
-	
 
 	## Decision images
-
-	SpriteType = {
-		name = "GFX_decision_cat_generic_south_corvus"
-		texturefile = "gfx/interface/decisions/decision_cat_generic_south_corvus.dds"
-	}
 
 	SpriteType = {
 		name = "GFX_decision_cat_generic_rodinia"
@@ -108,19 +101,26 @@ spriteTypes = {
 		texturefile = "gfx/interface/nothing.dds"
 	}
 
+	##Ideologies
+	
 	spriteType = {
 		name = "GFX_ideology_democratic_left_group"
-		texturefile = "gfx/interface/ideologies/democratic_group.dds"
+		texturefile = "gfx/interface/ideologies/democratic_left_group.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ideology_democratic_right_group"
-		texturefile = "gfx/interface/ideologies/democratic_group.dds"
+		texturefile = "gfx/interface/ideologies/democratic_right_group.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_ideology_auth_dem_group"
-		texturefile = "gfx/interface/ideologies/neutrality_group.dds"
+		texturefile = "gfx/interface/ideologies/auth_dem_group.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_ideology_authoritarian_democratic"
+		texturefile = "gfx/interface/ideologies/auth_dem_group_real.dds"
 	}
 	
 	# menu interface wawawa!!
@@ -167,5 +167,89 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decision_cat_aqu_national_assembly"
 		texturefile = "gfx/interface/decisions/decision_cat_generic_assembly.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_aqu_state_38"
+		texturefile = "gfx/interface/aquilan_gui/1.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_aqu_state_156"
+		texturefile = "gfx/interface/aquilan_gui/2.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_aqu_state_9"
+		texturefile = "gfx/interface/aquilan_gui/3.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_aqu_state_36"
+		texturefile = "gfx/interface/aquilan_gui/4.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_aqu_state_35"
+		texturefile = "gfx/interface/aquilan_gui/5.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_aqu_state_37"
+		texturefile = "gfx/interface/aquilan_gui/6.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_aqu_state_228"
+		texturefile = "gfx/interface/aquilan_gui/7.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_aqu_state_34"
+		texturefile = "gfx/interface/aquilan_gui/8.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_aqu_state_152"
+		texturefile = "gfx/interface/aquilan_gui/9.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_aqu_state_33"
+		texturefile = "gfx/interface/aquilan_gui/10.dds"
+		noOfFrames = 3
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_aqu_state_32"
+		texturefile = "gfx/interface/aquilan_gui/11.dds"
+		noOfFrames = 3
+        transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_aqu_state_31"
+		texturefile = "gfx/interface/aquilan_gui/12.dds"
+		noOfFrames = 3
+        transparencecheck = yes
 	}
 }

@@ -8,6 +8,10 @@ state={
 	history = {
 		owner = CET
 		add_core_of = CET
+		add_core_of = LEO
+		add_dynamic_modifier = { 
+			modifier = leonite_peripheral_state_modifier
+		}
 		buildings = {
 
 			industrial_complex = 1
@@ -16,7 +20,7 @@ state={
 		1944.1.1.12 = {
 			owner = ANT
 			controller = ANT
-}
+		}
 		victory_points = {
 			120 3
 		}
@@ -24,11 +28,12 @@ state={
 			4926 10
 		}
 	}
+
 	provinces={
-		64 120 405 561 1026 1047 1118 1434 1554 1753 1860 2096 2163 2507 2581 2595 3306 4773 4782 4839 4848 4911 4926 4927 4939 4945 4973 4985 4986 5001 5037 
+		64 120 405 561 1026 1047 1118 1434 1554 1598 1753 1860 2163 2507 2581 2595 3306 4739 4773 4782 4789 4839 4848 4911 4926 4927 4939 4945 4973 4974 4985 4986 5001 5037 
 	}
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-        manpower=5714352
+        manpower=4029036
         state_category = city
 }

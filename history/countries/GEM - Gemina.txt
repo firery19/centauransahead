@@ -38,6 +38,7 @@ set_technology = {
 	gw_artillery = 1
 	basic_train = 1
 	tech_trucks = 1
+	basic_infrastructure = 1
 	# b
 	# c
 	# d
@@ -61,14 +62,17 @@ set_convoys = 25
 set_cosmetic_tag = GEMORION
 
 set_popularities = {
-	democratic = 55
-	communism = 10
-	fascism = 5
+    democratic_left = 0
+	democratic = 15
+    democratic_right = 0
+   	auth_dem = 55
 	neutrality = 30
+	communism = 0
+	fascism = 0
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = auth_dem
 	last_election = "1898.1.1"
 	election_frequency = 48
 	elections_allowed = yes

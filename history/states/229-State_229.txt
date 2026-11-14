@@ -1,0 +1,34 @@
+
+state={
+	id=229
+	name="STATE_229"
+	resources={
+		
+	}
+	history={
+		owner = CET
+		add_core_of = CET
+		add_claim_by = ANT
+		add_claim_by = SKO
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			dockyard = 0
+		}
+		victory_points = {
+			3153 1
+		}
+		1944.1.1.12 = {
+			owner = ANT
+			controller = ANT
+		}
+	}
+	provinces={
+		541 980 1540 2157 2446 2465 2802 3102 3153 3208 3282 5249 5262 5269 5286 5304 5320 5324 5340 5350 5365 
+	}
+	manpower=2105924
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -5,6 +5,9 @@ state={
 		owner = URS
 		add_core_of = HYS
 		add_core_of = LPS
+1944.1.1 = {
+	owner = HYS
+}
 		buildings = {
 			infrastructure = 1
 		}

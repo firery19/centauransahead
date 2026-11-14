@@ -98,6 +98,8 @@
  # - wartime administration
  COV_wartime_administration:0 "Wartime Administration"
  COV_wartime_administration_desc:0 "
+ COV_prewar_preparation:0 "Prewar Preparation"
+ COV_prewar_preparation_desc:0 "If supply is lower than 5, army attack and defence is lowered.\nIf civil stability is less than 10, stability and war support is lowered.\nIf coal supply is less than 0, factory output drastically decreases.\nSupply Status: [?corvun_supply_scourge|Y0]\nCivil Stability: [?corvun_civil_status_scourge|Y0]\nCoal Supply: [?corvun_coal_scourge|Y0]"
  COV_implement_rationing_policy:0 "Implement Rationing Policy"
  COV_implement_rationing_policy_desc:0 "
  COV_increase_coal_production:0 "Increase Coal Production"
@@ -336,6 +338,16 @@
  cov.1.t:0 "Impending Economic Collapse"
  cov.1.d:0 "The current state of the Corvun economy is reaching its limits. We need to enact policies to remedy the problem before it spirals out of control!\n\nCheck decisions tab."
  cov.1.a:0 "Start by rationing"
+ cov.2.t:0 "Vassalisation of Corvus"
+ cov.2.d:0 "Due to our help in the Corvus War, and the terms that came with it, the leader of the Corvun Confederation has accepted being integrated under the Imperium."
+ cov.2.a:0 "Cool, Great."
+ cov.3.t:0 "Consequences of Aid"
+ cov.3.d:0 "As in the terms negotiated, we, the Corvun Confederation, has been integrated into the Antares Imperium"
+ cov.3.a:0 "Why would you ever take this?"
+ cov.4.t:0 "Corvus Seeks Help"
+ cov.4.d:0 "Corvus reaches out to us, looking for help. Shall we?"
+ cov.4.a:0 "Yes"
+ cov.4.b:0 "No"
  ######
  # misc
  ######
@@ -346,5 +358,6 @@
  
  COV_neutrality_party:0 "House of Khorin"
  COV_democratic_party:0 "Democratic Dissidents"
+ COV_democratic_left_party:0 "Democratic Dissidents"
  COV_fascism_party:0 "Imperial Corvun Army"
  COV_communism_party:0 "Underground Socialist Parties"

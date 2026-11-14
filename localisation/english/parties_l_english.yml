@@ -1,14 +1,14 @@
 ﻿l_english:
- communism:0 "Communist"
- communism_noun:0 "Communism"
- democratic:0 "Liberal-Democratic"
- democratic_noun:0 "Liberal Democracy"
- democratic_right:0 "Conservative-Democratic"
- democratic_right_noun:0 "Conservative-Democracy"
- democratic_left:0 "Social-Democratic"
- democratic_left_noun:0 "Social-Democracy"
- fascism:0 "Fascist"
- fascism_noun:0 "Fascism"
+ communism:0 "Collectivism"
+ communism_noun:0 "Collectivist"
+ democratic:0 "Liberal Democracy"
+ democratic_noun:0 "Liberal Democratic"
+ democratic_right:0 "Conservative Democracy"
+ democratic_right_noun:0 "Conservative Democratic"
+ democratic_left:0 "Social Democracy"
+ democratic_left_noun:0 "Social Democratic"
+ fascism:0 "Totalitarian Ultranationalism"
+ fascism_noun:0 "Totalitarian Ultranationalism"
  fascism_desc:0 "Totalitarian Regime"
  communism_desc:0 "Totalitarian Regime"
  democratic_desc:0 "Democratic Regime"
@@ -16,9 +16,10 @@
  democratic_left_desc:0 "Democratic Regime"
  neutrality:0 "Absolute Monarchy"
  neutrality_noun:0 "Monarchism"
- neutrality_desc:0 "Authoritarian Regime"
- auth_dem:0 "Authoritarian-Democratic"
- auth_dem_noun:0 "Authoritarian-Democracy"
+ neutrality_desc:0 "Monarchic Regime"
+ neutrality_drift:0 "Daily Monarchist Support"
+ auth_dem:0 "Authoritarian"
+ auth_dem_noun:0 "Authoritarian"
  auth_dem_desc:0 "Authoritarian Regime"
  democratic_right_drift:0 "Daily Conservative Support"
  democratic_left_drift:0 "Daily Social-Democratic Support"
@@ -28,40 +29,110 @@
  institute_press_censorship_democratic_l_state:0 "Institute Press Censorship"
  institute_press_censorship_democratic_l_state_desc:0 "These are dangerous times and we can't allow dissentin voices to tear our country apart. Restricting the freedom of the press is necessary to ensure that the truth is heard load and clear."
 
+#sub ideologies
+ authoritarian_democratic:0 "Authoritarian Democratic"
+ authoritarian_democratic_desc:0 "Although having democracy in name, authoritarian democracy is nothing like that. All of the power concentrates in hands of one leader, who only has the parliament to make his rule seem legit and popular among the populace."
+ 
+ ultranationalism:0 "Ultranationalism"
+ ultranationalism_desc:0 "Ultranationalism is an extreme and radical form of nationalism in which devotion to one's own nation or ethnic group is pushed far beyond ordinary patriotism. It asserts a belief in national or cultural supremacy, often viewing other nations or minority groups with hostility."
+
 # Starting parties for un-focustree nations
- RIA_neutrality:0 "House of Zvezda"
- RIA_neutrality_long:0 "House of Zvezda Loyalists"
+ RIA_neutrality_party:0 "House of Zvezda"
+ RIA_neutrality_party_long:0 "House of Zvezda Loyalists"
  RIA_auth_dem_party:0 "RNP (N)"
  RIA_auth_dem_party_long:0 "Riaan Nationalist Party - Nationalists"
  RIA_democratic_right_party:0 "RNP (C)"
  RIA_democratic_right_party_long:0 "Riaan Nationalist Party - Capitalist Faction"
- RIA_democratic_party:0 "RDF"
- RIA_democratic_party_long:0 "Riaan Democratic Front"
+ RIA_democratic_party:0 "UDF"
+ RIA_democratic_party_long:0 "United Democratic Front"
  RIA_democratic_left_party:0 "RNP (L)"
  RIA_democratic_left_party_long:0 "Riaan Nationalist Party - Liberal Faction"
- RIA_fascism_party:0 "RNP (U.N)"
+ RIA_fascism_party:0 "RNP (UN)"
  RIA_fascism_party_long:0 "Riaan Nationalist Party - Ultranationalist Faction"
  RIA_communism_party:0 "CPR"
- RIA_communism_party_long:0 "Communist Party of Riaa" #i cant be bothered doing all the parties for all nations so ill just do the ruling ones
+ RIA_communism_party_long:0 "Collectivist Party of Riaa" #i cant be bothered doing all the parties for all nations so ill just do the ruling ones
  CLB_democratic_party:0 "CC"
  CLB_democratic_party_long:0 "United Columba Coalition"
  CLB_democratic_left_party:0 "PP"
  CLB_democratic_left_party_long:0 "Progressive Party"
- GRS_neutrality_party:0 "House Flamenco"
- GRS_neutrality_party_long:0 "House Flamenco"
- VEG_neutrality_party:0 "House Verde"
- VEG_neutrality_party_long:0 "House Verde"
+ GRS_neutrality_party:0 "House of Flamenco"
+ GRS_neutrality_party_long:0 "House of Flamenco"
+ VEG_neutrality_party:0 "House of Verde"
+ VEG_neutrality_party_long:0 "House of Verde"
+ VUL_neutrality_party:0 "House Zvezda"
+ VUL_neutrality_party_long:0 "House Zvezda"
+ VUL_democratic_party:0 "RNP"
+ VUL_democratic_party_long:0 "Riaan Nationalist Party"
+ LAC_auth_dem_party:0 "Democratic Peoples Party"
+ LAC_auth_dem_party_long:0 "Democratic Peoples Party"
+ LAC_democratic_left_party:0 "LUDaSP"
+ LAC_democratic_left_party_long:0 "Lacertan United Democratic Socialist Party"
+ LAC_communism_party:0 "LPSP"
+ LAC_communism_party_long:0 "Lacertan Peoples Socialist Party"
+ LAC_fascism_party:0 "Lacertan National Rejuvenation Party"
+ LAC_fascism_party_long:0 "Lacertan National Party for the Rejuvenation of the Nation and the Restoration of the Libran Imperium"
+ LAC_neutrality_party:0 "Cetan Loyalists"
+ LAC_neutrality_party_long:0 "Cetan Loyalists"
  #can be bothered doing that either
+ #hydrus,lepus and canis
+ HYS_auth_dem_party:0 "Provisional Government"
+ HYS_democratic_right_party:0 "Peace and Progress"
+ HYS_democratic_party:0 "Liberal Union"
+ HYS_democratic_left_party:0 "Liberal Union (Leftist)"
+ LPS_auth_dem_party:0 "Provisional Government"
+ LPS_democratic_right_party:0 "Democratic Progress"
+ LPS_democratic_party:0 "Federalist"
+ LPS_democratic_left_party:0 "Progressives"
+ CNS_auth_dem_party:0 "Provisional Government"
+ CNS_democratic_right_party:0 "Anti-Federalist"
+ CNS_democratic_party:0 "National Rally"
+ CNS_democratic_left_party:0 "Rural Alliance"
 
+ 
+ #################
+ # Aquilan Parties
+ #################
+ AQU_neutrality_party:0 "House of Silva" 
+ 
+ AQU_auth_dem_party:0 "Aquilan Royal Army"
+ 
+ AQU_democratic_party:0 "CPP"
+ AQU_democratic_party_long:0 "Civic Progressive Party of Aquila"
+ 
+ AQU_democratic_right_party:0 "DAP"
+ AQU_democratic_right_party_long:0 "Democratic Alliance for the people of Aquila"
+ 
+ AQU_democratic_left_party:0 "NCP (Idealist)"
+ AQU_democratic_left_party_long:0 "Aquilan National-Collectivist Party"
+ 
+ AQU_communism_party:0 "NCP (Mainstream)"
+ AQU_communism_party_long:0 "Aquilan National-Collectivist Party"
+ 
+ AQU_fascism_party:0 "LAP"
+ AQU_fascism_party_long:0 "League of Aquilan Patriots"
+ 
+ #################
+ # Leonite Parties
+ #################
+
+ LEO_auth_dem_party:0 "GAP (PB)"
+ LEO_auth_dem_party_long:0 "Grand Army of the Prides - Persea Bar Faction"
+ 
+ LEO_fascism_party:0 "GAP (C)"
+ LEO_fascism_party_long:0 "Grand Army of the Prides - Cyrus Faction"
+
+ 
+
+ 
  conservatism:0 "Conservatism"
  conservatism_desc:0 "Considering rapid changes to society to be potentially harmful, conservatism espouses tradition and moderate reforms, sometimes advocating a return to old moral values."
  liberalism:0 "Liberalism"
  liberalism_desc:0 "With a long philosophical tradition of valuing personal liberty, liberalism views safeguarding these rights as the primary function of the state."
  socialism:0 "Socialism"
  socialism_desc:0 "Striving for equality and a socialist state by reformist means, democratic socialism aims to abolish or mitigate the effects of capitalism with public mandate."
- marxism:0 "Marxism"
+ marxism:0 "National-Collectivism"
  marxism_desc:0 "Encompassing a broad spectrum of economic and historical views, Marxist politics seek to apply the theories of Karl Marx to political practice. Class struggle and the need for transition to a society based on common ownership of the means of production characterize these ideologies."
- leninism:0 "Leninism"
+ leninism:0 "International-Collectivism"
  leninism_desc:0 "A political ideology based in Marxist thought, Leninism seeks to establish a socialist state by a vanguard party leading a revolution overthrowing capitalist society. Once in power, the party rules through a system whereby policies are open for internal debate until a decision has been made."
  stalinism:0 "Stalinism"
  stalinism_desc:1 "Identifying as a form of government applying and developing Marxist-Leninist policies, Stalinism emphasizes rapid industrialization and collectivization as well as the need for a strong, authoritative socialist state to purge any counter-revolutionary elements."
@@ -78,7 +149,7 @@
  falangism:0 "Falangism"
  falangism_desc:0 "An authoritarian ideology with traits of fascism and conservatism, Falangism values national and Catholic identity."
  rexism:0 "Rexism"
- rexism_desc:0 "Strongly opposed to both liberal and communist ideals, Rexism is a staunchly conservative nationalist movement who advocate a corporatist economic policy. Employing increasingly populist and authoritarian rhetoric, their ideals are shifting closer to other fascist movements."
+ rexism_desc:0 "Strongly opposed to both liberal and Collectivist ideals, Rexism is a staunchly conservative nationalist movement who advocate a corporatist economic policy. Employing increasingly populist and authoritarian rhetoric, their ideals are shifting closer to other fascist movements."
  despotism:0 "Despotic"
  despotism_desc:0 "Despotism is a form of government in which a single person rules with absolute power."
  oligarchism:0 "Oligarchic"

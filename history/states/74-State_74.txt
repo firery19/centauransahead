@@ -9,6 +9,9 @@ state={
 	history={
 		owner = TUC
 		add_core_of = TUC
+1944.1.1 = {
+	owner = RIA
+}
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2

@@ -23,17 +23,140 @@ ANT_TD_HISTORICAL = {
 	for_countries = { ANT }
 
 	type = ship
-	ship_types = { ship_hull_light destroyer }		
+	ship_types = { ship_hull_torpedo }		
 
 	can_use = { always = yes }
 
 	prefix = "AIS "								
-	fallback_name = "AIS V%d"					
+	fallback_name = "AIS %d.Sor"					
 
-	unique = {
-"X01" "X02" "X03" "X04" "X05" "X06" "X07" "X08" "X09" "X10" "X11" "X12" "X13" "X14" "X15" "X16" "X17" "X18" "X19" "X20" "X21" "X22" "X23" "X24" "X25" "X26" "X27" "X28" "X29" "X30" "X31" "X32" "X33" "X34" "X35" "X36" "X37" "X38" "X39" "X40" "X41" "X42" "X43" "X44" "X45" "X46" "X47" "X48" "X49" "X50" "W01" "W02" "W03" "W04" "W05" "W06" "W07" "W08" "W09" "W10" "W11" "W12" "W13" "W14" "W15" "W16" "W17" "W18" "W19" "W20"
+unique = {
+"097.Kha" "098.Kha" "099.Kha" "100.Kha" "101.Kha" "102.Kha" "103.Kha" "104.Kha" "105.Kha"
+"106.Sor" "107.Sor" "108.Sor" "109.Sor" "110.Sor" "111.Sor" "112.Sor" "113.Sor" "114.Sor"
+"115.Vil" "116.Vil" "117.Vil" "118.Vil" "119.Vil" "120.Vil" "121.Vil" "122.Vil" "123.Vil"
+"124.Han" "125.Han" "126.Han" "127.Han" "128.Han" "129.Han" "130.Han" "131.Han" "132.Han"
+"133.Pro" "134.Pro" "135.Pro" "136.Pro" "137.Pro" "138.Pro" "139.Pro" "140.Pro" "141.Pro"
+"142.Dev" "143.Dev" "144.Dev" "145.Dev" "146.Dev" "147.Dev" "148.Dev" "149.Dev" "150.Dev"
+"151.Aku" "152.Aku" "153.Aku" "154.Aku" "155.Aku" "156.Aku" "157.Aku" "158.Aku" "159.Aku"
+"160.Kha" "161.Kha" "162.Kha" "163.Kha" "164.Kha" "165.Kha" "166.Kha" "167.Kha" "168.Kha"
+"169.Sor" "170.Sor" "171.Sor" "172.Sor" "173.Sor" "174.Sor" "175.Sor" "176.Sor" "177.Sor"
+"178.Vil" "179.Vil" "180.Vil" "181.Vil" "182.Vil" "183.Vil" "184.Vil" "185.Vil" "186.Vil"
+"187.Han" "188.Han" "189.Han" "190.Han" "191.Han" "192.Han" "193.Han" "194.Han" "195.Han"
+"196.Pro" "197.Pro" "198.Pro" "199.Pro" "200.Pro" "201.Pro" "202.Pro" "203.Pro" "204.Pro"
+"205.Dev" "206.Dev" "207.Dev" "208.Dev" "209.Dev" "210.Dev" "211.Dev" "212.Dev" "213.Dev"
+"214.Aku" "215.Aku" "216.Aku" "217.Aku" "218.Aku" "219.Aku" "220.Aku" "221.Aku" "222.Aku"
+"223.Kha" "224.Kha" "225.Kha" "226.Kha" "227.Kha" "228.Kha" "229.Kha" "230.Kha" "231.Kha"
+"232.Sor" "233.Sor" "234.Sor" "235.Sor" "236.Sor" "237.Sor" "238.Sor" "239.Sor" "240.Sor"
+"241.Vil" "242.Vil" "243.Vil" "244.Vil" "245.Vil" "246.Vil" "247.Vil" "248.Vil" "249.Vil"
+"250.Han" "251.Han" "252.Han" "253.Han" "254.Han" "255.Han" "256.Han" "257.Han" "258.Han"
+"259.Pro" "260.Pro" "261.Pro" "262.Pro" "263.Pro" "264.Pro" "265.Pro" "266.Pro" "267.Pro"
+"268.Dev" "269.Dev" "270.Dev" "271.Dev" "272.Dev" "273.Dev" "274.Dev" "275.Dev" "276.Dev"
+"277.Aku" "278.Aku" "279.Aku" "280.Aku" "281.Aku" "282.Aku" "283.Aku" "284.Aku" "285.Aku"
+"286.Kha" "287.Kha" "288.Kha" "289.Kha" "290.Kha" "291.Kha" "292.Kha"
+"293.Kha" "294.Sor" "295.Sor" "296.Sor" "297.Sor" "298.Sor" "299.Sor"
+"300.Sor" "301.Sor" "302.Vil" "303.Vil" "304.Vil" "305.Vil" "306.Vil"
+"307.Vil" "308.Vil" "309.Vil" "310.Ana" "311.Ana" "312.Ana" "313.Ana"
+"314.Ana" "315.Han" "316.Han" "317.Han" "318.Han" "319.Han" "320.Han"
+"321.Han" "322.Han" "323.Pro" "324.Pro" "325.Pro" "326.Pro" "327.Pro"
+"328.Pro" "329.Pro" "330.Pro" "331.Ann" "332.Ann" "333.Ann" "334.Ann"
+"335.Ann" "336.Dev" "337.Dev" "338.Dev" "339.Dev" "340.Dev" "341.Dev"
+"342.Dev" "343.Dev" "344.Aku" "345.Aku" "346.Aku" "347.Aku" "348.Aku"
+"349.Aku" "350.Aku" "351.Aku" "352.Kha" "353.Kha" "354.Kha" "355.Kha"
+"356.Kha" "357.Kha" "358.Kha" "359.Kha" "360.Sor" "361.Sor" "362.Sor"
+"363.Sor" "364.Sor" "365.Sor" "366.Sor" "367.Sor" "368.Nov" "369.Nov"
+"370.Nov" "371.Vil" "372.Vil" "373.Vil" "374.Vil" "375.Vil" "376.Vil"
+"377.Vil" "378.Vil" "379.Han" "380.Han" "381.Han" "382.Han" "383.Han"
+"384.Han" "385.Han" "386.Han" "387.Ana" "388.Ana" "389.Ana" "390.Ana"
+"391.Ana" "392.Pro" "393.Pro" "394.Pro" "395.Pro" "396.Pro" "397.Pro"
+"398.Pro" "399.Pro" "400.Dev" "401.Dev" "402.Dev" "403.Dev" "404.Dev"
+"405.Dev" "406.Dev" "407.Dev" "408.Aku" "409.Aku" "410.Aku" "411.Aku"
+"412.Aku" "413.Aku" "414.Aku" "415.Aku" "416.Kha" "417.Kha" "418.Kha"
+"419.Kha" "420.Kha" "421.Kha" "422.Kha" "423.Kha" "424.Sor" "425.Sor"
+"426.Sor" "427.Sor" "428.Sor" "429.Sor" "430.Sor" "431.Sor" "432.Vil"
+"433.Vil" "434.Vil" "435.Vil" "436.Vil" "437.Vil" "438.Vil" "439.Vil"
+"440.Ann" "441.Ann" "442.Ann" "443.Ann" "444.Ann" "445.Han" "446.Han"
+"447.Han" "448.Han" "449.Han" "450.Han" "451.Han" "452.Han" "453.Pro"
+"454.Pro" "455.Pro" "456.Pro" "457.Pro" "458.Pro" "459.Pro" "460.Pro"
+"461.Noh" "462.Noh" "463.Noh" "464.Dev" "465.Dev" "466.Dev" "467.Dev"
+"468.Dev" "469.Dev" "470.Dev" "471.Dev" "472.Aku" "473.Aku" "474.Aku"
+"475.Aku" "476.Aku" "477.Aku" "478.Aku" "479.Aku" "480.Kha" "481.Kha"
+"482.Kha" "483.Kha" "484.Kha" "485.Kha" "486.Kha" "487.Kha" "488.Ana"
+"489.Ana" "490.Ana" "491.Ana" "492.Ana" "493.Sor" "494.Sor" "495.Sor"
+"496.Sor" "497.Sor" "498.Sor" "499.Sor" "500.Sor" "501.Vil" "502.Vil"
+"503.Vil" "504.Vil" "505.Vil" "506.Vil" "507.Vil" "508.Vil" "509.Han"
+"510.Han" "511.Han" "512.Han" "513.Han" "514.Han" "515.Han" "516.Han"
+"517.Akr" "518.Akr" "519.Akr" "520.Pro"
+"521.Pro" "522.Pro" "523.Pro" "524.Pro" "525.Pro" "526.Pro" "527.Pro"
+"528.Dev" "529.Dev" "530.Dev" "531.Dev" "532.Dev" "533.Dev" "534.Dev"
+"535.Dev" "536.Ann" "537.Ann" "538.Ann" "539.Ann" "540.Ann" "541.Aku"
+"542.Aku" "543.Aku" "544.Aku" "545.Aku" "546.Aku" "547.Aku" "548.Aku"
+"549.Kha" "550.Kha" "551.Kha" "552.Kha" "553.Kha" "554.Kha" "555.Kha"
+"556.Kha" "557.Sor" "558.Sor" "559.Sor" "560.Sor" "561.Sor" "562.Sor"
+"563.Sor" "564.Sor" "565.Tha" "566.Tha" "567.Tha" "568.Vil" "569.Vil"
+"570.Vil" "571.Vil" "572.Vil" "573.Vil" "574.Vil" "575.Vil" "576.Han"
+"577.Han" "578.Han" "579.Han" "580.Han" "581.Han" "582.Han" "583.Han"
+"584.Pro" "585.Pro" "586.Pro" "587.Pro" "588.Pro" "589.Pro" "590.Pro"
+"591.Pro" "592.Ana" "593.Ana" "594.Ana" "595.Ana" "596.Ana" "597.Dev"
+"598.Dev" "599.Dev" "600.Dev" "601.Dev" "602.Dev" "603.Dev" "604.Dev"
+"605.Aku" "606.Aku" "607.Aku" "608.Aku" "609.Aku" "610.Aku" "611.Aku"
+"612.Aku" "613.Kha" "614.Kha" "615.Kha" "616.Kha" "617.Kha" "618.Kha"
+"619.Kha" "620.Kha" "621.Oph" "622.Oph" "623.Oph" "624.Sor" "625.Sor"
+"626.Sor" "627.Sor" "628.Sor" "629.Sor" "630.Sor" "631.Sor" "632.Vil"
+"633.Vil" "634.Vil" "635.Vil" "636.Vil" "637.Vil" "638.Vil" "639.Vil"
+"640.Ann" "641.Ann" "642.Ann" "643.Ann" "644.Ann" "645.Han" "646.Han"
+"647.Han" "648.Han" "649.Han" "650.Han" "651.Han" "652.Han" "653.Pro"
+"654.Pro" "655.Pro" "656.Pro" "657.Pro" "658.Pro" "659.Pro" "660.Pro"
+"661.Dev" "662.Dev" "663.Dev" "664.Dev" "665.Dev" "666.Dev" "667.Dev"
+"668.Dev" "669.Aku" "670.Aku" "671.Aku" "672.Aku" "673.Aku" "674.Aku"
+"675.Aku" "676.Aku" "677.Kha" "678.Kha" "679.Kha" "680.Kha" "681.Kha"
+"682.Kha" "683.Kha" "684.Kha" "685.Ana" "686.Ana" "687.Ana" "688.Ana"
+"689.Ana" "690.Sor" "691.Sor" "692.Sor" "693.Sor" "694.Sor" "695.Sor"
+"696.Sor" "697.Sor" "698.Wkr" "699.Wkr" "700.Wkr" "701.Vil" "702.Vil"
+"703.Vil" "704.Vil" "705.Vil" "706.Vil" "707.Vil" "708.Vil" "709.Han"
+"710.Han" "711.Han" "712.Han" "713.Han" "714.Han" "715.Han" "716.Han"
+"717.Pro" "718.Pro" "719.Pro" "720.Pro" "721.Pro" "722.Pro" "723.Pro"
+"724.Pro" "725.Ann" "726.Ann" "727.Ann" "728.Ann" "729.Ann" "730.Dev"
+"731.Dev" "732.Dev" "733.Dev" "734.Dev" "735.Dev" "736.Dev" "737.Dev"
+"738.Aku" "739.Aku" "740.Aku" "741.Aku" "742.Aku" "743.Aku" "744.Aku"
+"745.Aku" "746.Kha" "747.Kha" "748.Kha" "749.Kha" "750.Kha" "751.Kha"
+"752.Kha" "753.Kha" "754.Sor" "755.Sor" "756.Sor" "757.Sor" "758.Sor"
+"759.Sor" "760.Sor"
+"761.Sor" "762.Vil" "763.Vil" "764.Vil" "765.Vil" "766.Vil" "767.Vil"
+"768.Vil" "769.Vil" "770.Van" "771.Van" "772.Van" "773.Han" "774.Han"
+"775.Han" "776.Han" "777.Han" "778.Han" "779.Han" "780.Han" "781.Ana"
+"782.Ana" "783.Ana" "784.Ana" "785.Ana" "786.Pro" "787.Pro" "788.Pro"
+"789.Pro" "790.Pro" "791.Pro" "792.Pro" "793.Pro" "794.Dev" "795.Dev"
+"796.Dev" "797.Dev" "798.Dev" "799.Dev" "800.Dev" "801.Dev" "802.Aku"
+"803.Aku" "804.Aku" "805.Aku" "806.Aku" "807.Aku" "808.Aku" "809.Aku"
+"810.Kha" "811.Kha" "812.Kha" "813.Kha" "814.Kha" "815.Kha" "816.Kha"
+"817.Kha" "818.Sor" "819.Sor" "820.Sor" "821.Sor" "822.Sor" "823.Sor"
+"824.Sor" "825.Sor" "826.Noa" "827.Noa" "828.Noa" "829.Vil" "830.Vil"
+"831.Vil" "832.Vil" "833.Vil" "834.Vil" "835.Vil" "836.Vil" "837.Ann"
+"838.Ann" "839.Ann" "840.Ann" "841.Ann" "842.Han" "843.Han" "844.Han"
+"845.Han" "846.Han" "847.Han" "848.Han" "849.Han" "850.Pro" "851.Pro"
+"852.Pro" "853.Pro" "854.Pro" "855.Pro" "856.Pro" "857.Pro" "858.Dev"
+"859.Dev" "860.Dev" "861.Dev" "862.Dev" "863.Dev" "864.Dev" "865.Dev"
+"866.Aku" "867.Aku" "868.Aku" "869.Aku" "870.Aku" "871.Aku" "872.Aku"
+"873.Aku" "874.Kha" "875.Kha" "876.Kha" "877.Kha" "878.Kha" "879.Kha"
+"880.Kha" "881.Kha" "882.Hor" "883.Hor" "884.Hor" "885.Sor" "886.Sor"
+"887.Sor" "888.Sor" "889.Sor" "890.Sor" "891.Sor" "892.Sor" "893.Vil"
+"894.Vil" "895.Vil" "896.Vil" "897.Vil" "898.Vil" "899.Vil" "900.Vil"
+"901.Kha" "902.Kha" "903.Kha" "904.Kha" "905.Kha" "906.Kha" "907.Ana"
+"908.Ana" "909.Ana" "910.Ana" "911.Ana" "912.Sor" "913.Sor" "914.Sor"
+"915.Sor" "916.Sor" "917.Sor" "918.Sor" "919.Ann" "920.Ann" "921.Ann"
+"922.Ann" "923.Ann" "924.Nov" "925.Nov" "926.Nov" "927.Vil" "928.Vil"
+"929.Vil" "930.Vil" "931.Vil" "932.Vil" "933.Vil" "934.Han" "935.Han"
+"936.Han" "937.Han" "938.Han" "939.Han" "940.Han" "941.Noh" "942.Noh"
+"943.Noh" "944.Pro" "945.Pro" "946.Pro" "947.Pro" "948.Pro" "949.Pro"
+"950.Pro" "951.Dev" "952.Dev" "953.Dev" "954.Dev" "955.Dev" "956.Dev"
+"957.Dev" "958.Akr" "959.Akr" "960.Akr" "961.Aku" "962.Aku" "963.Aku"
+"964.Aku" "965.Tha" "966.Tha" "967.Tha" "968.Kha" "969.Kha" "970.Kha"
+"971.Kha" "972.Kha" "973.Kha" "974.Kha" "975.Oph" "976.Oph" "977.Oph"
+"978.Sor" "979.Sor" "980.Sor" "981.Sor" "982.Sor" "983.Sor" "984.Sor"
+"985.Wkr" "986.Wkr" "987.Wkr" "988.Nau" "989.Nau" "990.Nau" "991.Stk"
+"992.Stk" "993.Stk" "994.Car" "995.Car" "996.Car" "997.Vis" "998.Vis"
+"999.Vis"
 
-	}
 }
 
 ### LIGHT CRUISER NAMES###
@@ -112,10 +235,10 @@ ANT_BB_HISTORICAL = {
 	"Iota"  "Alya" 
 	"Itermundi" "Trypus" "Akubens" "Skorpio" 
 	"Rana" "Elektra" "Thaumas" "Heze" "Auva" "Hera"
-	"Regulus" "Subra" "Eversor" "Lesath" 				#post 1930 ships
+	"Regulus" "Subra" "Eversor" "Lesath"
 	"Arminius" "Severus" "Erantus" "Valantis" "Tacitus"
+	"Sol" "Luna" "Forma"
 	}
-	# "Sol" "Luna" "Forma"
 	# "Tau" "Therio" "Sanct" "Rector" "Arden"
 	# "Omikron" "Akrab"
 	# "Hyperion" "Ardia" "Enyo" "Eris"
@@ -137,7 +260,7 @@ ANT_BC_HISTORICAL = {
 	fallback_name = "AIS Skorpius Class CC - %s"		
 
 	unique = {
-           "Kharon" "Lesath" "Villiama" "Aeminiva" "Leto" "Kanar"
+           "Kharon" "Lesath" "Villiama" "Aeminiva" "Leto" "Kanar"	#made up names
 	   "Arminius" "Severus" "Erantus" "Valantis" "Tacitus"
  	}
 }
@@ -199,4 +322,70 @@ ANT_SS_HISTORICAL = {
 	
 	unique = {
 "S-I Fish" "S-II Crab" "S-III Shell" "S-IV Squid" "S-V Octopus" "S-VI Snail" "S-VII Seagrass" "S-VIII Coral" "S-IX Barnacle" "S-X Whale"  "S-XI Shark" "S-XII Dolphin" "S-XIII Eel" "S-XIV Clam" "S-XV Jellyfish" "S-XVI Kelp" "S-XVII Starfish" "S-XVIII Urchin" "S-XIX Seahorse" "S-XX Manta"  "S-XXI Anemone" "S-XXII Lobster" "S-XXIII Mussel" "S-XXIV Nautilus" "S-XXV Plankton" "S-XXVI Ray" "S-XXVII Triton" "S-XXVIII Leviathan" "S-XXIX Kraken" "S-XXX Narwhal"  "S-XXXI Cuttlefish" "S-XXXII Piranha" "S-XXXIII Seaweed" "S-XXXIV Coelacanth" "S-XXXV Marlin" "S-XXXVI Snapper" "S-XXXVII Grouper" "S-XXXVIII Stingray" "S-XXXIX Tsunami" "S-XL Driftwood"  "S-XLI Lanternfish" "S-XLII Megalodon" "S-XLIII Remora" "S-XLIV Scallop" "S-XLV Algae" "S-XLVI Sea Cucumber" "S-XLVII Whelk" "S-XLVIII Oyster" "S-XLIX Moray" "S-L Tide" 	}
+}
+
+
+
+
+
+
+
+
+
+
+#	DEAD AHEAD SHIPS
+ANT_BB_HISTORICAL_LATE = {
+	name = NAME_THEME_HISTORICAL_BB_LATE
+
+	for_countries = { ANT }
+	
+	can_use = { always = yes }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "AIS "								
+	fallback_name = "AIS Antares Class BB - %s"		
+
+	unique = {
+	"Tau" "Therio" "Sanct" "Rector" "Arden"
+	"Omikron" "Akrab"
+	"Hyperion" "Ardia" "Enyo" "Eris"
+}
+## A-A LIGHT CRUISER NAMES###
+ANT_CLAA_HISTORICAL_LATE = {
+	name = NAME_THEME_HISTORICAL_CLAA_LATE
+
+	for_countries = { ANT }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	can_use = { always = yes }
+	
+	prefix = "AIS  "								
+	fallback_name = "AIS CLAA - %s"
+
+	unique = {
+		"Aurum Aer" "Sol Aer"
+	}
+}
+
+### HEAVY CRUISER NAMES###
+ANT_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { ANT }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	can_use = { always = yes }
+	
+	prefix = "AIS "								
+	fallback_name = "AIS Kalvin Class CA - %s"
+
+	unique = {
+		"Rubrum" "Maroon"
+	}
 }

@@ -32,3 +32,32 @@ COVLGS = {
 	color = rgb { 0  100  100 }
 	color_ui  = rgb { 0  100  100 }
 }
+GRS_empire = {
+    color = rgb { 150 0 70 }
+	color_ui  = rgb { 150 0 70 }
+}
+
+GJAATKAEMP = { 
+	color = rgb { 57  115  134 }
+	color_ui  = rgb { 27  85  104 }
+}
+
+HYROLD = { 
+	color = rgb { 237 177 165 }
+	color_ui  = rgb { 207 147 135 }
+}
+
+ORION_OHSIX = { 
+	color = rgb { 32 75 179 }
+	color_ui  = rgb { 2 45 149 }
+}
+
+CET_IMP = { 
+	color = rgb { 10 100 30 }
+	color_ui  = rgb { 10 100 30 }
+}
+
+CET_NIP = { 
+	color = rgb { 10 100 75 }
+	color_ui  = rgb { 10 100 75 }
+}

@@ -2,11 +2,12 @@ capital = 118
 
 oob = "HYR_1900"
 set_technology = {
-	infantry_weapons = 3
-	tech_support = 3
-	tech_recon = 3
-	engineers_tech = 3
-	gw_artillery = 3
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+	engineers_tech = 1
+	gw_artillery = 1
+	basic_infrastructure = 1
 }
 
 set_research_slots = 3
@@ -26,6 +27,16 @@ set_popularities = {
 	neutrality = 5
 }
 
+
+set_popularities = {
+    democratic_left = 52
+	democratic = 13
+    democratic_right = 22
+   	auth_dem = 0
+	neutrality = 1
+	communism = 12
+	fascism = 0
+}
 set_politics = {
 	ruling_party = democratic
 	last_election = "1900.1.1"

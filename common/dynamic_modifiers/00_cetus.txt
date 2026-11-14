@@ -12,3 +12,29 @@ sc_resistance_integration = {
         }
     }
 }
+
+CET_the_empty_ruralside = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	production_speed_buildings_factor = -0.05
+    supply_factor = -0.05
+}
+
+CET_trampled_grounds = { #get out of my way
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_bunker_build_speed
+	production_speed_buildings_factor = -0.05
+    production_speed_bunker_factor = 0.3
+    resistance_target = 0.25
+    local_factories = -0.1
+}
+
+CET_leonite_cooperation = { #least of our worries
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_bunker_build_speed
+    production_speed_bunker_factor = 0.05
+    recruitable_population_factor = 0.05
+}

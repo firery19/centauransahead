@@ -186,6 +186,411 @@ special_projects_category = {
 }
 
 hearts_of_forma_generic_category = {
+	itermundae = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+		
+		available = {
+			NOT = { any_state = { NOT = { is_owned_by = ROOT } } }
+		}
+	
+		visible = {
+			NOT = { any_state = { NOT = { is_owned_by = ROOT } } }
+		}
+	
+		fire_only_once = yes
+	
+		days_remove = 0
+	
+		cost = 75
+	
+		modifier = {
+		
+		}
+
+		complete_effect = {
+		every_state =
+		}
+	
+		remove_effect = {
+		
+		}
+		
+		effect_tooltip = {
+			
+		}
+			
+		ai_will_do = {
+			base = 1000000
+		}
+	}
+	upgrade_rural_states = {
+		icon = GFX_decision_generic_electricity
+		available = {
+			any_owned_state = {
+				has_dynamic_modifier = {
+					modifier = rural_manpower_destruction_0_modifier
+				}
+				infrastructure > 0
+			}
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		visible = {
+			any_owned_state = {
+				has_dynamic_modifier = {
+					modifier = rural_manpower_destruction_0_modifier
+				}
+			}
+		}
+		fire_only_once = no
+		days_remove = 180
+		cost = 40
+		modifier = {
+			civilian_factory_use = 1
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					AND = {
+						has_dynamic_modifier = {
+							modifier = rural_manpower_destruction_0_modifier
+						}
+						infrastructure > 0
+					}
+				}
+			remove_dynamic_modifier = { modifier = rural_manpower_destruction_0_modifier }
+			add_dynamic_modifier = { modifier = rural_manpower_destruction_1_modifier }
+			}
+		}
+		effect_tooltip = {
+		}
+		ai_will_do = {
+			base = 5
+		}
+	}
+	upgrade_rural_states_2 = {
+		icon = GFX_decision_generic_electricity
+		available = {
+			any_owned_state = {
+				has_dynamic_modifier = {
+					modifier = rural_manpower_destruction_1_modifier
+				}
+				infrastructure > 1
+			}
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			any_owned_state = {
+				has_dynamic_modifier = {
+					modifier = rural_manpower_destruction_1_modifier
+				}
+			}
+		}
+		fire_only_once = no
+		days_remove = 180
+		cost = 40
+		modifier = {
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					AND = {
+						has_dynamic_modifier = {
+							modifier = rural_manpower_destruction_1_modifier
+						}
+						infrastructure > 1
+					}
+				}
+			remove_dynamic_modifier = { modifier = rural_manpower_destruction_1_modifier }
+			add_dynamic_modifier = { modifier = rural_manpower_destruction_2_modifier }
+			}
+		}
+		effect_tooltip = {
+		}
+		ai_will_do = {
+			base = 5
+		}
+	}
+	upgrade_rural_states_3 = {
+		icon = GFX_decision_generic_electricity
+		available = {
+			any_owned_state = {
+				has_dynamic_modifier = {
+					modifier = rural_manpower_destruction_2_modifier
+				}
+				infrastructure > 2
+			}
+			num_of_civilian_factories_available_for_projects > 3
+		}
+		visible = {
+			any_owned_state = {
+				has_dynamic_modifier = {
+					modifier = rural_manpower_destruction_2_modifier
+				}
+			}
+		}
+		fire_only_once = no
+		days_remove = 180
+		cost = 40
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					AND = {
+						has_dynamic_modifier = {
+							modifier = rural_manpower_destruction_2_modifier
+						}
+						infrastructure > 2
+					}
+				}
+			remove_dynamic_modifier = { modifier = rural_manpower_destruction_2_modifier }
+			add_dynamic_modifier = { modifier = rural_manpower_destruction_3_modifier }
+			}
+		}
+		effect_tooltip = {
+		}
+		ai_will_do = {
+			base = 5
+		}
+	}
+	upgrade_rural_states_4 = {
+		icon = GFX_decision_generic_electricity
+		available = {
+			any_owned_state = {
+				has_dynamic_modifier = {
+					modifier = rural_manpower_destruction_3_modifier
+				}
+				infrastructure > 3
+			}
+			num_of_civilian_factories_available_for_projects > 4
+		}
+		visible = {
+			any_owned_state = {
+				has_dynamic_modifier = {
+					modifier = rural_manpower_destruction_3_modifier
+				}
+			}
+		}
+		fire_only_once = no
+		days_remove = 180
+		cost = 40
+		modifier = {
+			civilian_factory_use = 4
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					AND = {
+						has_dynamic_modifier = {
+							modifier = rural_manpower_destruction_3_modifier
+						}
+						infrastructure > 3
+					}
+				}
+			remove_dynamic_modifier = { modifier = rural_manpower_destruction_3_modifier }
+			add_dynamic_modifier = { modifier = rural_manpower_destruction_4_modifier }
+			}
+		}
+		effect_tooltip = {
+		}
+		ai_will_do = {
+			base = 5
+		}
+	}
+	upgrade_rural_states_5 = {
+		icon = GFX_decision_generic_electricity
+		available = {
+			any_owned_state = {
+				has_dynamic_modifier = {
+					modifier = rural_manpower_destruction_4_modifier
+				}
+				infrastructure > 4
+			}
+			num_of_civilian_factories_available_for_projects > 5
+		}
+		visible = {
+			any_owned_state = {
+				has_dynamic_modifier = {
+					modifier = rural_manpower_destruction_4_modifier
+				}
+			}
+		}
+		fire_only_once = no
+		days_remove = 180
+		cost = 40
+		modifier = {
+			civilian_factory_use = 5
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					AND = {
+						has_dynamic_modifier = {
+							modifier = rural_manpower_destruction_4_modifier
+						}
+						infrastructure > 4
+					}
+				}
+			remove_dynamic_modifier = { modifier = rural_manpower_destruction_4_modifier }
+			}
+		}
+		effect_tooltip = {
+		}
+		ai_will_do = {
+			base = 5
+		}
+	}
+	
+	crush_leonites_1 = {
+
+		icon = GFX_decision_generic_nationalism
+		
+		available = {
+			has_stability > 0.8
+			if = {
+				limit = {
+					tag = AQU
+				}
+				NOT = {has_idea = AQU_leonite_problem_idea}
+			}
+
+			any_owned_state = {
+				has_dynamic_modifier = {
+					modifier = leonite_peripheral_state_modifier
+				}
+			}
+
+		#	num_divisions_in_states = {
+		#		count > 3
+		#		states = { 41 37 106 44 }
+		#	}
+
+		}
+		highlight_state_targets = {
+			state = 41
+			state = 37
+			state = 106
+			state = 44
+		}
+		visible = {
+			any_owned_state = {
+				has_dynamic_modifier = {
+					modifier = leonite_peripheral_state_modifier
+				}
+			}
+		}
+	
+		fire_only_once = no
+	
+		days_remove = 720
+	#	days_remove = 10
+
+		cost = 50
+	
+		modifier = {
+			stability_factor = -0.02
+			political_power_cost = 0.05
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = leonite_peripheral_state_modifier
+					}					
+				}
+			remove_dynamic_modifier = { modifier = leonite_peripheral_state_modifier }
+			}
+		}
+	}
+	crush_leonites_2 = {
+
+		icon = GFX_decision_oppression
+		
+		available = {
+		if = {
+			limit = {
+				tag = AQU
+			}
+			NOT = {has_idea = AQU_leonite_problem_idea}
+		}
+		
+			tooltip = "divisions_in_state_leonite_crush_tt"
+			any_owned_state = {
+				has_dynamic_modifier = {
+					modifier = leonite_core_state_modifier
+				}
+			}
+			num_divisions_in_states = {
+				count > 9
+				states = { 41 37 }
+			}
+		}
+	highlight_states = {
+		highlight_state_targets = {
+			state = 41
+			state = 37
+		}
+		highlight_color_while_active = 3
+		highlight_color_before_active = 2
+	}
+		visible = {
+			any_owned_state = {
+				has_dynamic_modifier = {
+					modifier = leonite_core_state_modifier
+				}
+			}
+		}
+	
+		fire_only_once = no
+	
+		days_remove = 360
+	#	days_remove = 10
+
+		cost = 100
+	
+		modifier = {
+			stability_factor = -0.05
+			political_power_cost = 0.2
+			command_power_gain = -0.01
+			weekly_manpower = -200
+			experience_gain_army = 0.05
+		}
+
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = leonite_core_state_modifier
+					}
+				}
+				add_manpower = -50000
+			remove_dynamic_modifier = { modifier = leonite_core_state_modifier }
+			add_dynamic_modifier = { modifier =  leonite_peripheral_state_modifier }
+			}
+
+		}
+
+		
+
+			
+		ai_will_do = {
+			base = 5
+		}
+	}
 	warfare_development_1 = {
 
 		icon = GFX_decision_generic_ignite_civil_war
@@ -393,6 +798,156 @@ hearts_of_forma_generic_category = {
 			base = 5
 		}
 	}
+	
+	################## country specific
+	AQU_leonites_revolt = {
+
+		icon = GFX_decision_eng_imperial_federation
+		
+		available = {
+		has_completed_focus = AQU_go_on_a_hunting_trip
+		}
+
+		allowed = {
+		original_tag = AQU
+		}
+	
+		fire_only_once = yes
+		days_mission_timeout = 1500
+	
+		timeout_effect = {
+		country_event = { id = aqu.9181 }
+		}
+	}
+	
+	AQU_material_salvaging = {
+
+		icon = GFX_decision_generic_consumer_goods
+		
+		available = {
+		has_completed_focus = AQU_material_salvaging_program
+		has_war = yes
+		}
+		
+		visible = {
+			original_tag = AQU
+			has_completed_focus = AQU_material_salvaging_program
+		}
+		
+		allowed = {
+		original_tag = AQU
+		}
+	
+		fire_only_once = no
+		
+		cost = 100
+	
+		days_remove = 100
+		
+		remove_effect = {
+		random_owned_state = {
+			add_resource = { 
+				type = steel
+				amount = 1
+			}
+		}
+		}
+	}
+	
+	AQU_increase_education_funding = {
+
+		icon = GFX_decision_SWI_no_elected_president
+		
+		available = {
+		has_completed_focus = AQU_review_education_funds
+		any_owned_state = {
+			has_building_level = {
+			building = industrial_complex
+			level > 0
+			}
+		}
+		}
+		
+		visible = {
+			original_tag = AQU
+			has_completed_focus = AQU_review_education_funds
+			has_dynamic_modifier = {
+				modifier = AQU_underfunded_school
+			}
+		}
+		
+		allowed = {
+		original_tag = AQU
+		}
+	
+		fire_only_once = no
+		
+		custom_cost_trigger = {
+		any_owned_state = {
+			has_building_level = {
+			building = industrial_complex
+			level > 0
+			}
+		}
+		}
+		
+		custom_cost_text = 1civ_cost_tooltip
+		
+		days_remove = 200
+		
+		remove_effect = {
+		random_owned_state = {
+			remove_building ={
+				type = industrial_complex
+				level = 1
+			}
+		}
+		
+		if = {
+		limit = { 
+		check_variable = { AQU_education_funding_var = -0.10 }
+		}
+		remove_dynamic_modifier = {
+			modifier = AQU_underfunded_school
+		}
+		}
+		else = {
+		add_to_variable = { AQU_education_funding_var = 0.10 } 
+		}
+		}
+}
+	
+	AQU_sc_support_cet = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+		available = {
+			original_tag = AQU
+			has_completed_focus = AQU_lend_lease_guns_cet
+		}
+
+		visible = {
+			original_tag = AQU
+			has_completed_focus = AQU_contact_the_whale
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		days_remove = 30
+
+		remove_effect = {
+		CET = {
+		country_event = { id = aqu.11401 }
+		}
+		}
+		
+		ai_will_do = {
+			base = 999
+
+		}
+	}
 }
 
 ########################################################################################
@@ -433,7 +988,6 @@ hof_generic_propaganda_category = {
 	}
 	
 	######################################### country specific
-	
 	
 	CET_navy_production_campaign_decision = {
 
@@ -490,7 +1044,6 @@ hof_generic_propaganda_category = {
 		icon = GFX_decision_generic_prepare_civil_war
 
 		available = {
-			has_completed_focus = AQU_the_aquilan_spirit
 			ANT = { has_completed_focus = ANT_scorch }
 			NOT = { has_country_flag = ongoing_propaganda_campaign_flag }
 			NOT = { has_country_flag = burning_vengeance_cooldown_flag }
@@ -1021,10 +1574,10 @@ hof_generic_propaganda_category = {
 		
 		complete_effect = {
 		
-	#	add_timed_idea = {
-	#		idea = forma_politics_campaign_idea
-	#		days = 140
-	#	}
+		add_timed_idea = {
+			idea = forma_politics_campaign_idea
+			days = 140
+		}
 		set_country_flag = ongoing_propaganda_campaign_flag
 		set_country_flag = {
 			flag = politics_campaign_cooldown_flag

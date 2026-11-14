@@ -10,6 +10,7 @@ set_technology = {
 	gw_artillery = 1
 	basic_train = 1
 	tech_trucks = 1
+	basic_infrastructure = 1
 	# b
 	# c
 	# d
@@ -180,8 +181,8 @@ if = {
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_1
 			front_1_custom_slot = empty
-			mid_1_custom_slot = ship_secondaries_1
-			mid_2_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_secondaries_1
 			rear_1_custom_slot = ship_heavy_battery_1
 		}
 		obsolete = no

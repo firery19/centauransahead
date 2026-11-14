@@ -8,6 +8,10 @@ state={
 		owner = ANT
 		add_core_of = ANT
 		add_core_of = SKO
+		add_core_of = LEO
+		add_dynamic_modifier = { 
+			modifier = leonite_peripheral_state_modifier
+		}
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2

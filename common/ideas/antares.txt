@@ -142,7 +142,7 @@ ideas = {
             modifier = {
                 consumer_goods_factor = 0.2
                 production_speed_industrial_complex_factor = 0.05 
-                production_speed_industrial_complex_factor = 0.1
+            #   production_speed_industrial_complex_factor = 0.1
                 production_speed_infrastructure_factor = 0.2
                 industrial_capacity_factory = 0.2
 		production_speed_buildings_factor = 0.1
@@ -476,7 +476,8 @@ ideas = {
             modifier = {
 		political_power_factor = -0.2
 		stability_factor = 0.1
-#		war_support_factor = 0.1
+		war_support_factor = 0.1
+		neutrality_drift = 0.03
             }
         }
 		ANT_protest_negligible = {
@@ -629,6 +630,22 @@ ideas = {
 		stability_factor = 0.1
 		war_support_factor = 0.1
 		stability_weekly = 0.004
+            }
+        }
+		ANT_compromise = {
+            name = protest_compromise
+            
+            picture = SOV_consolidate_power_ccp_sov_compatibility
+            allowed = { original_tag = ANT }
+            removal_cost = -1
+
+            modifier = {
+		stability_factor = 0.02
+		industrial_capacity_factory = -0.01
+		political_power_cost = 0.03
+		democratic_drift = 0.01
+		democratic_left_drift = 0.01
+		democratic_right_drift = 0.01
             }
         }
 		ANT_recovery = {
@@ -825,12 +842,15 @@ experience_gain_air_factor = -0.5
 		ANT_worldconquest = {
             name = "Forma World Conquest"
             
-            picture = RAJ_private_military_complex
+            picture = ANT_conquest	#doesnt work someone who understands gfx pls fix (gfx/interface/ideas/idea_ANT_conquest)
+	#	picture = 
             allowed = { original_tag = ANT }
             removal_cost = -1
 
             modifier = {
 		generate_wargoal_tension = -0.5
+		justify_war_goal_time = -0.2
+		war_support_factor = 0.1
             }
         }
 		ANT_fortressbust_aqu = {
@@ -861,17 +881,34 @@ fortification_collateral_chance = 0.5
             }
         }
 
-		ANT_wallvegabreak = {
-            name = "Breaking the Murus"
+	ANT_wallvegabreak = {
+        name = "Breaking the Murus"
             
-            picture = RAJ_private_military_complex
-            allowed = { original_tag = ANT }
-            removal_cost = -1
-
-            targeted_modifier = {
-		tag = VEG attack_bonus_against = 0.1
-            }
+        picture = generic_mountain_warfare
+        allowed = { original_tag = ANT }
+        removal_cost = -1
+        modifier = {
+            modifier_army_sub_unit_mountaineers_attack_factor = 0.15
         }
+        targeted_modifier = {
+            tag = VEG attack_bonus_against = 0.1
+        }
+    }
+	ANT_aroundmurus = {
+        name = "Around the Murus"
+            
+        picture = SWE_coastal_support
+        allowed = { original_tag = ANT }
+        removal_cost = -1
+
+        modifier = {
+            invasion_preparation = -0.6
+            naval_invasion_penalty = -0.3
+        }
+        targeted_modifier = {
+            tag = VEG attack_bonus_against = 0.05
+        }
+    }
 	ANT_compliance_vega = {
 		name = "Administration of New Territories"
             
@@ -881,14 +918,26 @@ fortification_collateral_chance = 0.5
 
 		modifier = {
 			compliance_growth = 0.001
-		}
         }
+    }
 
 
-
-
-
-
+ANT_skorpiivus_controll = {
+	name = idea_corvus_antares_economy
+	picture = ARG_economic_reactivation
+	allowed = { original_tag = COV COV = { is_puppet_of = ANT } }
+	removal_cost = -1
+	modifier = {
+		autonomy_gain_global_factor = -0.5
+		cic_to_overlord_factor = 0.15
+		mic_to_overlord_factor = -0.1
+	#	master_build_autonomy_factor = 0.4
+	#	master_ideology_drift = 0.05
+		consumer_goods_factor = -0.2
+		production_speed_buildings_factor = 0.15
+		production_factory_max_efficiency_factor = 0.15
+	}
+}
 
 #end
     }

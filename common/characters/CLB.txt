@@ -1,0 +1,56 @@
+characters = {
+	CLB_miron_blackwell = {
+		name = "Miron Blackwell"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CLB_miron_blackwell
+				small = GFX_portrait_CLB_miron_blackwell_small
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			traits = { }
+			expire = "1920.1.1.1"
+			id = -1
+		}
+	}
+	
+	CLB_mons_specula = {
+		name = CLB_mons_specula
+		portraits = {
+			civilian = {
+				large = portrait_BCH_hitori_gotoh
+				#small = GFX_idea_GER_august_von_mackensen
+			}
+		}
+		field_marshal = { 
+			traits = { organisational_leader }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			#visible = {
+			#	has_government = neutrality
+			#}
+		}
+	}
+	
+	CLB_wilson_preston = { # infantry
+		name = CLB_wilson_preston
+		portraits = {
+			army = {
+				large = portrait_BCH_hitori_gotoh
+				small = portrait_BCH_hitori_gotoh
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_leader }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+}

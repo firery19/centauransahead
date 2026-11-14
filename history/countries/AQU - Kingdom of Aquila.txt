@@ -1,6 +1,16 @@
 capital = 9
-
+####set_power_balance = {
+###	id = AQU_the_senate
+###	left_side = AQU_liberal
+###   right_side = AQU_conservative
+###    set_value = 0.31
+###}
 oob = "AQU_1900"
+
+
+set_variable = { AQU_senate_conservative_var = 0 }
+set_variable = { AQU_senate_liberal_var = 0 }
+
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -30,14 +40,16 @@ if = {
 }
 
 set_technology = {
-	infantry_weapons = 1
+    infantry_weapons = 1 
+	infantry_weapons2 = 1
 	tech_support = 1
 	tech_recon = 1
 	tech_engineers = 1
 	gw_artillery = 1
+	interwar_artillery = 1
 	basic_train = 1
 	tech_trucks = 1
-	# b
+	basic_infrastructure = 1
 	# c
 	# d
 	# e
@@ -58,33 +70,60 @@ add_political_power = 1
 set_convoys = 25 # many industrial and resource exports would make aquilas merchant navy large for its comparatively small coastline
 
 set_popularities = {
-	democratic = 30
-	democratic_left = 21
-	democratic_right = 43
-	communism = 3
-	fascism = 2
-	neutrality = 1
+	democratic_right  = 40
+	democratic = 40
+	democratic_left = 2
+	communism = 4
+	fascism = 1
+	neutrality = 7
+	auth_dem = 6
 }
 
 set_politics = {
 	ruling_party = democratic_right
 	last_election = "1900.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
+}
+
+add_dynamic_modifier = {
+	modifier = AQU_underfunded_school
+}
+
+add_dynamic_modifier = {
+	modifier = AQU_iron_army
+}
+
+add_dynamic_modifier = {
+	modifier = AQU_civil_guard 
 }
 
 add_ideas = {
-	AQU_lucas_silva_idea
-	AQU_iron_army_idea
-	AQU_outdated_technology_idea
-	AQU_rusting_army_idea
+	trench_warfare_idea
+	AQU_dummy_idea_iron_army
+    AQU_dummy_idea_civil_guard
+	AQU_lucas_silva_idea_king
+	AQU_conservative_majority
+	AQU_leonite_problem_idea
 }
 
 recruit_character = AQU_ewan_fouwler
 recruit_character = AQU_lucas_silva
-recruit_character = AQU_francis_stephens
+recruit_character = AQU_leonard_falkner
+recruit_character = AQU_military_council
+recruit_character = AQU_john_aquila
+recruit_character = AQU_john_aquila_jr
+recruit_character = AQU_adrian_forrest
+recruit_character = AQU_adonis_estrada
+recruit_character = AQU_julian_thorne 
+recruit_character = AQU_henri_dubois
+recruit_character = AQU_gabriel_rousseau
+recruit_character = AQU_lucien_montclair
+recruit_character = AQU_olivier_beaumont
+recruit_character = AQU_gideon_hayes
+recruit_character = AQU_clara_Sterling
+recruit_character = AQU_malik_banneker
 
-#country_event = { id = aqu.5 days = 7 random_days = 21 } < test event for dying character < for ursa
 
 
 if = {
@@ -124,4 +163,128 @@ if = {
 			rear_1_custom_slot = ship_light_medium_battery_1
 		}
 	}
+}
+
+###################      VALUES      ###################
+
+###elections
+set_variable = {
+	AQU_state_9_alignment = 1
+}
+
+set_variable = {
+	AQU_state_9_support = 0
+}
+
+###military reform
+set_variable = {
+    var = AQU_military_reform_decision
+	value = 0
+}
+
+###underfunded schools
+set_variable = {
+	var = AQU_education_funding_var
+	value = -0.4
+}
+
+###military
+set_variable = {
+	var = AQU_army_training_time
+	value = 0.3
+}
+
+set_variable = {
+	var = AQU_army_xp
+	value = -0.3
+}
+
+set_variable = {
+	var = AQU_army_unit_xp
+	value = 0.1
+}
+
+set_variable = {
+	var = AQU_army_attack
+	value = -0.55
+}
+
+set_variable = {
+	var = AQU_army_defend
+	value = -0.55
+}
+
+set_variable = {
+	var = AQU_army_attack_core
+	value = 0.15
+}
+
+set_variable = {
+	var = AQU_army_defend_core
+	value = 0.15
+}
+
+set_variable = {
+	var = AQU_dig
+	value = 1
+}
+
+set_variable = {
+	var = AQU_cg_stability
+	value = -0.05
+}
+
+set_variable = {
+	var = AQU_cg_consumer_goods_factor
+	value = 0.00
+}
+
+set_variable = {
+	var = AQU_recruitable_population
+	value = 0.00
+}
+
+set_variable = {
+	var = AQU_cg_defend
+	value = 0.01
+}
+
+set_variable = {
+	var = AQU_cg_attack
+	value = -0.05
+}
+
+set_variable = {
+	var = AQU_cg_guerilla
+	value = 0.05
+}
+
+set_variable = {
+	var = AQU_cg_speed
+	value = 0.01
+}
+
+set_variable = {
+    var = AQU_artillery_attack
+	value = 0.05
+}
+
+set_variable = {
+    var = AQU_artillery_defend
+	value = 0.05
+}
+
+set_variable = {
+    var = AQU_morale
+	value = 0.05
+}
+
+set_variable = {
+    var = AQU_org
+	value = 0.05
+}
+
+set_variable = {
+    var = AQU_max_trench
+	value = 0.5
 }

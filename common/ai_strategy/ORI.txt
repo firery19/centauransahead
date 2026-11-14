@@ -11,7 +11,44 @@ attack_ursan_east_canis = {
 	}
 	abort = {
 		OR = {
-			date > 1905.9.1 # if we haven't succeeded by now, maybe try somewhere else
+			date > 1903.9.1 # if we haven't succeeded by now, maybe try somewhere else
+			115 = { is_controlled_by_ROOT_or_ally = yes }
+			118 = { is_controlled_by_ROOT_or_ally = yes }
+			119 = { is_controlled_by_ROOT_or_ally = yes }
+			175 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+	}
+	ai_strategy = {
+		type = area_priority
+		id = ursan_east_canis
+		value = 10
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = great_canis_desert
+		value = -10
+	}
+	
+	ai_strategy = {
+		type = front_unit_request
+		area = ursan_east_canis
+		value = 1
+	}
+}
+strike_north_now = {
+	allowed = {
+		original_tag = ORI
+		original_tag = HYS
+		original_tag = LPS
+		original_tag = CNS
+	}
+	enable = {
+		has_war_with = URS
+	}
+	abort = {
+		OR = {
+			date > 1904.10.1 # if we haven't succeeded by now, maybe try somewhere else
 			115 = { is_controlled_by_ROOT_or_ally = yes }
 			118 = { is_controlled_by_ROOT_or_ally = yes }
 			119 = { is_controlled_by_ROOT_or_ally = yes }
@@ -53,7 +90,7 @@ dont_attack_minefields = {
 	}
 	abort = {
 		OR = {
-			date > 1905.9.1 # if we haven't succeeded by now, maybe punch through desert
+			date > 1903.11.1 # if we haven't succeeded by now, maybe punch through desert
 			115 = { is_controlled_by_ROOT_or_ally = yes }
 			118 = { is_controlled_by_ROOT_or_ally = yes }
 			119 = { is_controlled_by_ROOT_or_ally = yes }
@@ -99,4 +136,97 @@ dont_garrison_useless = {
 		type = garrison
 		value = -10
 	}
+
+
+strike_through_southeastern_canis = {
+	allowed = {
+		original_tag = ORI
+	}
+	
+	enable = {
+		has_war_with = URS
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = force_concentration_target_weight
+		state = 175
+		
+		value = 60
+	}
+	ai_strategy = {
+		type = front_control
+		
+		tag = URS				# Can also target country, state, strategic_region, area. Can also specify multiple targets, each on its own line
+		area = ursan_east_canis
+		
+		ratio = 0.25			# At least this ratio of the frontline provinces need to be targeted for the AI strat to apply
+		
+		priority = 100			# Higher prio strats will override lower
+		ordertype = front		# Can be either {front, invasion}
+		execution_type = rush	# Can be either {careful, balanced, rush, rush_weak}
+		execute_order = yes		# If set, will force activate/deactivate execution
+		manual_attack = yes		# If set the AI will try manual poke attacks (for front orders)
+	}
+}
+
+ORIONblitz_ursaidktestestestestest = {
+
+	allowed = {
+		original_tag = ORI
+	}
+
+	enable = {
+		date < 1940.9.1
+		#HOL = { has_capitulated = yes }
+		is_historical_focus_on = yes
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = consider_weak
+		id = URS
+		value = 25
+	}
+
+	ai_strategy = {
+		type = front_control
+
+		tag = URS
+
+		ratio = 0.5
+
+		priority = 100
+		ordertype = front
+		execution_type = rush_weak
+		execute_order = yes
+	}
+
+	ai_strategy = {
+		type = force_concentration_target_weight
+		state = 175
+#		state = 29 # Nord-Pas_de_Calais
+#		state = 785 # Picardy
+#		state = 16 # Ile de France
+#		state = 15 # Normandy
+		# include Belgium as well even though we hopefully have already taken it
+#		state = 6 # Vlaanderen
+#		state = 34 # Wallonie
+#		state = 977 # Antwerpen
+
+		value = 80 # +80%
+	}
+
+#	ai_strategy = {
+#		# Avoid the areas behind the Maginot line
+#		type = force_concentration_target_weight
+#		state = 18 # Champagne
+#		state = 17 # Franche-Comte
+#		state = 28 # Alsace-Lorraine
+#		state = 27 # Bourgogne
+#
+#		value = -60 # -60%
+#	}
 }

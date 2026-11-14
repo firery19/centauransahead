@@ -1,0 +1,81 @@
+l_russian:
+ rail_way_plural: "железные дороги"
+###########
+# решения
+###########
+ COV_corvus_sabotage_operations: "Саботаж в южном Корвусе"
+ COV_corvus_sabotage_operations_desc: "Проводя саботаж промышленности в южном Корвусе не является хорошей идеей если мы собираемся его возвращать, но это нам поможет когда война начнётся."
+ corvus_contact_rebels: "Наладить контакт с диверсантами"
+ corvus_contact_rebels_desc: "Мы наладим контакт с диверсантами в южном Корвусе, проверя прибыли-ли они на место и заняли позиции, и если они готовы 'поломать' инфраструктуру Цетанов."
+ corvus_infrastructure_attack: "Саботаж инфраструктуры"
+ corvus_infrastructure_attack_desc: "Даёт урон инфраструктуре в южном Корвусе."
+ corvus_railway_attack: "Саботаж железных дорог"
+ corvus_railway_attack_desc: "Наносит урон железным дорогам в южном Корвусе."
+ corvus_supply_attack: "Саботаж узлов снабжения"
+ corvus_supply_attack_desc: "Наносит урон узлам снабжения в южном Корвусе."
+ corvus_arms_factory_attack: "Саботаж военных заводов"
+ corvus_arms_factory_attack_desc: "Наносит урон военным заводам в южном Корвусе."
+ corvus_cetus_arms_factory_attack: "Саботаж цетанских военных заводов"
+ corvus_cetus_arms_factory_attack_desc: "Наносит урон военным заводам в Цетусе."
+ 
+ COV_dysfunctional_economy_idk: "Дисфункциональная экономика"
+ corvus_failing_economy_d: "Умирающая экономика"
+ COV_failed_economy_1: "Мёртвая экономика"
+ 
+ COV_wartime_administration_war: "Ввести военную администрацию"
+ corvus_rationing_on: "Ввести нормирование"
+ corvus_rationing_on_desc: "Папа ты будешь меньше пить? Нет, ты будешь меньше есть."
+ corvus_rationing_off: "Отменить нормирование"
+ corvus_rationing_off_desc: "Жрать надо каждые 3 часа."
+ rationed_on: "Нормирование введено"
+ rationed_off: "Нормирование не введено"
+ corvus_coal_production: "Увеличить добычу угля"
+ corvus_coal_production_desc: "Топливо для нашей промышленности"
+ corvus_warbonds: "Выпустить военные облигации"
+ corvus_warbonds_desc: "Деньжата для войнушки"
+ corvus_subsidies: "Субсидировать экономику"
+ corvus_subsidies_desc: "Деньжата для промшыленников"
+ 
+ corvus_martial_law_on: "Ввести военное положение"
+ corvus_martial_law_on_desc: "Тихо"
+ corvus_martial_law_off: "Отменить военное положение"
+ corvus_martial_law_off_desc: "Не тихо"
+ martial_law_on: "Военное положение активно"
+ martial_law_off: "Военное положение неактивно"
+ corvus_shut_down_market: "Закрыть чёрные рынки"
+ corvus_shut_down_market_desc: "Никакого криминала"
+
+ corvus_path_not_work_tooltip: "§RЭТА ВЕТКА ФОКУСОВ НЕ РАБОТАЕТ! НЕ БЕРИТЕ!§!"
+ corvus_not_work_tooltip: "§RЭТОТ ФОКУС НЕ РАБОТАЕТ! НЕ БЕРИТЕ!§!"
+ corvus_does_nothing_tooltip: "§OЭтот фокус НИЧЕГО НЕ ДЕЛАЕТ! пока что.§!"
+ corvus_does_something_tooltip: "§GЭтот фокус ЧТО-ТО ДЕЛАЕТ!§!"
+ corvus_temp_none_tootlip: "§YЭтот фокус не завершён. Корвус не становится марионеткой, пока что.§!"
+ corvus_battery_1_tooltip: "Строит береговые укрепления 1-го уровня на каждой прибрежной провинции. Добавляет 2 уровня для портовых городов."
+ corvus_battery_2_tooltip: "Добавляет 2 уровня береговых укреплений на каждой прибрежной провинции."
+ corvun_assimilation_tooltip: "Это заставит Антарес §Gвмешаться§! в войну, §Rно превратит Корвус в марионетку Антареса.§!"
+ corvus_allows_sabotage_decision_tooltip: "Взятие этого фокуса активирует вкладку решений для саботажа."
+ corvun_sabotage_infrastructure_tooltip: "Взятие этого фокуса позволит принять решение о нанесении урона инфраструктуре в Южном Корвусе."
+ corvun_sabotage_railway_tooltip: "Взятие этого фокуса позволит принять решение о нанесении урона железным дорогам в Южном Корвусе."
+ corvun_sabotage_supply_tooltip: "Взятие этого фокуса позволит принять решение о нанесении урона складам снабжения в Южном Корвусе."
+ corvun_sabotage_factory_tooltip: "Взятие этого фокуса позволит принять решение о нанесении урона военным заводам в Южном Корвусе."
+ corvun_sabotage_factory_2_tooltip: "Взятие этого фокуса позволит принять решение о нанесении урона военным заводам в Цетусе."
+ corvus_take_initial_offensive_on_war: "Автозавершается при войне с Цетусом."
+ corvus_own_the_state: "(Для ясности: владеть регионами (аннексировать их), а не просто оккупировать.)"
+ corvus_garrison_coast: "Совет: разместите дивизии на побережье."
+ corvus_penal_recruitment: "Позволяет набирать штрафные батальоны через вкладку решений."
+
+########
+# события
+########
+ cov.1: "Надвигающийся экономический коллапс"
+ cov.1.t: "Надвигающийся экономический коллапс"
+ cov.1.d: "Текущее состояние экономики Корвуса достигает предела. Нам нужно принять меры, чтобы исправить ситуацию, пока она не вышла из-под контроля!\n\nПроверьте вкладку решений."
+ cov.1.a: "Начать с нормирования"
+######
+# разное
+######
+
+ COV_pp_50_cp_10:0 "£command_power §Y50§! £pol_power §Y10§!"
+ COV_pp_50_cp_10_blocked:0 "£pol_power  §R50§!  £command_power  §R10§!"
+ COV_pp_50_cp_10_tooltip:0 "Это стоит £pol_power  §Y50§! и £command_power  §Y10§! для принятия решения"
+

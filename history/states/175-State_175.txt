@@ -4,6 +4,9 @@ state={
 	history={
 		owner = URS
 		add_core_of = CNS
+1947.1.1 = {
+	owner = HYS
+}
 		buildings = {
 			infrastructure = 1
 		}

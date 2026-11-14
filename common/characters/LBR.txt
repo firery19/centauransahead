@@ -7,9 +7,27 @@ characters = {
             }
         }
         country_leader = {
-			ideology = despotism
+			ideology = centrism
 			traits = { }
 			expire = "1912.1.1.1"
 		}
     }
+	
+	LBR_wardell_smith = { # infantry
+		name = LBR_wardell_smith
+		portraits = {
+			army = {
+				large = portrait_BCH_hitori_gotoh
+				small = portrait_BCH_hitori_gotoh
+			}
+		}
+		corps_commander = {
+			traits = { desert_fox infantry_leader }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
 }

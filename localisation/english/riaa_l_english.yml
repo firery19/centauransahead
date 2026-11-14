@@ -1,11 +1,74 @@
 ﻿l_english:
- RIA_north_centauran_alliance:0 "Create NCA"
+ RIA_north_centauran_alliance:0 "Create The North Centauran Alliance"
  RIA_north_centauran_alliance_desc:0 "Temporary stopgap focus, NCA refers to the North Centauran Alliance, established to stop the Antarean invasion of North Centaura."
  
+ 
+ #################################################### focuses
+ 
+ RIA_resolve_rural_problem:0 "The Rural Issue"
+ RIA_resolve_rural_problem_desc:0 "
+ RIA_build_roads:0 "Construct New Roads"
+ RIA_build_roads_desc:0 "
+ RIA_expand_highways:0 "Expand Highways"
+ RIA_expand_highways_desc:0 "
+ RIA_setup_rural_military_bases:0 "Construct Rural Military Bases"
+ RIA_setup_rural_military_bases_desc:0 "
+ RIA_improve_recruitment:0 "Rural Recruitment Drive"
+ RIA_improve_recruitment_desc:0 "
+ RIA_build_schools:0 "Build Schools"
+ RIA_build_schools_desc:0 "
+ RIA_seek_young_talents:0 "Seek Young Talents"
+ RIA_seek_young_talents_desc:0 "
+ RIA_expand_education:0 "Expand Education Programs"
+ RIA_expand_education_desc:0 "
+ RIA_improve_bureaucracy:0 "Improving Bureaucracy"
+ RIA_improve_bureaucracy_desc:0 "
+ 
+ RIA_industrializing_policy:0 "Industrializing Policy"
+ RIA_industrializing_policy_desc:0 "
+ RIA_rural_development:0 "Rural Development"
+ RIA_rural_development_desc:0 "
+ RIA_develop_lumber_industry:0 "Develop Lumber Industry"
+ RIA_develop_lumber_industry_desc:0 "
+ RIA_attract_rural_settlers:0 "Attract Rural Settlers"
+ RIA_attract_rural_settlers_desc:0 "The vast and empty landscapes of the interior..."
+ RIA_increasing_crop_yields:0 "Improve Crop Yields"
+ RIA_increasing_crop_yields_desc:0 "
+ 
+ RIA_urban_development:0 "Urban Development"
+ RIA_urban_development_desc:0 "
+ RIA_encourage_urban_development:0 "Encourage Urban Development"
+ RIA_encourage_urban_development_desc:0 "
+ RIA_hadina_development:0 "Hadina Works"
+ RIA_hadina_development_desc:0 "
+ RIA_improving_urban_infrastructure:0 "Modernize Urban Infrastructure"
+ RIA_improving_urban_infrastructure_desc:0 "
+ RIA_more_electricity:0 "Expand Power Grid"
+ RIA_more_electricity_desc:0 "
+ RIA_improving_ports:0 "Construct Modern Ports"
+ RIA_improving_ports_desc:0 "
+ 
+ RIA_accelerate_construction_the_grand_northern_canal:0 "Accelerate Canal Construction"
+ RIA_finish_the_grand_northern_canal:0 "Complete the Grand Northern Canal"
+ ria_gnc_completion_tt:0 "The §YGrand Northern Canal§! will be §Gcompleted§! and open to ships!"
+ 
+ 
+ # ideas
+ 
+# RIA_rural_countryside:0 "Rural Countryside"
+# RIA_rural_countryside_desc:0 "the"
+# RIA_industrialisation:0 "Weak Industry"
+# RIA_industrialisation_desc:0 "noob"
+ 
  ria.1.t:0 "Riaa invites us to the North Centauran Alliance"
- ria.1.d:0 "With the threat of Antares invading the nations of the north, Riaa seeks to join arms with us to fight the Antarean threat. Should we join?"
+ ria.1.d:0 "With the threat of Antares invading the nations of the northern Centaura as they have done with the south, Riaa seeks for the north to set aside our differences and join arms to form a united front against the existential threat that is the Antares Imperium. Should we join?"
  ria.1.a:0 "Antares is a threat."
  ria.1.b:0 "We should not involve ourselves."
  
+ nca_focus_any_country_tt:0 "§YAny major country which is either Antares or has generated more than 50% world tension§!"
  
  
+RIA_rural_countryside:0 "Undeveloped Rural Regions"
+RIA_rural_countryside_desc:0 "Although the largest cities are rapidly developing, large swathes of the country remains undeveloped and still suffer the scars of the civil war from decades ago."
+RIA_industrialisation:0 "Industrialisation Process"
+RIA_industrialisation_desc:0 "Riaa is a massive country, and industrialisation has only recently begun. Much development remains to be done."

@@ -7,6 +7,7 @@ state={
 	history = {
 		owner = ANT
 		add_core_of = ANT
+		add_core_of = ARA
 		buildings = {
 			dockyard = 1
 			arms_factory = 1 #
@@ -19,6 +20,9 @@ state={
 		}
 		victory_points = {
 		2166 50
+		}
+		victory_points = {
+		1264 1
 		}
 
 	}

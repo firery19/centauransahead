@@ -11,7 +11,7 @@ state={
 				}
 			}
 			victory_points = {
-			6676 1 
+			6676 3 
 			}
 		1944.1.1.12 = {
 			owner = URS

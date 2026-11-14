@@ -45,7 +45,7 @@
  
  #political
  #monarchist
- CET_monarchist:0 "Monarchism"
+ CET_monarchist:0 "Under Scapha"
  CET_monarchist_desc:0 "We have been a kingdom ever since the start of our great nation. This path seems to be our most stable way into the future."
  CET_the_whale:0 "Cetus, The Whale"
  CET_the_whale_desc:0 "
@@ -122,18 +122,18 @@
  CET_lacertan_takeover_desc:0 "
  CET_lacertan_submit:0 "Demand Lacertan Submission"
  CET_lacertan_submit_desc:0 "
+ CET_demand_icarus:0 "Demand Icarus"
+ CET_demand_icarus_desc:0 "
+ CET_second_quarite_campaign:0 "Second Quarite Campaign"
+ CET_second_quarite_campaign_desc:0 "
+ CET_occulum_is_ours:0 "Beholding the Occulum"
+ CET_occulum_is_ours_desc:0 "
  # neutral
  CET_neutralist_monarchism:0 "Neutral Monarchism"
  CET_neutralist_monarchism_desc:0 "
  # imperial-neutral isolationist focuses
  CET_our_resources:0 "Our Own Resources"
  CET_our_resources_desc:0 "
- CET_our_factory:0 "Our Industry"
- CET_our_factory_desc:0 "
- CET_exploit_south_corvun_iron_belt:0 "Exploit South Corvun Iron"
- CET_exploit_south_corvun_iron_belt_desc:0 "
- CET_oil_in_the_ocean:0 "Oil In The Oceans"
- CET_oil_in_the_ocean_desc:0 "
  #isolate
  CET_practice_isolation:0 "Practice Isolation"
  CET_practice_isolation_desc:0 "
@@ -181,6 +181,31 @@
  CET_carran_kharon_accords_desc:0 "
  CET_preemptive_strike:0 "Pre-emptive Strike"
  CET_preemptive_strike_desc:0 "After we seized South Corvus, we have noticed that Corvus harbors some kind of resentment against us. We cannot allow them to strike at us first, a pre-emptive strike is needed."
+ #democracy
+ CET_establish_grand_parliament:0 "Establish Grand Parliament"
+ CET_establish_grand_parliament_desc:0 "For centuries Cetus has been under Scaphan rule, however the king declares that he wishes the freedom of press to prevail. The king wishes for a grand parliament be called immediately. The king wishes that a consitution upon the basis the people wish for encompass all Cetan lands."
+ CET_first_elections:0 "1901 Elections"
+ CET_first_elections_desc:0 "1901 marks the greatest year in modern Cetan history, today is the day upon which the first elected government will take the reigns."
+ #nr victory
+ CET_nr_victory:0 "National Rally Victory"
+ CET_nr_victory_desc:0 "Nation Rally has officially won Cetus' first election."
+ #ccu victory
+ CET_ccu_victory:0 "Constitutional Cetan Union Victory"
+ CET_ccu_victory_desc:0 "Constitutional Cetan Union has officially won Cetus' first election."
+ CET_redefining_relations:0 "Redefining Relations"
+ CET_redefining_relations_desc:0 "
+ CET_contact_aquila:0 "Contact Aquila"
+ CET_contact_aquila_desc:0 "
+ CET_formalize_persean_accords:0 "Formalize Persean Accords"
+ CET_formalize_persean_accords_desc:0 "
+ CET_joint_strike_leonites:0 "Joint Strike On Leonites"
+ CET_joint_strike_leonites_desc:0 "
+ #cda victory
+ CET_cda_victory:0 "Centre Democratic Alliance Victory"
+ CET_cda_victory_desc:0 "Centre Democratic Alliance has officially won Cetus' first election."
+ #usap victory
+ CET_usap_victory:0 "Unified Social-Agrarian Party Victory"
+ CET_usap_victory_desc:0 "Unified Social-Agrarian Party has officially won Cetus' first election."
  # - firerys army focus tree
  CET_armed_forces:0 "Cetan Armed Forces"
  CET_armed_forces_desc:0 "The Cetan Armed Forces is comprised of the army and navy. They defend Cetus from any potential threats."
@@ -220,6 +245,36 @@
  CET_raise_army_desc:0 "
  CET_defence_plans:0 "Defence Line Planning"
  CET_defence_plans_desc:0 "
+ #economy neutral
+ CET_our_factory:0 "Our Industry"
+ CET_our_factory_desc: "Cetan industry has always been primarly about venturing out further into the Inanis, however it seems such ventures have brought us behind our neighbors and foes. It seems only right to reindustrialize Cetus to beyond their levels of industry to continue our search unimpeded. "
+ CET_exploit_south_corvun_iron_belt:0 "Exploiting Corvun Iron" 
+ CET_exploit_south_corvun_iron_belt_desc:0 "We need to continue to harvest what we can from the Corvun holdings, it's the only way to continue on."
+ CET_search_for_chromium:0 "Search For Chromium" 
+ CET_search_for_chromium_desc:0 "It is believed that Southernmost Corvus holds even more resources than what we know of, we must search it's depths."
+ CET_fueling_further_expansion:0 "Fueling Further Expansion" 
+ CET_fueling_further_expansion_desc:0 "The industrial build up we are conducting requires immense amount of fuel, the Corvun holdings must provide such."
+ #economy coastal
+ CET_continue_coastal_development:0 "Continue Coastal Development" 
+ CET_continue_coastal_development_desc:0 "The Cetan Heartland should be our focus, without it we will never be able to explore the Inanis further."
+ CET_cetus_the_whale:0 "Cetus, The Whale" 
+ CET_cetus_the_whale_desc:0 "Cetus is the mythical being of which protects us from the horrors of the Inanis, we the children of Cetus must maintain his legacy." 
+ CET_expanding_nauta:0 "Expanding Nauta" 
+ CET_expanding_nauta_desc:0 "Our capital Nauta is the beacon of Cetus from which we shine across Centaura, we need to expand the city further to accomidate our ambitions."
+ CET_grand_imperial_industries:0 "Scaphan Imperial Industries" 
+ CET_grand_imperial_industries_desc:0 "Scaphan Imperial has been one of our most loyal companies, expanding their civilian base could be beneficial."
+ CET_declare_a_megalopolis:0 "Nautan Megalopolis"
+ CET_declare_a_megalopolis_desc:0 "Nauta has been one of the leading cities of Forma, it's time we gave it the title it deserves, a megalopolis."
+ CET_reverberating_legend:0 "Reverberating Legend"
+ CET_reverberating_legend_desc:0 "The legend of Cetus is one that reverberates throughout Centaura, harnessing such legacy is in our best interest."
+ CET_imperial_aure_fund:0 "Imperial Aure Fund"
+ CET_imperial_aure_fund_desc:0 "By the decree of Frederick I, an Aure fund should be set up to ensure continuous funding for future projects."
+ CET_university_of_nauta:0 "University of Nauta"
+ CET_university_of_nauta_desc:0 "With the creation of the Imperial Aure Fund, we can afford to build a grand university within Nauta."
+ CET_andromedan_chain:0 "Andromedan Chain"
+ CET_andromedan_chain:0 "The Andromedan Chain is the barrier which protects our coast, we shall develop them further."
+ CET_fortress_ports:0 "Fortress Ports"
+ CET_fortress_ports_desc:0 "Our ports on the Andromedan Chain are the foremost defenses of the coast from any naval attack, they must be reinforced."
  #plan corvus
  CET_plan_corvus:0 "Plan Corvus"
  CET_plan_corvus_desc:0 "
@@ -239,6 +294,10 @@
  CET_carrans_defence_desc:0 "
  CET_complete_plan_corvus:0 "Complete Plan Corvus"
  CET_complete_plan_corvus_desc:0 "
+ CET_corvus_bunker_lines_scapha_strat:0 "The Scaphan Line Strategy"
+ CET_corvus_bunker_lines_scapha_strat_desc:0 "To resist against a potential war with Corvun, Cetus began the construction of a series of defensive fortifications around the South Corvus region in 1890, while not perfect it's a reliable fortifications against the crow."
+ CET_corvus_bunker_lines_outer_again:0 "The Gamma Belt Strategy"
+ CET_corvus_bunker_lines_outer_again_desc:0 "After the annexation of the South Corvus region, different Corvun resistance groups rose up. Centralising our strategy around the Scaphan Line is unwise, the guerrillas and the untrustworthy locals might sabotage our defensive efforts."
  #plan antares
  CET_plan_antares:0 "Plan Antares"
  CET_plan_antares_desc:0 "
@@ -392,6 +451,7 @@
  CET_defence_planning_desc:0 "Bunkers galore."
  CET_desperate_defence:0 "Implemented Defence Measures"
  CET_desperate_defence_desc:0 "We have been caught in a war and we need to put measures in order to not capitulate immediately."
+ CET_mobilization_order:0 "Mobilisation Order"
  CET_master_s_centaura:0 "Master Of South Centaura"
  CET_master_s_centaura_desc:0 "Taking down the regional power of Antares, we can declare that no other south Centauran country can match our strength now."
  CET_strengthened_monarch:0 "Monarchy Strengthened"
@@ -406,6 +466,14 @@
  CET_develop_selves_idea_desc:0 "We must focus on ourselves to better our countries, not taking over more land."
  CET_southern_frontier:0 "Southern Frontier"
  CET_southern_frontier_desc:0 "Recently, relations between the Antares Imperium and us have soured. We cannot doubt that they have a stronger army than us, and we must prepare for any threats that may come from the south."
+ CET_logistical_nightmare_army:0 "Logistical Nightmare"
+ CET_logistical_nightmare_army_idea_desc:0 "The abuse of our armed forces has left our supply decimated, we struggle to even feed the units stationed near our own capitial. Ever since the seizing of §YSouth Corvus§! the army has been relegated to the secondhand force as compared to the navy. Our army is an elite force, yet not even the most elite force can fight without food or bullets."
+ CET_logistical_nightmare_army_2_idea:0 "Logistical Nightmare"
+ CET_logistical_nightmare_army_idea_2_desc:0 "The reforms that have been committed so far have proven effective. The amount of men dying of starvation in our furthest frontiers and the amount of those who desert have decreased dramatically, however further reform is required to replenish our stocks."
+ CET_stagnant_naval_command:0 "Stagnant Naval Command"
+ CET_stagnant_naval_command_idea_desc:0 "In 1882 we were forced to pull out of Lacerta due to the failure of our colonial forces to put down the Aran revolts which shook our possesions in the §YSouthern Ocean§!. The Lacertans would capture the remaining colonial fleet stationed there, although mostly prototype submarines this failure would send our chain of command spiraling.\nEver since the 1850's our fleet ruled the waves completely uncontested, we bested the inexperienced §YAntarean Armada§! in an impressive show of force. Our Steelpot model of ships completely dominated the seas as the amount of them grew by the year. Although no official system of retirement was in place for the navy, the higher admirials often let the talented younger officers manage the fleet and make critical decisions. The Lacertan failure completely shut this system down, the officers who were in place at the time stayed as barely any new command would be introduced. Our modern naval command is made up of veterans of the final years of our colonial period, which was nearly 2 decades ago by the turn of the century.\nFueled by the disaster of Lacerta our command advocated for the annexation of §YSouth Corvus§!, eventually leading to our takeover in 1885. The command deterioration that had occured for the previous 3 years had been locked in place by our navy's impressive destruction of the §YNavy of the Conferderation§! and the blockading of Corvun ports."
+ CET_crippling_budget:0 "Crippling Budget"
+ CET_crippling_budget_desc:0 "The king's §Y20th Century Budget§! had failed to gain momentum, his waning influence via the army and navy had forced the budget to be modified in their favor, leading to its failure to motion through.\n§RWe are running on a clock of 2 years before the budget begins a full economic crisis§!"
  # misc
  CET_army_works_budget_idea:0 "Budget Allocating"
  CET_sector_funded:0 "Sector Funded"
@@ -429,9 +497,10 @@
  
 
  CET_neutrality_party:0 "House of Scapha"
- CET_democratic_party:0 "Cetan National Party"
- CET_fascism_party:0 "Exercitus Maris"
- CET_communism_party:0 "Cetan Army" #troll
- CET_democratic_right_party:0 "Right National Party"
- CET_democratic_left_party:0 "Left National Party"
- CET_auth_dem:0 "King-Democracy Compromisers"
+ CET_democratic_party:0 "Centre Democratic Alliance"
+ CET_fascism_party:0 "Maris Imperialists"
+ CET_communism_party:0 "Terrae Collective" #troll
+ CET_democratic_right_party:0 "Cetan Constitutionalist Union"
+ CET_democratic_left_party:0 "Unified Social-Agrarian Party"
+ CET_auth_dem_party:0 "Imperial Rally"
+

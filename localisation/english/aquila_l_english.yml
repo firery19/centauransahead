@@ -3,6 +3,9 @@
  AQU_the_aquilan_spirit:0 "The Aquilan Spirit"
  AQU_the_aquilan_spirit_desc:0 "The southern democracy of Centaura, Aquila will stand strong against the world."
 
+ #traits
+ military_council:0 "Military Council"
+ 
  ##########
  # industry
  ##########
@@ -10,7 +13,7 @@
  ######
  # army
  ######
- AQU_civil_guard:0 "The Civil Guard"
+ AQU_civil_guard:0 "cg real"
  AQU_civil_guard_desc:0 "The Civil Guard supports our troops during wartime in urban areas. Improvements could be made."
  AQU_raise_penal_battalions:0 "Penal Battalions"
  AQU_raise_penal_battalions_desc:0 "Our country is at war. Criminals such as murderers and theives will be allowed to enlist in exchange for a small glimmer of hope of freedom."
@@ -65,42 +68,426 @@
  #########
  # focuses
  #########
+ AQU_the_status_quo:0 "Legacy of The Revolution"
+ AQU_the_status_quo_desc:0 "Our country went through a revolution not so long ago. It brought us the establishment of senate, a constitution and the most important, democracy. The best of all was that the revolution was peaceful and our beloved king got to keep his role of the monarch, now serving as a figurehead. Even though Antares tried to take our democracy away, we managed to hold them back. May we never lose our democracy!"
+
+ AQU_address_the_parliament:0 "The Incoming Senate Election"
+ AQU_address_the_parliament_desc:0 "After the revolution, our senate got established. Finally, another elections are coming. Although its always been mostly a battle between the liberals and conservatives with conservatives having the upper hand, it seems that more and more people long for a change of course. Perhaps we will see big changes in the senate soon?"
  
- AQU_address_the_parliament:0 "The Senate"
+ AQU_support_the_tories:0 "Ewan For Second Term!"
+ AQU_support_the_tories_desc:0 "Ewan's term can be easily describe as uneventful but stable. His administration kept the economy stable but stagnant, the only highlights are his agricultural policies, which provided the needed subsidized for farmers to purchase mechanized equipments, bolstering the agricultural. You can really say, nothing ever happens."
+ 
+ AQU_raise_campaign_funds:0 "Raise Campaign Funds"
+ AQU_raise_campaign_funds_desc:0 "Campaign funds are absolutely critical, this is especially true when it comes to supporting our senators, who face increasingly expensive and highly competitive reelection. Securing these resources early allows us to more easily defend our seats against aggressive CPP challenges."
+ 
+ AQU_last_minute_deal:0 "Review DAP's Achievements" 
+ AQU_last_minute_deal_desc:0 "Analyzing our past achievements allows us to reflect on our progress, refine our policies, and prove to the public that we are a self-aware and adaptive party despite our views."
+ 
+ AQU_nominate_ewan:0 "Proctector of The Status Quo"
+ AQU_nominate_ewan_desc:0 ""
+ 
+ AQU_support_the_whigs:0 "Leonard The Progressive Economist"
+ AQU_support_the_whigs_desc:0 "Leonard The Progressive Economist"
+ 
+ AQU_CPP_speech_talona:0 "Speech in Talona"
+ AQU_CPP_speech_talona_desc:0 "Speech in Talona"
+ 
+ AQU_liberal_appeal_intellectual:0 "Appeal To The Intellectuals"
+ AQU_liberal_appeal_intellectual_desc:0 "Appeal To The Intellectuals"
+ 
+ AQU_liberal_reorganize_CPP:0 "Reorganize The CPP"
+ AQU_liberal_reorganize_CPP_desc:0 "Reorganize The CPP"
+ 
+ AQU_failed_election:0 "Failed Election"
+ AQU_failed_election:0 "Failed Election_desc"
+ 
+ AQU_the_kings_return:0 "Our Glorious king, Lucas Silva!"
+ AQU_the_kings_return_desc:0 "Our Glorious king, Lucas Silva!"
+ 
+ AQU_prepare_for_the_elections:0 "Start The Campaigning"
+ AQU_prepare_for_the_elections_desc:0 "The elections are coming soon and both the liberals and conservatives are slowly starting their campaign. The conservatives are driving around the rural areas, campaigning there among the populace while the liberals are focusing on bigger cities and universities. Even smaller parties like the collectivists started their campaign. Perhaps the politics of Aquila will change greatly..."
+ 
+ AQU_another_five_years_in_Volucris:0 "Another Five Years In Volucris"
+ AQU_another_five_years_in_Volucris_desc:0 "As the election coming to an end, the DAPP have secure majority in the Senate, and the party will rule Aquila for another term."
+ 
+ AQU_domestic_policy:0 "Domestic Policies"
+ AQU_domestic_policy_desc:0 "Domestic policies are critical to determine the country's direction and future, with the problem of the Leonites and unfunded educations we must shift our focus into internal issues."
+ 
+ AQU_continue_economy_policy:0 "Continue Our Economic Policies"
+ AQU_continue_economy_policy_desc:0 "Another term for us means we can continue our economic policy interrupted, maximizing economic growth."
+ 
+ AQU_Aquila_Industrial_Industries:0 "Industrial Industries"
+ AQU_Aquila_Industrial_Industries_desc:0 "Even though Aquila is a largely agrarian society, this doesn't mean we should overly neglect our industrial sectors."
+ 
+ AQU_industrial_development:0 "Industrial Development"
+ AQU_industrial_development_desc:0 "Investing in civilian Industrial capacity is a must, regardless of whether it's an agrarian society or not."
+ 
+ AQU_industrial_innovationtion:0 "Industrial Innovationtion"
+ AQU_industrial_innovationtion_desc:0 "With our new innovationtions we improve our industrial capacity, helping our factories."
+ 
+ AQU_further_industrial_development:0 "Further Industrial Development"
+ AQU_further_industrial_development_desc:0 "Continuing to expand our factories will allow us to speed up production of goods and further our construction efforts."
+ 
+ AQU_con_capitalist_market:0 "Free Market Capitalism"
+ AQU_con_capitalist_market_desc:0 "A free market is an economic system where prices, production, and the distribution of goods are determined by the forces of supply and demand, rather than by government control or central planning."
+ 
+ AQU_cut_profit_taxes:0 "Cut Profit Tax"
+ AQU_cut_profit_taxes_desc:0 "By cutting profit tax, we can stimulate economic activity, encouraging business investment and innovation, and fuels economic growth."
+ 
+ AQU_low_interest_loan_guarantees:0 "Low Interest Loan Guarantees"
+ AQU_low_interest_loan_guarantees_desc:0 "By guaranteeing low interest loans, we can help small businesses and boost competition in the market."
+ 
+ AQU_infrastructure_investments:0 "Infrastructure Investments"
+ AQU_infrastructure_investments_desc:0 "Expanding infrastructure will enable necessary transport and Communication for development."
+ 
+ AQU_agricultural_focus:0 "Agricultural Sectors"
+ AQU_agricultural_focus_desc:0 "As agriculture remains Aquila's most profitable industry and the backbone of our economy, it demands greater state focus and investment."
+ 
+ AQU_mechanized_farming_subsidies:0 "Limited Mechanized Farming Subsidies"
+ AQU_mechanized_farming_subsidies_desc:0 "While mechanized farming will boost agricultural output and strengthen the economy, excessive subsidies could cause a long-term financial risk. We must limite this spending carefully."
+ 
+ AQU_develop_rural_roads:0 "Develop Rural Roads"
+ AQU_develop_rural_roads_desc:0 "Developing rural roads can improve transportation of agricultural goods."
+ 
+ AQU_rural_region_development:0 "Rural Region Development"
+ AQU_rural_region_development_desc:0 "While rural regions may naturally lag behind urban centers in development, we cannot simply abandon them to decay."
+ 
+ AQU_expand_rural_region_development:0 "Further Rural Region Development"
+ AQU_expand_rural_region_development_desc:0 "While rural regions may naturally lag behind urban centers in development, we cannot simply abandon them to decay."
+ 
+ AQU_expand_rural_educations:0 "Investments In Rural Education"
+ AQU_expand_rural_educations_desc:0 "Education is a necessity in a functional country, regardless of whether it is for city dwellers or rural residents."
+ 
+ AQU_expand_the_cities:0 "Expand the Cities"
+ AQU_expand_the_cities_desc:0 "A country without proper infrastructure cannot pursue advanced projects."
+ 
+ AQU_aquilan_police:0 "Protector of Stability"
+ AQU_aquilan_police_desc:0 "Law enforcement is the backbone of order, making sure laws are obeyed, crimes are investigated, and public safety and order are maintained."
+ 
+ AQU_support_for_law_enforcement:0 "Support for The Law Enforcement"
+ AQU_support_for_law_enforcement_desc:0 "Supporting law enforcement is essential not just for maintaining general public safety and crime deterrence, but for countering the growing threat of terrorism and separatism from the Leonites."
+ 
+ AQU_Aquila_Neutrality_Act:0 "Aquilan Neutrality Act"
+ AQU_Aquila_Neutrality_Act_desc:0 "Adopting neutrality can protect ourselves from costly wars and boost market confidence, allowing us to focus more on internal stability and domestic development."
+ 
+ AQU_democratic_armoury:0 "Democratic Armoury"
+ AQU_democratic_armoury_desc:0 "Even if we participate in neutrality, this doesn't mean we shouldn't expand our military production capabilities."
+ 
+ AQU_Fund_the_Ministry_of_foreign_affairs:0 "Fund the Ministry of Foreign Affairs"
+ AQU_Fund_the_Ministry_of_foreign_affairs_desc:0 "Increase comminication with foreign nations not only will boost our relations, but also preventing unnecssary wars."
+ 
+ AQU_leonite_problem:0 "The Leonite Problem"
+ AQU_leonite_problem_desc:0 "The Leonites are an active pain in our neck for ages, we should take action now and remove this irritation before it gets worse."
+ 
+ AQU_increase_patrols:0 "Increase Patrols"
+ AQU_increase_patrols_desc:0 "Those troublesome Leonites will do anything to achieve their separatist dreams, this includes acts of terrorism and riots. We must increase our patrols in this regions to deter our acts."
+ 
+ AQU_stalk_the_restorationist_movement:0 "Stalk The Restorationist Movement"
+ AQU_stalk_the_restorationist_movement_desc:0 "The restorationist movement is a hightly dangerous group of people, actively supporting separatism. We have bases of suspicion that they are connect with the GAP, stalking them allows us to gain more information on them."
+ 
+ AQU_target_the_GAP:0 "Target The GAP"
+ AQU_target_the_GAP_desc:0 "It is essential for us to activity target and arrest these Leonites terrorists within our nation, as their separatism and terrorism is a national security risk."
+ 
+ AQU_go_on_a_hunting_trip:0 "Go On A Hunting Trip"
+ AQU_go_on_a_hunting_trip_desc:0 "It's a wonderful day today! The weather is great, the sun is not too bright and the temperature is not too cold. Why not go on a hunting trip and unwind? Oh, you're asking what we're hunting? Lions!"
+ 
+ AQU_review_education_funds:0 "Increase National Research funds"
+ AQU_review_education_funds_desc:0 "Yes, we admit that we might have overlooked our technological sector in Ewan's last term, this is why we must correct it before it get worse. We have concluded that research funds must be raised, but how much? We are still debating."
+ 
+ AQU_defences_of_aquila:0 "First Line of Defence"
+ AQU_defences_of_aquila_desc:0 "The Aquilan Royal Army are our nation's shield, our small but well-trained army will be the first line of defence against certain annihilation attempted by our enemies."
  
  AQU_military_funding_bill:0 "Review The Military Budget"
+ AQU_military_funding_bill_desc:0 "To improve our soldiers we must first ensure that our funds can support such improvements, otherwise it's all empty talks."
  
  AQU_the_Aquila_Royal_Army:0 "Improve The Aquila Royal Army"
+ AQU_the_Aquila_Royal_Army_desc:0 "The Royal Army are a capable force, but even in peacetime we must maintain it's standards."
  
  AQU_2nd_Antarean_Aquilan_war_defend:0 "The 2nd Antarean-Aquilan War"
+ AQU_2nd_Antarean_Aquilan_war_defend_desc:0 "The Second Antarean-Aquilan War was speculated to happen after the capitulation of Cetus by our high command. It became clear that the imperialist Antareans were not satisfied with just hunting the whale, they also wanted to shoot down the eagle. When facing the a war of annihilation, every patriots must §YARISE§! §YFOR§! §YTHE§! §YNATION§!"
  
  AQU_increase_regular_troop_training:0 "Increase Regular Training"
+ AQU_increase_regular_troop_training_desc:0 "The Royal Army have a tradition of having one of the most tough training cycles to compensate their size. Since we still face a shortage of new recruits, we must continue this tradition by introducing harsher trainings."
  
  AQU_NCO_training:0 "Increase NCO Training"
+ AQU_NCO_training_desc:0 "NCOs or Non-commissioned officers are the backbone of a functioning military, as they not only enforce discipline and standards, but also train soldiers and advise to the commissioned officers. We need to ensure their capabilities for such important role."
  
  AQU_review_the_doctrine_pre_reform:0 "Review The Doctrine"
+ AQU_review_the_doctrine_pre_reform_desc:0 "By reviewing our military doctrine and analysis past battles we can ensure that our commmanders are proficient and knowledgeable when commanding an army."
+ 
+ AQU_secure_ring_of_fire_construction_funds:0 "Ring of Fire Construction Fund"
+ AQU_secure_ring_of_fire_construction_funds_desc:0 "Our people have the right to feel safe. For many years, our country was endangered by Antares. To ensure we hold them back again if they attack us, we should build the ring of fire. However, for a project this large, we need to secure the funds. Although our economy might become a bit slower, we need to be protected."
+ 
+ AQU_falkner's_term:0 "Falkner's Term"
+ AQU_falkner's_term_desc:0 "This path isn't finished yet!"
+ 
+ AQU_the_South_Corvus_War:0 "The South Corvus Situation"
+ AQU_the_South_Corvus_War_desc:0 "A war between Corvus and Cetus was destined to happen after the annexation of 1886... A starved crow facing death will attack any animal for food, even if it is a stubborn tortoise or an ancient whale."
+ 
+ AQU_contact_the_crow:0 "Contact The Crow"
+ AQU_contact_the_crow_desc:0 "If we view this conflict in a moral perspective ,Corvus is clearly the victim in this war, economically starved by Ceuts they are justified to retake what was theirs."
+ 
+ AQU_keeping_the_eagle_feathers_dry:0 "Keep the eagle's feathers dry"
+ AQU_keeping_the_eagle_feathers_dry_desc:0 "Why join the squabble? Supporting the Corvun's political adventure is risky and supporting the Cetans is morally questionable. The mighty eagle should fly above and observe the chaos on the ground, not adding fuel to the fire."
+ 
+ AQU_contact_the_whale:0 "Contact The Whale"
+ AQU_contact_the_whale_desc:0 "Even if Corvus was justified to start this war, their recent cooperation with the imperialist Antares calls for conern. If Corvus wins this war, Antares' §Rinfluence§! over Centaura could be larger than ever and our national security will be at stakes."
+ 
+ AQU_food_aid_to_cov:0 "Food Aid To Corvus"
+ AQU_food_aid_to_cov_desc:0 "To support the war effort Corvus have implemented rationing, the Crovuns desperately need food supply and as an agricultural powerhouse we shouldn't stand by and let them starve."
+ 
+ AQU_medical_aid_cov:0 "Medical Aid To Corvus"
+ AQU_medical_aid_cov_desc:0 "Compare to Cetus the weak Corvus is far lacking in medical supplies, in a moral standpoint we should send medical aid to ease their suffering."
+ 
+ AQU_lend_lease_guns_cet:0 "Cetan Lend-Lease Act"
+ AQU_lend_lease_guns_cet_desc:0 "The past between Cetus and Aquila is complicated, but when compared to Antares we'll help them in any time of the day. This act will provide the Cetans with the necessary means to resist the Crovuns and the growing Antares influence."
+ 
+ AQU_aquilan_volunteer_force:0 "Aquilan Advisors"
+ AQU_aquilan_volunteer_force_desc:0 "Sending advisors into a foreign war might seem idiotic at first, Yet, this conflict extends far beyond control over South Corvus, it is the frontline against Antares’ expansionism. If Cetus falls we might be next...."
+ 
+ AQU_send_attache_sc:0 "Observe the War"
+ AQU_send_attache_sc_desc:0 "No matter which side you support, observing this war offers valuable firsthand information on modern military tactics. We must not waste this opportunity to deepen our understanding of modern warfare."
  
  AQU_wartime_propaganda:0 "Wartime Propaganda"
+ AQU_wartime_propaganda_desc:0 "The Ants will not be able to beat our spirit, the hearts and minds of the Aquilan people are indestructible. We beat them before and we'll beat them again!"
  
  AQU_adopting_M99_rifle:0 "Adopt The M99"
- AQU_adopting_M99_rifle_desc:0 "While our army uses the old and trusty single shot Albus Graham rifle series, it is time to adopt a completely new weapon. Most of the armies on our continent use some type of bolt action rifle, like for example, the not-so-long-ago adopted Modelo 1898 in Vega. We should adopt a new bolt action rifle, as they have faster fire rate and are overall more effective. Our army has enough iron and wood, as well as industry for the production. We can leave the Albus Graham rifles to the irregulars, but our main army needs to be equipped with the best weapons we can offer!"
+ AQU_adopting_M99_rifle_desc:0 "While our army uses the old and trusty single shot Albus Graham rifle series, it is time to adopt a completely new weapon. Most of the armies on our continent use some type of bolt action rifle, like for example, the not-so-long-ago adopted Modelo 1898 in Vega. We should adopt a new bolt action rifle, as they have faster fire rate and are overall more effective."
  
  AQU_adopting_efforts:0 "M99 Adopting Efforts"
- AQU_adopting_efforts_desc:0 ""
+ AQU_adopting_efforts_desc:0 "Even though we invented a new type of rifle, our industry still isn´t fully ready to produce it and many of our factories are still producing the old albus graham rifle. We should get new machinery in our factories, so that our industry is fully capable of producing this new kind of weapon."
  
- AQU_develop_the_M2:0 "Develop The M2"
+ AQU_develop_the_M2:0 "Develop The M12" 
+ AQU_develop_the_M2_desc:0 "Warfare is rapidly evolving, artillery is deadlier than ever, and combat vehicles are now equipped with machine guns. To adapt to this new era of warfare, we must increase our firepower. The development of the M12 submachine allow our frontline soldiers to gain significantly more firepower, ensuring we hold the upper hand against armies that still uses bolt-action rifles."
  
- AQU_M2_production_efforts:0 "M2 Production Efforts"
+ AQU_M2_production_efforts:0 "M12 Production Efforts"
+ AQU_M2_production_efforts_desc:0 "Even though we developed the M12, our industry isn't able to fully adopt and produce the M12 in mass, we should increase our efforts in replacing the bolt-action rilfes with the newly made M12 to ensure our troops with more firepower."
+ 
+ AQU_the_civil_guard:0 "The Civil Guard"
+ AQU_the_civil_guard_desc:0 "Civil Guards are civilian volunteers and policemen who were called up in their country's hour of need. Due not being trained or receive standardized equipments, Civil guards often carry a variety of self-owned firearms and wear anything from civilian coats and hats to police uniforms."
+ 
+ AQU_a_tight_policy:0 "A Tight Policy"
+ AQU_a_tight_policy_desc:0 "The Civil Guards are patriots who wish to defend the beloved nation without enduring the harsh army treatment. Even though aims of the Civil Guards are to protect the nation, it is still a highly conerning to have people with guns running around."
+ 
+ AQU_a_loose_policy:0 "A Loose Policy"
+ AQU_a_loose_policy_desc:0 "Imposing a looser policy will encourage more and more people to willingly join the Civil Guard. After all, when you can prove your loyalty and patriotism just by signing your name on a list, who would refuse?"
+ 
+ AQU_continue_monthly_reporting:0 "Increase Monthly Report"
+ AQU_continue_monthly_reporting_desc:0 "While monthly reporting of guns and Civil Guard members already exist, but they are often times sloppy done. Increase and standardize the monthly reporting will allow the government to track and calculate mobilisable Civil Guards."
+ 
+ AQU_civil_guard_subsidies:0 "Civil Guard Subsidies"
+ AQU_civil_guard_subsidies_desc:0 "Subsiding the Civil Guardsman will give our people more incentive to join the Civil Guard, increasing the mobilisable guardsman incase of a war."
+ 
+ AQU_minimum_training:0 "Standardize Minimum Training"
+ AQU_minimum_training_desc:0 "Although Civil Guards are traditional an untrained militia force, they would be obviously more effective if we provide standardised training to them, even if the training is only a 3 week short courses."
  
  AQU_wartime_factories:0 "Convert Civilian Factories"
+ AQU_wartime_factories_desc:0 "The Ants are coming, we must increase produce of our military equipments, converting previously consumer good related factories into producing military equipment will boost our logistics and war efforts."
  
  AQU_national_defense_bond:0 "National Defense Bonds"
+ AQU_national_defense_bond_desc:0 "The cost of maintaining a stable war effort is surprising higher than anyone could imagine, even though our national treasury can maintain the war effort to some extent, it would be better to have more for emergencies."
  
  AQU_hold_the_ring_of_fire_at_all_cost:0 "Hold The Ring Of Fire At All Cost!"
+ AQU_hold_the_ring_of_fire_at_all_cost_desc:0 "The Ring of Fire is the first line of defence against the Ants, our soldiers must hold the line §RAT ALL COST§! to buy time to mobilise the nation!"
  
  AQU_unite_the_people:0 "Promate Nationalism"
+ AQU_unite_the_people_desc:0 "Promating nationalism is a great way to push the masses to join the war effort against the dirty Ants, from the students in the schools to the workers in the factories, the people of Aquila must unite under a common cause!"
  
  AQU_new_form_of_communication:0 "A New Form Of Communication"
+ AQU_new_form_of_communication_desc:0 "Radios are essential in a modern military, as they enhance communication and chain-of-command response times, allowing our army to be more coordinated."
+ 
+ AQU_we_are_losing:0 "We are losing..."
+ AQU_we_are_losing_desc:0 "Where all the roads have ended, but the path we walk does not! It is apparent to everyone in Aquila, that we must continue the Fight §Rtill the end!§! §YFor this is not the end, nor the beginning of it, but the end of the beginning.§!"
+ 
+ AQU_desperate_military_reforms:0 "Desperate Military Reform"
+ AQU_desperate_military_reforms_desc:0 "It is clear that our army isn't prepare for such wars, therefore it is essential to keep our army modernised to the current standards."
+ 
+ AQU_will_wins_Wars:0 "Will Wins Wars"
+ AQU_will_wins_Wars_desc:0 "Winning a war is not only about logistics, technology, or military tactics. Tt is also about the will to fight, only with the will to fight can our army succeed on the battlefield."
+ 
+ AQU_stubborn_defence:0 "Stubborn Defence"
+ AQU_stubborn_defence_desc:0 "In such situations, every inch of the eagle's nest must be defended, every inch of land must be fought and paid in their red Antareans blood. For every second we fought, means every second Aquila lives on."
+ 
+ AQU_discipline_above_alll:0 "Discipline Above All"
+ AQU_discipline_above_alll_desc:0 "Our lines are breaking, our cities are falling, and panic spreads through all fronts like wildfire. Retreating is no longer an option, we must treat every fight like it's our last. Now, It's either fight or die."
+ 
+ AQU_defence_in_depth:0 "Defence In Depth"
+ AQU_defence_in_depth_desc:0 "The valuable experience of warfare taught us that delaying rather than preventing the advance of an attacker and causing additional casualties by yielding space can be more tactically superior than sending thousand of men into a same trench over and over again."
+ 
+ AQU_utillze_the_terrain:0 "Utillze The Terrain"
+ AQU_utillze_the_terrain_desc:0 " Our divisions are not equipped with the latest equipment, but if there is something we know deeply it is our own lands. We can use every tree, hill, and field to our advantage, and thus make the experience of any who dare to invade a living hell. "
+ 
+ AQU_strike_when_they_don't_see:0 "Strike When They Don't See"
+ AQU_strike_when_they_don't_see_desc:0 "No successful commander ever struck the enemy where and how they expected it. Deception is foundational to war and we must always seem to be weak when we are strong, and strong when we are weak. "
+ 
+ AQU_defend_the_cities:0 "Defend The Cities"
+ AQU_defend_the_cities_desc:0 "With the threat of antarean invasion, we should focus on improving the defense of our towns and cities. We can achieve this by fortifying the streets. However, we need someone who knows the streets well enough to place the fortifications well... Who knows it the best? The inhabitants of those towns. Thus we shall establish town defense councils, which will plan the fortifications."
+ 
+ AQU_prepare_for_battle_of_talona:0 "Prepare The Batlle Of Talona"
+ AQU_prepare_for_battle_of_talona_desc:0 "Talona is a very important city in the northeast of Aquila. In case Volucris falls, it could become our new provisional capital. Although it lays in deep forests, it is connected via few important roads, mainly route 23. We could mine the road and dig deep trenches against the tanks to stop the enemy. In case the enemy reaches the town, we should of course fortify the streets and the metro."
+ 
+ AQU_prepare_for_battle_of_volucris:0 "Prepare The Battle Of Volucris"
+ AQU_prepare_for_battle_of_volucris_desc:0 "Volucris is without a doubt our most important city, the centre of the nation, the seat of our beloved king and the Senate. If we let it fall, our country will be severely crippled in terms of communications and infrastructure. We should focus on fortificating our capital. We can't let it fall in the hands of the enemy!"
+ 
+ AQU_increase_cg:0 "Increase Civil Guard"
+ AQU_increase_cg_desc:0 "Raising Civil Guards is more cost effective and easier than integrate them into the military, imagine the logistics strain that would happen if we Integrate them."
+ 
+ AQU_integrate_cg:0 "Integrate the Civil Guard"
+ AQU_integrate_cg_desc:0 "The Civil Guard supports our troops during wartime in urban areas, but improvements could be made. By integrating the Civil Guards into the military they will receive simple training, standardised weapons and uniform. This will allow the Civil Guardsmen be more effective on the battlefield than before."
+ 
+ AQU_develop_tank:0 "Develop The AHT"
+ AQU_develop_tank_desc:0 "Applying what we have learned from the Antarean Tanks, we can copy their design and develop our own armored tank as well. The AHT shall be a mechanized and heavily armoured force of steel that will halt the enemy's advances."
+ 
+ AQU_emergency_tank_production:0 "Emergency Tank Production"
+ AQU_emergency_tank_production_desc:0 "The AHT has proven itself to be a force to be reckoned with, we must fasten the production of such amazing vehicle as fast as we could, the AHT will turn the ties of the WAR!"
+ 
+ AQU_research_tank_doctrine:0 "Research Tank Doctrine"
+ AQU_research_tank_doctrine_desc:0 "Every good weapon can be ruined by how the user uses it, every bad weapon can be effective by how the user uses it. "
+ 
+ AQU_to_the_blue_skies:0 "To The Blue Skies"
+ AQU_to_the_blue_skies_desc:0 "A new front have been revealed by the invention of planes, the skies. We can not allow the Antareans to keep dominating, it is a shame that the eagle with wings couldn't protect it's sky while the scorpion without wings dominates it"
+ 
+ AQU_lesson_from_the_canis_war:0 "Lession From The Canis War"
+ AQU_lesson_from_the_canis_war_desc:0 "By inspecting the Canis War we can learn from the Ursan, even though the Ursans mostly used the airforce for recon purposes, we can still learn about valuable tactics of camouflaging."
+ 
+ AQU_observe_the_AIAF:0 "Observe The AIAF"
+ AQU_observe_the_AIAF_desc:0 "To further prepare our airforce we can observe the AIAF in the skies, what is a better way to learn than just observing it yourself?"
+ 
+ AQU_defend_our_skies:0 "Defend Our Skies"
+ AQU_defend_our_skies_desc:0 "Our Preparation finally paid off, the Royal Aquilan Airforce is ready for takeoff, we will claim our eagle's sky!"
+ 
+ AQU_mass_barrage:0 "Mass Barrage"
+ AQU_mass_barrage_desc:0 "As a wise man once said "How do you solve a practical problem? The answer, use a gun, and if that don't work... Use more gun.""
+ 
+ AQU_flexible_artillery_command:0 "Flexible Artillery Command"
+ AQU_flexible_artillery_command_desc:0 "Having a flexible artillery command allows our artillery units to rapidly shift, decentralize or mass their fire support across a battlefield based on real-time threats"
+ 
+ AQU_on_call_artillery_support:0 "Call For Fire"
+ AQU_on_call_artillery_support_desc:0 "Having our troops on the ground be able to indentify and call for artillery support independently allows our artillery to be more deadly and flexible than ever."
+ 
+ AQU_centralized_artillery_command:0 "Centralized Artillery Command"
+ AQU_centralized_artillery_command_desc:0 "By concentrating the fire direction, target prioritization, and tactical control of all artillery assets under a unified command, we can pour shells into a strategic points. "
+ 
+ AQU_planned_barrage:0 "Planned Barrage"
+ AQU_planned_barrage_desc:0 "Before our troop's every move, the artillery will calculate every coordinate and strategic points on a map. When our troops go on the attack, the synchronized barrage of shells along side of the infantry will crush any enemies on our path."
+ 
+ AQU_recon_tactics:0 "Recon Tactics"
+ AQU_recon_tactics_desc:0 "Having recons to provide location of the enemy is a must, since our artillery can not fire at the enemy if they don't know where they are."
+ 
+ AQU_victory_b:0 "Victory?"
+ AQU_victory_b_desc:0 "Is... is this, victory?"
+ 
+ AQU_announce_total_mobilization:0 "Announce Total Mobilisation"
+ AQU_announce_total_mobilization_desc:0 "To win this losing war, we must use everything available in our ability to avoid total annihilation of our people and our ideals, even if something us be sacrificed."
+ 
+ AQU_integrate_cgww:0 "Integrate the Civil Guard"
+ AQU_integrate_cgww_desc:0 "The Civil Guard supports our troops during wartime in urban areas, but improvements could be made. By integrating the Civil Guards into the military they will receive simple training, standardised weapons and uniform. This will allow the Civil Guardsmen be more effective on the battlefield than before."
+ 
+ AQU_increase_cg_bawewewaewa:0 "Increase Civil Guard"
+ AQU_increase_cg_bawewewaewa_desc:0 "Raising Civil Guards is more cost effective and easier than integrate them into the military, imagine the logistics strain that would happen if we Integrate them."
+ 
+ AQU_the_homefront:0 "The Homefront"
+ AQU_the_homefront_desc:0 "War is not only a matter of equipment, artillery, group troops or air force; it is largely a matter of spirit, or morale."
+ 
+ AQU_nationalizing_war_factories:0 "Nationalise Factories"
+ AQU_nationalizing_war_factories_desc:0 "Continue efforts to expand our military factories are necessary to meet the demands for new equipment."
+ 
+ AQU_control_the_media:0 "Total Control The Media"
+ AQU_control_the_media_desc:0 "There is no room for independent media in this kind of situation, their honest report on front could destroy our homefront's morale, sabotaging the war effort."
+ 
+ AQU_crush_defeatism:0 "Crush Defeatism"
+ AQU_crush_defeatism_desc:0 "In the time of need, every man, woman or even child should all focus on one goal and one goal only, §YVICTORY.§!"
+ 
+ AQU_material_salvaging_program:0 "Material Salvaging Program" 
+ AQU_material_salvaging_program_desc:0 "Steel is deeply foundational for our industries, to support the war effort, we expect every household to lend a hand for our common struggle."
+ 
+ AQU_mobilize_the_woman_and_children:0 "Mobilise The Woman And Childern"
+ AQU_mobilize_the_woman_and_children_desc:0 "Sending woman and childerns to the factories might be ethically and morally wrong, but to fill the factories this is a necessary step to make for the final victory."
+ 
+ AQU_solve_the_lack_of_workers_problem:0 "Solve The Shortage Of Workers"
+ AQU_solve_the_lack_of_workers_problem_desc:0 "With our men marching to the frontlines, It is time to call upon the other half of our nation. By bringing women into the factories and assembly lines, we will ensure that every soldier will receive their fair share of supplies. Total war requires total mobilization."
+ 
+ AQU_full_military_controll:0 "Full Military Control"
+ AQU_full_military_controll_desc:0 "Some might call this an overreach of power, a clear sign that Aquila is devolving into dictatorship, to those people who doubt our motives I ensure you our only motive is to free our country from the Ants no matter this cost." 
+ 
+ AQU_wartime_military_reforms:0 "Wartime Military Reforms"
+ AQU_wartime_military_reforms_desc:0 "With our newly learned experience of modern war, we will implement them into the iron army in hopes of reaching the same level as our enemies. "
+ 
+ AQU_will_wins_Wars_b:0 "Will Wins Wars"
+ AQU_will_wins_Wars_b_desc:0 "Winning a war is not only about logistics, technology, or military tactics. Tt is also about the will to fight, only with the will to fight can our army succeed on the battlefield."
+ 
+ AQU_stubborn_defence_b:0 "Stubborn Defence"
+ AQU_stubborn_defence_b_desc:0 "In such situations, every inch of the eagle's nest must be defended, every inch of land must be fought and paid in their red Antareans blood. For every second we fought, means every second Aquila lives on."
+ 
+ AQU_discipline_above_alll_b:0 "Discipline Above All"
+ AQU_discipline_above_alll_b_desc:0 "Our lines are breaking, our cities are falling, and panic spreads through all fronts like wildfire. Retreating is no longer an option, we must treat every fight like it's our last. Now, It's either fight or die."
+ 
+ AQU_defence_in_depth_b:0 "Defence In Depth"
+ AQU_defence_in_depth_b_desc:0 "The valuable experience of warfare taught us that delaying rather than preventing the advance of an attacker and causing additional casualties by yielding space can be more tactically superior than sending thousand of men into a same trench over and over again."
+ 
+ AQU_utillze_the_terrain_b:0 "Utillze The Terrain"
+ AQU_utillze_the_terrain_b_desc:0 " Our divisions are not equipped with the latest equipment, but if there is something we know deeply it is our own lands. We can use every tree, hill, and field to our advantage, and thus make the experience of any who dare to invade a living hell. "
+ 
+ AQU_strike_when_they_dont_see_b:0 "Strike When They Don't See"
+ AQU_strike_when_they_dont_see_b_desc:0 "No successful commander ever struck the enemy where and how they expected it. Deception is foundational to war and we must always seem to be weak when we are strong, and strong when we are weak. "
+ 
+ AQU_develop_tank_b:0 "Develop The AHT"
+ AQU_develop_tank_b_desc:0 "Applying what we have learned from the Antarean Tanks, we can copy their design and develop our own armored tank as well. The AHT shall be a mechanized and heavily armoured force of steel that will halt the enemy's advances."
+ 
+ AQU_emergency_tank_production_b:0 "Emergency Tank Production"
+ AQU_emergency_tank_production_b_desc:0 "The AHT has proven itself to be a force to be reckoned with, we must fasten the production of such amazing vehicle as fast as we could, the AHT will turn the ties of the WAR!"
+ 
+ AQU_research_tank_doctrine_b:0 "Research Tank Doctrine"
+ AQU_research_tank_doctrine_b_desc:0 "Every good weapon can be ruined by how the user uses it, every bad weapon can be effective by how the user uses it. "
+ 
+ AQU_to_the_blue_skies_b:0 "To The Blue Skies"
+ AQU_to_the_blue_skies_b_desc:0 "A new front have been revealed by the invention of planes, the skies. We can not allow the Antareans to keep dominating, it is a shame that the eagle with wings couldn't protect it's sky while the scorpion without wings dominates it"
+ 
+ AQU_lesson_from_the_canis_war_b:0 "Lession From The Canis War"
+ AQU_lesson_from_the_canis_war_b_desc:0 "By inspecting the Canis War we can learn from the Ursan, even though the Ursans mostly used the airforce for recon purposes, we can still learn about valuable tactics of camouflaging."
+ 
+ AQU_observe_the_AIAF_b:0 "Observe The AIAF"
+ AQU_observe_the_AIAF_b_desc:0 "To further prepare our airforce we can observe the AIAF in the skies, what is a better way to learn than just observing it yourself?"
+ 
+ AQU_defend_our_skies_b:0 "Defend Our Skies"
+ AQU_defend_our_skies_b_desc:0 "Our Preparation finally paid off, the Royal Aquilan Airforce is ready for takeoff, we will claim our eagle's sky!"
+ 
+ AQU_Operation_Silva:0 "Operation Silva"
+ AQU_Operation_Silva_desc:0 "In the name of our king, Lucas Silva, Aquila shall be freed from the enemy's hands. Every inch of the nation will be returns to the eagle's claw."
+ 
+ AQU_victory:0 "Victory?"
+ AQU_victory_desc:0 "Is... is this, victory?"
+ 
+ AQU_aquila_the_unconquerable:0 "Aquila The Unconquerable"
+ AQU_aquila_the_unconquerable_desc:0 "Through mud and blood we have proven ourself to be the unconquerable eagle of Centaura. Twice, twice those Antarean tried to annihilation our spirit and twice we prevailed. The future of Aquila will be held in OUR hands."
+ 
+ ###generic war Reform
+ AQU_aquila_under_attack_generic:0 "Aquila Is Under Attack!"
+ AQU_aquila_under_attack_generic_desc:0 "The enemies are on our doorstep! Every patriots must §YARISE§! §YFOR§! §YTHE§! §YNATION§!"
+ 
+ AQU_wartime_military_reforms_generic:0 "Wartime Military Reforms"
+ AQU_wartime_military_reforms_generic_desc:0 "With our newly learned experience of modern war, we will implement them into the iron army in hopes of reaching the same level as our enemies. "
+ 
+ AQU_will_wins_Wars_generic:0 "Will Wins Wars"
+ AQU_will_wins_Wars_generic_desc:0 "Winning a war is not only about logistics, technology, or military tactics. Tt is also about the will to fight, only with the will to fight can our army succeed on the battlefield."
+ 
+ AQU_stubborn_defence_generic:0 "Stubborn Defence"
+ AQU_stubborn_defence_generic_desc:0 "In such situations, every inch of the eagle's nest must be defended, every inch of land must be fought and paid in their red Antareans blood. For every second we fought, means every second Aquila lives on."
+ 
+ AQU_discipline_above_alll_generic:0 "Discipline Above All"
+ AQU_discipline_above_alll_generic_desc:0 "Our lines are breaking, our cities are falling, and panic spreads through all fronts like wildfire. Retreating is no longer an option, we must treat every fight like it's our last. Now, It's either fight or die."
+ 
+ AQU_defence_in_depth_generic:0 "Defence In Depth"
+ AQU_defence_in_depth_generic_desc:0 "The valuable experience of warfare taught us that delaying rather than preventing the advance of an attacker and causing additional casualties by yielding space can be more tactically superior than sending thousand of men into a same trench over and over again."
+ 
+ AQU_utillze_the_terrain_generic:0 "Utillze The Terrain"
+ AQU_utillze_the_terrain_generic_desc:0 " Our divisions are not equipped with the latest equipment, but if there is something we know deeply it is our own lands. We can use every tree, hill, and field to our advantage, and thus make the experience of any who dare to invade a living hell. "
+ 
+ AQU_strike_when_they_dont_see_generic:0 "Strike When They Don't See"
+ AQU_strike_when_they_dont_see_generic_desc:0 "No successful commander ever struck the enemy where and how they expected it. Deception is foundational to war and we must always seem to be weak when we are strong, and strong when we are weak. "
+ 
+ 
+ 
  
  ########
  # events
@@ -112,11 +499,101 @@
  aqu.4.t:0 "The Scorch"
  aqu.4.d:0 "Antares is burning our forests to make it easier to attack!"
  aqu.4.a:0 "Oh no!"
+ aqu.11402.t:0 "Aquilan Food Aid"
+ aqu.11402.d:0 "The Aquilans send their regards. For humanitarian reasons, Aquila have sent a massive amount of food aid to us hoping to provide necessary rations to ease the suffering in our homefront."
+ aqu.11402.a:0 "Huh, unexpected aid."
+ aqu.11401644.t:0 "Aquilan Medical Aid"
+ aqu.11401644.d:0 "The Aquilans send their regards. For humanitarian reasons, Aquila have sent a massive amount of medical related technology to us hoping to decrease the suffering and casualties on the frontlines."
+ aqu.11401644.a:0 "Huh, unexpected aid."
+ aqu.11401.t:0 "Aquilan Support"
+ aqu.11401.d:0 "The Aquilans send their regards. To support our war effort against the Corvun threat, a massive convoy of their military equipment has just arrived to our backlines, ready to reinforce our frontline soldier"
+ aqu.11401.a:0 "Well needed assistance."
+ aqu.11403.t:0 "Aquilan Assistance"
+ aqu.11403.d:0 "Our recent conflict with Corvus has raised alarm bells in Aquila. Fearing the expansion of Antarean influence, the Aquilans have contacted us to offer valuable tactical and strategic advice, bringing their military doctrine directly to our front lines. This assistance may help our campaign against the Corvuns , after all they are not called the 'Iron Army' for nothing."
+ aqu.11403.a:0 "Most needed aid."
  
- ###event abondon the radicals
- aqu.1118965.t:0 "Cutting ties"
- aqu.1118965.d:0 "For years, we were on good terms with social democrats while they were nothing but a bunch of opportunists, who would jump at every opportunity to criticize us and steal our votes. No more! We would rather enter these elections alone than with these rats!"
- aqu.1118965.a:0 "We are better off on our own..."
+ ###the king announce the suspend of the senate
+ aqu.11189564848418.t:0 "Our king suspends the senate with loyalist in the army and LAP"
+ aqu.11189564848418.d:0 "weijwaiewa"
+ aqu.11189564848418.a:0 "haha write" 
+ 
+ ###party withdraw
+ aqu.11189564223232.t:0 "Breaking News!"
+ aqu.11189564223232.d:0 "CPP and DAP nominee fucking dies, alongside the whole senate!"
+ aqu.11189564223232.a:0 "???"
+ 
+ ###Start of the SCW
+ aqu.114255456156.t:0 "The South Corvus War"
+ aqu.114255456156.d:0 "The situation in Southern Corvus has dissolved into absolute chaos. The Antares-backed Corvun have launched a unexpected strike against the Cetans. While a war between the two nations was inevitable following the annexation of 1886, none anticipated it would be today. It is an open secret that the Antareans has long backed Corvus. If we dismiss this conflict as yet another foreign war, Antares' expansionist ambitions will go unchecked. Yet, openly backing Cetus raises moral conerns, the Corvuns only started this reckless gamble to prevent the domestic collapse caused by the Cetans. Regardless of our stance, we must position ourselves strategically to maximize the benefit of our own people."
+ aqu.114255456156.a:0 "Surely this war won't escalate beyond South Corvus... right?"
+ 
+ ###Leonites
+ aqu.9181.t:0 "The Leonites Revolt"
+ aqu.9181.d:0 "Although we had some limited information about the Leonite movement, we failed to destroy their movement before it could start the revolt. Now, they are in the streets together with their followers, engaging in street fighting. Some of them even obtained guns from armories, because they had followers in the army! Nevertheless, we have to crush their uprising and execute its leaders now..."
+ aqu.9181.a:0 "Those damn separatists!"
+ aqu.9181.b:0 "WHEN THE DAY COMES, THE LION SHALL BE FREED"
+ 
+ ###Leonites focus 1
+ aqu.9182.t:0 "The Leonites Problem"
+ aqu.9182.d:0 "The Leonite Restorationist Movement is a highly organized and dangerous movement, full of militants and terrorists actively plotting sabotage and terrorism. Operating in the western borderlands, these Leonites openly advocate for the separatism of the nation and pose a direct threat to our security. We must take action before it is too late."
+ aqu.9182.a:0 "A real pain in the neck aren't they?"
+ 
+ ###Leonites focus 3
+ aqu.9184.t:0 "Report on Leonite related suspicion activity"
+ aqu.9184.d:0 "Members of our secret police spent several past weeks spying on suspected Leonite members, following them everywhere they go. We found out that every once in a while, they meet up at an abandoned warehouse in the outskits of the city. After installing a device in the warehouse, we found out they plot against the current government, trying to start a bloody revolution. We have to do something about it, since having terrorist running around isn't a great idea!"
+ aqu.9184.a:0 "Better keep an eye on them..."
+ 
+ ###Leonites focus 4
+ aqu.9185.t:0 "Interrogation"
+ aqu.9185.d:0 "One wednesday evening, our secret police broke into one of suspected Leonites flat as he was asleep. They silently arrested him without anyone knowing, instead putting a look-alike in his place who now goes to Leonite meetings instead, spying for us. The imprisoned Leonite is now being interrogated and has already told us many important things. With this, it shouldn´t be hard to arrest the rest of Leonites, putting an end to their little rebelion."
+ aqu.9185.a:0 "Interesting information."
+ 
+ ###Leonites revolt peace
+ aqu.9186.t:0 "The Leonites Offer Peace"
+ aqu.9186.d:0 "Even after fierce fighting with the Leonites for more than a year, we still couldn´t crush their uprising. Our country keeps suffering for no reason and thousands of our civilians died already, with many villages razed. Antares is eyeing us hungrily, perhaps preparing to attack us at our weakest point. Perhaps we should finally end this pointless war with white peace? It´s not like the frontline will change anytime soon anyway and at least we can keep what we defended..." 
+ aqu.9186.a:0 "We just need more time." 
+ aqu.9186.b:0 "Fine..."
+ 
+ ###Senator woods crashing out about not crushing the Leonites
+ aqu.9187.t:0 "Government Under Fire From Senator"
+ aqu.9187.d:0 ""For an entire year, we've been trying to crush the separatis. However, due to your hesitation and incompetence, we failed. Now, the Leonites have taken our western borderlands and 1/4 of the Ring Of Fire. The incompetence of your leadership is now not only apparent to our people, but to the whole wide world. You should be ashamed, ASHAMED for letting this even happen!" said senator Wood. His words shook the senate, with many senators, even within the ruling party debating whether to push for a motion of no confidence against the first councillor or not."
+ aqu.9187.a:0 "..."
+ 
+ ###Cetus troops flee into Aquila
+ formageneric.1.t:0 "Cetus Troops Ask For Asylum"
+ formageneric.1.d:0 "Cetus is about to fall and some of their troops are now at our borders, seeking asylum. Although we've had issues with cetus in the past, they're long gone and many people forgot our old grudges. The League of Aquilan Patriots is protesting against letting them in, but the final choice is up to us. If we let them in, we could use their experience to train our army. However, letting them in could be dangerous. Maybe they're spies?"
+ formageneric.1.a:0 "What are you waiting for? Welcome them in!"
+ formageneric.1.b:0 "Not worth the risk."
+ 
+ ###DAP review ###"Review DAP's Achievements"
+ aqu.1118975.t:0 "Self improvement"
+ aqu.1118975.d:0 "Many people see our last term of governance as very successful, mainly those from rural areas, like farmers or lower class. The last term was mainly about supporting smaller farmers around the countryside, while providing food for the poor from those farmers. Nevertheless, it wasn't all positive. While we supported the agricultural sector, we forgot about those working in forestry. In our next term, we need to support them more."
+ aqu.1118975.a:0 "This will surely help."
+ 
+ ###Raise funds DAP
+ aqu.1118974.t:0 "Raise Funds"
+ aqu.1118974.d:0 "Money and resources are necessities for a successful campaign, without it our senators will have a harder time against the CPP opposition. We must increase our efforts to secure valuable funds before the eventual elections."
+ aqu.1118974.a:0 ""Hey sir, do you mind donating?""
+ 
+ ###campaigning
+ aqu.111896.t:0 " "200 Days till the Senate Elections!" "
+ aqu.111896.d:0 "In several months, the Senate elections shall take place in many towns around our country. The main parties already started their campaigns. While the conservatives are trying to hold the majority, the liberals promised their voters to win the Senate, thus having a bigger say in our country's matters. Even the collectivists and ultra nationalists are trying to gain more voters, although most of election polls don't favor them much."
+ aqu.111896.a:0 "Oh, it's time for some campaignin'!" 
+ 
+ ###campaigning starts DAPP 
+ aqu.111898964.t:0 "DAPP Moving Moves"
+ aqu.111898964.d:0 "The DAPP has officially started its election campaign today. Their main goal is to keep their lead in the Senate over the liberals, keeping the country under their careful conservative lead. Ewan L. Fouwler shall ensure the senate stays in their hands and the country stays on the right track."
+ aqu.111898964.a:0 "Huh, interesting."
+  
+ ###campaigning starts CPP
+ aqu.1118965.t:0 "CPP Moving Moves"
+ aqu.1118965.d:0 "The liberals are tired from the conservative rule, promising better future full of innovations. They are focusing their campaign on students and the people from urban areas. If they win, they will break the long streak of conservative rule. They need just few more senators and they will have the upper hand in the senate."
+ aqu.1118965.a:0 "Huh, interesting."
+ 
+ ###the CPP election ai
+ aqu.111898964152.t:0 "CPP Moving Moves" 
+ aqu.111898964152.d:0 "The liberals are tired from the conservative rule, promising better future full of innovations. They are focusing their campaign on students and the people from urban areas. If they win, they will break the long streak of conservative rule. They need just few more senators and they will have the upper hand in the senate."
+ aqu.111898964152.a:0 "Huh, interesting."
  
  ###event coalition with the Socialist
  aqu.1118964.t:0 "We are stronger together!"
@@ -133,8 +610,8 @@
  aqu.1118967.d:0 "Our people are struggling due to the companies having too much power over our economy. We need fair wages and jobs for everyone, who can work. And for those who can't work, we shall strengthen our social safety net, so they can have a nice life just like anyone else. together, hand in hand, we will fight for fair wages, more free time, general happiness and decreasing unemployment in our beloved country!"
  aqu.1118967.a:0 "For the people of Aquila!"
  
- ###a meeting with the socailist
- aqu.1118968.t:0 "A meeting with the Socialist"
+ ###A country that doesn't change is destined to fail
+ aqu.1118968.t:0 "A Country That Doesn't Change Is Destined To Fail"
  aqu.1118968.d:0 "L: Well, let´s see... we aren´t that different, you want jobs for the people and we want industrialization, which can provide jobs as well. \n\nSD: That is mostly correct. However, we want more powerful worker unions and fair wages for our people, too. \n\nL: Look, our country is not in the best situation at the moment, we can´t afford to pay workers as much as you demand. \n\nSD: While we agree to support the industrialization, we want fair treatment of workers and better wages. \n\nL: Very well. I will think about it." 
  aqu.1118968.a:0 "........"
  
@@ -152,6 +629,21 @@
  aqu.1118971.t:0 "Outdated economy"
  aqu.1118971.d:0 "Our current government does nothing but invest in forestry and agriculture, while keeping Aquila a backwards country. All the modern countries of the world, like Antares or Orion, invested in their industrial sector long ago and look how strong they are! It is time to invest in factories, since outdated armies have no place in our turbulent world. However, we cannot achieve a modern army with a government like the one we have now. By voting for us, you are also voting for a happy and safe future of our beloved nation, as only with a modern economy can we produce modern weaponry and machinery!"
  aqu.1118971.a:0 "We need change!"
+
+ ###White peace Victory
+ aqu.2110003.t:0 "Victory..?"
+ aqu.2110003.d:0 "After the Aquilan-Antarean war started, Antarean armies managed to push Aquilans deep into their territory. However, it seems that all this effort was pointless, because as of today, Aquilans pushed Antareans out of their country and liberated most of their lost lands. Will Antares be able to push Aquilans yet again, or will it be forced to negotiate?"
+ aqu.2110003.a:0 "Only time will tell.."
+ 
+ ###White peace Victory 2
+ aqu.2110004.t:0 "Victory"
+ aqu.2110004.d:0 "After many months of fighting against a much stronger foe, we managed to prove the worth of the iron army. While we lost many good men in the war, thanks to many of our successful offensives, we forced Antares to come to the negotiation table. They want to sign a white peace. Maybe it's finally time to end this pointless bloodshed and rebuild our country."
+ aqu.2110004.a:0 "The Iron Army lives up to it's name!"
+ 
+ ###Victory focus
+ aqu.2110005.t:0 "Cost Of Victory"
+ aqu.2110005.d:0 "As of today, the curtain has fallen on this horrible war, the war that will be known as the 2nd Antarean-Aquilan in the future has officially ended.This terrible war has claimed thousands, if not millions, of lives on both sides of the war, many of which were just coming of age. \n\nIn a small town near Volans, a letter arrived at a cottage. A middle aged looking farmer sits at his dining table, holding the letter in his hand. \n\n“Lentia, March 21, 1912 \n To my dearest Mother and Father, \n\nMy superiors have told me to write this letter just in case the worst has happened to me, even though I seriously doubt something like that would happen, this will be my last letter to you if the worst truly has come to pass. \n\nBy the time you are reading this letter, it means I didn’t make it back home. The hardest part of writing this is knowing the pain it will cause you. I understand the unbearable grief you must be feeling right now, but please do not grieve for I have died defending our beloved nation, please be proud of me instead of crying, for I have died for a just cause. If for a reason you miss me, just look at our national map and wipe your tears, for I will forever sleep within it. \n\nThough I have left this world, my only last wish is for you both to live a happy and prosperous life. \n\nGoodbye." \n\nThe man simply stared at the letter, no matter how loudly as the people outside celebrated the sweet victory of war, the man only stared at it without a single word...."
+ aqu.2110005.a:0 "Only the dead have seen the end of war."
  
  ###meet with the worker unions
  aqu.1118972.t:0 "A promise to the workers"
@@ -168,6 +660,43 @@
  aqu.18661112.d:0 "The day we've been waiting for is finally here. The voter turnout this year is much higher than normally, as the people from all across the country decided to go vote even though the voting places are often far away from them due to our dense forests. However, thanks to the Aquilan election and political systems, the elections are fair for everyone. Thankfully, the electoral race has been mostly clean and fair. All the parties are promising better life for the populace. Nevertheless, only one party can win, that party is... "
  aqu.18661112.a:0 "And the winner is.....!"
  
+ ###DAP Victory
+ aqu.18661116.t:0 "DAP victory!"
+ aqu.18661116.d:0 "The Senate has decided that Ewan L. Fouwler will continue in his position as the First Councilor for a second term! The DAP shall keep leading Aquila with their status quo, as they have for many years already. It seems like the populace didn't want any changes and considers the DAP the most able party..."
+ aqu.18661116.a:0 " "I'm coming back to serve a second term." -Ewan L. Fouwler "
+ 
+ ###generic war start military Reform
+ aqu.2110000.t:0 "AQUILA UNDER ATTACK"
+ aqu.2110000.d:0 "Without warning, the clouds of war has reached our homeland, Aquila is under attack! We must mobilise the army and industries to hopefully hold the front and protect the nation. Shoulder to shoulder, united we stand, the eagle shall not fall against the enemy!"
+ aqu.2110000.a:0 "To arms!"
+ 
+ ###start of the 2nd ant-aqu war
+ aqu.2110001.t:0 "2nd Antarean Aquilan War"
+ aqu.2110001.d:0 "The aggressive Empire of Antares has decided to attack us again. Defeating Cetus apparently wasn´t enough for them. Although we have defeated them many times in the past when they attacked us, they have modern technology now. Thankfully, we have the Ring of Fire to protect us this time, so hopefully, we can hold them back from the inland. "
+ aqu.2110001.a:0 "CHHAARGEEE!"
+
+ ###we are losing...
+ aqu.2110002.t:0 "Report from the front"
+ aqu.2110002.d:0 "Bad news from the front! The empire of Antares managed to break through our carefully prepared fortifications. Although it wasn´t hard to hold them at the beginning, their persistent attempts at breaking through paid off and now, they´re advancing further! How could this have happened... What are we supposed to do now?"
+ aqu.2110002.a:0 "Lord help us..."
+ 
+ ###Military government
+ aqu.3110001.t:0 "A proposal from the cabinet"
+ aqu.3110001.d:0 "The war is not looking good for us. The parliament has been discussing for more than a week and came up with an interesting proposal. We could give emergency powers to our military. Although it could bring authoritarianism and take our democracy away, if we give the army too much power..."
+ aqu.3110001.a:0 "There is no need for that."
+ aqu.3110001.b:0 "We're out of options...."
+ 
+ ###force women and maybe childern into the Factories
+ aqu.3110002.t:0 "Solving the problem"
+ aqu.3110002.d:0 "Since the war with antares began, we had to mobilize many of our nations men. This brought a really big problem however. Our factories lack workforce and without it, our army will soon crumble. Work in the factories is hard and tiring, but now we have many unemployed housewives who could do it... Or even the children, if needed..."
+ aqu.3110002.a:0 "Childern are unfit for the factories."
+ aqu.3110002.b:0 "We need the extra workforce."
+ 
+ ###why are you here? this path isn't finished yet###
+ aqu.9995959458.t:0 "This path isn't finished yet!"
+ aqu.9995959458.d:0 "Hello! This is the developer for Aquila, unfortunately this path you are playing isn't finished yet, there is no more content beyond this point. I understand the disappointment you must be feeling right now, but please be patient for new updates."
+ aqu.9995959458.a:0 "Thanks for playing! :D"
+ 
  ###########
  # decisions
  ###########
@@ -181,7 +710,6 @@
  dismantle_w_rof:0 "Dismantle Western Forts"
  dismantle_e_rof:0 "Dismantle Eastern Forts"
  dismantle_s_rof:0 "Dismantle Southern Forts"
- 
  AQU_army_management:0 "Army Management"
  fix_army_rust_a:0 "Rectify The Rusting Army"
  fix_army_rust_b:0 "Rectify The Rusting Army"
@@ -189,21 +717,45 @@
  fix_army_rust_d:0 "Modernize The Army"
  civil_guard_recruitment:0 "Civil Guard Recruitment"
  civil_guard_recruitment_desc:0 "Forming militias to support the army in times of war."
+ AQU_increase_education_funding:0 "Increase Research Funding"
+ AQU_increase_education_funding_desc:0 "Fixing our last term's mistake."
+ AQU_wartime_army_reform:0 "Wartime Army Reform"
+ 
+ AQU_leonites_revolt:0 "Leonites Revolt"
+ AQU_leonites_revolt_desc:0 "The time is ticking, the mighty lion will be freed from the eagle's chains..."
+ 
+ AQU_material_salvaging:0 "Material Salvaging"
+ AQU_material_salvaging_desc:0 "Every last bit for the war effort."
  
  ###
- AQU_the_national_assembly:0 "The Senate"
- AQU_the_national_assembly_desc:0 "After the peaceful Democratic Revolution, the Council of advisors began implementing democratic reforms. Institutions like the State Constitutional Court or the Senate were established. The Council was replaced with Executive council led by the First Councilor, who would then serve for 5 years. The Executive council consists of 10 members. \n\nThe Senate is located in the capital of Aquila, Volucris. Senators are elected by the people in national elections for 5 years and hold the power to elect the First Councilor. \n\nConservative Seats: [?AQU_senate_conservative_var|+1%]. \nLiberal Seats: [?AQU_senate_liberal_var|+1%]. \nDemocratic Socialist Seats: [?AQU_senate_social_democratic_var|+1%]."
+ AQU_test:0 "The Senate Election"
+ AQU_test_desc:0 "After the peaceful Democratic Revolution, the Council of advisors began implementing democratic reforms. Institutions like the State Constitutional Court or the Senate were established. The Council was replaced with Executive council led by the First Councilor, who would then serve for 5 years. The Executive council consists of 10 members. \n\nThe Senate is located in the capital of Aquila, Volucris. Senators are elected by the people in national elections for 5 years and hold the power to elect the First Councilor."
  
+ AQU_sc_support_cet:0 "Send Guns to Cetus"
+ AQU_sc_support_cet_desc:0 "We must help the Cetans to halt the Corvun's advance."
+ 
+ AQU_the_election_conservative:0 "Senate Election Day"
+ 
+ AQU_9_blu:0 "Support Our Senator In The Aquilan Heartland"
+ AQU_33_blu:0 "Support Our Senator In The Aquilan North" 
+ AQU_152_blu:0 "Support Our Senator In The Northwestern Borderlands"
+ AQU_37_blu:0 "Support Our Senator In The Western Borderlands" 
+ AQU_38_blu:0 "Support Our Senator In West Aquila"
+ AQU_34_blu:0 "Support Our Senator In East Aquila" 
+ AQU_36_blu:0 "Support Our Senator In South Aquila"
+ AQU_156_blu:0 "Support Our Senator In Southwestern Aquila" 
+ AQU_228_blu:0 "Support Our Senator In The Libertus Region"
+ AQU_32_blu:0 "Support Our Senator In The Aquilan Murus" 
+ AQU_31_blu:0 "Support Our Senator In The Aquilan Coast"
+ AQU_35_blu:0 "Support Our Senator In The Southern Borderlands"
  
  #########
  # spirits
  #########
  AQU_iron_army:0 "The Iron Army real"
  AQU_iron_army_desc:0 "The “Iron Army” nickname was given to the Aquilans in the early 1800's when they held off a major Antarean assault from the south. In the aftermath of that war, the Aquilans were able to retain their borders with minimal losses."
- AQU_lucas_silva:0 "King Lucas Silva"
- AQU_lucas_silva_desc:0 "The King of Aquila, although he does not retain any power, he is a good figurehead for our country."
- AQU_outdated_technology:0 "Outdated Technology"
- AQU_outdated_technology_desc:0 "Due to the lack of any major wars, Aquila has neglected its technological department in weapons due to lack of modern combat experiences."
+ AQU_lucas_silva_idea_king_desc:0 "The King of Aquila, although he does not retain any power, he is a good figurehead for our country."
+ AQU_outdated_technology_idea_desc:0 "During Ewan's last term, his dismissal and neglect of our nation's educational sectors cause the schools to run into underfunding problems. Even though most public funded schools are not facing immediate shut downs, it is still a issue at large."
  AQU_rusting_army:0 "Rusting Army"
  AQU_rusting_army_desc:0 "The Iron Army of Aquila has started fading away due to its army not catching up to modern warfare. The combat effectiveness of the army is lowered, and will taper in the face of mightier foes during modern war"
  AQU_rusting_army_3_idea:0 "Rusting Army"
@@ -224,32 +776,42 @@
  AQU_cohesive_militia_idea_desc:0 "
  AQU_newgens_idea:0 "New Generation"
  AQU_newgens_idea_desc:0 "The old generations, stuck with their defensive positions and slow attacks cannot be trusted to lead the changing landscapes of war. Our new officers will handle the innovation and thinking of the new warfare to come."
+ AQU_leonite_problem_idea_desc:0 "§REven though Leonite resistances are rare, but there are still certain groups who'll use any means possible to advocate separatism. If we do not impose stricter policies the situation could get out of hand§"
+ AQU_underfunded_school:0 "Underfund Technological Development"
+
 
  ############
  #dummy ideas
  ############
  AQU_dummy_idea_iron_army_desc:0 "The “Iron Army” nickname was given to the Aquilans in the early 1800's when they held off a major Antarean assault from the south. In the aftermath of that war, the Aquilans were able to retain their borders with minimal losses."
- AQU_fake_modifier_ia:0 "Army Experience Gain: [?AQU_army_xp|%+=] \nDivision Experience Gain: [?AQU_army_unit_xp|%+=] \nMax Entrenchment: [?AQU_max_trench|+=] \nEntrenchment speed: [?AQU_dig|%+=] \nDivision Attack: [?AQU_army_attack|%+=] \nDivision Defense: [?AQU_army_defend|%+=] \nDivision Attack on core territory: [?AQU_army_attack_core|%+=] \nDivision Defense on core territory: [?AQU_army_defend_core|%+=] \nArtillery Attack: [?AQU_artillery_attack|%+=] \nArtillery Defense: [?AQU_artillery_defend|%+=] \nDivision Organization: [?AQU_org|%+=] \nDivision Recovery Rate: [?AQU_morale|%+=]"
+ AQU_fake_modifier_ia:0 "Army Experience Gain: [?AQU_army_xp|%+=] \nDivision Experience Gain: [?AQU_army_unit_xp|%+=] \nDivision training time: §Y[?AQU_army_training_time|%]§! \nMax Entrenchment: [?AQU_max_trench|+=] \nEntrenchment speed: [?AQU_dig|%+=] \nDivision Attack: [?AQU_army_attack|%+=] \nDivision Defense: [?AQU_army_defend|%+=] \nDivision Attack on core territory: [?AQU_army_attack_core|%+=] \nDivision Defense on core territory: [?AQU_army_defend_core|%+=] \nArtillery Attack: [?AQU_artillery_attack|%+=] \nArtillery Defense: [?AQU_artillery_defend|%+=] \nDivision Organization: [?AQU_org|%+=] \nDivision Recovery Rate: [?AQU_morale|%+=]"
 
  AQU_dummy_idea_civil_guard_desc:0 "Civil Guards are civilian volunteers and policemen who were called up in their country's hour of need. Due to not being a professional army, they do not have standardized equipment or uniforms, and carry a variety of self-owned or captured firearms and wear anything from civilian coats and hats to police uniforms. "
  AQU_fake_modifier_cg:0 "Stability: [?AQU_cg_stability|%+=] \nMilitia Defense: [?AQU_cg_defend|%+=] \nMilitia Attack: [?AQU_cg_attack|%+=] \nMilitia Speed: [?AQU_cg_speed|%+=] \nMilitia Resistance Damage: [?AQU_cg_guerilla|%+=]"
+ AQU_dummy_idea_civil_guard2_desc:0 "Civil Guards are civilian volunteers and policemen who were called up in their country's hour of need. Due to not being a professional army, they do not have standardized equipment or uniforms, and carry a variety of self-owned or captured firearms and wear anything from civilian coats and hats to police uniforms. "
+ AQU_fake_modifier_cg2:0 "Stability: [?AQU_cg_stability|%+=] \nMilitia Defense: [?AQU_cg_defend|%+=] \nMilitia Attack: [?AQU_cg_attack|%+=] \nMilitia Speed: [?AQU_cg_speed|%+=] \nMilitia Resistance Damage: [?AQU_cg_guerilla|%+=] \nConsumer Goods factor: §Y[?AQU_cg_consumer_goods_factor|%]§! \nRecruitable Population: §Y[?AQU_recruitable_population|%]§!"
 
  ######
  # misc
  ######
  grease_wars_start:0 "Grease Wars has started"
- decision_cost_CP_20_ArmXP_20:0 "§H20§! £GFX_command_power §H20§! £GFX_army_experience"
- decision_cost_CP_20_ArmXP_20_blocked:0 "§R20§! £GFX_command_power §R20§! £GFX_army_experience"
- decision_cost_CP_20_ArmXP_40:0 "§H20§! £GFX_command_power §H40§! £GFX_army_experience"
- decision_cost_CP_20_ArmXP_40_blocked:0 "§R20§! £GFX_command_power §R40§! £GFX_army_experience"
+ decision_cost_CP_20_ArmXP_20:0 "§H10§! £GFX_command_power §H10§! £GFX_army_experience"
+ decision_cost_CP_20_ArmXP_20_blocked:0 "§R10§! £GFX_command_power §R10§! £GFX_army_experience"
+ decision_cost_CP_20_ArmXP_40:0 "§H10§! £GFX_command_power §H10§! £GFX_army_experience"
+ decision_cost_CP_20_ArmXP_40_blocked:0 "§R10§! £GFX_command_power §R10§! £GFX_army_experience"
  decision_cost_CP_20_ArmXP_20_tooltip:0 "It costs $cp_10_cost_blocked$  to take the decision
  cp_10_cost_blocked:0 "§R10§! £GFX_command_power"
  cp_10_cost_tooltip:0 "It costs $cp_10_cost_blocked$  to take the decision"
- AQU_cg_recruit_many:0 "4 untrained Civil Guard units will appear in the Aquilan Heartland."
- AQU_cg_recruit_elite:0 "2 regulars Civil Guard units will appear in Volucris."
+ AQU_cg_recruit_many:0 "4 Militia Civil Guard units will appear in the Aquilan Heartland."
+ AQU_cg_recruit_elite:0 "2 Integrated Civil Guard units will appear in Volucris."
  AQU_cg_recruit_normal:0 "2 normal trained Civil Guard units will appear in Volucris."
  AQU_cg_effective_up:0 "§YIncreases effectiveness of Civil Guard Recruitment§!."
  AQU_decision_allow:0 "§YAllows a decision to be taken.§!"
+ 1civ_cost_blocked:0 "§R1§! £GFX_civ_factory"
+ 1civ_cost_tooltip:0 "It costs 1 £GFX_civ_factory  to take the decision"
+ 
+ decision_cost_ArmXP_200:0 " £GFX_army_experience §H200§! £GFX_army_experience"
+ decision_cost_ArmXP_200_blocked:0 " £GFX_army_experience §R200§! £GFX_army_experience"
  
  #AQU_increased_cg_a
  #AQU_trained_cg_a
@@ -263,9 +825,11 @@
  #custom tooltip
  ######
  
+ AQU_unlock_decision_tt:0 "£GFX_decision_icon_small §YEnables New Decision§!"
+ 
  AQU_add_on_to_iron_army_idea_tt:0 "Modify §YThe Iron Army§! by"
  
- AQU_iron_army_buff_1_tt:0 "   Army Experience Gain: §G+2.5%§!\n   Division Training Time: §Y+10.0%§!\n   Division Defense: §G+2.5%§!"
+ AQU_iron_army_buff_1_tt:0 "   Army Experience Gain: §G+2.5%§!\n   Division Attack: §G+5.0%§!\n   Division Defense: §G+5.0%§!"
  
  AQU_artillery_buff_2dot5_idea_tt:0 "   Artillery Attack: §G+2.5%§!\n   Artillery Defence: §G+2.5%§!"
  
@@ -281,15 +845,29 @@
  
  AQU_org_buff_idea_tt:0 "   Division Organization: §G+0.5%§!"
  
- AQU_defend_buff_0dot5_idea_tt:0 "   Division Defense: §G+0.5%§!"
+ AQU_defend_buff_0dot5_idea_tt:0 "   Division Defense: §G+5.0%§!"
  
  AQU_defend_buff_1_idea_tt:0 "   Division Defense: §G+10.0%§!"
  
  AQU_attack_buff_1_idea_tt:0 "   Division Attack: §G+10.0%§!"
+
+ AQU_attack_buff_0dot5_idea_tt:0 "   Division Attack: §G+5.0%§!"
  
  AQU_max_trech_buff_0dot5_idea_tt:0 "   Max Entrenchment: §G+0.5§!"
  
  AQU_add_on_to_civil_guard_idea_tt:0 "Modify §YThe Civil Guard§! by"
+ 
+ AQU_cg_stability_idea_4_tt:0 "   Gain Base Stability: §G+4.0§!" 
+ 
+ AQU_cg_stability_idea_2_tt:0 "   Gain Base Stability: §G+2.0§!" 
+ 
+ AQU_cg_stability_idea_3_tt:0 "   Gain Base Stability: §G+3.0§!"
+ 
+ AQU_cg_consumer_good_idea_3_tt:0 "   Consumer Goods Factories factor: §Y+3.0§!" 
+ 
+ AQU_cg_consumer_good_idea_2_tt:0 "   Consumer Goods Factories factor: §Y+2.0§!"
+ 
+ AQU_cg_speed_idea_2_tt:0 "   Civil Guard Speed: §G+2.0§!"
   
  AQU_cg_defend_tt:0 "   Civil Guard Defence: §G+1.0§!"
  
@@ -299,29 +877,40 @@
  
  AQU_cg_attack_0dot2_tt:0 "   Civil Guard Attack: §G+2.0§!"
  
- AQU_cg_attack_4_tt:0 "   Civil Guard Attack: §G+4.0§!"
+ AQU_cg_attack_4_tt:0 "   Civil Guard Attack: §G+4.0§!" 
+ 
+ AQU_cg_attack_6_tt:0 "   Civil Guard Attack: §G+6.0§!"
  
  AQU_cg_speed_tt:0 "   Civil Guard Speed: §G+2.0§!"
  
  AQU_cg_speed_1_tt:0 "   Civil Guard Speed: §G+1.0§!"
  
- AQU_cg_guerilla_0dot5_tt:0"   Resistance Growth: §G+5.0§!"
+ AQU_cg_guerilla_0dot5_tt:0"   Resistance Damage: §G+5.0§!"
  
- AQU_cg_guerilla_1_tt:0"   Resistance Growth: §G+10.0§!" 
+ AQU_cg_guerilla_1_tt:0"   Resistance Damage: §G+10.0§!" 
  
- AQU_cg_guerilla_20_tt:0"   Resistance Growth: §G+20.0§!" 
+ AQU_cg_guerilla_20_tt:0"   Resistance Damage: §G+20.0§!"  
+ 
+ AQU_cg_guerilla_5_tt:0"   Resistance Damage: §G+5.0§!" 
+ 
+ AQU_cg_recruitable_population_3_tt:0 "   Recruitable Population: §Y+3.0§!" 
+ 
+ AQU_cg_recruitable_population_2_tt:0 "   Recruitable Population: §Y+2.0§!"
  
  AQU_unlock_M99_tt:0 "Add technology: §YM99§!."
  
  AQU_M99_tt:0 "§Y1.50K§! units of Aquilan §YM99§! is added to the national stockpile."
  
- AQU_M2_tt:0 "§Y2.00K§! units of Aquilan §YM2§! is added to the national stockpile."
+ AQU_M2_tt:0 "§Y2.00K§! units of Aquilan §YM12§! is added to the national stockpile."
  
- AQU_unlock_M2_tt:0 "Add technology: §YM2§!."
+ AQU_unlock_M2_tt:0 "Add technology: §YM12§!."
  
  AQU_focus_defend_volicris_tt:0 "Add §Y6§! §GLevel 2§! §YLand Forts§! near §YVolucris§!"
  
  AQU_focus_defend_talona_tt:0 "Add §Y4§! §GLevel 2§! §YLand Forts§! near §YTalona§!"
  
- AQU_unlock_early_fighter_tt:0 "Add technology: §YFighter Plane§!."
+ AQU_unlock_early_fighter_tt:0 "Add technology: §YFighter Plane§!." 
  
+ AQU_focus_election_fail_tt:0 "Both major and minior parties have withdraw from the election."
+ 
+ minister_of_foreign_affairs:0 "Minster Of Foreign Affairs"

@@ -8,7 +8,7 @@ characters = {
         }
         country_leader = {
 			ideology = despotism
-			traits = { }
+			traits = { CET_king_of_cetus }
 			expire = "1922.1.1.1"
 		}
 		field_marshal = { 
@@ -24,12 +24,15 @@ characters = {
 			}
 		}
     }
+
 	CET_william_rayman = {
-		name = CET_william_rayman
+		name = "William L. Rayman"
 		portraits = {
-			civilian = {
-				large = GFX_portrait_ger_august_von_mackensen
-				small = GFX_idea_GER_august_von_mackensen
+			army = {
+				large = GFX_portrait_CET_william_rayman
+			}
+			army = {
+				small = GFX_portrait_CET_william_rayman_small
 			}
 		}
 		field_marshal = { 
@@ -45,13 +48,15 @@ characters = {
 			}
 		}
 	}
-	
+
 	CET_robert_parker = {
-		name = CET_robert_parker
+		name = "Robert P. Parker"
 		portraits = {
 			army = {
-				large = GFX_portrait_GER_werner_von_blomberg
-				small = GFX_portrait_GER_werner_von_blomberg_small
+				large = GFX_portrait_CET_robert_parker
+			}
+			army = {
+				small = GFX_portrait_CET_robert_parker_small
 			}
 		}
 
@@ -72,7 +77,7 @@ characters = {
 		advisor = {
 			cost = 150
 			slot = theorist
-			idea_token = CET_werner_von_blomberg
+			idea_token = CET_CET_robert_parker
 			ledger = army
 			allowed = {
 				original_tag = CET
@@ -93,13 +98,14 @@ characters = {
 		}
 	}
 	
-
 	CET_raymond_cooper = { # infantry
-		name = CET_raymond_cooper
+		name = "Raymond A. Cooper"
 		portraits = {
 			army = {
-				large = GFX_portrait_GER_wilhelm_list
-				small = GFX_portrait_GER_wilhelm_list_small
+				large = GFX_portrait_CET_raymond_cooper
+			}
+			army = {
+				small = GFX_portrait_CET_raymond_cooper_small
 			}
 		}
 		corps_commander = {
@@ -113,11 +119,13 @@ characters = {
 	}
 	
 	CET_issac_thomas = { # maris
-		name = CET_issac_thomas
+		name = "Issac R. Thomas"
 		portraits = {
 			army = {
-				large = GFX_portrait_GER_wilhelm_list
-				small = GFX_portrait_GER_wilhelm_list_small
+				large = GFX_portrait_CET_issac_thomas
+			}
+			army = {
+				small = GFX_portrait_CET_issac_thomas_small
 			}
 		}
 		corps_commander = {
@@ -131,11 +139,13 @@ characters = {
 	}
 	
 	CET_johannes_robinson = {
-		name = CET_johannes_robinson
+		name = "Johannes H. Robinson"
 		portraits = {
 			army = {
-				large = GFX_portrait_GER_wilhelm_list
-				small = GFX_portrait_GER_wilhelm_list_small
+				large = GFX_portrait_CET_johannes_robinson
+			}
+			army = {
+				small = GFX_portrait_CET_johannes_robinson_small
 			}
 		}
 		corps_commander = {
@@ -149,11 +159,13 @@ characters = {
 	}
 	
 	CET_patrick_adams = {
-		name = CET_patrick_adams
+		name = "Patrick S. Adams"
 		portraits = {
 			army = {
-				large = GFX_portrait_GER_wilhelm_list
-				small = GFX_portrait_GER_wilhelm_list_small
+				large = GFX_portrait_CET_patrick_adams
+			}
+			army = {
+				small = GFX_portrait_CET_patrick_adams_small
 			}
 		}
 		corps_commander = {
@@ -212,16 +224,23 @@ characters = {
 	
 	# admirals
 
-	CET_karl_chester = {
-		name = CET_karl_chester
+	CET_lewis_arthur = {
+		name = "Lewis I. Arthur"
 		portraits = {
 			army = {
-				large = GFX_portrait_GER_erich_raeder
-				small = GFX_portrait_GER_erich_raeder_small
+				large = GFX_portrait_CET_lewis_arthur
 			}
 			army = {
-				small = GFX_idea_raeder
+				small = GFX_portrait_CET_lewis_arthur_small
 			}
+		}
+		navy_leader = {
+			traits = { battleship_adherent naval_lineage ironside old_guard_navy }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			maneuvering_skill = 2
+			coordination_skill = 3
 		}
 		advisor = {
 			slot = navy_chief
@@ -245,14 +264,45 @@ characters = {
 				base = 1
 			}
 		}
-		
+	}
+
+	CET_karl_chester = {
+		name = "Karl N. Chester"
+		portraits = {
+			army = {
+				large = GFX_portrait_CET_karl_chester
+			}
+			army = {
+				small = GFX_portrait_CET_karl_chester_small
+			}
+		}
 		navy_leader = {
-			traits = { battleship_adherent naval_lineage ironside }
+			traits = { career_officer naval_lineage chief_engineer }
 			skill = 4
-			attack_skill = 3
-			defense_skill = 4
+			attack_skill = 4
+			defense_skill = 2
 			maneuvering_skill = 3
-			coordination_skill = 3
+			coordination_skill = 4
+		}
+	}
+
+	CET_theodore_charleston = {
+		name = "Theodore R. Charleston"
+		portraits = {
+			army = {
+				large = GFX_portrait_CET_theodore_charleston
+			}
+			army = {
+				small = GFX_portrait_CET_theodore_charleston_small
+			}
+		}
+		navy_leader = {
+			traits = { bold navy_media_personality }
+			skill = 2
+			attack_skill = 5
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 2
 		}
 	}
 }

@@ -1,0 +1,133 @@
+leader_traits = {
+
+	princess = {
+		sprite = 13
+		random = no
+		stability_factor = 0.05
+
+	}
+
+	empress = {
+		sprite = 13
+		random = no
+		stability_factor = 0.05
+
+	}
+	
+
+	emperor_of_south_centaura = {
+		random = no
+		neutrality_drift = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	military_council = {
+		random = no
+		sprite = 13
+		political_power_factor = -0.1
+		army_core_defence_factor = 0.1
+		stability_factor = -0.1
+	    party_popularity_stability_factor = 0.1
+	}
+	
+	ruthless_police_captain = {
+		random = no
+		sprite = 13
+
+		resistance_damage_to_garrison = -0.15
+		foreign_subversive_activites = -0.2
+		non_core_manpower = 0.04
+		stability_factor = 0.1
+		war_support_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	minister_of_foreign_affairs = {
+		random = no
+		sprite = 13
+		
+		opinion_gain_monthly_factor = 0.1
+		enemy_justify_war_goal_time = 0.1
+		trade_opinion_factor = 0.1
+		request_lease_tension = -0.2
+	}
+
+	LEO_moderate_technocrat = {
+		random = no
+		sprite = 13
+		production_speed_buildings_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.05
+	}
+	
+	CET_king_of_cetus = {
+		random = no
+		sprite = 13
+		stability_factor = 0.05
+		army_attack_factor = -0.125
+		army_defence_factor = -0.1
+		army_core_defence_factor = 0.05
+	}
+
+	CET_crowned_corvun_king = {
+		random = no
+		sprite = 13
+		army_attack_factor = 0.05
+		army_core_defence_factor = 0.1
+	}
+
+	CET_ruler_of_west_centaura = {
+		random = no
+		sprite = 13
+		stability_factor = 0.075
+		army_attack_factor = -0.025
+		army_defence_factor = 0.05
+		army_core_defence_factor = 0.1
+	}
+
+	CET_dominator_of_antares = {
+		random = no
+		sprite = 13
+		army_attack_factor = 0.05
+		army_core_attack_factor = 0.05
+		resistance_decay = 0.025
+		war_support_factor = 0.05
+	}
+
+	CET_emperor_of_south_centaura = {
+		random = no
+		sprite = 13
+		political_power_gain = 0.1
+		stability_factor = 0.1
+		war_support_factor = 0.05
+		army_attack_factor = 0.075
+		army_defence_factor = 0.1
+		army_core_attack_factor = 0.125
+		army_core_defence_factor = 0.15
+		resistance_decay = 0.025
+	}
+
+	CET_master_of_the_occulum = {
+		random = no
+		sprite = 13
+		naval_attrition = -0.05
+		naval_invasion_capacity = 1
+		navy_fuel_consumption_factor = -0.1
+		naval_coordination = 0.05
+	}
+
+	CET_the_second_lightbringer = {
+		random = no
+		sprite = 13
+		stability_factor = 0.05
+	    party_popularity_stability_factor = 0.05
+		production_speed_industrial_complex_factor = 0.05
+		production_speed_buildings_factor = 0.05
+	}
+}
+

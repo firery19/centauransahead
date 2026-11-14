@@ -1,0 +1,176 @@
+﻿l_english:
+ LEO_moderate_technocrat:0 "Moderate Technocrat"
+
+ LEO_war_independence_category:0 "War For Independence"
+ LEO_for_freedom:0 "BREAK THE CHAINS"
+ 
+ LEO_gap_infighting_category:0 "Infighting"
+ LEO_gap_infighting_category_desc:0 "waeewa"
+ 
+ LEO_liberate_our_lands:0 "Liberate Our Lands"
+ 
+ Leo_liberate_central_leo:0 "Retake Central Leo"
+ 
+ Leo_southwestern_leo:0 "Retake Southwestern Leo"
+ 
+ Leo_liberate_southermost_leo:0 "Retake Southermost Leo"
+ 
+ Leo_eastern_leo:0 "Retake Eastern Leo"
+ 
+ LEO_farmer_train_1:0 "Setup Farmer Training Course"
+ 
+ LEO_farmer_train_2:0 "Increase Course Funding"
+ 
+ LEO_farmer_train_3:0 "Further Funds"
+ 
+ LEO_farmer_training:0 "Farmer Training Course"
+ 
+####################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+ LEO_industrial_effort:0 "Industrial Effort"
+ LEO_industrial_effort_desc:0 "Focus all our political efforts on building up the civilian industry in a great leap forward."
+ LEO_industrial_effort_2:0 "Industrial Effort II"
+ LEO_industrial_effort_2_desc:0 "With iron will and a relentless work ethic, we can mobilize the people in another great industrial effort."
+ LEO_construction_effort:0 "Construction Effort"
+ LEO_construction_effort_tt:0 "Not enough building slots for §YCivilian Factories§!"
+ LEO_construction_effort_desc:0 "Civilian industrial capacity must not be underestimated even when war looms over the world."
+ LEO_production_effort:0 "Armament Effort"
+ LEO_production_effort_tt:0 "Not enough building slots for §YMilitary Factory§!"
+ LEO_production_effort_desc:0 "If you can build tractors, you can build tanks! We must not allow our military production capacity to lag behind."
+ LEO_construction_effort_2:0 "Construction Effort II"
+ LEO_construction_effort_2_desc:0 "Continuing to expand our factories will allow us to speed up production of goods for trade and further construction efforts."
+ LEO_production_effort_2:0 "Armament Effort II"
+ LEO_production_effort_2_desc:0 "Trying to adapt civilian factories to produce military equipment is inefficient. We should focus on preparing military production now."
+ LEO_production_effort_3:0 "Armament Effort III"
+ LEO_production_effort_3_desc:0 "Continued efforts to expand our military factories are necessary to meet the demands for new equipment."
+ LEO_infrastructure_effort:0 "Infrastructure Effort"
+ LEO_infrastructure_effort_desc:0 "A country without proper infrastructure cannot pursue advanced projects or constructions."
+ LEO_infrastructure_effort_tt:0 "Not enough building slots for §YInfrastructure§!"
+ LEO_infrastructure_effort_2:0 "Infrastructure Effort II"
+ LEO_infrastructure_effort_2_desc:0 "Extending our infrastructure further will enable the transports and communications necessary for high-tech clandestine projects."
+ LEO_construction_effort_3:0 "Construction Effort III"
+ LEO_construction_effort_3_desc:0 "Expansion of our infrastructure network has significantly improved our capacity for construction."
+ 
+ LEO_lion_rises:0 "The Lion Rises"
+ LEO_lion_rises_desc:0 "The Lion's spirit is unbreakable, the leonites have endured through great hardship and oppression, but our mind remain resilient. Today is the day we'll rise again, against the imperialists that have stepped on us for too long!"
+ 
+ LEO_break_eagles_chain:0 "Break The Eagle's Chain"
+ LEO_break_eagles_chain_desc:0 "Our people in Aquila shall rise up and break the eagle's chain, the dirty Aquilans will not occupy the lion's land anymore!"
+ 
+ LEO_unshackle_whales_chains:0 "Unshackle Ourself From The Whale"
+ LEO_unshackle_whales_chains_desc:0 "Our people in Cetus shall rise up and break the whale's chain, those bastard Cetans will not occupy the lion's land anymore!"
+ 
+ LEO_lion_victory:0 "The Victory The Lion Deserves"
+ LEO_lion_victory_desc:0 "Finally, after everything we went through, we're freed from their grips..."
+ 
+ LEO_restore_emperor:0 "Restore The Emperor To His Rightful Thorne"
+ LEO_restore_emperor_desc:0 "With our victory, it's time to restore his majesty to his thorne. Long live the Emperor!"
+ 
+ LEO_gap_conference:0 "Future Of The Lion?"
+ LEO_gap_conference_desc:0 "We're our own master now, we decide our own future!"
+ 
+ LEO_reclaim_our_lands:0 "Reclaim Our Lands"
+ LEO_reclaim_our_lands_desc:0 "We must liberate our people, free our people from our oppressors! No Leonites shall be left behind."
+ 
+ LEO_marshal_cyrus:0 "Long Live The Marshal!"
+ LEO_marshal_cyrus_desc:0 "The Persea Bar Faction and the Cyrus Faction have reached a compromise, the marshal will continue to lead the nation while the PBF will control domestic issues."
+ 
+ LEO_contact_antares:0 "Contact Antares"
+ LEO_contact_antares_desc:0 "With Cyrus's deep knowledge of the Antareans, we might be able to ask for and receive their aid to help develop the country."
+ 
+ LEO_ant_equipment_supply:0 "Ask For Antarean Equipments"
+ LEO_ant_equipment_supply_desc:0 "With their support, we're able to upgrade our armies with Antarean guns, boosting our combat effectiveness."
+ 
+ LEO_ant_military_advisor:0 "Antarean Military Advisor"
+ LEO_ant_military_advisor_desc:0 "The Antarean have an impressive military, their advisors will bring their tactics and training to our soldiers, improving the arm forces."
+ 
+ LEO_expand_ant_support:0 "Ask For Economic Aid"
+ LEO_expand_ant_support_desc:0 "The Antareans have valuable experience on Industrialising, we can have a easier time improving our industrial capability if we receive their aid."
+ 
+ LEO_ant_economic_adviser:0 "Antarean Economic Advisor"
+ LEO_ant_economic_adviser_desc:0 "By receiving their advisors and will be able to speed up our Industrialising efforts."
+ 
+ LEO_ant_leo_trade:0 "Trade Agreement"
+ LEO_ant_leo_trade_desc:0 "This agreement will let allow us to import even more Antarean goods, flooding our markets with their domestic goods and technology."
+ 
+ LEO_revive_leonite_culture:0 "Revive The Leonite Culture"
+ LEO_revive_leonite_culture_desc:0 "Under the oppressors, our own culture was slowly fading away. Now that we are free from their rule, we must remind our people of our way of life."
+ 
+ LEO_form_culture_youth:0 "Form The Lion's Youth"
+ LEO_form_culture_youth_desc:0 "The Lion's Youth will introduce the Leonite way of life to our younger population, igniting their national pride at a young age."
+ 
+ LEO_our_way_of_life:0 "Our Way Of Life"
+ LEO_our_way_of_life_desc:0 "We must remind our fellow Leonites about our culture and history; the prosperity we once had and the oppression we endured shall not be forgotten!"
+ 
+ LEO_internal_security:0 "Internal Security"
+ LEO_internal_security_desc:0 "National security is important to protect ourself from potential enemies, we shall not allow people with ulterior motives staboge our nation."
+ 
+ LEO_secret_police:0 "Empowering The Secret Police"
+ LEO_secret_police_desc:0 "For security and stability reasons, the secret police must receive more jurisdiction and power."
+ 
+ LEO_purge_gap_infighting:0 "Tying Loose Ends"
+ LEO_purge_gap_infighting_desc:0 "There are bad eggs among us, people who questions Cyrus decisions, these people have no place here..."
+ 
+ LEO_lion_reborn:0 "The Lion Reborn"
+ LEO_lion_reborn_desc:0 "Under Cyrus, the once fading ideals and forgotten histories have been revived, the grand legacy of the Leonite Empire has been preserved, and the future of the lion burns brighter than ever."
+
+ LEO_develop_lion_nest:0 "Develop The Lion's Nest"
+ LEO_develop_lion_nest_desc:0 "The liberated lands are greatly underdeveloped, lack of industrial capabilities and are mostly just farm lands, we must catch up with the rest of the world to prevent another partition."
+ 
+ LEO_expand_steel_mine:0 "Expand The Steel Mines"
+ LEO_expand_steel_mine_desc:0 "The southwestern lands are enriched in steel, we will open more mines and strengthen resource extraction to boost our development."
+ 
+ LEO_expand_tungsten_mine:0 "Expand The Tungsten Mines"
+ LEO_expand_tungsten_mine_desc:0 "The southernmost lands are enriched in tungsten, we will open more mines and strengthen resource extraction to boost our development."
+ 
+ LEO_ant_foreign_investment:0 "Attract Antarean Investment"
+ LEO_ant_foreign_investment_desc:0 "While the potential of our economy is endless, the current state of it means that the buildup is going to take time if we are to do it ourselves. A quicker way to turbocharge our economy would be to bring external capital into the country by way of joint ventures."
+ 
+ LEO_expand_national_research:0 "Expand National Research"
+ LEO_expand_national_research_desc:0 "Our industrial expansion and other recent advances might allow us to conduct more R&D in parallel."
+ 
+ LEO_redistribute_non_leonite_lands:0 "Redistribute Non-Leonite Lands"
+ LEO_redistribute_non_leonite_lands_desc:0 "Most of our farmlands are in the hands of foreign, non-Leonites. This injustice has caused many of our farmers to work under non-Leonites. We must reclaim these lands and redistribute them to our people, the fruits of our labor should only benefit our people."
+ 
+ LEO_fund_leonite_enterprises:0 "Funding Leonite-owned Industries"
+ LEO_fund_leonite_enterprises_desc:0 "By funding and promoting Leonite-owned Industries, we can encourage our people to start businesses and ensure our economic independence."
+ 
+ LEO_ant_invite:0 "Deepen Our Friendship"
+ LEO_ant_invite_desc:0 "The Antarean support is vital. We must continue to deepen our bonds, ensuring our development and protection."
+ 
+ ##########################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+ 
+ leo.9181.t:0 "A Change Of Leadership?"
+ leo.9181.d:0 "As the Leonite Empire regains more of its lost lands, the GAP's internal infighting has escalated. The Cyrus Faction—headed by the Grand Regent-Marshal himself—and the Persea Bar Faction have entered into a fierce struggle for leadership. On the one hand, there is the Cyrus Faction. The Grand Regent-Marshal is a brilliant military leader who has led us to freedom and rejuvenation; he also has a strong grasp of Antarean society, which might allow us to receive support from the Antareans. However, the Persea Bar Faction argues that even though he is a great military leader, he lacks the means to lead a stable civilian government. On the other hand, there is the Persea Bar Faction, which consists of intellectuals who gathered at a secret Leonite bar in Persea that promotes Leonite ideals and identity. These people later joined the GAP in the revolt, helping to organize armed revolts and distribute propaganda. Acting as the more logical side of the GAP, they undoubtedly have the skills to stimulate the empire's development. But can they protect the newly revived empire? That remains a big question mark."
+ leo.9181.a:0 "Long live the Grand Marshal!"
+ leo.9181.b:0 "Hmmmmm, maybe the baby emperor is better."
+ leo.9181.c:0 "Cyrus have served his purpose."
+ 
+ leo.9180.t:0 "Victory Over The Occupiers"
+ leo.9180.d:0 "After long, fierce fighting, their government finally agrees to a negotiation. The era of the occupiers is finally over, now comes the era of prosperity and greatness. We shall make our country the most advanced and strongest in the world. However, first, we should focus on rebuilding and securing it after the fighting..."
+ leo.9180.a:0 "A new future for the Leonites!"
+ 
+ leo.9182.t:0 "Leonite Ultimatum"
+ leo.9182.d:0 "Leonites representatives have demanded that we return their rightful land to them, or else their forces will take it back by force. We should carefully weigh our options and make the choice that will benefit us the most."
+ leo.9182.a:0 "Sure."
+ leo.9182.b:0 "Take it back by force? With what army?" 
+ 
+ leo.9183.t:0 "Leonite Ultimatum"
+ leo.9183.d:0 "Leonites representatives have demanded that we return their rightful land to them, or else their forces will take it back by force. We should carefully weigh our options and make the choice that will benefit us the most."
+ leo.9183.a:0 "Sure."
+ leo.9183.b:0 "Take it back by force? With what army?"
+ 
+ leo.9184.t:0 "Leonite Ultimatum"
+ leo.9184.d:0 "Leonites representatives have demanded that we return their rightful land to them, or else their forces will take it back by force. We should carefully weigh our options and make the choice that will benefit us the most."
+ leo.9184.a:0 "Sure."
+ leo.9184.b:0 "Take it back by force? With what army?"
+
+ leo.9185.t:0 "Leonite Ultimatum"
+ leo.9185.d:0 "Leonites representatives have demanded that we return their rightful land to them, or else their forces will take it back by force. We should carefully weigh our options and make the choice that will benefit us the most."
+ leo.9185.a:0 "Sure."
+ leo.9185.b:0 "Take it back by force? With what army?"
+ 
+ ######################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+ 
+ LEO_has_ant_support_tt:0 "Has Antarean Support"
+ 
+ LEO_has_ant_support_2_tt:0 "Has Expanded Antarean Support"

@@ -5,6 +5,9 @@ state={
 		owner = URS
 		#add_claim_by = URS
 		add_core_of = HYS
+1944.1.1 = {
+	owner = HYS
+}
 		buildings = {
 			infrastructure = 1
 			376 = {

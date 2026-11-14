@@ -321,10 +321,11 @@ COV_corvus_sabotage_operations = {
 COV_dysfunctional_economy_idk = {
 	corvus_failing_economy_d = {
 		icon = GFX_decision_revolt
-		visible = {
+		activation = {
 			tag = COV
 			has_war = yes
 		}
+		
 		available = {
 			custom_trigger_tooltip = {
 			tooltip = corvus_own_the_state

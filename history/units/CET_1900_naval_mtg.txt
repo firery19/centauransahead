@@ -289,28 +289,7 @@ units = {
 instant_effect = {
 ### Under Construction Notes ###
 
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_heavy_3
-			creator = "CET" 
-			version_name = "Mira Class"
-		}
-		name = "CIS Mira"
-		requested_factories = 1
-		progress = 0.45
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_heavy_3
-			creator = "CET" 
-			version_name = "Mira Class"
-		}
-		name = "CIS Neptune"
-		requested_factories = 1
-		progress = 0.3
-		amount = 1
-	}
+
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_heavy_2

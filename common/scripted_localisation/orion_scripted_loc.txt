@@ -1,0 +1,89 @@
+
+
+defined_text = {
+	name = OrionCorruptionCounter
+	text = {
+		trigger = {
+			OR = {
+				original_tag = ORI
+			}
+			check_variable = { orion_corruption_counter < 5 }
+
+		}
+		localization_key = low_corruption
+	}
+	text = {
+		trigger = {
+			OR = {
+				original_tag = ORI
+			}
+			check_variable = { orion_corruption_counter < 25 }
+
+		}
+		localization_key = medium_corruption
+	}
+	text = {
+		trigger = {
+			OR = {
+				original_tag = ORI
+			}
+			check_variable = { orion_corruption_counter < 45 }
+
+		}
+		localization_key = high_corruption
+	}
+	text = {
+		trigger = {
+			OR = {
+				original_tag = ORI
+			}
+			check_variable = { orion_corruption_counter < 60 }
+
+		}
+		localization_key = rampant_corruption
+	}
+	text = {
+		trigger = {
+			OR = {
+				original_tag = ORI
+			}
+			check_variable = {
+				var = orion_corruption_counter
+				value = 100
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = uncontrollable_corruption
+	}
+}
+
+defined_text = {
+	name = GetSenateElectionOutcome
+	text = {
+		trigger = {
+			check_variable = { senators_for_reelection < 0 }
+		}
+		localization_key = SenateElectionLost
+	}
+	text = {
+		trigger = {
+			check_variable = { var = senators_for_reelection value = 0 compare = greater_than_or_equals }
+		}
+		localization_key = SenateElectionGained
+	}
+}
+defined_text = {
+	name = GetHouseElectionOutcome
+	text = {
+		trigger = {
+			check_variable = { representatives_for_reelection < 0 }
+		}
+		localization_key = HouseElectionLost
+	}
+	text = {
+		trigger = {
+			check_variable = { var = representatives_for_reelection value = 0 compare = greater_than_or_equals }
+		}
+		localization_key = HouseElectionGained
+	}
+}

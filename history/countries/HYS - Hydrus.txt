@@ -44,6 +44,7 @@ set_technology = {
 	gw_artillery = 1
 	basic_train = 1
 	tech_trucks = 1
+	basic_infrastructure = 1
 	# b
 	# c
 	# d
@@ -64,11 +65,15 @@ add_political_power = 1
 
 set_convoys = 25
 
+
 set_popularities = {
-	democratic = 22
+    democratic_left = 0
+	democratic = 17
+    democratic_right = 0
+   	auth_dem = 76
+	neutrality = 7
 	communism = 0
 	fascism = 0
-	auth_dem = 78
 }
 
 recruit_character = HYS_renald_downes

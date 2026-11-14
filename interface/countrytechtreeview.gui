@@ -3535,7 +3535,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1902"
+					text = "1908"
 					maxWidth = 170
 					maxHeight = 32
 					format = right

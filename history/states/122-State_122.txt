@@ -5,6 +5,9 @@ state={
 		owner = URS
 		add_core_of = CNS
 		add_claim_by = ORI
+1947.1.1 = {
+	owner = ORI
+}
 		buildings = {
 			infrastructure = 1
 			6779 = {

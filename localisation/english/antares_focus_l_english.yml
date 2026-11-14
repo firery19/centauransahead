@@ -89,7 +89,7 @@
  ANT_unite_local_identities_desc:0 "Despite our nation being one of the most patriotistic in Forma and having been united for hundreds of years, the regional identities are still strong. We must unite these local identities and stop the bickering between the four constituent states in our empire to strengthen national stability."
  ANT_emperors_speech:0 "The Emperors Announcement"
  ANT_emperors_speech_desc:0 "Kalvin had pondered about it for years. Ever since the end of the war with Aquila decades ago, he had wanted to elemininate the worst part of humanity; war. It disgusted him how a species, especially one has intelligent, organized and technologically capable as humanity could murder eachother and cause so much harm to eachother. For years he had reflected on how to end this brutality, and now he has the solution. \n Forma shall be united and the legacy of the Libran Empire restored."
- ANT_consolidate_monarchic_powers:0 "Towards Absolute Monanrchy"
+ ANT_consolidate_monarchic_powers:0 "Towards Absolute Monarchy"
  ANT_consolidate_monarchic_powers_desc:0 "To unite Centaura and later all of Forma will be a hard task. Kalvin has decided that the way to do this is with one, final, massive war which will unite the continent under antarean guidance. To do this we must first concolidate the politics at home by constructing a true absolute monarchy in Antares and depower the parliament. This will not be popular at first, but if there is one thing the people of Antares love more than the Empire, its the Emperor."
  ANT_strengthen_antarean_democracy:0 "Strengthen Democracy"
  ANT_strengthen_antarean_democracy_desc:0 "To unite Centaura and later all of Forma is a hard task which cannot be done through brute force. A war of the greatest proportions will only cause so much more suffering which goes against Kalvin's own beliefs. We must unite Forma diplomatically under a greater federation of nations. This will require the formation of a true and stable democracy in Antares, however."
@@ -126,7 +126,8 @@
  ANT_military_junta:0 "1st Council of the Junta"
  ANT_military_junta_desc:0 "With controll seized, we must now decide how to rule the country, and more importantly how to keep our controll."
  ANT_reform_intelligence_service:0 "Reform the Intelligence Service"
- ANT_reform_intelligence_service_desc:0 "The past period has shown how bad domestic instability will get. Our current intelligence services are too disorganised, too archaic and too outdated to be of effective use both in domestic affairs and extraterritorial influence. We will create a brand new united organization to protect the Antarean state and its interests." # The new intelligence service will be tasked with gathering information, spying on foreign nations and protecting the Antarean state from internal threats.
+ #pure larp
+ ANT_reform_intelligence_service_desc:0 "Recent events have shown how bad domestic instability can get, along with the ineffectiveness of the currect outdated intelligence services. The modernized and improved Imperial Sekurity Service (ISS) will unite all previous organizations, and be in charge of both domestic operations against for example political enemies or dissidents, along with sabotage and espionage against foreign nations."
  ANT_foreign_policy:0 "Rethink Antarean Foreign Policy"
  ANT_foreign_policy_desc:0 "With our domestic situation and politics firmly secure, we can look abroad to fulfill the ambitions of the Emperor. We must re-adjust our foreign policy to fit our new goals of conquest and domination."
  ANT_economic_domination:0 "Economic Domination"
@@ -145,8 +146,8 @@
  ANT_help_corvus_desc:0 "Our good friends in Corvus has struggled after the loss of the resource rich South Corvus. Between us lie the Empire of Cetus, who we are nominally allied with. This situation will however not last long, and we will strengthen our relationship with Corvus to allow them to strike south. Then, we will be in the perfect position to take advantage..."
  ANT_royal_marrige:0 "The Royal Marrige"
  ANT_royal_marrige_desc:0 "The Royal Marrige"
- ANT_support_help_corvun_military:0 "Expand the Corvun Military"
- ANT_support_help_corvun_military_desc:0 "Expand the Corvun Military"
+ ANT_support_help_corvun_military:0 "Support the Corvun Military"
+ ANT_support_help_corvun_military_desc:0 "Support the Corvun Military"
 
 
  ANT_prepare_war_industry:0 "Prepare the War Industry"
@@ -158,24 +159,31 @@
 
  ANT_prepare_for_war_with_cetus:0 "Prepare for Conquest"
  ANT_prepare_for_war_with_cetus_desc:0 "The time has come to finally act on our ambitions. We will prepare for our great divine conquest to end war forever and unite the human race. Our industry is ready to provide for the military, the army and navy have gone through reforms and modernizations that hopefully are adequate and our internal politics have been secured."
- ANT_warcetus:0 "Hunt the Great Whale"  #
+ ANT_warcetus:0 "Hunt the §GGreat Whale§!"  #
  ANT_warcetus_desc:0 "Hunt the Great Whale" #
- ANT_skorpiivus:0 "Establish Skorpii Korvus"    #
+ ANT_skorpiivus:0 "Establish §gSkorpii Korvus§!"    #
  ANT_skorpiivus_desc:0 "Establish Skorpii Korvus"   #
- ANT_corvbad:0 "Shoot Down the Black Crow"  #
+ ANT_corvbad:0 "Shoot Down the §gBlack Crow§!"  #
  ANT_corvbad_desc:0 "Shoot Down the Black Crow" #
- ANT_waraquila:0 "Slaughter the Forest Falcon"  #
+ ANT_waraquila:0 "Slaughter the §2Forest Falcon§!"  #
  ANT_waraquila_desc:0 "Slaughter the Forest Falcon" #
  ANT_fortress_busting:0 "Break the Ring of Fire"    #
  ANT_fortress_busting_desc:0 "Break the Ring of Fire"   #
- ANT_scorch:0 "Scorching the Forests"   #
+ ANT_scorch:0 "§RScorching the Forests§!"   #
  ANT_scorch_desc:0 "Scorching the Forests"  #
- ANT_warvega:0 "Break the Olive" # idfk someone find a better name
+ ANT_warvega:0 "Break the §6Olive§!" # idfk someone find a better name
  ANT_warvega_desc:0 "Break the Olive" # idfk someone find a better name
- ANT_wargrs:0 "Seize the Desert" #idfk someone find a better name
+ ANT_murus_plateu:0 "Breaking Through the Wall"
+ ANT_murus_plateu_desc:0 "Breaking Through the Wall"
+ ANT_naval_invasion:0 "Bypass the Murus Plateu"
+ ANT_naval_invasion_desc:0 "Bypass the Murus Plateu"
+ ANT_wargrs:0 "Seize the §YDesert§!" #idfk someone find a better name
  ANT_wargrs_desc:0 "Seize the Desert" #idfk someone find a better name
  ANT_worldconquest:0 "Ambitions Across Forma" 
  ANT_worldconquest_desc:0 "HoI4 gamer world conquest" 
+
+ ANT_develop_corvus:0 "Develop Corvus"
+ ANT_develop_corvus_desc:0 "The Corvun economy struggled after the loss of South Corvus and especially after the war against Cetus. Now under the protection of the Imperium, our soldiers shall help in construction projects and the industrial aid will help build up the Corvun economy. The economy of Corvus shall become tightly integrated with that of Antares."
 
 # military tree shit shit
  ANT_army_reform:0 "20th Century Army"
@@ -190,13 +198,15 @@
  ANT_army_navy_war_game_desc:0 "We will conduct more exercises to develop our shore-bombardment, transportation and naval invasion tactictics."
  ANT_rethink_arty_doctrine:0 "Reform Artillery Doctrine"
  ANT_rethink_arty_doctrine_desc:0 "Artillery has developed alot over the years and have proved to truly be the king of battle, yet our doctrines are still outdated in this department. That must change!"
+ ANT_procure_railwayguns:0 "Procure Railwayguns"
+ ANT_procure_railwayguns_desc:0 "To break the great fortresses of Centaura, regular artillery would be insufficient. Great beheamoths will be constructed, true marvels of modern engineering."
  ANT_learn_from_grease_war:0 "Learn from the Grease War"
  ANT_learn_from_grease_war_desc:0 "The recent conflict in Canis is an humanitarian and natural tragedy, but also an oppertunity to study how modern warfare unfolds!"
  ANT_reorganize_army:0 "The Grand Army Reform"
  ANT_reorganize_army_desc:0 "We must start taking greater measures to improve the army. A great Army Reform will be conducted, and ambitious targets for this reorganisation have been set, both in terms of equipment, technology, doctrine, organization and army size."
  ANT_navy_reform:0 "Naval Expansion"
  ANT_navy_reform_desc:0 "Although our navy is the second largest in South Centaura, it still pales in comparison to the Cetan Whale. A drastic reform of the navy will (hopefully) close the gap in numbers and make our ships fight more effectively than theirs."
- ANT_solve_coms_isssue:0 "Adress communication Issues"
+ ANT_solve_coms_isssue:0 "Address Communication Issues"
  ANT_solve_coms_isssue_desc:0 "Our earlier defeat in Aquila was as much due to their resilience as our coordination failiure. With modern wars having larger armies than ever before, and stretching over greater frontlines, communication will be the key to fight effectively."
  ANT_radio_tech:0 "Radio Technology"
  ANT_radio_tech_desc:0 "Although still in its infancy and many years in the future, long-range communication using electro-magnetic wavelengths have become a possibility. If we succed in developing this technology, its military usage will be great."
@@ -301,7 +311,7 @@
  ANT_build_tank_desc:0 "We shall start production of our first proper tank: the E/1911 shall be a mechanized and armoured force of steel which will force our enemy to submission!"
  ANT_improved_tank:0 "Improved Tank Designs"
  ANT_improved_tank_desc:0 "The E/1911 has proven itself to be... inadequate for our needs to say the least. We shall begin production of the E/1912, with thicker armour and a 2-inch gun in front to act as a mobile artillery platform."
- ANT_integrate_south_centaura:0 "Integrate South Centaura"
+ ANT_integrate_south_centaura:0 "Integrate Southern Centaura"
  ANT_integrate_south_centaura_desc:0 "Cetus and Aquila are nominally a part of our great Imperium, yet their people are not. Although a difficult task, we must sway the hearts and minds of the populus and realize their true identities as a part of the glorious Antares Imperium. Aquila, Ara, Cetus, Skorpius, Norma and Lupus all united under one flag!"
  ANT_integrate_cetus:0 "Unite Cetus Into \n The Imperium"
  ANT_integrate_cetus_desc:0 "For the first time since the founding of the Antares Imperium, a new member nation will be added. Our recently conquered land of Cetus will be officially integrated into the Empire and join the ranks of Skorpius, Ara, Lupus and Norma. Finally, war and conflict between Antares and Cetus will be a thing of the past."
@@ -311,11 +321,14 @@
  ANT_resolve_internal_disputes_desc:0 "Now that the great unity has decended upon South Centaura, we can finally resolve the centuries old disputes and grievances of our now internal borders, forever."
  ANT_rebuild_aquila:0 "Rebuild Aquila"
  ANT_rebuild_aquila_desc:0 "The Conquest of Aquila has sadly brought disasterous consequences to the region. We must send aid to rebuild this once productive state, and show we are not aggresive conquerors, but unifiers in the name of peace."
+ ANT_cetus_industry:0 "Cetan Shipbduilding"
+ ANT_cetus_industry_desc:0 "The Cetan shipbuilding industry is the largest in all of Centaura. Integrating it into the Antarean industrial complex will greatly strengthen the navy."
  ANT_new_administration:0 "Reorganize New Holdings"
  ANT_new_administration_desc:0 "With our new conquest, we have absorbed two additional seperate administrative structures into our empire. We must seek to reorganize these internal administrations for smoother long-term operations, even if it will make our integration process harder."
  ANT_continuity:0 "Incorporate Existing Administrations"
  ANT_continuity_desc:0 "We are not conquerors; the nations of Cetus and Aquila that we have annexed must return to their old habbits and way of life. The existing administrative structures, regions and institutions must be preserved for the sake of stability."
-
+ ANT_establish_union_of_antarean_youth:0 "Establish the Union of Antarean Youth"
+ ANT_establish_union_of_antarean_youth_desc:0 "In the process of integration, the youth of the new member states will be the most important to sway. We will establish a new organization to promote Antarean culture, nationalism and loyalty to the Imperium."
 
  FOCUS_FILTER_MILITARY_BUFF:0 "Military Buffs"
  FOCUS_FILTER_EQUIPMENT:0 "Equipment"
@@ -326,16 +339,25 @@
  ANT_space_tt:0 "tooltip test why doesnt this work bruh" # custom_effect_tooltip = ANT_space_tt
  ANT_new_divisons_tt:0 "\nSpawns in §Y6§! divisions of the new template in major cities."
  
-
- 
+ #INTERWAR FOCUSES
+ ANT_kolumban_kampaign:0 "The Kolumban Kampaign"
+ ANT_kolumban_kampaign_desc:0 "The cowards in the NCA have bounded together and formed an alliance against us. Between their heartlands and our armies lies a seemingly insurmountable obstacle: the Macer Mountains. Crossing them will be no easy task."
+ ANT_operation_slingshot:0 "§YOperation: §RSLINGSHOT§!§!"
+ ANT_operation_slingshot_desc:0 "Operation Slingshot"
+ ANT_UNTERNEHMEN_KATAKLYSM:0 "§YOperation: §RKATAKLYSM§!§!"
+ ANT_UNTERNEHMEN_KATAKLYSM_desc:0 "Operation Kataklysm"
+ ANT_shokktroopers:0 "Establish the §tShokktrooper§! Corps"
+ ANT_shokktroopers_desc:0 "With years of combat experience behind us it is time to establish new elite divisions made up of the army's most experienced soldiers."
 
 #dynamic
  ANT_scorched_state:0 "Scorched State"
  ANT_compliance_bonus_cet_aqu:0 "New Administration of Integrated Territories"
+ ANT_union_of_antarean_youth:0 "Union of Antarean Youth"
  ANT_army_dynamic:0 "Antares Imperial Army"
  ANT_army_dynamic_desc:0 "The army of Antares is one of the greatest in all of Forma, and truly the pride of the nation." #write some more, duplicate another DM with same stats to change desc (f.ex. one for the start of the game and one for the end of the army branch)
  ANT_navy_dynamic:0 "Antares Armada"
  ANT_navy_dynamic_desc:0 "Officially known as the Antares Imperial Navy, the Armada is one of the largest navies in Forma and one of the most powerfull." #write some more, duplicate another DM with same stats to change desc
+
 
 #ideas 
  trench_warfare_idea:0 "1900's Warfare"
@@ -372,6 +394,9 @@
  protests_friendly_desc:0 "Violence is how you wage a war, but not how you end it. We are reconciling with various groups and negotiating cease-fires, although at a cost to our reputation."
  protest_recovery:0 "Recovering From Protests"
  protest_recovery_desc:0 "The protests that rocked the nation are over, but the violence and destruction they brought are still remembered."
+ protest_compromise:0 "Domestic Compromises"
+ protest_compromise_desc:0 "The deals made to end the Troubles include a few minor concessions to the democrats."
+
 
  antarean_industry:0 "Antarean Industrialisation"
  antarean_industry_desc:0 "Antares, the great scorpion of Centaura has always been a major power. Throughout the Second Industrial Revolution in the mid-1800s, Antares has been the second largest industrial power in the world. Yet compared to the massive size of our nation it is relatively underdeveloped, with large areas of the country still being rural and agrarian. Still, we are well on our way to develop the industry needed for Kalvin Tau's vision."
@@ -384,6 +409,8 @@
  aquilan_humiliation_desc:0 "The disastrous outcome and humilation which resulted from the 1875 Antarean-Aquila war still lies in recent memory for the people of Antares."
  aquilan_revenge:0 "Revenge against Aquila"
  aquilan_revenge_desc:0 "We have reformed and strengthened our army so that even the mightiest forces in Forma cannot resist it; it is time we have our revenge against the puny Aquilans! \n\nNOTE: This idea will be removed once Aquila is either subjugated or annexed. "
+
+ idea_corvus_antares_economy:0 "Antarean Economic Integration"
 
 # Country Flags
  ANT_protests_ongoing:0 "The Internal Political Situation is Highly Violent and Unstable"
@@ -411,7 +438,7 @@
  D.ANT.1:0 "Kalvin Tau stood in the antarean Supreme Kouncil. He had been thinking about this for years, and now he was ready to announce his plans to the world. He would unite Centaura under Antarean rule, and then all of Forma. He would end war forever."
  A.ANT.1:0 "The Emperor must assume absolute power to end war through force"
  B.ANT.1:0 "Antares must strengthen its democracy to end war through diplomacy"
- T.ANT.2:0 "Demonstrations in Ananteria University"
+ T.ANT.2:0 "Demonstrations At Ananteria University"
  ANT_2_D:0 "Recent political moves has lead to liberals and socialists protesting against the Emperor, denouncing him and calling him a tyrant. They say that this path will lead Antares to war and inevitabily to its fall." 
  A.ANT.2:0 "Me? A warmongerer?!?"
  T.ANT.3:0 "Pact With Antares?"
@@ -426,6 +453,19 @@
  T.ANT.5:0 "Protests Escalate"
  D.ANT.5:0 "The protests that have up to this point been relatively small and manageable have escalated. The protestors have become more aggressive and organized, with some even calling for the overthrow of the Emperor. If not adressed, this can greatly shake the country and ruin stability."
  A.ANT.5:0 "We must adress this as our first priority!"
+ T.ANT.6:0 "Antares sends military aid"
+ D.ANT.6:0 "Antares has sent us modern rifles, artillery, trucks, other military equipment and military advisors to support our army."
+ A.ANT.6:0 "This is great, but what do they want in return?"
+ T.ANT.7:0 "A Declaration of Unity"
+ D.ANT.7:0 "The night of February 10, 1911 was one of darkness. All lights in the capital were ordered to be shut off by official decree; those who did not comply were promptly fined or detained by the police.\n\nWith all electrical lighting turned off, the black sky became visibly speckled with stars. If one could search between each white dot, they could possibly find the constellation of Scorpius— their god, watching over them at that very moment.\n\nThe previous nights had heard rumors of the Imperial Army preparing to mobilize, with an abundance of vehicles and soldiers sent away toward the northern borders.\n\nIn the main square of the capital, hundreds of thousands of citizens gathered in the darkness, eagerly watching the dimly-lit podium toward the front. A faint silhouette of the imperial palace could be seen in the background, though it was multiple streets away from where the rally was being held. The square smelled of fragrances and aromas from the plethora of men and women who stood dressed in formal attire.\n\nAcross the city, a chime and eight rings echoed through the roadways, marking the eighth hour of the night.\n\nA man walks onto the podium. He is dressed in a white ceremonial coat, a red poncho-like garment draped across his shoulders, a symbolism of Antares' imperial family.\n\n\n\nAll waited in silence."
+ A.ANT.7:0 "..."
+ T.ANT.8:0 "A Declaration of Unity (2/3)"
+ D.ANT.8:0 ""Descendants of Scorpius," the man addressed the square.\n\n"We gather here tonight in the presence of our Guardian and, it is with His benediction that I express my aspirations for His nation and His people."\n\n"The lands on which we stand at this very moment were bestowed upon us by our Guardian. It is our sacred duty to nurture them, to protect them from those who wish to bring harm. It benefits no one for foreign armies, who do not share our ways, to clash on our soil and destroy the fruits of our labor. The devastation of war, with its loss of life and the destruction of all we hold dear, serves no good purpose."\n\n"Since the beginning of time, humanity has been at war with itself. We fear what we do not know, and out of fear, we fight. It is then in our best interest that we rid ourselves of the unknown, so that we may continue to thrive and prosper for millennia to come, free from the fears that once divided us."\n\n"But let us not be mistaken— we cannot just hope that these fears disappear. We must take action, together as one people, to overcome them. Tonight, I stand before you to declare that we, the children of Scorpius, will no longer be divided by fear or by the fragmented ideologies that have torn our continent apart. The time has come to unite under one nation, one belief, and one purpose."
+ A.ANT.8:0 "..."
+ T.ANT.9:0 "A Declaration of Unity (3/3)"
+ D.ANT.9:0 "Our enemies seek to impose their inferior gods and religions upon us, to fight against us if that is what it takes to get what they desire. We shall not allow this. The time has come to confront our adversaries, not out of a desire for conquest like them, but out of a commitment to the enduring principles that define Antares and its people."\n\n"This coming war is a solemn duty, a necessary step to protect our way of life to bring stability to our continent, and to bring an end to the needless cycles of violence. Believe me when I tell you: there is no other way."\n\n"With the guidance of our Guardian, we shall undertake this mission with the strength He has blessed us with, to ensure that our nation emerges unified and steadfast, and to secure a legacy of peace and prosperity for generations to come. By the hand of Scorpius, we shall be victorious!"\n\nThe speech ended with the audience cheering. The speaker, who was revealed to be the Emperor Kalvin Tau, had stepped off the podium, retreating back into the darkness of the unlit square.\n\n\n\n"Per manus Scorpii!" came a yell from one citizen in the crowd. Others began shouting the same three words, until the entire square chanted along.\n\n"Per manus Scorpii!"\n\n"PER MANUS SCORPII!"\n\n"PER MANUS SCORPII!""
+ A.ANT.9:0 "PER MANUS SCORPII !"
+
 #Decisions
  ANT_reduce_protest:0 "Crack Down On Subversive Organizations"
  ANT_reduce_protest2:0 "Assault Protestor Strongholds"
@@ -445,18 +485,44 @@
  ANT_depoliticize_army:0 "Depoliticise the Army"
  ANT_army_with_a_state:0 "Army With A State"
  ANT_expand_officer_training:0 "Recruit New Officers"
- ANT_expand_reservists:0 "Expand The Reserves"
+ ANT_expand_reservists:0 "Expand the Reserves"
+ ANT_extend_reform_deadline:0 "Extend the Deadline"
+
+ ANT_politics_category:0 "Politics of Antares"
+ ANT_get_pp:0 "Emergency Decree"
+ ANT_monarchist_propaganda:0 "Monarchist Propaganda"
+ ANT_use_military_power:0 "Send in the Army"
+ ANT_undermine_democratic_parties:0 "Undermine Democratic Organizations"
+ ANT_democratic_crackdown:0 "Crack Down on Democrats"
+ ANT_divide_democratic_elements:0 "Divide the Democratic Front"
+ ANT_communist_crackdown:0 "Crack Down on Socialists"
+ ANT_divide_leftists:0 "Divide the Left"
+ ANT_get_pp_bribe:0 "Bribe Officials"
+
+ ANT_industry_category:0 "Development Projects"
+ ANT_industry_category_desc:0 "While advancing our nation economically and industrially, there are many major projects that have to be completed to further national development, both civilian and military."
+ ANT_expand_ananteria:0 "The Ananteria Reconstruction Project"
+ ANT_expand_ananteria_desc:0 "Ananteria is the capital of and largest city in Antares, and the heart of the Imperium. However, the ageing streets of the planned city made in the 1600's are very much at their limits, and the relatively uncontrolled industrial expansion in the city has left some areas quite subpar. A massive project to reconstruct some districts, improve roads and other infrastructure, and modernize the city as a whole will be initiated."
+ ANT_ananteria_2:0 "The Ananteria Expansion Project"
+ ANT_ananteria_2_desc:0 "Although the Ananteria Reconstruction Project has been a great success, the city itself still needs to be greatly expanded to accomodate for a greater population, and more importantly this expansion needs to be done in an organized and sustainable manner, with newer districts being well connected to the city centre."
 
  ANT_statusq_persean:0 "Re-Ratify the Persean Treaty"
+ ANT_statusq_persean_desc:0 "Now that the lands of southern Centaura is united under one Emperor, resolving internal disputes and conflicts to create an enduring peace is easy. Confirming the current Cetus-Aquilan border will ensure a fair and lasting peace."
  ANT_give_land_cet_internal:0 "Reverse the Persean Treaty"
+ ANT_give_land_aqu_internal_desc:0 "Now that the lands of southern Centaura is united under one Emperor, resolving internal disputes and conflicts to create an enduring peace is easy. Redrawing the current Cetus-Aquilan border to include all of Leonite lands in Cetus will ensure a fair and lasting peace."
  ANT_give_land_sko_small_internal:0 "Reverse the Pristis Plains War"
+ ANT_give_land_sko_small_internal_desc:0 "Now that the lands of southern Centaura is united under one Emperor, resolving internal disputes and conflicts to create an enduring peace is easy. Forcing Cetus to reverse their gains from the Pristis Plains war will ensure a fair and lasting peace."
  ANT_give_land_sko_internal:0 "Avenge the Pristis Plains War"
- ANT_give_land_lup_internal:0 "Avenge the Antarean-Aquilan War and Triplum War"
+ ANT_give_land_sko_internal_desc:0 "Now that the lands of southern Centaura is united under one Emperor, resolving internal disputes and conflicts to create an enduring peace is easy. Redrawing the current Cetus-Skorpius border and expanding Skorpius further north will ensure a fair and lasting peace."
+ ANT_give_land_lup_internal:0 "Reverse the Antarean-Aquilan War and Triplum War"
+ ANT_give_land_lup_internal_desc:0 "Now that the lands of southern Centaura is united under one Emperor, resolving internal disputes and conflicts to create an enduring peace is easy. Forcing Aquila to reverse their gains from the Antarean-Aquilan war and Triplum war will ensure a fair and lasting peace."
+
  ANT_give_land_cov:0 "Cede Minor Islands to Corvus"
  ANT_give_land_grs:0 "Rectify the Triplum War"
 
  ANT_skorpii_management_category:0 "Skorpii Management"
  ANT_establish_skorpii_grusii:0 "Establish Skorpii Grusii"
+
 #MIO
  ANT_germaniawerft_organization:0 "Ananteria Imperial Shipyards" #TEMP NAME, GET SOME LORE ON ACTUALL MILITARY INDUSTRIAL CORPORATIONS
  ANT_germaniawerft_organization_desc:0 "TESTTEST"
@@ -464,6 +530,8 @@
  ANT_rheinmetall_organization_desc:0 "TESTTEST"
  ANT_mauser_organization:0 "Ortus Heavy Industries"  #TEMP NAME, GET SOME LORE ON ACTUALL MILITARY INDUSTRIAL CORPORATIONS
  ANT_mauser_organization_desc:0 "TESTEST"
+ ANT_daimler_benz_organization:0 "Reikel Arsenal Kompany"
+ ANT_daimler_benz_organization_desc:0 "TESTTEST"
 
 #tooltips
  ant_placeholder_tt:0 "§YPLACEHOLDER, DOES §!§RNOTHING§!"
@@ -479,6 +547,8 @@
  devon_base_tt:0 "Builds up the naval base in §YDevon§! to level §G6§!"
  ANT_centralized_industry_tt:0 "This path is §Gshorter§! and will lead to §Yfactories§! §Cquicker§!.\n\n"
  ANT_decentralized_industry_tt:0 "This path is §Rlonger§! but will eventually lead to §Gmore§! §Yfactories§!.\n\n"
+ upon_focus_selection_tt:0 "Upon selecting this focus:"
+ ant_focus_select_mission_35_reform_tt:0 "  Add §Y35§! days to Mission §Y3-year Deadline§!\n\n"
 
  
  ##imperial army
@@ -536,3 +606,11 @@
  # other misc
  in_all_major_cities:0 "In all major §Ycities§!:"
  
+ 
+ 
+ ###Aquila war related events :D
+ ###White peace?
+ ANT.99999989879785638479645.t:0 "Failures at the front"
+ ANT.99999989879785638479645.d:0 "It was yet another morning in the Imperator palace. Kalvin had his breakfast. Not so long after, his advisors came to the throne room.\n\nAdvisors: Your majesty, our armies got pushed back to the original borders with Aquila, we should negotiate peace, before it gets worse!\nKalvin: How is that possible? Our army is modern and massive! How did these annoying foresters push us back?\nGeneral Archer: These are just temporary setbacks, your majesty. Their army is definitely weak now, so it shouldn't be a problem to defeat them now.\nAdvisors: Your majesty, we suggest you allow us to negotiate. The cost of victory is too high.\nKalvin: ...\n\nFor the rest of the day, The Tau was quiet. He barely spoke and spent most of the time in his private quarters. Despite his hesitations he was still the Tau, the Imperator of Antares and he needed to make a decision."
+ ANT.99999989879785638479645.a:0 "Fine, begin the negotiations"
+ ANT.99999989879785638479645.b:0 "Failure is not an option"

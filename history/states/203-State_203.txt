@@ -7,6 +7,9 @@ state={
 	history={
 		owner = CTA
 		add_core_of = CTA
+1944.1.1 = {
+	owner = RIA
+}
 		add_dynamic_modifier = { 
 		modifier = CTA_defence_line_dynamic_modifier
 		}
@@ -38,4 +41,6 @@ state={
 	state_category = rural
 	buildings_max_level_factor=1
 	local_supplies=0
+
+
 }

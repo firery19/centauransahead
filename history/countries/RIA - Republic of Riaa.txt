@@ -1,7 +1,10 @@
 capital = 69
 
 oob = "RIA_1900"
-
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "RIA_1900_naval_mtg"
+}
 add_ideas = { 
 	RIA_rural_countryside
 	RIA_industrialisation
@@ -15,6 +18,7 @@ set_technology = {
 	gw_artillery = 1
 	basic_train = 1
 	tech_trucks = 1
+	basic_infrastructure = 1
 	# b
 	# c
 	# d
@@ -27,13 +31,13 @@ set_technology = {
 
 set_research_slots = 2
 
-set_stability = 0.5
+set_stability = 0.6
 
-set_war_support = 0.5
+set_war_support = 0.4
 
 add_political_power = 1
 
-set_convoys = 75
+set_convoys = 70
 
 set_popularities = {
 	democratic = 1
@@ -54,3 +58,207 @@ set_politics = {
 	elections_allowed = yes
 }
 
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		coastal_defense_ships = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		basic_cruiser_armor_scheme = 1
+		mtg_transport = 1
+	}
+}
+### RIAAN NAVY LARP!!!!!! LONG LIVE THE GLORIOUS RIAAN EMPIRE!!!!! DEATH TO THE REPUBLICAN TRAITORS!!!!!!! (all following stuff is purely fictional and roughly loosely based in lore but 99% is LARP from the mind of ME, Hanssolo42)
+if = {
+	limit = { has_dlc = "Man the Guns" }
+# Battleships #
+	### (1880s)First riaan steelpot, armed with 4 single 10.5"/45 guns in an A-PQ-X layout (3 per broadside). Made to replace the now outdated riaan ironclad ships
+	create_equipment_variant = {
+		name = "Imperator Class"
+		type = ship_hull_heavy_1
+		name_group = RIA_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	### (1880s) Completed right before the civil war, it has the same main layout but with a higher velocity higher piercing 10.5"/50
+	### in an improved turret giving a higher rate of fire, faster turret traverse, slightly improved firing arc and slightly higher max elev.
+	### The secondary armament was also standardized with tertiary and quartiary guns removed and replaced with casemated secondaries. Bridge design also improved.
+	create_equipment_variant = {
+		name = "Imperatritsia Class"
+		type = ship_hull_heavy_1
+		name_group = RIA_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = no
+	}
+# Cruisers #
+	### (1870s)The oldest ships in service, armed with unturreted single 4" guns (hexagonal layout). Later refitted with minelaying capacity. Made primarily for the Annulus fleet
+	create_equipment_variant = {
+		name = "Edinorostov Class"
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = RIA_CITIES
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			front_1_custom_slot = ship_light_battery_1
+			mid_1_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+		obsolete = yes
+	}
+	### (1880s)Armoured cruiser, quite outdated by now, primarily made for the Ianis fleet. A-P-XY layout (4 broadside, no superfiring)
+	create_equipment_variant = {
+		name = "Admiral Burim Class"
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = RIA_CITIES
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_torpedo_1
+		}
+		obsolete = no
+	}
+	### (1890s)Protected Cruiser laid down right before the civil war, only some were finished afterwards by the nationalists. Originally intended as longer-range patrol ships
+	### on top of regular cruiser operations, and as a partiall replacement to the Edinorostov Class. Made primarily for the Ianis/Northern fleet.
+	### 5" guns in AB-PQ-XY layout (5 broadside)
+	create_equipment_variant = {
+		name = "Ivanovich Class"
+		type = ship_hull_cruiser_1
+		name_group = RIA_CITIES
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			front_1_custom_slot = ship_light_battery_1
+			mid_1_custom_slot = ship_mine_layer_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_battery_1
+		}
+		obsolete = no
+	
+	}
+	### (1870-1880)Multiple classes of gunboats
+	create_equipment_variant = {
+		name = "TRASH Class"
+		type = ship_hull_light_1
+		name_group = RIA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	### (1880-1890)Multiple classes of light ships with a focus on gun armament
+	create_equipment_variant = {
+		name = "LessTrash Class"
+		type = ship_hull_light_1
+		name_group = RIA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	### (1890s-1900s)The first ships to be made by the nationalist government, they were quite standard dds for the time
+	### but a significant improvement for riaan ship design. It had two 4x torpedo tubes, although not of the best design
+	### and 4 5" guns. It had a significantly higher tonnage than previous "destroyers", and an underpowered engine
+	create_equipment_variant = {
+		name = "Ok Class"
+		type = ship_hull_light_2
+		name_group = RIA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_light_battery_2
+			rear_1_custom_slot = ship_torpedo_1
+		}
+		obsolete = no
+	}
+
+
+
+}

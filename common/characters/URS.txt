@@ -31,7 +31,7 @@ characters = {
 		}
 	}
 	
-	# general
+	############################################## general
 	
 	
 	URS_petr_trolivoch = {
@@ -181,7 +181,7 @@ characters = {
 		}
 	}
 	
-	# admirals
+	################################# admirals
 
 	URS_enrik_pavolvich = {
 		name = URS_enrik_pavolvich

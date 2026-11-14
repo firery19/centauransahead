@@ -1,0 +1,104 @@
+LEO_war_independence_category = {
+
+	icon = GFX_decision_generic_reorganize_irregulars
+
+	visible_when_empty = no
+	
+	allowed = {
+		original_tag = LEO
+	}
+	
+	visible = {
+
+	}
+	priority = {
+		base = 109
+	}
+	allowed = {
+		original_tag = LEO
+	}
+}
+
+LEO_gap_infighting_category = {
+
+	icon = GFX_decision_SWI_consolidate_council_power
+
+	visible_when_empty = no
+	
+	allowed = {
+		original_tag = LEO
+	}
+	
+	visible = {
+
+	}
+	priority = {
+		base = 109
+	}
+	allowed = {
+		original_tag = LEO
+	}
+}
+
+LEO_liberate_our_lands = {
+
+	icon = GFX_decision_generic_speech
+
+	visible_when_empty = no
+	
+	allowed = {
+		original_tag = LEO
+	}
+	
+	visible = {
+
+	}
+	priority = {
+		base = 109
+	}
+	allowed = {
+		original_tag = LEO
+	}
+}
+
+LEO_urbanisation_plan = {
+
+	icon = GFX_decision_generic_speech
+
+	visible_when_empty = no
+	
+	allowed = {
+		original_tag = LEO
+	}
+	
+	visible = {
+	always = no
+	}
+	priority = {
+		base = 109
+	}
+	allowed = {
+		original_tag = LEO
+	}
+}
+
+LEO_farmer_training = {
+
+	icon = GFX_decision_generic_political_discourse
+
+	visible_when_empty = yes
+	
+	allowed = {
+		original_tag = LEO
+	}
+	
+	visible = {
+
+	}
+	priority = {
+		base = 109
+	}
+	allowed = {
+		original_tag = LEO
+	}
+}

@@ -1,8 +1,27 @@
 add_namespace = formageneric
 add_namespace = warfareadvancement
+add_namespace = test
+
+
 
 country_event = {
-	id = formageneric.1
+	id = test.1
+	title = test.1.t
+	desc = test.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = test.1.a
+	}
+	option = {
+		name = test.1.b
+	}
+}
+
+country_event = {
+	id = formageneric.1 # Cetan units flee into Aquila!
 	title = formageneric.1.t
 	desc = formageneric.1.d
 	picture = GFX_report_event_generic_read_write
@@ -11,14 +30,55 @@ country_event = {
 	
 	option = {
 		name = formageneric.1.a
+		add_manpower = 20000
+		add_political_power = -50
+		if = {
+			limit = {
+			CET = { has_tech = infantry_equipment_2 }
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				amount = 600
+				producer = CET
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1200
+				producer = CET
+			}
+		}
+		else_if = {
+			limit = {
+			CET = { has_tech = infantry_equipment_1 }
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1000
+				producer = CET
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 800
+				producer = CET
+			}
+		}
+		else = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1800
+				producer = CET
+			}
+		}
 	}
 	option = {
-		name = formageneric.1.b
+		name = formageneric.1.b # turn them back>?? what??
+		add_political_power = 10
+		add_war_support = 0.1
 	}
 }
 
 country_event = {
-	id = formageneric.2
+	id = formageneric.2 Cetan units flee into Vulpa!
 	title = formageneric.2.t
 	desc = formageneric.2.d
 	picture = GFX_report_event_generic_read_write
@@ -34,7 +94,7 @@ country_event = {
 }
 
 country_event = {
-	id = formageneric.3
+	id = formageneric.3 Cetan units flee into Riaa!
 	title = formageneric.3.t
 	desc = formageneric.3.d
 	picture = GFX_report_event_generic_read_write
@@ -66,18 +126,40 @@ country_event = {
 }
 
 country_event = {
-	id = formageneric.2
-	title = formageneric.2.t
-	desc = formageneric.2.d
+	id = formageneric.5
+	title = formageneric.5.t
+	desc = formageneric.5.d
 	picture = GFX_report_event_generic_read_write
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = formageneric.2.a
+		name = formageneric.5.a
 	}
 	option = {
-		name = formageneric.2.b
+		name = formageneric.5.b
+	}
+}
+
+country_event = {
+	id = formageneric.swap
+	title = formageneric.swap # change grusa ideology
+	desc = formageneric.swap
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		name = formageneric.swap
+		set_politics = {
+			ruling_party = auth_dem
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = auth_dem
+			popularity = 0.78
+		}
 	}
 }
 

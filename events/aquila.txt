@@ -16,7 +16,10 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_country_flag = AQU_cg_a
+			OR = {
+				has_completed_focus = AQU_increase_cg
+				has_completed_focus = AQU_increase_cg_bawewewaewa
+				}
 			}
 			custom_effect_tooltip = AQU_cg_recruit_many
 			hidden_effect = {
@@ -44,7 +47,10 @@ country_event = {
 			}
 			else_if = {
 				limit = {
-					has_country_flag = AQU_cg_b
+				OR = {
+					has_completed_focus = AQU_integrate_cg
+					has_completed_focus = AQU_integrate_cgww
+					}
 				}
 				custom_effect_tooltip = AQU_cg_recruit_elite
 				hidden_effect = {
@@ -52,25 +58,29 @@ country_event = {
 						limit = { ROOT = { has_full_control_of_state = PREV } }
 						prioritize = { 9 }
 						create_unit = {
-							division = "name = \"Trained Militia\" division_template = \"Civil Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+							division = "name = \"Trained Militia\" division_template = \"Integrated Civil Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
 							owner = PREV
 						}
 						create_unit = {
-							division = "name = \"Trained Militia\" division_template = \"Civil Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+							division = "name = \"Trained Militia\" division_template = \"Integrated Civil Guard\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
 							owner = PREV
 						}
 					}
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
-					not = {
-						has_country_flag = AQU_cg_a
-						has_country_flag = AQU_cg_b
-					}
+				NOT = {
+				OR = {
+					has_completed_focus = AQU_integrate_cg
+					has_completed_focus = AQU_integrate_cgww
+					has_completed_focus = AQU_increase_cg
+					has_completed_focus = AQU_increase_cg_bawewewaewa
+				}
+				}
 				}
 				custom_effect_tooltip = AQU_cg_recruit_normal
-				hidden_effect = {		
+				hidden_effect = {
 					random_owned_controlled_state = {
 						limit = { ROOT = { has_full_control_of_state = PREV } }
 						prioritize = { 9 }
@@ -202,5 +212,1173 @@ country_event = {
 		name = aqu.5.a
 		AQU = { retire_character = AQU_ewan_fouwler }
 		promote_character = AQU_lucas_silva
+	}
+}
+
+
+
+
+
+
+
+
+#####If the 2nd Antares Aquila War did not happen, the player will still need a way to reform the military. This event will activate once a country declare war on Aquila, granting the wartime reform focuses, allowing the player to reform the army.
+country_event = {
+	id = aqu.2110000
+	title = aqu.2110000.t
+	desc = aqu.2110000.d
+	picture = GFX_report_event_SAAW
+	
+	is_triggered_only = no
+	fire_only_once = yes 
+	
+    trigger = {
+		has_defensive_war = yes
+		ANT = { NOT = { has_completed_focus = ANT_waraquila } }
+	
+		AQU = { NOT = { has_completed_focus = AQU_2nd_Antarean_Aquilan_war_defend } }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	option = {
+	hidden_effect={
+        set_country_flag = flg_AQU_generic_wartime_military_reform
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = AQU_aquila_under_attack_generic
+		}
+		
+		name = aqu.2110000.a
+
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+
+#####Every historical 2nd Antares Aquilan War events will start with 211(4 digital number)  
+country_event = { #2nd Antares Aquilan War start(activate focus)
+	id = aqu.2110001
+	title = aqu.2110001.t
+	desc = aqu.2110001.d
+	picture = GFX_report_event_SAAW
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.2110001.a
+		hidden_effect = {
+        set_country_flag = flg_AQU_2nd_antares_war
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = AQU_2nd_Antarean_Aquilan_war_defend
+		
+        }
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+country_event = { ###THIS EVENT IS ONLY THE AQUILA'S AI, SO AQUILA WILL LOSE IN 1915
+	id = aqu.21185648111
+	title = aqu.21185648111.t
+	desc = aqu.21185648111.d
+	picture = GFX_report_event_spr_civil_war_equipment
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.21185648111.a
+		add_ideas = AQU_fuck_aquila_for_balancing_im_sorry_idea
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+country_event = { #we are losing!
+	id = aqu.2110002
+	title = aqu.2110002.t
+	desc = aqu.2110002.d
+	picture = GFX_report_event_spr_civil_war_equipment
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.2110002.a
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+country_event = { #victory 1
+	id = aqu.2110003
+	title = aqu.2110003.t
+	desc = aqu.2110003.d
+	picture = GFX_report_event_generic_soldiers_surrendering
+	
+	is_triggered_only = no
+	fire_only_once = yes 
+	
+    trigger = {
+        tag = AQU
+		has_war_with = ANT
+		date > 1913.01.01
+        35 = { is_fully_controlled_by = AQU }
+        36 = { is_fully_controlled_by = AQU }
+        156 = { is_fully_controlled_by = AQU }
+        37 = { is_fully_controlled_by = AQU }
+        228 = { is_fully_controlled_by = AQU }
+        31 = { is_fully_controlled_by = AQU }
+        32 = { is_fully_controlled_by = AQU }
+        34 = { is_fully_controlled_by = AQU }
+        9 = { is_fully_controlled_by = AQU }
+        38 = { is_fully_controlled_by = AQU }
+        152 = { is_fully_controlled_by = AQU }
+        33 = { is_fully_controlled_by = AQU }
+    }
+	
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	option = {
+		name = aqu.2110003.a
+		hidden_effect = {
+        ANT = {
+            country_event = { 
+                id = ANT.99999989879785638479645
+                days = 1
+            }
+        }
+        }
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+country_event = { #victory 2
+	id = aqu.2110004
+	title = aqu.2110004.t
+	desc = aqu.2110004.d
+	picture = GFX_report_event_generic_soldiers_surrendering
+	
+	is_triggered_only = yes
+
+	option = {
+		name = aqu.2110004.a
+		white_peace = ANT
+		complete_national_focus = AQU_victory
+		hidden_effect = {
+		complete_national_focus = AQU_victory_b
+		
+		set_variable = {var = AQU_army_attack value = -0.2 }
+		set_variable = {var = AQU_army_defend value = -0.2 }
+		set_variable = {var = AQU_army_attack_core value = 0.5 }
+		set_variable = {var = AQU_army_defend_core value = 0.5 }
+		mark_focus_tree_layout_dirty = yes
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+country_event = { #victory 3 for focus
+	id = aqu.2110005
+	title = aqu.2110005.t
+	desc = aqu.2110005.d
+	picture = GFX_report_event_SAAW_two
+	
+	is_triggered_only = yes
+
+	option = {
+		name = aqu.2110005.a
+
+		hidden_effect = {
+		country_event = { id = aqu.9995959458 }
+		remove_ideas = AQU_homefront
+		remove_ideas = AQU_homefront_2
+		remove_ideas = AQU_homefront_3
+		remove_ideas = AQU_homefront_4
+		remove_ideas = AQU_tank_production
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+#####Every military government alt history path events will start with 311(4 digital number)  
+country_event = { #military path activate
+	id = aqu.3110001
+	title = aqu.3110001.t
+	desc = aqu.3110001.d
+	picture = GFX_report_event_hol_cabinet_gerbrandy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.3110001.a
+		hidden_effect = {
+		set_country_flag = flg_AQU_desperate_reforms
+		mark_focus_tree_layout_dirty = yes
+        }
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = aqu.3110001.b
+		set_politics = {
+			ruling_party = auth_dem 
+		}
+		hidden_effect = {
+		    remove_ideas = AQU_conservative_majority
+			set_country_flag = flg_AQU_military_government
+			mark_focus_tree_layout_dirty = yes
+
+			add_popularity  = {
+				ideology = auth_dem
+                popularity = 0.54
+            }
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+country_event = {  #force women and maybe childern into the Factories
+	id = aqu.3110002
+	title = aqu.3110002.t
+	desc = aqu.3110002.d
+	picture = GFX_report_event_generic_factory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.3110002.a
+        swap_ideas = {
+		remove_idea = AQU_homefront_2
+		add_idea = AQU_homefront_3
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = aqu.3110002.b
+        swap_ideas = {
+		remove_idea = AQU_homefront_2
+		add_idea = AQU_homefront_4
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+country_event = { #military path civil war post war
+	id = aqu.3110004
+	title = aqu.3110004.t
+	desc = aqu.3110004.d
+	picture = GFX_report_event_ITA_italian_civil_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.3110004.a
+		hidden_effect = {
+		start_civil_war = {
+		ideology = democratic
+		size = 0.3
+		capital = 228
+		states = { 228 31 36  }
+		}
+        }
+        }
+		
+		ai_chance = {
+			base = 100
+		}
+}
+
+country_event = { #military path civil war post war
+	id = aqu.3110005
+	title = aqu.3110005.t
+	desc = aqu.3110005.d
+	picture = GFX_report_event_ITA_italian_civil_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.3110005.a
+		hidden_effect = {
+		start_civil_war = {
+		ideology = democratic_right
+		size = 0.3
+		capital = 156
+		states = { 35 156 32  }
+		}
+        }
+        }
+		
+		ai_chance = {
+			base = 100
+	}
+}
+
+###election ai 
+country_event = { #this will make the election harder when player chose Ewan path
+	id = aqu.111898964152
+	title = aqu.111898964152.t
+	desc = aqu.111898964152.d
+	picture = GFX_report_event_generic_handshake
+	
+    trigger = {
+        tag = AQU
+		has_idea = AQU_first_campaign
+		political_power < 51
+		has_completed_focus = AQU_support_the_tories
+    }
+	
+	option = {
+		name = aqu.111898964152.a
+	    
+		hidden_effect = {
+		random_list = {
+		50 = {add_to_variable = { AQU_state_38_support = -6 }}
+		50 = {add_to_variable = { AQU_state_36_support = -6 }}
+		50 = {add_to_variable = { AQU_state_34_support = -6 }}
+		50 = {add_to_variable = { AQU_state_228_support = -6 }}
+		50 = {add_to_variable = { AQU_state_31_support = -6 }}
+		}
+		
+		if = {#
+			limit = {
+				check_variable = { AQU_state_38_support > 0 }
+			}   
+			set_variable = { AQU_state_38_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_38_support < 0 }
+			}
+			set_variable = { AQU_state_38_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_38_alignment = 1 }
+		}#
+		
+		if = {#
+			limit = {
+				check_variable = { AQU_state_36_support > 0 }
+			}   
+			set_variable = { AQU_state_36_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_36_support < 0 }
+			}
+			set_variable = { AQU_state_36_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_36_alignment = 1 }
+		}#
+		
+		if = {#
+			limit = {
+				check_variable = { AQU_state_34_support > 0 }
+			}   
+			set_variable = { AQU_state_34_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_34_support < 0 }
+			}
+			set_variable = { AQU_state_34_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_34_alignment = 1 }
+		}#
+		
+		if = {#
+			limit = {
+				check_variable = { AQU_state_228_support > 0 }
+			}   
+			set_variable = { AQU_state_228_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_228_support < 0 }
+			}
+			set_variable = { AQU_state_228_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_228_alignment = 1 }
+		}#
+		
+		if = {#
+			limit = {
+				check_variable = { AQU_state_31_support > 0 }
+			}   
+			set_variable = { AQU_state_31_alignment = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { AQU_state_31_support < 0 }
+			}
+			set_variable = { AQU_state_31_alignment = 2 }
+		}
+		else = {
+			set_variable = { AQU_state_31_alignment = 1 }
+		}#
+		
+        ai_chance = {
+            base = 100
+		}
+		}
+
+	}
+}
+
+
+
+### elections
+country_event = { #complete start election
+	id = aqu.111896
+	title = aqu.111896.t
+	desc = aqu.111896.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = no
+	fire_only_once = yes
+
+    trigger = {
+        tag = AQU
+		date > 1900.11.14
+		date < 1900.12.10
+    }
+	
+	option = {
+		name = aqu.111896.a
+		hidden_effect = {
+		complete_national_focus = AQU_prepare_for_the_elections
+          set_variable = {
+            AQU_click_election_state = 9
+          }
+		
+        }
+		set_political_power  = 0
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+country_event = { #check path liberal
+	id = aqu.1118965
+	title = aqu.1118965.t
+	desc = aqu.1118965.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.1118965.a
+		hidden_effect = {
+		activate_mission = AQU_the_election_liberal
+        }
+		add_political_power = 50
+		
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+country_event = { #check path conservative
+	id = aqu.111898964
+	title = aqu.111898964.t
+	desc = aqu.111898964.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.111898964.a
+		hidden_effect = {
+		activate_mission = AQU_the_election_conservative
+        }
+		add_political_power = 50
+	    
+		if = {
+        limit = {
+	    has_completed_focus = AQU_raise_campaign_funds
+		}
+		add_political_power = 50
+		}
+
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+country_event = { #The king's return
+	id = aqu.11189564848418
+	title = aqu.11189564848418.t
+	desc = aqu.11189564848418.d
+	picture = GFX_report_event_generic_rally
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.11189564848418.a
+		complete_national_focus = AQU_failed_election
+		
+		ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+country_event = { #The king's return - parties not making moves
+	id = aqu.11189564223232
+	title = aqu.11189564223232.t
+	desc = aqu.11189564223232.d
+	picture = GFX_report_event_generic_rally
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.11189564223232.a
+
+		ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+country_event = { #coalition path speech SD
+	id = aqu.1118967
+	title = aqu.1118967.t
+	desc = aqu.1118967.d
+	picture = GFX_report_event_generic_communist_congress
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.1118967.a
+        add_popularity = { ideology = democratic_left popularity = 0.05 }
+		add_popularity = { ideology = communism popularity = 0.02 }
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+country_event = { #a meeting with the socialist path
+	id = aqu.1118968
+	title = aqu.1118968.t
+	desc = aqu.1118968.d
+	picture = GFX_report_event_gre_cabinet_meeting
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.1118968.a
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+country_event = { #speech for the border regions
+	id = aqu.1118969
+	title = aqu.1118969.t
+	desc = aqu.1118969.d
+	picture = GFX_report_event_generic_rally
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.1118969.a
+		add_political_power = 50
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+country_event = { #speech on foreign policy
+	id =  aqu.1118970
+	title = aqu.1118970.t
+	desc = aqu.1118970.d
+	picture = GFX_report_event_generic_rally
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.1118970.a
+		add_political_power = 50
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+country_event = { #speech on economic policy
+	id =   aqu.1118971
+	title =  aqu.1118971.t
+	desc =  aqu.1118971.d
+	picture = GFX_report_event_generic_rally
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  aqu.1118971.a
+		add_political_power = 50
+        ai_chance = {
+            base = 100
+		}
+
+	}
+} 
+
+country_event = { #meet with the worker unions
+	id =   aqu.1118972
+	title =  aqu.1118972.t
+	desc =  aqu.1118972.d
+	picture = GFX_report_event_generic_rally
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  aqu.1118972.a
+		add_political_power = 50
+        ai_chance = {
+            base = 100
+		}
+
+	}
+} 
+
+country_event = { #farmer speech
+    id = aqu.1118973
+	title = aqu.1118973.t
+	desc = aqu.1118973.d 
+	picture = GFX_report_event_generic_rally
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  aqu.1118973.a
+		add_political_power = 50
+        ai_chance = {
+            base = 100
+		}
+
+	}
+} 
+
+###election victory event
+country_event = { #election check 
+    id = aqu.18661112
+	title = aqu.18661112.t
+	desc = aqu.18661112.d 
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  aqu.18661112.a
+		AQU_election_frame_count = yes
+	    if = {
+        limit = {
+	    check_variable = { AQU_blue_wins = 0 }
+		}
+		country_event = { id = aqu.18661113 }
+		set_country_flag = flg_AQU_election_end
+		}
+
+	    else_if = {
+        limit = {
+	    check_variable = { AQU_blue_wins = 1 }
+		}
+		country_event = { id = aqu.18661116 }
+		set_country_flag = flg_AQU_election_end
+		}
+		
+		remove_ideas = AQU_first_campaign
+		
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+country_event = { #liberal victory!
+    id = aqu.18661113
+	title = aqu.18661113.t
+	desc = aqu.18661113.d 
+	picture = GFX_report_event_generic_rally
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  aqu.18661113.a
+		remove_ideas = AQU_conservative_majority
+		if = {
+			limit = {
+			is_ai = yes
+			}
+		hidden_effect = {
+		remove_ideas = AQU_conservative_majority
+		set_country_flag = flg_AQU_conservative_election_victory
+		complete_national_focus = AQU_another_five_years_in_Volucris
+		
+		mark_focus_tree_layout_dirty = yes
+		}
+	    set_politics = {
+        ruling_party = democratic_right
+		elections_allowed = no		
+		}
+		}
+		else = {
+		
+		add_popularity = { ideology = democratic popularity = 0.2 }
+		hidden_effect = {
+		set_country_flag = flg_AQU_liberal_election_victory
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = AQU_falkner's_term
+		
+		}
+		set_politics = {
+        ruling_party = democratic
+		elections_allowed = no
+		}
+		}
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+country_event = { #coalition victory! (liberal lead) ###UNUSED
+    id = aqu.18661114
+	title = aqu.18661114.t
+	desc = aqu.18661114.d 
+	picture = GFX_report_event_generic_rally
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  aqu.18661114.a
+		remove_ideas = AQU_conservative_majority
+	    set_politics = {
+        ruling_party = democratic
+		elections_allowed = no		
+		}
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+country_event = { #coalition victory! (SD lead) ###UNUSED
+    id = aqu.18661115
+	title = aqu.18661115.t
+	desc = aqu.18661115.d 
+	picture = GFX_report_event_generic_rally
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  aqu.18661115.a
+		remove_ideas = AQU_conservative_majority
+	    set_politics = {
+        ruling_party = democratic_left
+		elections_allowed = no		
+		}
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+###
+country_event = { #news paper raise fund ad
+    id = aqu.1118974
+	title = aqu.1118974.t
+	desc = aqu.1118974.d 
+	picture = GFX_report_event_donate
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  aqu.1118974.a
+
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+country_event = { #a private letter to an unnamed ceo
+    id = aqu.1118975
+	title = aqu.1118975.t
+	desc = aqu.1118975.d 
+	picture = GFX_report_event_generic_rally
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  aqu.1118975.a
+        ai_chance = {
+            base = 100
+		}
+
+	}
+} 
+
+country_event = { #Conservative victory
+    id = aqu.18661116
+	title = aqu.18661116.t
+	desc = aqu.18661116.d 
+	picture = GFX_report_event_generic_rally
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  aqu.18661116.a
+		hidden_effect = {
+		remove_ideas = AQU_conservative_majority
+		set_country_flag = flg_AQU_conservative_election_victory
+		complete_national_focus = AQU_another_five_years_in_Volucris
+		
+		mark_focus_tree_layout_dirty = yes
+		}
+	    set_politics = {
+        ruling_party = democratic_right
+		elections_allowed = no		
+		}
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+### LEONITE STUFF ### EVERY LEONITE STUFF STARTS WITH 918
+country_event = { #Leo Revolt
+    id = aqu.9181
+	title = aqu.9181.t
+	desc = aqu.9181.d 
+	picture = GFX_report_event_DEN_resistance
+	
+	is_triggered_only = yes
+	
+	option = {
+		name =  aqu.9181.a
+        ai_chance = {
+            base = 100
+		}
+		LEO = { transfer_state = 37 }
+		AQU = {
+		declare_war_on = {
+				target = LEO
+				type = annex_everything
+		}
+		}
+		
+		LEO = {
+			 hidden_effect = {
+			 LEO = {
+				load_oob = LEO_1900
+			 }
+			 }
+		}
+		
+
+	}
+
+	option = {
+		name =  aqu.9181.b
+        ai_chance = {
+            base = 0
+		}
+		LEO = {
+			change_tag_from = AQU
+		}
+		
+		LEO = { transfer_state = 37 }
+		declare_war_on = {
+				target = LEO
+				type = annex_everything
+		}
+		LEO = {
+			add_ideas = { 
+				LEO_war_of_independence
+			 }
+			 hidden_effect = {
+			 LEO = { 
+				load_oob = LEO_1900
+				add_ideas = {
+					LEO_grand_army
+				}
+			 }
+		}
+			
+	}
+}
+}
+
+country_event = { #Leo focus 1
+	id = aqu.9182
+	title = aqu.9182.t
+	desc = aqu.9182.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.9182.a
+        ai_chance = {
+            base = 100
+		}
+	}
+}
+
+country_event = { #Leo focus 3
+	id = aqu.9184
+	title = aqu.9184.t
+	desc = aqu.9184.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.9184.a
+        ai_chance = {
+            base = 100
+		}
+	}
+}
+
+country_event = { #Leo focus 4
+	id = aqu.9185
+	title = aqu.9185.t
+	desc = aqu.9185.d
+	picture = GFX_report_event_police
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.9185.a
+        ai_chance = {
+            base = 100
+		}
+	}
+}
+
+country_event = { #Leo peace
+	id = aqu.9186
+	title = aqu.9186.t
+	desc = aqu.9186.d
+	picture = GFX_report_event_FIN_karelian_forest_guerillas
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.9186.a
+		add_war_support = -0.05
+        ai_chance = {
+            base = 0
+		}
+	}	
+	option = {
+		name = aqu.9186.b
+		
+		white_peace = LEO
+		LEO = { country_event = { id = leo.9180 } }
+		hidden_effect = {
+		country_event = { id = aqu.9187 days = 7 }
+		LEO = {
+		complete_national_focus = LEO_lion_victory
+		}
+		}
+        ai_chance = {
+            base = 100
+		}
+	}
+}
+
+country_event = { #Leo angry senator wood telling the government to fuck themselves
+	id = aqu.9187
+	title = aqu.9187.t
+	desc = aqu.9187.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.9187.a
+		add_war_support = -0.05
+		add_timed_idea = {
+		idea = AQU_failed_to_crush_the_leonites
+		days = 1095
+        }
+        ai_chance = {
+            base = 0
+		}
+	}
+}
+
+##SCW
+country_event = { #thing that activates the SCW focus
+	id = aqu.114255456156
+	title = aqu.114255456156.t
+	desc = aqu.114255456156.d
+	picture = GFX_report_event_SCW
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.114255456156.a
+		mark_focus_tree_layout_dirty = yes
+		set_country_flag = flg_AQU_SCW
+		complete_national_focus = AQU_the_South_Corvus_War
+		
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
+country_event = { #send CEtus gun
+	id = aqu.11401
+	title = aqu.11401.t
+	desc = aqu.11401.d
+	picture = GFX_report_event_bul_italian_equipment
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.11401.a
+        ai_chance = {
+            base = 100
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 1500                
+			producer = AQU
+		}
+	}
+}
+
+country_event = { #send cov stuff
+	id = aqu.11401644
+	title = aqu.11401644.t
+	desc = aqu.11401644.d
+	picture = GFX_report_event_hospital
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.11401644.a
+		set_technology = {
+			tech_field_hospital = 1
+		}
+        ai_chance = {
+            base = 100
+		}
+	}
+}
+
+country_event = { #send cov stuff2
+	id = aqu.11402
+	title = aqu.11402.t
+	desc = aqu.11402.d
+	picture = GFX_report_event_supply
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.11402.a
+        ai_chance = {
+            base = 100
+		}
+		add_timed_idea = {
+			idea = AQU_two_foreign_loans
+			days = 100
+		}
+	}
+}
+country_event = {  ### send cet advisors
+	id = aqu.11403
+	title = aqu.11403.t
+	desc = aqu.11403.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.11403.a
+        ai_chance = {
+            base = 100
+		}
+		CET = {
+		add_timed_idea = {
+			idea = AQU_operation_orangee
+			days = 400	
+		} 
+		}
+	}
+}
+
+### why are you here, this path isn't finished yet! ###
+country_event = {  ### not finished path
+	id = aqu.9995959458
+	title = aqu.9995959458.t
+	desc = aqu.9995959458.d
+	picture = GFX_report_event_finery
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = aqu.9995959458.a
+        ai_chance = {
+            base = 100
+		}
 	}
 }

@@ -36,9 +36,9 @@ state={
 			4383 = {
 			bunker = 1
 			}
-			2837 = {
-			bunker = 1
-			}
+		#	2837 = {	#not a border province
+		#	bunker = 1
+		#	}
 			2870 = {
 			bunker = 1
 			}

@@ -16,11 +16,13 @@
  form_country_rodinia_coring_states_tt:0 "Cores all listed territories above"
  
  form_super_musca_category:0 "Greater Musca"
- form_super_musca_category_desc:0 "We take lands."
+ form_super_musca_category_desc:0 "Unism is a monotheistic belief that originates from Musca and is predominantly practiced on the Hydran continent. Its inception came about when two brothers named Alvar and Valde received a divine message from Jatkaa, a divine entity that created the world."
+ little_jaatka_comes:0 "Reestablish Direct Rule"
  form_super_musca2_category:0 "Unist Empire"
  form_super_musca2_category_desc:0 "We take lands."
- jaatflag:0 "www"
- jaatflag2:0 "sss."
+ greater_jaatka_comes:0 "Establish a modern day Unist Empire"
+ jaatflag:0 "Mustekia and Lepus has not returned to our integral rule"
+ jaatflag2:0 "The Unist Empire has not been formed."
  
  
  form_commonwealthB_category:0 "Form the Hydrus Commonwealth"
@@ -47,8 +49,10 @@
  form_nation_columba_required_states_tt:0 "Requires all cores of §Y[CLB.GetName]§!."
  reform_columba_coring_states_tt:0 "Cores all §Y[CLB.GetName]§! states."
  
- form_redantares_category:0 "Colour Changer"
+ form_redantares_category:0 "Country Cosmetics"
  form_redantares:0 "Change the colour of Antares to red"
+ reuse_naval_jack_thelostblueone:0 "Reuse the old Hydrus naval mine flag"
+ the_new_orion_flags:0 "Use the 1906 Orion flag"
  
  doesnt_trigger_campaign_flag_tt:0 "Does §Ynot§! count as a campaign, can only be toggled off!"
  ongoing_propaganda_campaign_flag:0 "Has an active propaganda campaign"
@@ -78,6 +82,16 @@
  recruitment_campaign_cooldown_flag:0 "Campaign on cooldown"
  research_campaign_cooldown_flag:0 "Campaign on cooldown"
  retooling_campaign_cooldown_flag:0 "Campaign on cooldown"
+ #
+ CET_naval_production_cooldown_flag:0 "Campaign on cooldown"
+ burning_vengeance_cooldown_flag:0 "Campaign on cooldown"
+ forestry_campaign_cooldown_flag:0 "Campaign on cooldown"
+ pastry_selling_campaign_cooldown_flag:0 "Campaign on cooldown"
+ eq_scavenging_campaign_cooldown_flag:0 "Campaign on cooldown"
+ economic_campaign_cooldown_flag:0 "Campaign on cooldown"
+ industrial_campaign_cooldown_flag:0 "Campaign on cooldown"
+ _cooldown_flag:0 "Campaign on cooldown"
+ 
  
  # generic
  forma_big_army_idea:0 "huge army"
@@ -97,6 +111,8 @@
  forma_retooling_campaign_idea_desc:0 "Reduces civilian to military factory conversion cost"
  forma_retooling_campaign_cooloff_idea:0 "Ongoing Campaign"
  forma_retooling_campaign_cooloff_idea_desc:0 "" 
+
+ itermundae:0 "§RItermundae§!"
  
  VEG_pastry_selling_campaign_idea:0 "Exporting Food"
  VEG_pastry_selling_campaign_idea_desc:0 ""
@@ -132,6 +148,11 @@
  TUC_industrial_campaign_decision:0 "Tucanese Industrial Campaign"
  TUC_industrial_campaign_decision_desc:0 "Improves construction speed, factory and naval output. Unique Tucanese decision, 280 days cooldown."
  
+ crush_leonites_1:0 "Integrate Leonite States"
+ crush_leonites_2:0 "Crush Leonite resistance"
+
+ upgrade_rural_states:0 "Develop Rural Areas"
+
  hydrus_film_1:0 "Know The Revolution"
  hydrus_film_2:0 "With Our Brothers"
  hydrus_film_3:0 "Standing Strong"
@@ -167,16 +188,18 @@
  CTA_battery_line_dynamix_modifier:0 "Coastal Battery Fortifications"
  CTA_defence_line_dynamic_modifier:0 "Defensive Fortifications"
 
+ leonite_core_state_modifier:0 "Leonite Resistance"
+ leonite_peripheral_state_modifier:0 "Minor Leonite Resistance"
 
  autonomy_skorpii:0 "Skorpii"
  autonomy_skorpii_integrated:0 "Integrated Skorpii"
  
- TITLE_CARD:0 "1.2.06 Update"
+ TITLE_CARD:0 "1.2.1 Version"
  LUCKY_STAR:0 "General Mod Timeline"
  LUCKY_STAR_OVA:0 "More details -->"
  TAKOPIS_ORIGINAL_SIN:0 "1899 - 1901: Hydrus and Lepus gains independence, setting the stage for the Grease Wars.\n\n1902 - 1905: Grease Wars, Ursa VS Orion and allies. Ursa lights oil wells on fire in retreat, causing the Cerberus Oil Fires.\n\n1906: Grease War ends, Orion wins. Canis gains independence from Ursa; Hydrus, Lepus and Canis unite as a Commonwealth.\n\n1908: Corvus invades Cetus to retake lost territory with precious coal mines.\n\n1911: As Corvun supplies dwindle in the war against Cetus, they grows desperate and requests Antarean intervention against Cetus. In return, Corvus agrees to being vassalised by Antares.\n\n1911: Antares invades Cetus. Many naval units flee north to Riaa and Vulpa. Corvus is integrated into Antares as Skorpii Korvus.\n\n1912: Antares attacks Aquila, the "Ring of Fire" holds initial Antarean attacks."#In an attempt to root out Aquilan resistance, Antares begins setting forests ablaze. The fire goes out of control quickly and results in 10% of the country burnt by the end of the year.
- TOKIDOKI_BOSOTTO_ROSHIA_GO_DE_DEDERU_TONARI_NO_ALYA_SAN:0 "Do you have any bug reports?" #Its been a while, hasn't it? #In this update, Hydrus gets the newest content!! Now you get to play past the Grease Wars with actual focuses.
- BOCCHI_THE_ROCK:0 "- Updated the generic focus tree to include the new ideologies.\n\n- Fixed some bugs"
+ TOKIDOKI_BOSOTTO_ROSHIA_GO_DE_DEDERU_TONARI_NO_ALYA_SAN:0 "Aquila update is here!\nHave you found any bugs? Please report them."
+ BOCCHI_THE_ROCK:0 "- Aquilan focus tree fully added\n\n- Infrastructure levels changed from 5 to 10 max"
  
  #"Antares Imperium\n- Added integration decisions\n- Added Antarean army focus branch\n- Added more political focuses\n\nHydrus\n- Added a focus tree\n\n----------- Miscellaneous -------------\nMap changes\n- Added more states in North Centaura, Vega and Grusa\n- Terrain changes\n- More water canals\n\nNew random events\n- I don't know. "
  #- Added this side panel\n\n- Added coal into the map\n\n- Changed states and strategic regions\n\n- Update tech according to vanilla
@@ -211,6 +234,7 @@
  HADINA_RIVER:0 "Hadina River"
  NORWAY_SHAPE_LAKE:0 "Pisca Canal"
  LEPUS_CANAL:0 "Lepus Canal"
+ northern_canal_blocked_tt_NOT:0 "The canal is either §Runfinished§! or blocked for other reasons"
 
  #---
  needs_approval:0 "§R[This.GetName] must approve of the agreement for bonuses to take effect.§!\n"
@@ -288,3 +312,6 @@
  warfareadvancement.5.t:0 "Change in army modifiers"
  warfareadvancement.5.d:0 "1925. This will be the last base army modifier stat change event to fire."
  warfareadvancement.5.a:0 "Delete the modifier"
+
+ tt_historical:0 "§OThis is the historical choice§!"
+

@@ -6,87 +6,124 @@
 # decisions
 
 # spirits
-defense_of_the_nation:0 "Defense of the nation"
-defense_of_the_nation_desc:0 "A storm is brewing. It is important that we prepare the defenses."
-columban_gold_trade:0 "Columban gold trade"
-columban_gold_trade_desc:0 "test"
-state_of_emergency:0 "State of Emergency"
-state_of_emergency_desc:0 "test"
-Fight_to_the_last_man:0 "Fight to the last man"
-Fight_to_the_last_man_desc:0 "test"
+CLB_lots_of_mountains_idea:0 "Disjointed Country"
+CLB_lots_of_mountains_idea_desc:0 "The geography of our country is very mountainous, which makes it difficult to build infrastructure and connect our people. This has led to a disjointed country, with many isolated communities and a lack of national unity."
 
-# misc
+CLB_underfunded_armed_forces_idea:0 "Underfunded Armed Forces"
+CLB_underfunded_armed_forces_idea_desc:0 "Our armed forces are underfunded and lack the resources they need to defend our country. This has led to a lack of morale and a decrease in our military capabilities. A bigger investment in the defense sector, will put our little industry in a bit of a pickle."
+
+CLB_looming_miner_strike_idea:0 "Looming miner strike"
+CLB_looming_miner_strike_idea_desc:0 "The working conditions of the miners in Columba had been neglected for a long time, this has led the UCMA (United Columban Miner Association) to try to organize a general strike. We have to adress their concerns before the problem escalates."
+
+# CUSTOM TOOL TIP #
+
+##MOUNTAIN LARP
+CLB_add_on_to_disjointed_country_tt:0 "Modify § Disjointed Country§! by"
+CLB_reduce_debuff_resoureces_tt:0 " Resource Gain: §G+5%§!"
+CLB_reduce_debuff_building_slots_tt:0 " Building Slots: §G+10%§!"
+
+##AGRICULTURE LARP
 
 # focuses
-clb_monarchy_1:0 "Continue The Status Quo"
-clb_monarchy_1_desc:0 "test"
-clb_monarchy_constitutional:0 "A Constitutional Monarchy"
-clb_monarchy_constitutional_desc:0 "test"
-clb_monarchy_unconstitutional:0 "An Absolute Monarchy"
-clb_monarchy_unconstitutional_desc:0 "test"
-clb_democratic_1:0 "Follow Aquilan Democracy"
-clb_democratic_1_desc:0 "test"
-clb_democratic_2:0 "Rally Supporters"
-clb_democratic_2_desc:0 "test"
-clb_monarchy_civ:0 "Invest in Civilian Architecture"
-clb_monarchy_civ_desc:0 "test"
-clb_monarchy_riaan_friendship:0 "Riaan Ties"
-clb_monarchy_riaan_friendship_desc:0 "test"
-clb_monarchy_mil:0 "Expand Military Factories"
-clb_monarchy_mil_desc:0 "test"
-clb_monarchy_corvus_friendship:0 "Corvun Ties"
-clb_monarchy_corvus_friendship_desc:0 "test"
-clb_proud_nation:0 "A Proud Nation"
-clb_proud_nation_desc:0 "test"
-clb_neutral_1:0 "The path of neutrality"
-clb_neutral_1_desc:0 "test"
-clb_neutral_2:0 "The Columban gold trade"
-clb_neutral_2_desc:0 "test"
-clb_neutral_3:0 "Armed Neutrality"
-clb_neutral_3_desc:0 "test"
-clb_neutral_funds:0 "Fund the Fortifications Program"
-clb_neutral_funds_desc:0 "test"
-clb_neutral_6:0 "Cetan Border Fortifications"
-clb_neutral_6_desc:0 "test"
-clb_neutral_4:0 "Aquilan Border Fortifications"
-clb_neutral_4_desc:0 "test"
-clb_neutral_5:0 "City Fortifications"
-clb_neutral_5_desc:0 "test
-clb_aquila_ally:0 "Ally With Aquila"
-clb_aquila_ally_desc:0 "Ally With Aquila"
-clb_cor_ally:0 "Ally With Corvus And Antares"
-clb_cor_ally_desc:0 "test"
-clb_north_ally:0 "Ally With Riaa"
-clb_north_ally_desc:0 "Ally with Riaa"
-clb_take_all:0 "Unite North Centaura"
-clb_take_all_desc:0 "Our differences are unnoticable. Perhaps, we can form a new, stronger Libran empire, and reclaim the the northern states for Columba."
-clb_roads_1:0 "Invest In Roads"
-clb_roads_1_desc:0 "test"
-clb_roads_2:0 "Connect West And East Columba"
-clb_roads_2_desc:0 "test"
-clb_civ_1:0 "Invest in Civilian Architecture"
-clb_civ_1_desc:0 "test"
-clb_funds_resources:0 "Fund Mines"
-clb_funds_resources_desc:0 "test"
-clb_steel_1:0 "Steel Mines"
-clb_steel_1_desc:0 "Steel mines"
-clb_tug_1:0 "Tungsten Mines"
-clb_tug_1_desc:0 "test mines"
-clb_alu_1:0 "Aluminum Mines"    
-clb_alu_1_desc:0 "aluminum mines"
-clb_funds_military:0 "Fund Military Buildings"
-clb_funds_military_desc:0 "test"
-clb_mil_1:0 "Expand Military Factories"
-clb_mil_1_desc:0 "test"
-clb_airbase_1:0 "Construct Airbases"
-clb_airbase_1_desc:0 "test"
-clb_docks_1:0 "Build Docks"
-clb_docks_1_desc:0 "test"
-clb_oil_1:0 "Oil Discovery!"
-clb_oil_1_desc:0 "test"
-clb_state_emergency:0 "Declare a State of Emergency"
-clb_state_emergency_desc:0 "test"
-clb_path_diplo:0 "Diplomatic route"
-clb_path_war:0 "Seize North Centaura"
-clb_state_emergency_draft:0 "Emergency Draft"
-clb_state_emergency_militia:0 "Mobilize Militia"
+CLB_development_plan:0 "Columban Development Plan"
+CLB_development_plan_desc:0 "The development of our nation is a priority. We must focus on improving our infrastructure."
+
+CLB_infraestructure_development_in_the_north:0 "Northern infrastructure"
+CLB_infraestructure_development_in_the_north_desc:0 "The northern regions of our country lack basic infrastructure. We must invest in these areas to improve the lives of our citizens, and to strengthen our agricultural and industrial capabilities."
+
+CLB_northen_plains:0 "Develop The Countryside"
+CLB_northen_plains_desc:0 "Something something agriculture idk man..."
+
+CLB_expand_farms:0 "Agricultural Subsidies"
+CLB_expand_farms_desc:0 "We need to support our farmers and improve agricultural productivity."
+
+CLB_expand_farms_2:0 "Mechanization Of Agriculture"
+CLB_expand_farms_2_desc:0 "Introducing modern machinery to our farms will increase efficiency and productivity."
+
+CLB_expand_farms_3:0 "Land Consolidation"
+CLB_expand_farms_3_desc:0 "Consolidating small plots of land will allow for more efficient farming and a better use of the new machinery, allowing us to maximize our agricultural output. This will be an unpopular decision, we need to compensate the affected farmers to reduce opposition."
+
+CLB_expand_meat_industry:0 "Expand Meat Industry"
+CLB_expand_meat_industry_desc:0 "We need to support our meat industry and improve our livestock production."
+
+CLB_form_agrarian_cooperatives:0 "Form Agrarian Cooperatives"
+CLB_form_agrarian_cooperatives_desc:0 "Forming cooperatives will help our farmers pool their resources and improve their bargaining power with buyers."
+
+CLB_clear_new_land:0 "Clear New Land For Agriculture"
+CLB_clear_new_land_desc:0 "We need to clear new land for agriculture to increase our food production and support our growing population."
+
+CLB_increment_food_exports:0 "Increment Food Exports"
+CLB_increment_food_exports_desc:0 "With our increased agricultural output, we can export more food to other countries, generating revenue and strengthening our economy."
+
+CLB_agricultural_development_in_the_north_1:0 "Ruphis Fertilizer Factory"
+CLB_agricultural_development_in_the_north_1_desc:0 "We need to invest in fertilizer production to support our agricultural development in the north. The Ruphis fertilizer factory will provide the necessary resources for our farmers to increase their crop yields and improve food security."
+
+CLB_agricultural_development_in_the_north_2:0 "Expand Berrysburg Nitrate Mine"
+CLB_agricultural_development_in_the_north_2_desc:0 "Expanding the Berrysburg nitrate mine will provide the necessary resources for our agricultural development in the north."
+
+CLB_Use_the_nitrate_for_military_use:0 "Use the nitrate for military use"
+CLB_Use_the_nitrate_for_military_use_desc:0 "The nitrate produced in the Berrysburg mine can be used for military purposes, such as the production of explosives and ammunition. This will strengthen our armed forces and improve our national defense capabilities."
+
+## MOUNTAIN FOCUSES
+
+##EAST
+CLB_eastern_region_infrastructure_effort:0 "Develop Eastern Macer"
+CLB_eastern_region_infrastructure_effort_desc:0 "We need to develop the eastern regions of our country to improve infrastructure and support economic growth."
+
+CLB_eastern_region_infrastructure_effort_2:0 "Expand Coal Industry in Euria"
+CLB_eastern_region_infrastructure_effort_2_desc:0 "Expanding the coal industry in Euria will help to support our growing industrial sector and provide jobs for our citizens. This will also help to improve our energy security and reduce our dependence on foreign sources of coal."
+
+CLB_eastern_region_infrastructure_effort_3:0 "Support New Coaltowns"
+CLB_eastern_region_infrastructure_effort_3_desc:0 "Supporting the development of new coaltowns will help to create jobs and atract workers to the eastern regions of our country. This will also help to improve infrastructure and support economic growth in these areas."
+
+CLB_eastern_region_infrastructure_effort_4:0 "Open A New Steelmill In Euria"
+CLB_eastern_region_infrastructure_effort_4_desc:0 "With the expansion of our coal industry, we can support the development of a new steelmill in Euria. This will help to create jobs and stimulate the steel related industries."
+
+##WEST
+CLB_western_region_infrastructure_effort:0 "Develop Western Macer"
+CLB_western_region_infrastructure_effort_desc:0 "We need to develop the western regions of our country to improve infrastructure and support economic growth."
+
+##SOUTH
+CLB_southern_region_infrastructure_effort:0 "Develop Southern Macer"
+CLB_southern_region_infrastructure_effort_desc:0 "We need to develop the southern regions of our country to improve infrastructure and support economic growth."
+
+##URBAN FOCUSES
+
+CLB_Phact_tractor_factory:0 "Open The Phact Tractor Factory"
+CLB_Phact_tractor_factory_desc:0 "The Phact tractor factory will provide the necessary machinery for our farmers to modernize their operations and increase productivity."
+
+CLB_from_tractor_to_tanks:0 "From Tractors To Tanks"
+CLB_from_tractor_to_tanks_desc:0 "The Phact tractor factory can be repurposed to produce tanks for our armed forces, desperate times call for desperate measures, and we need to ensure that our military is well-equipped to defend our nation."
+
+CLB_develop_urban_centers:0 "Develop Urban Centers"
+CLB_develop_urban_centers_desc:0 "We need to invest in the development of our urban centers to improve infrastructure, create jobs, and support economic growth."
+
+CLB_modernize_our_industry:0 "Modernize Our Industry"
+CLB_modernize_our_industry_desc:0 "We need to modernize our industry to improve efficiency, increase productivity, and to not fall behind our neighbors."
+
+CLB_Urban_planning:0 "Urban Planning"
+CLB_Urban_planning_desc:0 "We need to implement urban planning strategies to improve the development of our cities and ensure that they are sustainable and livable for our citizens. This will help our industrialist too..."
+
+CLB_efficient_city_expansion:0 "Efficient City Expansion"
+CLB_efficient_city_expansion_desc:0 "We need to expand our cities in an efficient and sustainable manner to accommodate our growing population and support economic growth."
+
+CLB_Separate_housing_and_industry:0 "Separate Housing And Industry"
+CLB_Separate_housing_and_industry_desc:0 "We need to separate housing and industry to improve the quality of life for our citizens and reduce pollution in our cities. This will also help to create a more attractive environment for businesses and investors."
+
+CLB_Expand_Mundare_university:0 "Expand Mundare University"
+CLB_Expand_Mundare_university_desc:0 "We need to expand Mundare university to provide more opportunities for higher education and research. This will help to develop a skilled workforce and support innovation in our country."
+
+CLB_Open_the_Phact_politechnic:0 "Open The Phact Politechnic"
+CLB_Open_the_Phact_politechnic_desc:0 "We need to open the Phact politechnic to provide technical education and training for our citizens. This will help to develop a skilled workforce and support the growth of our industrial sector."
+
+##Political LARP
+
+CLB_Continue_Miron_Blackwell's_socialist_government:0 "Continue Miron Blackwell's Government"
+CLB_Continue_Miron_Blackwell's_socialist_government_desc:0 "Miron Blackwell's government has been successful in his two first years in office, it needs to adress the elefant in the room, the looming miner strike, or it may collapse."
+
+CLB_Rally_the_people:0 "Rally The People"
+CLB_Rally_the_people_desc:0 "We need to rally the people behind our government to ensure that we have the support we need to implement our policies and address the challenges facing our nation."
+
+CLB_Address_the_parliament:0 "Address The Parliament"
+CLB_Address_the_parliament_desc:0 "Miron Blackwell needs to address the parliament to present his government's policies and plans to address the actual crises."
+

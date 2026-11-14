@@ -1,0 +1,83 @@
+ideas = {
+   
+
+    country = {
+        CLB_looming_miner_strike_idea = { # Looming miner strike
+        name = Looming_miner_strike
+        
+        picture = idea_AFG_adopt_nufus
+        allowed = { original_tag = CLB }
+        removal_cost = -1
+
+        modifier = {
+                stability_weekly = -0.025
+                political_power_factor = -0.3
+                communism_drift = 0.02
+                consumer_goods_factor = 0.4
+                production_speed_industrial_complex_factor = -0.20
+                }
+        }
+    }
+
+    country = {
+        CLB_development_plan = { # development plan
+        name = Development_plan
+        
+        picture = idea_AFG_adopt_nufus
+        allowed = { original_tag = CLB }
+        removal_cost = -1
+
+        modifier = {
+                production_speed_industrial_complex_factor = 0.15
+                consumer_goods_factor = -0.1
+                }
+        }
+    }
+
+    country = {
+        CLB_Hygienic_housing = { # clean houses
+        name = Hygienic_housing
+        
+        picture = idea_AFG_adopt_nufus
+        allowed = { original_tag = CLB }
+        removal_cost = -1
+
+        modifier = {
+                stability_factor = 0.15
+                consumer_goods_factor = -0.05
+                }
+        }
+    }
+    #####AGRICULTURE LARP##########
+    country = {
+        CLB_modernizing_farming = { # farm
+        name = Modernizing_farming
+        
+            picture = idea_AFG_adopt_nufus
+            allowed = { original_tag = CLB }
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = 0.1
+                monthly_population = 0.1
+            }
+        
+        }
+    }
+
+    country = {
+        CLB_evil_land_reform = { # evil farm
+        name = Land_reorganization
+        
+            picture = idea_AFG_adopt_nufus
+            allowed = { original_tag = CLB }
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = 0.4
+                stability_factor = -0.2
+            }
+        
+        }
+    }
+}

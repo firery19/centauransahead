@@ -24,7 +24,7 @@ focus_tree = {
 		mutually_exclusive = { focus = RIA_northern_unity }
         cost = 5
         available = {
-            
+           always = no
         }
         completion_reward = {
             add_war_support = 0.05
@@ -56,7 +56,7 @@ focus_tree = {
 	focus = {
         id = RIA_northern_unity
         icon = GFX_goal_generic_territory_or_war
-        x = 35
+        x = 32
         y = 0
 		mutually_exclusive = { focus = RIA_the_northern_conqueror }
         cost = 5
@@ -73,27 +73,22 @@ focus_tree = {
 	focus = {
         id = RIA_north_centauran_alliance
         icon = GFX_goal_generic_territory_or_war
-        x = 35
-        y = 10
+        x = 34
+        y = 1
         cost = 5
+		prerequisite = { focus = RIA_northern_unity }
         available = {
 		OR = {
-        		ANT = { has_war_with = GRS }
         		ANT = { has_war_with = CLB }
         		ANT = { has_war_with = CTA }
         		ANT = { has_war_with = TUC }
         		ANT = { has_war_with = RIA }
-		}
+			}
         }
         completion_reward = {
         	add_stability = 0.05
 		add_war_support = 0.05
 		create_faction = "North Centauran Alliance"
-				GRS = {
-					country_event = { 
-						id = ria.1
-						}
-					}
 				CLB = {
 					country_event = { 
 						id = ria.1

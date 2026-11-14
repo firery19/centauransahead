@@ -35,9 +35,25 @@ autonomy_state = {
 
 	allowed = {
 		has_dlc = "Together for Victory"
+
 		if = {
 			limit = { has_dlc = "Death or Dishonor" }
-			OVERLORD = { NOT = { has_government = fascism } }
+			NOT = {
+				AND = {
+					OVERLORD = { has_government = fascism } 
+					ROOT = { has_government = fascism } 
+				}
+			}
+			NOT = {
+				AND = {
+					OVERLORD = { has_government = fascism } 
+					OVERLORD = { tag = ANT } 
+				}
+				AND = {
+					OVERLORD = { has_government = neutrality } 
+					OVERLORD = { tag = ANT } 
+				}
+			}
 		}
 	}
 	

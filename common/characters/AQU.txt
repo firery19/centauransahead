@@ -1,6 +1,34 @@
 characters = {
-	AQU_ewan_fouwler = { 
-		name = "Ewan Fouwler"
+
+	AQU_lucas_silva = {
+		name = "Lucas Silva"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AQU_lucas_silva
+				small = GFX_portrait_AQU_lucas_silva_small
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { Patriot_King }
+			expire = "1920.1.1.1"
+			id = -1
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = AQU_lucas_silva
+			allowed  = {
+				original_tag  = AQU
+			}
+			traits  = {
+				popular_figurehead
+			}
+		}
+	}
+	
+	AQU_ewan_fouwler = {
+		name = "Ewan L. Fouwler"
 		portraits = {
 			civilian = {
 				large = GFX_portrait_AQU_ewan_fouwler
@@ -15,19 +43,440 @@ characters = {
 		}
 	}
 	
-	AQU_lucas_silva = { 
-		name = "Lucas Silva"
+	AQU_leonard_falkner = {
+		name = "Leonard R. Falkner"
 		portraits = {
 			civilian = {
-				large = GFX_portrait_AQU_lucas_silva
-				small = GFX_portrait_AQU_lucas_silva_small
+				large = GFX_portrait_AQU_leonard_falkner
+				small = GFX_portrait_AQU_leonard_falkner_small
 			}
 		}
 		country_leader = {
-			ideology = conservatism
-			traits = { the_sacred_king stout_defender }
-			expire = "1918.1.1.1"
+			ideology = liberalism
+			traits = { liberal_democratic_paragon ideological_crusader stout_defender }
+			expire = "1920.1.1.1"
 			id = -1
+		}
+	}
+	
+	AQU_military_council = {
+		name = "Provisional Military Administrative Council"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AQU_military_council
+				small = GFX_portrait_AQU_military_council_small
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			traits = { stout_defender military_council }
+			expire = "1920.1.1.1"
+			id = -1
+		}
+	}
+	
+	AQU_julian_thorne={
+		name= "Julian M. Thorne"
+		portraits={
+			army={
+				small= GFX_portrait_AQU_julian_thorne_small
+			}
+			army={
+				large= GFX_portrait_AQU_julian_thorne
+			}
+		}
+		
+		country_leader = {
+			ideology = centrism
+			traits = { stout_defender defender_of_the_homeland GXC_fierce_leader }
+			expire = "1920.1.1.1"
+			id = -1
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = AQU_julian_thorne
+			ledger = army
+				allowed = {
+					original_tag = AQU
+				}
+				traits = {
+					army_chief_defensive_3
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+
+		field_marshal={
+			traits={ inflexible_strategist determined war_hero infantry_Officer unyielding_defender}
+			skill=5
+			attack_skill=3
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+	
+	AQU_john_aquila = {
+		name = "John F. Aquila"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AQU_john_aquila
+				small = GFX_portrait_AQU_John_F_Aquila_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CHI_chiang_ching_kuo
+			allowed  = {
+				original_tag  = AQU
+			}
+			traits  = {
+				silent_workhorse 
+			}
+		}
+	}
+	
+	AQU_garrick_vance  = {
+		name = "Garrick A. Vance"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AQU_john_aquila
+				small = GFX_portrait_AQU_garrick_vance_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AQU_garrick_vance
+			allowed  = {
+				original_tag  = AQU
+			}
+			traits  = {
+				ruthless_police_captain 
+			}
+		}
+	}
+	
+	AQU_silas_lindwood  = {
+		name = "Silas F. Lindwood"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AQU_john_aquila
+				small = GFX_portrait_AQU_silas_lindwood_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AQU_silas_lindwood
+			allowed  = {
+				original_tag  = AQU
+			}
+			traits  = {
+				minister_of_foreign_affairs
+			}
+		}
+	}
+	
+	AQU_gideon_hayes  = { 
+		name = "Gideon V. Hayes"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AQU_john_aquila
+				small = GFX_portrait_AQU_gideon_hayes_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AQU_gideon_hayes
+			allowed  = {
+				original_tag  = AQU
+			}
+			traits  = {
+				GER_minister_of_agriculture
+			}
+		}
+	}
+	
+	AQU_clara_Sterling = {
+		name = "Clara L. Sterling"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AQU_john_aquila
+				small = GFX_portrait_AQU_clara_sterling_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AQU_clara_Sterling
+			allowed  = {
+				original_tag  = AQU
+			}
+			traits  = {
+				NOR_callous_engineer
+			}
+		}
+	}
+	
+	AQU_malik_banneker = {
+		name = "Malik A. Banneker"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_AQU_john_aquila
+				small = GFX_portrait_AQU_malik_banneker_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AQU_malik_banneker
+			allowed  = {
+				original_tag  = AQU
+			}
+			traits  = {
+				linchpin_of_infrastructure
+			}
+		}
+	}
+	
+	AQU_john_aquila_jr={
+		name= "John F. Aquila Jr."
+		portraits={
+			army={
+				small= GFX_portrait_AQU_John_F_Aquila_jr_small
+			}
+			army={
+				large= GFX_portrait_AQU_john_aquila_jr
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = AQU_john_aquila_jr
+			ledger = army
+				allowed = {
+					original_tag = AQU
+				}
+				traits = {
+					army_artillery_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+
+		corps_commander={
+			traits={ politically_connected career_officer bearer_of_artillery }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	
+	AQU_olivier_beaumont={
+		name= "Olivier C. Beaumont"
+		portraits={
+			army={
+				small= GFX_portrait_AQU_olivier_beaumont_small
+			}
+			army={
+				large= GFX_portrait_AQU_olivier_beaumont
+			}
+		}
+
+		corps_commander={
+			traits={ politically_connected career_officer infantry_Officer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+	
+	AQU_lucien_montclair={
+		name= "Lucien A. Montclair"
+		portraits={
+			army={
+				small= GFX_portrait_AQU_lucien_montclair_small
+			}
+			army={
+				large= GFX_portrait_AQU_lucien_montclair
+			}
+		}
+
+		corps_commander={
+			traits={ politically_connected career_officer infantry_Officer }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	
+	AQU_adrian_forrest={
+		name= "Adrian B. Forrest"
+		portraits={
+			army={
+				small= GFX_portrait_AQU_adrian_forrest_small
+			}
+			army={
+				large= GFX_portrait_AQU_adrian_forrest
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = AQU_adrian_forrest
+			ledger = army
+				allowed = {
+					original_tag = AQU
+				}
+				traits = {
+					army_logistics_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+
+		corps_commander={
+			traits={ inflexible_strategist trait_cautious war_hero}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	
+    AQU_adonis_estrada={
+		name= "Adonis C. Estrada"
+		portraits={
+			army={
+				small= GFX_portrait_AQU_adonis_estrada_small
+			}
+			army={
+				large= GFX_portrait_AQU_adonis_estrada
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = AQU_adonis_estrada
+			ledger = army
+				allowed = {
+					original_tag = AQU
+				}
+				traits = {
+					army_infantry_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+
+		corps_commander={
+			traits={ trait_reckless brave infantry_Officer}
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+	
+	AQU_henri_dubois={
+		name= "Henri L. Dubois"
+		portraits={
+			army={
+				small= GFX_portrait_AQU_henri_dubois_small
+			}
+			army={
+				large= GFX_portrait_AQU_henri_dubois
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = AQU_henri_dubois
+			ledger = army
+				allowed = {
+					original_tag = AQU
+				}
+				traits = {
+					army_chief_maneuver_3
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		
+        advisor = {
+            slot = theorist
+            idea_token = AQU_henri_dubois
+            allowed = { original_tag = AQU }
+            traits = { military_theorist }
+        }
+
+		corps_commander={
+			traits={ inflexible_strategist trait_cautious war_hero}
+			skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=0
+		}
+	}
+	 
+    AQU_gabriel_rousseau={
+		name= "Gabriel J. Rousseau"
+		portraits={
+			army={
+				small= GFX_portrait_AQU_gabriel_rousseau_small
+			}
+			army={
+				large= GFX_portrait_AQU_gabriel_rousseau
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = AQU_gabriel_rousseau
+			ledger = army
+				allowed = {
+					original_tag = AQU
+				}
+				traits = {
+					army_chief_offensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+
+		field_marshal={
+			traits={ trait_reckless brilliant_strategist war_hero}
+			skill=5
+			attack_skill=4
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
 		}
 	}
 	
@@ -57,4 +506,4 @@ characters = {
 				railroad_enthusiast
 			}
 		}
-	}
+}

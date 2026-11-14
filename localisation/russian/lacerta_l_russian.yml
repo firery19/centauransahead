@@ -1,0 +1,79 @@
+﻿l_russian:
+ LAC_the_isolated_south:0 "Изолированный юг"
+ LAC_the_isolated_south_desc:0 ""
+ # мировое господство
+ LAC_standing_on_the_world_stage:0 "Выход на мировую арену"
+ LAC_standing_on_the_world_stage_desc:0 "На краю мира Лацерта не сделала ничего примечательного в истории. Мы обратимся к потусторонним силам и изменим сценарий мира!"
+ LAC_harnessing_the_will_of_the_world:0 "Обретение воли мира"
+ LAC_harnessing_the_will_of_the_world_desc:0 ""
+ LAC_borrowing_celestial_powers:0 "Заимствование небесных сил"
+ LAC_borrowing_celestial_powers_desc:0 ""
+ LAC_stars_shine_down:0 "Звёзды сияют внизу"
+ LAC_stars_shine_down_desc:0 ""
+ LAC_powers_of_the_south:0 "Силы юга"
+ LAC_powers_of_the_south_desc:0 ""
+ LAC_creatures_in_the_south:0 "Южные создания"
+ LAC_creatures_in_the_south_desc:0 ""
+ LAC_marinelife_rise_up:0 "Восстание морских обитателей"
+ LAC_marinelife_rise_up_desc:0 ""
+
+ LAC_the_intertwined_fates:0 "Переплетённые судьбы"
+ LAC_the_intertwined_fates_desc:0 ""
+
+ LAC_steal_antarean_islands:0 "Украсть антареанские острова"
+ LAC_steal_antarean_islands_desc:0 ""
+ LAC_antares_retaliation:0 "Ответ Антареса"
+ LAC_antares_retaliation_desc:0 "Дипломатическое ведомство Антареса вручило нам объявление войны."
+ LAC_strike_those_down_by_stars:0 "Поражение Антареса звёздами"
+ LAC_strike_those_down_by_stars_desc:0 "Используя силу звёзд, Лацерта направляет луч прямо на материк Антареса. Полное уничтожение."
+
+ LAC_possess_typhon_islands:0 "Завладеть островами Тифон"
+ LAC_possess_typhon_islands_desc:0 ""
+ LAC_orion_retaliation:0 "Ответ Ориона"
+ LAC_orion_retaliation_desc:0 "Дипломатическое ведомство Ориона вручило нам объявление войны."
+ LAC_strike_them_down_by_stars:0 "Поражение Ориона звёздами"
+ LAC_strike_them_down_by_stars_desc:0 "Используя силу звёзд, Лацерта направляет луч прямо на земли Ориона. Полное уничтожение."
+
+ # промышленность
+ LAC_develop_other_regions:0 "Развивать другие регионы"
+ LAC_develop_other_regions_desc:0 ""
+ LAC_develop_linden:0 "Развивать Линден"
+ LAC_develop_linden_desc:0 "Линден — наша нынешняя столица, важно индустриализировать её."
+ LAC_linden_shipyard:0 "Верфи Линдена"
+ LAC_linden_shipyard_desc:0 ""
+ LAC_linden_works:0 "Заводы Линдена"
+ LAC_linden_works_desc:0 ""
+
+ # исторический
+ LAC_keep_to_ourselves:0 "Стоять на коленях в своём дворе"
+ LAC_keep_to_ourselves_desc:0 "Нам не нужно провозглашать такие бредовые амбиции. Мы вполне довольны тем, что остаёмся на этом острове."
+
+ # события
+ lac.1.t:0 "Лацерта захватывает острова Тифон"
+ lac.1.d:0 ""
+ lac.1.a:0 "убить их"
+ lac.1.b:0 "ничего не делать"
+ lac.2.t:0 "Орион отвечает"
+ lac.2.d:0 ""
+ lac.2.a:0 "окей"
+ lac.3.t:0 "Орион ничего не делает"
+ lac.3.d:0 ""
+ lac.3.a:0 "орион-нуб"
+ lac.4.t:0 "Лацерта захватывает острова Ара"
+ lac.4.d:0 ""
+ lac.4.a:0 "убить их"
+ lac.4.b:0 ""
+ lac.5.t:0 "Антарес отвечает"
+ lac.5.d:0 ""
+ lac.5.a:0 "окей"
+ lac.6.t:0 "Антарес ничего не делает"
+ lac.6.d:0 ""
+ lac.6.a:0 "окей антарес"
+
+ # технологии
+ LAC_falling_behind_tech:0 "Отставание в технологиях"
+ LAC_falling_behind_tech_desc:0 ""
+
+ # разное
+ LAC_rosehall_exclusion_zone:0 "Исключительная зона Розхолл"
+ LAC_rosehall_exclusion_zone_2:0 "Исключительная зона Розхолл"

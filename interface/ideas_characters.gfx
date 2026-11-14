@@ -3,13 +3,73 @@ spriteTypes = {
 	### AQU
 	
 	spriteType = {
+		name = "GFX_portrait_AQU_malik_banneker_small"
+		texturefile = "gfx/interface/ideas/portrait_AQU_malik_banneker_small.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_clara_sterling_small"
+		texturefile = "gfx/interface/ideas/portrait_AQU_clara_sterling_small.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_silas_lindwood_small"
+		texturefile = "gfx/interface/ideas/portrait_AQU_silas_lindwood_small.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_gideon_hayes_small"
+		texturefile = "gfx/interface/ideas/portrait_AQU_gideon_hayes_small.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_garrick_vance_small"
+		texturefile = "gfx/interface/ideas/portrait_AQU_garrick_vance_small.png"
+	}
+	
+	spriteType = {
 		name = "GFX_portrait_AQU_John_F_Aquila_small"
-		texturefile = "gfx/interface/ideas/portrait_AQU_John_F_Aquila_small.dds"
+		texturefile = "gfx/interface/ideas/portrait_AQU_John_F_Aquila_small.png"
 	}
 	
 	spriteType = {
 		name = "GFX_portrait_AQU_John_F_Aquila_jr_small"
 		texturefile = "gfx/interface/ideas/portrait_AQU_John_F_Aquila_Jr_small.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_adrian_forrest_small"
+		texturefile = "gfx/interface/ideas/portrait_AQU_adrian_forrest_small.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_adonis_estrada_small"
+		texturefile = "gfx/interface/ideas/portrait_AQU_adonis_estrada_small.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_julian_thorne_small"
+		texturefile = "gfx/interface/ideas/portrait_AQU_julian_thorne_small.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_henri_dubois_small"
+		texturefile = "gfx/interface/ideas/portrait_AQU_henri_dubois_small.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_gabriel_rousseau_small"
+		texturefile = "gfx/interface/ideas/portrait_AQU_gabriel_rousseau_small.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_lucien_montclair_small"
+		texturefile = "gfx/interface/ideas/portrait_AQU_lucien_montclair_small.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_olivier_beaumont_small"
+		texturefile = "gfx/interface/ideas/portrait_AQU_olivier_beaumont_small.png"
 	}
 	
 	### AFG

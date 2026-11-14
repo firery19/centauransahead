@@ -2,23 +2,37 @@
 
 # --- LEADERS ---
  GRS_fernan_flamenco:0 "Fernan Flamenco"
+ GRS_fernan_flamenco_ill:0 "Fernan Flamenco"
  GRS_valentine_flamenco:0 "Valentine Flamenco"
  GRS_emperor_valentine:0 "Emperor Valentine I"
  GRS_xavier_navarro:0 "Xavier Navarro"
+ 
+# -- political advisors -- 
+ GRS_prince_valentine:0 "Prince Valentine"
+ GRS_prince_valentine_desc:0 "The Crown Prince of the Kingdom, Valentine Flamenco. He is the next in line to assume the crown upon the death or abdication of his father, Fernan Flamenco." 
  
 # --- IDEAS ---
  GRS_desert_warriors_idea:0 "Desert Warriors"
  GRS_desert_warriors_idea_desc:0 "Grusa is the only nation on Centaura with the vast Arida Desert covering the majority of their lands. The Grusan people have learned to overcome the harsh challenges of the desert climate."
  
  GRS_masters_of_the_arida_idea:0 "Masters of the Arida"
- GRS_masters_of_the_arida_idea_desc:0 "To outsiders the Arida is an unforgiving and hostile wasteland. To us it is our home, our soldiers have learned to live, move, and fight within it, turning the desert into a decisive advantage against any who dare cross it."
+ GRS_masters_of_the_arida_idea_desc:0 "To outsiders the Arida is an unforgiving, hostile wasteland. To us it is our home. Our soldiers have learned to live, move, and fight within it, turning the desert into a decisive advantage against any who dare cross it."
  
- GRS_the_flamenco_dynasty_idea: "The Flamenco Dynasty"
- GRS_the_flamenco_dynasty_idea_desc: "The Flamenco’s have ruled Grusa for centuries. They hold uncontentested power over Grusa."
-
  GRS_devastation_at_cabo_vesca_idea:0 "Devastation at Cabo Vesca"
  GRS_devastation_at_cabo_vesca_idea_desc:0 "The naval engagement at Cabo Vesca, 1868, left the Grusan fleet crippled and subsequently led to Grusa losing the Strait War. The navy's confidence never truly recovered, despite being formidable on paper, the navy's will to fight remains uncertain."
+ 
+ GRS_imprisoned_council_idea:0 "Imprisoned King's Council"
+ GRS_imprisoned_council_idea_desc:0 "The King's Council are a group of the most trusted and loyal advisors to the King. They assist in making decisions for the King, or carrying out orders on his behalf. Those who are not in active service have been imprisoned indefinetely, deemed 'ineffective and traitorous'."
   
+ GRS_emptiness_of_the_interior:0 "Emptiness of the Interior"
+ GRS_emptiness_of_the_interior_desc:0 "The vast Arida consumes the Grusan heartland. Grusa has few places to farm, fewer places to build, and the fishing industry must work overtime to break even."
+
+ GRS_devastation_at_cabo_vesca: "Devastation at Cabo Vesca"
+ GRS_devastation_at_cabo_vesca_desc: "The naval engagement at Cabo Vesca, 1868, left the Grusan fleet crippled and subsequently led to us losing the Strait War. The King’s Grand Armada, despite being strong, has begun to fall behind; the defeat at Cabo Vesca still stings deep in the minds of Grusans."
+
+ GRS_the_flamenco_dynasty_idea: "The Flamenco Dynasty"
+ GRS_the_flamenco_dynasty_idea_desc: "The Flamenco’s have ruled Grusa for centuries. They hold uncontentested power over Grusa."
+ 
  GRS_reforming_navy_0:0 "Pathetic Naval Reforms"
  GRS_reforming_navy_0_desc:0 "The humiliation at Cabo Vesca shattered confidence in the Grusan Navy. Decades of poor management and outdated doctrine have left the fleet a shadow of its former self."
 
@@ -48,12 +62,9 @@
 
  GRS_new_grand_armada4:0 "The New Grand Armada"
  GRS_new_grand_armada4_desc: "We no longer bear the shame of the humiliation of our defeat at Cabo Vesca. That chapter has been closed. We have moved on, adapted, and modernised where we had faltered. From the lessons of defeat, a stronger navy has been forged, disciplined, resolute, and unyielding. The Grusan flag flies high upon the seas once more, carried by ships worthy of our name. Our naval pride, once thought lost, has returned renewed, and with it, the will to command the waters as we did before."
- 
- GRS_emptiness_of_the_interior:0 "Emptiness of the Interior"
- GRS_emptiness_of_the_interior_desc:0 "The vast Arida consumes the Grusan heartland. Grusa has few places to farm, fewer places to build, and the fishing industry must work overtime to break even."
 
  GRS_new_grand_armada5:0 "Grusan Naval Hegemony"
- GRS_new_grand_armada5_desc:0 "The humiliation of Cabo Vesca no longer defines us. What was once a symbol of national shame has become the foundation of our resurgence. Through reforms, innovation and unwavering determination and strength, the King's Grand Amarda has been transformed into a force stronger than ever before. The Grusan flag once again flies high across the seas."
+ GRS_new_grand_armada5_desc:0 "The humiliation of Cabo Vesca no longer defines us. What was once a symbol of national shame has become the foundation of our resurgence. Through reforms, innovation and unwavering determination and strength, the King's Grand Amarda has been transformed into a force stronger than ever before. The Grusan flag once again commands respect across the seas, and our rivals know that the age of Grusan naval supremacy has returned."
 
  GRS_expanded_naval_academy:0 "Expanded Naval Academy"
  GRS_expanded_naval_academy_desc:0 "The expansion of the Royal Naval Academy has allowed us to train a greater number of officers while raising educational standards throughout the fleet. Future admirals will enter service with a deeper understanding of modern naval warfare, ensuring the Armada remains prepared for the challenges of the new century."
@@ -61,9 +72,13 @@
  GRS_avenging_cabo_vesca: "Avenging Cabo Vesca"
  GRS_avenging_cabo_vesca_desc: "Centauri will finally learn what defeat truly is. On that fateful day, our brave sailors were cut down by their cannons, their sacrifice left unanswered for far too long. But that time has passed. Today, our vengeance will be enacted. We will not falter, nor will we forget. The Centaurians will be crushed, their strength broken, and what is rightfully ours will be reclaimed. For every life lost, for every name remembered, we will answer with fury."
  
+ 
  GRS_the_centimado_idea:0 "The Centimado"
  GRS_the_centimado_idea_desc:0 "The Centimado are responsible for guarding city gates, government buildings and state officials. They are highly trained and disciplined, and will always defend their post."
  
+ GRS_expanded_centimado_idea:0 "Expanded Centimado"
+ GRS_expanded_centimado_idea_desc:0 "The Centimado are responsible for guarding city gates, government buildings and state officials. They are highly trained and disciplined, and will always defend their post."
+   
  GRS_desert_aviators:0 "Desert Aviators"
  GRS_desert_aviators_desc:0 "Flying over the Arida desert demands discipline, endurance and skill. Grusan pilots are trained to navigate through sandstorms, extreme temperatures and vast stretches of barren terrain."
  
@@ -75,6 +90,36 @@
  
  GRS_royal_fighter_squadron_idea: "Royal Fighter Squadron"
  GRS_royal_fighter_squadron_idea_desc: "We will prioritise the formation of a Royal Fighter Squadron, ensuring control of our skies through speed, discipline and superior pilots."
+ 
+ GRS_mobile_recon_corps: "Mobile Recon Corps"
+ GRS_mobile_recon_corps_desc: "Highly mobile reconnaissance units allow our forces to move swiftly across harsh terrain and react faster than the enemy."
+ 
+ GRS_desert_artillery_corps: "Desert Artillery Corps"
+ GRS_desert_artillery_corps_desc: "Our artillery units have been trained to operate effectively in the harsh desert environment, delivering devastating firepower when it matters most."
+ 
+ GRS_engineer_corps: "Grusan Engineers"
+ GRS_engineer_corps_desc: "Engineers are vital to keep supply chains running, creating defensive fortifications and so much more, they are key to survival in warfare."
+ 
+ GRS_desert_warfare: "Desert Warfare"
+ GRS_desert_warfare_desc: "The Arida is our desert, we know how the sand shifts, dunes rise and fall. We will make our enemies struggle, our strength."
+ 
+ GRS_desert_warfare_a: "Desert Warfare"
+ GRS_desert_warfare_a_desc: "The Arida is our desert, we know how the sand shifts, dunes rise and fall. We will make our enemies struggle, our strength."
+
+ GRS_desert_warfare_b: "Desert Warfare"
+ GRS_desert_warfare_b_desc: "The Arida is our desert, we know how the sand shifts, dunes rise and fall. We will make our enemies struggle, our strength."
+ 
+ GRS_canned_rations: "Canned Rations"
+ GRS_canned_rations_desc: "Canned foods can stay edible for far longer than other food. Supplying our army with them can keep them in the action for longer."
+ 
+ GRS_competent_merchants: "Competent Merchants"
+ GRS_competent_merchants_desc: "Our merchants are vital to keep trade flowing, investing in merchants ships can bring in even more trade."
+ 
+ GRS_coastal_construction: "Coastal Construction"
+ GRS_coastal_construction_desc: "We must construct new dockyards to keep our fishing industry alive, and also give us space to produce more ships for our navy."
+ 
+ GRS_foreign_goods: "Foreign goods"
+ GRS_foreign_goods_desc: "Whilst we must wait for our economy to catch up, importing foreign goods can help mitigate some of the issues we face."
 
  GRS_centauri_dominance:0 "Centaurian Dominance of the Strait"
  GRS_centauri_dominance_desc:0 "Centauri has established overwhelming influence over the Sagittarius Strait. Merchant captains increasingly defer to Centaurian authority, whilst Grusan patrols struggle to maintain their authority in the strait."
@@ -83,7 +128,7 @@
  GRS_centauri_advantage_desc:0 "Centauri maintains a growing advantage within the Sagittarius Strait. Grusan toll collectors face resistance from merchants and regional powers increasingly look toward Centauri as the dominant guarantor of maritime security within the Sagittarius."
 
  GRS_contested_strait:0 "Contested Strait"
- GRS_contested_strait_desc:0 "Neither Grusa or Centauri possess control over the Sagittarius Strait."
+ GRS_contested_strait_desc:0 "Neither Grusa or Centauri possesses complete control over the Sagittarius Strait."
 
  GRS_grusan_advantage:0 "Grusan Advantage"
  GRS_grusan_advantage_desc:0 "Grusan patrols maintain a respected and effective presence throughout the Sagittarius Strait. Merchant vessels largely comply with toll regulations, strengthening our influence over regional maritime affairs."
@@ -101,9 +146,128 @@
  GRS_high_tolls_desc:0 "Toll rates have risen considerably across the Sagittarius. Merchants and foreign governments are becoming increasingly frustrated by our growing demands."
  
  GRS_extortionate_tolls:0 "Extortionate Strait Tolls"
- GRS_extortionate_tolls_desc:0 "The Sagittarius Strait has become a source of immense wealth for Grusa. Merchant captains are subjected to crushing tolls, inspections and arbitrary fees, whilst inflaming regional resentment towards Grusa."
+ GRS_extortionate_tolls_desc:0 "The Sagittarius Strait has become a source of immense wealth for Grusa. Merchant captains are subjected to crushing tolls, inspections and arbitrary fees, whilst inflaming regional resentment towards Grusan tolls."
  
-  # ----- parties ----
+ GRS_widespread_riots:0 "Widespread Riots"
+ GRS_widespread_riots_desc:0 "Civil unrest has spilled into the streets. Protests, strikes and clashes with the Centimado have brought cities to a standstill, severely disrupting daily governance and industrial production."
+ 
+ GRS_plains1:0 "Línea del Escorpión"
+ GRS_plains1_desc:0 "The open plains offer little natural protection, forcing our soldiers to create their own. Defensive earthworks, fortified positions and carefully coordinated fields of fire will blunt any Antarean advance."
+
+ GRS_plains2:0 "Baluartes del Escorpión"
+ GRS_plains2_desc:0 "Every hill and ridgeline has become a fortress. Strongpoints now support one another, forcing any enemy breakthrough to come at an unacceptable cost."
+
+ GRS_plains3:0 "Muralla del Escorpión"
+ GRS_plains3_desc:0 "Our defensive belt has become a living fortress. Every trench, bunker and gun emplacement is integrated into a single defensive network capable of exhausting even the mightiest offensive."
+ 
+ GRS_desert1:0 "Hijos de la Arida"
+ GRS_desert1_desc:0 "Our soldiers have learned to endure the unforgiving Arida desert where others cannot. Heat, thirst and endless sands are no longer obstacles but serve alongside the Grusan Army."
+
+ GRS_desert2:0 "Sombras del Desierto"
+ GRS_desert2_desc:0 "Small Grusan detachments roam the Arida unseen, striking isolated supply columns before vanishing back into the dunes."
+
+ GRS_desert3:0 "El Desierto Devora"
+ GRS_desert3_desc:0 "The desert has become our greatest weapon. Enemy supplies disappear, railways are sabotaged and entire divisions find themselves defeated long before reaching the battlefield."
+ 
+ GRS_coast1:0 "Guardianes del Litoral"
+ GRS_coast1_desc:0 "Observation posts now watch every stretch of coastline. Enemy fleets can no longer approach unnoticed."
+
+ GRS_coast2:0 "Murallas del Mar"
+ GRS_coast2_desc:0 "Heavy guns, reinforced bunkers and entrenched defenders transform every harbour into a fortress."
+
+ GRS_coast3:0 "Costa Inquebrantable"
+ GRS_coast3_desc:0 "The coastline has become an impenetrable wall of steel and concrete. Any landing force will be met with overwhelming resistance before it ever breaches inland."
+ 
+ GRS_grusa_endures:0 "El Aguijón del Escorpión"
+ GRS_grusa_endures_desc:0 "The Grusan Army has every aspect of defense mastered. Grusa is the nation ready to make Antares bleed for every mile of ground they conquer."
+ 
+ GRS_imported_goods1:0 "Imported Goods"
+ GRS_imported_goods1_desc:0 "We have imported goods from another nation. While these imports keep us afloat, they come at a considerable economic cost."
+ 
+ GRS_imported_goods2:0 "Imported Goods"
+ GRS_imported_goods2_desc:0 "We have imported goods from another nation. While these imports keep us afloat, they come at a considerable economic cost."
+
+ GRS_imported_goods3:0 "Imported Goods"
+ GRS_imported_goods3_desc:0 "We have imported goods from another nation. While these imports keep us afloat, they come at a considerable economic cost."
+
+ GRS_imported_goods4:0 "Imported Goods"
+ GRS_imported_goods4_desc:0 "We have imported goods from another nation. While these imports keep us afloat, they come at a considerable economic cost."
+
+ GRS_imported_goods5:0 "Imported Goods"
+ GRS_imported_goods5_desc:0 "We have imported goods from another nation. While these imports keep us afloat, they come at a considerable economic cost."
+ 
+ GRS_pay_factory:0 "Resource concessions"
+ GRS_pay_factory_desc:0 "We have agreed to sell off some of our natural resources in exchange for military equipment from Orion and Tucana."
+ 
+ GRS_fort_construction:0 "Fortification Construction"
+ GRS_fort_construction_desc:0 "As tensions rise across Centaura, engineers, labourers and soldiers have been mobilised to help strengthen Grusa's defensive network."
+ 
+ GRS_joint_commission:0 "Joint Military Commission"
+ GRS_joint_commission_desc:0 "Close cooperation between Grusan and Antarean officers has improved battlefield planning, organisation and operational coordination."
+
+ GRS_officer_reforms:0 "Officer Corps Reforms"
+ GRS_officer_reforms_desc:0 "The officers of the Grusan Army has been rebuilt according to modern Antarean principles, creating a more capable and professional officer corps."
+
+ GRS_integrated_tactics:0 "Integrated Antarean Tactics"
+ GRS_integrated_tactics_desc:0 "Adopting Antarean doctrine, training and combat experience has transformed the Grusan Army into a disciplined and highly coordinated fighting force."
+ 
+ GRS_antares_overlord:0 "Skorpii Grusii"
+ GRS_antares_overlord_desc:0 "Our alignment with Antares guarantees our survival, even if it demands the surrender of our autonomy."  
+ 
+ GRS_canned_rations:0 "Canned Rations"
+ GRS_canned_rations_desc:0 "Modern food preservation allows Grusan produce to be stored for long periods and provide reliable supplies for both civilians and the armed forces."
+
+ GRS_expanded_trade_routes:0 "Expanded Trade Routes"
+ GRS_expanded_trade_routes_desc:0 "Our merchants now sail further than ever before, establishing profitable trade connections with foreign markets and bringing greater wealth home."
+ 
+ GRS_blockade_minor:0 "Minor Blockade"
+ GRS_blockade_minor_desc:0 "The Antarean Navy has established a limited blockade around Grusa. While most shipping continues to reach our ports, some merchant convoys are being intercepted, causing minor disruptions to trade."
+ 
+ GRS_blockade_limited:0 "Limited Blockade"
+ GRS_blockade_limited_desc:0 "The Antarean blockade is tightening. Merchant vessels are finding it increasingly difficult to evade Antarean ships, reducing imports and slowing the flow of overseas commerce."
+ 
+ GRS_blockade_strong:0 "Strong Blockade"
+ GRS_blockade_strong_desc:0 "The blockade is firmly established. Essential imports are becoming scarce, exports are piling up in our ports and the strain on the economy is beginning to show."
+ 
+ GRS_blockade_severe:0 "Severe Blockade"
+ GRS_blockade_severe_desc:0 "The Antarean Navy dominates the surrounding seas. Most merchant traffic has been halted, shortages are becoming widespread and the economy is under considerable pressure." 
+ 
+ GRS_blockade_crippling:0 "Crippling Blockade"
+ GRS_blockade_crippling_desc:0 "The blockade has become almost total. Grusa has been effectively cut off from international trade, vital supplies are running dangerously low and the nation's economy is failing to keep up with wartime demands."
+ 
+ GRS_emergency_shipbuilding_idea:0 "Emergency Shipbuilding Program"
+ GRS_emergency_shipbuilding_idea_desc:0 "With the blockade threatening our trade with the rest of Forma, we have been forced to rapidly expand our naval capacity and prioritise dockyard construction above all else."
+ 
+ GRS_rations_idea1:0 "Nationwide Rationing"
+ GRS_rations_idea1_desc:0 "To reduce the effects of the blockade, the production and consumption of civilian goods will be strictly regulated. Every citizen must make do with less so our soldiers have more."
+ 
+ GRS_rations_idea2:0 "Nationwide Rationing"
+ GRS_rations_idea2_desc:0 "To reduce the effects of the blockade, the production and consumption of civilian goods will be strictly regulated. Every citizen must make do with less so our soldiers have more."
+ 
+ GRS_canned_rations:0 "Canned Rations"
+ GRS_canned_rations_desc:0 "Modern food preservation allows Grusan produce to be stored for long periods and provide reliable supplies for both civilians and the armed forces."
+
+ GRS_expanded_trade_routes:0 "Expanded Trade Routes"
+ GRS_expanded_trade_routes_desc:0 "Our merchants now sail further than ever before, establishing profitable trade connections with foreign markets and bringing greater wealth home."
+ 
+ GRS_unfit_monarch_idea:0 "Unfit Monarch"
+ GRS_unfit_monarch_idea_desc:0 "King Fernan's declining health has made it increasingly difficult for him to continue fulfilling his duties. Government affairs are beginning to slow down and Fernan's advisors are becoming responsible for administrating the Kingdom."
+ 
+ GRS_unfit_monarch_idea2:0 "Unfit Monarch"
+ GRS_unfit_monarch_idea2_desc:0 "King Fernan's declining health has made it increasingly difficult for him to continue fulfilling his duties. Government affairs are beginning to slow down and Fernan's advisors are becoming responsible for administrating the Kingdom."
+ 
+ GRS_unfit_monarch_idea3:0 "Unfit Monarch"
+ GRS_unfit_monarch_idea3_desc:0 "King Fernan's declining health has made it increasingly difficult for him to continue fulfilling his duties. Government affairs are beginning to slow down and Fernan's advisors are becoming responsible for administrating the Kingdom."
+ 
+ GRS_unfit_monarch_idea4:0 "Unfit Monarch"
+ GRS_unfit_monarch_idea4_desc:0 "King Fernan's declining health has made it increasingly difficult for him to continue fulfilling his duties. Government affairs are beginning to slow down and Fernan's advisors are becoming responsible for administrating the Kingdom."
+ 
+ GRS_national_mourning:0 "National Mourning"
+ GRS_national_mourning_desc:0 "The death of King Fernan has brought sadness throughout the kingdom."
+
+
+
+ # ----- parties ----
  GRS_neutrality_party:0 "House Flamenco"
  GRS_neutrality_party_long:0 "House of Flamenco" 
  GRS_fascism_party:0 "Grusan Armed Forces"
@@ -196,8 +360,37 @@
  GRS_naval_reform_state_4:0 "§7Modernizing§!"
  GRS_naval_reform_state_5:0 "§GResurgent§!"
  GRS_naval_reform_state_6:0 "§CGrand Armada Restored§!"
-
-  
+ 
+ GRS_under_blockade:0 "Under Antarean Blockade"
+ GRS_under_blockade_desc:0 "The Antares Imperial Navy has established a blockade around Grusa, severely disrupting maritime trade and commercial shipping. Until the blockade can be broken or circumvented, our economy will continue to suffer from shortages and declining overseas commerce.\n\n§HBlockade Strength§!: [GRS_blockade_level_text]\n§HBreakout Likelihood§!: [GRS_breakout_level_text]" 
+ GRS_establish_smuggling_routes:0 "Establish Smuggling Routes"
+ GRS_establish_smuggling_routes_desc:0 "Organise secret merchant routes to bypass the Antarean blockade."
+ GRS_ration_essential_goods:0 "Ration Essential Goods"
+ GRS_ration_essential_goods_desc:0 "Reduce civilian consumption to preserve vital supplies for the war effort."
+ GRS_escort_merchant_convoys:0 "Escort Merchant Convoys"
+ GRS_escort_merchant_convoys_desc:0 "Assign naval escorts to protect our merchant ships from enemy raiders."
+ GRS_hunt_enemy_raiders:0 "Hunt Enemy Raiders"
+ GRS_hunt_enemy_raiders_desc:0 "Deploy our fleet to seek out and attempt destroy Antarean ships enforcing the blockade."
+ GRS_build_emergency_dockyards:0 "Build Emergency Dockyards"
+ GRS_build_emergency_dockyards_desc:0 "Construct dockyard facilities to accelerate naval production."
+ GRS_encourage_domestic_production:0 "Encourage Domestic Production"
+ GRS_encourage_domestic_production_desc:0 "Expand domestic industry to lessen our dependence on overseas imports."
+ GRS_emergency_port_expansion:0 "Emergency Port Expansion"
+ GRS_emergency_port_expansion_desc:0 "Expand and improve our ports to increase the flow of supplies into the country."
+ GRS_break_the_blockade_operation:0 "Break the Blockade"
+ GRS_break_the_blockade_operation_desc:0 "Launch a major naval operation to break the Antarean blockade once and for all. Success depends on our preparations."
+ GRS_blockade_level_minor:0 "§GMinor§!"
+ GRS_blockade_level_limited:0 "§7Limited§!"
+ GRS_blockade_level_effective:0 "§YStrong§!"
+ GRS_blockade_level_severe:0 "§OSevere§!"
+ GRS_blockade_level_critical:0 "§RCrippling§!"
+ 
+ GRS_breakout_level_unprepared:0 "§RHighly Unlikely§!"
+ GRS_breakout_level_planning:0 "§OUnlikely§!"
+ GRS_breakout_level_readying:0 "§YPossible§!"
+ GRS_breakout_level_prepared:0 "§7Likely§!"
+ GRS_breakout_level_ready:0 "§GHighly Likely§!"
+   # 
  # ----- focuses ------
  GRS_accept_the_loss_at_cabo_vesca:0 "Accept the Loss at Cabo Vesca"
  GRS_accept_the_loss_at_cabo_vesca_desc:0 "The disaster at Cabo Vesca remains one of the greatest humiliations in our naval history. It was a decisive defeat that ensured our loss in the Strait War. Rather than dwell upon old memories or fantasise about what might have been, we must learn from our mistakes and rebuild our navy into what it once was: mighty and formidable" 
@@ -257,21 +450,424 @@
  GRS_amphibious_logistics_desc:0 "A successful invasion depends not only upon ships and soldiers, but upon the ability to sustain them. Improved logistical planning ensures our forces remain supplied even during prolonged overseas operations."
  GRS_study_naval_armour:0 "Study Naval Armour"
  GRS_study_naval_armour_desc:0 "Armour is the backbone of any modern ship, inadequate armour, or adding it to the wrong places will put Grusan sailors at risk. Studying why and where armour should and should not be welded too is critical to warship design." 
+ 
  GRS_begin_production_of_aeroplanes:0 "Begin Production of Aeroplanes"
  GRS_begin_production_of_aeroplanes_desc:0 "Aircraft are rapidly becoming a prominent feature of modern warfare. Grusa must establish a domestic aviation industry before it is left behind."
+
  GRS_desert_flight_training:0 "Desert Flight Training"
  GRS_desert_flight_training_desc:0 "The skies above Arida provide ideal conditions for training skilled pilots capable of operating in even the harshest environments."
+
  GRS_construction_of_air_bases:0 "Construction of Air Bases"
  GRS_construction_of_air_bases_desc:0 "An air force requires more than aircraft alone. New airfields will provide the infrastructure needed to launch our aircraft."
+
  GRS_flying_artillery:0 "Flying Artillery"
  GRS_flying_artillery_desc:0 "Aircraft can serve as extensions of the army, striking enemy positions and supporting troops from above."
+
  GRS_royal_fighter_squadron:0 "Royal Fighter Squadron"
  GRS_royal_fighter_squadron_desc:0 "Elite fighter pilots will form the backbone of our growing air force, defending Grusan skies and challenging enemy aircraft."
+
  GRS_streamline_domestic_production:0 "Streamline Domestic Production"
  GRS_streamline_domestic_production_desc:0 "By standardising designs and coordinating industrial efforts, we can greatly increase the efficiency of aircraft production."
+ 
+ GRS_deport_disloyal_vegans:0 "Deport Vegan Loyalists"
+ GRS_deport_disloyal_vegans_desc:0 "We will deport any Vegans who are not loyal to Grusa. Their insolence will not be tolerated and they will be forcefully sent to our neighbours."
+ 
+ GRS_war_start:0 "Guerra del Escorpión!"
+ GRS_war_start_desc:0 "There is no history of conflict between Grusa and Antares. However the Antarean war machine has turned its gaze upon our Kingdom, we are fighting because another nation has decided that Grusa must cease to exist. Even if millions do not see the end of this war, we must hold onto hope for a future, whatever the cost may be." 
+ 
+ GRS_the_antarean_issue:0 "The Antarean Issue"
+GRS_the_antarean_issue_desc:0 "The invasion of Vega has forced us to confront an uncomfortable reality. Antares grows stronger with every passing day and few believe their ambitions end at Vega's borders. We must decide how Grusa will respond before events overtake us."
 
+GRS_review_our_options:0 "Review Our Options"
+GRS_review_our_options_desc:0 "The government is divided. Some urge immediate military preparations, while others insist diplomacy may yet avert disaster. Every decision from this point onward may determine the fate of the Kingdom."
+
+GRS_prepare_our_armed_forces:0 "Prepare Our Armed Forces"
+GRS_prepare_our_armed_forces_desc:0 "Whether war comes tomorrow or years from now, the Grusan Army must be brought to full readiness. Weapons, supplies and manpower will all be required."
+
+GRS_a_call_to_arms:0 "A Call to Arms"
+GRS_a_call_to_arms_desc:0 "The nation must unite. Every factory, every soldier and every citizen has a role to play if Grusa is to survive the coming storm."
+
+GRS_intervene_vegan_war:0 "Intervene in the Vegan War"
+GRS_intervene_vegan_war_desc:0 "Though our nations have long been rivals, Vega now stands between Grusa and Antares. If Vega falls, we shall surely be next. We will march to their aid, and assist them in their war."
+
+GRS_preemptive_strike:0 "Launch a Pre-emptive Strike"
+GRS_preemptive_strike_desc:0 "Vega has fallen, waiting only gives Antares time to prepare. We must seize the initiative before the enemy does."
+
+GRS_general_mobilisation:0 "Prepare the Populace"
+GRS_general_mobilisation_desc:0 "Every available resource must be directed toward the war effort. Industry, transport and manpower shall all be mobilised."
+
+GRS_propganda_efforts:0 "Propaganda Efforts"
+GRS_propganda_efforts_desc:0 "Victory depends not only on weapons, but on resolve. Newspapers, posters and radio broadcasts will remind every Grusan what is at stake."
+
+GRS_hold_the_plains:0 "Hold the Plains"
+GRS_hold_the_plains_desc:0 "The Southern Plains is the gateway to the Arida. Here we shall deny the enemy every metre of ground."
+
+GRS_hill_strongpoints:0 "Defensive Strongpoints"
+GRS_hill_strongpoints_desc:0 "The hills and ridges overlooking the plains will become natural fortresses, connected by trenches, bunkers and artillery positions."
+
+GRS_interlocking_defenses:0 "Interlocking Defenses"
+GRS_interlocking_defenses_desc:0 "Each bunker, trench and artillery position shall support the next. Any enemy breakthrough will immediately come under devastating crossfire."
+
+GRS_defend_the_arida:0 "Defend the Arida"
+GRS_defend_the_arida_desc:0 "The Arida consumes most of Grusa beneath an endless sea of sand and dunes. To our soldiers every dune, ridge and dry riverbed can become a fortress. If Antares wishes to cross the desert, they will find an enemy that knows every grain of sand."
+
+GRS_masters_of_desert_warfare:0 "Masters of the Arida"
+GRS_masters_of_desert_warfare_desc:0 "The Arida Desert is our home, not theirs. We shall use its heat, size and unforgiving terrain as weapons."
+
+GRS_sabotage_behind_enemy_lines:0 "Raiding Parties"
+GRS_sabotage_behind_enemy_lines_desc:0 "Our engineers and raiding parties will strike supply depots, railways and communications before vanishing back into the sands."
+
+GRS_secure_the_coastline:0 "Secure the Coastline"
+GRS_secure_the_coastline_desc:0 "Our shores must never become the enemy's gateway into Grusa. Every harbour and beach shall be defended."
+
+GRS_coastal_observation_posts:0 "Oberservation Posts"
+GRS_coastal_observation_posts_desc:0 "A chain of observation posts will ensure no enemy fleet approaches unnoticed."
+
+GRS_fortress_ports:0 "Fortress Ports"
+GRS_fortress_ports_desc:0 "The ports of Grusa shall become bastions capable of resisting even the strongest naval assault."
+
+GRS_seek_aid:0 "Seek Foreign Aid"
+GRS_seek_aid_desc:0 "Grusa cannot stand entirely alone. Nations abroad may provide the weapons and supplies we desperately need."
+
+GRS_import_foreign_equipment:0 "Import Foreign Equipment"
+GRS_import_foreign_equipment_desc:0 "Foreign arms manufacturers possess the industrial capacity we lack. Contracts must be signed before it is too late."
+
+GRS_reach_out_to_orion_and_tucana:0 "Reach Out to Orion and Tucana"
+GRS_reach_out_to_orion_and_tucana_desc:0 "Both Orion and Tucana have industries capable of sustaining our war effort. Their support may prove decisive."
+
+GRS_negotiate_with_orion:0 "Negotiate with Orion"
+GRS_negotiate_with_orion_desc:0 "Orion's vast industry produce some of the finest military equipment. We should secure their cooperation."
+
+GRS_negotiate_with_tucana:0 "Negotiate with Tucana"
+GRS_negotiate_with_tucana_desc:0 "Tucana possesses a of surplus military supplies. We must persuade them to support our struggle."
+
+GRS_setup_arms_contracts:0 "Establish Arms Contracts"
+GRS_setup_arms_contracts_desc:0 "Formal agreements will ensure a steady flow of foreign military equipment despite the hardships of war."
+
+GRS_purchase_tucanese_firearms:0 "Purchase Tucanese Firearms"
+GRS_purchase_tucanese_firearms_desc:0 "Thousands of rifles and small arms from Tucana will replenish our exhausted stockpiles."
+
+GRS_purchase_orion_artillery:0 "Purchase Orion Artillery"
+GRS_purchase_orion_artillery_desc:0 "Heavy guns from Orion will greatly strengthen our defensive lines."
+
+GRS_purchase_tucanese_trucks:0 "Purchase Tucanese Trucks"
+GRS_purchase_tucanese_trucks_desc:0 "Reliable motor transport will allow supplies and reinforcements to reach the front far more quickly."
+
+GRS_purchase_orion_support_equipment:0 "Purchase Orion Support Equipment"
+GRS_purchase_orion_support_equipment_desc:0 "Modern equipment from Orion will improve the effectiveness of our divisions."
+
+GRS_purchase_orion_support_equipment:0 "Purchase Orion Support Equipment"
+GRS_purchase_orion_support_equipment_desc:0 "Modern equipment from Orion will improve the effectiveness of our divisions."
+
+GRS_acquire_oversea_factories:0 "Resources for Equipment"
+GRS_acquire_oversea_factories_desc:0 "We will use our natural resources as another form of payment for foreign military equipment and supplies."
  
+GRS_purchase_orion_armoured_cars:0 "Purchase The M.5-E Armoured Car"
+GRS_purchase_orion_armoured_cars_desc:0 "Orion are willing to supply us with its M.5-E armoured cars, although at a greater cost than other equipment."
+
+GRS_purchase_tucanese_tanks:0 "Purchase The Chuikov II"
+GRS_purchase_tucanese_tanks_desc:0 "Tucana has agreed to give a number of its Chuikov II heavy tanks. However it is expensive to import and costly to maintain."
+
+GRS_contact_NCA:0 "Contact the Northern Centauran Alliance"
+GRS_contact_NCA_desc:0 "The remaining free nations of northern Centaura have begun coordinating against Antares. We should establish formal diplomatic contact."
+
+GRS_join_NCA:0 "Join the NCA"
+GRS_join_NCA_desc:0 "Grusa cannot fight the greatest military power on the continent alone. United, we stand a far greater chance of survival."
+
+GRS_we_stand_alone:0 "We Stand Alone"
+GRS_we_stand_alone_desc:0 "We do not need help from other nations. Our survival will depend upon our own determination, our own industry and our own soldiers."
+
+GRS_begin_fortication_efforts:0 "Begin Fortification Efforts"
+GRS_begin_fortication_efforts_desc:0 "Defensive works must rise across the nation while there is still time. Every bunker constructed today may save hundreds of lives tomorrow."
+
+GRS_defend_the_plains:0 "Fortify the Southern Plains"
+GRS_defend_the_plains_desc:0 "The open plains are the most direct route into the Arida. Without prepared positions our armies would be forced to fight exposed against superior forces. We will transform the plains into a continuous defensive belt."
+
+GRS_desert_fortifications:0 "The Arida Defensive Line"
+GRS_desert_fortifications_desc:0 "The deserts offer little natural shelter, but they provide countless opportunities to funnel and exhaust an invading force. A chain of hardened positions will ensure that every kilometre of sand is paid for in Antarean blood."
+
+GRS_fortify_leopolis:0 "Fortify Leopolis"
+GRS_fortify_leopolis_desc:0 "Leopolis stands as Grusa's largest and most prominant city. Should our lines fail, the city must remain an unbreakable bastion capable of anchoring the nation's defence and denying the enemy a victory."
+
+GRS_fallback_lines:0 "Construct Fallback Lines"
+GRS_fallback_lines_desc:0 "No defence is perfect. If the outer fortifications are breached, our armies must have prepared positions from which to regroup and continue the fight. Every retreat should lead only to another wall the enemy must overcome."
+
+GRS_coastal_fortifications:0 "Strengthen the Coastal Batteries"
+GRS_coastal_fortifications_desc:0 "Antares possesses a strong and fearsome navy. We cannot challenge them ship for ship, but we can ensure that every harbour and stretch of coastline becomes a fortress. If they seek to land upon our shores, they will sail directly into our guns."
+
+GRS_find_a_diplomatic_answer:0 "Find a Diplomatic Answer"
+GRS_find_a_diplomatic_answer_desc:0 "A war with Antares would almost certainly destroy Grusa in the process. If our nation is to survive, we must consider whether diplomacy can achieve what armies never could."
+
+GRS_contact_antares:0 "Contact Antares"
+GRS_contact_antares_desc:0 "Our envoys shall travel to Aquila carrying an extraordinary proposal. Rather than opposing Antares, Grusa offers cooperation in exchange for preserving its sovereignty."
+
+GRS_no_response:0 "No Response"
+GRS_no_response_desc:0 "Our delegation returned empty-handed. Whether ignored, forgotten or deliberately delayed, Antares has left us waiting in uncertainty."
+
+GRS_antares_accepts:0 "Antares Accepts"
+GRS_antares_accepts_desc:0 "Against all expectations, Antares has accepted negotiations. Our independence will survive, but only beneath the shadow of the Imperium."
+
+GRS_antares_declines:0 "Antares Declines"
+GRS_antares_declines_desc:0 "The answer from Aquila is unequivocal. Antares has no interest in compromise. If Grusa is to survive, it must prepare for a bloody struggle."
+
+GRS_survival_at_cost:0 "Survival at Any Cost"
+GRS_survival_at_cost_desc:0 "Pride has little value if Grusa ceases to exist. Better to have an imperfect peace than glorious annihilation."
+
+GRS_accept_antarean_supervision:0 "Accept Antarean Supervision"
+GRS_accept_antarean_supervision_desc:0 "Antares will oversee our foreign policy and military affairs. In return, Grusa retains its government, its identity and its future."
+
+GRS_banish_the_monarchy:0 "Banish the Monarchy"
+GRS_banish_the_monarchy_desc:0 "The monarchy remains a symbol of resistance. Their removal will reassure Antares that Grusa has embraced a different future."
+
+GRS_execute_unpopular_royals:0 "Execute the Royal Family"
+GRS_execute_unpopular_royals_desc:0 "Some believe exile is too merciful. By eliminating the royal family, Grusa will prove beyond doubt that the old kingdom can never return."
+
+GRS_support_the_antareans:0 "Support the Antareans"
+GRS_support_the_antareans_desc:0 "Loyalty cannot simply be declared, it must be demonstrated. Grusan soldiers will stand beside Antares wherever they are needed."
+
+GRS_joint_military_commission:0 "Joint Military Commission"
+GRS_joint_military_commission_desc:0 "Grusan and Antarean officers shall work together to coordinate planning, logistics and military doctrine."
+
+GRS_antarean_investment:0 "Antarean Investment"
+GRS_antarean_investment_desc:0 "Imperial capital will modernise our industries, strengthening Grusa while binding our economy ever closer to Antares."
+
+GRS_modernise_the_railways:0 "Modernise the Railways"
+GRS_modernise_the_railways_desc:0 "A modern railway network is essential for economic development and the rapid deployment of troops across the country."
+
+GRS_expand_the_ports:0 "Expand the Ports"
+GRS_expand_the_ports_desc:0 "New docks and expanded harbours will strengthen commerce while supporting Antarean naval operations in the region."
+
+GRS_foreign_capital:0 "Foreign Capital"
+GRS_foreign_capital_desc:0 "Additional investment from Antares will accelerate industrial growth, even if much of the wealth ultimately returns to Antares."
+
+GRS_antarean_military_advisors:0 "Antarean Military Advisors"
+GRS_antarean_military_advisors_desc:0 "Veteran officers from the Imperial Army will oversee the modernisation of our armed forces."
+
+GRS_reform_the_officer_corps:0 "Reform the Officer Corps"
+GRS_reform_the_officer_corps_desc:0 "Outdated traditions must give way to a professional command structure capable of fighting alongside the Empire."
+
+GRS_antarean_training_missions:0 "Antarean Training Missions"
+GRS_antarean_training_missions_desc:0 "Joint exercises and instructor exchanges will ensure that Grusan soldiers meet Antarean standards."
+
+GRS_integrate_antarean_tactics:0 "Integrate Antarean Tactics"
+GRS_integrate_antarean_tactics_desc:0 "Cooperation with Antares has reshaped the Grusan Army. Antarean battlefield doctrine has become second nature to our officers."
+
+GRS_a_new_grusa:0 "A New Grusa"
+GRS_a_new_grusa_desc:0 "No longer a defeated kingdom clinging to survival, Grusa has become a prosperous and trusted partner within the Antarean sphere."
+
+GRS_invite_vega:0 "Invite Vega"
+GRS_invite_vega_desc:0 "We will invite Vega to the Nothern Centauran Alliance."
+#
+GRS_antarean_blockade:0 "The Antarean Blockade" 
+GRS_antarean_blockade_desc:0 "The Antarean Navy has established a blockade around Grusa, intercepting merchant convoys and cutting vital sea lanes. Imports are bound to become increasingly scarce, while exports lie stranded in harbours."
+
+GRS_produce_blockade_runners:0 "Produce Blockade Runners"
+GRS_produce_blockade_runners_desc:0 "Small and fast merchant vessels stand a better chance of slipping through the Antarean blockade. By converting existing ships and constructing new ones, we can keep vital supplies flowing into Grusa."
+
+GRS_increase_dockyard_capcity:0 "Increase Dockyard Capacity"
+GRS_increase_dockyard_capcity_desc:0 "Our dockyards must operate around the clock to keep pace with wartime demand. Expanding their capacity will allow us to repair and construct vessels more efficiently."
+
+GRS_cease_non_essential_production:0 "Cease Non-Essential Production"
+GRS_cease_non_essential_production_desc:0 "Luxury goods and civilian industries must take a back seat. Redirecting resources towards the war effort will strengthen our ability to withstand the blockade."
+
+GRS_enforce_rationing:0 "Enforce Rationing"
+GRS_enforce_rationing_desc:0 "Food and essential supplies must be carefully distributed. Though unpopular, rationing will ensure that our people and armed forces receive exactly the amount of food they need."
+
+GRS_increase_the_workforce:0 "Increase the Workforce"
+GRS_increase_the_workforce_desc:0 "With every available hand contributing to the war effort, factories and dockyards can continue operating despite mounting shortages."
+
+GRS_supress_defeatistism:0 "Suppress Defeatism"
+GRS_supress_defeatistism_desc:0 "Rumours of defeat and surrender only strengthen Antares. We must maintain public confidence and reinforce the nation's determination to endure."
+
+GRS_fund_navy:0 "Fund the Navy"
+GRS_fund_navy_desc:0 "Breaking the blockade will require a stronger and more capable fleet. Additional funding will allow the navy to prepare for the breakout."
+
+GRS_boost_naval_production:0 "Boost Naval Production"
+GRS_boost_naval_production_desc:0 "Shipyards must prioritise the construction and repair of warships above all else. Every vessel launched brings us one step closer to challenging the blockade."
+
+GRS_build_new_dockyards:0 "Build New Dockyards"
+GRS_build_new_dockyards_desc:0 "Expanding the amount of dockyards available will increase our naval production capacity and ensure that replacement ships can be built as quickly as possible."
+
+GRS_break_the_blockade:0 "Break the Blockade"
+GRS_break_the_blockade_desc:0 "The time has come to challenge Antares' grip on our shores. If our preparations have been sufficient, the Royal Grusan Navy may yet force a path through the blockade and restore the nation's lifeline."
+
+ GRS_expand_the_merchant_fleet:0 "Expand the Merchant Fleet"
+GRS_expand_the_merchant_fleet_desc:0 "Merchant vessels are the lifeblood of the nation. Expanding our commercial fleet will strengthen overseas trade and lay the foundations for future prosperity."
+
+GRS_royal_merchant_marine:0 "Royal Merchant Marine"
+GRS_royal_merchant_marine_desc:0 "By officially establishing a Royal Merchant Marine, we integrate our commercial shipping directly into our government, increasing the effectiveness of civilian sailors and ensuring merchants are under protection." 
+
+GRS_expand_trade_routes:0 "Expand Trade Routes"
+GRS_expand_trade_routes_desc:0 "New commercial agreements and shipping lanes will open distant markets to Grusan merchants, increasing both the flow of wealth and the availability of foreign goods."
+
+GRS_modernise_fishing_fleet:0 "Modernise the Fishing Fleet"
+GRS_modernise_fishing_fleet_desc:0 "Our fishermen still rely upon ageing vessels and outdated equipment. Investing in modern boats and machinery will greatly increase the nation's harvest from the sea."
+
+GRS_deep_sea_fishing:0 "Deep-Sea Fishing"
+GRS_deep_sea_fishing_desc:0 "The rich waters beyond our coastline remain largely untouched. By equipping our fleet for longer voyages, Grusa can exploit these valuable fishing grounds."
+
+GRS_create_fish_farms:0 "Create Fish Farms"
+GRS_create_fish_farms_desc:0 "Natural catches alone cannot satisfy the growing demand for seafood. Establishing fish farms will provide a reliable and sustainable source of food for our people."
+
+GRS_expand_canning_industry:0 "Expand the Canning Industry"
+GRS_expand_canning_industry_desc:0 "Proper preservation will allow Grusan seafood to be exported across the continent instead of spoiling in our harbours. A thriving canning industry will become another pillar of our economy."
+
+GRS_improve_cold_storage:0 "Improve Cold Storage"
+GRS_improve_cold_storage_desc:0 "Modern refrigerated warehouses will greatly reduce spoilage, allowing fish and other perishables to be transported safely across the country."
+
+GRS_develop_fish_preservatives:0 "Develop Better Preservatives"
+GRS_develop_fish_preservatives_desc:0 "Scientific advances in food preservation will extend the shelf life of our food."
+
+GRS_develop_port_leopolis:0 "Develop The Port of Leopolis"
+GRS_develop_port_leopolis_desc:0 "Leopolis has long served as the beating heart of Grusa. By expanding its harbour facilities and encouraging new businesses to settle nearby, we can transform Leopolis into something greater."
+
+GRS_develop_coastal_warehouses:0 "Develop Coastal Warehouses"
+GRS_develop_coastal_warehouses_desc:0 "A merchant fleet is worthless if its cargo cannot be stored safely. Constructing warehouses and improving the roads leading to our ports will allow goods to move quickly from ship to market."
+
+GRS_invest_neuva_quebrada:0 "Investestments outside Leopolis"
+GRS_invest_neuva_quebrada_desc:0 "Every other city in Grusa has remained overshadowed by Leopolis. Targeted investment will encourage new businesses and help improve local industry."
+
+GRS_expand_leopolis:0 "Expand Leopolis"
+GRS_expand_leopolis_desc:0 "Leopolis must continue to grow, new industrial districts, expanded dockyards and improved transport will ensure the city remains the undisputed centre of Grusa for decades to come."
+
+GRS_improve_smaller_harbours:0 "Improve Smaller Harbours"
+GRS_improve_smaller_harbours_desc:0 "Expanding smaller harbours along the Grusan coastline will ensure merchant vessels gain additional ports while local communities receive investment needed to prosper."
+
+GRS_new_shipyards_on_alnair:0 "New Shipyards on the coast"
+GRS_new_shipyards_on_alnair_desc:0 "Our coast possess an ideal location for shipbuilding facilities. New workshops and dockyards will allow both merchant and naval vessels to be constructed far more efficiently."
+
+GRS_new_tiaki_drydocks:0 "Construct New Drydocks"
+GRS_new_tiaki_drydocks_desc:0 "By constructing newer drydocks we will strengthen both our commercial and our navy's capabilities to produce ships."
+
+GRS_improve_coastal_infrastructure:0 "Improve Coastal Infrastructure"
+GRS_improve_coastal_infrastructure_desc:0 "Upgrading the transport network that links our coastal settlements will allow goods, workers and military supplies to move swiftly between harbours."
+
+GRS_prioritse_the_saggitarius:0 "Prioritise the Saggitarius"
+GRS_prioritse_the_saggitarius_desc:0 "The Saggitarius Strait remains one of Grusa's most strategically valuable waterways. Concentrating investment along its coastline will expand commerce and ensure that Grusan merchants have easy access into the strait."
+
+GRS_prioritse_the_annalus:0 "Prioritise the Annalus"
+GRS_prioritse_the_annalus_desc:0 "The Annalus coast offers natural harbours and excellent access into the Annalus sea, by prioritising our efforts here, we can ensure we have a strong presence on the Annalus sea."
+
+GRS_enhance_existing_dockyards:0 "Enhance Existing Dockyards"
+GRS_enhance_existing_dockyards_desc:0 "Upgrading existing dockyards with improved machinery, expanded workshops and more efficient construction methods will ensure that every shipyard operates at maximum capacity."
+
+GRS_survey_the_plains:0 "Survey the Plains"
+GRS_survey_the_plains_desc:0 "The plains of Grusa are among the most fertile lands in the kingdom. We must determine how best to develop this valuable region."
+
+GRS_expand_the_farms:0 "Expand the Farms"
+GRS_expand_the_farms_desc:0 "With much of Grusa's fertile land still underdeveloped, there is ample opportunity to expand our farms and increase agricultural production."
+
+GRS_prepare_industrial_expansion:0 "Prepare Industrial Expansion"
+GRS_prepare_industrial_expansion_desc:0 "The development of the plains provides an opportunity to establish new industries and prepare the region for greater economic activity."
+
+GRS_advancements_in_agriculture:0 "Advancements in Agriculture"
+GRS_advancements_in_agriculture_desc:0 "New methods of farming and cultivation can greatly improve the productivity of our land. We must encourage further study and experimentation."
+
+GRS_breed_more_livestock:0 "Breed More Livestock"
+GRS_breed_more_livestock_desc:0 "The fertile plains provide excellent conditions for raising livestock. Better breeding practices will allow us to make greater use of this resource."
+
+GRS_irrigate_the_plains:0 "Irrigate the Plains"
+GRS_irrigate_the_plains_desc:0 "Much of the plains remains dependent on rainfall. Investment in irrigation will allow more of the land to be cultivated throughout the year."
+
+GRS_mechanise_agriculture:0 "Mechanise Agriculture"
+GRS_mechanise_agriculture_desc:0 "Agriculture can no longer rely entirely upon traditional methods. The introduction of modern machinery will increase production while reducing the burden on our farmers."
+
+GRS_develop_the_plains:0 "Develop the Plains"
+GRS_develop_the_plains_desc:0 "Investment into the plains has transformed the region into one of Grusa's most productive regions. We can now expand its industries and infastructure further."
+
+GRS_civfactories_in_the_plains:0 "Civilian Industry in the Plains"
+GRS_civfactories_in_the_plains_desc:0 "With the agricultural foundations of the region secured, we can turn our attention towards civilian industry and further economic development."
+
+GRS_milfactories_in_the_plains:0 "Military Industry in the Plains"
+GRS_milfactories_in_the_plains_desc:0 "The growing prosperity of the plains gives us the opportunity to establish a stronger industrial base for the production of military equipment."
+
+ GRS_import_industrial_machinery:0 "Import Industrial Machinery"
+ GRS_import_industrial_machinery_desc:0 "Our workshops lack much of the machinery needed for modern production. Importing equipment from abroad will help lay the foundations for further industrial development."
+
+ GRS_domestic_tooling_industry:0 "Domestic Tooling Industry"
+ GRS_domestic_tooling_industry_desc:0 "Relying on foreign tools and equipment is costly. Developing domestic tooling will allow Grusan workshops to support our growing industries."
+
+ GRS_develop_civilian_industry:0 "Develop Civilian Industry"
+ GRS_develop_civilian_industry_desc:0 "Grusa's economy remains limited by a lack of industrial capacity. Investment in civilian industry will provide the goods and facilities needed for future growth."
+
+ GRS_expand_construction_firms:0 "Expand Construction Firms"
+ GRS_expand_construction_firms_desc:0 "As development spreads, our construction firms must be able to keep pace. Expanding their capacity will help new factories and infrastructure take shape."
+
+ GRS_nothern_military_factories:0 "Northern Military Factories"
+ GRS_nothern_military_factories_desc:0 "Establishing military production in the north will give the kingdom another source of equipment for its army."
+
+ GRS_tiaki_factories:0 "Tiaki Factories"
+ GRS_tiaki_factories_desc:0 "Tiaki's position in the south makes it a useful centre for industrial growth. New factories will serve the city and the nearby plains."
+
+ GRS_leopolis_industrial_district:0 "Leopolis Industrial District"
+ GRS_leopolis_industrial_district_desc:0 "As the kingdom's capital, Leopolis should become a centre of Grusan industry. Investment in its infrastructure and factories will strengthen the city's role in the economy."
+
+ GRS_leopolis_steelworks:0 "Leopolis Steelworks"
+ GRS_leopolis_steelworks_desc:0 "A reliable supply of steel would reduce our dependence on foreign suppliers. Establishing steel production in Leopolis would support the kingdom's growing needs for resources."
+
+ GRS_leopolis_military_factories:0 "Leopolis Military Factories"
+ GRS_leopolis_military_factories_desc:0 "Expanding arms production in the capital will help supply the army and strengthen Grusa's ability to equip its armed forces."
  
+ GRS_leopolis_civilian_factories:0 "Leopolis Civilian Factories"
+ GRS_leopolis_civilian_factories_desc:0 "Expanding civilian industry in the capital will increase the kingdom's productive capacity and provide the goods needed to continue further economic development."
+ 
+ GRS_prepare_the_war_machine:0 "Prepare the War Machine"
+ GRS_prepare_the_war_machine_desc:0 "Grusa must prepare its industry for the demands of war. New factories and increased production will help ensure the army is properly equipped."
+
+ GRS_military_industrial_expansion:0 "Military Industrial Expansion"
+ GRS_military_industrial_expansion_desc:0 "The army requires a steady supply of weapons and equipment. Expanding military production will help meet these demands."
+
+ GRS_relocate_factories:0 "Relocate Factories"
+ GRS_relocate_factories_desc:0 "Some factories must be relocated to ensure the safety of the economy."
+
+ GRS_convert_civilian_factories:0 "Convert Civilian Factories"
+ GRS_convert_civilian_factories_desc:0 "Civilian industry has served the kingdom well, but the needs of the army must now take priority. Several factories will be converted to produce military equipment."
+
+ GRS_grusan_sun_ascends:0 "The Grusan Sun Ascends"
+ GRS_grusan_sun_ascends_desc:0 "Grusa is prepared, we stand ready for what lies ahead of us and our resolve shines as bright as the sun."
+ #
+ GRS_a_new_century:0 "A New Century"
+ GRS_a_new_century_desc:0 "It is the end of the 19th century and the beginning of the 20th!"
+
+ GRS_reign_of_fernan:0 "The Reign of Fernan"
+ GRS_reign_of_fernan_desc:0 "Fernan Flamenco's reign over Grusa has been quiet and uneventful. He has attempted to rectify the mistakes of his father and the consequences of the Strait War."
+
+ GRS_fernans_government:0 "Fernan's Government"
+ GRS_fernans_government_desc:0 "The kingdom continues to be governed by Fernan and his appointed ministers. Although little has changed, the government remains committed to maintaining stability throughout Grusa."
+
+ GRS_consult_the_council:0 "Consult the King's Council"
+ GRS_consult_the_council_desc:0 "The minds of the King's Council are a great tool to the Flamenco dynasty. Their experience and advice help assist the monarchy in making important decisions."
+
+ GRS_seek_new_advisors:0 "Seek New Advisors"
+ GRS_seek_new_advisors_desc:0 "The kingdom requires capable men to assist in its administration. New advisors may bring fresh ideas and help improve the workings of the government."
+
+ GRS_royal_investments:0 "Royal Investments"
+ GRS_royal_investments_desc:0 "Fernan has taken an interest in improving the kingdom through personal investments. New projects will provide work and help Grusa's economy."
+
+ GRS_military_inspection:0 "Military Inspection"
+ GRS_military_inspection_desc:0 "The King has ordered an inspection of the Grusan armed forces. Their equipment, organisation and readiness must be examined."
+
+ GRS_military_investment:0 "Military Investment"
+ GRS_military_investment_desc:0 "The kingdom must ensure that its armed forces receive the equipment and resources they require. Further investment will help prepare Grusa for future conflicts."
+
+ GRS_maintain_status_quo:0 "Maintain the Status Quo"
+ GRS_maintain_status_quo_desc:0 "Fernan has little desire to introduce sweeping changes to the kingdom. For now, the established order shall remain undisturbed."
+
+ GRS_the_vega_question:0 "The Vega Question"
+ GRS_the_vega_question_desc:0 "Relations with Vega remain uncertain. Both nations continue to prepare for the possibility of reunification by force and neither appears willing to abandon its ambitions."
+
+ GRS_the_death_of_fernan:0 "The Death of Fernan"
+ GRS_the_death_of_fernan_desc:0 "King Fernan Flamenco has passed away. After years of ruling Grusa, the crown now passes to his son Valentine Flamenco."
+
+ GRS_continue_fernans_work:0 "Passing the Torch"
+ GRS_continue_fernans_work_desc:0 "Valentine has inherited the Grusan crown. He intends to continue his father's work and preserve the kingdom his family has ruled for generations."
+
+ GRS_golden_opportunity:0 "A Golden Opportunity"
+ GRS_golden_opportunity_desc:0 "The death of a monarch presents a rare opportunity. With the old order weakened and the future of Grusa uncertain, perhaps the time is right for another man to lead the kingdom..."
+
+
+
+
  GRS_deport_disloyal_vegans:0 "Deport Vegan Loyalists"
  GRS_deport_disloyal_vegans_desc:0 "We will deport any Vegans who are not loyal to Grusa. Their insolence will not be tolerated and they will be forcefully sent to our neighbours." # I LOVE LARPING
  
@@ -286,6 +882,19 @@
  GRS_north_coast_tt:0 "§CConstructs level Two coastal fortifications along the Sagittarius Strait§!"
  GRS_imprisoned_council_tt:0 "§tTHIS WILL PREVENT YOU FROM HIRING ANY §! §CPOLITICAL ADVISORS§! §tHIRE THEM BEFORE YOU TAKE THIS FOCUS!§!"
  GRS_non_historical_tt:0 "§6This branch features content that is not part of Grusa's official lore. If you would prefer a more lore-friendly experience, another path may be more suitable.§!"
+ GRS_not_finished_tt:0 "§RThis path is unfinished but I am working on it, many apolgies - Horse the Grusa Dev§!"
+ GRS_VEG_alliance:0 "Grusa-Vega Alliance"
+ GRS_negotiated_orion:0 "Negotiated with Orion"
+ GRS_negotiated_tucana:0 "Negotiated with Tucana"
+ GRS_blockade_runners:0 "Produce Blockade Runners"
+ GRS_rationing:0 "Enforced Rationing"
+ GRS_naval_operations:0 "Navy Funded"
+ GRS_emergency_dockyards:0 "Increase Dockyard Capacity"
+ GRS_increase_workforce:0 "Increase the Workforce"
+ GRS_non_essential_production:0 "Cease Non-Essential Production"
+ GRS_new_dockyards:0 "Build New Dockyards"
+ GRS_increased_naval_production:0 "Increased Naval Production"
+ GRS_breakout_available:0 "Break the Blockade"
 
 
 

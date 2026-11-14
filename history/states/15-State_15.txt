@@ -22,8 +22,8 @@ state={
 			3479 45 
 		}
 		1944.1.1.12 = {
-			owner = RIA
-			controller = RIA
+			owner = URS
+		#	controller = RIA
 		}
 	}
 	provinces={

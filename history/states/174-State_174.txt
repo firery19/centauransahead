@@ -4,6 +4,9 @@ state={
 	history={
 		owner = URS
 		add_core_of = CNS
+1947.1.1 = {
+	owner = HYS
+}
 		buildings = {
 			infrastructure = 1
 			}
@@ -19,3 +22,4 @@ state={
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
+

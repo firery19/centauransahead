@@ -6,6 +6,7 @@ set_technology = {
 	tech_recon = 4
 	tech_engineer = 4
 	gw_artillery = 4
+	basic_infrastructure = 1
 }
 
 set_research_slots = 7

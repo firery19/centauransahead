@@ -83,6 +83,12 @@ ideas = {
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.025 group = mobilization_laws }
 				has_war_support > 0.2
+				if = {
+					limit = {
+						original_tag = AQU
+					}
+					has_war = yes
+				}
 			}
 
 			modifier = {
@@ -136,7 +142,12 @@ ideas = {
 
 				
 				has_war_support > 0.4
-				
+				if = {
+					limit = {
+						original_tag = AQU
+					}
+					has_war = yes
+				}
 			}
 			ai_will_do = {
    				factor = 1
@@ -202,6 +213,12 @@ ideas = {
 				OR = {
 					has_war_support > 0.6
 					surrender_progress > 0
+				}
+				if = {
+					limit = {
+						original_tag = AQU
+					}
+					has_war = yes
 				}
 			}
 
@@ -285,6 +302,12 @@ ideas = {
 				#		ratio > 0.75
 				#	}
 				#}
+				if = {
+					limit = {
+						original_tag = AQU
+					}
+					has_war = yes
+				}
 			}
 
 			ai_will_do = {
@@ -358,6 +381,12 @@ ideas = {
 				#		ratio > 1
 				#	}
 				#}
+				if = {
+					limit = {
+						original_tag = AQU
+					}
+					has_completed_focus = AQU_announce_total_mobilization
+				}
 			}
 
 			ai_will_do = {

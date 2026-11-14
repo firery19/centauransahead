@@ -39,27 +39,10 @@ country_event = {
 	}
 }
 country_event = {
-    id = ANT.5
-    title = T.ANT.5
-    desc = D.ANT.5
-    picture = GFX_report_event_generic_riot
-
-    is_triggered_only = yes #focus
-
-    option = { 
-        name = A.ANT.5
-	ANT = {
-	set_country_flag = ANT_protests_ongoing
-	}
-	}
-}
-
-}
-country_event = {
     id = ANT.3
     title = T.ANT.3
     desc = D.ANT.3
-    #picture = GFX_report_event_generic_read_write
+    picture = GFX_report_event_generic_read_write
 
     is_triggered_only = yes
 
@@ -84,6 +67,24 @@ country_event = {
 #	}
 #	}
 }
+country_event = {
+    id = ANT.5
+    title = T.ANT.5
+    desc = D.ANT.5
+    picture = GFX_report_event_generic_riot
+
+    is_triggered_only = yes #focus
+
+    option = { 
+        name = A.ANT.5
+	ANT = {
+	set_country_flag = ANT_protests_ongoing
+	}
+    }
+}
+
+
+
 country_event = {
     id = ANT.4
     title = T.ANT.4
@@ -111,7 +112,7 @@ mean_time_to_happen = { days = 60 }
     option = { 
        name = C.ANT.4
 	add_political_power = 25
-	add_stability = -0.025
+	add_stability = -0.05
 				if = {
 				limit = {
 					has_idea =  ANT_protest_negligible 
@@ -139,5 +140,126 @@ mean_time_to_happen = { days = 60 }
 				    add_idea = ANT_protest_large
 				}
 			}
+	}
+}
+country_event = {
+	id = ANT.6
+	title = T.ANT.6
+	desc = D.ANT.6
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+
+	option = { 
+		name = A.ANT.6
+		army_experience = 10
+		add_command_power = 100
+		#some military advisor guy or smt
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 8000
+			producer = ANT
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 900
+			producer = ANT
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 800
+			producer = ANT
+		}
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 600
+			producer = ANT
+		}
+	}
+
+#    option = { 
+#       name = B.ANT.6
+	#	ANT = { 
+	#		add_opinion_modifier = {
+	#			target = COV
+	#			modifier = refused_MR_pact
+	#		}
+	#	}
+#	}
+}
+#unity speech
+country_event = {
+	id = ANT.7
+	title = T.ANT.7
+	desc = D.ANT.7
+	picture = GFX_report_event_tur_ataturk_impassioned_speech
+
+	is_triggered_only = yes
+
+	option = { 
+		name = A.ANT.7
+		country_event = {
+			id = ANT.8
+		}
+	}
+}
+country_event = {
+	id = ANT.8
+	title = T.ANT.8
+	desc = D.ANT.8
+	picture = GFX_report_event_tur_ataturk_impassioned_speech
+
+	is_triggered_only = yes
+
+	option = { 
+		name = A.ANT.8
+		country_event = {
+			id = ANT.9
+		}
+	}
+}
+country_event = {
+	id = ANT.9
+	title = T.ANT.9
+	desc = D.ANT.9
+	picture = GFX_report_event_tur_ataturk_impassioned_speech
+
+	is_triggered_only = yes
+
+	option = { 
+		name = A.ANT.9
+		add_war_support = 0.05
+		add_political_power = 75
+	}
+}
+###Aquila war white peace
+country_event = {
+	id = ANT.99999989879785638479645
+	title = ANT.99999989879785638479645.t
+	desc = ANT.99999989879785638479645.d
+	picture = GFX_report_event_hol_cabinet_gerbrandy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ANT.99999989879785638479645.a
+        AQU = {
+            country_event = { 
+                id = aqu.2110004
+                days = 1
+            }
+        }
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = ANT.99999989879785638479645.b
+		add_war_support = -0.05
+		ai_chance = {
+			base = 0
+		}
 	}
 }

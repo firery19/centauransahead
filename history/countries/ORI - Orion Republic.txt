@@ -10,6 +10,26 @@ if = {
 	}
 }
 
+set_variable = {
+	var = orion_corruption_counter
+	value = 12
+}
+
+set_variable = {
+	var = era_support
+	value = 1
+}
+
+set_variable = {
+	var = nrp_support
+	value = 7
+}
+
+set_variable = {
+	var = udp_support
+	value = 3
+}
+
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -52,6 +72,7 @@ set_technology = {
 	gw_artillery = 1
 	basic_train = 1
 	tech_trucks = 1
+	basic_infrastructure = 1
 	# b
 	# c
 	# d
@@ -61,6 +82,7 @@ set_technology = {
 	# h
 	# i
 }
+starting_train_buffer = 3
 
 set_research_slots = 2
 
@@ -93,6 +115,7 @@ set_popularities = {
 	democratic_right = 48	#nrp
 	democratic = 21		#era
 	democratic_left = 29	#udp
+	auth_dem = 0
 	communism = 0
 	fascism = 0
 	neutrality = 2

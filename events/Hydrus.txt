@@ -945,7 +945,8 @@ country_event = { # repurposed for new focus tree
 			effect_tooltip = {
 			URS = {
 				170 = {
-				transfer_state_to = HYS
+					transfer_state_to = HYS
+					}
 				}
 			}
 		}
@@ -988,8 +989,138 @@ country_event = { # repurposed for new focus tree
 	is_triggered_only = yes
 	
 	option = {
-		name = hydrus.1.a
-		
+		name = hydrus.19.a
+		add_war_support = 0.05
+		URS = {
+			171 = {
+				transfer_state_to = HYS
+				}
+			}
+		}
+	}
+	
+	country_event = {
+	id = hydrus.20
+	title = hydrus.20.t 
+	desc = hydrus.20.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.20.a
+		add_manpower = -1000
+		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = -100
+			}
+			effect_tooltip = {
+			URS = {
+				170 = {
+					transfer_state_to = HYS
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = {
+	id = hydrus.21
+	title = hydrus.21.t 
+	desc = hydrus.21.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.21.a
+		add_manpower = -1000
+		}
+	}
+	
+	country_event = {
+	id = hydrus.22
+	title = hydrus.22.t 
+	desc = hydrus.22.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.22.a
+		add_war_support = 0.05
+		}
+	}
+	
+	country_event = {
+	id = hydrus.23
+	title = hydrus.23.t 
+	desc = hydrus.23.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.23.a
+		add_war_support = 0.05
+		URS = {
+			125 = {
+				transfer_state_to = HYS
+				}
+			}
+		}
+	}
+	
+	country_event = {
+	id = hydrus.24
+	title = hydrus.24.t 
+	desc = hydrus.24.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.24.a
+		add_manpower = -1000
+		add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = -100
+			}
+			effect_tooltip = {
+			URS = {
+				170 = {
+					transfer_state_to = HYS
+					}
+				}
+			}
+		}
+	}
+	
+	country_event = {
+	id = hydrus.25
+	title = hydrus.25.t 
+	desc = hydrus.25.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.25.a
+		add_manpower = -1000
+		}
+	}
+	
+	country_event = {
+	id = hydrus.26
+	title = hydrus.26.t 
+	desc = hydrus.26.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hydrus.26.a
+		add_war_support = 0.05
 		}
 	}
 	

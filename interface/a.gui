@@ -1,0 +1,82 @@
+guiTypes = {
+    containerWindowType = {
+        name = "aqu_states"
+        size = { width = 500 height = 200 }
+        position = { x = 0 y = 0 }
+
+		buttonType = {
+			name = "state_38"
+			position = { x = 49 y = 53 }
+			quadTextureSprite = "GFX_aqu_state_38"
+			frame = 2
+			
+		}
+		buttonType = {
+			name = "state_156"
+			position = { x = 46 y = 98 }
+			quadTextureSprite = "GFX_aqu_state_156"
+			frame = 2
+			
+		}
+		buttonType = {
+			name = "state_9"
+			position = { x = 87 y = 44 }
+			quadTextureSprite = "GFX_aqu_state_9"
+            frame = 2
+		}
+		buttonType = {
+			name = "state_36"
+			position = { x = 99 y = 104 }
+			quadTextureSprite = "GFX_aqu_state_36"
+			frame = 2
+		}
+		buttonType = {
+			name = "state_35"
+			position = { x = 73 y = 131 }
+			quadTextureSprite = "GFX_aqu_state_35"
+			frame = 2
+		}
+		buttonType = {
+			name = "state_37"
+			position = { x = 29 y = 46 }
+			quadTextureSprite = "GFX_aqu_state_37"
+			frame = 2
+		}
+		buttonType = {
+			name = "state_228"
+			position = { x = 139 y = 95 }
+			quadTextureSprite = "GFX_aqu_state_228"
+			frame = 2
+		}
+		buttonType = {
+			name = "state_34"
+			position = { x = 130 y = 35 }
+			quadTextureSprite = "GFX_aqu_state_34"
+			frame = 2
+		}
+		buttonType = {
+			name = "state_152"
+			position = { x = 32 y = 19 }
+			quadTextureSprite = "GFX_aqu_state_152"
+			frame = 2
+		}
+		buttonType = {
+			name = "state_33"
+			position = { x = 55 y = 8 }
+			quadTextureSprite = "GFX_aqu_state_33"
+			frame = 2
+		}
+		buttonType = {
+			name = "state_32"
+			position = { x = 153 y = 17 }
+			quadTextureSprite = "GFX_aqu_state_32"
+            frame = 2
+		}
+		buttonType = {
+			name = "state_31"
+			position = { x = 175 y = 109 }
+			quadTextureSprite = "GFX_aqu_state_31"
+            frame = 2
+		}
+    }
+}

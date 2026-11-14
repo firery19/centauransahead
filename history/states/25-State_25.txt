@@ -49,10 +49,10 @@ state={
 				bunker = 4
 			}
 			2462 = {
-				bunker = 6
+				bunker = 3
 			}
 			4718 = {
-				bunker = 6
+				bunker = 3
 			}
 		}
 		victory_points = {

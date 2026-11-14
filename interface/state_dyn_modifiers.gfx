@@ -1,0 +1,20 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_dmod_resistance1"
+		texturefile = "gfx/interface/state_modifiers/modifiers_resistance1.dds"
+	}
+	spriteType = {
+		name = "GFX_dmod_resistance2"
+		texturefile = "gfx/interface/state_modifiers/modifiers_resistance2.dds"
+	}
+	spriteType = {
+		name = "GFX_dmod_resistance3"
+		texturefile = "gfx/interface/state_modifiers/modifiers_resistance3.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_shovel"
+		texturefile = "gfx/interface/state_modifiers/modifiers_shovel.dds"
+	}
+
+}
+ 

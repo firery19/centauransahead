@@ -6,50 +6,43 @@ state={
 	history={
 		owner = AQU
 		add_core_of = AQU
+		add_core_of = LEO
+		add_dynamic_modifier = { 
+			modifier = leonite_core_state_modifier
+		}
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 			1920 = {
 				bunker = 3
-
 			}
 			4898 = {
 				bunker = 3
-
 			}
-			4886 = {
+			4923 = {
 				bunker = 3
-
+			}
+			1061 = {
+				bunker = 3
 			}
 			4793 = {
 				bunker = 1
-
 			}
 			2485 = {
 				bunker = 1
-
 			}
 			2768 = {
 				bunker = 1
-
 			}
 			4544 = {
 				bunker = 1
-
-			}
-			1929 = {
-				bunker = 1
-
 			}
 			4434 = {
 				bunker = 1
-
 			}
 			4377 = {
 				bunker = 1
-
 			}
-
 		}
 		1944.1.1.12 = {
 			owner = ANT
@@ -61,14 +54,13 @@ state={
 		victory_points = {
 			4492 10
 		}
-
 	}
 
 	provinces={
-		698 1687 1920 1929 1948 2022 2485 2768 2856 4377 4398 4406 4434 4453 4492 4544 4619 4700 4752 4785 4793 4852 4886 4898 
+		698 1061 1687 1920 1929 1948 2022 2485 2768 2856 4434 4453 4492 4544 4619 4700 4752 4785 4793 4852 4886 4898 4923 
 	}
 	manpower=4705118
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 	local_supplies=0.000
 }

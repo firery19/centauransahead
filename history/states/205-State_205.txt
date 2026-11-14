@@ -13,13 +13,13 @@ state={
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		1944.1.1.12 = {
-			owner = RIA
-			controller = RIA
-		}
+	#	1944.1.1.12 = {
+	#		owner = RIA
+	#		controller = RIA
+	#	}
 	}
 	provinces={
-		138 817 1191 1309 2133 3061 3090 3108 3726 3746 
+		817 1191 1309 2133 3061 3090 3108 3746 
 	}
 	manpower=3830209
 	state_category=rural

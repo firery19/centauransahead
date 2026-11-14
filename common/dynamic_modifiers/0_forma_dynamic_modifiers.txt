@@ -26,6 +26,51 @@
 #	can be added to countries, states or unit leaders
 #	will only updated daily, unless forced by force_update_dynamic_modifier effect
 
+army_limiter_forma = { # NATIONAL_IDEA!!!!!!!!!!
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	army_attack_factor = cap_exceeded_attack
+	max_planning_factor = cap_exceeded_planning
+	army_org_regain = cap_exceeded_org
+	army_org_factor = cap_exceeded_org_regain
+	max_dig_in_factor = cap_exceeded_entrenchment
+}
+## roughly related, /\ top one is preventing too much troops by hard limit, the \/ bottom is nerfing big population nations that have rural states
+rural_manpower_destruction_0_modifier = { #State Modifier, 0% infrastructure
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_defense
+	recruitable_population_factor = -0.8
+	production_speed_buildings_factor = -0.2
+}
+rural_manpower_destruction_1_modifier = { #State Modifier, 20% infrastructure
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_defense
+	recruitable_population_factor = -0.6
+	production_speed_buildings_factor = -0.1
+}
+rural_manpower_destruction_2_modifier = { #State Modifier, 40% infrastructure
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_defense
+	recruitable_population_factor = -0.5
+	production_speed_buildings_factor = -0.05
+}
+rural_manpower_destruction_3_modifier = { #State Modifier, 60% infrastructure
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_defense
+	recruitable_population_factor = -0.35
+}
+rural_manpower_destruction_4_modifier = { #State Modifier, 80% infrastructure
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_defense
+	recruitable_population_factor = -0.15
+}
+
 COV_southern_offensive_modifier = { #STATE MODIFIER
 	enable = { always = yes }
 
@@ -78,6 +123,7 @@ VEG_murus_plateau_modifier = { #State Modifier
 	attacker_modifier = yes
 
 	icon = GFX_decision_generic_mountain_fortification
+	state_bunker_max_level_terrain_limit = 2
 	air_cas_present_factor = -0.5
 	army_attack_factor = -0.5
 	army_speed_factor = -0.2
@@ -126,7 +172,7 @@ tundra_dynamic_modifier = { #State Modifier
 
 	icon = GFX_modifiers_generic_defense
 	army_attack_factor = -0.5
-	army_speed_factor = -0.5
+	army_speed_factor = -0.75
 }
 
 rural_unurban_modifier = { #State Modifier
@@ -148,4 +194,75 @@ unplanned_offensive = { #State Modifier
 	army_speed_factor = -0.75
 	ground_attack_factor = -0.75
 	local_org_regain = -0.5
+}
+
+leonite_core_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_dmod_resistance3
+
+	attrition_for_controller = 0.1
+	local_supplies = -0.5
+	local_factories = -0.2
+	state_production_speed_buildings_factor = -0.1
+	local_manpower = -0.5
+
+}
+
+leonite_peripheral_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_dmod_resistance1
+
+	attrition_for_controller = 0.05
+	local_supplies = -0.25
+	local_factories = -0.0
+	state_production_speed_buildings_factor = -0.0
+	local_manpower = -0.25
+
+}
+
+eridanus_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_dmod_resistance1
+
+	local_supplies = -0.1
+	local_factories = -0.1
+	state_production_speed_buildings_factor = -0.05
+	local_manpower = -0.15
+
+}
+
+corvun_core_state_modifier = {
+	enable = { always = yes }
+	icon = GFX_dmod_resistance3
+
+	attrition_for_controller = 0.125
+	local_supplies = -0.5
+	state_production_speed_buildings_factor = -0.05
+	army_speed_factor = -0.3
+	army_defense_factor = -0.25
+	local_manpower = -0.35
+
+}
+
+corvun_core_state_2_modifier = {
+	enable = { always = yes }
+	icon = GFX_dmod_resistance3
+
+	attrition_for_controller = 0.05
+	local_supplies = -0.15
+	army_speed_factor = -0.15
+	army_defense_factor = -0.1
+	local_manpower = -0.2
+
+}
+
+skorpii_claim_modifier = {
+	enable = { always = yes }
+	icon = GFX_dmod_resistance3
+
+	local_supplies = -0.75
+	army_speed_factor = -0.05
+	army_defense_factor = -0.15
+	local_manpower = -0.05
+
 }

@@ -1491,13 +1491,45 @@ ANT_skorpii_management_category = {
 		icon = GFX_decision_generic_form_nation
 
 		available = {
-			owns_state = 1
-		}
+			#grusa /mainland/
+			controls_state = 11
+			controls_state = 30
+			controls_state = 29
+			controls_state = 210
+			controls_state = 211
+			controls_state = 208
+			#vegan states
+			controls_state = 10
+			controls_state = 215
+			controls_state = 26
+			controls_state = 217
+			controls_state = 216
+			controls_state = 214
+			controls_state = 25
+			controls_state = 27
+			}
 
 		visible = {
 		OR = {
-			owns_state = 1
-			is_debug = yes
+			AND = {
+				#grusa /mainland/
+				controls_state = 11
+				controls_state = 30
+				controls_state = 29
+				controls_state = 210
+				controls_state = 211
+				controls_state = 208
+				#vegan states
+				controls_state = 10
+				controls_state = 215
+				controls_state = 26
+				controls_state = 217
+				controls_state = 216
+				controls_state = 214
+				controls_state = 25
+				controls_state = 27
+				}
+				is_debug = yes
 			}
 		}
 		
@@ -1523,38 +1555,75 @@ ANT_skorpii_management_category = {
 							}
 							is_owned_by = ANT
 						}
-						BCH = {
+						GRS = {
 							transfer_state = PREV
 						}
 					}
-					95 = { add_core_of = BCH }
+					10 = { add_core_of = GRS }
+					25 = { add_core_of = GRS }
+					26 = { add_core_of = GRS }
+					27 = { add_core_of = GRS }
+					28 = { add_core_of = GRS }
+					214 = { add_core_of = GRS }
+					215 = { add_core_of = GRS }
+					216 = { add_core_of = GRS }
+					217 = { add_core_of = GRS }
 			}
-			release_on_controlled = BCH
-			BCH = {
-				set_state_controller = 95
-				set_state_owner = 95
+			release_on_controlled = GRS
+			GRS = {
+				set_state_owner = 10
+				set_state_owner = 25
+				set_state_owner = 26
+				set_state_owner = 27
+				set_state_owner = 28
+				set_state_owner = 214
+				set_state_owner = 215
+				set_state_owner = 216
+				set_state_owner = 217
+				promote_character = GRS_xavier_navarro
+				add_party_popularity = {
+					ideology = auth_dem
+					popularity = 88
+				}
+				set_politics = {
+					ruling_party = auth_dem
+					elections_allowed = no
+				}
 				ANT = {
-					puppet = PREV
+					#puppet = PREV
 					set_autonomy = { target = PREV autonomy_state = autonomy_skorpii  end_wars = no end_civil_wars = no }
 				}
-
-			#	set_cosmetic_tag = BCH
-		#		create_country_leader = {
-			#		name = "Hitori Gotoh"
-		#			desc = "POLITICS_HITORI_GOTOH_DESC"
-			#		picture = GFX_portrait_Hitori_Gotoh
-				#	expire = "1999.1.1"
-		#			ideology = conservatism
-				#	traits = {
-				#	}
-			#	}
+				hidden_effect = {
+				load_focus_tree = generic_shared
+				retire_character = GRS_fernan_flamenco
+				#remove_ideas = GRS_the_flamenco_dynasty_idea
+				#remove_ideas = GRS_devastation_at_cabo_vesca_idea # < once they get added, add them back in
+				set_state_controller = 10
+				set_state_controller = 25
+				set_state_controller = 26
+				set_state_controller = 27
+				set_state_controller = 28
+				set_state_controller = 214
+				set_state_controller = 215
+				set_state_controller = 216
+				set_state_controller = 217
+				#set_party_name = { ideology = neutrality long_name = GRS_gov_of_navarro_long name = GRS_gov_of_navarro }
+				country_event = { id = formageneric.swap days = 0 }
+				}
 			}
 		}
 		
 		ai_will_do = {
 			base = 10
-			modifier = { NOT = { AND = { country_exists = GRS country_exists = VEG } factor = 0 }
-			
+			modifier = {
+			NOT = {
+				AND = { 
+					country_exists = GRS 
+					country_exists = VEG 
+					}
+				}
+			factor = 0 
+			}
 		}
 	}
 }

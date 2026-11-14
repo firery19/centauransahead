@@ -1,0 +1,125 @@
+characters = {
+	LEO_cyrus={
+		name= "Grand Regent-Marshal Cyrus"
+        portraits = {
+            civilian = {
+                large = GFX_portrait_LEO_cyrus
+            }
+        }
+		country_leader = {
+			ideology = ultranationalism
+			traits = { GER_supreme_commander_armed_forces }
+			expire = "1920.1.1.1"
+			id = -1
+		}
+		
+		portraits={
+			army={
+				small= GFX_portrait_LEO_cyrus_small
+			}
+			army={
+				large= GFX_portrait_LEO_cyrus
+			}
+		}
+
+		advisor={
+			slot = army_chief
+			idea_token = LEO_cyrus
+			ledger = army
+				allowed = {
+					original_tag = LEO
+				}
+				traits = {
+					army_chief_defensive_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+
+		field_marshal={
+			traits={ harsh_leader inspirational_leader }
+			skill=3
+			attack_skill=1
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	LEO_leo_third = {
+		name = "Leo III"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_LEO_kid_emperor
+				small = GFX_portrait_LEO_leo3_small
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			expire = "1920.1.1.1"
+			id = -1
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = LEO_leo_third
+			allowed  = {
+				original_tag  = LEO
+			}
+			traits  = {
+				popular_figurehead
+			}
+		}
+	}	
+	
+	LEO_darius_vance = {
+		name = "Darius Vance"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_LEO_darius_vance
+				small = GFX_portrait_LEO_darius_vance_small
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			traits = { LEO_moderate_technocrat }
+			expire = "1920.1.1.1"
+			id = -1
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = LEO_darius_vance
+			allowed  = {
+				original_tag  = LEO
+			}
+			traits  = {
+				GER_adaptive_engineer
+			}
+		}
+	}	
+	
+	LEO_bardiya_kian = {
+		name = "Bardiya Kian"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_LEO_darius_vance
+				small = GFX_idea_LAT_krisjanis_berkis
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = LEO_darius_vance
+			allowed  = {
+				original_tag  = LEO
+			}
+			traits  = {
+				prince_of_terror
+			}
+		}
+	}

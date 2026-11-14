@@ -15,6 +15,9 @@
 			ship = { name = "FUS Alkafzah" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
 			ship = { name = "FUS Borealis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
 			ship = { name = "FUS Carlina" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Pike" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Trebuchet" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Catapult" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
 		}
 		task_force = {				
 			name = "Western Command"
@@ -23,10 +26,21 @@
 			ship = { name = "FUS Mirzam" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = URS version_name = "Gomyesa Class" } } }
 			ship = { name = "FUS Aludra" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = URS version_name = "Gomyesa Class" } } }
 			ship = { name = "FUS Unurgunite" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = URS version_name = "Gomyesa Class" } } }
+			ship = { name = "FUS Elisey" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Elizaveta" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Erast" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Evdokiya" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Filipp" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Galina" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Galenos" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Georgiy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Grigori" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Isay" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Irina" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Ioann" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Liza" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
 		}
 	}
-	
-	
 	
 	fleet = {
 		name = "Canisian Fleet"
@@ -35,6 +49,27 @@
 			name = "Alcor Command"
 			location = 1631
 			ship = { name = "FUS Wezen" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = URS version_name = "Gomyesa Class" } } }
+			ship = { name = "FUS Maria" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Alya" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Emiliya" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Azaliya" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Feodora" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Ignatiy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Igor" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+		}
+	}
+	
+	fleet = {
+		name = "Northern Fleet"
+		naval_base = 6519
+		task_force = {				
+			name = "Arctic Command"
+			location = 6519
+			ship = { name = "FUS Tarelka" definition = battleship equipment = { ship_hull_cruiser_1 = { amount = 1 owner = URS version_name = "KL1 Class" } } }
+			ship = { name = "FUS Dimka" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Diomid" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Dmitry" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
+			ship = { name = "FUS Dorofei" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = URS version_name = "Tania Class" } } }
 		}
 	}
 			
@@ -45,13 +80,13 @@ instant_effect = {
 ### Under Construction Notes ###
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_2
+			type = ship_hull_light_1
 			creator = "URS" 
-			version_name = "Potamoi Class"
+			version_name = "Tania Class"
 		}
-		name = "CIS Fish"
+		name = "FUS Something"
 		requested_factories = 2
-		progress = 0.79
+		progress = 0.99
 		amount = 1
 	}
 }

@@ -57,6 +57,7 @@
  VICTORY_POINTS_21:0 "Coronis"
  ## cetus proper
  VICTORY_POINTS_5032:0 "St. Kirk"
+ VICTORY_POINTS_5114:0 "Goldcrest"
  VICTORY_POINTS_5136:0 "Carran"
  VICTORY_POINTS_5161:0 "Mira"
  VICTORY_POINTS_4916:0 "Menkar"
@@ -145,6 +146,9 @@
  VICTORY_POINTS_6055:0 "Glarea"
  VICTORY_POINTS_257:0 "Gladita"
  VICTORY_POINTS_5845:0 "Drausas"
+ #Ananteria districts (LARP!!!!)
+ VICTORY_POINTS_1264:0 "Southern Ananteria"
+ VICTORY_POINTS_2960:0 "Urbus Orientalis"
  #Norma
  VICTORY_POINTS_5731:0 "Leto"
  VICTORY_POINTS_6069:0 "Whitekrest"
@@ -438,6 +442,7 @@
  VICTORY_POINTS_3566:0 "Dosada Island"
  VICTORY_POINTS_6623:0 "Akula Islands"
  VICTORY_POINTS_6669:0 "Zmeya Island"
+ VICTORY_POINTS_6665:0 "Krysa"
  VICTORY_POINTS_6594:0 "Bespolenzy Islands" # the islands got merged accidentally
  
  

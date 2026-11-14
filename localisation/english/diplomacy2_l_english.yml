@@ -1,0 +1,9 @@
+﻿l_english:
+ DIPLOMACY_MESSAGE_ACCEPTED_TITLE_DIPLOMACY_LEND_LEASE:2 "Material Support Accepted"
+ DIPLOMACY_MESSAGE_ACCEPTED_MESSAGE_DIPLOMACY_LEND_LEASE:1 "\n§Y$COUNTRY|U$§! has §Gaccepted§! our material support.\n\nOur material support will help their efforts."
+ DIPLOMACY_MESSAGE_DECLINED_TITLE_DIPLOMACY_LEND_LEASE:2 "Material Support Refused"
+ DIPLOMACY_MESSAGE_DECLINED_MESSAGE_DIPLOMACY_LEND_LEASE:1 "\n§Y$COUNTRY|U$§! has §Rrefused§! our material support!\n\nThey will not have our material support."
+ DIPLOMACY_MESSAGE_ACCEPTED_TITLE_DIPLOMACY_LEND_LEASE_EXISTING:0 "Modified Material Support Accepted"
+ DIPLOMACY_MESSAGE_ACCEPTED_MESSAGE_DIPLOMACY_LEND_LEASE_EXISTING:1 "\n§Y$COUNTRY|U$§! has §Gaccepted§! our modified material support.\n\nOur continued material support helps their efforts."
+ DIPLOMACY_MESSAGE_DECLINED_TITLE_DIPLOMACY_LEND_LEASE_EXISTING:0 "Modified Material Support Refused"
+ DIPLOMACY_MESSAGE_DECLINED_MESSAGE_DIPLOMACY_LEND_LEASE_EXISTING:1 "\n§Y$COUNTRY|U$§! has §Rrefused§! our modified material support!\n\nThey will no longer have our material support."

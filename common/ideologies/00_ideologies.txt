@@ -1,5 +1,64 @@
 ideologies = {
 ### non aligned
+	fascism = {
+
+		types = {
+
+			ultranationalism = {
+			}
+
+			gen_nazism = {
+			}
+
+			fascism_ideology = {
+			}
+
+			falangism = {
+			}
+
+			rexism = {
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_FASCIST_1"
+			"FACTION_NAME_FASCIST_2"
+			"FACTION_NAME_FASCIST_3"
+			"FACTION_NAME_FASCIST_4"
+			"FACTION_NAME_FASCIST_5"
+		}
+
+	#	color = { 150 75 0 }
+	#	color = { 75 60 40 }
+		color = { 50 45 40 }
+
+		war_impact_on_world_tension = 1.0			#evil!
+		faction_impact_on_world_tension = 1.0
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+
+		can_collaborate = yes
+
+		modifiers = {
+			justify_war_goal_when_in_major_war_time = -0.80
+			civilian_intel_to_others = 15.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+			hidden_modifier = { join_faction_tension = -0.1 }
+			embargo_cost_factor = 1
+			lend_lease_tension = 0.50
+		}
+
+		ai_fascist = yes # uses the fascist AI behaviour
+		ai_ideology_wanted_units_factor = 1.65
+	}
+
+
 	neutrality = {		# monarchy
 
 		types = {
@@ -65,6 +124,8 @@ ideologies = {
 	auth_dem = {		# authoritarian democratic (provisional government, one-party democracy, civilian dictatorship etc.)
 
 		types = {
+			authoritarian_democratic = {
+			}
 
 		#	despotism  = {
 		#	}
@@ -139,7 +200,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 
-		color = { 0 0 255 }
+		color = { 40 50 230 }
 
 		rules = {
 			can_create_collaboration_government = no
@@ -198,7 +259,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 
-		color = { 255 255 0 }
+		color = { 240 240 70 }
 
 		rules = {
 			can_create_collaboration_government = no
@@ -258,7 +319,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 
-		color = { 255 0 0 }
+		color = { 220 0 30 }
 
 		rules = {
 			can_create_collaboration_government = no
@@ -326,7 +387,7 @@ ideologies = {
 			"FACTION_NAME_COMMUNIST_5"
 		}
 
-		color = { 150 0 0 }
+		color = { 140 20 20 }
 
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -359,60 +420,4 @@ ideologies = {
 
 	}
 ### other
-	fascism = {
-
-		types = {
-
-			nazism = {
-			}
-
-			gen_nazism = {
-			}
-
-			fascism_ideology = {
-			}
-
-			falangism = {
-			}
-
-			rexism = {
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_FASCIST_1"
-			"FACTION_NAME_FASCIST_2"
-			"FACTION_NAME_FASCIST_3"
-			"FACTION_NAME_FASCIST_4"
-			"FACTION_NAME_FASCIST_5"
-		}
-
-		color = { 150 75 0 }
-
-		war_impact_on_world_tension = 1.0			#evil!
-		faction_impact_on_world_tension = 1.0
-
-		rules = {
-			can_force_government = yes
-			can_send_volunteers = yes
-			can_puppet = yes
-		}
-
-		can_collaborate = yes
-
-		modifiers = {
-			justify_war_goal_when_in_major_war_time = -0.80
-			civilian_intel_to_others = 15.0
-			army_intel_to_others = 10.0
-			navy_intel_to_others = 10.0
-			airforce_intel_to_others = 10.0
-			hidden_modifier = { join_faction_tension = -0.1 }
-			embargo_cost_factor = 1
-			lend_lease_tension = 0.50
-		}
-
-		ai_fascist = yes # uses the fascist AI behaviour
-		ai_ideology_wanted_units_factor = 1.65
-	}
-
 }

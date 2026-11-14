@@ -11,6 +11,9 @@ state={
 		owner = GEM
 		add_core_of = GEM
 		add_core_of = ORI
+1901.1.1 = {
+	owner = ORI
+}
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
@@ -29,4 +32,6 @@ state={
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000
+
+
 }

@@ -1,0 +1,130 @@
+AQU_election_frame_count = {
+    set_variable = { AQU_blue_frame = 0 }
+    set_variable = { AQU_yellow_frame = 0 }
+    set_variable = { AQU_blue_wins = 0 }
+
+
+
+
+
+#THE CODE UNDER HERE IS TO COUNT WHO HAVE MORE STATES
+############
+    if = {
+        limit = { check_variable = { AQU_state_38_alignment = 3 } }
+        add_to_variable = { AQU_blue_frame = 1 }
+    }
+    else_if = {
+        limit = { check_variable = { AQU_state_38_alignment = 2 } }
+        add_to_variable = { AQU_yellow_frame = 1 }
+    }
+#############
+    if = {
+        limit = { check_variable = { AQU_state_156_alignment = 3 } }
+        add_to_variable = { AQU_blue_frame = 1 }
+    }
+    else_if = {
+        limit = { check_variable = { AQU_state_156_alignment = 2 } }
+        add_to_variable = { AQU_yellow_frame = 1 }
+    }
+#############
+    if = {
+        limit = { check_variable = { AQU_state_9_alignment = 3 } }
+        add_to_variable = { AQU_blue_frame = 1 }
+    }
+    else_if = {
+        limit = { check_variable = { AQU_state_9_alignment = 2 } }
+        add_to_variable = { AQU_yellow_frame = 1 }
+    }
+#############
+    if = {
+        limit = { check_variable = { AQU_state_36_alignment = 3 } }
+        add_to_variable = { AQU_blue_frame = 1 }
+    }
+    else_if = {
+        limit = { check_variable = { AQU_state_36_alignment = 2 } }
+        add_to_variable = { AQU_yellow_frame = 1 }
+    }
+#############
+    if = {
+        limit = { check_variable = { AQU_state_35_alignment = 3 } }
+        add_to_variable = { AQU_blue_frame = 1 }
+    }
+    else_if = {
+        limit = { check_variable = { AQU_state_35_alignment = 2 } }
+        add_to_variable = { AQU_yellow_frame = 1 }
+    }
+#############
+    if = {
+        limit = { check_variable = { AQU_state_37_alignment = 3 } }
+        add_to_variable = { AQU_blue_frame = 1 }
+    }
+    else_if = {
+        limit = { check_variable = { AQU_state_37_alignment = 2 } }
+        add_to_variable = { AQU_yellow_frame = 1 }
+    }
+#############
+    if = {
+        limit = { check_variable = { AQU_state_228_alignment = 3 } }
+        add_to_variable = { AQU_blue_frame = 1 }
+    }
+    else_if = {
+        limit = { check_variable = { AQU_state_228_alignment = 2 } }
+        add_to_variable = { AQU_yellow_frame = 1 }
+    }
+#############
+    if = {
+        limit = { check_variable = { AQU_state_34_alignment = 3 } }
+        add_to_variable = { AQU_blue_frame = 1 }
+    }
+    else_if = {
+        limit = { check_variable = { AQU_state_34_alignment = 2 } }
+        add_to_variable = { AQU_yellow_frame = 1 }
+    }
+#############
+    if = {
+        limit = { check_variable = { AQU_state_152_alignment = 3 } }
+        add_to_variable = { AQU_blue_frame = 1 }
+    }
+    else_if = {
+        limit = { check_variable = { AQU_state_152_alignment = 2 } }
+        add_to_variable = { AQU_yellow_frame = 1 }
+    }
+#############
+    if = {
+        limit = { check_variable = { AQU_state_33_alignment = 3 } }
+        add_to_variable = { AQU_blue_frame = 1 }
+    }
+    else_if = {
+        limit = { check_variable = { AQU_state_33_alignment = 2 } }
+        add_to_variable = { AQU_yellow_frame = 1 }
+    }
+#############
+    if = {
+        limit = { check_variable = { AQU_state_32_alignment = 3 } }
+        add_to_variable = { AQU_blue_frame = 1 }
+    }
+    else_if = {
+        limit = { check_variable = { AQU_state_32_alignment = 2 } }
+        add_to_variable = { AQU_yellow_frame = 1 }
+    }
+#############
+    if = {
+        limit = { check_variable = { AQU_state_31_alignment = 3 } }
+        add_to_variable = { AQU_blue_frame = 1 }
+    }
+    else_if = {
+        limit = { check_variable = { AQU_state_31_alignment = 2 } }
+        add_to_variable = { AQU_yellow_frame = 1 }
+    }
+#############
+
+
+#THE CODE UNDER IS TO COMPARE THE TWO AND FIND A WINNER
+    if = {
+        limit = { check_variable = { AQU_blue_frame > AQU_yellow_frame } }
+        set_variable = { AQU_blue_wins = 1 }	
+    }
+    else = {
+        set_variable = { AQU_blue_wins = 0 }
+    }
+}

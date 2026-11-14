@@ -31,9 +31,9 @@ bookmarks = {
 				ORS_PrioritizedMilitary
 			}
 			focuses = {
-				#ORS_Elections
+				ORS_Elections
 				ORS_InvadeCanis
-				#ORS_TheHard1900s
+				ORS_TheHard1900s
 			}
 		}
 		CET = {
@@ -43,7 +43,7 @@ bookmarks = {
 			ideas = {
 				CET_rules_the_waves_idea
 				CET_SC_question_idea
-#				CET_independent_armed_forces_idea
+				CET_independent_armed_forces_idea
 			}
 			focuses = {
 				CET_strengthen_monarch
@@ -93,6 +93,37 @@ bookmarks = {
 			HYS_dragon_compact
 			}
 		}
+		CLB = {
+
+			history = CLB_1900_DESC
+			minor = yes
+			ideology = neutrality
+			ideas = {
+				CLB_looming_miner_strike_idea
+				CLB_disjointed_country_dynamic
+				CLB_underfunded_armed_forces_dynamic
+			}
+			focuses = {
+				CLB_development_plan
+				CLB_continue_miron_blackwell's_socialist_government
+				CLB_state_of_siege
+			}
+		}
+		AQU = {
+
+			history = AQU_1900_DESC
+			ideology = democratic
+			ideas = {
+				AQU_dummy_idea_iron_army
+				AQU_dummy_idea_civil_guard
+				AQU_lucas_silva_idea
+			}
+			focuses = {
+				AQU_2nd_Antarean_Aquilan_war_defend
+				AQU_hold_the_ring_of_fire_at_all_cost
+				AQU_address_the_parliament
+			}
+		}
 		RIA = {
 			history = RIA_1900_DESC
 			ideology = neutrality
@@ -101,34 +132,147 @@ bookmarks = {
 				RIA_industrialisation
 			}
 		}
+		GRS = {
+			minor = yes
+			history = GRS_1900_DESC
+			ideology = neutrality
+			ideas = {
+			GRS_desert_warriors_idea
+			GRS_devastation_at_cabo_vesca_idea
+			GRS_emptiness_of_the_interior
+			}
+			focuses = {
+			GRS_accept_the_loss_at_cabo_vesca
+			GRS_war_start
+			}
+		}
 		LBR = {
+			minor = yes
+			history = LBR_1900_DESC
+			ideology = auth_dem
+			ideas = {
+			LBR_isolation_policy_idea
+			}
+		}
+		VEG = {
+			minor = yes
+			history = VEG_1900_DESC
+			ideology = neutrality
+			ideas = {
+			VEG_queens_blessing_idea
+			VEG_protected_by_murus_idea
+			}
+		}
+		TUC = {
+			minor = yes
+			history = TUC_1900_DESC
+			ideology = neutrality
+		}
+		CTA = {
+			minor = yes
+			history = CTA_1900_DESC
+			ideology = neutrality
+			ideas = {
+				CTA_democratic_bastion_idea
+			}
+		}
+		VUL = {
+			minor = yes
+			history = VUL_1900_DESC
+			ideology = neutrality
+		}
+		AUR = {
+			minor = yes
+			history = AUR_1900_DESC
+			ideology = neutrality
+		}
+		LAC = {
+			minor = yes
+			history = LAC_1900_DESC
+			ideology = neutrality
+		}
+		MUS = {
+			minor = yes
+			history = MUS_1900_DESC
+			ideology = neutrality
+		}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+	bookmark = {
+		name = "FORMAN_WAR_NAME"
+		desc = "FORMAN_WAR_DESC"
+		date = 1947.1.1.12
+		picture = "GFX_select_date_1947"
+		default_country = ORI
+		default = no
+		
+		ANT = {
+			history = ANT_1947_DESC
+			ideology = neutrality
+		}
+		ORI = {
+			history = ORI_1947_DESC
+			ideology = democratic
+		}
+		
+		AQU = {
+			history = AQU_1900_DESC
+			ideology = democratic
+			ideas = {
+				AQU_dummy_idea_iron_army
+				AQU_dummy_idea_civil_guard
+				AQU_lucas_silva_idea
+			}
+			focuses = {
+				AQU_2nd_Antarean_Aquilan_war_defend
+				AQU_hold_the_ring_of_fire_at_all_cost
+				AQU_address_the_parliament
+			}
+		}
+		
+		COV = {
+			history = COV_1947_DESC
+			ideology = neutrality
+		}
+		URS = {
+			history = URS_1947_DESC
+			ideology = neutrality
+		}
+		HYS = {
+			history = HYS_1947_DESC
+			ideology = democratic_left
+		}
+		RIA = {
+			history = RIA_1947_DESC
+			ideology = fascism
+		}
+		
+		
+		LBR = {
+            minor = yes
 			history = LBR_1900_DESC
 			ideology = neutrality
 			ideas = {
 			LBR_isolation_policy_idea
 			}
 		}
-		AQU = {
-            minor = yes
-			history = AQU_1900_DESC
-			ideology = democratic
-			ideas = {
-				AQU_iron_army_idea
-				AQU_lucas_silva_idea
-				AQU_rusting_army_idea
-			}
-			focuses = {
-				AQU_fort_management
-				AQU_civil_guard
-				AQU_army_modernisation
-			}
-		}
+		
 		GRS = {
-            minor = yes
-			history = GRS_1900_DESC
+			minor = yes
+			history = GRS_1947_DESC
 			ideology = neutrality
 			ideas = {
 			GRS_desert_warriors_idea
+			GRS_devastation_at_cabo_vesca_idea
+			GRS_emptiness_of_the_interior
+			focuses = { 
+			GRS_accept_the_loss_at_cabo_vesca
+			}
 			}
 		}
 		VEG = {
@@ -141,47 +285,42 @@ bookmarks = {
 			}
 		}
 		CLB = {
-            minor = yes
-			history = CLB_1900_DESC
-			ideology = neutrality
-		}
-		TUC = {
-            minor = yes
-			history = TUC_1900_DESC
-			ideology = neutrality
-		}
-		CTA = {
-            minor = yes
-			history = CTA_1900_DESC
-			ideology = neutrality
-			ideas = {
-				CTA_democratic_bastion_idea
-			}
-		}
-		VUL = {
-            minor = yes
-			history = VUL_1900_DESC
-			ideology = neutrality
+			minor = yes
+			history = CLB_1947_DESC
+			ideology = auth_dem
 		}
 		AUR = {
-            minor = yes
-			history = AUR_1900_DESC
-			ideology = neutrality
-		}
-		LAC = {
-            minor = yes
-			history = LAC_1900_DESC
-			ideology = neutrality
+			minor = yes
+			history = AUR_1947_DESC
+			ideology = democratic
 		}
 		MUS = {
-            minor = yes
-			history = MUS_1900_DESC
+			minor = yes
+			history = MUS_1947_DESC
 			ideology = neutrality
 		}
 
 		effect = {
-			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			randomize_weather = 22344 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
+			HYS = {
+				set_cosmetic_tag = HYR
+			}
+			ANT = {
+				set_cosmetic_tag = ANTRED
+				puppet = {
+					target = COV
+				}
+				puppet = {
+					target = RIA
+				}
+				puppet = {
+					target = GRS
+				}
+				puppet = {
+					target = CLB
+				}
+			}
 		}
 	}
 }

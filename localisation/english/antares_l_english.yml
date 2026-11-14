@@ -23,7 +23,7 @@
  ANT_integrate_n_cetus_region:0 "Integrate [40.GetName]"
  ANT_integrate_ne_cetus_region:0 "Integrate [39.GetName]"
  ANT_integrate_andromeda_region:0 "Integrate [49.GetName]"
- ANT_reintegrate_s_andromeda_region:0 "Reintegrate [94.GetName]"
+ ANT_integrate_s_andromeda_region:0 "Integrate [94.GetName]"
  ANT_reintegrate_n_lepus_region:0 "Reintegrate [35.GetName]"
  ANT_reintegrate_aquilan_coast_region:0 "Reintegrate [31.GetName]"
  ANT_integrate_s_aquila_region:0 "Integrate [36.GetName]"
@@ -34,7 +34,10 @@
  ANT_integrate_n_aquila_region:0 "Integrate [33.GetName]"
  ANT_integrate_murus_aquila_region:0 "Integrate [32.GetName]"
  ANT_integrate_cet_occulum_region:0 "Integrate [50.GetName]"
+ ANT_reintegrate_pristis_plains:0 "Reintegrate [229.GetName]"
+ ANT_integrate_c_cetus_east_region:0 "Integrate [230.GetName]"
+ ANT_integrate_n_cetus_west_region:0 "Integrate [231.GetName]"
  ant_volucris_region:0 "Volucris Region"
  ant_mira_region:0 "Mira Region"
  ant_mira_region_2:0 "Northwestern Skorpius"
- #this file is unnused, use the antares_focus_l_english.yml file instead # NO
+ #this file is unnused, use the antares_focus_l_english.yml file instead # NO <-- what about the events

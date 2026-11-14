@@ -108,6 +108,51 @@ spriteTypes = {
 		name = "GFX_portrait_CET_frederick_scapha"
 		texturefile = "gfx/leaders/CET/portrait_CET_Frederick_Scapha.dds"
 	}
+
+	spriteType = {
+		name = "GFX_portrait_CET_william_rayman"
+		texturefile = "gfx/leaders/CET/portrait_CET_william_rayman.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_CET_robert_parker"
+		texturefile = "gfx/leaders/CET/portrait_CET_robert_parker.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_CET_raymond_cooper"
+		texturefile = "gfx/leaders/CET/portrait_CET_raymond_cooper.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_CET_issac_thomas"
+		texturefile = "gfx/leaders/CET/portrait_CET_issac_thomas.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_CET_johannes_robinson"
+		texturefile = "gfx/leaders/CET/portrait_CET_johannes_robinson.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_CET_patrick_adams"
+		texturefile = "gfx/leaders/CET/portrait_CET_patrick_adams.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_CET_lewis_arthur"
+		texturefile = "gfx/leaders/CET/portrait_CET_lewis_arthur.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_CET_karl_chester"
+		texturefile = "gfx/leaders/CET/portrait_CET_karl_chester.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_CET_theodore_charleston"
+		texturefile = "gfx/leaders/CET/portrait_CET_theodore_charleston.dds"
+	}
 	
 	# corvus
 
@@ -117,7 +162,12 @@ spriteTypes = {
 	}
 
 	# aquila
-
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_lucas_silva"
+		texturefile = "gfx/leaders/AQU/portrait_AQU_lucas_silva.dds"
+	}
+	
 	spriteType = {
 		name = "GFX_portrait_AQU_ewan_fouwler"
 		texturefile = "gfx/leaders/AQU/portrait_AQU_ewan_fouwler.dds"
@@ -132,10 +182,75 @@ spriteTypes = {
 		name = "GFX_portrait_AQU_john_aquila"
 		texturefile = "gfx/leaders/AQU/portrait_AQU_john_f_aquila.dds"
 	}
-
+	
 	spriteType = {
 		name = "GFX_portrait_AQU_john_aquila_jr"
 		texturefile = "gfx/leaders/AQU/portrait_AQU_john_f_aquila_jr.png"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_AQU_adrian_forrest"
+		texturefile = "gfx/leaders/AQU/portrait_AQU_adrian_forrest.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_adonis_estrada"
+		texturefile = "gfx/leaders/AQU/portrait_AQU_adonis_estrada.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_julian_thorne"
+		texturefile = "gfx/leaders/AQU/portrait_AQU_julian_thorne.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_henri_dubois"
+		texturefile = "gfx/leaders/AQU/portrait_AQU_henri_dubois.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_gabriel_rousseau" 
+		texturefile = "gfx/leaders/AQU/portrait_AQU_gabriel_rousseau.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_lucien_montclair"
+		texturefile = "gfx/leaders/AQU/portrait_AQU_lucien_montclair.png"
+	}
+	
+	spriteType = { 
+		name = "GFX_portrait_AQU_olivier_beaumont"
+		texturefile = "gfx/leaders/AQU/portrait_AQU_olivier_beaumont.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_gabriel_rousseau"
+		texturefile = "gfx/leaders/AQU/portrait_AQU_gabriel_rousseau.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_henri_dubois"
+		texturefile = "gfx/leaders/AQU/portrait_AQU_henri_dubois.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_lucien_montclair"
+		texturefile = "gfx/leaders/AQU/portrait_AQU_lucien_montclair.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_olivier_beaumont"
+		texturefile = "gfx/leaders/AQU/portrait_AQU_olivier_beaumont.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_lucien_montclairt"
+		texturefile = "gfx/leaders/AQU/portrait_AQU_lucien_montclair.png"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_military_council"
+		texturefile = "gfx/leaders/AQU/portrait_AQU_military_council.png"
 	}
 	
 	# vega
@@ -165,6 +280,15 @@ spriteTypes = {
         name = "GFX_portrait_GRS_emperor_valentine"
         texturefile = "gfx/leaders/GRS/portrait_GRS_emperor_valentine.dds"
     }
+    spriteType = {
+        name = "GFX_portrait_GRS_fernan_flamenco_ill"
+        texturefile = "gfx/leaders/GRS/portrait_GRS_fernan_flamenco_ill.dds"
+    } 
+    spriteType= {
+    name = "GFX_portrait_GRS_prince_valentine_small"
+    texturefile = "gfx/leaders/GRS/portrait_GRS_prince_valentine_small.dds"
+    }
+
 
 	# riaa
 	
@@ -196,10 +320,28 @@ spriteTypes = {
 		texturefile = "gfx/leaders/MUS/portrait_MUS_pavelija_vieno.dds"
 	}
 
+	###Columba
+	
+	spriteType = {
+        name = "GFX_portrait_CLB_miron_blackwell"
+        texturefile = "gfx/leaders/CLB/portrait_CLB_miron_blackwell.dds"
+    }
 
+	# leo
 
 	spriteType = {
-		name = "GFX_portrait_LGS_leader"
-		texturefile = gfx/leaders/CLB/colombia_guy.dds
-	}
+        name = "GFX_portrait_LEO_cyrus"
+        texturefile = "gfx/leaders/LEO/portrait_LEO_cyrus.dds"
+    }	
+	
+	spriteType = {
+        name = "GFX_portrait_LEO_kid_emperor"
+        texturefile = "gfx/leaders/LEO/portrait_LEO_kid_emperor.dds"
+    }	
+	
+	spriteType = {
+        name = "GFX_portrait_LEO_darius_vance"
+        texturefile = "gfx/leaders/LEO/portrait_LEO_darius_vance.dds"
+    }
+
 }

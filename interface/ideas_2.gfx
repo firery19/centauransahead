@@ -16,6 +16,10 @@ spriteTypes = {
     	name = "GFX_idea_ANT_navy_dynamic"
     	texturefile = "gfx/interface/ideas/NORDIC_navy_communist.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_ANT_conquest"
+		texturefile = "gfx/interface/ideas/idea_ANT_conquest.dds"
+	}
 	#characters
 
 	spriteType = {
@@ -27,13 +31,33 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_anna_khorin_small.dds"
 	}
 
+    # generic
+   	spriteType = {
+		name = "GFX_idea_generic_manspeak"
+		texturefile = "gfx/interface/ideas/idea_generic_manspeak.dds"
+	}
+	
+   	spriteType = {
+		name = "GFX_idea_generic_leonite_burning"
+		texturefile = "gfx/interface/ideas/idea_generic_leonite_burning_in_hell.dds"
+	}
 
+	spriteType = {
+		name = "GFX_idea_generic_money"
+		texturefile = "gfx/interface/ideas/idea_generic_money.dds"
+	}
 
 	# cetus
 	spriteType = {
 		name = "GFX_idea_cetus_rules_the_waves"
 		texturefile = "gfx/interface/ideas/idea_cetus_rules_the_waves.dds"
-	}
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_cetus_crown"
+		texturefile = "gfx/interface/ideas/idea_cetus_crown.dds"
+	}# < ----- HERE, CHOCOLATE.
+	
 	spriteType = {
 		name = "GFX_idea_CET_independent_armed_forces"
 		texturefile = "gfx/interface/ideas/idea_CET_independent_armed_forces.dds"
@@ -46,6 +70,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_CET_allocate_funds_idea"
 		texturefile = "gfx/interface/ideas/idea_CET_allocate_funds_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CET_stagnant_command"
+		texturefile = "gfx/interface/ideas/idea_CET_stagnant_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CET_logistical_nightmare"
+		texturefile = "gfx/interface/ideas/idea_CET_logistical_nightmare.dds"
 	}
 
 	# orion
@@ -106,6 +140,11 @@ spriteTypes = {
 	}
 
 	#aquila
+
+   	spriteType = {
+		name = "GFX_idea_AQU_king"
+		texturefile = "gfx/interface/ideas/idea_AQU_king.png"
+	}
 	
    	spriteType = {
 		name = "GFX_idea_AQU_national_assembly"
@@ -152,7 +191,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_AQU_com_industry.png"
 	}
 	
-   	spriteType = {
+   	spriteType = { 
 		name = "GFX_idea_AQU_iron_army"
 		texturefile = "gfx/interface/ideas/idea_AQU_iron_army.png"
 	}
@@ -162,12 +201,47 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_AQU_civil_guard.png"
 	}
 	
+   	spriteType = {
+		name = "GFX_idea_AQU_homefront"
+		texturefile = "gfx/interface/ideas/idea_AQU_homefront.dds"
+	}
 
-
+   	spriteType = {
+		name = "GFX_idea_AQU_patriot"
+		texturefile = "gfx/interface/ideas/idea_AQU_patriot.dds"
+	}
+	
+   	spriteType = {
+		name = "GFX_idea_AQU_forts"
+		texturefile = "gfx/interface/ideas/idea_AQU_forts.dds"
+	}
+	
+	# Aquila advisors ### I'm stupid and forgot where did I define them :Sob:
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_lucas_silva_small"
+		texturefile = "gfx/interface/ideas/portrait_AQU_lucas_silva_small.dds"
+	} # < ----- HERE, CHOCOLATE.
+	
 	# antares
 	spriteType = {
 		name = "GFX_idea_ANT_efficient_farming_idea"
 		texturefile = "gfx/interface/ideas/idea_ANT_farming.dds"			
+	}	
+
+	spriteType = {
+		name = "GFX_idea_ANT_army_reform"
+		texturefile = "gfx/interface/ideas/idea_ANT_army_reform.dds"			
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_ANT_pride"
+		texturefile = "gfx/interface/ideas/idea_ANT_pride.dds"			
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_ANT_develop"
+		texturefile = "gfx/interface/ideas/idea_ANT_develop.dds"			
 	}
 	
 	# vega
@@ -212,6 +286,76 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_HYS_new_army.dds"
 	}
 	
+	# leo
+	spriteType = {
+		name = "GFX_portrait_LEO_cyrus_small"
+		texturefile = "gfx/interface/ideas/portrait_LEO_cyrus_small.dds"
+	}
 	
-	#
+	spriteType = {
+		name = "GFX_idea_LEO_GAP"
+		texturefile = "gfx/interface/ideas/idea_LEO_GAP.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_LEO_leo3_small"
+		texturefile = "gfx/interface/ideas/portrait_LEO_leo3_small.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_portrait_LEO_darius_vance_small"
+		texturefile = "gfx/interface/ideas/portrait_LEO_darius_vance_small.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_LEO_infight"
+		texturefile = "gfx/interface/ideas/idea_LEO_infight.dds"
+	}
+	
+	
+	# generic
+	spriteType = {
+		name = "GFX_idea_AQU_respect_army"
+		texturefile = "gfx/interface/ideas/idea_AQU_respect_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_generic_militarism"
+		texturefile = "gfx/interface/ideas/idea_generic_militarism.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_generic_anti_aqu"
+		texturefile = "gfx/interface/ideas/idea_generic_anti_aqu.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_generic_anti_cet"
+		texturefile = "gfx/interface/ideas/idea_generic_anti_cet.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_generic_crown_chain"
+		texturefile = "gfx/interface/ideas/idea_generic_crown_chain.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_generic_bad_farm"
+		texturefile = "gfx/interface/ideas/idea_generic_bad_farm.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_generic_good_bad_farm"
+		texturefile = "gfx/interface/ideas/idea_generic_good_bad_farm.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_generic_good_better_farm"
+		texturefile = "gfx/interface/ideas/idea_generic_good_better_farm.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_generic_very_good_farm"
+		texturefile = "gfx/interface/ideas/idea_generic_very_good_farm.dds"
+	}
 }

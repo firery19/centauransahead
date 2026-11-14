@@ -28,7 +28,7 @@ ORS_TheHard1900s = {
 ORI_corruption_idea_dynamic_modifier = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
-	icon = GFX_idea_SOV_second_five_year_plan_ccp_2d_sov_compatibility # New GFX entry pointing to the original icon, so it can be safely overwritten by CCP 2D Sov Art without impacting other content using the same icon
+	icon = GFX_idea_SOV_second_five_year_plan_ccp_2d_sov_compatibility
 
 	#INITIAL
 	production_factory_efficiency_gain_factor = ORI_corruption_idea_production_factory_efficiency_gain_factor #-0.15

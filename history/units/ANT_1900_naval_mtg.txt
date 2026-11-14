@@ -39,31 +39,31 @@ units = {
 		task_force = {
 			name = "I. Torpedoboat Flotilla"
 			location = 3226
-			ship = { name = "AIS Y01" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y02" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
-			ship = { name = "AIS Y03" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
-			ship = { name = "AIS Y04" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
-			ship = { name = "AIS Y05" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
-			ship = { name = "AIS Y06" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
-			ship = { name = "AIS Y07" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
-			ship = { name = "AIS Y08" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
-			ship = { name = "AIS Y09" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
-			ship = { name = "AIS Y10" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
-			ship = { name = "AIS Y11" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
-			ship = { name = "AIS Y12" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
-			ship = { name = "AIS Y13" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
-			ship = { name = "AIS Y14" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
-			ship = { name = "AIS Y15" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
-			ship = { name = "AIS Y16" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y17" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y18" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y19" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y20" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y21" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y22" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y23" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y24" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y25" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 046.Kha" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 047.Kha" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
+			ship = { name = "AIS 048.Kha" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
+			ship = { name = "AIS 049.Kha" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
+			ship = { name = "AIS 050.Nor" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
+			ship = { name = "AIS 051.Nor" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
+			ship = { name = "AIS 052.Vil" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
+			ship = { name = "AIS 053.Vil" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
+			ship = { name = "AIS 054.Vil" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
+			ship = { name = "AIS 055.Vil" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
+			ship = { name = "AIS 056.Vil" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
+			ship = { name = "AIS 057.Aku" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
+			ship = { name = "AIS 058.Aku" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
+			ship = { name = "AIS 059.Aku" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
+			ship = { name = "AIS 060.Sor" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20}
+			ship = { name = "AIS 061.Sor" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 062.Sor" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 063.Sor" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 064.Sor" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 065.Sor" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 066.Sor" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 067.Sor" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 068.Sor" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 069.Sor" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 070.Sor" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
 		}
 	}
 	
@@ -73,6 +73,7 @@ units = {
 		task_force = {				
 			name = "II. Battlesquadron"
 			location = 5486
+			ship = { name = "AIS Vulkan" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ANT version_name = "Vulkan Class" } } experience = 30 }
 			ship = { name = "AIS Maia" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ANT version_name = "Vulkan Class"  } } experience = 30 }
 			ship = { name = "AIS Flavus" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ANT version_name = "Flavus Class" } } experience = 30 }
 			ship = { name = "AIS Aeterna Flavus" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ANT version_name = "Flavus Class" } } experience = 30 }
@@ -92,8 +93,8 @@ units = {
 		task_force = {				
 			name = "Ananteria Reserve Detachment"
 			location = 2166
-			ship = { name = "AIS Vulkan" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ANT version_name = "Vulkan Class" } } experience = 30 }
-
+			ship = { name = "AIS Merkury" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ANT version_name = "Merkury Class" } } experience = 30 }
+			ship = { name = "AIS Forma" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ANT version_name = "Merkury Class"  } } experience = 30 }
 			ship = { name = "AIS Nitor" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ANT version_name = "Argentum Class"  } } experience = 30 }
 			ship = { name = "AIS Resistentia" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ANT version_name = "Flavus Class" } } experience = 30 }
 			ship = { name = "AIS Obduratus" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ANT version_name = "Flavus Class" } } experience = 30 }
@@ -113,26 +114,26 @@ units = {
 			location = 2166
 
 
-			ship = { name = "AIS Y26" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y27" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y28" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y29" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y30" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y31" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y32" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y33" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y34" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y35" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y36" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y37" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y38" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y39" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y40" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y41" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y42" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y43" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y44" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
-			ship = { name = "AIS Y45" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 071.Kha" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 072.Kha" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 073.Kha" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 074.Kha" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 075.Kha" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 076.Kha" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 077.Dev" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 078.Dev" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 079.Dev" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 080.Dev" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 081.Aku" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 082.Aku" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 083.Aku" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 084.Pro" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 085.Pro" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 086.Pro" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 087.Pro" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 088.Pro" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 089.Pro" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
+			ship = { name = "AIS 090.Pro" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 20 }
 
 		}
 
@@ -147,11 +148,11 @@ units = {
 			name = "Torpedoboat Outfitting Detachment"
 			location = 5919
 
-			ship = { name = "AIS Y46" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 0 }
-			ship = { name = "AIS Y47" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 0 }
-			ship = { name = "AIS Y48" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 0 }
-			ship = { name = "AIS Y49" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 0 }
-			ship = { name = "AIS Y50" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "Y1890 Class Torpedo Boat"  } } experience = 0 }
+			ship = { name = "AIS 091.Pro" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "X1890 Class Torpedo Boat"  } } experience = 0 }
+			ship = { name = "AIS 092.Pro" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "X1890 Class Torpedo Boat"  } } experience = 0 }
+			ship = { name = "AIS 093.Pro" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "X1890 Class Torpedo Boat"  } } experience = 0 }
+			ship = { name = "AIS 094.Pro" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "X1890 Class Torpedo Boat"  } } experience = 0 }
+			ship = { name = "AIS 095.Pro" definition = torpedoboat equipment = { ship_hull_torpedo_1 = { amount = 1 owner = ANT version_name = "X1890 Class Torpedo Boat"  } } experience = 0 }
 		}
 	}
 #############################
@@ -159,19 +160,8 @@ units = {
 
 instant_effect = {
 ### Under Construction Notes ###
-#	add_equipment_production = {
-#		equipment = {
-#			type = ship_hull_light_1
-#			creator = "Antares Armada Ship Design Commission" 
-#			version_name = "X1900 Class Torpedo Boat"
-#		}
-#		name = "AIS Y51"
-#		requested_factories = 5
-#		progress = 0.26784527896787430565
-#		amount = 50
-##		industrial_manufacturer = mio:generic_escort_ship_organization
-#	}
-#}
+
+
 ### Under Construction Notes ###
 	add_equipment_production = {
 		equipment = {
@@ -199,7 +189,18 @@ instant_effect = {
 		amount = 1
 		industrial_manufacturer = mio:ANT_germaniawerft_organization
 	}
-
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_torpedo_1
+			creator = "Antares Armada Ship Design Commission" 
+			version_name = "X1900 Class Torpedo Boat"
+		}
+		name = "AIS 096.Kha"
+		requested_factories = 5
+		progress = 0.96784527896787430565
+		amount = 50
+#		industrial_manufacturer = mio:generic_escort_ship_organization
+	}
 ### Under Construction Notes ###
 	add_equipment_production = {
 		equipment = {

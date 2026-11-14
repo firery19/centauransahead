@@ -382,7 +382,7 @@ infantry_generic = {
 
 			modifier = {
 				factor = 3
-				date > 1940.1.1
+				date > 1912.1.1
 			}
 		}
 		

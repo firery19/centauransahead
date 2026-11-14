@@ -116,6 +116,13 @@ Initial States, In numerical order
 	- 205
 	- 206
 	- 207
+	- 221 S. Digitus
+	- 222
+	- 223
+	- 224
+	- 225
+	- 226
+	- 227
 
 63 - 73 Riaa (11+1) State_13
 	- 63 Southernmost Riaa (Corvus border)
@@ -353,3 +360,13 @@ Newly added states after the initial states
 218 South Euria
 219 South Impassable Arida
 220 North Impassable Arida
+221 South Digitus Trail < plans to block this path!
+222 Eastern Macer/Columban Mountains
+223 Central Macer/Columban Mountains
+224 South Macers (east, impassable)
+225 South Macers (west, impassable)
+226 Upper Macers (west, impassable)
+227 West Columban Valley
+228 TBA
+229 TBA
+230 TBA

@@ -3,5 +3,9 @@ SpriteTypes = {
 		name = "GFX_select_date_1900"
 		texturefile = "gfx/interface/select_date_1900.png"
 	}
+		SpriteType = {
+		name = "GFX_select_date_1947"
+		texturefile = "gfx/interface/select_date_1947.png"
+	}
 }
 

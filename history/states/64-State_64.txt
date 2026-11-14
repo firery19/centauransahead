@@ -7,6 +7,9 @@ state={
 		add_core_of = RIA
 		add_core_of = NOH
 		add_claim_by = CLB
+1944.1.1 = {
+	owner = CLB
+}
 		buildings = {
 			arms_factory = 0
 			industrial_complex = 0

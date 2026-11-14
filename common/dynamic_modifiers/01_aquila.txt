@@ -1,0 +1,44 @@
+###################      MILITARY      ###################
+
+AQU_iron_army = {
+
+
+	training_time_army_factor = AQU_army_training_time
+	experience_gain_army_factor = AQU_army_xp
+	experience_gain_army_unit_factor = AQU_army_unit_xp
+	army_attack_factor = AQU_army_attack
+	army_defence_factor = AQU_army_defend
+	army_artillery_attack_factor = AQU_artillery_attack
+	army_artillery_defence_factor = AQU_artillery_defend
+	army_core_defence_factor = AQU_army_defend_core
+	army_core_attack_factor = AQU_army_attack_core
+	dig_in_speed_factor = AQU_dig
+	max_dig_in = AQU_max_trench
+	army_org_factor = AQU_org
+	army_morale_factor = AQU_morale
+	ai_focus_naval_factor = 0
+	ai_focus_naval_air_factor = 0
+
+
+}
+
+AQU_civil_guard = {
+
+	
+    modifier_army_sub_unit_militia_defence_factor = AQU_cg_defend
+	modifier_army_sub_unit_militia_attack_factor = AQU_cg_attack
+	resistance_damage_to_garrison_on_our_occupied_states = AQU_cg_guerilla
+	modifier_army_sub_unit_militia_speed_factor = AQU_cg_speed
+	stability_factor = AQU_cg_stability
+	consumer_goods_factor = AQU_cg_consumer_goods_factor
+	recruitable_population = AQU_recruitable_population
+}
+
+AQU_underfunded_school = {
+    icon = GFX_idea_AQU_outdated_technology_idea
+	
+    research_speed_factor = AQU_education_funding_var
+}
+
+
+

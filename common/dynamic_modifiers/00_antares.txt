@@ -5,7 +5,13 @@ ANT_scorched_state = {
 	state_production_speed_buildings_factor = -0.5
 	local_supplies = -0.9
 	disable_strategic_redeployment_for_controller
-	compliance_gain	 = -0.02
+	compliance_growth = -0.5
+#	targeted_modifier = {	#doesnt work
+#		tag = AQU
+#		attack_bonus_against = 0.05 
+#	}
+	army_attack_factor = 0.04
+	army_defence_factor = -0.08
 	local_factories = -0.5
 #	local_supplies_for_controller = -5
 }
@@ -24,18 +30,23 @@ ANT_compliance_bonus_cet_aqu = {
 			THIS = { NOT = { is_owned_by = ANT } }
 		}
 	}
-	compliance_growth = 0.4
-	local_factories = 0.2
-	local_resources = 0.2
+	compliance_growth = 0.2
+	local_factories = 0.1
+	local_resources = 0.1
 }
 
 ANT_union_of_antarean_youth = {
-	icon = GFX_mod_ANT_compliance_bonus
-
-	compliance_growth = 0.6
+	icon = GFX_mod_ANT_compliance_bonus2
+	remove_trigger = { 
+		OR = { 
+			THIS = { is_core_of = ANT } 
+			THIS = { NOT = { is_owned_by = ANT } }
+		}
+	}
+	compliance_gain = 0.02
 	resistance_target = -0.1
-	local_factories = 0.1
-	local_resources = 0.1
+#	local_factories = 0.1
+#	local_resources = 0.1
 }
 
 ###################      MILITARY      ###################

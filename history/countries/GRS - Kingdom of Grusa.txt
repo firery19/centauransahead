@@ -4,9 +4,12 @@ oob = "GRS_1900"
 
 add_ideas = {
 	GRS_desert_warriors_idea
+	GRS_the_flamenco_dynasty_idea
 }
 
 recruit_character = GRS_fernan_flamenco
+recruit_character = GRS_prince_valentine
+recruit_character = GRS_xavier_navarro
 
 set_technology = {
 	infantry_weapons = 1
@@ -16,6 +19,7 @@ set_technology = {
 	gw_artillery = 1
 	basic_train = 1
 	tech_trucks = 1
+	basic_infrastructure = 1
 	# b
 	# c
 	# d
@@ -63,10 +67,13 @@ add_political_power = 1
 set_convoys = 50
 
 set_popularities = {
-	democratic = 1
+    democratic_left = 0
+	democratic = 2
+    democratic_right = 0
+   	auth_dem = 3
+	neutrality = 95
 	communism = 0
 	fascism = 0
-	neutrality = 99
 }
 
 set_politics = {

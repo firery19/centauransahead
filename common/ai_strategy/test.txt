@@ -1,0 +1,47 @@
+
+airfield_building_test = {
+
+	allowed = { 
+	always = yes
+	}
+	
+	enable = { 
+	OR = {
+		has_tech = iw_small_airframe
+		has_tech = early_fighter
+		}
+	}
+	
+    abort = { 
+	NOT = {
+		has_tech = iw_small_airframe
+		has_tech = early_fighter
+		}
+	}
+
+    ai_strategy = {
+        type = building_target
+        id = air_base
+        value = 50
+    }
+}
+
+stop_building_troops = {
+
+	allowed = { 
+	always = yes
+	}
+	
+	enable = {
+	num_divisions > 239
+	}
+	
+    abort = { 
+	num_divisions < 240
+	}
+
+    ai_strategy = {
+        type = build_army
+        value = 240
+    }
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=228
+	name="STATE_228"
+	resources={
+		
+	}
+	history={
+		owner = AQU
+		add_core_of = AQU
+		
+		1944.1.1 = {
+			owner = ANT
+		}
+		
+		buildings = {
+			arms_factory = 0
+			industrial_complex = 1
+			infrastructure = 3
+		}
+		victory_points = {
+			4796 30
+		}
+	}
+	provinces={
+		129 754 922 2525 2711 2894 4717 4754 4766 4796 4803 4872 4880 4895 4904 4922 4948 
+	}
+	manpower=5592432
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

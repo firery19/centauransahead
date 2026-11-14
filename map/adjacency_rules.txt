@@ -233,11 +233,12 @@ adjacency_rule = {
 
     is_disabled = {
         OR = {
+            NOT = { has_global_flag = GRAND_NORTHERN_CANAL_FINISHED }
             has_global_flag = GRAND_NORTHERN_CANAL_BLOCKED
             has_country_flag = GRAND_NORTHERN_CANAL_BLOCKED_FOR_COUNTRY
             has_country_flag = GRAND_NORTHERN_CANAL_SANCTIONS_FLAG
         }
-        tooltip = suez_blocked_tt
+        tooltip = northern_canal_blocked_tt
     }
 
     icon = 1008

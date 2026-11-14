@@ -1,0 +1,196 @@
+defined_text = {
+
+    name = GRS_naval_reform
+
+    text = {
+
+        trigger = {
+            check_variable = {
+                GRS_naval_reform_progress = 0
+            }
+        }
+
+        localization_key = GRS_naval_reform_state_0
+    }
+
+    text = {
+
+        trigger = {
+            check_variable = {
+                GRS_naval_reform_progress = 1
+            }
+        }
+
+        localization_key = GRS_naval_reform_state_1
+    }
+
+    text = {
+
+        trigger = {
+            check_variable = {
+                GRS_naval_reform_progress = 2
+            }
+        }
+
+        localization_key = GRS_naval_reform_state_2
+    }
+
+    text = {
+
+        trigger = {
+            check_variable = {
+                GRS_naval_reform_progress = 3
+            }
+        }
+
+        localization_key = GRS_naval_reform_state_3
+    }
+
+    text = {
+
+        trigger = {
+            check_variable = {
+                GRS_naval_reform_progress = 4
+            }
+        }
+
+        localization_key = GRS_naval_reform_state_4
+    }
+
+    text = {
+
+        trigger = {
+            check_variable = {
+                GRS_naval_reform_progress = 5
+            }
+        }
+
+        localization_key = GRS_naval_reform_state_5
+    }
+
+    text = {
+
+        trigger = {
+            check_variable = {
+                GRS_naval_reform_progress > 5
+            }
+        }
+
+        localization_key = GRS_naval_reform_state_6
+    }
+}
+defined_text = {
+
+    name = GRS_blockade_level_text
+
+    text = {
+        trigger = {
+            check_variable = {
+                GRS_blockade_progress < 20
+            }
+        }
+
+        localization_key = GRS_blockade_level_minor
+    }
+
+    text = {
+        trigger = {
+            check_variable = {
+                GRS_blockade_progress > 19
+                GRS_blockade_progress < 40
+            }
+        }
+
+        localization_key = GRS_blockade_level_limited
+    }
+
+    text = {
+        trigger = {
+            check_variable = {
+                GRS_blockade_progress > 39
+                GRS_blockade_progress < 60
+            }
+        }
+
+        localization_key = GRS_blockade_level_effective
+    }
+
+    text = {
+        trigger = {
+            check_variable = {
+                GRS_blockade_progress > 59
+                GRS_blockade_progress < 80
+            }
+        }
+
+        localization_key = GRS_blockade_level_severe
+    }
+
+    text = {
+        trigger = {
+            check_variable = {
+                GRS_blockade_progress > 79
+            }
+        }
+
+        localization_key = GRS_blockade_level_critical
+    }
+}
+
+defined_text = {
+    name = GRS_breakout_level_text
+    
+   text = {
+        trigger = {
+            check_variable = {
+                GRS_breakout_progress < 20
+            }
+        }
+
+        localization_key = GRS_breakout_level_unprepared
+    }
+    
+    text = {
+        trigger = {
+            check_variable = {
+                GRS_breakout_progress > 20
+                GRS_breakout_progress < 40
+            }
+        }
+
+        localization_key = GRS_breakout_level_planning
+    }
+
+    text = {
+        trigger = {
+            check_variable = {
+                GRS_breakout_progress > 40
+                GRS_breakout_progress < 60
+            }
+        }
+
+        localization_key = GRS_breakout_level_readying
+    }
+    
+    text = {
+        trigger = {
+            check_variable = {
+                GRS_breakout_progress > 60
+                GRS_breakout_progress < 80
+            }
+        }
+
+        localization_key = GRS_breakout_level_prepared
+    }
+
+    
+    text = {
+        trigger = {
+            check_variable = {
+                GRS_breakout_progress > 80
+            }
+        }
+        localization_key = GRS_breakout_level_ready
+    }
+    
+}

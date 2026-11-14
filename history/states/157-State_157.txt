@@ -4,6 +4,9 @@ state={
 	history={
 		owner = CTA
 		add_core_of = CTA
+1947.1.1 = {
+	owner = RIA
+}
 		buildings = {
 			infrastructure = 2
 			6711 = {

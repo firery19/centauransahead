@@ -15,6 +15,10 @@ spriteTypes = {
 		name = "GFX_mod_ANT_compliance_bonus"
 		texturefile = "gfx/interface/state_modifiers/modifiers_generic_industry.dds"
 	}
+	spriteType = {
+		name = "GFX_mod_ANT_compliance_bonus2"
+		texturefile = "gfx/interface/state_modifiers/modifiers_workers.dds"
+	}
 		spriteType = {
 		name = "GFX_mod_ANT_scorch_state"
 		texturefile = "gfx/interface/state_modifiers/modifiers_test.dds"

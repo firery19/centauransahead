@@ -44,7 +44,6 @@ if = {
 		basic_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
 		basic_ship_hull_heavy = 1
-		improved_ship_hull_heavy = 1
 		basic_battery = 1
 		basic_light_battery = 1
 		basic_heavy_battery = 1
@@ -64,7 +63,8 @@ set_technology = {
 	gw_artillery = 1
 	basic_train = 1
 	tech_trucks = 1
-	# b
+	basic_infrastructure = 1
+	marines = 1
 	# c
 	# d
 	# e
@@ -97,7 +97,9 @@ recruit_character = CET_raymond_cooper
 recruit_character = CET_issac_thomas
 recruit_character = CET_johannes_robinson
 recruit_character = CET_patrick_adams
+recruit_character = CET_lewis_arthur
 recruit_character = CET_karl_chester
+recruit_character = CET_theodore_charleston
 
 add_ideas = {
 	CET_SC_question_idea
@@ -106,10 +108,13 @@ add_ideas = {
 }
 
 set_popularities = {
-	democratic = 10
+	auth_dem = 3
+	democratic_right = 10
+	democratic = 8
+	democratic_left = 5
 	communism = 0
 	fascism = 2
-	neutrality = 88
+	neutrality = 72
 }
 
 set_politics = {
@@ -289,7 +294,7 @@ if = {
 		name_group = CET_BB_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_battery_slot = ship_heavy_battery_2
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -297,8 +302,8 @@ if = {
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_1
 			front_1_custom_slot = empty	# 2 turrets
-			mid_1_custom_slot = ship_secondaries_1
-			mid_2_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_secondaries_1
 			rear_1_custom_slot = empty
 		}
 		obsolete = yes
@@ -314,7 +319,7 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_2
-			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_2
 			front_1_custom_slot = empty 	# ship_heavy_battery_2	#8-gun broadside
 			mid_1_custom_slot = ship_heavy_battery_2
@@ -322,22 +327,23 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
-	create_equipment_variant = {
-		name = "Mira Class"
-		type = ship_hull_heavy_3	#first SUPER-steelpot and "A warship far exceeding its contemporaries [...] set a new standard for Forman battleships"
-		name_group = CET_BB_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_heavy_battery_2
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = heavy_ship_engine_2
-			fixed_ship_secondaries_slot = ship_secondaries_2
-			fixed_ship_armor_slot = ship_armor_bb_2
-			front_1_custom_slot = ship_heavy_battery_2	#10-gun broadside
-			mid_1_custom_slot = ship_secondaries_2
-			mid_2_custom_slot = ship_secondaries_2
-			rear_1_custom_slot = ship_heavy_battery_2
-		}
-	}
+#now added through focus
+#	create_equipment_variant = {
+#		name = "Mira Class"
+#		type = ship_hull_heavy_3	#first SUPER-steelpot and "A warship far exceeding its contemporaries [...] set a new standard for Forman battleships"
+#		name_group = CET_BB_HISTORICAL
+#		parent_version = 0
+#		modules = {
+#			fixed_ship_battery_slot = ship_heavy_battery_2
+#			fixed_ship_anti_air_slot = empty
+#			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+#			fixed_ship_radar_slot = empty
+#			fixed_ship_engine_slot = heavy_ship_engine_2
+#			fixed_ship_secondaries_slot = ship_secondaries_2
+#			fixed_ship_armor_slot = ship_armor_bb_2
+#			front_1_custom_slot = ship_heavy_battery_2	#10-gun broadside
+#			mid_1_custom_slot = ship_secondaries_2
+#			mid_2_custom_slot = ship_secondaries_2
+#			rear_1_custom_slot = ship_heavy_battery_2
+#		}
+#	}

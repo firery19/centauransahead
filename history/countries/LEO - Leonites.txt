@@ -1,0 +1,51 @@
+capital = 41
+
+set_research_slots = 2
+
+set_stability = 0.50
+
+set_war_support = 0.50
+
+add_political_power = 2
+
+set_convoys = 0
+
+add_ideas = {
+	LEO_low_legitimacy
+	LEO_gap_in_fighting
+	LEO_grand_army
+	LEO_war_of_independence
+}
+
+set_popularities = {
+	fascism = 54
+	neutrality = 5
+	auth_dem = 41
+	democratic_right = 0
+	democratic = 0
+	democratic_left = 0
+	communism = 0
+}
+
+set_technology = {
+    infantry_weapons = 1 
+	basic_infrastructure = 1
+	# c
+	# d
+	# e
+	# f
+	# g
+	# h
+	# i
+}
+
+recruit_character = LEO_cyrus
+recruit_character = LEO_darius_vance
+
+set_politics = {
+	ruling_party = ultranationalism
+	last_election = "1900.1.1"
+	election_frequency = 48
+	elections_allowed = No
+}
+

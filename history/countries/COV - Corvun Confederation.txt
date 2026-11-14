@@ -51,6 +51,7 @@ set_technology = {
 	gw_artillery = 1
 	basic_train = 1
 	tech_trucks = 1
+	basic_infrastructure = 1
 	# b
 	# c
 	# d
@@ -71,12 +72,30 @@ add_political_power = 1
 
 set_convoys = 75
 
+#SCOURGE?
+set_variable = {
+	var = corvun_supply_scourge
+	value = 3
+}
+
+set_variable = {
+	var = corvun_civil_status_scourge
+	value = 21
+}
+
+set_variable = {
+	var = corvun_coal_scourge
+	value = 8
+}
+
 set_popularities = {
+    democratic_left = 1
 	democratic = 0
-	communism = 0
+    democratic_right = 0
+   	auth_dem = 3
+	neutrality = 92
+	communism = 2
 	fascism = 2
-	neutrality = 98
-#	absolute_monarchy = 98
 }
 
 set_politics = {

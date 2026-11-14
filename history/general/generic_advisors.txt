@@ -111,7 +111,7 @@ every_possible_country = {
 		token_base = generic_fascist_demagogue # token will be TAG_token_base
 		advisor = {
 			slot = political_advisor
-		#	traits = { fascist_demagogue }
+			traits = { fascist_demagogue }
 			modifier = { fascism_drift = 0.03 }
 			available = {
 				IF = {
@@ -131,9 +131,10 @@ every_possible_country = {
 		token_base = generic_communist_revolutionary # token will be TAG_token_base
 		advisor = {
 			slot = political_advisor
+			traits = { communist_revolutionary }
 			modifier = { communism_drift = 0.03 }
 			available = {
-
+				
 				IF = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
@@ -148,54 +149,13 @@ every_possible_country = {
 		}
 	}
 	generate_character = {
-		token_base = generic_monarchy_traditionalist # token will be TAG_token_base
-		advisor = {
-			slot = political_advisor
-		#	traits = { fascist_demagogue }
-			modifier = { neutrality_drift = 0.03 }
-			available = {
-				IF = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}				
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		portraits = { 
-			army = { small = GFX_idea_generic_fascist_demagogue }
-		}
-	}
-	generate_character = {
-		token_base = generic_antidemocratic_democrat # token will be TAG_token_base
-		advisor = {
-			slot = political_advisor
-			modifier = { auth_dem_drift = 0.03}
-			available = {
-				IF = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		portraits = { 
-			army = { small = GFX_idea_generic_democratic_reformer }
-		}
-	}
-	generate_character = {
 		token_base = generic_democratic_reformer # token will be TAG_token_base
 		advisor = {
 			slot = political_advisor
-			modifier = { 
-				democracy_drift = 0.03 
-				democracy_left_drift = 0.03 
-				democracy_right_drift = 0.03}
+			traits = { democratic_reformer }
+			modifier = { democracy_right_drift = 0.03 }
 			available = {
-
+				
 				IF = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
@@ -209,6 +169,45 @@ every_possible_country = {
 			army = { small = GFX_idea_generic_democratic_reformer }
 		}
 	}
+#	generate_character = {
+#		token_base = generic_monarchy_traditionalist # token will be TAG_token_base
+#		advisor = {
+#			slot = political_advisor
+		#	traits = { fascist_demagogue } # < change this to monarchist restorer?
+#			modifier = { neutrality_drift = 0.03 }
+#			available = {
+#				IF = {
+#					limit = { has_dlc = "Man the Guns" }	
+#					NOT = { has_autonomy_state = autonomy_supervised_state }
+#				}				
+#			}
+#			ai_will_do = {
+#				factor = 0
+#			}
+#		}
+#		portraits = { 
+#			army = { small = GFX_idea_generic_fascist_demagogue }
+#		}
+#	}
+#	generate_character = {
+#		token_base = generic_antidemocratic_democrat # token will be TAG_token_base
+#		advisor = {
+#			slot = political_advisor
+#			modifier = { auth_dem_drift = 0.03}
+#			available = {
+#				IF = {
+#					limit = { has_dlc = "Man the Guns" }	
+#					NOT = { has_autonomy_state = autonomy_supervised_state }
+#				}
+#			}
+#			ai_will_do = {
+#				factor = 0
+#			}
+#		}
+3		portraits = { 
+#			army = { small = GFX_idea_generic_democratic_reformer }
+#		}
+#	}
 }
 # Military advisors
 every_possible_country = {

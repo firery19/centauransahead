@@ -3600,7 +3600,7 @@
 3599;155;243;211;land;true;plains;2
 3600;253;171;85;land;true;plains;3
 3601;141;244;144;land;false;plains;5
-3602;225;97;213;land;false;forest;2
+3602;225;97;213;land;true;forest;2
 3603;178;97;232;land;false;plains;5
 3604;176;194;138;land;false;plains;5
 3605;243;202;130;land;false;plains;5

@@ -872,7 +872,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 3
+		research_cost = 1.5
 		start_year = 1904
 		folder = {
 			name = industry_folder
@@ -932,12 +932,17 @@ technologies = {
 		fuel_gain_factor = 0.2
 		fuel_gain_factor_from_states = 0.1
 
+		enable_building = {
+			building = fuel_silo
+			level = 4
+		}
+
 		path = {
 			leads_to_tech = fuel_refining3 
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 3
+		research_cost = 1.5
 		start_year = 1908
 		folder = {
 			name = industry_folder
@@ -993,7 +998,7 @@ technologies = {
 			leads_to_tech = fuel_refining4 
 			research_cost_coeff = 1
 		}
-		research_cost = 3
+		research_cost = 1.5
 		start_year = 1912
 		folder = {
 			name = industry_folder
@@ -1036,11 +1041,17 @@ technologies = {
 		fuel_gain_factor = 0.20
 		fuel_gain_factor_from_states = 0.1
 
+
+		enable_building = {
+			building = fuel_silo
+			level = 5
+		}
+
 		path = {
 			leads_to_tech = fuel_refining5
 			research_cost_coeff = 1
 		}
-		research_cost = 3
+		research_cost = 1.5
 		start_year = 1916
 		folder = {
 			name = industry_folder
@@ -1083,7 +1094,7 @@ technologies = {
 		fuel_gain_factor = 0.20
 		fuel_gain_factor_from_states = 0.1
 
-		research_cost = 3
+		research_cost = 1.5
 		start_year = 1920
 		folder = {
 			name = industry_folder
@@ -1634,7 +1645,36 @@ technologies = {
 		show_effect_as_desc = yes
 	}
 	#####################################
-	
+	basic_infrastructure = {
+		
+		enable_building = {
+			building = infrastructure
+			level = 5
+		}
+
+	#	path = {
+	#		leads_to_tech = construction1
+	#		research_cost_coeff = 1
+	#	}
+
+		
+		research_cost = 1
+		start_year = 1800
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = -1 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+	}
 	construction1 = {
 		
 		production_speed_buildings_factor = 0.05
@@ -1672,7 +1712,10 @@ technologies = {
 	}
 
 	excavation1 = {
-		
+		enable_building = {
+			building = infrastructure
+			level = 6
+		}
 		local_resources_factor = 0.10
 		local_resources_coal_factor = 0.05
 
@@ -1760,7 +1803,10 @@ technologies = {
 	}
 
 	excavation2 = {
-		
+		enable_building = {
+			building = infrastructure
+			level = 7
+		}
 		local_resources_factor = 0.10
 		local_resources_coal_factor = 0.05
 		
@@ -1861,7 +1907,10 @@ technologies = {
 
 
 	excavation3 = {
-		
+		enable_building = {
+			building = infrastructure
+			level = 8
+		}
 		local_resources_factor = 0.10
 		local_resources_coal_factor = 0.05
 		
@@ -1957,7 +2006,10 @@ technologies = {
 	}
 
 	excavation4 = {
-		
+		enable_building = {
+			building = infrastructure
+			level = 9
+		}
 		local_resources_factor = 0.10
 		local_resources_coal_factor = 0.05
 
@@ -2044,7 +2096,10 @@ technologies = {
 
 
 	excavation5 = {
-		
+		enable_building = {
+			building = infrastructure
+			level = 10
+		}
 		local_resources_factor = 0.10
 		local_resources_coal_factor = 0.05
 

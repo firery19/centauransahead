@@ -10,6 +10,9 @@ state={
 	history={
 		owner = CTA
 		add_core_of = CTA
+1947.1.1 = {
+	owner = RIA
+}
 		add_dynamic_modifier = { 
 		modifier = CTA_battery_line_dynamic_modifier
 		}
@@ -65,7 +68,13 @@ state={
 		3642 10
 		}
 		victory_points = {
-		3280 10
+		3662 10
+		}
+		victory_points = {
+		3626 5
+		}
+		victory_points = {
+		2244 5
 		}
 
 	}
@@ -77,4 +86,7 @@ state={
 	buildings_max_level_factor=1.000
 	state_category=large_town
 	local_supplies=0.000
+
+
+
 }

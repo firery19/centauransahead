@@ -1,0 +1,411 @@
+add_namespace = LEO
+
+### LEONITE STUFF ### EVERY LEONITE STUFF STARTS WITH 918
+
+country_event = { #Leo victory
+	id = leo.9180
+	title = leo.9180.t
+	desc = leo.9180.d
+	picture = GFX_report_event_french_resistance_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = leo.9180.a
+        ai_chance = {
+            base = 100
+		}
+	}
+}
+
+country_event = { #Lion's future? aka who will lead it
+	id = leo.9181
+	title = leo.9181.t
+	desc = leo.9181.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = leo.9181.a
+		swap_ideas = {
+		remove_idea = LEO_gap_in_fighting
+		add_idea = LEO_gap_in_fighting_2
+		}
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = No
+		}
+		mark_focus_tree_layout_dirty = yes
+        ai_chance = {
+            base = 100
+		}
+	}	
+	
+	option = {
+		name = leo.9181.b
+		remove_ideas = LEO_gap_in_fighting
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = No
+		}
+		mark_focus_tree_layout_dirty = yes
+		remove_ideas = LEO_puppet_emperor
+        ai_chance = {
+            base = 0
+		}
+	}	
+	
+	option = {
+		name = leo.9181.c
+		swap_ideas = {
+		remove_idea = LEO_gap_in_fighting
+		add_idea = LEO_gap_in_fighting_2
+		}
+		set_politics = {
+			ruling_party = auth_dem
+			elections_allowed = No
+		}
+		mark_focus_tree_layout_dirty = yes
+		
+        ai_chance = {
+            base = 0
+		}
+	}
+}
+
+country_event = { #Leo Send Ultimatum
+	id = leo.9182
+	title = leo.9182.t
+	desc = leo.9182.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	option = {
+		name = leo.9182.a
+		
+		41 = { transfer_state_to = LEO } 
+		
+        ai_chance = {
+            base = 50
+		}
+	}	
+	
+	option = {
+		name = leo.9182.b
+		
+        LEO = {
+            create_wargoal = {
+                type = annex_everything
+                target = ROOT
+            }
+        }
+
+        ai_chance = {
+            base = 50
+		}
+	}
+}
+
+country_event = { #Leo Send Ultimatum
+	id = leo.9183
+	title = leo.9183.t
+	desc = leo.9183.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = leo.9183.a
+		
+		44 = { transfer_state_to = LEO } 
+		
+        ai_chance = {
+            base = 50
+		}
+	}	
+	
+	option = {
+		name = leo.9183.b
+		
+        LEO = {
+            create_wargoal = {
+                type = annex_everything
+                target = ROOT
+            }
+        }
+
+        ai_chance = {
+            base = 50
+		}
+	}
+}
+
+country_event = { #Leo Send Ultimatum
+	id = leo.9184
+	title = leo.9184.t
+	desc = leo.9184.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = leo.9184.a
+		
+		106 = { transfer_state_to = LEO } 
+		
+        ai_chance = {
+            base = 100
+		}
+	}	
+	
+	option = {
+		name = leo.9184.b
+		
+        LEO = {
+            create_wargoal = {
+                type = annex_everything
+                target = ROOT
+            }
+        }
+
+        ai_chance = {
+            base = 0
+		}
+	}
+}
+
+country_event = { #Leo Send Ultimatum
+	id = leo.9185
+	title = leo.9185.t
+	desc = leo.9185.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = leo.9185.a
+		
+		37 = { transfer_state_to = LEO } 
+		
+        ai_chance = {
+            base = 50
+		}
+	}	
+	
+	option = {
+		name = leo.9185.b
+		
+        LEO = {
+            create_wargoal = {
+                type = annex_everything
+                target = ROOT
+            }
+        }
+
+        ai_chance = {
+            base = 50
+		}
+	}
+}
+
+country_event = { #Leo farmer not know how to farm
+	id = leo.9186
+	title = leo.9186.t
+	desc = leo.9186.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = leo.9186.a
+		custom_effect_tooltip = AQU_unlock_decision_tt
+		add_ideas = LEO_dumbass_farmers
+		
+        set_country_flag = flg_LEO_dummy_farmers
+		
+        ai_chance = {
+            base = 50
+		}
+	}	
+}
+
+country_event = { #Leo contacting ant
+	id = leo.9187
+	title = leo.9187.t
+	desc = leo.9187.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = leo.9187.a
+		LEO = { country_event = { id = leo.9188 days = 5 } }
+        ai_chance = {
+            base = 100
+		}
+	}
+	option = {
+		name = leo.9187.b
+		LEO = { country_event = { id = leo.9189 days = 5 } }
+        ai_chance = {
+            base = 0
+		}
+	}
+}
+
+country_event = { #Leo contacting ant - yes
+	id = leo.9188
+	title = leo.9188.t
+	desc = leo.9188.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = leo.9188.a
+		
+		set_country_flag = flg_has_ant_support
+		
+        ai_chance = {
+            base = 100
+		}
+	}	
+}
+
+country_event = { #Leo contacting ant - no
+	id = leo.9189
+	title = leo.9189.t
+	desc = leo.9189.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = leo.9189.a
+		
+        ai_chance = {
+            base = 100
+		}
+	}	
+}
+
+country_event = { #Leo expand support ant
+	id = leo.9190
+	title = leo.9190.t
+	desc = leo.9190.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = leo.9190.a
+		LEO = { country_event = { id = leo.9191 days = 5 } }
+        ai_chance = {
+            base = 100
+		}
+	}
+	option = {
+		name = leo.9190.b
+		LEO = { country_event = { id = leo.9192 days = 5 } }
+        ai_chance = {
+            base = 0
+		}
+	}
+}
+
+country_event = { #Leo expand support ant - yes
+	id = leo.9191
+	title = leo.9191.t
+	desc = leo.9191.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = leo.9191.a
+		
+		set_country_flag = flg_has_extent_ant_support
+		
+        ai_chance = {
+            base = 100
+		}
+	}	
+}
+
+country_event = { #Leo expand support ant - no
+	id = leo.9192
+	title = leo.9192.t
+	desc = leo.9192.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = leo.9192.a
+		
+        ai_chance = {
+            base = 100
+		}
+	}
+}
+
+country_event = { #Leo ask ant for military advisor
+	id = leo.9193
+	title = leo.9193.t
+	desc = leo.9193.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = leo.9193.a
+		LEO = { country_event = { id = leo.9194 }}
+        ai_chance = {
+            base = 100
+		}
+	}	
+	
+	option = {
+		name = leo.9193.b
+		LEO = { country_event = { id = leo.9195 }}
+        ai_chance = {
+            base = 0
+		}
+	}
+}
+
+country_event = { #Leo ask ant for military advisor - yes
+	id = leo.9194
+	title = leo.9194.t
+	desc = leo.9194.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = leo.9194.a
+		LEO = { recruit_character = }
+		
+        ai_chance = {
+            base = 100
+		}
+	}	
+}
+
+country_event = { #Leo ask ant for military advisor - no
+	id = leo.9195
+	title = leo.9195.t
+	desc = leo.9195.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = leo.9195.a
+		
+        ai_chance = {
+            base = 100
+		}
+	}	
+}

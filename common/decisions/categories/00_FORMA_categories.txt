@@ -11,6 +11,19 @@ south_corvus_decisions = {
     }
 }
 
+ARCHIVED_DECISIONS = {
+    icon =
+
+    picture = 
+
+    allowed = {
+        always = no
+    }
+    priority = {
+        base = 100
+    }
+}
+
 #centauran_exodus_decision_category = {}
 hearts_of_forma_generic_category = {
 

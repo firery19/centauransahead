@@ -499,6 +499,18 @@ ideas = {
 			industrial_factory_donations = 2
             	}
         }
+        LGS_using_shipyards_bb = {
+		name = "Foreign Ship Sales"
+
+		picture = generic_coastal_defense_ships2
+		allowed = {  }
+           	removal_cost = -1
+
+		modifier = {
+			dockyard_donations = -4
+			industrial_factory_donations = 6
+            	}
+        }
         LGS_sold_ships = {
 		name = "Foreign Ship Sales"
 

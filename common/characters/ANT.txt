@@ -1,6 +1,6 @@
 characters = {
 	ANT_kalvin_tau = { 
-		name = "Kalvin Tau"
+		name = "Kalvin Tau"	#II
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ANT_kalvin_tau

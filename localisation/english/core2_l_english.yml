@@ -1,0 +1,12 @@
+﻿l_english:
+ FE_IRONMAN: "Ironman mode §R(NOT RECOMENDED)§!"
+ FE_IRONMAN_TOOLTIP: "In Ironman mode, console cheats are disabled and the game is automatically saved regularly to a single file. In games played with this setting, there is no turning back."
+ 
+ CREATING_PROVINCE: "Creating Province #"
+ EXECUTE_HISTORY: "Executing history"
+ CREATING_CHKSUM: "Creating checksum"
+ GENERATING_GRADIENT_BORDERS: "Generating Gradient Borders"
+ PRECALC_NAVAL_DIST: "Precalculating Cetan Navy Size"
+ 
+ INIT_MAP_LOGIC: "Initializing map logic"
+ INIT_GAMESTATE: "Initializing game"

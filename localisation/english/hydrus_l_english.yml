@@ -162,29 +162,53 @@
  hydrus.14.a:0 "We accept."
  hydrus.14.b:0 "We accept."
  
- hydrus.15.t:0 "Operational Success"
- hydrus.15.d:0 "Wawa"
- hydrus.15.a:0 "Wawa"
+ hydrus.15.t:0 "Operational Success" # hydrus wins l.hydra WWWWWWWWWWWWW ---------------------------------------------
+ hydrus.15.d:0 "We have taken over [170.GetName]."
+ hydrus.15.a:0 "Great"
  
  hydrus.16.t:0 "Hydrus takes over [170.GetName]"
- hydrus.16.d:0 "Wawa"
- hydrus.16.a:0 "Wawa"
- hydrus.16.b:0 "Wawa"
+ hydrus.16.d:0 "Hydrus raids on [170.GetName] has caused us to lose control of the island!"
+ hydrus.16.a:0 "That's not good!"
  
- hydrus.17.t:0 "Wawa"
- hydrus.17.d:0 "Wawa"
- hydrus.17.a:0 "Wawa"
- hydrus.17.b:0 "Wawa"
+ hydrus.17.t:0 "Operational Failure" # hydrus lose l.hydra LLLLLLLLLLLLLL
+ hydrus.17.d:0 "The landing on [170.GetName] was met with more resistance than expected, and we were forced to retreat."
+ hydrus.17.a:0 "We can always try again."
  
- hydrus.18.t:0 "Wawa"
- hydrus.18.d:0 "Wawa"
- hydrus.18.a:0 "Wawa"
- hydrus.18.b:0 "Wawa"
+ hydrus.18.t:0 "Failed Hydrusite Incursion on [170.GetName]"
+ hydrus.18.d:0 "The Hydrusites tried to land on [170.GetName], but they were repulsed."
+ hydrus.18.a:0 "Off our land, scum!"
  
- hydrus.19.t:0 "Wawa"
- hydrus.19.d:0 "Wawa"
- hydrus.19.a:0 "Wawa"
- hydrus.19.b:0 "Wawa"
+ hydrus.19.t:0 "Operational Success" # hydrus wins elo isles WWWWWWWWWWWWW---------------------------------------
+ hydrus.19.d:0 "We have taken over the [171.GetName]."
+ hydrus.19.a:0 "Great"
+ 
+ hydrus.20.t:0 "Hydrus takes over [171.GetName]"
+ hydrus.20.d:0 "Hydrus raids on the [171.GetName] has caused us to lose control of the island!"
+ hydrus.20.a:0 "That's not good!"
+ 
+ hydrus.21.t:0 "Operational Failure" # hydrus lose elo isles LLLLLLLLLLLL
+ hydrus.21.d:0 "The landing on the [171.GetName] was met with more resistance than expected, and we were forced to retreat."
+ hydrus.21.a:0 "We can always try again."
+ 
+ hydrus.22.t:0 "Failed Hydrusite Incursion on the [171.GetName]"
+ hydrus.22.d:0 "The Hydrusites tried to land on the [171.GetName], but they were repulsed."
+ hydrus.22.a:0 "Off our land, scum!"
+ 
+ hydrus.23.t:0 "Operational Success" # hydrus wins n. bell isles WWWWWWWWWW------------------------------------------
+ hydrus.23.d:0 "We have taken over the [125.GetName]."
+ hydrus.23.a:0 "Great"
+ 
+ hydrus.24.t:0 "Hydrus takes over the [125.GetName]"
+ hydrus.24.d:0 "Hydrus raids on the [125.GetName] has caused us to lose control of the island!"
+ hydrus.24.a:0 "That's not good!"
+ 
+ hydrus.25.t:0 "Operational Failure" # hydrus lose n. bell isles LLLLLLLLLLLL
+ hydrus.25.d:0 "The landing on the [125.GetName] was met with more resistance than expected, and we were forced to retreat."
+ hydrus.25.a:0 "We can always try again."
+ 
+ hydrus.26.t:0 "Failed Hydrusite Incursion on the [125.GetName]"
+ hydrus.26.d:0 "The Hydrusites tried to land on the [125.GetName], but they were repulsed."
+ hydrus.26.a:0 "Off our land, scum!"
  
  hydrus.q.t:0 "
  hydrus.q.d:0 "
@@ -288,3 +312,14 @@
  # canis uprising
  HYS_canis_uprising:0 "Canis Rebellion"
  HYS_canis_uprising_desc:0 "The colony of Canis is occupied by Ursa!"
+ 
+ HYS_covert_island_annexation_category:0 "Covert Island Annexation"
+ HYS_covert_island_annexation_category_desc:0 "Barely defended Ursan islands are vulnerable to a small landing force.\n\nOperation Preparation: [?lepus_revolution_counter|Y0]"
+ HYS_prepare_operations_decision:0 "Prepare Operations"
+ HYS_strike_little_hydra_decision:0 "Strike [170.GetName]"
+ HYS_strike_elo_islands_decision:0 "Strike [171.GetName]"
+ HYS_strike_north_bell_decision:0 "Strike [125.GetName]"
+ add1operation:0 "Increases preparation by 1"
+ morethan2prep:0 "Prepared more than 2 times"
+ resetoperationalprep:0 "Resets preparation to 0"
+ prepared5times:0 "Has not reached maximum preparation (5)"

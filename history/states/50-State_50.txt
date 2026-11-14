@@ -5,8 +5,12 @@ state={
 	history = {
 		owner = CET
 		add_core_of = CET
+		add_core_of = ERI
+		add_dynamic_modifier = { 
+			modifier = eridanus_state_modifier
+		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 		}
 		victory_points = {
 			4049 2

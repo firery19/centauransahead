@@ -1,0 +1,97 @@
+units = {
+###	PRE CIVIL WAR IMPERIAL FLEET:
+#	ANNULUS SEA FLEET:
+#		1. Battle Group
+#			2 BB (imperatritsia)
+#			2 CL
+#			4 DD1
+#		2. Battle Group
+#			2 BB (imperator)
+#			2 CL
+#			4 DD1
+#		1. Cruiser Group
+#			1 CA
+#			4 CL
+#			4 DD2
+#		1. Patrol Force
+#			1 DD1
+#			2 DD2
+#		2. Patrol Force
+#			1 DD1
+#			2 DD2
+#		4. Patrol Force
+#			1 DD1
+#			2 DD2
+#	IANIS OCEAN FLEET:
+#		3. Battle Group
+#			2 BB (imperator)
+#			4 DD1
+#			4 DD2
+#		2. Cruiser Group
+#			3 CA
+#			3 DD1
+#		3. Cruiser Group
+#			1 CA
+#			2 CL
+#		5. Patrol Force
+#			1 DD1
+#			2 DD2
+#	NORTH OCEAN FLEET:
+#		4. Cruiser Group
+#			1 CA
+#			1 CL
+#			3 DD1
+#		3. Patrol Force
+#			1 CL
+#			2 DD1
+###	TOTAL FLEET:
+#		2x BB (Imperatritsia)
+#		4x BB (Imperator)
+#		6x CA (Admiral Burim)
+#		12x CL (Edinorostov)
+#		16x DD2 (early destroyers)
+#		24x DD1 (gunboats)
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Inanis Ocean Fleet"
+		naval_base = 826
+		task_force = {				
+			name = "3. Battle Group"
+			location = 826
+			ship = { name = "CRV Imperator Nikolai" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = VUL version_name = "Imperator Class" } } experience = 30 }
+			ship = { name = "CRV Imperator Alexander" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = VUL version_name = "Imperator Class" } } experience = 30 }
+			ship = { name = "CRV Gunboat 11" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = VUL version_name = "TRASH Class" } } experience = 20 }
+			ship = { name = "CRV Gunboat 12" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = VUL version_name = "TRASH Class" } } experience = 20 }
+			ship = { name = "CRV Gunboat 13" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = VUL version_name = "TRASH Class" } } experience = 20 }
+			ship = { name = "CRV Gunboat 14" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = VUL version_name = "TRASH Class" } } experience = 20 }
+			ship = { name = "CRV Destroyer 11" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = VUL version_name = "LessTrash Class" } } experience = 20 }
+			ship = { name = "CRV Destroyer 12" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = VUL version_name = "LessTrash Class" } } experience = 20 }
+			ship = { name = "CRV Destroyer 13" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = VUL version_name = "LessTrash Class" } } experience = 20 }
+			ship = { name = "CRV Destroyer 14" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = VUL version_name = "LessTrash Class" } } experience = 20 }
+		}
+		task_force = {				
+			name = "3. Cruiser Group"
+			location = 1558
+			ship = { name = "CRV Armoured Cruiser 5" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = VUL version_name = "Admiral Burim Class" } } experience = 30 }
+			ship = { name = "CRV Unprotected Cruiser 9" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = VUL version_name = "Edinorostov Class" } } experience = 30 }
+			ship = { name = "CRV Unprotected Cruiser 10" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = VUL version_name = "Edinorostov Class" } } experience = 30 }
+		}
+		task_force = {				
+			name = "5. Patrol Force"
+			location = 3441
+			ship = { name = "CRV Gunboat 18" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = VUL version_name = "TRASH Class" } } experience = 20 }
+			ship = { name = "CRV Destroyer 15" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = VUL version_name = "LessTrash Class" } } experience = 20 }
+			ship = { name = "CRV Destroyer 16" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = VUL version_name = "LessTrash Class" } } experience = 20 }
+		}
+	}
+	fleet = {
+		name = "Northern Ocean Fleet"
+		naval_base = 612
+		task_force = {				
+			name = "4. Cruiser Group"
+			location = 612
+			ship = { name = "CRV Unprotected Cruiser 11" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = VUL version_name = "Edinorostov Class" } } experience = 85 }
+			ship = { name = "CRV Gunboat 21" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = VUL version_name = "TRASH Class" } } experience = 80 }
+		}
+	}
+}

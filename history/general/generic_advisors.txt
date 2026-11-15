@@ -6,6 +6,10 @@
 every_possible_country = {
 	limit = {
 		NOT = {
+		    OR = {
+		    tag = AQU
+		    
+		    }
 			has_allowed_idea_with_traits = { idea = head_of_intelligence characters = yes }
 		}
 		is_dynamic_country = no
@@ -102,10 +106,11 @@ every_possible_country = {
 		}
 	}
 }
+
 # ideology boosters
 every_possible_country = {
 	limit = { NOT = { OR = {
-		tag = ANT tag = ORI tag = COV tag = CET tag = AQU tag = URS
+		tag = ANT tag = ORI tag = COV tag = CET tag = AQU tag = URS 
 	}}}
 	generate_character = {
 		token_base = generic_fascist_demagogue # token will be TAG_token_base
@@ -141,7 +146,7 @@ every_possible_country = {
 				}
 			}
 			ai_will_do = {
-				factor = 1
+				factor = 0
 			}
 		}
 		portraits = { 
@@ -212,7 +217,7 @@ every_possible_country = {
 # Military advisors
 every_possible_country = {
 	limit = {
-		NOT = { OR = { tag = ANT } } 
+		NOT = { OR = { tag = ANT tag = AQU } } 
 
 	}
 
@@ -241,7 +246,7 @@ every_possible_country = {
 }
 every_possible_country = {
 	limit = {
-
+		NOT = { OR = {tag = AQU } } 
 	}
 
 	# generic army chiefs
@@ -307,7 +312,7 @@ every_possible_country = {
 				}
 				ELSE = {
 					has_tech = early_fighter
-				}			
+				}
 			}
 			cost = 100
 		}
@@ -404,6 +409,10 @@ every_possible_country = {
 }
 
 every_possible_country = {
+	limit = {
+		NOT = { OR = { tag = AQU} } 
+
+	}
 	generate_character = {
 		token_base = generic_captain_of_industry # token will be TAG_token_base
 		advisor = {

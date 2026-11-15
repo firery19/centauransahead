@@ -26,7 +26,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 120
 			
-			
 		}
 	}
 
@@ -252,21 +251,21 @@ focus = {
     mutually_exclusive = { focus = ANT_develop_rural_areas }
     ai_will_do = { factor = 2 }
     completion_reward = {
-custom_effect_tooltip="This path is shorter and will lead to factories quicker."
-add_tech_bonus = {
-	name = assembly_bonus
-	bonus = 1
-	uses = 1
-	technology = concentrated_industry
-	technology = concentrated_industry2
-	technology = concentrated_industry3
-	technology = concentrated_industry4
-	technology = concentrated_industry5
-}
-swap_ideas = {
-    remove_idea = ANT_industry_idea1
-    add_idea = ANT_industry_ideac1
-}
+		custom_effect_tooltip = ANT_centralized_industry_tt
+		add_tech_bonus = {
+			name = assembly_bonus
+			bonus = 1
+			uses = 1
+			technology = concentrated_industry
+			technology = concentrated_industry2
+			technology = concentrated_industry3
+			technology = concentrated_industry4
+			technology = concentrated_industry5
+		}
+		swap_ideas = {
+			remove_idea = ANT_industry_idea1
+			add_idea = ANT_industry_ideac1
+		}
         103 = {
             add_building_construction = {
                 type = infrastructure
@@ -326,54 +325,54 @@ focus = {
 	mutually_exclusive = { focus = ANT_centralized_industry  }
 	ai_will_do = { factor = 2 }
 	completion_reward = {
-custom_effect_tooltip="This path takes longer time, however will eventually lead to more factories."
-add_tech_bonus = {
-	name = assembly_bonus
-	bonus = 0.5
-	uses = 2
-	technology = dispersed_industry
-	technology = dispersed_industry2
-	technology = dispersed_industry3
-	technology = dispersed_industry4
-	technology = dispersed_industry5
+		custom_effect_tooltip = ANT_decentralized_industry_tt
+		add_tech_bonus = {
+			name = assembly_bonus
+			bonus = 0.5
+			uses = 2
+			technology = dispersed_industry
+			technology = dispersed_industry2
+			technology = dispersed_industry3
+			technology = dispersed_industry4
+			technology = dispersed_industry5
 
-}
-swap_ideas = {
-    remove_idea = ANT_industry_idea1
-    add_idea = ANT_industry_idead1
-}
-   	     97 = {
-  	          add_building_construction = {
-  	              type = infrastructure
-  	              level = 1
-  	              instant_build = yes
- 	           }
- 	           add_extra_state_shared_building_slots = 1
- 	       }
-  	      98 = {
-   	         add_building_construction = {
-   	             type = infrastructure
-    	            level = 1
-    	            instant_build = yes
-         	   }
-       	     add_extra_state_shared_building_slots = 1
-    	    }
-     	   104 = {
-        	    add_building_construction = {
-           	     type = infrastructure
-             	   level = 1
-              	  instant_build = yes
-           	 }
-            	add_extra_state_shared_building_slots = 1
-       	 }
-       	 105 = {
-            	add_building_construction = {
-            	    type = infrastructure
-           	     level = 1
-            	    instant_build = yes
-         	   }
-          	  add_extra_state_shared_building_slots = 1
-        }
+		}
+		swap_ideas = {
+			remove_idea = ANT_industry_idea1
+			add_idea = ANT_industry_idead1
+		}
+				97 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				98 = {
+					add_building_construction = {
+						type = infrastructure
+							level = 1
+							instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+					}
+				104 = {
+						add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+						add_extra_state_shared_building_slots = 1
+				}
+				105 = {
+						add_building_construction = {
+							type = infrastructure
+						level = 1
+							instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
     }
 }
 
@@ -839,17 +838,19 @@ swap_ideas = {
                 type = industrial_complex
                 level = 2
                 instant_build = yes
-
-        }           	     add_timed_idea = {
-            	     idea = ANT_paying_for_funding_idea
-            	     days = 70}
-            }
+			}
+        }
+		add_timed_idea = {
+    		idea = ANT_paying_for_funding_idea
+        	days = 70
+		}
+        
     }
 }
 # Develop the Euskor Basin
 focus = {
     id = ANT_develop_euskor_basin
-    icon = GFX_goal_generic_construct_civ_factory
+    icon = GFX_focus_generic_industral_devlopment_bucket
     x = 14
     y = 1
     cost = 10
@@ -1630,32 +1631,33 @@ focus = {
                 instant_build = yes
             }
         }
-	add_ideas = partial_economic_mobilisation
-	add_ideas = { ANT_militarized_economy_idea }
-#custom_effect_tooltip="-------------"
-#custom_effect_tooltip="If you have gone down the centralised industry path you will get the following:"
-if = {
-limit = { has_completed_focus = ANT_centralized_industry }
-swap_ideas = {
-    remove_idea = ANT_industry_ideac3
-    add_idea = ANT_industry_ideacf
-}}
-#custom_effect_tooltip="-------------"
-#custom_effect_tooltip="If you have gone down the dispersed industry path the national spirit will be modified with the following:"
-if = {
-    limit = { has_completed_focus = ANT_develop_rural_areas }
-    swap_ideas = {
-        remove_idea = ANT_industry_idead3
-        add_idea = ANT_industry_ideadf
-    }
-}
+		add_ideas = partial_economic_mobilisation
+		add_ideas = { ANT_militarized_economy_idea }
+		#custom_effect_tooltip="-------------"
+		#custom_effect_tooltip="If you have gone down the centralised industry path you will get the following:"	#finish this later so that it says what the spirit is at the end of the path
+		if = {
+		limit = { has_completed_focus = ANT_centralized_industry }
+		swap_ideas = {
+			remove_idea = ANT_industry_ideac3
+			add_idea = ANT_industry_ideacf
+		}}
+		#custom_effect_tooltip="-------------"
+		#custom_effect_tooltip="If you have gone down the dispersed industry path the national spirit will be modified with the following:"
+		if = {
+			limit = { has_completed_focus = ANT_develop_rural_areas }
+			swap_ideas = {
+				remove_idea = ANT_industry_idead3
+				add_idea = ANT_industry_ideadf
+			}
+		}
 
 
 
-           	     add_timed_idea = {
-            	     idea = ANT_paying_for_funding_idea
-            	     days = 140}
-}
+		add_timed_idea = {
+			idea = ANT_paying_for_funding_idea
+			days = 140
+		}
+	}
 }
 
 # Rapid build up
@@ -1684,13 +1686,14 @@ focus = {
 			level = 2
 			instant_build = yes
 			}
+			}
 		     add_timed_idea = {
             	     idea = ANT_production_boost_idea
 		     days = 360}
 
 
 
-}}}
+}}
 
 # Sustainable Build Up
 focus = {
@@ -1719,12 +1722,12 @@ focus = {
 			instant_build = yes
 
 			}	
-
+		}
 		     add_timed_idea = {
             	     idea = ANT_military_boost_idea
 		     days = 360}
 
-}}}
+}}
 # COPYPASTE SUPER EPIC ULTIMATE FOCUS TEMPLATE I AM SO GOOD AT MODDING FRFR#####################
 
 
@@ -1793,6 +1796,7 @@ focus = {
 
 	ai_will_do = { factor = 3 }
 	completion_reward = {
+		unlock_decision_category_tooltip = ANT_politics_category
 		country_event = {
                 	id = ANT.1
                 	random_days = 0
@@ -1896,7 +1900,7 @@ focus = {
 	ai_will_do = { factor = 2 }
 		completion_reward = {
 			add_stability = 0.05
-			
+			add_popularity = {ideology = neutrality popularity = 0.025}
 			
 		}
 }
@@ -1959,15 +1963,15 @@ focus = {
 	continue_if_invalid = yes
 	available = { 
 		OR = { 
-			ANT = { is_ai = yes } 
 			AND = {
 				democratic < 0.20
-				communism < 0.10 
+				communism < 0.15
 			}
 			AND = {
 				democratic < 0.25
-				communism < 0.05
+				communism < 0.10
 			}
+			ANT = { is_ai = yes } 
 
 		}
 	}
@@ -1999,20 +2003,26 @@ focus = {
 	prerequisite = {focus = ANT_protest6}
 	continue_if_invalid = yes
 	available = {  
-			OR = {  
-				is_ai = yes 
+	#		OR = {  
 				OR ={
 					neutrality > 0.7
-					AND = {
-						neutrality > 0.5
-						fascism > 0.2
-				 	}
 					AND = {
 						neutrality > 0.6
 						fascism > 0.1
 				 	}
+					AND = {
+						has_completed_focus = ANT_strengthen_military
+
+						neutrality > 0.5
+						fascism > 0.2
+				 	}
+				#	AND = {
+				#		neutrality > 0.4
+				#		fascism > 0.3
+				#	}
+				is_ai = yes 
 				}
-			}
+	#		}
         }
 	ai_will_do = { factor = 20 }
 	completion_reward = {
@@ -2097,10 +2107,10 @@ focus = {
 # x
 focus = {
 	id = ANT_strengthen_military
-	icon = GFX_focus_BRA_reach_out_to_military_dem
+	icon = GFX_goal_generic_dangerous_deal
 	x = 2
 	y = 2
-	cost = 10
+	cost = 5
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	prerequisite = { focus = ANT_antiextremism }
         
@@ -2157,10 +2167,14 @@ focus = {
 	ai_will_do = { factor = 2 }
 	completion_reward = {
 		add_stability = -0.05
-		add_political_power = 100
+		add_political_power = 150
 		add_popularity = {
 		ideology = democratic
-		popularity = -0.05
+		popularity = -0.1
+	}
+		add_popularity = {
+		ideology = communism
+		popularity = -0.1
 	}
 	swap_ideas = {
 		remove_idea = ANT_crackdown_medium
@@ -2271,6 +2285,9 @@ focus = {
 			}
 		}
 	}
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	
 	ai_will_do = { factor = 100 }
 	
 	completion_reward = {
@@ -2312,9 +2329,30 @@ focus = {
 	
     completion_reward = {
 	add_stability =  0.05
+	add_popularity = {
+		ideology = democratic
+		popularity = -0.025
+	}
+	add_popularity = {
+		ideology = communism
+		popularity = -0.025
+	}
+	add_popularity = {
+		ideology = democratic_left
+		popularity = -0.025
+	}
+	add_popularity = {
+		ideology = democratic_right
+		popularity = -0.025
+	}
         create_intelligence_agency = {
-            name = ant_intel_agency
+        #    name = ant_intel_agency
+		name = "Imperial Sekurity Service"
         }
+	upgrade_intelligence_agency = upgrade_passive_defense
+	upgrade_intelligence_agency = upgrade_anti_partisan
+	upgrade_intelligence_agency = upgrade_interrogation_techniques
+
     }
 }
 
@@ -2411,7 +2449,7 @@ focus = {
 
 focus = {
 	id = ANT_support_help_corvun_military
-	icon = GFX_focus_generic_military_mission
+	icon = GFX_focus_generic_antares_and_corvus
 	x = 3
 	y = 14
 	cost = 10
@@ -2420,8 +2458,34 @@ focus = {
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-		COV = { country_event = { id = ANT.3 days = 1 random_days = 1 } }
-
+		COV = { country_event = { id = ANT.6 days = 1 random_days = 1 } }
+		effect_tooltip = {
+			COV = {
+					army_experience = 10
+	add_command_power = 100
+	#add some military advisor guy or smt
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 8000
+					producer = ANT
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 900
+					producer = ANT
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 800
+					producer = ANT
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 600
+					producer = ANT
+				}
+			}
+		}
 	}
 }
 #####
@@ -2457,7 +2521,7 @@ focus = {
 }
 focus = {
 	id = ANT_centauran_trade_pact
-	icon = GFX_goal_generic_trade
+	icon = GFX_focus_generic_antares_trade
 	x = -1
 	y = 14
 	cost = 10
@@ -2613,6 +2677,21 @@ focus = {
 		    amount = 1000
 		    producer = ANT
 		}
+		add_equipment_to_stockpile = {
+		    type = support_equipment
+		    amount = 750
+		    producer = ANT
+		}
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 500
+			producer = ANT
+		}
+		add_equipment_to_stockpile = {
+			type = train_equipment
+			amount = 50
+			producer = ANT
+		}
 	}
 }
 
@@ -2671,12 +2750,24 @@ focus = {
 	icon = GFX_goal_generic_army_artillery
 	x = 31
 	y = 2
-	cost = 10
+	cost = 5
 	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_analyse_war_games}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = artillery
+		}
+		add_tech_bonus = {
+			bonus = 2
+			ahead_reduction = 2
+			uses = 1
+			technology = armored_train
+			technology = railway_gun
+		}
 	custom_effect_tooltip = ant_modify_imp_army_by
 	add_to_variable = {
 		var = ANT_army_arty_atk_spirit
@@ -2685,7 +2776,42 @@ focus = {
 		}
 	}
 }
-
+focus = {
+	id = ANT_procure_railwayguns
+	icon = GFX_focus_generic_railway_gun
+	x = 31
+	y = 3
+	cost = 5
+	search_filters = { FOCUS_FILTER_EQUIPMENT }
+	prerequisite = {focus = ANT_rethink_arty_doctrine}
+    available = { or = { can_research = railway_gun has_tech = railway_gun } }
+	ai_will_do = { factor = 1 }
+	completion_reward = {
+		set_technology = {
+			railway_gun = 1
+		}
+		create_railway_gun = {
+			equipment = railway_gun_equipment_1
+			name = "Battery 'Klayton'"
+			location = 5654
+		}
+		create_railway_gun = {
+			equipment = railway_gun_equipment_1
+			name = "Battery 'Marius'"
+			location = 940
+		}
+		create_railway_gun = {
+			equipment = railway_gun_equipment_1
+			name = "Battery 'George'"
+			location = 1736
+		}
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 3
+			category = artillery
+		}
+	}
+}
 # idk
 focus = {
 	id = ANT_learn_from_grease_war
@@ -3260,7 +3386,7 @@ focus = {
 	y = 8
 	cost = 4
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EQUIPMENT }
-	prerequisite = {focus = ANT_expand_rheinmettall}
+	prerequisite = {focus = ANT_new_artillery}
 #        available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
         
 	ai_will_do = { factor = 1 }
@@ -3479,17 +3605,15 @@ focus = {
 	completion_reward = {
 		set_division_template_lock = {
 		    division_template = "New Infantry Division"
-#			division_template = "test"
 		    is_locked = no
 		}
-#	custom_effect_tooltip = ANT_new_divisons_tt	#no work D: < i wont touch this,-firery
+	custom_effect_tooltip = ANT_new_divisons_tt	#no work D: < i wont touch this,-firery < fixed it -hans
 
 	add_timed_idea = {
 		idea = ANT_training_boost_idea
 		days = 360
 	}
-#	custom_effect_tooltip = "Spawns in 6 divisions of the new template"
-#	hidden_effect = {
+	hidden_effect = {
 		186 = {
 			create_unit = { division = "name = \"CXXXIII. Guards Infantry Division\" division_template = \"New Infantry Division\" start_experience_factor = 0.4"  owner = ANT }
 		}
@@ -3508,7 +3632,7 @@ focus = {
 		101 = {
 			create_unit = { division = "name = \"CXLIV. Norma Infantry Division\" division_template = \"New Infantry Division\" start_experience_factor = 0.3"  owner = ANT }
 		}
-#	}
+	}
 	}
 }
 # x
@@ -3961,7 +4085,9 @@ focus = {
         available = {  has_completed_focus = ANT_increase_procurement_funding }
         available = { NOT = { has_completed_focus = ANT_finish_army_reform }}
 
-
+	bypass = {
+	NOT = { has_dlc = "La Resistance" }
+	}
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
@@ -3988,13 +4114,25 @@ focus = {
         
 	ai_will_do = { factor = 1 }
 	completion_reward = {
-add_tech_bonus = {
-    bonus = 0.75
-#   ahead_reduction = 1
-    uses = 2
-    technology = gwtank_chassis
-
-}
+	if = {
+	limit = {
+		has_dlc = "No Step Back"
+		}
+		add_tech_bonus = {
+			bonus = 0.75
+#			ahead_reduction = 1
+			uses = 2
+			technology = gwtank_chassis
+		}
+	}
+	else = {
+		add_tech_bonus = {
+			bonus = 0.75
+#			ahead_reduction = 1
+			uses = 2
+			technology = gwtank
+			}
+		}
 	}
 }
 # E1911 tank
@@ -4006,7 +4144,7 @@ focus = {
 	cost = 5
 	search_filters = { FOCUS_FILTER_EQUIPMENT }
 	prerequisite = { focus =  ANT_experimental_tank}
-        available = {  has_tech = gwtank_chassis }
+        available = {  has_tech = gwtank_chassis has_dlc = "No Step Back" }
 
         
 	ai_will_do = { factor = 1 }
@@ -4109,7 +4247,15 @@ focus = {
 
         
 	ai_will_do = { factor = 1 }
+	select_effect = {
+		add_days_mission_timeout = {
+			mission = ANT_reform_timer
+			days = 35
+		}
+	}
 	completion_reward = {
+		custom_effect_tooltip = upon_focus_selection_tt
+		custom_effect_tooltip = ant_focus_select_mission_35_reform_tt
 		army_experience = 50
 		air_experience = 5
 		add_mastery = {
@@ -4176,7 +4322,7 @@ focus = {
 	#	focus = ANT_prepare_navy_war_cetus
 	#	focus = ANT_im_not_doing_all_those_focuses
 	}
-	will_lead_to_war_with = CET
+#	will_lead_to_war_with = CET
     available = {
 		NOT = { has_idea = ANT_humiliation1 has_idea = ANT_humiliation2 has_idea = ANT_humiliation3 }
 		OR = {
@@ -4189,7 +4335,10 @@ focus = {
 		swap_ideas = {
 			remove_idea = ANT_humiliation4
 			add_idea = ANT_humiliation4b
-		}	
+		}
+		country_event = {
+			id = ANT.7
+		}
 	}
 }
 
@@ -4202,7 +4351,7 @@ focus = {
 	id = ANT_warcetus
 	icon = GFX_focus_generic_attack_cetus
 	x = 13
-	y = 18
+	y = 16
 	cost = 10
 	search_filters = { FOCUS_FILTER_ANNEXATION  }
 	ai_will_do = { factor = 10 }
@@ -4224,7 +4373,9 @@ focus = {
 	completion_reward = {
 		SKO = {
 			remove_state_claim = 94
+			remove_state_claim = 229
 			add_state_core = 94
+			add_state_core = 229
 		}
 		declare_war_on = {
  			target = CET
@@ -4246,8 +4397,10 @@ focus = {
 focus = {
 	id = ANT_skorpiivus
 	icon = GFX_focus_COV_the_confederation
-	x = 16
-	y = 19
+	x = 4
+	y = 1
+	relative_position_id = ANT_warcetus
+
 	cost = 10
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	prerequisite = {focus = ANT_warcetus}
@@ -4264,6 +4417,11 @@ focus = {
 	bypass = { COV = { is_puppet_of = ANT } }
 	completion_reward = {
 		puppet = COV
+			set_autonomy = {
+				target = COV
+				autonomous_state = autonomy_skorpii
+			}
+
 
 	}
 }
@@ -4271,8 +4429,9 @@ focus = {
 focus = {
 	id = ANT_corvbad
 	icon = GFX_focus_generic_attack_corvus
-	x = 14
-	y = 19
+	x = 2
+	y = 1
+	relative_position_id = ANT_warcetus
 	cost = 10
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	prerequisite = {focus = ANT_warcetus}
@@ -4291,12 +4450,104 @@ declare_war_on = {
 
 	}
 }
+focus = {
+	id = ANT_develop_corvus
+	icon = GFX_focus_COV_dev_northeast_2
+	x = 3
+	y = 2
+	relative_position_id = ANT_warcetus
+	cost = 10
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	prerequisite = {focus = ANT_corvbad focus = ANT_skorpiivus}
+	available = { 
+		COV = {is_puppet_of = ANT}
+		OR = {
+			is_ai = yes
+			AND = {
+				divisions_in_state = {
+					size > 3
+					state = 8
+				}
+				divisions_in_state = {
+					size > 3
+					state = 51
+				}
+				divisions_in_state = {
+					size > 3
+					state = 52
+				}
+				divisions_in_state = {
+					size > 3
+					state = 53
+				}
+			}
+		}
+	}
+	ai_will_do = { 
+		factor = 1
+	}
+	completion_reward = {
+		COV = {
+			every_owned_state = {
+				limit = { controller = COV }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_autonomy_score = {
+				value = -750
+			}
+			add_ideas = { ANT_skorpiivus_controll }
+
+		}
+	}
+}
+
+#test for aquila	#USE FOCUS.IGNOREPREREQUISITES -H42 #alright -chocolate
+#focus = {
+#	id = ANT_test
+#	icon = GFX_focus_generic_attack_corvus
+#	x = 1
+#	y = -1
+#	cost = 10
+#	relative_position_id = ANT_waraquila
+#	search_filters = { FOCUS_FILTER_ANNEXATION }
+#	prerequisite = { }
+#
+#
+#	ai_will_do = { 
+#		factor = 0
+#	}
+#
+#
+#	completion_reward = {
+#	}
+#}
+
 # burn forest hahahahah
 focus = {
     id = ANT_waraquila
     icon = GFX_focus_generic_attack_aquila
-    x = 13
-    y = 21
+    x = 0
+    y = 3
+	relative_position_id = ANT_warcetus
     cost = 10
     search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_BUFF}
     prerequisite = { focus = ANT_warcetus }
@@ -4315,6 +4566,14 @@ focus = {
     will_lead_to_war_with = AQU
 
     completion_reward = {
+	hidden_effect = {
+	if = {
+		limit = {
+		AQU = { NOT = { has_completed_focus = AQU_aquila_under_attack_generic } }
+		}
+		AQU = { country_event = { id = aqu.2110001 } }
+	}
+	}
 	swap_ideas = {
  	   remove_idea = ANT_humiliation4b
   	   add_idea = ANT_humiliation5
@@ -4328,8 +4587,46 @@ focus = {
         declare_war_on = {
             target = AQU
             type = annex_everything
-}}}
+}
+if = {
+            limit = {
+                NOT = { country_exists = VEG }
+            }
+            GRS = {
+                complete_national_focus = GRS_the_antarean_issue
+            }
+        }
+    } 
+}
+focus = {
+    id = ANT_shokktroopers
+    icon = GFX_goal_generic_special_forces
+    x = -5
+    y = 5
+	relative_position_id = ANT_warcetus
+    cost = 10
+    search_filters = { FOCUS_FILTER_UNFINISHED }
+    prerequisite = { focus = ANT_waraquila }
+    available = {
+	OR = { is_ai = yes AND = {
+		has_army_manpower = {
+			size > 3500000
+		}
+		has_army_experience > 75
+		command_power > 100
+	}
+    }
+	}
 
+    ai_will_do = { factor = 10 }
+
+    completion_reward = {
+		army_experience = -75
+		add_command_power = -100
+		#give them the SF techs and create units
+
+    } 
+}
 
 		
 
@@ -4338,13 +4635,16 @@ focus = {
 focus = {
 	id = ANT_fortress_busting
 	icon = GFX_goal_generic_major_war
-	x =  12
-	y = 22
+	x =  -1
+	y = 4
+	relative_position_id = ANT_warcetus
 	cost = 5
 	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_waraquila}
 	mutually_exclusive = { focus = ANT_ }
 	available = { has_war_with = AQU }
+	bypass = { NOT = { has_war_with = AQU}}
+
 	ai_will_do = { factor = 20  } #CHANGE THIS TO FACTOR = 1#################
 	completion_reward = {
 		add_timed_idea = {
@@ -4357,18 +4657,25 @@ focus = {
 focus = {
 	id = ANT_scorch
 	icon = GFX_focus_generic_total_war
-	x = 14
-	y = 22
+	x = 1
+	y = 4
+	relative_position_id = ANT_warcetus
 	cost = 5
 	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
 	prerequisite = {focus = ANT_waraquila}
 	mutually_exclusive = { focus = ANT_ }
 	available = { has_war_with = AQU }
+	bypass = { NOT = { has_war_with = AQU}}
 	ai_will_do = { factor = 10  } #CHANGE THIS TO FACTOR = 1#################
 	completion_reward = {
-		every_owned_state = {
+		every_state = {
 			limit = { or = { state = 9 state = 36 state = 35 state = 37 state = 38 state = 156 } }
+			add_manpower = -100000
 			add_extra_state_shared_building_slots = -1
+			remove_building = {
+				type = infrastructure
+				level = 1
+			}
 			damage_building = {
 				type = infrastructure
 				damage = 5
@@ -4389,8 +4696,9 @@ focus = {
 focus = {
 	id = ANT_warvega
 	icon = GFX_focus_generic_attack_vega
-	x = 13
-	y = 23
+	x = 0
+	y = 5
+	relative_position_id = ANT_warcetus
 	cost = 10
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	prerequisite = {focus = ANT_waraquila}
@@ -4413,12 +4721,61 @@ focus = {
 		}
 	}
 }
+focus = {
+	id = ANT_murus_plateu
+	icon = GFX_focus_coolbunker
+	x = -1
+	y = 6
+	relative_position_id = ANT_warcetus
+	cost = 10
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
+	prerequisite = {focus = ANT_warvega}
+	prerequisite = {focus = ANT_shokktroopers}
+	available = {
+		has_war_with = veg
+	} 
+	bypass = { NOT = { has_war_with = VEG}}
+
+	ai_will_do = { factor = 10 }
+	will_lead_to_war_with = VEG
+
+	completion_reward = {
+		add_timed_idea = {
+			idea = ANT_wallvegabreak
+			days = 90
+		}
+	}
+}
+focus = {
+	id = ANT_naval_invasion
+	icon = GFX_focus_SWE_coastal_support
+	x = 1
+	y = 6
+	relative_position_id = ANT_warcetus
+	cost = 10
+	search_filters = { FOCUS_FILTER_MILITARY_BUFF }
+	prerequisite = {focus = ANT_warvega}
+	available = {
+		has_war_with = VEG
+	}
+	ai_will_do = { factor = 10 }
+	will_lead_to_war_with = VEG
+	bypass = { NOT = { has_war_with = VEG}}
+
+	completion_reward = {
+		add_timed_idea = {
+			idea = ANT_aroundmurus
+			days = 90
+		}
+	}
+}
 # Gru from despicable me
 focus = {
 	id = ANT_wargrs
 	icon = GFX_focus_generic_attack_grusa
-	x = 13
-	y = 25
+	x = 0
+	y = 7
+	relative_position_id = ANT_warcetus
 	cost = 10
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	prerequisite = {focus = ANT_warvega}
@@ -4446,8 +4803,9 @@ focus = {
 focus = {
 	id = ANT_worldconquest	#incase wargrs gets bypassed
 	icon = GFX_goal_generic_major_war
-	x = 13
-	y = 26
+	x = 0
+	y = 8
+	relative_position_id = ANT_warcetus
 	cost = 10
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	prerequisite = {focus = ANT_wargrs}
@@ -4459,15 +4817,16 @@ focus = {
 
 	completion_reward = {
 		add_ideas = ANT_worldconquest
-
+		add_threat = 20
 
 	}
 }
 focus = {
 	id = ANT_integrate_cetus
 	icon = GFX_focus_generic_cetus
-	x = 24
-	y = 23
+	x = 4
+	y = 0
+	relative_position_id = ANT_integrate_aquila
 	cost = 10
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	prerequisite = {focus = ANT_warcetus}
@@ -4489,6 +4848,8 @@ focus = {
 		add_state_claim = 40
 		add_state_claim = 39
 		add_state_claim = 50
+		add_state_claim = 230
+		add_state_claim = 231
 		SKO = {	add_state_claim = 43 }
 		every_owned_state = {
 			limit = {
@@ -4502,8 +4863,9 @@ focus = {
 focus = {
 	id = ANT_integrate_aquila
 	icon = GFX_focus_generic_aquila
-	x = 20
-	y = 23
+	x = 5
+	y = 5
+	relative_position_id = ANT_warcetus
 	cost = 10
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	prerequisite = {focus = ANT_waraquila}
@@ -4520,6 +4882,7 @@ focus = {
 		add_state_claim = 9
 		add_state_claim = 152
 		add_state_claim = 33
+		add_state_claim = 228
 		every_owned_state = {
 			limit = {
 				is_core_of = AQU
@@ -4535,8 +4898,8 @@ focus = {
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	prerequisite = { focus = ANT_integrate_cetus }
 	prerequisite = { focus = ANT_integrate_aquila }
-	relative_position_id = ANT_integrate_cetus
-	x = -2
+	relative_position_id = ANT_integrate_aquila
+	x = 2
 	y = 1
 	cost = 10
 
@@ -4553,8 +4916,9 @@ focus = {
 	icon = GFX_goal_generic_forceful_treaty
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	prerequisite = { focus = ANT_integrate_south_centaura }
-	x = 21
-	y = 25
+	x = 1
+	y = 2
+	relative_position_id = ANT_integrate_aquila
 	cost = 10
 
 	ai_will_do = {
@@ -4570,8 +4934,9 @@ focus = {
 	icon = GFX_goal_generic_construct_civilian
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 	prerequisite = { focus = ANT_integrate_aquila }
-	x = 19
-	y = 24
+	x = -1
+	y = 1
+	relative_position_id = ANT_integrate_aquila
 	cost = 10
 
 	ai_will_do = {
@@ -4594,13 +4959,54 @@ focus = {
 	}
 }
 focus = {
+	id = ANT_cetus_industry
+	icon = GFX_focus_cooldockyard
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	prerequisite = { focus = ANT_integrate_cetus }
+	x = 5
+	y = 1
+	relative_position_id = ANT_integrate_aquila
+	cost = 10
+
+	ai_will_do = {
+		factor = 5
+	}
+		
+	completion_reward = {
+		every_owned_state = {
+			limit = {
+				OR = {
+					state = 7
+					state = 46
+				}
+				is_owned_by = ANT
+			}
+			add_compliance = 10
+			add_resistance = -5
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+
+		}
+		mio:ANT_germaniawerft_organization = {
+			add_mio_funds_gain_factor = 0.1
+			add_mio_size = 2
+		}
+		#add cetan MIOs
+	}
+}
+focus = {
 	id = ANT_new_administration
 	icon = GFX_focus_generic_improve_the_administration
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	prerequisite = { focus = ANT_integrate_south_centaura }
 	mutually_exclusive = { focus = ANT_continuity }
-	x = 23
-	y = 25
+	x = 3
+	y = 2
+	relative_position_id = ANT_integrate_aquila
 	cost = 10
 
 	ai_will_do = {
@@ -4613,7 +5019,7 @@ focus = {
 		every_owned_state = {
 			limit = { NOT = { is_core_of = ANT } }
 			add_compliance = -10
-			add_resistance = 10
+			add_resistance = 15
 			add_dynamic_modifier = {
 				modifier = ANT_compliance_bonus_cet_aqu
 			}
@@ -4626,8 +5032,9 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	prerequisite = { focus = ANT_integrate_south_centaura }
 	mutually_exclusive = { focus = ANT_new_administration }
-	x = 25
-	y = 25
+	x = 5
+	y = 2
+	relative_position_id = ANT_integrate_aquila
 	cost = 10
 
 	ai_will_do = {
@@ -4642,5 +5049,98 @@ focus = {
 		}
 	}
 }
+focus = {
+	id = ANT_establish_union_of_antarean_youth
+	icon = GFX_focus_generic_infiltration
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	prerequisite = { focus = ANT_new_administration focus = ANT_continuity }
+#	mutually_exclusive = { focus = ANT_new_administration }
+	available = {  }
+	x = 4
+	y = 3
+	relative_position_id = ANT_integrate_aquila
+	cost = 10
+
+	ai_will_do = {
+		factor = 5
+	}
+		
+	completion_reward = {
+		add_stability = -0.05
+		add_political_power = -100
+		every_owned_state = {
+			limit = { NOT = { is_core_of = ANT } }
+			add_compliance = -10
+			add_resistance = 10
+			add_dynamic_modifier = {
+				modifier = ANT_union_of_antarean_youth
+			}
+		}
+	}
+}
+
+#	INTERWAR / KOLUMBAN KAMPAIGN FOCUSES
+focus = {
+	id = ANT_kolumban_kampaign
+	icon = GFX_focus_generic_attack_columba
+	search_filters = { FOCUS_FILTER_UNFINISHED }
+#	prerequisite = { focus = ANT_integrate_south_centaura }
+#	mutually_exclusive = { focus = ANT_new_administration }
+	available = { has_war_with = CLB }
+	x = 0
+	y = 10
+	relative_position_id = ANT_warcetus
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 5
+	}
+		
+	completion_reward = {
+		add_command_power = 0.05
+	}
+}
+focus = {
+	id = ANT_operation_slingshot
+	icon = GFX_focus_ANT_operation_slingshot
+	search_filters = { FOCUS_FILTER_UNFINISHED }
+	prerequisite = { focus = ANT_kolumban_kampaign }
+#	mutually_exclusive = { focus = ANT_new_administration }
+	available = { has_war_with = CLB }
+	x = 0
+	y = 2
+	relative_position_id = ANT_kolumban_kampaign
+	cost = 10
+
+	ai_will_do = {
+		factor = 5
+	}
+		
+	completion_reward = {
+		add_command_power = 0.05
+	}
+}
+focus = {
+	id = ANT_UNTERNEHMEN_KATAKLYSM
+	icon = GFX_focus_ANT_operation_kataklysm
+	search_filters = { FOCUS_FILTER_UNFINISHED }
+	prerequisite = { focus = ANT_operation_slingshot }
+#	mutually_exclusive = { focus = ANT_new_administration }
+	available = { has_war_with = CLB }
+	x = 0
+	y = 4
+	relative_position_id = ANT_kolumban_kampaign
+	cost = 10
+
+	ai_will_do = {
+		factor = 5
+	}
+		
+	completion_reward = {
+		add_command_power = 0.05
+	}
+}
+
 #END
 }

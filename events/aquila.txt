@@ -1285,6 +1285,35 @@ country_event = { #thing that activates the SCW focus
 	}
 }
 
+##trigger recruit_character air
+country_event = {
+	id = aqu.510
+	title = aqu.510.t
+	desc = aqu.510.d
+	picture = GFX_report_event_tur_military_affair
+	
+	is_triggered_only = no
+	fire_only_once = yes 
+	
+    trigger = {
+	has_tech = early_fighter
+	}
+	
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	option = {
+		name = aqu.510.a
+		recruit_character = AQU_henri_delacroix 
+		recruit_character = AQU_arthur_vance 
+        ai_chance = {
+            base = 100
+		}
+
+	}
+}
+
 country_event = { #send CEtus gun
 	id = aqu.11401
 	title = aqu.11401.t

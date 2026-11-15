@@ -692,6 +692,11 @@
  aqu.3110002.a:0 "Childern are unfit for the factories."
  aqu.3110002.b:0 "We need the extra workforce."
  
+ ###recruit air Officers
+ aqu.510.t:0 "The Pioneers Of Our Air Force"
+ aqu.510.d:0 "After many months of training, first two of our pilots are ready to defend our country from invaders. Their names are Arthur Vance and Henri Delacroix. They will now focus on training more new pilots and later on, they shall both lead their own squadron and defend our skies. It is great news for our country, as we have finally become the masters of air. The eagle got its wings!"
+ aqu.510.a:0 "To the skies we go!"
+ 
  ###why are you here? this path isn't finished yet###
  aqu.9995959458.t:0 "This path isn't finished yet!"
  aqu.9995959458.d:0 "Hello! This is the developer for Aquila, unfortunately this path you are playing isn't finished yet, there is no more content beyond this point. I understand the disappointment you must be feeling right now, but please be patient for new updates."
@@ -720,6 +725,7 @@
  AQU_increase_education_funding:0 "Increase Research Funding"
  AQU_increase_education_funding_desc:0 "Fixing our last term's mistake."
  AQU_wartime_army_reform:0 "Wartime Army Reform"
+ AQU_wartime_army_reform2:0 "Army Reform"
  
  AQU_leonites_revolt:0 "Leonites Revolt"
  AQU_leonites_revolt_desc:0 "The time is ticking, the mighty lion will be freed from the eagle's chains..."
@@ -825,7 +831,9 @@
  #custom tooltip
  ######
  
- AQU_unlock_decision_tt:0 "£GFX_decision_icon_small §YEnables New Decision§!"
+ AQU_unlock_decision_tt:0 "£GFX_decision_icon_small §YEnables New Decision§!" 
+ 
+ AQU_increase_tt:0 "Modify §YUnderfund Technological Development§! by £GFX_research_icon research speed: §G+10%§!"
  
  AQU_add_on_to_iron_army_idea_tt:0 "Modify §YThe Iron Army§! by"
  

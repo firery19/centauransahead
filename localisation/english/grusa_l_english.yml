@@ -833,10 +833,10 @@ GRS_milfactories_in_the_plains_desc:0 "The growing prosperity of the plains give
  GRS_reign_of_fernan_desc:0 "Fernan Flamenco's reign over Grusa has been quiet and uneventful. He has attempted to rectify the mistakes of his father and the consequences of the Strait War."
 
  GRS_fernans_government:0 "Fernan's Government"
- GRS_fernans_government_desc:0 "The kingdom continues to be governed by Fernan and his appointed ministers. Although little has changed, the government remains committed to maintaining stability throughout Grusa."
+ GRS_fernans_government_desc:0 "The kingdom continues to be governed by Fernan and his appointed Nobles. Although little has changed, the government remains committed to maintaining stability throughout Grusa."
 
- GRS_consult_the_council:0 "Consult the King's Council"
- GRS_consult_the_council_desc:0 "The minds of the King's Council are a great tool to the Flamenco dynasty. Their experience and advice help assist the monarchy in making important decisions."
+ GRS_consult_the_council:0 "Consult the Assembly of Nobles"
+ GRS_consult_the_council_desc:0 "The Assembly of Nobles are a great tool to the Flamenco dynasty. Their experience and advice help assist the monarchy in making important decisions and carrying out orders on their behalf."
 
  GRS_seek_new_advisors:0 "Seek New Advisors"
  GRS_seek_new_advisors_desc:0 "The kingdom requires capable men to assist in its administration. New advisors may bring fresh ideas and help improve the workings of the government."
@@ -864,6 +864,21 @@ GRS_milfactories_in_the_plains_desc:0 "The growing prosperity of the plains give
 
  GRS_golden_opportunity:0 "A Golden Opportunity"
  GRS_golden_opportunity_desc:0 "The death of a monarch presents a rare opportunity. With the old order weakened and the future of Grusa uncertain, perhaps the time is right for another man to lead the kingdom..."
+
+ GRS_state_funeral:0 "A State Funeral"
+ GRS_state_funeral_desc:0 "Fernan is to be given a grand state funeral in Leopolis. Nobles, military officers and citizens from across the kingdom will gather to pay their respects to the late King."
+
+ GRS_address_the_nation:0 "Address the Nation"
+ GRS_address_the_nation_desc:0 "King Valentine will address the people of Grusa for the first time since his father's death. He must reassure the kingdom that he is prepared to take up the responsibilities of the crown."
+ 
+ GRS_royal_parade:0 "A Royal Parade"
+ GRS_royal_parade_desc:0 "A parade will be held in Leopolis to mark the accession of King Valentine. The armed forces and the people will gather to celebrate the beginning of a new reign."
+
+ GRS_tour_the_kingdom:0 "A Tour of the Kingdom"
+ GRS_tour_the_kingdom_desc:0 "Valentine will travel throughout Grusa, visiting its towns and regions. It will give the new King an opportunity to meet his subjects and become familiar with the kingdom."
+ 
+ GRS_the_new_king:0 "The New King"
+ GRS_the_new_king_desc:0 "With his father's reign at an end, Valentine must now establish himself as the new King of Grusa and take responsibility for the kingdom."
 
 
 

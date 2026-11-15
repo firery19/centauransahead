@@ -959,6 +959,7 @@ country_event = {
 	picture = GFX_report_event_fascist_militia
 
 	trigger = {
+	    NOT = { TAG = AQU }
 		fascism > 0.7
 		num_of_controlled_states > 1
 		#has_idea = fascist_revolutionaries
@@ -1048,6 +1049,7 @@ country_event = {
 	picture = GFX_report_event_worker_protests
 
 	trigger = {
+	    NOT = { TAG = AQU } 
 		communism > 0.7
 		num_of_controlled_states > 1
 		#has_idea = communist_revolutionaries
@@ -1138,6 +1140,7 @@ country_event = {
 	picture = GFX_report_event_gathering_protest
 
 	trigger = {
+	    NOT = { TAG = AQU }
 		democratic > 0.7
 		num_of_controlled_states > 1
 		#has_idea = democratic_revolutionaries

@@ -8,7 +8,7 @@ focus_tree = {
             tag = AQU
         }
     }
-    continuous_focus_position = { x = 3920 y = 850 }
+	continuous_focus_position = { x = 3920 y = 850 }
 
 search_filter_prios = {
 	FOCUS_FILTER_POLITICAL = 1010
@@ -4061,6 +4061,16 @@ search_filter_prios = {
 		}
 
         completion_reward = {
+		if = {
+			limit = {
+				NOT = {
+				has_completed_focus = AQU_desperate_military_reforms
+				has_completed_focus = AQU_wartime_military_reforms		
+				has_completed_focus = AQU_wartime_military_reforms_generic
+				}
+			}
+		custom_effect_tooltip = AQU_unlock_decision_tt
+		}
 		}
         ai_will_do = {
             factor = 5

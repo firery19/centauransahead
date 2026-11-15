@@ -896,6 +896,7 @@ hearts_of_forma_generic_category = {
 		days_remove = 200
 		
 		remove_effect = {
+		custom_effect_tooltip = AQU_increase_tt
 		random_owned_state = {
 			remove_building ={
 				type = industrial_complex
@@ -910,6 +911,7 @@ hearts_of_forma_generic_category = {
 		remove_dynamic_modifier = {
 			modifier = AQU_underfunded_school
 		}
+		add_research_slot = 2
 		}
 		else = {
 		add_to_variable = { AQU_education_funding_var = 0.10 } 

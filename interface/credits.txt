@@ -2,29 +2,21 @@
 
 # Discord Usernames
 
-Who reads these anyways?
-
 # DEVS
-firery (Map Maker)
-hanssolo42 (antares dev)
-a_colour_white (Chocolate) (aquila dev)
+Firery (Map Maker)
+hanssolo (antares dev)
 
 # ARTIST GFX
 crack_addict. (Total ant death) (GFX)
-bvetrgter_18165 (BT-7) (Focus GFX)
 
 # CONTRIBUTORS
 EeksusDeekus (some loading screen gfx)
-komorniczek_29 (juicepeter) (writer)
-schudan (...tea) (writer)
-ca.real_1122_37061 (VazhniSvin) (russian loc)
 
 # PLAYTESTERS
-theromanhimself_ (RomanRoman#5124) (SL12223)
-mustarded.123 (bobo)
+RomanRoman#5124 (sl12223)
 
 # FORMER DEVS
-striped_ (Striped) (First Cetus Dev)
+striped_ (Striped) (Cetus Dev)
 Teemodahunta (Proud Hydrusite warrior) (Orion Dev)
 ganix101 (Ganix101) (???)
 memji (ursa dev)

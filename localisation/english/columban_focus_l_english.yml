@@ -1,5 +1,26 @@
 ﻿l_english:
  
+#PARTIES
+CLB_democratic_left_party:0 "RPC"
+CLB_democratic_left_party_long:0 "Radical Party of Columba"
+ 
+CLB_democratic_party:0 "LLC"
+CLB_democratic_party_long:0 "Liberal League of Columba"
+ 
+CLB_democratic_right_party:0 "DUC"
+CLB_democratic_right_party_long:0 "Democratic Union of Columba"
+ 
+CLB_communism_party:0 "CPC"
+CLB_communism_party_long:0 "Collectivist Party of Columba"
+ 
+CLB_fascism_party:0 "CNF"
+CLB_fascism_party_long:0 "Columban National Front"
+
+CLB_auth_dem_party:0 "Columban Armed Forces"
+CLB_auth_dem_party_long:0 "Columban Armed Forces"
+
+CLB_neutrality_party:0 "Aristocratic Landowners"
+CLB_neutrality_party_long:0 "Aristocratic Landowners"
  
 # events
 

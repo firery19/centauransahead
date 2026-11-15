@@ -11,6 +11,7 @@ on_actions = {
 				#complete_national_focus = COV_initial_offensive
 				COV = { country_event = cov.1 }
 				activate_mission = corvus_failing_economy_d
+				AQU = { country_event = { id = aqu.114255456156 days = 31 } }
 				#CET = { set_country_flag = cov_attack_cetus_first }
 			}
 		}

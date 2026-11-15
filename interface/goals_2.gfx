@@ -678,6 +678,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_LEO_people"
 		texturefile = "gfx/interface/goals/focus_LEO_people.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_focus_LEO_mind_over_brute"
+		texturefile = "gfx/interface/goals/focus_LEO_mind_over_brute_force.dds"
 	}
 	
 	
@@ -688,6 +693,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_generic_rebel"
 		texturefile = "gfx/interface/goals/focus_generic_rebel.dds"
+	}		
+		
+	SpriteType = {
+		name = "GFX_focus_generic_government_icon"
+		texturefile = "gfx/interface/goals/focus_generic_government_icon.dds"
 	}		
 	
 	SpriteType = {

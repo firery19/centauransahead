@@ -5,6 +5,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_AQU_malik_banneker_small"
 		texturefile = "gfx/interface/ideas/portrait_AQU_malik_banneker_small.png"
+	}	
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_arthur_vance_small"
+		texturefile = "gfx/interface/ideas/portrait_AQU_arthur_vance_small.png"
+	}	
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_henri_delacroix_small"
+		texturefile = "gfx/interface/ideas/portrait_AQU_henri_delacroix_small.png"
+	}	
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_caleb_thorne_small"
+		texturefile = "gfx/interface/ideas/portrait_AQU_caleb_thorne_small.png"
 	}
 	
 	spriteType = {

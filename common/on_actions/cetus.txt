@@ -10,7 +10,23 @@ on_actions = {
 				}
 				complete_national_focus = COV_initial_offensive
 				activate_decision = COV_dysfunctional_economy_idk
-				#CET = { set_country_flag = cov_attack_cetus_first }
+				CET = {
+					complete_national_focus = CET_defence_measures
+				}
+				if = {
+					limit = { CET = {
+						NOT = {
+							has_completed_focus = CET_complete_plan_corvus
+						}
+					}
+				 }
+				 CET = { 
+					add_timed_idea = {
+					idea = CET_caught_unprepared
+					days = 105
+				 }
+				}
+				}
 			}
 		}
 	}
@@ -25,6 +41,147 @@ on_actions = {
 					}
 				}
 				ANT = { puppet = COV }
+			}
+		}
+	}
+	on_annex = {
+		effect = {
+			if = {
+				limit = { 
+					ROOT ={
+						original_tag = CET
+					}
+					FROM = {
+						original_tag = COV
+					}
+				}
+				CET = { set_country_flag = cetus_victory_scw_flag }
+			}
+		}
+	}
+	on_capitulation_immediate = { #COV + ANT event
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = COV
+						OR = {
+							is_in_faction_with = ANT
+							is_subject_of = ANT
+							is_ally_with = ANT
+						}
+					}
+					ROOT = {
+						original_tag = CET
+					}
+				 }
+				 ANT = { white_peace = CET }
+				 COV = { white_peace = CET }
+				 ANT = { transfer_state = 7 }
+				 ANT = { transfer_state = 43 }
+				 ANT = { transfer_state = 45 }
+				 ANT = { transfer_state = 44 }
+				 ANT = { transfer_state = 41 }
+				 ANT = { transfer_state = 39 }
+				 ANT = { transfer_state = 230 }
+				 ANT = { transfer_state = 40 }
+				 ANT = { transfer_state = 42 }
+				 ANT = { transfer_state = 47 }
+				 ANT = { transfer_state = 46 }
+				 ANT = { transfer_state = 231 }
+				 ANT = { transfer_state = 229 }
+				 COV = { transfer_state = 48}
+				 COV = { transfer_state = 154}
+				 COV = { transfer_state = 50}
+				 cetus_exiled = yes
+			}
+		}
+	}
+	on_capitulation_immediate = { #ANT + COV event
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = ANT
+						OR = {
+							is_in_faction_with = COV
+							has_subject = COV
+							is_ally_with = COV
+						}
+					}
+					ROOT = {
+						original_tag = CET
+					}
+				 }
+				 ANT = { white_peace = CET }
+				 COV = { white_peace = CET }
+				 ANT = { transfer_state = 7 }
+				 ANT = { transfer_state = 43 }
+				 ANT = { transfer_state = 45 }
+				 ANT = { transfer_state = 44 }
+				 ANT = { transfer_state = 41 }
+				 ANT = { transfer_state = 39 }
+				 ANT = { transfer_state = 230 }
+				 ANT = { transfer_state = 40 }
+				 ANT = { transfer_state = 42 }
+				 ANT = { transfer_state = 47 }
+				 ANT = { transfer_state = 46 }
+				 ANT = { transfer_state = 231 }
+				 ANT = { transfer_state = 229 }
+				 COV = { transfer_state = 48}
+				 COV = { transfer_state = 154}
+				 COV = { transfer_state = 50}
+				 cetus_exiled = yes
+			}
+		}
+	}
+	on_capitulation_immediate = { #ANT solo event
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = ANT
+						NOT = {
+							OR = {
+							is_in_faction_with = COV
+							has_subject = COV
+							is_ally_with = COV
+						}
+						}
+					}
+					ROOT = {
+						original_tag = CET
+					}
+				 }
+				 ANT = { white_peace = CET }
+				 ANT = { transfer_state = 7 }
+				 ANT = { transfer_state = 43 }
+				 ANT = { transfer_state = 45 }
+				 ANT = { transfer_state = 44 }
+				 ANT = { transfer_state = 41 }
+				 ANT = { transfer_state = 39 }
+				 ANT = { transfer_state = 230 }
+				 ANT = { transfer_state = 40 }
+				 ANT = { transfer_state = 42 }
+				 ANT = { transfer_state = 47 }
+				 ANT = { transfer_state = 46 }
+				 ANT = { transfer_state = 231 }
+				 ANT = { transfer_state = 229 }
+				 ANT = { transfer_state = 48}
+				 ANT = { transfer_state = 154}
+				 ANT = { transfer_state = 50}
+				 cetus_exiled = yes
+				 if = {
+					limit = { CET = {
+						has_country_flag = cetus_victory_scw_flag
+					} }
+					ANT = { transfer_state = 55 }
+					ANT = { transfer_state = 54 }
+					ANT = { transfer_state = 53 }
+					ANT = { transfer_state = 52 }
+					ANT = { transfer_state = 51 }
+					ANT = { transfer_state = 8 }
+				 }
 			}
 		}
 	}

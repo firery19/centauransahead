@@ -25,6 +25,69 @@
  
  LEO_farmer_training:0 "Farmer Training Course"
  
+ LEO_infighting:0 "Internal Infighting"
+ 
+ persea_bar_faction:0 "Technocrat Faction"
+ 
+ LEO_smartie_1:0 "Rising Influence"
+
+ LEO_smartie_2:0 "Partial Control"
+ 
+ LEO_smartie_3:0 "Complete Control"
+ 
+ militant_cyrus_faction:0 "Militant Faction"
+ 
+ LEO_army_1:0 "Rising Influence"
+ 
+ LEO_army_2:0 "Partial Control"
+ 
+ LEO_army_3:0 "Complete Control"
+ 
+ LEO_mid_range:0 "Divided Control"
+ 
+ LEO_bop_favor_army:0 "Favor The Militants"
+ 
+ LEO_bop_favor_smarties:0 "Favor The Technocrats"
+ 
+ LEO_bop_recruitment_army:0 "Recruitment Effort"
+ 
+ LEO_bop_economic_planning:0 "Economic Planning"
+ 
+ LEO_allocate_funding:0 "Allocate Fundings"
+ 
+ LEO_allocate_funding_desc:0 "Although we managed to establish our independence, there is still infighting among our factions. Us, the technocrats, want more money for the economy and science, while the militarists want to invest in the army. We shouldn´t forget, however, that a state without a proper economy cannot have a proper army either. Cyrus keeps trying to hog all the money for the army. Thus, we will secretly try to siphon the money into the economy and research. We should try to be quiet about it, otherwise, he could try to overthrow the leadership and take power for himself. \n\n Funding Points: [?LEO_funds] \n  -Military Funding: [?LEO_attack|%0] \n  -R&D Funding: [?LEO_develop_research|%0] \n  -Public Construction Funding: [?LEO_constrution|%0] \n  -Economic Funding: [?LEO_economy|%0] \n  -Domestic Funding: [?LEO_consumer_goods_fake|%0]"
+ 
+ LEO_increase_military_funding:0 "Allocate Funds For The Military"
+ 
+ LEO_increase_research_development_funding:0 "Allocate Funds For R&D"
+ 
+ LEO_increase_research_development_funding_2:0 "Allocate Funds For R&D"
+ 
+ LEO_increase_construction_funding:0 "Allocate Funds For Public Construction"
+ 
+ LEO_increase_economic_funding:0 "Allocate Funds For Economic Development"
+ 
+ LEO_increase_domestic_funding:0 "Allocate Funds For Demestic Issues"
+ 
+ LEO_retract_all_fundings:0 "Retract All Fundings"
+ 
+ LEO_military_funds:0 "Satisfied Military"
+ 
+ LEO_cyrus_demands_funding:0 "Cyrus Demands Funding"
+ 
+ LEO_funding:0 "National Funding"
+ 
+ 
+ decision_cost_gun_100:0 " £GFX_infantry_equipment_text_icon §H100§!"
+ decision_cost_gun_100_blocked:0 " £GFX_infantry_equipment_text_icon §R100§!"
+ 
+ 
+ LEO_RD_cap_20_tt:0 "£GFX_research_icon The Funds You Can Allocate To §YR&D§! Increases To §Y20§!"
+ 
+ LEO_require_funds_for_economy_5_tt:0 "Requires More Than 5 Funding Points For Economic Development" 
+ LEO_require_funds_for_construction_5_tt:0 "Requires More Than 5 Funding Points For Public Construction" 
+ LEO_require_funds_for_domestic_5_tt:0 "Requires More Than 5 Funding Points For Domestic Issues"
+ 
 ####################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
  LEO_industrial_effort:0 "Industrial Effort"
  LEO_industrial_effort_desc:0 "Focus all our political efforts on building up the civilian industry in a great leap forward."

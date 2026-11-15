@@ -123,6 +123,7 @@ recruit_character = AQU_olivier_beaumont
 recruit_character = AQU_gideon_hayes
 recruit_character = AQU_clara_Sterling
 recruit_character = AQU_malik_banneker
+recruit_character = AQU_caleb_thorne
 
 
 

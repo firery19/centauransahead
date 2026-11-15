@@ -260,22 +260,22 @@ ANT_army_reform_category = {
 			}
 			fascism < 0.1
 		}
+		
 		visible = {
-			tag = ANT
-			OR = {
-				AND = {
-					has_completed_focus = ANT_reorganize_army
-					NOT = { has_country_flag = army_reform_mutually_exclusive_decision }
+		OR = {
+			AND = {
+				has_completed_focus = ANT_reorganize_army
+				NOT = { has_country_flag = army_reform_mutually_exclusive_decision }
 				}
 				is_debug = yes
 			}
 		}
-		
 
 		fire_only_once = yes
 
 		cost = 100
 		days_remove = 20
+		
 		complete_effect = {
 		}
 		remove_effect = { 
@@ -302,12 +302,12 @@ ANT_army_reform_category = {
 			}
 			fascism > 0.25
 		}
+		
 		visible = {
-			tag = ANT
-			OR = {
-				AND = {
-					has_completed_focus = ANT_reorganize_army
-					NOT = { has_country_flag = army_reform_mutually_exclusive_decision }
+		OR = {
+			AND = {
+				has_completed_focus = ANT_reorganize_army
+				NOT = { has_country_flag = army_reform_mutually_exclusive_decision }
 				}
 				is_debug = yes
 			}
@@ -318,6 +318,7 @@ ANT_army_reform_category = {
 
 		cost = 100
 		days_remove = 20
+		
 		complete_effect = {
 		}
 		remove_effect = {

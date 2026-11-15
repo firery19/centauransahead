@@ -534,7 +534,6 @@ AQU_army_management = {
 		
 		
 		visible = {
-		is_debug = yes
 		OR = {
 		has_completed_focus = AQU_integrate_cg
 		has_completed_focus = AQU_integrate_cgww
@@ -597,7 +596,75 @@ AQU_army_management = {
              AQU_military_reform_decision < 6
         }
 		OR = {
-		is_debug = yes
+		has_completed_focus = AQU_desperate_military_reforms
+		has_completed_focus = AQU_wartime_military_reforms		
+		has_completed_focus = AQU_wartime_military_reforms_generic
+		}
+		}
+
+		modifier = {
+		
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				army_experience = -200
+			}
+		}
+		cancel_effect = {
+			hidden_effect = {
+				army_experience = 200
+			}
+		}
+		
+		remove_effect = {
+			AQU = {
+			add_to_variable = {
+				var = AQU_military_reform_decision
+				value = 1
+			}
+			custom_effect_tooltip = AQU_add_on_to_iron_army_idea_tt
+			add_to_variable = { AQU_army_attack = 0.05 }
+			add_to_variable = { AQU_army_defend = 0.05}
+			custom_effect_tooltip = AQU_attack_buff_0dot5_idea_tt
+			custom_effect_tooltip = AQU_defend_buff_0dot5_idea_tt
+			}
+		}
+	} 
+	
+	AQU_wartime_army_reform2 = {
+
+		icon = generic_army_support
+		
+		allowed = {
+			always = yes
+		}
+		
+		cost = 0
+		fire_only_once = no
+
+		days_remove = 100
+	
+		custom_cost_trigger = {
+			has_army_experience > 199
+		}
+		
+		custom_cost_text = decision_cost_ArmXP_200
+		available = {
+        check_variable = {
+            var = AQU_military_reform_decision
+             AQU_military_reform_decision < 11
+        }
+		}
+		
+		
+		visible = {
+        check_variable = {
+            var = AQU_military_reform_decision
+             AQU_military_reform_decision < 11
+        }
+		has_completed_focus = AQU_aquila_the_unconquerable
+		NOT = {
 		has_completed_focus = AQU_desperate_military_reforms
 		has_completed_focus = AQU_wartime_military_reforms		
 		has_completed_focus = AQU_wartime_military_reforms_generic

@@ -251,6 +251,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_AQU_military_council"
 		texturefile = "gfx/leaders/AQU/portrait_AQU_military_council.png"
+	}	
+	
+	spriteType = {
+		name = "GFX_portrait_AQU_caleb_thorne"
+		texturefile = "gfx/leaders/AQU/portrait_AQU_caleb_thorne.png"
 	}
 	
 	# vega

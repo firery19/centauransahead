@@ -478,14 +478,110 @@ characters = {
 			logistics_skill=3
 			legacy_id=0
 		}
+	}    
+	
+	AQU_arthur_vance={
+		name= "Arthur Vance"
+		portraits={
+			army={
+				small= GFX_portrait_AQU_arthur_vance_small
+			}
+			army={
+				large= GFX_portrait_AQU_gabriel_rousseau
+			}
+		}
+		
+		advisor={
+			slot = air_chief 
+			idea_token = AQU_arthur_vance
+			ledger = air
+				allowed = {
+					original_tag = AQU
+				}
+				traits = {
+					air_chief_ground_support_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+	}	
+	
+	AQU_henri_delacroix={
+		name= "Henri Delacroix"
+		portraits={
+			army={
+				small= GFX_portrait_AQU_henri_delacroix_small
+			}
+			army={
+				large= GFX_portrait_AQU_gabriel_rousseau
+			}
+		}
+		
+		advisor={
+			slot = air_chief 
+			idea_token = AQU_henri_delacroix
+			ledger = air
+				allowed = {
+					original_tag = AQU
+				}
+				traits = {
+					air_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+	}	
+	
+	AQU_caleb_thorne={
+		name= "Caleb Thorne"
+		portraits={
+			army={
+				small= GFX_portrait_AQU_caleb_thorne_small
+			}
+			army={
+				large= GFX_portrait_AQU_caleb_thorne
+			}
+		}
+
+        navy_leader = {
+            traits = { 
+                ironside 
+            }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 3
+            maneuvering_skill = 1
+            coordination_skill = 1
+            legacy_id = -1
+        }
+		
+		advisor={
+			slot = navy_chief
+			idea_token = AQU_caleb_thorne
+			ledger = navy
+				allowed = {
+					original_tag = AQU
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
 	}
 	
 	AQU_francis_stephens  = {
 		name = AQU_francis_stephens
 		portraits = {
 			civilian = {
-				#large = 
-				#small =
+				large = 
+				small =
 			}
 		}
 		advisor = {

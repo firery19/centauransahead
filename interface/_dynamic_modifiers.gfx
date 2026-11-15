@@ -1,3 +1,6 @@
+
+##ANTARES
+
 spriteTypes = {
     spriteType = {
 		name = "GFX_mod_ANT_army_dynamic"
@@ -24,4 +27,29 @@ spriteTypes = {
 		texturefile = "gfx/interface/state_modifiers/modifiers_test.dds"
 	}
 }
- 
+
+##COLUMBA (IDEAS+DINAMIC)
+
+spriteTypes = {
+    spriteType = {
+		name = "GFX_mod_CLB_underfunded_armed_forces_dynamic"
+		texturefile = "gfx/interface/ideas/idea_CLB_army_bad.dds"
+	}
+    spriteType = {
+		name = "GFX_mod_CLB_farming_dynamic"
+		texturefile = "gfx/interface/ideas/idea_AQU_farming_idea.png"
+	}
+	spriteType = {
+		name = "GFX_mod_CLB_disjointed_country_dynamic"
+		texturefile = "gfx/interface/ideas/idea_COV_dysfunctional_economy_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_mod_CLB_looming_miner_strike_dynamic"
+		texturefile = "gfx/interface/ideas/idea_CLB_miner_strike.dds"
+	}
+	##NORMAL ONES
+	spriteType = {
+		name = "GFX_mod_CLB_development_plan"
+		texturefile = "gfx/interface/ideas/idea_ORI_RapidIndustrialization.dds"
+	}
+}
